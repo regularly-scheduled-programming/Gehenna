@@ -75,3 +75,9 @@ Plugins/*/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+Gehena/Binaries/
+Gehena/Intermediate/
+Gehena/Saved/
+Gehenna/Binaries/
+Gehenna/Saved/
+Gehenna/Intermediate/
