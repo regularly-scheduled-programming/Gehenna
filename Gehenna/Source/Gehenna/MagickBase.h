@@ -25,6 +25,9 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Magick")
 		void setIsMagickUiOn(bool set);
 
+	UFUNCTION(BlueprintCallable, Category = "Magick")
+		void resetSelectionTimer();
+
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
@@ -34,6 +37,9 @@ protected:
 
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
 		bool isMagickUiOn;
+
+	float MIN_TIME_FOR_SELECTION = .5f;
+	float timeSpentInSelection = 0;
 
 public:	
 	// Called every frame

@@ -32,6 +32,10 @@ void UMagickBase::turnRadialOff_Implementation() {
 
 }
 
+void UMagickBase::resetSelectionTimer() {
+	timeSpentInSelection = 0;
+}
+
 void UMagickBase::setIsMagickUiOn(bool set){
 	isMagickUiOn = set;
 }
