@@ -7,6 +7,7 @@
 #include "MagickBase.generated.h"
 
 
+
 UCLASS(Blueprintable, ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 //UCLASS(Blueprintable)
 class GEHENNA_API UMagickBase : public UActorComponent
@@ -40,6 +41,8 @@ protected:
 
 	float MIN_TIME_FOR_SELECTION = .5f;
 	float timeSpentInSelection = 0;
+
+	int spells[2][3] = { {0,0,0},{0,4,0} };
 
 public:	
 	// Called every frame
