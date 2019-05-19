@@ -7,3 +7,9 @@ bool UAction::ContextPreConditions_Implementation()
 {
 	return true;
 }
+
+int UAction::GetCost()
+{
+	return Cost;
+}
+

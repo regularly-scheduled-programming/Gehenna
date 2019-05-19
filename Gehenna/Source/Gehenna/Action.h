@@ -12,7 +12,7 @@
  * 
  */
 UCLASS(Blueprintable)
-class GEHENNA_API UAction : public UObject
+class GEHENNA_API UAction : public UDataAsset
 {
 	GENERATED_BODY()
 public:
@@ -23,7 +23,12 @@ public:
 		TMap<WORLD_PROP_KEY, bool> PostConditions;
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category = "Condition")
 		bool ContextPreConditions();
+	UPROPERTY(BlueprintReadWrite, Category = "GOAP", meta = (ToolTip = "baseCost"))
+	int Cost;
 
+	int GetCost();
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
 	ARivenBaseClass * Agent;
+	UFUNCTION( BlueprintCallable, BlueprintImplementableEvent, Category = "GOAP")
+	void BeginAction();
 };

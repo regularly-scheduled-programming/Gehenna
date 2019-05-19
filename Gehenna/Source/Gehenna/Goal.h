@@ -10,8 +10,8 @@
 /**
  * 
  */
-UCLASS(Blueprintable)
-class GEHENNA_API UGoal : public UObject
+UCLASS(Blueprintable, BlueprintType)
+class GEHENNA_API UGoal : public UDataAsset
 {
 	GENERATED_BODY()
 public:
