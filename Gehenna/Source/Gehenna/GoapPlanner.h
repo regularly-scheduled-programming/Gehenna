@@ -40,7 +40,7 @@ public:
 
 		TMap<WORLD_PROP_KEY, bool> ws;
 		TMap<WORLD_PROP_KEY, bool> parent_ws;
-
+		UAction *  myAction;
 		// Used for debugging
 	//	std::string action_name;
 		

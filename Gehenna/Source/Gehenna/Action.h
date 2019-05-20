@@ -25,7 +25,8 @@ public:
 		bool ContextPreConditions();
 	UPROPERTY(BlueprintReadWrite, Category = "GOAP", meta = (ToolTip = "baseCost"))
 	int Cost;
-
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "condition")
+	FString ActionName;
 	int GetCost();
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
 	ARivenBaseClass * Agent;

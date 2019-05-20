@@ -2,7 +2,7 @@
 
 
 #include "GoapPlanner.h"
-
+#include "Engine.h"
 // Sets default values for this component's properties
 UGoapPlanner::UGoapPlanner()
 {
@@ -30,21 +30,26 @@ void UGoapPlanner::FindPlan()
 	start.g = 0;
 	start.h = calculateH(CurrentWorldState,GoalWorldState);
 	start.f = start.g + start.h;
-
+	start.myAction = nullptr;
 	m_open.push_back(start);
 
 	for (;;)
 	{
 		if (m_open.size() == 0) //no nodes left
 		{
+			//failed
+			GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Red, TEXT("plan not found"));
+
 			return;
 		}
 		// find the node with the lowest rank
 		astarnode curr = openPopLowest();
-		bool match = CompareWorldState(curr.ws, GoalWorldState);
+		bool match = CheckPreConditions(curr.ws, GoalWorldState);
 		if(match)
 		{
 		//success
+			GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Green, TEXT("plan found"));
+
 			reconstructPlan(&curr);
 			return;
 		
@@ -52,49 +57,50 @@ void UGoapPlanner::FindPlan()
 		// add current to closed
 		m_closed.push_back(curr);
 		getPossibleStateTransitions(curr.ws);
+		//GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Cyan, TEXT("test"));
 
 
 		//// iterate over all possible transitions
-		//for (auto &pair : m_transitions)
-		//{
-		//	UAction * action = pair.first;
-		//	TMap<WORLD_PROP_KEY, bool> &future = pair.second;
+		for (auto &pair : m_transitions)
+		{
+			UAction * action = pair.first;
+			TMap<WORLD_PROP_KEY, bool> &future = pair.second;
 
-		//	astarnode neighbor;
+			astarnode neighbor;
 
-		//	int cost = curr.g + action->GetCost();
-		//	int open_index = nodeInVector(future, &m_open);
-		//	int close_index = nodeInVector(future, &m_closed);
+			int cost = curr.g + action->GetCost();
+			int open_index = nodeInVector(future, &m_open);
+			int close_index = nodeInVector(future, &m_closed);
 
-		//	// if neighbor is in OPEn and cost less than g(neighbor)
-		//	if (open_index >= 0 && cost < m_open[open_index].g)
-		//	{
-		//		// remove neighbor from OPEN, because new patch is better
-		//		m_open.erase(m_open.begin() + open_index);
+			// if neighbor is in OPEn and cost less than g(neighbor)
+			if (open_index >= 0 && cost < m_open[open_index].g)
+			{
+				// remove neighbor from OPEN, because new patch is better
+				m_open.erase(m_open.begin() + open_index);
 
-		//		open_index = -1;
-		//	}
+				open_index = -1;
+			}
 
-		//	// if neighbor in CLOSED and cost less than g(neighbor)
-		//	if (close_index >= 0 && cost < m_closed[close_index].g)
-		//	{
-		//		// remove neighbor from CLOSED
-		//		m_closed.erase(m_closed.begin() + close_index);
-		//	}
+			// if neighbor in CLOSED and cost less than g(neighbor)
+			if (close_index >= 0 && cost < m_closed[close_index].g)
+			{
+				// remove neighbor from CLOSED
+				m_closed.erase(m_closed.begin() + close_index);
+			}
 
-		//	// if neighbor not in OPEN and neighbor not in CLOSED
-		//	if (close_index == -1 && open_index == -1)
-		//	{
-		//		neighbor.ws = future;
-		//		neighbor.g = cost;
-		//		neighbor.h = calculateH(neighbor.ws, GoalWorldState);
-		//		neighbor.f = neighbor.g + neighbor.h;
-		//		//neighbor.action_name = action.GetName();
-		//		neighbor.parent_ws = curr.ws;
+			// if neighbor not in OPEN and neighbor not in CLOSED
+			if (close_index == -1 && open_index == -1)
+			{
+				neighbor.ws = future;
+				neighbor.g = cost;
+				neighbor.h = calculateH(neighbor.ws, GoalWorldState);
+				neighbor.f = neighbor.g + neighbor.h;
+				neighbor.myAction = action;
+				neighbor.parent_ws = curr.ws;
 
-		//		m_open.push_back(neighbor);
-		//	}
-		//}
+				m_open.push_back(neighbor);
+			}
+		}
 
 	}
 }
@@ -122,27 +128,52 @@ int UGoapPlanner::calculateH(TMap<WORLD_PROP_KEY, bool> from, TMap<WORLD_PROP_KE
 }
 void UGoapPlanner::reconstructPlan(astarnode * goal_node)
 {
-	//astarnode *curr = goal_node;
-	//auto &plan = ap->_plan;
-	//auto &actions = ap->_actions;
+	//GEngine->AddOnScreenDebugMessage(-1,5,FColor::Orange,TEXT("reconstructPlan"));
+	astarnode *curr = goal_node;
+	
 
-	//// clear the plan
-	//plan.clear();
+	// clear the plan
+	plan.Empty();
+	int debug = 0;
+	while (curr != nullptr)//&& curr->action_name.length()
+	{
+		// find the action
+		//auto it = actions.find(curr->action_name);
 
-	//while (curr && curr->action_name.length())
-	//{
-	//	// find the action
-	//	auto it = actions.find(curr->action_name);
+		//UAssert(it != actions.end(), "Action \"%s\" does not exist.", curr->action_name.c_str());
 
-	//	UAssert(it != actions.end(), "Action \"%s\" does not exist.", curr->action_name.c_str());
+		// add the action handler to the plan
+		if (curr->myAction != nullptr) 
+		{
+			plan.Add(curr->myAction);
 
-	//	// add the action handler to the plan
-	//	plan.push_back(it->second.GetFunc());
+		}
+		else
+		{
+			//GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Orange, TEXT("curr->myAction == nullptr"));
+			return;
+		}
 
-	//	// check to see if parent is in the closed list
-	//	int i = nodeInClosed(curr->parent_ws);
-	//	curr = (i == -1) ? nullptr : &_closed[i];
-	//}
+		// check to see if parent is in the closed list
+		int i = nodeInVector(curr->parent_ws, &m_closed);
+		if (i == -1) 
+		{
+			return;
+		}
+		else
+		{
+			curr = &m_closed[i];
+		}
+		
+		debug++;
+
+		if (debug > 100) 
+		{
+			GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Orange, TEXT("infinite loop during reconstruction"));
+
+			return;
+		}
+	}
 
 }
 // Get the lowest cost node in the open list
@@ -184,6 +215,7 @@ void UGoapPlanner::getPossibleStateTransitions(TMap<WORLD_PROP_KEY, bool> state)
 			TMap<WORLD_PROP_KEY, bool> to = state;
 			to.Append(action->PostConditions);
 
+			//GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Purple, action->ActionName);
 			// add the action and the future world to the transitions array
 			m_transitions.emplace_back(std::make_pair(action, to));
 
