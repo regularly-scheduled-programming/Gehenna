@@ -287,7 +287,7 @@ int UGoapPlanner::nodeInVector(TMap<WORLD_PROP_KEY, bool> state, std::vector<ast
 	return -1;
 }
 
-
+  
 // Called every frame
 void UGoapPlanner::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
 {

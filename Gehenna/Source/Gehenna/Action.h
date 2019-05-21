@@ -23,13 +23,19 @@ public:
 		TMap<WORLD_PROP_KEY, bool> PostConditions;
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category = "Condition")
 		bool ContextPreConditions();
+	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "GOAP", meta = (ToolTip = "baseCost"))
 	int Cost;
+	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "condition")
 	FString ActionName;
 	int GetCost();
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
 	ARivenBaseClass * Agent;
+
 	UFUNCTION( BlueprintCallable, BlueprintImplementableEvent, Category = "GOAP")
-	void BeginAction();
+	void BeginAction(ARivenBaseClass * Agent);
+
+	UFUNCTION(BlueprintCallable, BlueprintImplementableEvent, Category = "GOAP")
+	void TickAction();
 };
