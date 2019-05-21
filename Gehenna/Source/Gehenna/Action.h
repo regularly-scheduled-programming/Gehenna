@@ -23,7 +23,7 @@ public:
 		TMap<WORLD_PROP_KEY, bool> PostConditions;
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category = "Condition")
 		bool ContextPreConditions();
-	UPROPERTY(BlueprintReadWrite, Category = "GOAP", meta = (ToolTip = "baseCost"))
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "GOAP", meta = (ToolTip = "baseCost"))
 	int Cost;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "condition")
 	FString ActionName;
