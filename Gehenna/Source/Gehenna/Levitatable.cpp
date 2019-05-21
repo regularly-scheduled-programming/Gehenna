@@ -38,17 +38,24 @@ void ALevitatable::BeginPlay()
 	Super::BeginPlay();
 	
 	originalPos = this->GetActorLocation();
+	targetPos = originalPos;
+	levitatedPos = FVector(originalPos.X, originalPos.Y, originalPos.Z + levitationAmount);
+
+	upSpeed = levitationAmount / upMoveTime;
+	downSpeed = levitationAmount / downMoveTime;
 }
 
 void ALevitatable::getLevitated()
 {
-	targetPos = FVector(originalPos.X, originalPos.Y, originalPos.Z + levitationAmount);
+	//targetPos = levitatedPos;
+	shouldMoveUp = true;
 	GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Blue, FString::Printf(TEXT("I'm gonna get levitated by %f"), levitationAmount ));
 }
 
 void ALevitatable::getUnLevitated()
 {
-	targetPos = originalPos;
+	//targetPos = originalPos;
+	shouldMoveUp = false;
 }
 
 
@@ -57,6 +64,27 @@ void ALevitatable::getUnLevitated()
 void ALevitatable::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+
+	if (shouldMove)
+	{
+		if (shouldMoveUp)
+		{
+			targetPos.Z = GetActorLocation().Z + (upSpeed * DeltaTime);
+			if (targetPos.Z >= levitatedPos.Z)
+			{
+				shouldMove = false;
+			}
+		}
+		else
+		{
+			targetPos.Z = GetActorLocation().Z - (downSpeed * DeltaTime);
+			if (targetPos.Z <= originalPos.Z)
+			{
+				shouldMove = false;
+			}
+		}
+	}
+
 
 }
 

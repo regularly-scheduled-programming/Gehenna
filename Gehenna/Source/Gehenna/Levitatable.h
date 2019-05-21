@@ -23,31 +23,36 @@ protected:
 	virtual void BeginPlay() override;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Magick")
-	float levitationAmount;
+		float levitationAmount;
 
+	//UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Magick")
+	//	float moveCounter = 0;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Magick")
-		float moveCounter = 0;
+		float upMoveTime = 5;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Magick")
+		float downMoveTime = 2;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Magick")
-		float moveTime = 4;
+	float upSpeed, downSpeed;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Magick")
 		bool isLevitated = false;
-
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Magick")
 		bool shouldMove = false;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Magick")
+		bool shouldMoveUp = true;
 
 	UFUNCTION(BlueprintCallable, Category = "Magick")
 		void getLevitated();
-
 	UFUNCTION(BlueprintCallable, Category = "Magick")
 		void getUnLevitated();
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Magick")	
 		FVector originalPos;
-
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Magick")
+		FVector levitatedPos;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Magick")
 		FVector targetPos;
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
