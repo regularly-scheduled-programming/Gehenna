@@ -36,8 +36,11 @@ public:
 	UPROPERTY(BlueprintReadOnly)
 	UInventoryPrototype* MyPlayerController;
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Item")
 		FString ItemName = FString(TEXT(""));
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite , Category = "Item")
+		UTexture2D* Image;
 
 	void PickUp();
 	

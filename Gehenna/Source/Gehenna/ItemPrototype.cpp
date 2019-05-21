@@ -3,7 +3,6 @@
 
 
 #include "ItemPrototype.h"
-#include "InventoryPrototype.h"
 #include "Engine.h"
 
 // Sets default values
@@ -41,7 +40,7 @@ void AItemPrototype::BeginPlay()
 
 void AItemPrototype::PickUp()
 {
-	MyPlayerController->Inventory.Add(*ItemName);
+	MyPlayerController->Inventory.Add(this);
 	GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Yellow, FString::Printf(TEXT("You Picked Up Item %s"),*ItemName));
 	Destroy();
 }
@@ -56,22 +55,21 @@ void AItemPrototype::Tick(float DeltaTime)
 		if (MyPlayerController->Inventory.Num() <= MyPlayerController->InventoryCapacity -1)
 		{
 
-			GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Orange, TEXT("InventoryHasSpace"));
+			//GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Orange, TEXT("InventoryHasSpace"));
 		}
 		else
 		{
-			GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Orange, TEXT("InventoryFull"));
+		//	GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Orange, TEXT("InventoryFull"));
 		}
 		if (MyPlayerController->bIsPickingUp && bItemIsWithinRange)
 		{
 			if (MyPlayerController->Inventory.Num() < MyPlayerController->InventoryCapacity)
 			{
 				PickUp();
-				
 			}
 			else
 			{
-				GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Orange, TEXT("InventoryFull"));
+				//GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Orange, TEXT("InventoryFull"));
 			}
 		}
 	}

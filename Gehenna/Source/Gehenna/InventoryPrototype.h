@@ -6,6 +6,8 @@
 #include "Components/ActorComponent.h"
 #include "InventoryPrototype.generated.h"
 
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FUpdateInventoryDelegate, const TArray<AItemPrototype*>&, InventoryItems);
+
 
 UCLASS(Blueprintable, meta = (BlueprintSpawnableComponent))
 class GEHENNA_API UInventoryPrototype : public UActorComponent
@@ -15,7 +17,7 @@ class GEHENNA_API UInventoryPrototype : public UActorComponent
 public:	
 	// Sets default values for this component's properties
 	UInventoryPrototype();
-	TArray<FString> Inventory;
+	TArray<AItemPrototype*> Inventory;
 
 protected:
 	// Called when the game starts
@@ -27,8 +29,7 @@ protected:
 	UFUNCTION(BlueprintCallable, Category = "PickUp")
 	void EndPickUp();
 
-	UFUNCTION(BlueprintCallable, Category = "ShowItems")
-	void ShowItems();
+
 	
 
 public:	
@@ -44,6 +45,12 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		bool  bIsPickingUp = false;
 
+	UFUNCTION(BlueprintCallable, Category = "ShowItems")
+		void UpdateInventory();
+
+	UPROPERTY(BlueprintAssignable, Category = "ShowItems")
+		FUpdateInventoryDelegate OnUpdateInventory;
+	
 
 
 };

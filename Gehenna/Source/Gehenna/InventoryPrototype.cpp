@@ -2,6 +2,7 @@
 
 
 #include "InventoryPrototype.h"
+#include "ItemPrototype.h"
 #include "Engine.h"
 
 // Sets default values for this component's properties
@@ -45,11 +46,13 @@ void UInventoryPrototype::EndPickUp()
 	bIsPickingUp = false;
 }
 
-void UInventoryPrototype::ShowItems()
+void UInventoryPrototype::UpdateInventory()
 {
 	for (auto& Item : Inventory)
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Blue, FString::Printf(TEXT("Item: %s "), *Item));
+		/*GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Blue, FString::Printf(TEXT("Item: %s "), Item->ItemName));*/
+		GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Blue, TEXT("Item:  ") +  Item->ItemName);
 	}
+	OnUpdateInventory.Broadcast(Inventory);
 }
 
