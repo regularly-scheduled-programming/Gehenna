@@ -27,8 +27,9 @@ AItemPrototype::AItemPrototype()
 
 void AItemPrototype::GetPlayer(AActor* Player)
 {
-	MyPlayerController = Cast<UInventoryPrototype>(Player);
-	
+	//MyPlayerController = Cast<UInventoryPrototype>(Player);
+	UActorComponent* temp = Player->GetComponentByClass(UInventoryPrototype::StaticClass());
+	MyPlayerController = Cast<UInventoryPrototype>(temp);
 }
 
 // Called when the game starts or when spawned
@@ -41,7 +42,7 @@ void AItemPrototype::BeginPlay()
 void AItemPrototype::PickUp()
 {
 	MyPlayerController->Inventory.Add(*ItemName);
-	GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Yellow, TEXT("You Picked Up Item"));
+	GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Yellow, FString::Printf(TEXT("You Picked Up Item %s"),*ItemName));
 	Destroy();
 }
 
@@ -50,13 +51,28 @@ void AItemPrototype::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 	
-
-	if (MyPlayerController != NULL) // NULL CHECK FOR PLAYER CONTROLLER
+	if (MyPlayerController != nullptr) // NULL CHECK FOR PLAYER CONTROLLER
 	{
+		if (MyPlayerController->Inventory.Num() <= MyPlayerController->InventoryCapacity -1)
+		{
+
+			GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Orange, TEXT("InventoryHasSpace"));
+		}
+		else
+		{
+			GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Orange, TEXT("InventoryFull"));
+		}
 		if (MyPlayerController->bIsPickingUp && bItemIsWithinRange)
 		{
-			GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Yellow, TEXT("here"));
-			PickUp();
+			if (MyPlayerController->Inventory.Num() < MyPlayerController->InventoryCapacity)
+			{
+				PickUp();
+				
+			}
+			else
+			{
+				GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Orange, TEXT("InventoryFull"));
+			}
 		}
 	}
 }
@@ -71,6 +87,6 @@ void AItemPrototype::TriggerEnter(UPrimitiveComponent* HitComp, AActor* OtherAct
 void AItemPrototype::TriggerExit(class UPrimitiveComponent* HitComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
 	bItemIsWithinRange = false;
-	GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Red, TEXT("Exited Pick Up Range of Item"));
+	//GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Red, TEXT("Exited Pick Up Range of Item"));
 }
 

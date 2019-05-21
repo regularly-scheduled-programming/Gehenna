@@ -33,15 +33,17 @@ public:
 	UPROPERTY(EditAnywhere)
 		UStaticMeshComponent* SM_TBox;
 
+	UPROPERTY(BlueprintReadOnly)
 	UInventoryPrototype* MyPlayerController;
 
 	UPROPERTY(EditAnywhere)
 		FString ItemName = FString(TEXT(""));
 
 	void PickUp();
-
+	
 	void GetPlayer(AActor* Player);
 
+	UPROPERTY(EditAnywhere, BlueprintReadOnly)
 	bool bItemIsWithinRange = false;
 
 	UFUNCTION()

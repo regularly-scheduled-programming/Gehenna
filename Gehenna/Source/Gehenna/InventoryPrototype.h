@@ -7,7 +7,7 @@
 #include "InventoryPrototype.generated.h"
 
 
-UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
+UCLASS(Blueprintable, meta = (BlueprintSpawnableComponent))
 class GEHENNA_API UInventoryPrototype : public UActorComponent
 {
 	GENERATED_BODY()
@@ -24,6 +24,7 @@ protected:
 	UFUNCTION(BlueprintCallable, Category = "PickUp")
 	void PickUp();
 
+	UFUNCTION(BlueprintCallable, Category = "PickUp")
 	void EndPickUp();
 
 	UFUNCTION(BlueprintCallable, Category = "ShowItems")
@@ -34,7 +35,14 @@ public:
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
-	bool  bIsPickingUp = false;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		 int InventoryCapacity = 0;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		int InventoryContents = 0;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		bool  bIsPickingUp = false;
 
 
 

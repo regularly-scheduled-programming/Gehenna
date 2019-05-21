@@ -36,7 +36,7 @@ void UInventoryPrototype::TickComponent(float DeltaTime, ELevelTick TickType, FA
 
 void UInventoryPrototype::PickUp()
 {
-	GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Red, TEXT("Picked Up Item"));
+
 	bIsPickingUp = true;
 }
 
@@ -47,10 +47,9 @@ void UInventoryPrototype::EndPickUp()
 
 void UInventoryPrototype::ShowItems()
 {
-	GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Blue, TEXT("Show Inventory"));
 	for (auto& Item : Inventory)
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Blue, FString::Printf( TEXT("Item: %s "), *Item));
+		GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Blue, FString::Printf(TEXT("Item: %s "), *Item));
 	}
 }
 
