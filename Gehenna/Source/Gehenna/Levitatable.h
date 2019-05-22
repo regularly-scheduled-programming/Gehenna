@@ -15,7 +15,7 @@ public:
 	// Sets default values for this actor's properties
 	ALevitatable();
 
-	UFUNCTION(BlueprintCallable, Category = "Magick")
+	UFUNCTION(BlueprintCallable, Category = "Magick", meta = (ToolTip = "DEPRECATED"))
 		void getMagicked();
 
 protected:

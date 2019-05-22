@@ -13,7 +13,7 @@ ALevitatable::ALevitatable()
 }
 
 
-void ALevitatable::getMagicked()
+void ALevitatable::getMagicked()	// Deprecated
 {
 	
 	GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Blue, TEXT("I'm a levitatable. I just got magicked!"));
@@ -27,8 +27,8 @@ void ALevitatable::getMagicked()
 		getLevitated();
 	}
 
-	isLevitated = !isLevitated;
-	shouldMove = true;
+	/*isLevitated = !isLevitated;
+	shouldMove = true;*/	// Moved inside functions for the new implementation
 }
 
 
@@ -50,12 +50,18 @@ void ALevitatable::getLevitated()
 	//targetPos = levitatedPos;
 	shouldMoveUp = true;
 	GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Blue, FString::Printf(TEXT("I'm gonna get levitated by %f"), levitationAmount ));
+
+	isLevitated = true;
+	shouldMove = true;
 }
 
 void ALevitatable::getUnLevitated()
 {
 	//targetPos = originalPos;
 	shouldMoveUp = false;
+
+	isLevitated = false;
+	shouldMove = true;
 }
 
 
