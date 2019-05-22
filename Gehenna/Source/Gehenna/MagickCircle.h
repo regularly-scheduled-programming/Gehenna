@@ -27,11 +27,22 @@ protected:
 
 	magickType myMagickType = levitation;
 	bool isPlayerHere = false;
-	bool isActive = false; 
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Magick")
+		bool isActive = false; 
 
 	//UInteractPosition intPos;
 	//TArray<UMagickCircleInteractPoint*> interPoints;
 	//UMagickCircleInteractPoint* intPos;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Magick")
+	TArray<UStaticMeshComponent*> myCompMeshes;
+
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "Magick")
+		void activate();
+
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "Magick")
+		void deactivate();
 
 public:	
 	// Called every frame
