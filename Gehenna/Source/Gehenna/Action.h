@@ -30,12 +30,12 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "condition")
 	FString ActionName;
 	int GetCost();
-	UPROPERTY(BlueprintReadWrite, EditAnywhere)
-	ARivenBaseClass * Agent;
+	/*UPROPERTY(BlueprintReadWrite, EditAnywhere)
+	ARivenBaseClass * Agent;*/
 
 	UFUNCTION( BlueprintCallable, BlueprintImplementableEvent, Category = "GOAP")
 	void BeginAction(ARivenBaseClass * Agent);
 
 	UFUNCTION(BlueprintCallable, BlueprintImplementableEvent, Category = "GOAP")
-	void TickAction();
+	void TickAction(ARivenBaseClass * Agent);
 };
