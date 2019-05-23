@@ -11,10 +11,13 @@ enum class EInputDir : uint8
 {
 	VE_Center UMETA(DisplayName = "Center"),
 	VE_Up UMETA(DisplayName = "Up"),
+	VE_Right UMETA(DisplayName = "Right"),
 	VE_Down UMETA(DisplayName = "Down"),
 	VE_Left UMETA(DisplayName = "Left"),
-	VE_Right UMETA(DisplayName = "Right"),
+	VE_Circle_Any UMETA(DisplayName = "Circle"),
 };
+
+const int NUM_OF_DIR = 4;
 
 UCLASS()
 class GEHENNA_API AInteractableObj : public AActor
@@ -48,8 +51,15 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input")
 		bool FailImpossible = false;
 
+protected:
+	EInputDir GetStickDirection(float x, float y);
+
 private:
 	bool m_interactable = false;
 	int m_currentInputIndex = 0;
 	float m_inputTimer = 0.0f;
+	EInputDir m_PreviousInput = EInputDir::VE_Center;
+	EInputDir m_CurrentInput = EInputDir::VE_Center;
+	EInputDir m_circleStart;
+	int m_circleSequence;
 };
