@@ -24,8 +24,8 @@ protected:
 
 
 	enum magickType {chapel, levitation};
-
-	magickType myMagickType = levitation;
+	 
+	magickType myMagickType = levitation;	// Not used now, but we might have different types of magickCircles
 	bool isPlayerHere = false;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Magick")
