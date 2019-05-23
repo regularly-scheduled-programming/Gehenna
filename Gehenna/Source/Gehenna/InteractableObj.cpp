@@ -27,7 +27,8 @@ void AInteractableObj::Tick(float DeltaTime)
 
 	if (m_interactable)
 	{
-		m_inputTimer += DeltaTime;
+		if (InputInterval >= 0.0f)
+			m_inputTimer += DeltaTime;
 
 		float x = GetInputAxisValue(TEXT("MoveRight/Left"));
 		float y = GetInputAxisValue(TEXT("MoveForward/Backwards"));
@@ -117,7 +118,7 @@ void AInteractableObj::StartInteraction()
 	m_circleSequence = 0;
 
 	if (GEngine)
-		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Start Interaction"));
+		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Cyan, TEXT("Start Interaction"));
 }
 
 bool AInteractableObj::StopInteraction(bool success)
@@ -135,16 +136,16 @@ bool AInteractableObj::StopInteraction(bool success)
 	return success;
 }
 
-void AInteractableObj::OnInteractionComplete()
+void AInteractableObj::OnInteractionComplete_Implementation()
 {
 	if (GEngine)
-		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Interaction Complete"));
+		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Green, TEXT("Interaction Complete"));
 }
 
-void AInteractableObj::OnInteractionFailed()
+void AInteractableObj::OnInteractionFailed_Implementation()
 {
 	if (GEngine)
-		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Interaction Failed"));
+		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Red, TEXT("Interaction Failed"));
 }
 
 EInputDir AInteractableObj::GetStickDirection(float x, float y)

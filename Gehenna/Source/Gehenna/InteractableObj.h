@@ -44,8 +44,10 @@ public:
 	UFUNCTION(BlueprintCallable)
 		virtual void StartInteraction();
 	virtual bool StopInteraction(bool success);
-	virtual void OnInteractionComplete();
-	virtual void OnInteractionFailed();
+	UFUNCTION(BlueprintNativeEvent)
+		void OnInteractionComplete();
+	UFUNCTION(BlueprintNativeEvent)
+		void OnInteractionFailed();
 
 public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input")
