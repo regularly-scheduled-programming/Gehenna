@@ -11,13 +11,17 @@ enum class EInputDir : uint8
 {
 	VE_Center UMETA(DisplayName = "Center"),
 	VE_Up UMETA(DisplayName = "Up"),
+	VE_UpRight UMETA(DisplayName = "UpRight"),
 	VE_Right UMETA(DisplayName = "Right"),
+	VE_DownRight UMETA(DisplayName = "DownRight"),
 	VE_Down UMETA(DisplayName = "Down"),
+	VE_DownLeft UMETA(DisplayName = "DownLeft"),
 	VE_Left UMETA(DisplayName = "Left"),
+	VE_UpLeft UMETA(DisplayName = "UpLeft"),
 	VE_Circle_Any UMETA(DisplayName = "Circle"),
 };
 
-const int NUM_OF_DIR = 4;
+const int NUM_OF_DIR = 8;
 
 UCLASS()
 class GEHENNA_API AInteractableObj : public AActor

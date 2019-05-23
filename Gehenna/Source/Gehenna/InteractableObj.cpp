@@ -32,11 +32,14 @@ void AInteractableObj::Tick(float DeltaTime)
 		float x = GetInputAxisValue(TEXT("MoveRight/Left"));
 		float y = GetInputAxisValue(TEXT("MoveForward/Backwards"));
 		m_CurrentInput = GetStickDirection(x, y);
+
 		if (m_CurrentInput != m_PreviousInput)
 		{
 			m_PreviousInput = m_CurrentInput;
 			if (m_CurrentInput != EInputDir::VE_Center)
+			{
 				ReceiveInput(GetStickDirection(x, y));
+			}
 		}
 
 		if (!FailImpossible && m_inputTimer > InputInterval)
@@ -76,6 +79,7 @@ void AInteractableObj::ReceiveInput(EInputDir input)
 			{
 				if (m_circleStart == input)
 				{
+					m_circleSequence = 0;
 					m_currentInputIndex++;
 					if (m_currentInputIndex == SuccessInputArray.Num())
 					{
@@ -145,14 +149,43 @@ void AInteractableObj::OnInteractionFailed()
 
 EInputDir AInteractableObj::GetStickDirection(float x, float y)
 {
-	if (x > 0.75f)
-		return EInputDir::VE_Right;
-	if (x < -0.75f)
-		return EInputDir::VE_Left;
-	if (y > 0.75f)
-		return EInputDir::VE_Up;
-	if (y < -0.75f)
-		return EInputDir::VE_Down;
-	return EInputDir::VE_Center;
+	FVector2D dir = FVector2D(x, y);
+	dir.Normalize(0.5625f);
+	if (dir.IsNearlyZero())
+	{
+		return EInputDir::VE_Center;
+	}
+	else
+	{
+		float dotProduct = dir.X;
+		float angleRad = FMath::Acos(dotProduct);
+		float angleDeg = FMath::RadiansToDegrees(angleRad);
+		if (dir.Y >= 0.0f)
+		{
+			if (angleDeg <= 22.5f)
+				return EInputDir::VE_Right;
+			else if (angleDeg <= 67.5f)
+				return EInputDir::VE_UpRight;
+			else if (angleDeg <= 112.5f)
+				return EInputDir::VE_Up;
+			else if (angleDeg <= 157.5f)
+				return EInputDir::VE_UpLeft;
+			else
+				return EInputDir::VE_Left;
+		}
+		else
+		{
+			if (angleDeg <= 22.5f)
+				return EInputDir::VE_Right;
+			else if (angleDeg <= 67.5f)
+				return EInputDir::VE_DownRight;
+			else if (angleDeg <= 112.5f)
+				return EInputDir::VE_Down;
+			else if (angleDeg <= 157.5f)
+				return EInputDir::VE_DownLeft;
+			else
+				return EInputDir::VE_Left;
+		}
+	}
 }
 
