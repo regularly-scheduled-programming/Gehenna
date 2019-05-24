@@ -5,7 +5,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 //#include "InteractPosition.h"
-#include "MagickCircleInteractPoint.h"
+//#include "MagickCircleInteractPoint.h"
 #include "MagickCircle.generated.h"
 
 
