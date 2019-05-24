@@ -209,7 +209,7 @@ void UGoapPlanner::getPossibleStateTransitions(TMap<WORLD_PROP_KEY, bool> state)
 
 	for (auto action : actions)
 	{
-		if (CheckPreConditions(state, action->PreConditions))
+		if (CheckPreConditions(state, action->PreConditions) && action->ContextPreConditions())
 		{
 			//compute furture world state
 			TMap<WORLD_PROP_KEY, bool> to = state;
