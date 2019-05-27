@@ -18,7 +18,8 @@ enum class EInputDir : uint8
 	VE_DownLeft UMETA(DisplayName = "DownLeft"),
 	VE_Left UMETA(DisplayName = "Left"),
 	VE_UpLeft UMETA(DisplayName = "UpLeft"),
-	VE_Circle_Any UMETA(DisplayName = "Circle"),
+	VE_Circle_CW UMETA(DisplayName = "Circle CW"),
+	VE_Circle_CCW UMETA(DisplayName = "Circle CCW")
 };
 
 const int NUM_OF_DIR = 8;
@@ -39,11 +40,12 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
-	UFUNCTION(BlueprintCallable)
-		void ReceiveInput(EInputDir input);
+	void ReceiveInput(EInputDir input);
 	UFUNCTION(BlueprintCallable)
 		virtual void StartInteraction();
 	virtual bool StopInteraction(bool success);
+	UFUNCTION(BlueprintCallable)
+		void ReleaseInteractionBtn();
 	UFUNCTION(BlueprintNativeEvent)
 		void OnInteractionComplete();
 	UFUNCTION(BlueprintNativeEvent)
@@ -53,12 +55,15 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input")
 		TArray<EInputDir> SuccessInputArray;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input")
-		float InputInterval = 0.5f;
+		bool HoldToInteract = true;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input")
+		float InputInterval = 0.0f;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input")
 		bool FailImpossible = false;
 
 protected:
-	EInputDir GetStickDirection(float x, float y);
+	EInputDir GetStickDirection(float x, float y, EInputDir favoredDir = EInputDir::VE_Center);
+	void DebugLine(FString msg, FColor color = FColor::White);
 
 private:
 	bool m_interactable = false;
