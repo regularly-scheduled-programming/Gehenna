@@ -60,5 +60,7 @@ void UInventoryPrototype::UpdateInventory()
 	//	GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Blue, TEXT("Item:  ") +  Item->ItemName);
 	//}
 	OnUpdateInventory.Broadcast(Inventory);
+
+	GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Blue, TEXT("inventory updated"));
 }
 
