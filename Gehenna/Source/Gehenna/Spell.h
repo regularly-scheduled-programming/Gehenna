@@ -20,7 +20,7 @@ protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
 
-	UFUNCTION(BlueprintImplementableEvent, Category = "Magick")
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "Magick")
 		void castSpell();
 
 public:	
