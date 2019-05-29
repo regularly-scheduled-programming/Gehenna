@@ -20,6 +20,8 @@ public:
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "AuraTransaction")
 		void AddAura(float AuraGiven);
 
+	
+
 
 	//Aura
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Aura")
@@ -28,6 +30,17 @@ public:
 		float AuraLeft;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Aura")
 		bool CustomStartValue;
+	
+	//Interactable Behaviours
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "InteractableBehaviours", meta = (ToolTip = "Can aura be drained from interactable?"))
+		bool Drainable;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "InteractableBehaviours", meta = (ToolTip = "Can aura be given to the interactable?"))
+		bool Receivable;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "InteractableBehaviours", meta = (ToolTip = "Can be quickly consumed drain aura interaction required"))
+		bool Consumable;
+
+
+
 
 	
 		 
