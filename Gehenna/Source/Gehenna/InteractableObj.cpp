@@ -213,26 +213,26 @@ EInputDir AInteractableObj::GetStickDirection(float x, float y, EInputDir favore
 		float angleDeg = FMath::RadiansToDegrees(angleRad);
 		if (dir.Y >= 0.0f)
 		{
-			if (angleDeg <= 22.5f + (favoredDir == EInputDir::VE_Right) ? 7.5f : 0.0f + (favoredDir == EInputDir::VE_UpRight) ? 7.5f : 0.0f)
+			if (angleDeg <= 22.5f + (favoredDir == EInputDir::VE_Right) ? 7.5f : 0.0f - (favoredDir == EInputDir::VE_UpRight) ? 7.5f : 0.0f)
 				return EInputDir::VE_Right;
-			else if (angleDeg <= 67.5f + (favoredDir == EInputDir::VE_UpRight) ? 7.5f : 0.0f + (favoredDir == EInputDir::VE_Up) ? 7.5f : 0.0f)
+			else if (angleDeg <= 67.5f + (favoredDir == EInputDir::VE_UpRight) ? 7.5f : 0.0f - (favoredDir == EInputDir::VE_Up) ? 7.5f : 0.0f)
 				return EInputDir::VE_UpRight;
-			else if (angleDeg <= 112.5f + (favoredDir == EInputDir::VE_Up) ? 7.5f : 0.0f + (favoredDir == EInputDir::VE_UpLeft) ? 7.5f : 0.0f)
+			else if (angleDeg <= 112.5f + (favoredDir == EInputDir::VE_Up) ? 7.5f : 0.0f - (favoredDir == EInputDir::VE_UpLeft) ? 7.5f : 0.0f)
 				return EInputDir::VE_Up;
-			else if (angleDeg <= 157.5f + (favoredDir == EInputDir::VE_UpLeft) ? 7.5f : 0.0f + (favoredDir == EInputDir::VE_Left) ? 7.5f : 0.0f)
+			else if (angleDeg <= 157.5f + (favoredDir == EInputDir::VE_UpLeft) ? 7.5f : 0.0f - (favoredDir == EInputDir::VE_Left) ? 7.5f : 0.0f)
 				return EInputDir::VE_UpLeft;
 			else
 				return EInputDir::VE_Left;
 		}
 		else
 		{
-			if (angleDeg <= 22.5f + (favoredDir == EInputDir::VE_Right) ? 7.5f : 0.0f + (favoredDir == EInputDir::VE_DownRight) ? 7.5f : 0.0f)
+			if (angleDeg <= 22.5f + (favoredDir == EInputDir::VE_Right) ? 7.5f : 0.0f - (favoredDir == EInputDir::VE_DownRight) ? 7.5f : 0.0f)
 				return EInputDir::VE_Right;
-			else if (angleDeg <= 67.5f + (favoredDir == EInputDir::VE_DownRight) ? 7.5f : 0.0f + (favoredDir == EInputDir::VE_Down) ? 7.5f : 0.0f)
+			else if (angleDeg <= 67.5f + (favoredDir == EInputDir::VE_DownRight) ? 7.5f : 0.0f - (favoredDir == EInputDir::VE_Down) ? 7.5f : 0.0f)
 				return EInputDir::VE_DownRight;
-			else if (angleDeg <= 112.5f + (favoredDir == EInputDir::VE_Down) ? 7.5f : 0.0f + (favoredDir == EInputDir::VE_DownLeft) ? 7.5f : 0.0f)
+			else if (angleDeg <= 112.5f + (favoredDir == EInputDir::VE_Down) ? 7.5f : 0.0f - (favoredDir == EInputDir::VE_DownLeft) ? 7.5f : 0.0f)
 				return EInputDir::VE_Down;
-			else if (angleDeg <= 157.5f + (favoredDir == EInputDir::VE_DownLeft) ? 7.5f : 0.0f + (favoredDir == EInputDir::VE_Left) ? 7.5f : 0.0f)
+			else if (angleDeg <= 157.5f + (favoredDir == EInputDir::VE_DownLeft) ? 7.5f : 0.0f - (favoredDir == EInputDir::VE_Left) ? 7.5f : 0.0f)
 				return EInputDir::VE_DownLeft;
 			else
 				return EInputDir::VE_Left;
