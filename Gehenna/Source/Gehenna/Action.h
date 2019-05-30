@@ -39,5 +39,8 @@ public:
 	
 
 	UFUNCTION(BlueprintCallable, BlueprintImplementableEvent, Category = "GOAP")
-	void TickAction(ARivenBaseAIController * Agent);
+	void TickAction(ARivenBaseAIController * Agent, float DeltaSeconds);
+	
+	UFUNCTION(BlueprintCallable, BlueprintImplementableEvent, Category = "GOAP")
+	void EndAction(ARivenBaseAIController * Agent);
 };
