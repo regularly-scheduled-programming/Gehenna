@@ -3,7 +3,7 @@
 
 #include "Action.h"
 
-bool UAction::ContextPreConditions_Implementation()
+bool UAction::ContextPreConditions_Implementation(ARivenBaseAIController * agent)
 {
 	return true;
 }
@@ -12,4 +12,5 @@ int UAction::GetCost()
 {
 	return Cost;
 }
+
 

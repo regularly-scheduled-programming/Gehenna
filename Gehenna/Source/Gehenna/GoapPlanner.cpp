@@ -16,7 +16,7 @@ UGoapPlanner::UGoapPlanner()
 
 
 
-void UGoapPlanner::FindPlan()
+void UGoapPlanner::FindPlan(ARivenBaseAIController * agent)
 {
 	m_open.clear();
 	m_closed.clear();
@@ -56,7 +56,7 @@ void UGoapPlanner::FindPlan()
 		}
 		// add current to closed
 		m_closed.push_back(curr);
-		getPossibleStateTransitions(curr.ws);
+		getPossibleStateTransitions(curr.ws, agent);
 		//GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Cyan, TEXT("test"));
 
 
@@ -202,14 +202,14 @@ UGoapPlanner::astarnode UGoapPlanner::openPopLowest()
 }
 //look for all actions possible from current state 
 // to do check context precondition
-void UGoapPlanner::getPossibleStateTransitions(TMap<WORLD_PROP_KEY, bool> state)
+void UGoapPlanner::getPossibleStateTransitions(TMap<WORLD_PROP_KEY, bool> state, ARivenBaseAIController * agent)
 {
 	m_transitions.clear();
 
 
 	for (auto action : actions)
 	{
-		if (CheckPreConditions(state, action->PreConditions) && action->ContextPreConditions())
+		if (CheckPreConditions(state, action->PreConditions) && action->ContextPreConditions(agent))
 		{
 			//compute furture world state
 			TMap<WORLD_PROP_KEY, bool> to = state;
@@ -225,24 +225,39 @@ void UGoapPlanner::getPossibleStateTransitions(TMap<WORLD_PROP_KEY, bool> state)
 
 bool UGoapPlanner::CheckPreConditions(TMap<WORLD_PROP_KEY,bool> worldState, TMap<WORLD_PROP_KEY,bool> preConditions)
 {
+	if (preConditions.Num() == 0)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Orange, TEXT("yooo 1"));
+		return false;
+	}
+	if (worldState.Num() == 0)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Orange, TEXT("yoooo 2"));
+		return false;
+
+	}
+
 	TArray< WORLD_PROP_KEY> keys;
 	preConditions.GetKeys(keys);
 	
 
 	bool result = true;
+	
 	for (int i = 0; i < keys.Num(); i++)
 	{
 		if (!worldState.Contains(keys[i]))
 		{
 			result = false;
 		}
-		else if(worldState[keys[i]] != preConditions[keys[i]])
+		else if (worldState[keys[i]] != preConditions[keys[i]])
 		{
 			result = false;
 
 		}
-		
+
 	}
+	
+	
 
 	return result;
 }

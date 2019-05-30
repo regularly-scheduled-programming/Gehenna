@@ -7,6 +7,7 @@
 #include "WORLD_PROP_KEYS.h"
 #include "Action.h"
 #include <vector>
+#include "RivenBaseAIController.h"
 
 #include "GoapPlanner.generated.h"
 
@@ -46,7 +47,7 @@ public:
 		
 	};
 	UFUNCTION(BlueprintCallable, Category = "GOAP")
-	void FindPlan();
+	void FindPlan(ARivenBaseAIController * agent);
 	int calculateH(TMap<WORLD_PROP_KEY, bool> from, TMap<WORLD_PROP_KEY, bool> to);
 
 	void reconstructPlan(astarnode *goal_node);
@@ -54,7 +55,7 @@ public:
 	// Get the lowest cost node in the open list
 
 	astarnode openPopLowest();
-	void getPossibleStateTransitions(TMap<WORLD_PROP_KEY, bool> state);
+	void getPossibleStateTransitions(TMap<WORLD_PROP_KEY, bool> state, ARivenBaseAIController * agent);
 
 
 	UFUNCTION(BlueprintCallable, Category = "GOAP")
