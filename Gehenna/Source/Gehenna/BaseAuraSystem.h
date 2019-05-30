@@ -13,6 +13,13 @@ class GEHENNA_API UBaseAuraSystem : public UActorComponent
 	GENERATED_BODY()
 
 public:	
+	//AuraTransactionFunctions
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "AuraTransaction")
+		void ReceiveAura();
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "AuraTransaction")
+		void SpendAura();
+
+
 	//Aura
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Aura")
 	float CurrentAura;
