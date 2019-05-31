@@ -37,11 +37,12 @@ protected:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Magick")
 	TArray<UStaticMeshComponent*> myCompMeshes;
+	
 
-	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "Magick")
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category = "Magick")
 		void activate();
 
-	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "Magick")
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category = "Magick")
 		void deactivate();
 
 public:	
