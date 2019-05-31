@@ -4,67 +4,63 @@
 
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
-#include "BaseAuraSystem.generated.h"
+#include "BaseAuraInteractable.generated.h"
 
 
 UCLASS(Blueprintable, BlueprintType, meta = (BlueprintSpawnableComponent))
-class GEHENNA_API UBaseAuraSystem : public UActorComponent
+class GEHENNA_API UBaseAuraInteractable : public UActorComponent
 {
 	GENERATED_BODY()
 
 public:	
-	//AuraTransactionFunctions
+	//Aura Transaction Functions
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "AuraTransaction")
-		void ReceiveAura();
+		void SubtractAura(float AuraTaken);
+
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "AuraTransaction")
-		void SpendAura();
+		void AddAura(float AuraGiven);
+
+	
 
 
 	//Aura
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Aura")
-	float CurrentAura;
+		float MaxAura;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Aura")
+		float AuraLeft;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Aura")
+		bool CustomStartValue;
+	
+	//Interactable Behaviours
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "InteractableBehaviours", meta = (ToolTip = "Can aura be drained from interactable?"))
+		bool Drainable;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "InteractableBehaviours", meta = (ToolTip = "Can aura be given to the interactable?"))
+		bool Receivable;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "InteractableBehaviours", meta = (ToolTip = "Can be quickly consumed drain aura interaction required"))
+		bool Consumable;
 
+
+
+
+	
+		 
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Aura")
-	float MaxAuraHealth;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Aura")
-	float MaxOverallAura;
+		FTimerHandle AuraTransactionTimer;
 
 
 
-
-	//AuraState
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "AuraState")
-	float CautionZoneAmount;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "AuraState")
-	float DangerZoneAmount;
-
-	//AuraTransaction
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "AuraTransactions")
-	float AuraAbsortionRate;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "AuraTransactions")
-	float AuraAbsortionAmount;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "AuraTransactions")
-	float AuraAdded;
-	
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "AuraTransactions")
-	float AuraSubtracted;
-
-	
-	
-	
 
 	// Sets default values for this component's properties
-	UBaseAuraSystem();
+	UBaseAuraInteractable();
 
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
+
+
+private:
+
 
 public:	
 	// Called every frame
