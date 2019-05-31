@@ -2,7 +2,6 @@
 
 
 #include "InventoryPrototype.h"
-#include "ItemPrototype.h"
 #include "Engine.h"
 
 // Sets default values for this component's properties
@@ -34,6 +33,13 @@ void UInventoryPrototype::TickComponent(float DeltaTime, ELevelTick TickType, FA
 	// ...
 }
 
+void UInventoryPrototype::AddToInventory(FMyItemInfo Item)
+{
+	Inventory.Add(Item);
+	//GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Yellow, FString::Printf(TEXT("You Picked Up Item %s"), Item.ItemName));
+	GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Blue, TEXT("Item:  ") + Item.ItemName);
+}
+
 
 void UInventoryPrototype::PickUp()
 {
@@ -48,11 +54,13 @@ void UInventoryPrototype::EndPickUp()
 
 void UInventoryPrototype::UpdateInventory()
 {
-	for (auto& Item : Inventory)
-	{
-		/*GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Blue, FString::Printf(TEXT("Item: %s "), Item->ItemName));*/
-		GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Blue, TEXT("Item:  ") +  Item->ItemName);
-	}
+	//for (auto& Item : Inventory)
+	//{
+	//	/*GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Blue, FString::Printf(TEXT("Item: %s "), Item->ItemName));*/
+	//	GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Blue, TEXT("Item:  ") +  Item->ItemName);
+	//}
 	OnUpdateInventory.Broadcast(Inventory);
+
+	GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Blue, TEXT("inventory updated"));
 }
 
