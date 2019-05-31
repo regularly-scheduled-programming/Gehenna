@@ -6,6 +6,7 @@
 #include "GameFramework/Actor.h"
 //#include "InteractPosition.h"
 //#include "MagickCircleInteractPoint.h"
+#include "MagicCircleInteractPiece.h"
 #include "MagickCircle.generated.h"
 
 
@@ -38,12 +39,26 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Magick")
 	TArray<UStaticMeshComponent*> myCompMeshes;
 	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Magick")
+		TArray<AMagicCircleInteractPiece*> pieces;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Magick")
+		TArray<AMagicCircleInteractPiece*> mandotaryOnPieces;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Magick")
+		TArray<AMagicCircleInteractPiece*> mandotaryOffPieces;
+
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "Magick")
+		void updateInteractPieces();
 
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category = "Magick")
 		void activate();
 
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category = "Magick")
 		void deactivate();
+
+	UFUNCTION(BlueprintCallable, BlueprintImplementableEvent, Category = "Magick")
+		void setMasterOfPieces();
 
 public:	
 	// Called every frame
