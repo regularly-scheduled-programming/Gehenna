@@ -40,6 +40,39 @@ void UInventoryPrototype::AddToInventory(FMyItemInfo Item)
 	GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Blue, TEXT("Item:  ") + Item.ItemName);
 }
 
+void UInventoryPrototype::RemoveFromInventory(int32 ItemID)
+{
+	//Inventory.Remove(Item);
+	int i = SearchInventoryById(ItemID);
+
+	if (i != -1)	// IF FOUND
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Blue, TEXT("Item:  ") + Inventory[i].ItemName + TEXT(" removed."));
+		Inventory.RemoveAt(i);
+		UpdateInventory();
+	}
+	else
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Blue, TEXT("Can't find and remove item."));
+	}
+
+	
+	//GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Blue, TEXT("Item:  ") + Item.ItemName + TEXT(" removed."));
+}
+
+int32 UInventoryPrototype::SearchInventoryById(int32 idNum)
+{
+	for (size_t i = 0; i < Inventory.Num(); i++)
+	{
+		if (Inventory[i].ItemID == idNum)
+		{
+			return i;
+		}
+	}
+
+	return -1;
+}
+
 
 void UInventoryPrototype::PickUp()
 {
