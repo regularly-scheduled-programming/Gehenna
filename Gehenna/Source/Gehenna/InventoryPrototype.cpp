@@ -53,7 +53,7 @@ void UInventoryPrototype::RemoveFromInventory(int32 ItemID)
 	}
 	else
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Blue, TEXT("Can't find and remove item."));
+		GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Blue, TEXT("Can't find and remove item from inv."));
 	}
 
 	

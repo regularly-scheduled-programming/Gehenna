@@ -8,13 +8,16 @@ struct GEHENNA_API FMyCraftingItemInfo
 {
 	GENERATED_BODY()
 
-		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "CraftingPickUp")
-			bool ATrait;
+		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PickUp")
+			int32 ItemID = 0;
 
 		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "CraftingPickUp")
-			bool BTrait;
+			bool ATrait = false;
 
 		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "CraftingPickUp")
-			bool CTrait;
+			bool BTrait = false;
+
+		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "CraftingPickUp")
+			bool CTrait = false;
 		
 };
