@@ -20,6 +20,7 @@ public:
 	// Sets default values for this component's properties
 	UInventoryPrototype();
 	//TArray<AItemPrototype*> Inventory;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	TArray<FMyItemInfo> Inventory;
 
 protected:
@@ -43,6 +44,13 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "PickUp")
 	void AddToInventory(FMyItemInfo Item);
+
+	UFUNCTION(BlueprintCallable, Category = "PickUp")
+		bool RemoveFromInventory(int32 ItemID);
+
+	UFUNCTION(BlueprintCallable, Category = "PickUp", meta = (ToolTip = "returns -1 if NOT found"))
+		int32 SearchInventoryById(int32 idNum);
+
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		 int InventoryCapacity = 0;
