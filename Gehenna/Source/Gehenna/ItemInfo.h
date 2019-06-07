@@ -17,4 +17,7 @@ struct GEHENNA_API FMyItemInfo
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PickUp")
 		UTexture2D* Image;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PickUp")
+		int32 Quantity = 1;
 };

@@ -18,8 +18,18 @@ void UCraftingPrototype::UpdateCraftingInventory()
 
 void UCraftingPrototype::AddToCraftingInventory(FMyCraftingItemInfo Item)
 {
-	CraftingMaterials.Add(Item);
-	GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Blue, TEXT("Item added to crafting materials"));
+	int temp = SearchCraftingInventoryById(Item.ItemID);
+
+	if (temp != -1)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Blue, TEXT("Item is not added to crafting materials, it's already there, incresed num."));
+	}
+	else
+	{
+		CraftingMaterials.Add(Item);
+		GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Blue, TEXT("Item added to crafting materials"));
+	}
+
 }
 
 void UCraftingPrototype::RemoveFromCraftingInventory(int32 ItemID)
@@ -100,12 +110,17 @@ bool UCraftingPrototype::Craft_Implementation(int32 a, int32 b)
 		if (SearchCraftingInventoryByProperty(b) != -1)
 		{
 			int tempA = SearchCraftingInventoryByProperty(a);
-			CraftingMaterials.RemoveAt(tempA);
-			Inventory.RemoveAt(tempA);
+			
+			if (RemoveFromInventory(Inventory[tempA].ItemID)) {
+				CraftingMaterials.RemoveAt(tempA);
+			}
+
 
 			int tempB = SearchCraftingInventoryByProperty(b);
-			CraftingMaterials.RemoveAt(tempB);
-			Inventory.RemoveAt(tempB);
+			if (RemoveFromInventory(Inventory[tempB].ItemID))
+			{
+				CraftingMaterials.RemoveAt(tempB);
+			}
 			GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Red, TEXT("Crafting!!!"));
 
 			return true;

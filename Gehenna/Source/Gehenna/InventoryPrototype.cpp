@@ -35,28 +35,48 @@ void UInventoryPrototype::TickComponent(float DeltaTime, ELevelTick TickType, FA
 
 void UInventoryPrototype::AddToInventory(FMyItemInfo Item)
 {
-	Inventory.Add(Item);
+	int temp = SearchInventoryById(Item.ItemID);
+	if (temp != -1)
+	{
+		Inventory[temp].Quantity++;
+		GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Blue, TEXT("Another copy of item:  ") + Item.ItemName);
+	}
+	else
+	{
+		Inventory.Add(Item);
+		GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Blue, TEXT("Item:  ") + Item.ItemName);
+	}
+
 	//GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Yellow, FString::Printf(TEXT("You Picked Up Item %s"), Item.ItemName));
-	GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Blue, TEXT("Item:  ") + Item.ItemName);
 }
 
-void UInventoryPrototype::RemoveFromInventory(int32 ItemID)
+bool UInventoryPrototype::RemoveFromInventory(int32 ItemID)
 {
 	//Inventory.Remove(Item);
 	int i = SearchInventoryById(ItemID);
 
 	if (i != -1)	// IF FOUND
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Blue, TEXT("Item:  ") + Inventory[i].ItemName + TEXT(" removed."));
-		Inventory.RemoveAt(i);
-		UpdateInventory();
+		if (Inventory[i].Quantity > 1)
+		{
+			Inventory[i].Quantity--;
+			UpdateInventory();
+		}
+		else
+		{
+			GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Blue, TEXT("Item:  ") + Inventory[i].ItemName + TEXT(" removed."));
+			Inventory.RemoveAt(i);
+			UpdateInventory();
+			return true;
+		}
+		
 	}
 	else
 	{
 		GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Blue, TEXT("Can't find and remove item from inv."));
 	}
 
-	
+	return false;
 	//GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Blue, TEXT("Item:  ") + Item.ItemName + TEXT(" removed."));
 }
 
