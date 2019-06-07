@@ -4,6 +4,8 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Pawn.h"
+#include "BabyActions.h"
+#include "BabyInputActions.h"
 #include "Baby.generated.h"
 
 UENUM(BlueprintType)
@@ -14,21 +16,8 @@ enum class EBabyStates : uint8
 	VE_Happy UMETA(DisplayName = "Happy"),
 };
 
-UENUM(BlueprintType)
-enum class EBabyAction : uint8
-{
-	VE_SilenceIdle UMETA(DisplayName = "Silence/Idle"),
-	VE_CoolIdle UMETA(DisplayName = "Cool/Idle"),
-	VE_Laugh UMETA(DisplayName = "Laugh"),
-	VE_Sleep UMETA(DisplayName = "Sleep"),
-	VE_CryTelegraph UMETA(DisplayName = "CryTelegraph"),
-	VE_Cry UMETA(DisplayName = "Cry"),
-	VE_BarfTelegraph UMETA(DisplayName = "BarfTelegraph"),
-	VE_Barf UMETA(DisplayName = "Barf"),
-};
-
 UCLASS()
-class GEHENNA_API ABaby : public APawn
+class GEHENNA_API ABaby : public APawn, public IBabyActions, public IBabyInputActions
 {
 	GENERATED_BODY()
 
@@ -40,21 +29,69 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-public:	
+public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 	UFUNCTION(BlueprintNativeEvent)
-		int HappinessCap(int fullness, int energy);
+		int HappinessCap();
 	UFUNCTION(BlueprintCallable)
 		void StatChanges(float DeltaTime);
 	UFUNCTION(BlueprintCallable)
 		void HoldBaby();
 	UFUNCTION(BlueprintCallable)
 		void ReleaseBaby();
-	UFUNCTION(BlueprintCallable)
-		void PerformBabyAction(EBabyAction action);
+	//IBabyActions interface
+	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "BabyActions")
+		bool SilenceIdle();
+	virtual bool SilenceIdle_Implementation() override;
+	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "BabyActions")
+		bool CoolIdle();
+	virtual bool CoolIdle_Implementation() override;
+	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "BabyActions")
+		bool Laugh();
+	virtual bool Laugh_Implementation() override;
+	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "BabyActions")
+		bool Sleep();
+	virtual bool Sleep_Implementation() override;
+	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "BabyActions")
+		bool CryTelegraph();
+	virtual bool CryTelegraph_Implementation() override;
+	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "BabyActions")
+		bool Cry();
+	virtual bool Cry_Implementation() override;
+	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "BabyActions")
+		bool BarfTelegraph();
+	virtual bool BarfTelegraph_Implementation() override;
+	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "BabyActions")
+		bool Barf();
+	virtual bool Barf_Implementation() override;
+	//IBabyInputActions interface
+	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "BabyInputActions")
+		bool HeldTight();
+	virtual bool HeldTight_Implementation() override;
+	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "BabyInputActions")
+		bool Entertained();
+	virtual bool Entertained_Implementation() override;
+	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "BabyInputActions")
+		bool Shushed();
+	virtual bool Shushed_Implementation() override;
+	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "BabyInputActions")
+		bool Fed();
+	virtual bool Fed_Implementation() override;
+	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "BabyInputActions")
+		bool Calmed();
+	virtual bool Calmed_Implementation() override;
+	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "BabyInputActions")
+		bool SungLullaby();
+	virtual bool SungLullaby_Implementation() override;
+	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "BabyInputActions")
+		bool ShownAffection();
+	virtual bool ShownAffection_Implementation() override;
+
+protected:
+	void DebugLine(FString msg, FColor color = FColor::White);
 
 public:
 	UPROPERTY(BlueprintReadOnly, Category = "BabyStats")
