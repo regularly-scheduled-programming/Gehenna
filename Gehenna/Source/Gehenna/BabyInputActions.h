@@ -23,6 +23,8 @@ class GEHENNA_API IBabyInputActions
 		// Add interface functions to this class. This is the class that will be inherited to implement this interface.
 public:
 	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "BabyInputActions")
+		bool ResetToDefault();
+	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "BabyInputActions")
 		bool HeldTight();
 	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "BabyInputActions")
 		bool Entertained();

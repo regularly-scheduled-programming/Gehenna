@@ -16,6 +16,19 @@ enum class EBabyStates : uint8
 	VE_Happy UMETA(DisplayName = "Happy"),
 };
 
+UENUM(BlueprintType)
+enum class EBabyActedUponStates : uint8
+{
+	VE_None UMETA(DisplayName = "None"),
+	VE_HeldTight UMETA(DisplayName = "Held Tight"),
+	VE_Entertained UMETA(DisplayName = "Entertained"),
+	VE_Shushed UMETA(DisplayName = "Shushed"),
+	VE_Fed UMETA(DisplayName = "Fed"),
+	VE_Calmed UMETA(DisplayName = "Calmed"),
+	VE_SungLullaby UMETA(DisplayName = "Sung Lullaby"),
+	VE_ShownAffection UMETA(DisplayName = "Shown Affection"),
+};
+
 UCLASS()
 class GEHENNA_API ABaby : public APawn, public IBabyActions, public IBabyInputActions
 {
@@ -38,10 +51,6 @@ public:
 		int HappinessCap();
 	UFUNCTION(BlueprintCallable)
 		void StatChanges(float DeltaTime);
-	UFUNCTION(BlueprintCallable)
-		void HoldBaby();
-	UFUNCTION(BlueprintCallable)
-		void ReleaseBaby();
 	//IBabyActions interface
 	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "BabyActions")
 		bool SilenceIdle();
@@ -68,6 +77,9 @@ public:
 		bool Barf();
 	virtual bool Barf_Implementation() override;
 	//IBabyInputActions interface
+	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "BabyInputActions")
+		bool ResetToDefault();
+	virtual bool ResetToDefault_Implementation() override;
 	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "BabyInputActions")
 		bool HeldTight();
 	virtual bool HeldTight_Implementation() override;
@@ -96,20 +108,28 @@ protected:
 public:
 	UPROPERTY(BlueprintReadOnly, Category = "BabyStats")
 		EBabyStates state;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "BabyStats")
-		int happiness = 100;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "BabyStats")
-		int fullness = 100;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "BabyStats")
-		int energy = 100;
 	UPROPERTY(BlueprintReadOnly, Category = "BabyStats")
-		bool isHeld;
+		EBabyActedUponStates actedUponState = EBabyActedUponStates::VE_None;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "BabyInitialStats")
+		int happiness = 100;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "BabyInitialStats")
+		int fullness = 100;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "BabyInitialStats")
+		int energy = 100;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "BabyStatModifiers")
+		int angryNeutralPoint = 30;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "BabyStatModifiers")
+		int neutralHappyPoint = 70;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "BabyStatModifiers")
 		int happinessDecreaseRate = 0;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "BabyStatModifiers")
 		int fullnessDecreaseRate = 0;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "BabyStatModifiers")
 		int energyDecreaseRate = 0;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "BabyActionModifiers")
+		int fatigueThreshold = 40;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "BabyActionModifiers")
+		int maxEnergy = 100;
 
 protected:
 	float timer;

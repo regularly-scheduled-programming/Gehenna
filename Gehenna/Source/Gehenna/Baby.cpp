@@ -43,29 +43,25 @@ void ABaby::StatChanges(float DeltaTime)
 	if (timer >= 1.0f)
 	{
 		happiness -= happinessDecreaseRate;
+
 		fullness -= fullnessDecreaseRate;
+
 		energy -= energyDecreaseRate;
+
 		timer = 0.0f;
 	}
 
+	//Set min max values
 	happiness = FMath::Min<int>(happiness, HappinessCap());
+	fullness = FMath::Max<int>(fullness, 0);
+	energy = FMath::Max<int>(energy, 0);
 
-	if (happiness < 30)
+	if (happiness < angryNeutralPoint)
 		state = EBabyStates::VE_Angry;
-	else if (happiness > 70)
+	else if (happiness > neutralHappyPoint)
 		state = EBabyStates::VE_Happy;
 	else
 		state = EBabyStates::VE_Neutral;
-}
-
-void ABaby::HoldBaby()
-{
-	isHeld = true;
-}
-
-void ABaby::ReleaseBaby()
-{
-	isHeld = false;
 }
 
 bool ABaby::SilenceIdle_Implementation()
@@ -108,94 +104,59 @@ bool ABaby::Barf_Implementation()
 	return true;
 }
 
+bool ABaby::ResetToDefault_Implementation()
+{
+	actedUponState = EBabyActedUponStates::VE_None;
+	DebugLine("No Input Action");
+	return true;
+}
+
 bool ABaby::HeldTight_Implementation()
 {
-	if (isHeld)
-	{
-		DebugLine("Held Tight");
-	}
-	else
-	{
-		DebugLine("Baby not held");
-	}
+	actedUponState = EBabyActedUponStates::VE_HeldTight;
+	DebugLine("Held Tight");
 	return true;
 }
 
 bool ABaby::Entertained_Implementation()
 {
-	if (isHeld)
-	{
-		DebugLine("Entertained");
-	}
-	else
-	{
-		DebugLine("Baby not held");
-	}
+	actedUponState = EBabyActedUponStates::VE_Entertained;
+	DebugLine("Entertained");
 	return true;
 }
 
 bool ABaby::Shushed_Implementation()
 {
-	if (isHeld)
-	{
-		DebugLine("Shushed");
-	}
-	else
-	{
-		DebugLine("Baby not held");
-	}
+	actedUponState = EBabyActedUponStates::VE_Shushed;
+	DebugLine("Shushed");
 	return true;
 }
 
 bool ABaby::Fed_Implementation()
 {
-	if (isHeld)
-	{
-		DebugLine("Fed");
-	}
-	else
-	{
-		DebugLine("Baby not held");
-	}
+	actedUponState = EBabyActedUponStates::VE_Fed;
+	DebugLine("Fed");
 	return true;
 }
 
 bool ABaby::Calmed_Implementation()
 {
-	if (isHeld)
-	{
-		DebugLine("Calmed");
-	}
-	else
-	{
-		DebugLine("Baby not held");
-	}
+	actedUponState = EBabyActedUponStates::VE_Calmed;
+	DebugLine("Calmed");
 	return true;
 }
 
 bool ABaby::SungLullaby_Implementation()
 {
-	if (isHeld)
-	{
-		DebugLine("Sung Lullaby");
-	}
-	else
-	{
-		DebugLine("Baby not held");
-	}
+	actedUponState = EBabyActedUponStates::VE_SungLullaby;
+	DebugLine("Sung Lullaby");
 	return true;
 }
 
 bool ABaby::ShownAffection_Implementation()
 {
-	if (isHeld)
-	{
-		DebugLine("Shown Affection");
-	}
-	else
-	{
-		DebugLine("Baby not held");
-	}
+	actedUponState = EBabyActedUponStates::VE_ShownAffection;
+	DebugLine("Shown Affection");
 	return true;
 }
 
