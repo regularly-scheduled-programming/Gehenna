@@ -43,4 +43,8 @@ public:
 	
 	UFUNCTION(BlueprintCallable, BlueprintImplementableEvent, Category = "GOAP")
 	void EndAction(ARivenBaseAIController * Agent);
+
+	UFUNCTION(BlueprintCallable, BlueprintImplementableEvent, Category = "GOAP")
+	void InterruptAction(ARivenBaseAIController * Agent);
+
 };
