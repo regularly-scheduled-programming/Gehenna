@@ -9,6 +9,15 @@
 #include "Baby.generated.h"
 
 UENUM(BlueprintType)
+enum class EBabyStats : uint8
+{
+	VE_None UMETA(DisplayName = "None"),
+	VE_Happiness UMETA(DisplayName = "Happiness"),
+	VE_Fullness UMETA(DisplayName = "Fullness"),
+	VE_Energy UMETA(DisplayName = "Energy"),
+};
+
+UENUM(BlueprintType)
 enum class EBabyStates : uint8
 {
 	VE_Angry UMETA(DisplayName = "Angry"),
@@ -101,6 +110,7 @@ public:
 	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "BabyInputActions")
 		bool ShownAffection();
 	virtual bool ShownAffection_Implementation() override;
+	void ActionStatChange(EBabyStats stat, int value, bool doOnce);
 
 protected:
 	void DebugLine(FString msg, FColor color = FColor::White);
@@ -129,8 +139,10 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "BabyActionModifiers")
 		int fatigueThreshold = 40;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "BabyActionModifiers")
-		int maxEnergy = 100;
+		int maxFullness = 100;
 
 protected:
 	float timer;
+	EBabyStats statChangeType = EBabyStats::VE_None;
+	int statChangeValue;
 };

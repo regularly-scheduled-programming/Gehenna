@@ -92,6 +92,7 @@ void UBAI_BabyAction::ActionInProgress(UBehaviorTreeComponent& OwnerComp, uint8*
 		}
 		break;
 	case EBabyActions::VE_Sleep:
+		Baby->ActionStatChange(EBabyStats::VE_Energy, 10, false);
 		break;
 	case EBabyActions::VE_Barf:
 		if (telegraphAction)
@@ -132,6 +133,7 @@ void UBAI_BabyAction::ActionComplete(UBehaviorTreeComponent& OwnerComp, uint8* N
 		}
 		break;
 	case EBabyActions::VE_Sleep:
+		Baby->ActionStatChange(EBabyStats::VE_None, 0, false);
 		FinishLatentTask(OwnerComp, EBTNodeResult::Succeeded);
 		break;
 	case EBabyActions::VE_Barf:
@@ -140,6 +142,7 @@ void UBAI_BabyAction::ActionComplete(UBehaviorTreeComponent& OwnerComp, uint8* N
 			telegraphAction = false;
 			timer = 0.0f;
 			Baby->Execute_Barf(Baby);
+			Baby->ActionStatChange(EBabyStats::VE_Happiness, -30, true);
 		}
 		else
 		{
