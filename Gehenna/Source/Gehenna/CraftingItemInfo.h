@@ -1,10 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GameFramework/Actor.h"
+//#include "GameFramework/Actor.h"
+#include "Engine/DataTable.h"
 #include "CraftingItemInfo.generated.h"
 
 USTRUCT(BlueprintType)
-struct GEHENNA_API FMyCraftingItemInfo
+struct GEHENNA_API FMyCraftingItemInfo : public FTableRowBase
 {
 	GENERATED_BODY()
 
