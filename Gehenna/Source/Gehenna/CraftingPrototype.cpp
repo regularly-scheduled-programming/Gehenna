@@ -105,9 +105,9 @@ bool UCraftingPrototype::Craft_Implementation(int32 a, int32 b)
 {
 	GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Orange, TEXT("Trying to craft!!!"));
 	//if (SearchCraftingInventoryById(a) != -1)
-	if (SearchCraftingInventoryByProperty(a) != -1)
+	if (SearchCraftingInventoryByProperty(a) != -1)	// if we find an item with -A- property
 	{
-		if (SearchCraftingInventoryByProperty(b) != -1)
+		if (SearchCraftingInventoryByProperty(b) != -1)	// and if we find an item with -B- property
 		{
 			int tempA = SearchCraftingInventoryByProperty(a);
 			
@@ -127,6 +127,46 @@ bool UCraftingPrototype::Craft_Implementation(int32 a, int32 b)
 		}
 	}
 	return false;
+}
+
+bool UCraftingPrototype::Craft3_Implementation(int32 a, int32 b, int32 c = 0) {
+	GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Orange, TEXT("Trying to craft w 3 materials!!!"));
+	TArray<FMyItemInfo> tempArray = Inventory;
+	TArray<FMyCraftingItemInfo> tempCraftArray = CraftingMaterials;
+	bool couldCraft = false;
+
+	if (SearchCraftingInventoryByProperty(a) != -1)	// If we find an item w 'a' property
+	{
+		int tempA = SearchCraftingInventoryByProperty(a);
+		if(RemoveFromInventory(Inventory[tempA].ItemID))	// remove it from the arrays
+			CraftingMaterials.RemoveAt(tempA);
+
+		if (SearchCraftingInventoryByProperty(b) != -1)	// If we find an item w 'b' property
+		{
+			int tempB = SearchCraftingInventoryByProperty(b);
+			if(RemoveFromInventory(Inventory[tempB].ItemID))	// remove it from the arrays
+				CraftingMaterials.RemoveAt(tempB);
+
+				if (c != 0 && SearchCraftingInventoryByProperty(c) != -1)	// If we find an item w 'c' property
+				{
+					int tempC = SearchCraftingInventoryByProperty(c);
+					if(RemoveFromInventory(Inventory[tempC].ItemID))	// remove it from the arrays
+						CraftingMaterials.RemoveAt(tempC);
+
+					couldCraft = true;
+				}
+		}
+
+	}
+
+	if (!couldCraft)	// if not crafted set the arrays to their previous states
+	{
+		Inventory = tempArray;
+		CraftingMaterials = tempCraftArray;
+		return false;
+	}
+	GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Red, TEXT("Crafting!!!"));
+	return true;
 }
 
 //void UCraftingPrototype::setCraftingMaterials(TArray<FMyCraftingItemInfo> mats)

@@ -21,6 +21,9 @@ public:
 	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "PickUp")
 		bool Craft(int32 a, int32 b);
 
+	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "PickUp")
+		bool Craft3(int32 a, int32 b, int32 c);
+
 	UFUNCTION(BlueprintCallable, Category = "ShowItems")
 		void UpdateCraftingInventory();
 
