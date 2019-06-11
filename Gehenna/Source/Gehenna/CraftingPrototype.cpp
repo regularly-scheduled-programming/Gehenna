@@ -155,6 +155,11 @@ bool UCraftingPrototype::Craft3_Implementation(int32 a, int32 b, int32 c = 0) {
 
 					couldCraft = true;
 				}
+				else if (c == 0)
+				{
+					couldCraft = true;
+				}
+
 		}
 
 	}
@@ -165,9 +170,55 @@ bool UCraftingPrototype::Craft3_Implementation(int32 a, int32 b, int32 c = 0) {
 		CraftingMaterials = tempCraftArray;
 		return false;
 	}
-	GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Red, TEXT("Crafting!!!"));
+	GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Red, TEXT("Crafted!!!"));
 	return true;
 }
+
+bool UCraftingPrototype::Craft3byID_Implementation(int32 a, int32 b, int32 c = -1) {
+	GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Orange, TEXT("Trying to craft w 3 materials by ID!!!"));
+	TArray<FMyItemInfo> tempArray = Inventory;
+	TArray<FMyCraftingItemInfo> tempCraftArray = CraftingMaterials;
+	bool couldCraft = false;
+
+	if (SearchCraftingInventoryById(a) != -1)
+	{
+		int tempA = SearchCraftingInventoryById(a);
+		if (RemoveFromInventory(tempA))
+			CraftingMaterials.RemoveAt(tempA);
+
+		if (SearchCraftingInventoryById(b) != -1)
+		{
+			int tempB = SearchCraftingInventoryById(b);
+			if (RemoveFromInventory(tempB))
+				CraftingMaterials.RemoveAt(tempB);
+
+			if (c != -1 && SearchCraftingInventoryById(c) != -1)
+			{
+				int tempC = SearchCraftingInventoryById(c);
+				if (RemoveFromInventory(tempC))
+					CraftingMaterials.RemoveAt(tempC);
+
+				couldCraft = true;
+			}
+			else if (c == -1)
+			{
+				couldCraft = true;
+			}
+		}
+
+	}
+
+	if (!couldCraft)	// if not crafted set the arrays to their previous states
+	{
+		Inventory = tempArray;
+		CraftingMaterials = tempCraftArray;
+		return false;
+	}
+	GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Red, TEXT("Crafted!!!"));
+	return true;
+}
+
+
 
 //void UCraftingPrototype::setCraftingMaterials(TArray<FMyCraftingItemInfo> mats)
 //{
