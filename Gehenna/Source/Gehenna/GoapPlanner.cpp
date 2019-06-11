@@ -18,6 +18,7 @@ UGoapPlanner::UGoapPlanner()
 
 void UGoapPlanner::FindPlan(ARivenBaseAIController * agent)
 {
+	plan.Empty();
 	m_open.clear();
 	m_closed.clear();
 	// TODO: Early out if _current == _desired,
@@ -39,6 +40,7 @@ void UGoapPlanner::FindPlan(ARivenBaseAIController * agent)
 		{
 			//failed
 			GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Red, TEXT("plan not found"));
+
 
 			return;
 		}
