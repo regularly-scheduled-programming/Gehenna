@@ -6,6 +6,7 @@
 #include "UObject/NoExportTypes.h"
 #include "WORLD_PROP_KEYS.h"
 #include "RivenBaseClass.h"
+#include "RivenBaseAIController.h"
 
 #include "Action.generated.h"
 /**
@@ -16,13 +17,13 @@ class GEHENNA_API UAction : public UDataAsset
 {
 	GENERATED_BODY()
 public:
-
+	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "condition", meta = (ToolTip = "list of condition"))
 		TMap<WORLD_PROP_KEY, bool> PreConditions;
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "condition", meta = (ToolTip = "list of postcondition"))
 		TMap<WORLD_PROP_KEY, bool> PostConditions;
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category = "Condition")
-		bool ContextPreConditions();
+		bool ContextPreConditions(ARivenBaseAIController * agent);
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "GOAP", meta = (ToolTip = "baseCost"))
 	int Cost;
@@ -34,8 +35,16 @@ public:
 	ARivenBaseClass * Agent;*/
 
 	UFUNCTION( BlueprintCallable, BlueprintImplementableEvent, Category = "GOAP")
-	void BeginAction(ARivenBaseClass * Agent);
+	void BeginAction(ARivenBaseAIController * Agent);
+	
 
 	UFUNCTION(BlueprintCallable, BlueprintImplementableEvent, Category = "GOAP")
-	void TickAction(ARivenBaseClass * Agent);
+	void TickAction(ARivenBaseAIController * Agent, float DeltaSeconds);
+	
+	UFUNCTION(BlueprintCallable, BlueprintImplementableEvent, Category = "GOAP")
+	void EndAction(ARivenBaseAIController * Agent);
+
+	UFUNCTION(BlueprintCallable, BlueprintImplementableEvent, Category = "GOAP")
+	void InterruptAction(ARivenBaseAIController * Agent);
+
 };
