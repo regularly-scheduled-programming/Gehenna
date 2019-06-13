@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "InventoryPrototype.h"
 #include "CraftingItemInfo.h"
+#include "Recipe.h"
 #include "CraftingPrototype.generated.h"
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FUpdateCraftingInventoryDelegate, const TArray<FMyItemInfo>&, CraftingInventoryItems);
@@ -18,17 +19,20 @@ class GEHENNA_API UCraftingPrototype : public UInventoryPrototype
 	GENERATED_BODY()
 	
 public:
-	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "PickUp")
+	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "Crafting")
 		bool Craft(int32 a, int32 b);
 
-	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "PickUp")
+	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "Crafting")
 		bool Craft3(int32 a, int32 b, int32 c);
 
-	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "PickUp")
+	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "Crafting")
 		bool Craft3byID(int32 a, int32 b, int32 c);
 
 	UFUNCTION(BlueprintCallable, Category = "ShowItems")
 		void UpdateCraftingInventory();
+
+	UFUNCTION(BlueprintCallable, Category = "Crafting", meta = (ToolTip = "ignores Proprty D for now"))
+		float checkRecipePerc(FMyRecipe recipe, TArray<FMyCraftingItemInfo> items);
 
 	UPROPERTY(BlueprintAssignable, Category = "ShowItems")
 		FUpdateCraftingInventoryDelegate OnUpdateCraftingInventory;
@@ -52,4 +56,6 @@ protected:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	TArray<FMyCraftingItemInfo> CraftingMaterials;
+
+	int32 getValidAmount(int32 amount, int32 required);
 };

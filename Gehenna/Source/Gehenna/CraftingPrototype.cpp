@@ -16,6 +16,52 @@ void UCraftingPrototype::UpdateCraftingInventory()
 	GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Blue, TEXT("crafting inventory updated"));
 }
 
+float UCraftingPrototype::checkRecipePerc(FMyRecipe recipe, TArray<FMyCraftingItemInfo> items)
+{
+	int32 totalA = 0;
+	int32 totalB = 0;
+	int32 totalC = 0;
+	int32 totalD = 0;
+
+	for (size_t i = 0; i < items.Num(); i++)
+	{
+		if (items[i].ATrait)
+			totalA++;
+
+		if (items[i].BTrait)
+			totalB++;
+
+		if (items[i].CTrait)
+			totalC++;
+
+		//if (items[i].DTrait)	ADD THIS LATER FOR ESSENCE.
+		//	totalD++;
+	}
+
+	int32 totalRequired = recipe.requiredAprop + recipe.requiredBprop 
+		+ recipe.requiredCprop + recipe.requiredDprop;
+
+	int32 totalValid = getValidAmount(totalA, recipe.requiredAprop) + getValidAmount(totalB, recipe.requiredBprop)
+		+ getValidAmount(totalC, recipe.requiredCprop); // ADD D PROPERTY LATER
+
+	return ((float)totalValid) / ((float)totalRequired);
+}
+
+int32 UCraftingPrototype::getValidAmount(int32 amount, int32 required)
+{
+	if (required <= 0)
+	{
+		return 0;
+	}
+	else if (amount >= required)
+	{
+		return required;
+	}
+
+
+	return amount;
+}
+
 void UCraftingPrototype::AddToCraftingInventory(FMyCraftingItemInfo Item)
 {
 	int temp = SearchCraftingInventoryById(Item.ItemID);
