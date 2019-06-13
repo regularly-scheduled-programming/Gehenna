@@ -4,9 +4,11 @@
 //#include "BaseMother.h"
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
+#include "ItemPrototype.h"
+#include "ItemInfo.h"
 #include "InventoryPrototype.generated.h"
 
-DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FUpdateInventoryDelegate, const TArray<AItemPrototype*>&, InventoryItems);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FUpdateInventoryDelegate, const TArray<FMyItemInfo>&, InventoryItems);
 
 
 UCLASS(Blueprintable, meta = (BlueprintSpawnableComponent))
@@ -17,7 +19,9 @@ class GEHENNA_API UInventoryPrototype : public UActorComponent
 public:	
 	// Sets default values for this component's properties
 	UInventoryPrototype();
-	TArray<AItemPrototype*> Inventory;
+	//TArray<AItemPrototype*> Inventory;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	TArray<FMyItemInfo> Inventory;
 
 protected:
 	// Called when the game starts
@@ -30,11 +34,23 @@ protected:
 	void EndPickUp();
 
 
+
+
 	
 
 public:	
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
+
+	UFUNCTION(BlueprintCallable, Category = "PickUp")
+	void AddToInventory(FMyItemInfo Item);
+
+	UFUNCTION(BlueprintCallable, Category = "PickUp")
+		bool RemoveFromInventory(int32 ItemID);
+
+	UFUNCTION(BlueprintCallable, Category = "PickUp", meta = (ToolTip = "returns -1 if NOT found"))
+		int32 SearchInventoryById(int32 idNum);
+
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		 int InventoryCapacity = 0;
@@ -44,6 +60,9 @@ public:
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		bool  bIsPickingUp = false;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		bool  bIsWithinRange = false;
 
 	UFUNCTION(BlueprintCallable, Category = "ShowItems")
 		void UpdateInventory();
