@@ -9,7 +9,7 @@
 AItemPrototype::AItemPrototype()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
-	PrimaryActorTick.bCanEverTick = true;
+	/*PrimaryActorTick.bCanEverTick = true;
 	
 	TBox = CreateDefaultSubobject<UBoxComponent>(TEXT("BOX"));
 	TBox->SetGenerateOverlapEvents(true);
@@ -20,7 +20,7 @@ AItemPrototype::AItemPrototype()
 
 	SM_TBox = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Box Mesh"));	
 	SM_TBox->AttachTo(RootComponent);
-
+*/
 
 }
 
