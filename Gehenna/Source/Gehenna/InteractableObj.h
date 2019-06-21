@@ -60,6 +60,8 @@ public:
 		float InputInterval = 0.0f;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input")
 		bool FailImpossible = false;
+	UPROPERTY(BlueprintReadWrite, Category = "Input")
+		int m_currentInputIndex = 0;
 
 protected:
 	EInputDir GetStickDirection(float x, float y, EInputDir favoredDir = EInputDir::VE_Center);
@@ -67,7 +69,7 @@ protected:
 
 private:
 	bool m_interactable = false;
-	int m_currentInputIndex = 0;
+	
 	float m_inputTimer = 0.0f;
 	EInputDir m_PreviousInput = EInputDir::VE_Center;
 	EInputDir m_CurrentInput = EInputDir::VE_Center;
