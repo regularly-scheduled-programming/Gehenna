@@ -25,6 +25,10 @@ public:
 	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "BabyActions")
 		bool SilenceIdle();
 	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "BabyActions")
+		bool GrumpyIdle();
+	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "BabyActions")
+		bool NoiseIdle();
+	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "BabyActions")
 		bool CoolIdle();
 	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "BabyActions")
 		bool Laugh();

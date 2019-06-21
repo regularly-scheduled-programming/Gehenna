@@ -33,7 +33,6 @@ enum class EBabyActedUponStates : uint8
 	VE_Entertained UMETA(DisplayName = "Entertained"),
 	VE_Shushed UMETA(DisplayName = "Shushed"),
 	VE_Fed UMETA(DisplayName = "Fed"),
-	VE_Calmed UMETA(DisplayName = "Calmed"),
 	VE_SungLullaby UMETA(DisplayName = "Sung Lullaby"),
 	VE_ShownAffection UMETA(DisplayName = "Shown Affection"),
 };
@@ -64,6 +63,12 @@ public:
 	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "BabyActions")
 		bool SilenceIdle();
 	virtual bool SilenceIdle_Implementation() override;
+	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "BabyActions")
+		bool GrumpyIdle();
+	virtual bool GrumpyIdle_Implementation() override;
+	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "BabyActions")
+		bool NoiseIdle();
+	virtual bool NoiseIdle_Implementation() override;
 	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "BabyActions")
 		bool CoolIdle();
 	virtual bool CoolIdle_Implementation() override;
@@ -102,9 +107,6 @@ public:
 		bool Fed();
 	virtual bool Fed_Implementation() override;
 	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "BabyInputActions")
-		bool Calmed();
-	virtual bool Calmed_Implementation() override;
-	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "BabyInputActions")
 		bool SungLullaby();
 	virtual bool SungLullaby_Implementation() override;
 	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "BabyInputActions")
@@ -140,6 +142,18 @@ public:
 		int fatigueThreshold = 40;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "BabyActionModifiers")
 		int maxFullness = 100;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "BabyActionModifiers")
+		int affectionChangeAmount = 5;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "BabyActionModifiers")
+		int entertainChangeAmount = 10;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "BabyActionModifiers")
+		int sleepChangeAmount = 50;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "BabyActionModifiers")
+		int barfChangeAmount = -50;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "BabyActionModifiers")
+		int feedChangeRate = 5;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "BabyActionModifiers")
+		int shushChangeRate = -5;
 
 protected:
 	float timer;

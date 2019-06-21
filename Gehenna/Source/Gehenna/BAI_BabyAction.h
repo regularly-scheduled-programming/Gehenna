@@ -17,6 +17,8 @@ UENUM(BlueprintType)
 enum class EBabyActions : uint8
 {
 	VE_Silence UMETA(DisplayName = "Silence / Idle"),
+	VE_Grumpy UMETA(DisplayName = "Grumpy / Idle"),
+	VE_Noise UMETA(DisplayName = "Noise / Idle"),
 	VE_Cool UMETA(DisplayName = "Cool / Idle"),
 	VE_Laugh UMETA(DisplayName = "Laugh"),
 	VE_Cry UMETA(DisplayName = "Cry Sequence"),
