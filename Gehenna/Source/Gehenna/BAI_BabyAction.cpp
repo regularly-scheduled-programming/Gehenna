@@ -24,6 +24,12 @@ EBTNodeResult::Type UBAI_BabyAction::ExecuteTask(UBehaviorTreeComponent& OwnerCo
 		case EBabyActions::VE_Silence:
 			BabyAction->Execute_SilenceIdle(Baby);
 			break;
+		case EBabyActions::VE_Grumpy:
+			BabyAction->Execute_GrumpyIdle(Baby);
+			break;
+		case EBabyActions::VE_Noise:
+			BabyAction->Execute_NoiseIdle(Baby);
+			break;
 		case EBabyActions::VE_Cool:
 			BabyAction->Execute_CoolIdle(Baby);
 			break;
@@ -74,10 +80,24 @@ void UBAI_BabyAction::ActionInProgress(UBehaviorTreeComponent& OwnerComp, uint8*
 	default:
 	case EBabyActions::VE_Silence:
 		break;
+	case EBabyActions::VE_Grumpy:
+		if (Baby->actedUponState == EBabyActedUponStates::VE_Shushed)
+		{
+			FinishLatentTask(OwnerComp, EBTNodeResult::Succeeded);
+		}
+		break;
+		break;
+	case EBabyActions::VE_Noise:
+		if (Baby->actedUponState == EBabyActedUponStates::VE_Shushed)
+		{
+			FinishLatentTask(OwnerComp, EBTNodeResult::Succeeded);
+		}
+		break;
+		break;
 	case EBabyActions::VE_Cool:
 		if (Baby->actedUponState == EBabyActedUponStates::VE_Shushed)
 		{
-			FinishLatentTask(OwnerComp, EBTNodeResult::Failed);
+			FinishLatentTask(OwnerComp, EBTNodeResult::Succeeded);
 		}
 		break;
 	case EBabyActions::VE_Laugh:
@@ -85,19 +105,18 @@ void UBAI_BabyAction::ActionInProgress(UBehaviorTreeComponent& OwnerComp, uint8*
 	case EBabyActions::VE_Cry:
 		if (telegraphAction)
 		{
-			if (Baby->actedUponState == EBabyActedUponStates::VE_Calmed)
+			if (Baby->actedUponState == EBabyActedUponStates::VE_ShownAffection)
 			{
 				FinishLatentTask(OwnerComp, EBTNodeResult::Failed);
 			}
 		}
 		break;
 	case EBabyActions::VE_Sleep:
-		Baby->ActionStatChange(EBabyStats::VE_Energy, 10, false);
 		break;
 	case EBabyActions::VE_Barf:
 		if (telegraphAction)
 		{
-			if (Baby->actedUponState != EBabyActedUponStates::VE_Fed)
+			if (Baby->actedUponState == EBabyActedUponStates::VE_None)
 			{
 				FinishLatentTask(OwnerComp, EBTNodeResult::Failed);
 			}
@@ -112,6 +131,12 @@ void UBAI_BabyAction::ActionComplete(UBehaviorTreeComponent& OwnerComp, uint8* N
 	{
 	default:
 	case EBabyActions::VE_Silence:
+		FinishLatentTask(OwnerComp, EBTNodeResult::Succeeded);
+		break;
+	case EBabyActions::VE_Grumpy:
+		FinishLatentTask(OwnerComp, EBTNodeResult::Succeeded);
+		break;
+	case EBabyActions::VE_Noise:
 		FinishLatentTask(OwnerComp, EBTNodeResult::Succeeded);
 		break;
 	case EBabyActions::VE_Cool:
@@ -133,7 +158,7 @@ void UBAI_BabyAction::ActionComplete(UBehaviorTreeComponent& OwnerComp, uint8* N
 		}
 		break;
 	case EBabyActions::VE_Sleep:
-		Baby->ActionStatChange(EBabyStats::VE_None, 0, false);
+		Baby->ActionStatChange(EBabyStats::VE_Energy, Baby->sleepChangeAmount, false);
 		FinishLatentTask(OwnerComp, EBTNodeResult::Succeeded);
 		break;
 	case EBabyActions::VE_Barf:
@@ -142,7 +167,7 @@ void UBAI_BabyAction::ActionComplete(UBehaviorTreeComponent& OwnerComp, uint8* N
 			telegraphAction = false;
 			timer = 0.0f;
 			Baby->Execute_Barf(Baby);
-			Baby->ActionStatChange(EBabyStats::VE_Happiness, -30, true);
+			Baby->ActionStatChange(EBabyStats::VE_Happiness, Baby->barfChangeAmount, true);
 		}
 		else
 		{

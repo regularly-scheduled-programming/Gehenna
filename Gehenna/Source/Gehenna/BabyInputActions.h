@@ -33,8 +33,6 @@ public:
 	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "BabyInputActions")
 		bool Fed();
 	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "BabyInputActions")
-		bool Calmed();
-	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "BabyInputActions")
 		bool SungLullaby();
 	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "BabyInputActions")
 		bool ShownAffection();

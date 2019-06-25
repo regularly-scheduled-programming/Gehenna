@@ -34,7 +34,7 @@ void ABaby::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 
 int ABaby::HappinessCap_Implementation()
 {
-	return 100;
+	return (energy * 6 + fullness * 4) / 10;
 }
 
 void ABaby::StatChanges(float DeltaTime)
@@ -58,7 +58,7 @@ void ABaby::StatChanges(float DeltaTime)
 		case EBabyStats::VE_Fullness:
 			happiness -= happinessDecreaseRate;
 			fullness += statChangeValue;
-			energy += statChangeValue;
+			energy -= energyDecreaseRate;
 			break;
 		case EBabyStats::VE_Energy:
 			happiness -= happinessDecreaseRate;
@@ -72,6 +72,7 @@ void ABaby::StatChanges(float DeltaTime)
 
 	//Set min max values
 	happiness = FMath::Min<int>(happiness, HappinessCap());
+	happiness = FMath::Clamp<int>(happiness, 0, 100);
 	fullness = FMath::Max<int>(fullness, 0);
 	energy = FMath::Max<int>(energy, 0);
 
@@ -84,6 +85,16 @@ void ABaby::StatChanges(float DeltaTime)
 }
 
 bool ABaby::SilenceIdle_Implementation()
+{
+	return true;
+}
+
+bool ABaby::GrumpyIdle_Implementation()
+{
+	return true;
+}
+
+bool ABaby::NoiseIdle_Implementation()
 {
 	return true;
 }
@@ -142,7 +153,7 @@ bool ABaby::HeldTight_Implementation()
 bool ABaby::Entertained_Implementation()
 {
 	actedUponState = EBabyActedUponStates::VE_Entertained;
-	ActionStatChange(EBabyStats::VE_Happiness, 5, false);
+	ActionStatChange(EBabyStats::VE_Happiness, entertainChangeAmount, true);
 	DebugLine("Entertained");
 	return true;
 }
@@ -150,7 +161,7 @@ bool ABaby::Entertained_Implementation()
 bool ABaby::Shushed_Implementation()
 {
 	actedUponState = EBabyActedUponStates::VE_Shushed;
-	ActionStatChange(EBabyStats::VE_Happiness, -20, true);
+	ActionStatChange(EBabyStats::VE_Happiness, shushChangeRate, false);
 	DebugLine("Shushed");
 	return true;
 }
@@ -158,15 +169,8 @@ bool ABaby::Shushed_Implementation()
 bool ABaby::Fed_Implementation()
 {
 	actedUponState = EBabyActedUponStates::VE_Fed;
-	ActionStatChange(EBabyStats::VE_Fullness, 5, false);
+	ActionStatChange(EBabyStats::VE_Fullness, feedChangeRate, false);
 	DebugLine("Fed");
-	return true;
-}
-
-bool ABaby::Calmed_Implementation()
-{
-	actedUponState = EBabyActedUponStates::VE_Calmed;
-	DebugLine("Calmed");
 	return true;
 }
 
@@ -180,7 +184,7 @@ bool ABaby::SungLullaby_Implementation()
 bool ABaby::ShownAffection_Implementation()
 {
 	actedUponState = EBabyActedUponStates::VE_ShownAffection;
-	ActionStatChange(EBabyStats::VE_Happiness, 2, false);
+	ActionStatChange(EBabyStats::VE_Happiness, affectionChangeAmount, true);
 	DebugLine("Shown Affection");
 	return true;
 }
