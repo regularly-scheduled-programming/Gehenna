@@ -36,25 +36,40 @@ void AMainPlayerTest::SetupPlayerInputComponent(UInputComponent* PlayerInputComp
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
-	auto pWorld = GetWorld();
-	if (pWorld)
-	{
-		APawnPlayerController* MyController = Cast<APawnPlayerController>(pWorld->GetFirstPlayerController());
-		if (MyController)
+	if (!MyController) {
+		auto pWorld = GetWorld();
+		if (pWorld)
 		{
-			//Hook up every-frame handling for our four axes
-			PlayerInputComponent->BindAxis("MoveForward/Backwards", MyController, &APawnPlayerController::MoveForward);
-			PlayerInputComponent->BindAxis("MoveRight/Left", MyController, &APawnPlayerController::MoveRight);
-			PlayerInputComponent->BindAxis("LookUp/Down", MyController, &APawnPlayerController::PitchCamera);
-			PlayerInputComponent->BindAxis("LookLeft/Right", MyController, &APawnPlayerController::YawCamera);
+			MyController = Cast<APawnPlayerController>(pWorld->GetFirstPlayerController());
 		}
 	}
 
+	//Hook up every-frame handling for our four axes
+	PlayerInputComponent->BindAxis("LookUp/Down", MyController, &APawnPlayerController::PitchCamera);
+	PlayerInputComponent->BindAxis("LookLeft/Right", MyController, &APawnPlayerController::YawCamera);
+	PlayerInputComponent->BindAxis("MoveForward/Backwards", this, &AMainPlayerTest::MoveForward);
+	PlayerInputComponent->BindAxis("MoveRight/Left", this, &AMainPlayerTest::MoveRight);
+}
+
+void AMainPlayerTest::MoveForward(float AxisValue)
+{
+	MovementInput.X = FMath::Clamp<float>(AxisValue, -1.0f, 1.0f);
+	// Find out which way is "forward" and record that the player wants to move that way.
+	FVector Direction = FRotationMatrix(MyController->GetControlRotation()).GetScaledAxis(EAxis::X);
+	AddMovementInput(Direction, MovementInput.X);
+}
+
+void AMainPlayerTest::MoveRight(float AxisValue)
+{
+	MovementInput.Y = FMath::Clamp<float>(AxisValue, -1.0f, 1.0f);
+	// Find out which way is "right" and record that the player wants to move that way.
+	FVector Direction = FRotationMatrix(MyController->GetControlRotation()).GetScaledAxis(EAxis::Y);
+	AddMovementInput(Direction, MovementInput.Y);
 }
 
 void AMainPlayerTest::PreUpdateCamera(float DeltaTime)
 {
-	FRotator ControllerRotation = GetControlRotation();
+	FRotator ControllerRotation = MyController->GetControlRotation();;
 	FRotator NewRotation = ControllerRotation;
 
 	// Get current controller rotation and process it to match the Character

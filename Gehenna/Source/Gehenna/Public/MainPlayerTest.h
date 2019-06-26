@@ -26,6 +26,10 @@ public:
 	float CameraProcessPitch(float Input);
 	float CameraProcessYaw(float Input);
 
+	void MoveForward(float AxisValue);
+	void MoveRight(float AxisValue);
+	FVector2D MovementInput;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -48,6 +52,6 @@ public:
 	USpringArmComponent* OurCameraSpringArm;
 	UCameraComponent* OurCamera;
 	UStaticMeshComponent* CharacterMeshComponent;
-
+	APawnPlayerController* MyController;
 
 };

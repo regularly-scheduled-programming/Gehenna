@@ -17,22 +17,6 @@ void APawnPlayerController::UpdateRotation(float DeltaTime)
 	Super::UpdateRotation(DeltaTime);
 }
 
-void APawnPlayerController::MoveForward(float AxisValue)
-{
-	MovementInput.X = FMath::Clamp<float>(AxisValue, -1.0f, 1.0f);
-	//// Find out which way is "forward" and record that the player wants to move that way.
-	//FVector Direction = FRotationMatrix(GetControlRotation()).GetScaledAxis(EAxis::X);
-	//AddMovementInput(Direction, MovementInput.X);
-}
-
-void APawnPlayerController::MoveRight(float AxisValue)
-{
-	MovementInput.Y = FMath::Clamp<float>(AxisValue, -1.0f, 1.0f);
-	//// Find out which way is "right" and record that the player wants to move that way.
-	//FVector Direction = FRotationMatrix(GetControlRotation()).GetScaledAxis(EAxis::Y);
-	//AddMovementInput(Direction, MovementInput.Y);
-}
-
 void APawnPlayerController::PitchCamera(float AxisValue)
 {
 	CameraInput.Y = AxisValue;

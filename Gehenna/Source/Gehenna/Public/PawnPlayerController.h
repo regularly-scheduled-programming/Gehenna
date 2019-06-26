@@ -17,15 +17,12 @@ class GEHENNA_API APawnPlayerController : public APlayerController
 public:
 	void UpdateRotation(float DeltaTime) override;
 
-	void MoveForward(float AxisValue);
-	void MoveRight(float AxisValue);
 	void PitchCamera(float AxisValue);
 	void YawCamera(float AxisValue);
 
 protected:
-	float ViewYawSpeed = 50.0f;
-	float ViewPitchSpeed = 50.0f;
+	float ViewYawSpeed = 100.0f;
+	float ViewPitchSpeed = 100.0f;
 
-	FVector2D MovementInput;
 	FVector2D CameraInput;
 };
