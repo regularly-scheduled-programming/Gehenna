@@ -45,10 +45,51 @@ void AMainPlayerTest::SetupPlayerInputComponent(UInputComponent* PlayerInputComp
 	}
 
 	//Hook up every-frame handling for our four axes
-	PlayerInputComponent->BindAxis("LookUp/Down", MyController, &APawnPlayerController::PitchCamera);
-	PlayerInputComponent->BindAxis("LookLeft/Right", MyController, &APawnPlayerController::YawCamera);
+	PlayerInputComponent->BindAxis("LookUp/Down", this, &AMainPlayerTest::PitchCamera);
+	PlayerInputComponent->BindAxis("LookLeft/Right", this, &AMainPlayerTest::YawCamera);
 	PlayerInputComponent->BindAxis("MoveForward/Backwards", this, &AMainPlayerTest::MoveForward);
 	PlayerInputComponent->BindAxis("MoveRight/Left", this, &AMainPlayerTest::MoveRight);
+}
+
+void AMainPlayerTest::PitchCamera(float AxisValue)
+{
+	MyController->CameraInput.Y = AxisValue;
+
+	FRotator tempDelta = MyController->GetControlRotation() - GetActorRotation();
+	tempDelta.Normalize();
+	Pitch = tempDelta.Pitch;
+}
+
+void AMainPlayerTest::YawCamera(float AxisValue)
+{
+	MyController->CameraInput.X = AxisValue;
+
+	if (GetVelocity().IsNearlyZero(0.1f))
+	{
+		if (AxisValue > 0.3f) 
+		{
+			TurnRight = true;
+			TurnLeft = false;
+		}
+		else 
+		{
+			TurnRight = false;
+		}
+
+		if (AxisValue < -0.3) 
+		{
+			TurnLeft = true;
+		}
+		else 
+		{
+			TurnLeft = false;
+		}
+	}
+	else 
+	{
+		TurnRight = false;
+		TurnLeft = false;
+	}
 }
 
 void AMainPlayerTest::MoveForward(float AxisValue)

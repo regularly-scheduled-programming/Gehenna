@@ -26,9 +26,19 @@ public:
 	float CameraProcessPitch(float Input);
 	float CameraProcessYaw(float Input);
 
+	void PitchCamera(float AxisValue);
+	void YawCamera(float AxisValue);
+
 	void MoveForward(float AxisValue);
 	void MoveRight(float AxisValue);
 	FVector2D MovementInput;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Player)
+	float Pitch = 0.0f;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Player)
+	bool TurnRight = false;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Player)
+	bool TurnLeft = false;
 
 protected:
 	// Called when the game starts or when spawned

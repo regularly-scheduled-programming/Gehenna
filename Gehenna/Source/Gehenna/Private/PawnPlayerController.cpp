@@ -16,13 +16,3 @@ void APawnPlayerController::UpdateRotation(float DeltaTime)
 
 	Super::UpdateRotation(DeltaTime);
 }
-
-void APawnPlayerController::PitchCamera(float AxisValue)
-{
-	CameraInput.Y = AxisValue;
-}
-
-void APawnPlayerController::YawCamera(float AxisValue)
-{
-	CameraInput.X = AxisValue;
-}
