@@ -13,5 +13,11 @@ struct GEHENNA_API FMyItemInfo
 		FString ItemName = FString(TEXT(""));
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PickUp")
+		int32 ItemID = 0;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PickUp")
 		UTexture2D* Image;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PickUp")
+		int32 Quantity = 1;
 };
