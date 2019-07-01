@@ -81,3 +81,10 @@ Gehena/Saved/
 Gehenna/Binaries/
 Gehenna/Saved/
 Gehenna/Intermediate/
+
+# Wwise files
+.cache/*
+*.akd
+*.prof
+*.wsettings
+*.validationcache
