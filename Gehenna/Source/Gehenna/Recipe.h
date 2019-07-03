@@ -10,16 +10,16 @@ struct GEHENNA_API FMyRecipe : public FTableRowBase
 	GENERATED_BODY()
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Crafting")
-		int32 requiredAprop = 0;
+		int32 Doll = 0;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Crafting")
-		int32 requiredBprop = 0;
+		int32 Sap = 0;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Crafting")
-		int32 requiredCprop = 0;
+		int32 Herb = 0;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Crafting")
-		int32 requiredDprop = 0;
+		int32 Aura = 0;
 
 
 };

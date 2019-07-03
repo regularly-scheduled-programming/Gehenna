@@ -34,15 +34,15 @@ float UCraftingPrototype::checkRecipePerc(FMyRecipe recipe, TArray<FMyCraftingIt
 		if (items[i].CTrait)
 			totalC++;
 
-		//if (items[i].DTrait)	ADD THIS LATER FOR ESSENCE.
-		//	totalD++;
+		if (items[i].DTrait)	//ADD THIS LATER FOR ESSENCE.
+			totalD++;
 	}
 
-	int32 totalRequired = recipe.requiredAprop + recipe.requiredBprop 
-		+ recipe.requiredCprop + recipe.requiredDprop;
+	int32 totalRequired = recipe.Doll + recipe.Sap 
+		+ recipe.Herb + recipe.Aura;
 
-	int32 totalValid = getValidAmount(totalA, recipe.requiredAprop) + getValidAmount(totalB, recipe.requiredBprop)
-		+ getValidAmount(totalC, recipe.requiredCprop); // ADD D PROPERTY LATER
+	int32 totalValid = getValidAmount(totalA, recipe.Doll) + getValidAmount(totalB, recipe.Sap)
+		+ getValidAmount(totalC, recipe.Herb) + getValidAmount(totalC, recipe.Aura); // ADD D PROPERTY LATER
 
 	return ((float)totalValid) / ((float)totalRequired);
 }
