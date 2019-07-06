@@ -99,6 +99,7 @@ int32 UCraftingPrototype::SearchCraftingInventoryById(int32 idNum)
 {
 	for (size_t i = 0; i < CraftingMaterials.Num(); i++)
 	{
+		GEngine->AddOnScreenDebugMessage(-1, 15, FColor::Blue, TEXT("Checking array index: ") + i);
 		if (CraftingMaterials[i].ItemID == idNum)
 		{
 			return i;
