@@ -15,8 +15,8 @@ void AInteractableObj::BeginPlay()
 {
 	Super::BeginPlay();
 
-	InputComponent->BindAxis(TEXT("MoveRight/Left"));
-	InputComponent->BindAxis(TEXT("MoveForward/Backwards"));
+	InputComponent->BindAxis(TEXT("GestureXAxis"));
+	InputComponent->BindAxis(TEXT("GestureYAxis"));
 	
 }
 
@@ -30,8 +30,8 @@ void AInteractableObj::Tick(float DeltaTime)
 		if (InputInterval > 0.0f)
 			m_inputTimer += DeltaTime;
 
-		float x = GetInputAxisValue(TEXT("MoveRight/Left"));
-		float y = GetInputAxisValue(TEXT("MoveForward/Backwards"));
+		float x = GetInputAxisValue(TEXT("GestureXAxis"));
+		float y = GetInputAxisValue(TEXT("GestureYAxis"));
 		m_CurrentInput = GetStickDirection(x, y);
 
 		if (m_CurrentInput != m_PreviousInput)

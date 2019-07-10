@@ -23,8 +23,14 @@ enum class WORLD_PROP_KEY : uint8
 	Is_In_Close_Range,
 	Is_In_Melee_Range,
 	New_Audio_Stimuli,
-	New_Visual_Stimuli
-
+	New_Visual_Stimuli, 
+	HealthCritical,
+	HasWeapon,
+	HasBaby,
+	AttackIncoming,
+	IsAtLocation,
+	IsBehindPlayer,
+	IsLookingAtTarget
 
 };
 
