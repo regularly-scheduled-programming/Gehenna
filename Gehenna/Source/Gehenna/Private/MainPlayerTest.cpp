@@ -28,7 +28,61 @@ void AMainPlayerTest::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	if (GetVelocity().IsNearlyZero(0.1f)) {
+		isMoving = false;
+	}
+	else
+	{
+		isMoving = true;
+	}
+
 	PreUpdateCamera(DeltaTime);
+
+	if (!isMoving) 
+	{
+		if (isTurning)
+		{
+			//If not moving then set yaw to match camera
+			InitialRotation.Yaw = GetActorRotation().Yaw;
+
+			//Convert to match actor rotation (-180 and 180 format)
+			if (MyController->GetControlRotation().Yaw >= 180.0f) 
+			{
+				DesiredRotation.Yaw = MyController->GetControlRotation().Yaw - 360.0f;
+			}
+			else 
+			{
+				DesiredRotation.Yaw = MyController->GetControlRotation().Yaw;
+			}
+			
+			//Lerping as long as we are lined up with the camera
+			if (!FMath::IsNearlyEqual(InitialRotation.Yaw, DesiredRotation.Yaw, 5.0f))
+			{
+				FRotator NewRotation = FMath::RInterpTo(InitialRotation, DesiredRotation, DeltaTime, 5.0f);
+				SetActorRotation(NewRotation);
+			}
+			else 
+			{
+				//Reset turning when we finish turning
+				isTurning = false;
+				TurnRight = false;
+				TurnLeft = false;
+			}
+		}
+	}
+	else 
+	{
+		//If Moving then make sure rotation matches camera
+		FRotator InitialRotation = GetActorRotation();
+		FRotator DesiredRotation = MyController->GetControlRotation();
+		if (InitialRotation != DesiredRotation)
+		{
+			FRotator NewRotation = FMath::RInterpTo(InitialRotation, DesiredRotation, DeltaTime, inPlaceTurnSpeed);
+			NewRotation.Pitch = 0.0f;
+			NewRotation.Roll = 0.0f;
+			SetActorRotation(NewRotation);
+		}
+	}
 }
 
 // Called to bind functionality to input
@@ -54,41 +108,26 @@ void AMainPlayerTest::SetupPlayerInputComponent(UInputComponent* PlayerInputComp
 void AMainPlayerTest::PitchCamera(float AxisValue)
 {
 	MyController->CameraInput.Y = AxisValue;
-
-	FRotator tempDelta = MyController->GetControlRotation() - GetActorRotation();
-	tempDelta.Normalize();
-	Pitch = tempDelta.Pitch;
 }
 
 void AMainPlayerTest::YawCamera(float AxisValue)
 {
 	MyController->CameraInput.X = AxisValue;
 
-	if (GetVelocity().IsNearlyZero(0.1f))
+	//If were not moving
+	if (!isMoving)
 	{
-		if (AxisValue > 0.3f) 
+		if (AxisValue > 2.0f || CameraLocalRotation.Yaw >= inPlaceTurnAngle)
 		{
+			isTurning = true;
 			TurnRight = true;
-			TurnLeft = false;
-		}
-		else 
-		{
-			TurnRight = false;
 		}
 
-		if (AxisValue < -0.3) 
+		if (AxisValue < -2.0 || CameraLocalRotation.Yaw <= -inPlaceTurnAngle)
 		{
+			isTurning = true;
 			TurnLeft = true;
 		}
-		else 
-		{
-			TurnLeft = false;
-		}
-	}
-	else 
-	{
-		TurnRight = false;
-		TurnLeft = false;
 	}
 }
 
@@ -110,7 +149,7 @@ void AMainPlayerTest::MoveRight(float AxisValue)
 
 void AMainPlayerTest::PreUpdateCamera(float DeltaTime)
 {
-	FRotator ControllerRotation = MyController->GetControlRotation();;
+	FRotator ControllerRotation = MyController->GetControlRotation();
 	FRotator NewRotation = ControllerRotation;
 
 	// Get current controller rotation and process it to match the Character

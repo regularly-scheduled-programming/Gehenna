@@ -33,12 +33,22 @@ public:
 	void MoveRight(float AxisValue);
 	FVector2D MovementInput;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Player)
-	float Pitch = 0.0f;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Player)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Animation)
+	float inPlaceTurnAngle = 70.0f;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Animation)
+	float inPlaceTurnSpeed = 5.0f;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Animation)
 	bool TurnRight = false;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Player)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Animation)
 	bool TurnLeft = false;
+
+	FRotator InitialRotation;
+	FRotator DesiredRotation;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Animation)
+	bool isMoving = false;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Animation)
+	bool isTurning = false;
 
 protected:
 	// Called when the game starts or when spawned
