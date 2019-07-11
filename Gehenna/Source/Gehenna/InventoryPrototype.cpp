@@ -61,11 +61,14 @@ bool UInventoryPrototype::RemoveFromInventory(int32 ItemID)
 		{
 			Inventory[i].Quantity--;
 			UpdateInventory();
+			GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Blue, TEXT("Item:  ") + Inventory[i].ItemName + TEXT(" decreased quantity."));
 		}
 		else
 		{
-			GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Blue, TEXT("Item:  ") + Inventory[i].ItemName + TEXT(" removed."));
-			Inventory.RemoveAt(i);
+			//GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Blue, TEXT("Item:  ") + Inventory[i].ItemName + TEXT(" removed."));
+			GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Blue, TEXT("Item:  ") + Inventory[i].ItemName + TEXT(" Reached. 0 Quantity. NOT REMOVED FROM INVENTORY!"));
+			Inventory[i].Quantity--;
+			//Inventory.RemoveAt(i);
 			UpdateInventory();
 			return true;
 		}
@@ -84,6 +87,7 @@ int32 UInventoryPrototype::SearchInventoryById(int32 idNum)
 {
 	for (size_t i = 0; i < Inventory.Num(); i++)
 	{
+		GEngine->AddOnScreenDebugMessage(-1, 25, FColor::Blue, FString::Printf(TEXT("Searching index: %i"),i));
 		if (Inventory[i].ItemID == idNum)
 		{
 			return i;

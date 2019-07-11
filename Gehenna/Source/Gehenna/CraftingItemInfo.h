@@ -20,5 +20,8 @@ struct GEHENNA_API FMyCraftingItemInfo : public FTableRowBase
 
 		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "CraftingPickUp")
 			bool CTrait = false;
+
+		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "CraftingPickUp")
+			bool DTrait = false;
 		
 };
