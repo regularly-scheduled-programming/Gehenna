@@ -22,17 +22,21 @@ public:
 	 * to consume the properties from the config class so it's better to follow the engine's
 	 * standards and workflows.
 	 */
-	struct FDigestedAquaProperties
+	struct FDigestedCustomSightProperties
 	{
-		float PhobiaRadius;
-		bool bDisplayDebugSphere;
+		float VisionOpenAngle;
+		float VisionCloseAngle;
+		float VisionDistance;
+		float VisionMaxWidthDistPercentage;
+		float VisionHeight;
+		bool bDisplayDebugShape;
 
-		FDigestedAquaProperties();
-		FDigestedAquaProperties(const UAiSenseConfig_LongRangeSight& SenseConfig);
+		FDigestedCustomSightProperties();
+		FDigestedCustomSightProperties(const UAiSenseConfig_LongRangeSight& SenseConfig);
 	};
 
 	/* Consumed properties from config */
-	TArray<FDigestedAquaProperties> DigestedProperties;
+	TArray<FDigestedCustomSightProperties> DigestedProperties;
 
 	UAiSense_LongRangeSight();
 

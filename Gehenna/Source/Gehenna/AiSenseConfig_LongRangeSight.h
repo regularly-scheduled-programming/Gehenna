@@ -20,13 +20,24 @@ public:
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Sense", NoClear, config)
 		TSubclassOf<UAiSense_LongRangeSight> Implementation;
 
-	/* The radius around the pawn that we're checking for "water resources" */
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Sense", config, meta = (UIMin = 0.0, ClampMin = 0.0, UIMax = 90.0, ClampMax = 90.0))
+		float VisionOpenAngle;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Sense", config, meta = (UIMin = 0.0, ClampMin = 0.0, UIMax = 90.0, ClampMax = 90.0))
+		float VisionCloseAngle;
+
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Sense", config, meta = (UIMin = 0.0, ClampMin = 0.0))
-		float PhobiaRadius;
+		float VisionDistance;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Sense", config, meta = (UIMin = 0.0, ClampMin = 0.0, UIMax = 1.0, ClampMax = 1.0))
+		float VisionMaxWidthDistPercentage;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Sense", config, meta = (UIMin = 0.0, ClampMin = 0.0))
+		float VisionHeight;
 
 	/* True if you want to display the debug sphere around the pawn */
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Sense", config)
-		bool bDisplayDebugSphere;
+		bool bDisplayDebugShape;
 
 	UAiSenseConfig_LongRangeSight(const FObjectInitializer& ObjectInitializer);
 
