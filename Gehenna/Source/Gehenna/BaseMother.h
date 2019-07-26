@@ -4,10 +4,11 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+#include "Perception/AISightTargetInterface.h"
 #include "BaseMother.generated.h"
 
 UCLASS()
-class GEHENNA_API ABaseMother : public ACharacter
+class GEHENNA_API ABaseMother : public ACharacter, public IAISightTargetInterface
 {
 	GENERATED_BODY()
 
@@ -26,4 +27,12 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+	//https://blog.gamedev.tv/ai-sight-perception-to-custom-points/ 
+	virtual bool CanBeSeenFrom(
+		const FVector& ObserverLocation,
+		FVector& OutSeenLocation,
+		int32& NumberOfLoSChecksPerformed,
+		float& OutSightStrength,
+		const AActor* IgnoreActor = NULL
+	) const;
 };

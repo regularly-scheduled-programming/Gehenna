@@ -39,7 +39,7 @@ void UGoapPlanner::FindPlan(ARivenBaseAIController * agent)
 		if (m_open.size() == 0) //no nodes left
 		{
 			//failed
-			GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Red, TEXT("plan not found"));
+			//GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Red, TEXT("plan not found"));
 
 
 			return;
@@ -50,7 +50,7 @@ void UGoapPlanner::FindPlan(ARivenBaseAIController * agent)
 		if(match)
 		{
 		//success
-			GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Green, TEXT("plan found"));
+			//GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Green, TEXT("plan found"));
 
 			reconstructPlan(&curr);
 			return;
@@ -229,12 +229,12 @@ bool UGoapPlanner::CheckPreConditions(TMap<WORLD_PROP_KEY,bool> worldState, TMap
 {
 	if (preConditions.Num() == 0)
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Orange, TEXT("yooo 1"));
+		GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Orange, TEXT("Preconditions are null"));
 		return false;
 	}
 	if (worldState.Num() == 0)
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Orange, TEXT("yoooo 2"));
+		GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Orange, TEXT("WorldState condition are null"));
 		return false;
 
 	}
