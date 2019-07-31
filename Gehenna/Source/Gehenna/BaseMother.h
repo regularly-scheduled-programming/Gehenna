@@ -35,4 +35,10 @@ public:
 		float& OutSightStrength,
 		const AActor* IgnoreActor = NULL
 	) const;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	TArray<TEnumAsByte<EObjectTypeQuery>> TraceObjectTypes;
+
+	//bool UWorld::LineTraceSingleByObjectType(struct FHitResult& OutHit, const FVector& Start, const FVector& End, const FCollisionObjectQueryParams& ObjectQueryParams, const FCollisionQueryParams& Params /* = FCollisionQueryParams::DefaultQueryParam */) const
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "pier")
+	bool PierMotherTrace(struct FHitResult& OutHit, const FVector& Start, const FVector& End, const AActor* IgnoreActor) const;
 };
