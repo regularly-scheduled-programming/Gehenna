@@ -48,34 +48,14 @@ bool ABaseMother::CanBeSeenFrom(const FVector& ObserverLocation, FVector& OutSee
 
 		const bool bHitSocket = GetWorld()->LineTraceSingleByObjectType(HitResult, ObserverLocation, socketLocation
 			, 
+			FCollisionObjectQueryParams(TraceObjectTypes)
 			
-			FCollisionObjectQueryParams(ECC_TO_BITFIELD(ECC_WorldStatic) | ECC_TO_BITFIELD(ECC_WorldDynamic))
 			
 			// << Changed this line
 			, FCollisionQueryParams(NAME_AILineOfSight, true, IgnoreActor));
 
 		NumberOfLoSChecksPerformed++;
 
-		//if (bHitSocket == false) 
-		//{
-		//	//GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Red, TEXT(" sockets seen"));
-
-		//}
-		//else 
-		//{
-
-		//	if ((HitResult.Actor.IsValid()) )
-		//	{
-		//		//GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Red, HitResult.Actor->GetName());
-
-		//	}
-		//	else
-		//	{
-		//		//GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Red, TEXT(" sockets blocked"));
-
-		//	}
-
-		//}
 
 		if (bHitSocket == false || (HitResult.Actor.IsValid() && HitResult.Actor->IsOwnedBy(this))) {
 			OutSeenLocation = socketLocation;
@@ -84,11 +64,11 @@ bool ABaseMother::CanBeSeenFrom(const FVector& ObserverLocation, FVector& OutSee
 			return true;
 		}
 	}
-
-	const bool bHit = GetWorld()->LineTraceSingleByObjectType(HitResult, ObserverLocation, GetActorLocation()
-		, FCollisionObjectQueryParams(ECC_TO_BITFIELD(ECC_WorldStatic) | ECC_TO_BITFIELD(ECC_WorldDynamic)) // << Changed this line
-		, FCollisionQueryParams(NAME_AILineOfSight, true, IgnoreActor));
-
+	//const bool bHit = GetWorld()->LineTraceSingleByObjectType(HitResult, ObserverLocation, GetActorLocation()
+	//	, FCollisionObjectQueryParams(TraceObjectTypes)
+	//	// << Changed this line
+	//	, FCollisionQueryParams(NAME_AILineOfSight, true, IgnoreActor));
+	const bool bHit = this->PierMotherTrace(HitResult, ObserverLocation, GetActorLocation(), IgnoreActor);
 	NumberOfLoSChecksPerformed++;
 
 	if (bHit == false || (HitResult.Actor.IsValid() && HitResult.Actor->IsOwnedBy(this)))
@@ -102,4 +82,5 @@ bool ABaseMother::CanBeSeenFrom(const FVector& ObserverLocation, FVector& OutSee
 	OutSightStrength = 0;
 	return false;
 }
+
 
