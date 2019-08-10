@@ -1,0 +1,779 @@
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Development\AkAudio\Definitions.AkAudio.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkAcousticPortal.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkAcousticPortal.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\GameFramework/Volume.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Volume.generated.h
+d:\gehenna\gehenna\plugins\wwise\source\akaudio\classes\OcclusionObstructionService/AkPortalOcclusionObstructionService.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Public\AkInclude.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Windows/AllowWindowsPlatformTypes.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Windows/WindowsHWrapper.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Windows/PreWindowsApi.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Windows/MinWindows.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\Windows.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\sdkddkver.h
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\excpt.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\windef.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\minwindef.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\winnt.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\kernelspecs.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\basetsd.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\guiddef.h
+c:\program files (x86)\windows kits\10\include\10.0.17763.0\shared\pshpack4.h
+c:\program files (x86)\windows kits\10\include\10.0.17763.0\shared\poppack.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\pshpack4.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\poppack.h
+c:\program files (x86)\windows kits\10\include\10.0.17763.0\shared\pshpack4.h
+c:\program files (x86)\windows kits\10\include\10.0.17763.0\shared\pshpack2.h
+c:\program files (x86)\windows kits\10\include\10.0.17763.0\shared\poppack.h
+c:\program files (x86)\windows kits\10\include\10.0.17763.0\shared\pshpack2.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\pshpack2.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\poppack.h
+c:\program files (x86)\windows kits\10\include\10.0.17763.0\shared\poppack.h
+c:\program files (x86)\windows kits\10\include\10.0.17763.0\shared\pshpack8.h
+c:\program files (x86)\windows kits\10\include\10.0.17763.0\shared\poppack.h
+c:\program files (x86)\windows kits\10\include\10.0.17763.0\shared\pshpack1.h
+c:\program files (x86)\windows kits\10\include\10.0.17763.0\shared\poppack.h
+c:\program files (x86)\windows kits\10\include\10.0.17763.0\shared\pshpack1.h
+c:\program files (x86)\windows kits\10\include\10.0.17763.0\shared\poppack.h
+c:\program files (x86)\windows kits\10\include\10.0.17763.0\shared\poppack.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\apiset.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\ktmtypes.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\winbase.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\apisetcconv.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\minwinbase.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\apiquery2.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\processenv.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\fileapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\debugapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\utilapiset.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\handleapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\errhandlingapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\fibersapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\namedpipeapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\profileapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\heapapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\ioapiset.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\synchapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\interlockedapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\processthreadsapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\sysinfoapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\memoryapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\enclaveapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\threadpoollegacyapiset.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\threadpoolapiset.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\jobapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\jobapi2.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\wow64apiset.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\libloaderapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\securitybaseapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\namespaceapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\systemtopologyapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\processtopologyapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\securityappcontainer.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\realtimeapiset.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\winerror.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\timezoneapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\wingdi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\pshpack1.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\poppack.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\pshpack2.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\poppack.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\pshpack4.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\poppack.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\pshpack4.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\poppack.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\winuser.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\pshpack2.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\poppack.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\tvout.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\winnls.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\datetimeapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\stringapiset.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\winnls.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\wincon.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\wincontypes.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\consoleapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\consoleapi2.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\consoleapi3.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\winver.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\verrsrc.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\winreg.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\reason.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\winnetwk.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\wnnc.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\stralign.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\imm.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\ime_cmodes.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Windows/PostWindowsApi.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Windows/AllowWindowsPlatformAtomics.h
+d:\gehenna\gehenna\plugins\wwise\source\akaudio\classes\AkUEFeatures.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/AkWwiseSDKVersion.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkSoundEngine.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkSoundEngineExport.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/AkPlatforms.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Platforms/Windows/AkTypes.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkTypes.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/IAkPlugin.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkCommonDefs.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkSpeakerConfig.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkSpeakerVolumes.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkPlatformFuncs.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Win32/AkPlatformFuncs.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkAssert.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt\math.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Platforms/Generic/AkSpeakerVolumes.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/IAkRTPCSubscriber.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/IAkPluginMemAlloc.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkMemoryMgr.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkFPUtilities.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkLock.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Win32/AkLock.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkMonitorError.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/IAkProcessorFeatures.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/IAkPlatformContext.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkMidiTypes.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkCallback.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt\math.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Platforms/Windows/AkWinSoundEngine.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Platforms/Windows/AkPlatformContext.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SpatialAudio/Common/AkSpatialAudio.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SpatialAudio/Common/AkSpatialAudioTypes.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkKeyArray.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkArray.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkObject.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkKeyDef.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkSet.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkString.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkFNVHash.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkHashList.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkReflectGameData.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/IBytes.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkModule.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/IAkStreamMgr.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkStreamMgrModule.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/MusicEngine/Common/AkMusicEngine.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Comm/AkCommunication.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundFrame/SF.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\wtypes.h
+c:\program files (x86)\windows kits\10\include\10.0.17763.0\shared\rpc.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\pshpack8.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\rpcdce.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\rpcdcep.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\rpcnsi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\rpcnterr.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\rpcasync.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\pshpack8.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\poppack.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\poppack.h
+c:\program files (x86)\windows kits\10\include\10.0.17763.0\shared\rpcndr.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\pshpack8.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\rpcnsip.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\rpcsal.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\poppack.h
+c:\program files (x86)\windows kits\10\include\10.0.17763.0\shared\wtypesbase.h
+c:\program files (x86)\windows kits\10\include\10.0.17763.0\shared\guiddef.h
+d:\gehenna\gehenna\plugins\wwise\thirdparty\include\ak\soundframe\SFObjects.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkQueryParameters.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Windows/HideWindowsPlatformTypes.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Windows/HideWindowsPlatformAtomics.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Public\AkAudioDevice.h
+d:\gehenna\gehenna\plugins\wwise\source\akaudio\classes\AkBankManager.h
+d:\gehenna\gehenna\plugins\wwise\source\akaudio\classes\AkGameplayTypes.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkGameplayTypes.generated.h
+d:\gehenna\gehenna\plugins\wwise\source\akaudio\classes\OcclusionObstructionService/AkOcclusionObstructionService.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkAcousticPortal.generated.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\Components/BrushComponent.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\BrushComponent.generated.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Public\EngineUtils.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\ProfilingDebugging/ProfilingHelpers.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\GameFramework/WorldSettings.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\GameFramework/DamageType.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\DamageType.generated.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\GameFramework/Info.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Info.generated.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\Sound/AudioVolume.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\AudioVolume.generated.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\CoreUObject\Public\UObject/ConstructorHelpers.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\WorldSettings.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkRoomComponent.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkRoomComponent.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkComponent.h
+d:\gehenna\gehenna\plugins\wwise\source\akaudio\classes\OcclusionObstructionService/AkComponentOcclusionObstructionService.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkComponent.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkAcousticTexture.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkAcousticTexture.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\Engine/GameEngine.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Slate\Public\Widgets/SViewport.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\SlateCore\Public\Input/HittestGrid.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime/MovieSceneCapture/Public/MovieSceneCaptureHandle.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameEngine.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkAcousticTexture.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkAmbientSound.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkAmbientSound.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkAmbientSound.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkAudioEvent.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkAudioEvent.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkAudioBank.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkAudioBank.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkAudioBank.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkAudioDevice.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkSettings.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkSettings.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Public\AkAudioModule.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkAuxBus.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkAuxBus.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkSpotReflector.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkSpotReflector.generated.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Public\EditorSupportDelegates.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Developer\Settings\Public\ISettingsModule.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Projects\Public\Interfaces/IPluginManager.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Projects\Public\PluginDescriptor.h
+c:\program files\epic games\ue_4.22\engine\source\runtime\projects\public\ModuleDescriptor.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Json\Public\Serialization/JsonWriter.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Json\Public\Serialization/JsonTypes.h
+c:\program files\epic games\ue_4.22\engine\source\runtime\projects\public\CustomBuildSteps.h
+c:\program files\epic games\ue_4.22\engine\source\runtime\projects\public\LocalizationDescriptor.h
+c:\program files\epic games\ue_4.22\engine\source\runtime\projects\public\PluginReferenceDescriptor.h
+d:\gehenna\gehenna\plugins\wwise\source\akaudio\private\AkComponentCallbackManager.h
+d:\gehenna\gehenna\plugins\wwise\source\akaudio\private\FilePackageIO/AkFilePackageLowLevelIO.h
+d:\gehenna\gehenna\plugins\wwise\source\akaudio\private\filepackageio\AkFilePackage.h
+d:\gehenna\gehenna\plugins\wwise\source\akaudio\private\filepackageio\AkFilePackageLUT.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkListBare.h
+d:\gehenna\gehenna\plugins\wwise\source\akaudio\private\filepackageio\AkFilePackageLowLevelIO.inl
+d:\gehenna\gehenna\plugins\wwise\source\akaudio\private\FilePackageIO/AkFilePackageLowLevelIO.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\InitializationSettings/AkInitializationSettings.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkInitializationSettings.generated.h
+d:\gehenna\gehenna\plugins\wwise\source\akaudio\private\AkUnrealIOHookDeferred.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkLateReverbComponent.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkLateReverbComponent.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkUnrealHelper.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkCallbackInfoPool.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Async/ParallelFor.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\GameFramework/PlayerController.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\GameFramework/OnlineReplStructs.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\CoreUObject\Public\UObject/CoreOnline.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Hash/CityHash.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\OnlineReplStructs.generated.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\GameFramework/PlayerMuteList.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\PlayerMuteList.generated.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\Camera/PlayerCameraManager.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\Camera/CameraShake.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CameraShake.generated.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\PlayerCameraManager.generated.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\Components/InputComponent.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\InputComponent.generated.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\GameFramework/ForceFeedbackEffect.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ForceFeedbackEffect.generated.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\ApplicationCore\Public\GenericPlatform/IInputInterface.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\PlayerController.generated.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Editor\UnrealEd\Public\LevelEditorViewport.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\Camera/CameraComponent.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CameraComponent.generated.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Editor\LevelEditor\Public\LevelEditor.h
+c:\program files\epic games\ue_4.22\engine\source\editor\leveleditor\public\ILevelEditor.h
+c:\program files\epic games\ue_4.22\engine\source\editor\leveleditor\public\ViewportTypeDefinition.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Editor\UnrealEd\Public\CameraController.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkVorbisDecoderFactory.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkSilenceSourceFactory.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkSineSourceFactory.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkToneSourceFactory.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkPeakLimiterFXFactory.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkMatrixReverbFXFactory.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkParametricEQFXFactory.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkDelayFXFactory.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkExpanderFXFactory.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkFlangerFXFactory.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkCompressorFXFactory.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkGainFXFactory.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkHarmonizerFXFactory.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkTimeStretchFXFactory.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkPitchShifterFXFactory.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkStereoDelayFXFactory.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkMeterFXFactory.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkGuitarDistortionFXFactory.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkTremoloFXFactory.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkRoomVerbFXFactory.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkSynthOneSourceFactory.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkRecorderFXFactory.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkOpusDecoderFactory.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkAudioEvent.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkAudioInputComponent.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkAudioInputComponent.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkAudioInputComponent.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkAudioInputManager.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkAudioInputManager.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkAudioInputSourceFactory.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkAudioInputPlugin.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkAudioModule.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkAudioStyle.h
+d:\gehenna\gehenna\plugins\wwise\source\akaudio\classes\WaapiPicker/WwiseTreeItem.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Public\AkWaapiClient.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\HAL/Runnable.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Json\Public\Serialization/JsonSerializer.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Json\Public\Serialization/JsonReader.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Json\Public\Dom/JsonValue.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Json\Public\Dom/JsonObject.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Json\Public\JsonGlobals.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/WwiseAuthoringAPI/waapi.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkAudioStyle.cpp
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\SlateCore\Public\Styling/SlateStyle.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\SlateCore\Public\Brushes/SlateBorderBrush.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\SlateCore\Public\Brushes/SlateBoxBrush.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\SlateCore\Public\Brushes/SlateColorBrush.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\SlateCore\Public\Brushes/SlateImageBrush.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\SlateCore\Public\Styling/SlateStyleRegistry.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkAuxBus.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkBankManager.cpp
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Async/Async.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\HAL/RunnableThread.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\HAL/PlatformAffinity.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkCallbackInfoPool.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkComponent.cpp
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\Components/BillboardComponent.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\BillboardComponent.generated.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Public\DrawDebugHelpers.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkComponentCallbackManager.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkCustomVersion.cpp
+d:\gehenna\gehenna\plugins\wwise\source\akaudio\private\AkCustomVersion.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkGameplayStatics.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkGameplayStatics.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkGameplayStatics.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkGameplayTypes.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkLateReverbComponent.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkReverbVolume.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkReverbVolume.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkReverbVolume.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkRoomComponent.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkSettings.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkSettingsPerUser.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkSettingsPerUser.generated.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Editor\UnrealEd\Classes\Settings/ProjectPackagingSettings.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UnrealEd\ProjectPackagingSettings.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\InitializationSettings/AkAndroidInitializationSettings.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkAndroidInitializationSettings.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\InitializationSettings/AkIOSInitializationSettings.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkIOSInitializationSettings.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\InitializationSettings/AkLinuxInitializationSettings.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkLinuxInitializationSettings.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\InitializationSettings/AkLuminInitializationSettings.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkLuminInitializationSettings.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\InitializationSettings/AkMacInitializationSettings.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkMacInitializationSettings.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\InitializationSettings/AkPS4InitializationSettings.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkPS4InitializationSettings.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\InitializationSettings/AkSwitchInitializationSettings.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkSwitchInitializationSettings.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\InitializationSettings/AkWindowsInitializationSettings.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkWindowsInitializationSettings.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\InitializationSettings/AkXBoxOneInitializationSettings.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkXBoxOneInitializationSettings.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkSettingsPerUser.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkSpatialAudioVolume.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkSpatialAudioVolume.h
+d:\gehenna\gehenna\plugins\wwise\source\akaudio\classes\AkSurfaceReflectorSetComponent.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\Components/TextRenderComponent.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\TextRenderComponent.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkSurfaceReflectorSetComponent.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkSpatialAudioVolume.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkSpotReflector.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkSurfaceReflectorSetComponent.cpp
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\Engine/Polys.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Polys.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkUnrealHelper.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkUnrealIOHookDeferred.cpp
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\HAL/PlatformFilemanager.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkWaapiBlueprints\AkWaapiCalls.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkWaapiBlueprints/AkWaapiCalls.h
+d:\gehenna\gehenna\plugins\wwise\source\akaudio\classes\akwaapiblueprints\AkWaapiUri.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Slate\Public\Widgets/Input/SSearchBox.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Misc/TextFilter.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Misc/TextFilterExpressionEvaluator.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Misc/ExpressionParser.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Misc/TextFilterUtils.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkWaapiUri.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkWaapiUtils.h
+d:\gehenna\gehenna\plugins\wwise\source\akaudio\classes\akwaapiblueprints\AkWaapiJsonManager.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkWaapiBlueprints/AkWaapiFieldNames.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkWaapiFieldNames.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkWaapiJsonManager.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkWaapiCalls.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkWaapiBlueprints/AkWaapiUriCustomization.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Editor\PropertyEditor\Public\IPropertyTypeCustomization.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Editor\PropertyEditor\Public\PropertyHandle.h
+c:\program files\epic games\ue_4.22\engine\source\editor\propertyeditor\public\PropertyEditorModule.h
+c:\program files\epic games\ue_4.22\engine\source\editor\propertyeditor\public\IDetailsView.h
+c:\program files\epic games\ue_4.22\engine\source\editor\propertyeditor\public\PropertyEditorDelegates.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkWaapiBlueprints/AkWaapiFieldNamesCustomization.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkWaapiBlueprints\AkWaapiFieldNames.cpp
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Misc/ScopedSlowTask.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkWaapiBlueprints\AkWaapiFieldNamesCustomization.cpp
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Editor\PropertyEditor\Public\DetailWidgetRow.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\UMG\Public\Components/SlateWrapperTypes.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\SlateWrapperTypes.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkWaapiBlueprints\AkWaapiJsonManager.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkWaapiBlueprints\AkWaapiUri.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkWaapiBlueprints\AkWaapiUriCustomization.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkWaapiClient.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/WwiseAuthoringAPI/AkAutobahn/Client.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/WwiseAuthoringAPI/AkAutobahn/autobahn.h
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\atomic
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\xatomic.h
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\xatomic0.h
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\xutility
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\climits
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\utility
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\iosfwd
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\cstdio
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\cstring
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\cwchar
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\xxatomic
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\xxatomic
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\xxatomic
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\xxatomic
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\xxatomic
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\xxatomic
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\xxatomic
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\xxatomic
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\xxatomic
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\xxatomic
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\xxatomic
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\xxatomic
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\xxatomic
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\xxatomic
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\xxatomic
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\xxatomic
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\condition_variable
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\thr/xthread
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\thr/xthrcommon.h
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\thr/xtime
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\thr/xtimec.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt\time.h
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\thr/xthreads.h
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\tuple
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\mutex
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\chrono
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\limits
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\ymath.h
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\cfloat
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\cmath
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\xtgmath.h
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\ratio
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\functional
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\typeinfo
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\vcruntime_typeinfo.h
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\xstring
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\xmemory0
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\cstdint
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\system_error
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\cerrno
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\stdexcept
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\xcall_once.h
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\xerrc.h
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\thread
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\memory
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\xmemory
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\future
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\ppltasks.h
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\pplwin.h
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\pplinterface.h
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\ppltaskscheduler.h
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\crtdefs.h
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\pplcancellation_token.h
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\vector
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\algorithm
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\istream
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\ostream
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\ios
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\xlocnum
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\streambuf
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\xiosbase
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\xlocale
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\xlocinfo
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\xlocinfo.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt\locale.h
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\xfacet
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt\share.h
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\map
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\xtree
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\queue
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\deque
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\string
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\xstring_insert.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/WwiseAuthoringAPI/AkAutobahn/AkVariant.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/WwiseAuthoringAPI/AkVariantBase.h
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\locale
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\xlocbuf
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\xlocmes
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\xlocmon
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\xloctime
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\ctime
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\codecvt
+d:\gehenna\gehenna\plugins\wwise\thirdparty\include\ak\wwiseauthoringapi\AkGuid.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/WwiseAuthoringAPI/AkAutobahn/AkJson.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/WwiseAuthoringAPI/AkJsonBase.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/WwiseAuthoringAPI/AkAutobahn/JsonProvider.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/WwiseAuthoringAPI/AkAutobahn/IWebSocketClientHandler.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/WwiseAuthoringAPI/AkAutobahn/WebSocketClient.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/WwiseAuthoringAPI/AkAutobahn/FutureUtils.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkWaapiSlate\Widgets\Input\AkSSlider.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkWaapiSlate/Widgets/Input/AkSSlider.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Slate\Public\Widgets/Input/SSlider.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\WaapiPicker/SWaapiPicker.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkWaapiUMG/Components/WwiseUmgDragDropOp.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkWaapiUMG/Components/WwisePropertyDragDropOp.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Slate\Public\Widgets/Input/SNumericEntryBox.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Slate\Public\Widgets/Input/SSpinBox.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Slate\Public\Widgets/Colors/SColorBlock.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkWaapiUMG\Components\AkBoolPropertyToControlCustomization.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkWaapiUMG/Components/AkBoolPropertyToControlCustomization.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkWaapiUMG/Components/SAkItemBoolProperties.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkWaapiUMG\Components\AkCheckBox.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkWaapiUMG/Components/AkCheckBox.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\UMG\Public\Components/ContentWidget.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\UMG\Public\Components/PanelWidget.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\UMG\Public\Components/PanelSlot.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\UMG\Public\Components/Visual.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\Visual.generated.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\PanelSlot.generated.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\UMG\Public\Components/Widget.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\UMG\Public\Slate/WidgetTransform.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\WidgetTransform.generated.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\CoreUObject\Public\UObject/UObjectThreadContext.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Editor\UnrealEd\Public\Kismet2/CompilerResultsLog.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Logging/TokenizedMessage.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Editor\UnrealEd\Public\EdGraphToken.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\Widget.generated.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\UMG\Public\Blueprint/UserWidget.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\UMG\Public\Components/NamedSlotInterface.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\NamedSlotInterface.generated.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\Engine/LocalPlayer.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\Engine/Player.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Player.generated.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Public\Subsystems/LocalPlayerSubsystem.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\LocalPlayerSubsystem.generated.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\LocalPlayer.generated.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Slate\Public\Widgets/Layout/Anchors.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Slate\Anchors.generated.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Logging/MessageLog.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\UMG\Public\Animation/WidgetAnimation.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\MovieScene\Public\MovieSceneSequence.h
+c:\program files\epic games\ue_4.22\engine\source\runtime\moviescene\public\MovieSceneSignedObject.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneSignedObject.generated.h
+c:\program files\epic games\ue_4.22\engine\source\runtime\moviescene\public\MovieSceneTrack.h
+c:\program files\epic games\ue_4.22\engine\source\runtime\moviescene\public\IMovieSceneTrackInstance.h
+c:\program files\epic games\ue_4.22\engine\source\runtime\moviescene\public\Evaluation/MovieSceneAnimTypeID.h
+c:\program files\epic games\ue_4.22\engine\source\runtime\moviescene\public\MovieSceneSection.h
+c:\program files\epic games\ue_4.22\engine\source\runtime\moviescene\public\MovieSceneFwd.h
+c:\program files\epic games\ue_4.22\engine\source\runtime\moviescene\public\MovieSceneSequenceID.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneSequenceID.generated.h
+c:\program files\epic games\ue_4.22\engine\source\runtime\moviescene\public\KeyParams.h
+c:\program files\epic games\ue_4.22\engine\source\runtime\moviescene\public\MovieScene.h
+c:\program files\epic games\ue_4.22\engine\source\runtime\moviescene\public\MovieSceneSpawnable.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneSpawnable.generated.h
+c:\program files\epic games\ue_4.22\engine\source\runtime\moviescene\public\MovieSceneBinding.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneBinding.generated.h
+c:\program files\epic games\ue_4.22\engine\source\runtime\moviescene\public\MovieScenePossessable.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieScenePossessable.generated.h
+c:\program files\epic games\ue_4.22\engine\source\runtime\moviescene\public\MovieSceneObjectBindingID.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneObjectBindingID.generated.h
+c:\program files\epic games\ue_4.22\engine\source\runtime\moviescene\public\MovieSceneFrameMigration.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneFrameMigration.generated.h
+c:\program files\epic games\ue_4.22\engine\source\runtime\moviescene\public\MovieSceneTimeController.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Misc/QualifiedFrameTime.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieScene.generated.h
+c:\program files\epic games\ue_4.22\engine\source\runtime\moviescene\public\Evaluation/Blending/MovieSceneBlendType.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneBlendType.generated.h
+c:\program files\epic games\ue_4.22\engine\source\runtime\moviescene\public\Generators/MovieSceneEasingFunction.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneEasingFunction.generated.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneSection.generated.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Misc/InlineValue.h
+c:\program files\epic games\ue_4.22\engine\source\runtime\moviescene\public\Compilation/MovieSceneSegmentCompiler.h
+c:\program files\epic games\ue_4.22\engine\source\runtime\moviescene\public\Evaluation/MovieSceneSegment.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\UObject/SequencerObjectVersion.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneSegment.generated.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneTrack.generated.h
+c:\program files\epic games\ue_4.22\engine\source\runtime\moviescene\public\Evaluation/MovieSceneEvaluationTemplate.h
+c:\program files\epic games\ue_4.22\engine\source\runtime\moviescene\public\Evaluation/MovieSceneTrackIdentifier.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneTrackIdentifier.generated.h
+c:\program files\epic games\ue_4.22\engine\source\runtime\moviescene\public\Evaluation/MovieSceneEvaluationField.h
+c:\program files\epic games\ue_4.22\engine\source\runtime\moviescene\public\Evaluation/MovieSceneEvaluationKey.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneEvaluationKey.generated.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneEvaluationField.generated.h
+c:\program files\epic games\ue_4.22\engine\source\runtime\moviescene\public\Evaluation/MovieSceneEvaluationTrack.h
+c:\program files\epic games\ue_4.22\engine\source\runtime\moviescene\public\Evaluation/MovieScenePlayback.h
+c:\program files\epic games\ue_4.22\engine\source\runtime\moviescene\public\Evaluation/MovieSceneSequenceTransform.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneSequenceTransform.generated.h
+c:\program files\epic games\ue_4.22\engine\source\runtime\moviescene\public\Evaluation/MovieSceneEvalTemplate.h
+c:\program files\epic games\ue_4.22\engine\source\runtime\moviescene\public\Evaluation/MovieSceneEvalTemplateBase.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneEvalTemplateBase.generated.h
+c:\program files\epic games\ue_4.22\engine\source\runtime\moviescene\public\Evaluation/MovieSceneExecutionTokens.h
+c:\program files\epic games\ue_4.22\engine\source\runtime\moviescene\public\MovieSceneExecutionToken.h
+c:\program files\epic games\ue_4.22\engine\source\runtime\moviescene\public\Evaluation/MovieSceneEvaluationScope.h
+c:\program files\epic games\ue_4.22\engine\source\runtime\moviescene\public\Evaluation/PersistentEvaluationData.h
+c:\program files\epic games\ue_4.22\engine\source\runtime\moviescene\public\Evaluation/MovieSceneEvaluationOperand.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneEvaluationOperand.generated.h
+c:\program files\epic games\ue_4.22\engine\source\runtime\moviescene\public\Evaluation/MovieSceneSequenceInstanceData.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneSequenceInstanceData.generated.h
+c:\program files\epic games\ue_4.22\engine\source\runtime\moviescene\public\Evaluation/Blending/MovieSceneBlendingAccumulator.h
+c:\program files\epic games\ue_4.22\engine\source\runtime\moviescene\public\Evaluation/Blending/BlendableToken.h
+c:\program files\epic games\ue_4.22\engine\source\runtime\moviescene\public\Evaluation/Blending/MovieSceneBlendingActuatorID.h
+c:\program files\epic games\ue_4.22\engine\source\runtime\moviescene\public\Evaluation/Blending/MovieSceneBlendingActuator.h
+c:\program files\epic games\ue_4.22\engine\source\runtime\moviescene\public\IMovieScenePlayer.h
+c:\program files\epic games\ue_4.22\engine\source\runtime\moviescene\public\Evaluation/MovieScenePreAnimatedState.h
+c:\program files\epic games\ue_4.22\engine\source\runtime\moviescene\public\MovieSceneSpawnRegister.h
+c:\program files\epic games\ue_4.22\engine\source\runtime\moviescene\public\IMovieSceneObjectSpawner.h
+c:\program files\epic games\ue_4.22\engine\source\runtime\moviescene\public\Evaluation/MovieSceneEvaluationState.h
+c:\program files\epic games\ue_4.22\engine\source\runtime\moviescene\public\Evaluation/Blending/BlendableTokenStack.h
+c:\program files\epic games\ue_4.22\engine\source\runtime\moviescene\public\Evaluation/Blending/MovieSceneInitialValueStore.h
+c:\program files\epic games\ue_4.22\engine\source\runtime\moviescene\public\Evaluation/Blending/MovieSceneAccumulatedBlendState.h
+c:\program files\epic games\ue_4.22\engine\source\runtime\moviescene\public\evaluation\blending\MovieSceneBlendingAccumulator.inl
+c:\program files\epic games\ue_4.22\engine\source\runtime\moviescene\public\Compilation/MovieSceneTemplateInterrogation.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneEvalTemplate.generated.h
+c:\program files\epic games\ue_4.22\engine\source\runtime\moviescene\public\Evaluation/MovieSceneTrackImplementation.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneTrackImplementation.generated.h
+c:\program files\epic games\ue_4.22\engine\source\runtime\moviescene\public\Evaluation/MovieSceneEvaluationTree.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneEvaluationTrack.generated.h
+c:\program files\epic games\ue_4.22\engine\source\runtime\moviescene\public\Evaluation/MovieSceneSequenceHierarchy.h
+c:\program files\epic games\ue_4.22\engine\source\runtime\moviescene\public\Evaluation/MovieSceneSectionParameters.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneSectionParameters.generated.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneSequenceHierarchy.generated.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneEvaluationTemplate.generated.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneSequence.generated.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\UMG\Public\Animation/WidgetAnimationBinding.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\WidgetAnimationBinding.generated.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\WidgetAnimation.generated.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\UMG\Public\Blueprint/WidgetBlueprintGeneratedClass.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\UMG\Public\Binding/DynamicPropertyPath.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\PropertyPath\Public\PropertyPathHelpers.h
+c:\program files\epic games\ue_4.22\engine\source\runtime\propertypath\public\PropertyTypeCompatibility.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\PropertyPath\PropertyPathHelpers.generated.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\DynamicPropertyPath.generated.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\WidgetBlueprintGeneratedClass.generated.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\UserWidget.generated.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\PanelWidget.generated.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\ContentWidget.generated.h
+d:\gehenna\gehenna\plugins\wwise\source\akaudio\classes\akwaapiumg\components\AkSlider.h
+d:\gehenna\gehenna\plugins\wwise\source\akaudio\classes\akwaapiumg\components\AkItemProperties.h
+d:\gehenna\gehenna\plugins\wwise\source\akaudio\classes\akwaapiumg\components\SAkItemProperties.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkItemProperties.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkSlider.generated.h
+d:\gehenna\gehenna\plugins\wwise\source\akaudio\classes\akwaapiumg\components\AkItemBoolProperties.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkItemBoolProperties.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkCheckBox.generated.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\Slate/SlateBrushAsset.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SlateBrushAsset.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkWaapiUMG/Components/WwiseBoolPropertyDragDropOp.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkWaapiUMG\Components\AkItemBoolProperties.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkWaapiUMG\Components\AkItemProperties.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkWaapiUMG\Components\AkPropertyToControlCustomization.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkWaapiUMG/Components/AkPropertyToControlCustomization.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkWaapiUMG\Components\AkSlider.cpp
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\UMG\Public\UMGStyle.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkWaapiUMG/Components/AkWwiseObjectDetailsStructCustomization.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkWaapiUMG\Components\AkWwiseObjectDetailsStructCustomization.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkWaapiUMG\Components\AkWwiseTree.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkWaapiUMG/Components/AkWwiseTree.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkWwiseTree.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkWaapiUMG\Components\AkWwiseTreeSelector.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkWaapiUMG/Components/AkWwiseTreeSelector.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkWwiseTreeSelector.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkWaapiUMG\Components\SAkItemBoolProperties.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkWaapiUMG\Components\SAkItemProperties.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkWaapiUtils.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\FilePackageIO\AkFilePackage.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\FilePackageIO\AkFilePackageLUT.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\InitializationSettings\AkAndroidInitializationSettings.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\InitializationSettings\AkInitializationSettings.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\InitializationSettings\AkIOSInitializationSettings.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\InitializationSettings\AkLinuxInitializationSettings.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\InitializationSettings\AkLuminInitializationSettings.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\InitializationSettings\AkMacInitializationSettings.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\InitializationSettings\AkPS4InitializationSettings.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\InitializationSettings\AkSwitchInitializationSettings.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\InitializationSettings\AkWindowsInitializationSettings.cpp
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime/HeadMountedDisplay/Public/IHeadMountedDisplayModule.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\InitializationSettings\AkXBoxOneInitializationSettings.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\InterpTrackAkAudioEvent.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\InterpTrackAkAudioEvent.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\Matinee/InterpTrack.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Public\Interpolation.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\InterpTrack.generated.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\Matinee/InterpTrackVectorBase.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\InterpTrackVectorBase.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\InterpTrackAkAudioEvent.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\InterpTrackInstAkAudioEvent.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\Matinee/InterpTrackInst.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\InterpTrackInst.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\InterpTrackInstAkAudioEvent.generated.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Public\InterpolationHitProxy.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\Matinee/InterpGroup.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\InterpGroup.generated.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\Matinee/InterpGroupInst.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\InterpGroupInst.generated.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\Matinee/MatineeActor.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\MatineeActor.generated.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Public\CanvasTypes.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CanvasTypes.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\InterpTrackAkAudioRTPC.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\InterpTrackAkAudioRTPC.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\Matinee/InterpTrackFloatBase.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\InterpTrackFloatBase.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\InterpTrackAkAudioRTPC.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\InterpTrackInstAkAudioEvent.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\InterpTrackInstAkAudioRTPC.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\InterpTrackInstAkAudioRTPC.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\InterpTrackInstAkAudioRTPC.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\MovieSceneAkAudioEventSection.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\MovieSceneAkAudioEventSection.h
+d:\gehenna\gehenna\plugins\wwise\source\akaudio\classes\WwiseEventTracking.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\MovieSceneAkAudioEventSection.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\MovieSceneAkAudioEventTrack.h
+d:\gehenna\gehenna\plugins\wwise\source\akaudio\classes\MovieSceneAkTrack.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\MovieSceneAkTrack.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\MovieSceneAkAudioEventTrack.generated.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Misc/Base64.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\MovieScene\Public\MovieSceneCommonHelpers.h
+d:\gehenna\gehenna\plugins\wwise\source\akaudio\private\MovieSceneAkAudioEventTemplate.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\MovieSceneAkAudioEventTemplate.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\MovieSceneAkAudioEventTemplate.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\MovieSceneAkAudioEventTrack.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\MovieSceneAkAudioRTPCSection.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\MovieSceneAkAudioRTPCSection.h
+d:\gehenna\gehenna\plugins\wwise\source\akaudio\classes\MovieSceneFloatChannelSerializationHelper.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\MovieScene\Public\Channels/MovieSceneFloatChannel.h
+c:\program files\epic games\ue_4.22\engine\source\runtime\moviescene\public\channels\MovieSceneChannel.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneChannel.generated.h
+c:\program files\epic games\ue_4.22\engine\source\runtime\moviescene\public\channels\MovieSceneChannelData.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneChannelData.generated.h
+c:\program files\epic games\ue_4.22\engine\source\runtime\moviescene\public\channels\MovieSceneChannelTraits.h
+c:\program files\epic games\ue_4.22\engine\source\runtime\moviescene\public\channels\MovieSceneChannelEditorData.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\MovieScene\Public\Evaluation/MovieSceneEvaluationTemplateInstance.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\MovieScene\Public\Evaluation/MovieSceneSequenceTemplateStore.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\MovieScene\Public\Evaluation/MovieSceneRootOverridePath.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneEvaluationTemplateInstance.generated.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneFloatChannel.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\MovieSceneFloatChannelSerializationHelper.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\MovieSceneAkAudioRTPCSection.generated.h
+d:\gehenna\gehenna\plugins\wwise\source\akaudio\private\MovieSceneAkAudioRTPCTemplate.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\MovieSceneAkAudioRTPCTemplate.generated.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\MovieScene\Public\Channels/MovieSceneChannelProxy.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\MovieScene\Public\Channels/MovieSceneChannelEditorDataEntry.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\MovieScene\Public\Channels/MovieSceneChannelHandle.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\MovieSceneAkAudioRTPCTemplate.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\MovieSceneAkAudioRTPCTrack.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\MovieSceneAkAudioRTPCTrack.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\MovieSceneAkAudioRTPCTrack.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\OcclusionObstructionService\AkComponentOcclusionObstructionService.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\OcclusionObstructionService\AkOcclusionObstructionService.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\OcclusionObstructionService\AkPortalOcclusionObstructionService.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\WaapiPicker\SWaapiPicker.cpp
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Developer\DirectoryWatcher\Public\DirectoryWatcherModule.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Slate\Public\Widgets/Text/SInlineEditableTextBlock.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Slate\Public\Widgets/Layout/SSeparator.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\WaapiPicker/SWaapiPickerRow.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\WaapiPicker/WaapiPickerViewCommands.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Slate\Public\Framework/Commands/GenericCommands.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Developer\DirectoryWatcher\Public\IDirectoryWatcher.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Slate\Public\Widgets/Input/SHyperlink.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\WaapiPicker\SWaapiPickerRow.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\WwiseEventTracking.cpp

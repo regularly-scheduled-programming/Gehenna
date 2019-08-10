@@ -1,0 +1,232 @@
+Event	ID	Name			Wwise Object Path	Notes
+	111252760	LaughVar1			\Default Work Unit\Baby_VO\LaughVar1	
+	111252762	LaughVar3			\Default Work Unit\Baby_VO\LaughVar3	
+	111252763	LaughVar2			\Default Work Unit\Baby_VO\LaughVar2	
+	409018542	Grimoire_Close			\Default Work Unit\UI\Grimoire_Close	
+	528446302	Riven_Idle			\Default Work Unit\Riven\Riven_Idle	
+	603848811	Weapon_Block			\Default Work Unit\Combat\Weapon_Block	
+	742316884	CooVar3			\Default Work Unit\Baby_VO\CooVar3	
+	742316885	CooVar2			\Default Work Unit\Baby_VO\CooVar2	
+	742316886	CooVar1			\Default Work Unit\Baby_VO\CooVar1	
+	1040915358	Grimoire_PageTurn			\Default Work Unit\UI\Grimoire_PageTurn	
+	1041416048	AngryVar1			\Default Work Unit\Baby_VO\AngryVar1	
+	1041416050	AngryVar3			\Default Work Unit\Baby_VO\AngryVar3	
+	1041416051	AngryVar2			\Default Work Unit\Baby_VO\AngryVar2	
+	1337206328	HmVar1			\Default Work Unit\Baby_VO\HmVar1	
+	1337206330	HmVar3			\Default Work Unit\Baby_VO\HmVar3	
+	1337206331	HmVar2			\Default Work Unit\Baby_VO\HmVar2	
+	1457413866	Pacifier			\Default Work Unit\Baby_VO\Pacifier	
+	1524617176	WhineVar3			\Default Work Unit\Baby_VO\WhineVar3	
+	1524617177	WhineVar2			\Default Work Unit\Baby_VO\WhineVar2	
+	1524617178	WhineVar1			\Default Work Unit\Baby_VO\WhineVar1	
+	1594269381	Baby_Sleep			\Default Work Unit\Baby_VO\Baby_Sleep	
+	1835832625	Pull_Board			\Default Work Unit\Interactions\Pull_Board	
+	2599040456	UI_Crafting			\Default Work Unit\UI\UI_Crafting	
+	2801517852	Riven_Search			\Default Work Unit\Riven\Riven_Search	
+	3049685224	Hit_NPC			\Default Work Unit\Combat\Hit_NPC	
+	3374471974	Breastfeed			\Default Work Unit\Baby_VO\Breastfeed	
+	3461411304	Idle_To_Grumpy			\Default Work Unit\Baby_VO\Idle_To_Grumpy	
+	3753599689	UI_Tick			\Default Work Unit\UI\UI_Tick	
+	3848582449	Bottle			\Default Work Unit\Baby_VO\Bottle	
+	3909336744	BabbleVar2			\Default Work Unit\Baby_VO\BabbleVar2	
+	3909336745	BabbleVar3			\Default Work Unit\Baby_VO\BabbleVar3	
+	3909336747	BabbleVar1			\Default Work Unit\Baby_VO\BabbleVar1	
+	3935427104	Cry1			\Default Work Unit\Baby_VO\Cry1	
+	3935427107	Cry2			\Default Work Unit\Baby_VO\Cry2	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	488413282	Weapon_Combo			\Default Work Unit\Weapon_Combo	
+	3942364280	Weapon_Type			\Default Work Unit\Weapon_Type	
+
+Switch	ID	Name	Switch Group			Notes
+	774266986	Metal_Wood	Weapon_Combo			
+	1598988646	Wood_Wood	Weapon_Combo			
+	3839157182	Metal_Metal	Weapon_Combo			
+	2058049674	Wood	Weapon_Type			
+	2473969246	Metal	Weapon_Type			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	3482793261	Craft_LMB_Press			\Default Work Unit\Craft_LMB_Press	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	18850239	VO_Baby_Babble1-01	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Babble1-01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Babble\BabbleVar1\VO_Baby_Babble1-01		46890
+	32867710	VO_Baby_Babble2-03	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Babble2-03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Babble\BabbleVar2\VO_Baby_Babble2-03		294704
+	33121319	VO_Baby_Laugh1-01	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Laugh1-01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Laugh\LaughVar1\VO_Baby_Laugh1-01		322784
+	39814003	VO_Baby_Coo2-01	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Coo2-01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Coo\CooVar2\VO_Baby_Coo2-01		62776
+	44982859	VO_Baby_Whine3-06	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Whine3-06_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Whine\WhineVar3\VO_Baby_Whine3-06		88392
+	48789979	VO_Baby_Coo2-03	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Coo2-03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Coo\CooVar2\VO_Baby_Coo2-03		62556
+	68997219	VO_Baby_Whine3-07	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Whine3-07_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Whine\WhineVar3\VO_Baby_Whine3-07		87144
+	72018701	SFX_Crunch_Layer05	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\SFX_Crunch_Layer05_DEB962AD.wem		\Actor-Mixer Hierarchy\Default Work Unit\Combat\Hit_NPC\Crunch_Layer\SFX_Crunch_Layer05		29856
+	72218813	Combat_Metal_Wood05	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\Combat_Metal_Wood05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Combat\Weapon_Block\Weapon_Wood_Metal\Combat_Metal_Wood05		10238
+	78846344	SFX_Grim_PageTurn02	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\SFX_Grim_PageTurn02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\UI\Grimoire\Page_Turn\SFX_Grim_PageTurn02		145018
+	80241839	VO_Baby_Babble3-01	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Babble3-01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Babble\BabbleVar3\VO_Baby_Babble3-01		434720
+	81876529	Riven_Idle24	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\Riven_Idle24_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Riven\Vocalizations\Idle\Riven_Idle\Riven_Idle24		379466
+	86317729	SFX_Wood_Hit_Stun02	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\SFX_Wood_Hit_Stun02_018E049B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Combat\Hit_NPC\Weapon_Type\Hit_Wood\SFX_Wood_Hit_Stun02		23456
+	88854534	VO_Baby_Laugh3-01	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Laugh3-01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Laugh\LaughVar3\VO_Baby_Laugh3-01		191770
+	89930855	SFX_Crunch_Layer02	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\SFX_Crunch_Layer02_BB7FFF57.wem		\Actor-Mixer Hierarchy\Default Work Unit\Combat\Hit_NPC\Crunch_Layer\SFX_Crunch_Layer02		21138
+	90111507	Riven_Vocal05	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\Riven_Vocal05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Riven\Vocalizations\Investigate\Riven_Search\Riven_Investig8\Riven_Vocalizations\Riven_Vocal05		543712
+	91070771	VO_Baby_Hm3-03	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Hm3-03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Hm\HmVar3\VO_Baby_Hm3-03		334186
+	91457938	VO_Baby_PO3-02	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_PO3-02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Angry\AngryVar3\VO_Baby_PO3-02		161390
+	101457440	VO_Baby_Whine3-04	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Whine3-04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Whine\WhineVar3\VO_Baby_Whine3-04		91672
+	113063601	Combat_Hit_Metal02	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\Combat_Hit_Metal02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Combat\Hit_NPC\Weapon_Type\Hit_Metal\Combat_Hit_Metal02		9846
+	114444360	VO_Baby_Laugh3-04	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Laugh3-04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Laugh\LaughVar3\VO_Baby_Laugh3-04		192178
+	141371425	SFX_Grim_OpenClose04	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\SFX_Grim_OpenClose04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\UI\Grimoire\Grim_Open\SFX_Grim_OpenClose04		26030
+	142036259	Riven_Discover03	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\Riven_Discover03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Riven\Vocalizations\Investigate\Riven_Search\Riven_Discover\Riven_Discover03		169676
+	151807443	VO_Baby_PO2-02	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_PO2-02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Angry\AngryVar2\VO_Baby_PO2-02		136686
+	154027442	Combat_Metal_Metal01	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\Combat_Metal_Metal01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Combat\Weapon_Block\Weapon_Metal_Metal\Combat_Metal_Metal01		5448
+	170875475	SFX_PullBoard02	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\SFX_PullBoard02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Interactions\Pull_Board\SFX_PullBoard02		292448
+	173568919	VO_Baby_Hm3-02	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Hm3-02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Hm\HmVar3\VO_Baby_Hm3-02		334186
+	177474740	VO_Baby_Babble1-06	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Babble1-06_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Babble\BabbleVar1\VO_Baby_Babble1-06		46820
+	181781098	Riven_Vocal01	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\Riven_Vocal01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Riven\Vocalizations\Investigate\Riven_Search\Riven_Investig8\Riven_Vocalizations\Riven_Vocal01		520450
+	197166246	VO_Baby_Hm3-04	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Hm3-04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Hm\HmVar3\VO_Baby_Hm3-04		334088
+	197180361	VO_Baby_Hm2-02	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Hm2-02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Hm\HmVar2\VO_Baby_Hm2-02		251420
+	197392415	SFX_Crunch_Layer01	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\SFX_Crunch_Layer01_D60ABF3C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Combat\Hit_NPC\Crunch_Layer\SFX_Crunch_Layer01		21082
+	212994889	Riven_Idle02	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\Riven_Idle02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Riven\Vocalizations\Idle\Riven_Idle\Riven_Idle02		286820
+	216078376	VO_Baby_Whine1-02	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Whine1-02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Whine\WhineVar1\VO_Baby_Whine1-02		245236
+	228496813	Combat_Metal_Wood03	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\Combat_Metal_Wood03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Combat\Weapon_Block\Weapon_Wood_Metal\Combat_Metal_Wood03		9624
+	234675161	VO_Baby_Babble3-02	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Babble3-02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Babble\BabbleVar3\VO_Baby_Babble3-02		434720
+	249365318	VO_Baby_Coo1-05	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Coo1-05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Coo\CooVar1\VO_Baby_Coo1-05		37918
+	260418135	Cry2	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Cry-05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Cry\Cry2		960064
+	264205885	VO_Baby_PO3-03	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_PO3-03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Angry\AngryVar3\VO_Baby_PO3-03		160328
+	264245249	VO_Baby_PO3-05	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_PO3-05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Angry\AngryVar3\VO_Baby_PO3-05		160858
+	270746264	VO_Baby_Coo3-03	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Coo3-03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Coo\CooVar3\VO_Baby_Coo3-03		229426
+	274381963	VO_Baby_Coo1-03	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Coo1-03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Coo\CooVar1\VO_Baby_Coo1-03		37838
+	288552615	VO_Baby_Coo1-04	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Coo1-04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Coo\CooVar1\VO_Baby_Coo1-04		37740
+	292724300	SFX_PullBoard03	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\SFX_PullBoard03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Interactions\Pull_Board\SFX_PullBoard03		288388
+	300413455	Riven_Vocal02	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\Riven_Vocal02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Riven\Vocalizations\Investigate\Riven_Search\Riven_Investig8\Riven_Vocalizations\Riven_Vocal02		533988
+	306542351	VO_Baby_PO1-01	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_PO1-01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Angry\AngryVar1\VO_Baby_PO1-01		46380
+	319520719	VO_Baby_Babble2-04	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Babble2-04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Babble\BabbleVar2\VO_Baby_Babble2-04		294704
+	330717090	Combat_Hit_Metal04	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\Combat_Hit_Metal04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Combat\Hit_NPC\Weapon_Type\Hit_Metal\Combat_Hit_Metal04		8392
+	334417053	VO_Baby_PO3-01	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_PO3-01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Angry\AngryVar3\VO_Baby_PO3-01		159890
+	337083506	Combat_Metal_Metal05	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\Combat_Metal_Metal05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Combat\Weapon_Block\Weapon_Metal_Metal\Combat_Metal_Metal05		6488
+	339031441	Riven_Idle08	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\Riven_Idle08_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Riven\Vocalizations\Idle\Riven_Idle\Riven_Idle08		868074
+	345271753	Riven_Idle10	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\Riven_Idle10_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Riven\Vocalizations\Idle\Riven_Idle\Riven_Idle10		595448
+	348881156	SFX_Crunch_Layer06	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\SFX_Crunch_Layer06_3239C107.wem		\Actor-Mixer Hierarchy\Default Work Unit\Combat\Hit_NPC\Crunch_Layer\SFX_Crunch_Layer06		32210
+	357068915	VO_Baby_BreastFeed-05	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_BreastFeed-05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Baby_Feed\Breastfeed\VO_Baby_BreastFeed-05		1048468
+	364079903	Riven_Vocal03	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\Riven_Vocal03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Riven\Vocalizations\Investigate\Riven_Search\Riven_Investig8\Riven_Vocalizations\Riven_Vocal03		543858
+	384706687	VO_Baby_Babble1-03	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Babble1-03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Babble\BabbleVar1\VO_Baby_Babble1-03		46380
+	403623618	Combat_Metal_Metal03	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\Combat_Metal_Metal03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Combat\Weapon_Block\Weapon_Metal_Metal\Combat_Metal_Metal03		5342
+	413132350	VO_Baby_Laugh2-04	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Laugh2-04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Laugh\LaughVar2\VO_Baby_Laugh2-04		166432
+	413225387	VO_Baby_Whine1-01	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Whine1-01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Whine\WhineVar1\VO_Baby_Whine1-01		328936
+	417602866	VO_Baby_Coo1-02	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Coo1-02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Coo\CooVar1\VO_Baby_Coo1-02		37838
+	429294266	Riven_Idle14	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\Riven_Idle14_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Riven\Vocalizations\Idle\Riven_Idle\Riven_Idle14		853886
+	433349464	SFX_Wood_Hit_Stun01	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\SFX_Wood_Hit_Stun01_92DE5963.wem		\Actor-Mixer Hierarchy\Default Work Unit\Combat\Hit_NPC\Weapon_Type\Hit_Wood\SFX_Wood_Hit_Stun01		23324
+	437406561	SFX_Craft_Effigy04	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\SFX_Craft_Effigy04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\UI\Crafting\Crafting\SFX_Craft_Effigy04		191942
+	437866900	VO_Baby_Pacifier-01	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Pacifier-01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Baby_Feed\Pacifier\VO_Baby_Pacifier-01		152938
+	442589999	VO_Baby_Coo3-01	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Coo3-01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Coo\CooVar3\VO_Baby_Coo3-01		229202
+	455279753	SFX_Grim_PageTurn07	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\SFX_Grim_PageTurn07_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\UI\Grimoire\Page_Turn\SFX_Grim_PageTurn07		218928
+	462531621	Riven_clicks01	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\Riven_clicks01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Riven\Vocalizations\Investigate\Riven_Search\Riven_Investig8\Riven_Clicks\Riven_clicks01		543902
+	462682880	VO_Baby_Whine2-01	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Whine2-01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Whine\WhineVar2\VO_Baby_Whine2-01		356296
+	464908611	SFX_Crunch_Layer03	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\SFX_Crunch_Layer03_7DDD5AFD.wem		\Actor-Mixer Hierarchy\Default Work Unit\Combat\Hit_NPC\Crunch_Layer\SFX_Crunch_Layer03		35676
+	471009736	VO_Baby_Coo2-02	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Coo2-02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Coo\CooVar2\VO_Baby_Coo2-02		62776
+	474653230	SFX_Craft_Effigy03	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\SFX_Craft_Effigy03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\UI\Crafting\Crafting\SFX_Craft_Effigy03		201400
+	478606863	Riven_Idle25	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\Riven_Idle25_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Riven\Vocalizations\Idle\Riven_Idle\Riven_Idle25		697104
+	478833230	VO_Baby_Whine3-01	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Whine3-01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Whine\WhineVar3\VO_Baby_Whine3-01		74756
+	489667953	SFX_Grim_OpenClose03	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\SFX_Grim_OpenClose03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\UI\Grimoire\Grim_Open\SFX_Grim_OpenClose03		50420
+	490469368	Riven_Idle22	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\Riven_Idle22_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Riven\Vocalizations\Idle\Riven_Idle\Riven_Idle22		189764
+	493191268	VO_Baby_Pacifier-03	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Pacifier-03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Baby_Feed\Pacifier\VO_Baby_Pacifier-03		288458
+	499417601	VO_Baby_BreastFeed-03	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_BreastFeed-03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Baby_Feed\Breastfeed\VO_Baby_BreastFeed-03		1630468
+	504127985	VO_Baby_Bottle-02	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Bottle-02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Baby_Feed\Bottle\VO_Baby_Bottle-02		960064
+	515912459	Riven_Idle07	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\Riven_Idle07_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Riven\Vocalizations\Idle\Riven_Idle\Riven_Idle07		1203560
+	516465907	VO_Baby_Hm1-01	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Hm1-01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Hm\HmVar1\VO_Baby_Hm1-01		176716
+	518680868	SFX_Wood_Hit_Stun03	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\SFX_Wood_Hit_Stun03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Combat\Hit_NPC\Weapon_Type\Hit_Wood\SFX_Wood_Hit_Stun03		38790
+	526905755	VO_Baby_Whine1-04	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Whine1-04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Whine\WhineVar1\VO_Baby_Whine1-04		330130
+	528163408	Riven_Discover04	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\Riven_Discover04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Riven\Vocalizations\Investigate\Riven_Search\Riven_Discover\Riven_Discover04		193068
+	537316474	VO_Baby_PO3-04	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_PO3-04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Angry\AngryVar3\VO_Baby_PO3-04		161390
+	548419600	Riven_Idle05	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\Riven_Idle05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Riven\Vocalizations\Idle\Riven_Idle\Riven_Idle05		1092610
+	559523669	Riven_Idle20	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\Riven_Idle20_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Riven\Vocalizations\Idle\Riven_Idle\Riven_Idle20		512104
+	562577469	Combat_Metal_Metal04	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\Combat_Metal_Metal04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Combat\Weapon_Block\Weapon_Metal_Metal\Combat_Metal_Metal04		6352
+	572741540	VO_Baby_Laugh1-05	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Laugh1-05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Laugh\LaughVar1\VO_Baby_Laugh1-05		302894
+	573936142	Riven_Idle12	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\Riven_Idle12_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Riven\Vocalizations\Idle\Riven_Idle\Riven_Idle12		992168
+	595641421	VO_Baby_Whine3-02	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Whine3-02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Whine\WhineVar3\VO_Baby_Whine3-02		75774
+	599076076	VO_Baby_ToGrumpy-02	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_ToGrumpy-02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Transitions\Idle_To_Grumpy\VO_Baby_ToGrumpy-02		180826
+	600388286	VO_Baby_Coo3-05	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Coo3-05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Coo\CooVar3\VO_Baby_Coo3-05		229008
+	600629293	Riven_Idle04	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\Riven_Idle04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Riven\Vocalizations\Idle\Riven_Idle\Riven_Idle04		437082
+	603540411	VO_Baby_Laugh2-02	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Laugh2-02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Laugh\LaughVar2\VO_Baby_Laugh2-02		112058
+	604248046	VO_Baby_Babble2-02	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Babble2-02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Babble\BabbleVar2\VO_Baby_Babble2-02		294436
+	608102132	VO_Baby_ToGrumpy-01	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_ToGrumpy-01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Transitions\Idle_To_Grumpy\VO_Baby_ToGrumpy-01		210456
+	608931094	VO_Baby_Laugh1-03	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Laugh1-03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Laugh\LaughVar1\VO_Baby_Laugh1-03		302524
+	612005681	Riven_Idle09	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\Riven_Idle09_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Riven\Vocalizations\Idle\Riven_Idle\Riven_Idle09		449106
+	626680653	SFX_Wood_Hit_Stun04	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\SFX_Wood_Hit_Stun04_A3E22744.wem		\Actor-Mixer Hierarchy\Default Work Unit\Combat\Hit_NPC\Weapon_Type\Hit_Wood\SFX_Wood_Hit_Stun04		26198
+	635604773	SFX_Craft_Effigy01	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\SFX_Craft_Effigy01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\UI\Crafting\Crafting\SFX_Craft_Effigy01		193292
+	636091404	VO_Baby_Coo3-04	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Coo3-04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Coo\CooVar3\VO_Baby_Coo3-04		229436
+	644064991	Riven_Vocal04	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\Riven_Vocal04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Riven\Vocalizations\Investigate\Riven_Search\Riven_Investig8\Riven_Vocalizations\Riven_Vocal04		544504
+	646821677	SFX_Crunch_Layer04	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\SFX_Crunch_Layer04_8509CBAD.wem		\Actor-Mixer Hierarchy\Default Work Unit\Combat\Hit_NPC\Crunch_Layer\SFX_Crunch_Layer04		24740
+	651508593	VO_Baby_Babble1-05	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Babble1-05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Babble\BabbleVar1\VO_Baby_Babble1-05		47026
+	652383365	Riven_Idle19	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\Riven_Idle19_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Riven\Vocalizations\Idle\Riven_Idle\Riven_Idle19		546338
+	655684562	VO_Baby_PO1-02	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_PO1-02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Angry\AngryVar1\VO_Baby_PO1-02		46380
+	687697373	Riven_clicks03	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\Riven_clicks03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Riven\Vocalizations\Investigate\Riven_Search\Riven_Investig8\Riven_Clicks\Riven_clicks03		543902
+	711755611	VO_Baby_Bottle-03	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Bottle-03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Baby_Feed\Bottle\VO_Baby_Bottle-03		960064
+	714779633	VO_Baby_Hm2-03	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Hm2-03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Hm\HmVar2\VO_Baby_Hm2-03		251948
+	715061061	SFX_Craft_Effigy02	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\SFX_Craft_Effigy02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\UI\Crafting\Crafting\SFX_Craft_Effigy02		189240
+	718140111	VO_Baby_Whine3-05	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Whine3-05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Whine\WhineVar3\VO_Baby_Whine3-05		86028
+	721739585	Baby_Sleep	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Idle_Sleep-01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Baby_Sleep		288064
+	728031705	SFX_Grim_PageTurn01	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\SFX_Grim_PageTurn01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\UI\Grimoire\Page_Turn\SFX_Grim_PageTurn01		96334
+	732428098	Combat_Metal_Metal02	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\Combat_Metal_Metal02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Combat\Weapon_Block\Weapon_Metal_Metal\Combat_Metal_Metal02		5920
+	736205808	Riven_Idle13	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\Riven_Idle13_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Riven\Vocalizations\Idle\Riven_Idle\Riven_Idle13		1332028
+	753191320	Riven_Discover02	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\Riven_Discover02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Riven\Vocalizations\Investigate\Riven_Search\Riven_Discover\Riven_Discover02		321210
+	758255813	Riven_Idle23	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\Riven_Idle23_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Riven\Vocalizations\Idle\Riven_Idle\Riven_Idle23		1530904
+	761888707	VO_Baby_Laugh2-03	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Laugh2-03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Laugh\LaughVar2\VO_Baby_Laugh2-03		173932
+	799065608	SFX_Grim_PageTurn04	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\SFX_Grim_PageTurn04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\UI\Grimoire\Page_Turn\SFX_Grim_PageTurn04		149834
+	804154665	Riven_Idle06	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\Riven_Idle06_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Riven\Vocalizations\Idle\Riven_Idle\Riven_Idle06		1852928
+	815285886	VO_Baby_PO1-03	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_PO1-03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Angry\AngryVar1\VO_Baby_PO1-03		45870
+	815754195	VO_Baby_Babble1-02	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Babble1-02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Babble\BabbleVar1\VO_Baby_Babble1-02		46830
+	821107533	VO_Baby_Coo2-04	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Coo2-04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Coo\CooVar2\VO_Baby_Coo2-04		62556
+	824925981	Riven_Idle21	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\Riven_Idle21_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Riven\Vocalizations\Idle\Riven_Idle\Riven_Idle21		342916
+	831996911	VO_Baby_Whine3-03	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Whine3-03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Whine\WhineVar3\VO_Baby_Whine3-03		79180
+	838968035	SFX_Grim_PageTurn06	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\SFX_Grim_PageTurn06_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\UI\Grimoire\Page_Turn\SFX_Grim_PageTurn06		156036
+	844195314	Cry1	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Cry-04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Cry\Cry1		960064
+	848988725	Combat_Hit_Metal01	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\Combat_Hit_Metal01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Combat\Hit_NPC\Weapon_Type\Hit_Metal\Combat_Hit_Metal01		10374
+	849396534	Riven_Idle26	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\Riven_Idle26_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Riven\Vocalizations\Idle\Riven_Idle\Riven_Idle26		847678
+	851093574	VO_Baby_Hm3-01	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Hm3-01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Hm\HmVar3\VO_Baby_Hm3-01		334186
+	859928014	SFX_Grim_OpenClose02	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\SFX_Grim_OpenClose02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\UI\Grimoire\Grim_Open\SFX_Grim_OpenClose02		40978
+	860206218	Combat_Metal_Wood02	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\Combat_Metal_Wood02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Combat\Weapon_Block\Weapon_Wood_Metal\Combat_Metal_Wood02		10882
+	861507324	Combat_Metal_Wood01	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\Combat_Metal_Wood01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Combat\Weapon_Block\Weapon_Wood_Metal\Combat_Metal_Wood01		13076
+	863639730	VO_Baby_ToGrumpy-03	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_ToGrumpy-03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Transitions\Idle_To_Grumpy\VO_Baby_ToGrumpy-03		192064
+	864187188	VO_Baby_BreastFeed-01	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_BreastFeed-01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Baby_Feed\Breastfeed\VO_Baby_BreastFeed-01		1226044
+	876168233	Combat_Metal_Wood04	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\Combat_Metal_Wood04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Combat\Weapon_Block\Weapon_Wood_Metal\Combat_Metal_Wood04		12226
+	886920567	Combat_Hit_Metal03	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\Combat_Hit_Metal03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Combat\Hit_NPC\Weapon_Type\Hit_Metal\Combat_Hit_Metal03		10374
+	888446294	Riven_Discover01	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\Riven_Discover01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Riven\Vocalizations\Investigate\Riven_Search\Riven_Discover\Riven_Discover01		230244
+	888923181	VO_Baby_Coo3-06	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Coo3-06_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Coo\CooVar3\VO_Baby_Coo3-06		229394
+	896228902	VO_Baby_Whine2-02	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Whine2-02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Whine\WhineVar2\VO_Baby_Whine2-02		398744
+	897430594	VO_Baby_Coo1-01	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Coo1-01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Coo\CooVar1\VO_Baby_Coo1-01		37838
+	897552020	VO_Baby_Laugh1-02	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Laugh1-02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Laugh\LaughVar1\VO_Baby_Laugh1-02		324014
+	899669068	Riven_Idle01	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\Riven_Idle01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Riven\Vocalizations\Idle\Riven_Idle\Riven_Idle01		1446800
+	909766769	VO_Baby_Laugh1-04	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Laugh1-04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Laugh\LaughVar1\VO_Baby_Laugh1-04		301968
+	918304656	SFX_Grim_PageTurn03	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\SFX_Grim_PageTurn03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\UI\Grimoire\Page_Turn\SFX_Grim_PageTurn03		205286
+	923907090	Riven_Idle15	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\Riven_Idle15_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Riven\Vocalizations\Idle\Riven_Idle\Riven_Idle15		734256
+	928735434	VO_Baby_PO1-04	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_PO1-04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Angry\AngryVar1\VO_Baby_PO1-04		47430
+	931917180	Riven_Idle16	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\Riven_Idle16_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Riven\Vocalizations\Idle\Riven_Idle\Riven_Idle16		703664
+	933697598	VO_Baby_BreastFeed-04	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_BreastFeed-04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Baby_Feed\Breastfeed\VO_Baby_BreastFeed-04		1496720
+	934042358	VO_Baby_PO2-03	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_PO2-03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Angry\AngryVar2\VO_Baby_PO2-03		136686
+	934752214	VO_Baby_Babble3-04	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Babble3-04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Babble\BabbleVar3\VO_Baby_Babble3-04		436540
+	935918900	VO_Baby_Hm2-01	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Hm2-01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Hm\HmVar2\VO_Baby_Hm2-01		251948
+	940037671	VO_Baby_Laugh2-01	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Laugh2-01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Laugh\LaughVar2\VO_Baby_Laugh2-01		170140
+	942086430	VO_Baby_Babble1-04	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Babble1-04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Babble\BabbleVar1\VO_Baby_Babble1-04		46268
+	950036004	VO_Baby_Whine1-03	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Whine1-03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Whine\WhineVar1\VO_Baby_Whine1-03		329270
+	950280752	VO_Baby_Laugh3-02	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Laugh3-02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Laugh\LaughVar3\VO_Baby_Laugh3-02		154084
+	956557996	Riven_Idle17	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\Riven_Idle17_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Riven\Vocalizations\Idle\Riven_Idle\Riven_Idle17		511440
+	962324329	VO_Baby_Babble3-05	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Babble3-05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Babble\BabbleVar3\VO_Baby_Babble3-05		434812
+	965069722	Riven_clicks02	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\Riven_clicks02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Riven\Vocalizations\Investigate\Riven_Search\Riven_Investig8\Riven_Clicks\Riven_clicks02		534092
+	968348872	VO_Baby_PO1-05	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_PO1-05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Angry\AngryVar1\VO_Baby_PO1-05		43932
+	969888825	Riven_Idle11	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\Riven_Idle11_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Riven\Vocalizations\Idle\Riven_Idle\Riven_Idle11		611712
+	971223350	VO_Baby_Babble2-01	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Babble2-01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Babble\BabbleVar2\VO_Baby_Babble2-01		294416
+	975722567	VO_Baby_Pacifier-02	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Pacifier-02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Baby_Feed\Pacifier\VO_Baby_Pacifier-02		329102
+	976515671	VO_Baby_Bottle-01	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Bottle-01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Baby_Feed\Bottle\VO_Baby_Bottle-01		960064
+	985453361	VO_Baby_Laugh3-03	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Laugh3-03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Laugh\LaughVar3\VO_Baby_Laugh3-03		191770
+	987763812	SFX_Wood_Hit_Stun05	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\SFX_Wood_Hit_Stun05_4F5861DA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Combat\Hit_NPC\Weapon_Type\Hit_Wood\SFX_Wood_Hit_Stun05		31474
+	988775109	VO_Baby_Hm1-02	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Hm1-02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Hm\HmVar1\VO_Baby_Hm1-02		175562
+	1001223412	SFX_PullBoard01	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\SFX_PullBoard01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Interactions\Pull_Board\SFX_PullBoard01		181362
+	1007140075	SFX_UI_Tick	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\SFX_UI_Tick01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\UI\SFX_UI_Tick		2768
+	1007180754	VO_Baby_Coo2-05	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Coo2-05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Coo\CooVar2\VO_Baby_Coo2-05		62556
+	1009956476	VO_Baby_Pacifier-04	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Pacifier-04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Baby_Feed\Pacifier\VO_Baby_Pacifier-04		419810
+	1027079654	Riven_Idle18	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\Riven_Idle18_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Riven\Vocalizations\Idle\Riven_Idle\Riven_Idle18		656662
+	1027193763	VO_Baby_Coo3-02	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Coo3-02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Coo\CooVar3\VO_Baby_Coo3-02		229436
+	1035933315	VO_Baby_BreastFeed-02	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_BreastFeed-02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Baby_Feed\Breastfeed\VO_Baby_BreastFeed-02		1399156
+	1047737104	VO_Baby_Laugh2-05	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Laugh2-05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Laugh\LaughVar2\VO_Baby_Laugh2-05		171302
+	1048104197	Riven_Idle03	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\Riven_Idle03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Riven\Vocalizations\Idle\Riven_Idle\Riven_Idle03		536102
+	1055395887	SFX_Grim_PageTurn05	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\SFX_Grim_PageTurn05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\UI\Grimoire\Page_Turn\SFX_Grim_PageTurn05		168614
+	1056447040	VO_Baby_PO2-01	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_PO2-01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Angry\AngryVar2\VO_Baby_PO2-01		136686
+	1060249640	VO_Baby_Babble3-03	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_Babble3-03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Babble\BabbleVar3\VO_Baby_Babble3-03		434720
+	1066286547	VO_Baby_BreastFeed-06	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Mac\SFX\VO_Baby_BreastFeed-06_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Baby\Baby_Feed\Breastfeed\VO_Baby_BreastFeed-06		1008612
+
