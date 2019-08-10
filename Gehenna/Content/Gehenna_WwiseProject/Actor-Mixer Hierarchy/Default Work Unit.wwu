@@ -612,25 +612,6 @@
 								</RandomSequenceContainer>
 								<Folder Name="Corpse_Box" ID="{A858AD21-3227-4492-9AF4-B4A072C7AECC}" ShortID="931082314">
 									<ChildrenList>
-										<Sound Name="Corpse_Box_Break" ID="{78743D54-205D-40D2-8E3E-E4A4F805AFF0}" ShortID="385636398">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8160DF5A-C65D-466B-96CA-B5A99184F16E}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0C387874-81ED-40BF-9A62-FF86F7893F7F}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Box_Break" ID="{0D98760E-2B74-4A0F-A788-E3E26DFFEFE2}" ShortID="760825406">
-													<Language>SFX</Language>
-													<AudioFile>Box_Break.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Box_Break" ID="{0D98760E-2B74-4A0F-A788-E3E26DFFEFE2}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
 										<RandomSequenceContainer Name="Push_Corpse_Box" ID="{749AC964-9919-4A3A-B531-0F733A0EBB65}" ShortID="428471640">
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -738,6 +719,40 @@
 												</Sound>
 											</ChildrenList>
 										</RandomSequenceContainer>
+										<Sound Name="Corpse_Box_Break" ID="{F2AA0A92-DBF6-4DE5-B5FB-D9467401EDE3}" ShortID="607407108">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{9DA882BE-936F-40F7-8FB5-0474D2932C31}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="150"/>
+																	<Property Name="Min" Type="Real64" Value="-150"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8160DF5A-C65D-466B-96CA-B5A99184F16E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0C387874-81ED-40BF-9A62-FF86F7893F7F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Box_Break01" ID="{42AEE289-34DD-4D75-82E2-5232B963AF49}" ShortID="565085330">
+													<Language>SFX</Language>
+													<AudioFile>Box_Break01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Box_Break01" ID="{42AEE289-34DD-4D75-82E2-5232B963AF49}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
 								</Folder>
 							</ChildrenList>
