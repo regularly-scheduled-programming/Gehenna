@@ -10,13 +10,6 @@
 						</Reference>
 					</ReferenceList>
 				</Bus>
-				<Bus Name="SFX" ID="{DA05A176-F01A-48CD-802D-34641294EFC0}">
-					<ReferenceList>
-						<Reference Name="AudioDevice">
-							<ObjectRef Name="System" ID="{B5F65183-AB16-400F-BC36-64E52E730E6C}" WorkUnitID="{CC6467DC-C87E-4C13-A907-96C3A00A5991}"/>
-						</Reference>
-					</ReferenceList>
-				</Bus>
 			</ChildrenList>
 		</WorkUnit>
 	</Busses>

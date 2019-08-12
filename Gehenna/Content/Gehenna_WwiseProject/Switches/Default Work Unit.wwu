@@ -16,7 +16,7 @@
 						<Switch Name="Metal_Metal" ID="{071035A0-DAFC-4AC3-AFA6-693C69257524}"/>
 					</ChildrenList>
 				</SwitchGroup>
-				<SwitchGroup Name="Materials" ID="{A6BCDC93-CA8B-4E44-BEBF-660600ABA705}">
+				<SwitchGroup Name="floormaterials" ID="{A6BCDC93-CA8B-4E44-BEBF-660600ABA705}">
 					<ChildrenList>
 						<Switch Name="Barn" ID="{CC940EF1-78A0-4609-8AAC-88C29311A255}"/>
 						<Switch Name="Hardwood" ID="{08923470-4A44-4B57-B01A-83B3E4CAA382}"/>

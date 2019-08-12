@@ -108,7 +108,7 @@
 										<Action Name="" ID="{EB1F02EA-366D-48AA-BDED-1FDAE94FB408}" ShortID="1039822497">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="Corpse_Box_Break" ID="{78743D54-205D-40D2-8E3E-E4A4F805AFF0}" WorkUnitID="{F9BA77DD-0F56-4BD8-ABDD-088EE35A1F08}"/>
+													<ObjectRef Name="Corpse_Box_Break" ID="{F2AA0A92-DBF6-4DE5-B5FB-D9467401EDE3}" WorkUnitID="{F9BA77DD-0F56-4BD8-ABDD-088EE35A1F08}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -436,6 +436,39 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="SFX_Weapon_Woosh" ID="{B4C332AA-D57A-47B8-A381-166020BEEDB0}">
+							<ChildrenList>
+								<Action Name="" ID="{E5FA6611-E455-4E45-A2B0-3D0991ECAD2C}" ShortID="554641214">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_Weapon_Woosh" ID="{13AB5464-D3C0-4DD0-80EA-9D1406B2B838}" WorkUnitID="{F9BA77DD-0F56-4BD8-ABDD-088EE35A1F08}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{718DF046-92F8-464C-AE3C-E848C1C79609}" ShortID="378361671">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{CD996198-6FB8-4EE7-88F3-E0ABA40A31F7}">
+														<PropertyList>
+															<Property Name="Max" Type="Real64" Value="0.12"/>
+															<Property Name="Min" Type="Real64" Value="-0.45"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Probability" Type="Real64" Value="65"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Mother_Attack" ID="{E668F6BF-026B-4BA7-AB5B-5A866B26391D}" WorkUnitID="{F9BA77DD-0F56-4BD8-ABDD-088EE35A1F08}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Riven" ID="{3767A7C0-0F24-477B-9D43-73623DFDF546}" ShortID="779215289">
@@ -457,6 +490,75 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Riven_Idle" ID="{274CC600-1E8B-4605-A888-FF1AD1F09EDD}" WorkUnitID="{F9BA77DD-0F56-4BD8-ABDD-088EE35A1F08}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Riven_Chase" ID="{887294E6-90CE-4ACF-9E15-3F13E881B621}">
+							<ChildrenList>
+								<Action Name="" ID="{52D59661-9FB5-4B51-B973-D3FC1DCA7D03}" ShortID="553183687">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Riven_Chase" ID="{001D5C33-AF30-42E9-987C-616ED678A69D}" WorkUnitID="{F9BA77DD-0F56-4BD8-ABDD-088EE35A1F08}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Event Name="Ambiance" ID="{769E9A11-8E2E-46A6-8DA1-BA09607D6D27}">
+					<ChildrenList>
+						<Action Name="" ID="{C7CA3C40-C648-4079-A021-BC876E742938}" ShortID="898398139">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="3">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{D4F9741F-6932-4640-87B8-18CF9A787F3F}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Rebirth_Ambiance" ID="{6B3D42FD-07EB-40F8-91E8-44ECD51F705B}" WorkUnitID="{F9BA77DD-0F56-4BD8-ABDD-088EE35A1F08}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Folder Name="Mother_VO" ID="{86BC4D12-7E9F-4EE9-AD6D-8CAAAB03FDF8}" ShortID="81365814"/>
+				<Folder Name="Mother_Footsteps" ID="{234A7867-BC25-438E-AC47-2E6CEA7FE9E4}" ShortID="85985561">
+					<ChildrenList>
+						<Event Name="Footsteps_Wetlands" ID="{E13EEFB6-2880-404C-945E-EBCAB11A86DE}">
+							<ChildrenList>
+								<Action Name="" ID="{2FD76BAE-B121-4A00-94EF-A5F95351887C}" ShortID="378893164">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Wetlands" ID="{78E4D6E4-77A3-4B90-B6EB-A5666573C53E}" WorkUnitID="{F9BA77DD-0F56-4BD8-ABDD-088EE35A1F08}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Mother_FS_Stone" ID="{ED9C6765-99C7-46E9-8E7E-65EBD5191207}">
+							<ChildrenList>
+								<Action Name="" ID="{B82AD984-7AA5-473D-B95D-FBECD2524CD9}" ShortID="675764661">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Stone" ID="{579B51C3-3263-43E6-A765-A1BD3D7CA928}" WorkUnitID="{F9BA77DD-0F56-4BD8-ABDD-088EE35A1F08}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Mother_FS_Walk" ID="{D8607CA9-1D43-4D83-A33B-2B9CE180159C}">
+							<ChildrenList>
+								<Action Name="" ID="{915C7081-999C-4E17-A606-537C74ECE18A}" ShortID="861197681">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Mother_Footsteps_Walk" ID="{BB07BC2E-59BE-4731-B2FD-28156C46E58C}" WorkUnitID="{F9BA77DD-0F56-4BD8-ABDD-088EE35A1F08}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

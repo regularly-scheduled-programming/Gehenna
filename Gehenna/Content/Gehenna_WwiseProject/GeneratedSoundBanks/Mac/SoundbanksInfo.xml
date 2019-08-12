@@ -21,9 +21,11 @@
 			<ShortName>Audio_Main</ShortName>
 			<Path>Audio_Main.bnk</Path>
 			<IncludedEvents>
+				<Event Id="2981377429" Name="Ambiance" ObjectPath="\Events\Default Work Unit\Ambiance"/>
 				<Event Id="1041416048" Name="AngryVar1" ObjectPath="\Events\Default Work Unit\Baby_VO\AngryVar1"/>
 				<Event Id="1041416051" Name="AngryVar2" ObjectPath="\Events\Default Work Unit\Baby_VO\AngryVar2"/>
 				<Event Id="1041416050" Name="AngryVar3" ObjectPath="\Events\Default Work Unit\Baby_VO\AngryVar3"/>
+				<Event Id="2279337245" Name="Aura_Idle" ObjectPath="\Events\Default Work Unit\Aura\Aura_Idle"/>
 				<Event Id="3909336747" Name="BabbleVar1" ObjectPath="\Events\Default Work Unit\Baby_VO\BabbleVar1"/>
 				<Event Id="3909336744" Name="BabbleVar2" ObjectPath="\Events\Default Work Unit\Baby_VO\BabbleVar2"/>
 				<Event Id="3909336745" Name="BabbleVar3" ObjectPath="\Events\Default Work Unit\Baby_VO\BabbleVar3"/>
@@ -33,6 +35,7 @@
 				<Event Id="742316886" Name="CooVar1" ObjectPath="\Events\Default Work Unit\Baby_VO\CooVar1"/>
 				<Event Id="742316885" Name="CooVar2" ObjectPath="\Events\Default Work Unit\Baby_VO\CooVar2"/>
 				<Event Id="742316884" Name="CooVar3" ObjectPath="\Events\Default Work Unit\Baby_VO\CooVar3"/>
+				<Event Id="4074752091" Name="Corpse_Box_Break" ObjectPath="\Events\Default Work Unit\Interactions\Corpse_Boxes\Corpse_Box_Break"/>
 				<Event Id="3935427104" Name="Cry1" ObjectPath="\Events\Default Work Unit\Baby_VO\Cry1"/>
 				<Event Id="3935427107" Name="Cry2" ObjectPath="\Events\Default Work Unit\Baby_VO\Cry2"/>
 				<Event Id="409018542" Name="Grimoire_Close" ObjectPath="\Events\Default Work Unit\UI\Grimoire_Close"/>
@@ -47,8 +50,12 @@
 				<Event Id="111252762" Name="LaughVar3" ObjectPath="\Events\Default Work Unit\Baby_VO\LaughVar3"/>
 				<Event Id="1457413866" Name="Pacifier" ObjectPath="\Events\Default Work Unit\Baby_VO\Pacifier"/>
 				<Event Id="1835832625" Name="Pull_Board" ObjectPath="\Events\Default Work Unit\Interactions\Pull_Board"/>
+				<Event Id="303710254" Name="Push_Corpse_Box" ObjectPath="\Events\Default Work Unit\Interactions\Corpse_Boxes\Push_Corpse_Box"/>
 				<Event Id="528446302" Name="Riven_Idle" ObjectPath="\Events\Default Work Unit\Riven\Riven_Idle"/>
 				<Event Id="2801517852" Name="Riven_Search" ObjectPath="\Events\Default Work Unit\Riven\Riven_Search"/>
+				<Event Id="1987400100" Name="Scry_Equip01" ObjectPath="\Events\Default Work Unit\UI\Scrying_Mirror\Scry_Equip01"/>
+				<Event Id="2987241197" Name="Scry_Idle" ObjectPath="\Events\Default Work Unit\UI\Scrying_Mirror\Scry_Idle"/>
+				<Event Id="1141296488" Name="SFX_Weapon_Woosh" ObjectPath="\Events\Default Work Unit\Combat\SFX_Weapon_Woosh"/>
 				<Event Id="2599040456" Name="UI_Crafting" ObjectPath="\Events\Default Work Unit\UI\UI_Crafting"/>
 				<Event Id="3753599689" Name="UI_Tick" ObjectPath="\Events\Default Work Unit\UI\UI_Tick"/>
 				<Event Id="603848811" Name="Weapon_Block" ObjectPath="\Events\Default Work Unit\Combat\Weapon_Block"/>
@@ -141,6 +148,10 @@
 					<ShortName>VO_Baby_Laugh3-04.wav</ShortName>
 					<Path>SFX\VO_Baby_Laugh3-04_10C4C929.wem</Path>
 				</File>
+				<File Id="136533678" Language="SFX">
+					<ShortName>SFX_Weapon_Woosh.wav</ShortName>
+					<Path>SFX\SFX_Weapon_Woosh_10C4C929.wem</Path>
+				</File>
 				<File Id="141371425" Language="SFX">
 					<ShortName>SFX_Grim_OpenClose04.wav</ShortName>
 					<Path>SFX\SFX_Grim_OpenClose04_10C4C929.wem</Path>
@@ -173,6 +184,14 @@
 					<ShortName>Riven_Vocal01.wav</ShortName>
 					<Path>SFX\Riven_Vocal01_10C4C929.wem</Path>
 				</File>
+				<File Id="186324756" Language="SFX">
+					<ShortName>Corpse_Box_Push03.wav</ShortName>
+					<Path>SFX\Corpse_Box_Push03_10C4C929.wem</Path>
+				</File>
+				<File Id="190427978" Language="SFX">
+					<ShortName>Corpse_Box_Push04.wav</ShortName>
+					<Path>SFX\Corpse_Box_Push04_10C4C929.wem</Path>
+				</File>
 				<File Id="197166246" Language="SFX">
 					<ShortName>VO_Baby_Hm3-04.wav</ShortName>
 					<Path>SFX\VO_Baby_Hm3-04_10C4C929.wem</Path>
@@ -184,6 +203,10 @@
 				<File Id="197392415" Language="SFX">
 					<ShortName>SFX_Crunch_Layer01.wav</ShortName>
 					<Path>SFX\SFX_Crunch_Layer01_D60ABF3C.wem</Path>
+				</File>
+				<File Id="209225158" Language="SFX">
+					<ShortName>Scry_Equip03.wav</ShortName>
+					<Path>SFX\Scry_Equip03_D79FB2B7.wem</Path>
 				</File>
 				<File Id="212994889" Language="SFX">
 					<ShortName>Riven_Idle02.wav</ShortName>
@@ -317,6 +340,10 @@
 					<ShortName>VO_Baby_Coo3-01.wav</ShortName>
 					<Path>SFX\VO_Baby_Coo3-01_10C4C929.wem</Path>
 				</File>
+				<File Id="452151702" Language="SFX">
+					<ShortName>Corpse_Box_Push01.wav</ShortName>
+					<Path>SFX\Corpse_Box_Push01_10C4C929.wem</Path>
+				</File>
 				<File Id="455279753" Language="SFX">
 					<ShortName>SFX_Grim_PageTurn07.wav</ShortName>
 					<Path>SFX\SFX_Grim_PageTurn07_10C4C929.wem</Path>
@@ -328,6 +355,10 @@
 				<File Id="462682880" Language="SFX">
 					<ShortName>VO_Baby_Whine2-01.wav</ShortName>
 					<Path>SFX\VO_Baby_Whine2-01_10C4C929.wem</Path>
+				</File>
+				<File Id="464142908" Language="SFX">
+					<ShortName>Scry_Equip01.wav</ShortName>
+					<Path>SFX\Scry_Equip01_10C4C929.wem</Path>
 				</File>
 				<File Id="464908611" Language="SFX">
 					<ShortName>SFX_Crunch_Layer03.wav</ShortName>
@@ -369,6 +400,10 @@
 					<ShortName>VO_Baby_Bottle-02.wav</ShortName>
 					<Path>SFX\VO_Baby_Bottle-02_10C4C929.wem</Path>
 				</File>
+				<File Id="507531816" Language="SFX">
+					<ShortName>Corpse_Box_Push05.wav</ShortName>
+					<Path>SFX\Corpse_Box_Push05_10C4C929.wem</Path>
+				</File>
 				<File Id="515912459" Language="SFX">
 					<ShortName>Riven_Idle07.wav</ShortName>
 					<Path>SFX\Riven_Idle07_10C4C929.wem</Path>
@@ -404,6 +439,10 @@
 				<File Id="562577469" Language="SFX">
 					<ShortName>Combat_Metal_Metal04.wav</ShortName>
 					<Path>SFX\Combat_Metal_Metal04_10C4C929.wem</Path>
+				</File>
+				<File Id="565085330" Language="SFX">
+					<ShortName>Box_Break01.wav</ShortName>
+					<Path>SFX\Box_Break01_10C4C929.wem</Path>
 				</File>
 				<File Id="572741540" Language="SFX">
 					<ShortName>VO_Baby_Laugh1-05.wav</ShortName>
@@ -601,6 +640,10 @@
 					<ShortName>Combat_Metal_Wood04.wav</ShortName>
 					<Path>SFX\Combat_Metal_Wood04_10C4C929.wem</Path>
 				</File>
+				<File Id="881746301" Language="SFX">
+					<ShortName>Corpse_Box_Push02.wav</ShortName>
+					<Path>SFX\Corpse_Box_Push02_10C4C929.wem</Path>
+				</File>
 				<File Id="886920567" Language="SFX">
 					<ShortName>Combat_Hit_Metal03.wav</ShortName>
 					<Path>SFX\Combat_Hit_Metal03_10C4C929.wem</Path>
@@ -612,6 +655,10 @@
 				<File Id="888923181" Language="SFX">
 					<ShortName>VO_Baby_Coo3-06.wav</ShortName>
 					<Path>SFX\VO_Baby_Coo3-06_10C4C929.wem</Path>
+				</File>
+				<File Id="891431067" Language="SFX">
+					<ShortName>Aura_Idle.wav</ShortName>
+					<Path>SFX\Aura_Idle_D79FB2B7.wem</Path>
 				</File>
 				<File Id="896228902" Language="SFX">
 					<ShortName>VO_Baby_Whine2-02.wav</ShortName>
@@ -752,6 +799,10 @@
 				<File Id="1035933315" Language="SFX">
 					<ShortName>VO_Baby_BreastFeed-02.wav</ShortName>
 					<Path>SFX\VO_Baby_BreastFeed-02_10C4C929.wem</Path>
+				</File>
+				<File Id="1038836839" Language="SFX">
+					<ShortName>Rebirth_Ambiance.wav</ShortName>
+					<Path>SFX\Rebirth_Ambiance_97EDECB5.wem</Path>
 				</File>
 				<File Id="1047737104" Language="SFX">
 					<ShortName>VO_Baby_Laugh2-05.wav</ShortName>

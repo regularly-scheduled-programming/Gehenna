@@ -1,5 +1,1 @@
-Audio_Main	"UI_Crafting"
-Audio_Main	"Grimoire_PageTurn"
-Audio_Main	"Grimoire_Close"
-Audio_Main	"UI_Tick"
-Audio_Main	"Pull_Board"
+Audio_Main	"Ambiance"
