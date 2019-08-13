@@ -116,6 +116,31 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Event Name="Mother_ClosetDoor" ID="{DD4B7358-5EB7-4002-85EB-5C904B4BB38C}">
+							<ChildrenList>
+								<Action Name="" ID="{41FA23AB-FC46-4D31-8535-EADD09E81C94}" ShortID="293377623">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Mother_ClosetDoor" ID="{5D91FC26-F368-4C45-98BA-BE47B7A8D6F4}" WorkUnitID="{F9BA77DD-0F56-4BD8-ABDD-088EE35A1F08}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Mother_ClosetOpen" ID="{FD7B9596-DC19-49FC-9BFD-6C55D9C0206C}">
+							<ChildrenList>
+								<Action Name="" ID="{DB729406-D15D-4201-B0FE-12D2C9CA69B8}" ShortID="411030821">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Mother_ClosetOpen" ID="{6C28FD2F-8A18-4195-81A8-8177D6000CFF}" WorkUnitID="{F9BA77DD-0F56-4BD8-ABDD-088EE35A1F08}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Baby_VO" ID="{78FF8CC6-488B-4642-A44E-D40721255EC4}" ShortID="508802608">
@@ -459,7 +484,7 @@
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
-										<Property Name="Probability" Type="Real64" Value="65"/>
+										<Property Name="Probability" Type="Real64" Value="60"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -501,6 +526,73 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Riven_Chase" ID="{001D5C33-AF30-42E9-987C-616ED678A69D}" WorkUnitID="{F9BA77DD-0F56-4BD8-ABDD-088EE35A1F08}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Riven_Chase" ID="{6CFCC284-4D61-45A5-82C6-9DBDE364BFFE}">
+							<ChildrenList>
+								<Action Name="" ID="{6C712594-9F87-43CA-B1AA-466DCFF64290}" ShortID="410710362">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Riven_Chase" ID="{001D5C33-AF30-42E9-987C-616ED678A69D}" WorkUnitID="{F9BA77DD-0F56-4BD8-ABDD-088EE35A1F08}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Riven_Idle" ID="{6AC2D716-0025-462F-8371-931E8E9CC19B}">
+							<ChildrenList>
+								<Action Name="" ID="{79C044E2-E2EE-43A3-B75B-20B9C3B5EDD5}" ShortID="1063692594">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Riven_Idle" ID="{274CC600-1E8B-4605-A888-FF1AD1F09EDD}" WorkUnitID="{F9BA77DD-0F56-4BD8-ABDD-088EE35A1F08}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Riven_Search" ID="{A004E3DC-6AAE-4ED6-82A4-C6AE5B98AF75}">
+							<ChildrenList>
+								<Action Name="" ID="{2A471A44-E9AC-45F8-8585-9A49751EDBDC}" ShortID="177815503">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Riven_Search" ID="{C756F7F0-53E6-42C1-9AEA-8B687294AB20}" WorkUnitID="{F9BA77DD-0F56-4BD8-ABDD-088EE35A1F08}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Riven_Feed" ID="{C09EB6CE-C7EB-4654-BD0B-295F95E4F397}">
+							<ChildrenList>
+								<Action Name="" ID="{CCC9CA33-0E2D-493E-B16C-46BFE9366D8B}" ShortID="178629903">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Riven_Feed" ID="{D2BD2010-AA55-4FF7-A5CF-31660677BDBC}" WorkUnitID="{F9BA77DD-0F56-4BD8-ABDD-088EE35A1F08}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Riven_Feed" ID="{623D1AC8-302B-46D5-A049-39C491FABC52}">
+							<ChildrenList>
+								<Action Name="" ID="{5FF6C213-C3CC-46ED-B96A-5010E7A7CD73}" ShortID="926201715">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Riven_Feed" ID="{D2BD2010-AA55-4FF7-A5CF-31660677BDBC}" WorkUnitID="{F9BA77DD-0F56-4BD8-ABDD-088EE35A1F08}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -564,8 +656,55 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_Stone_Run" ID="{85FE6433-75ED-4AC6-A485-40EC358CB956}">
+							<ChildrenList>
+								<Action Name="" ID="{4A426200-C522-472B-B54F-BB79C2E3048D}" ShortID="799246827">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Stone_Run" ID="{72B3A895-0693-4423-A2CF-46FE52F5650C}" WorkUnitID="{F9BA77DD-0F56-4BD8-ABDD-088EE35A1F08}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Barn_Run" ID="{51AE3DA5-598F-4247-91CB-3F8B59B701E7}">
+							<ChildrenList>
+								<Action Name="" ID="{E6208404-BB15-404A-8E85-3B9C7A4C51E0}" ShortID="636824045">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Barn_Run" ID="{4DB08562-53C0-40D8-B927-7B19B90F38EB}" WorkUnitID="{F9BA77DD-0F56-4BD8-ABDD-088EE35A1F08}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="Play_Scry_Idle" ID="{CC75A0EB-CCC6-4E36-A006-2532D388144C}">
+					<ChildrenList>
+						<Action Name="" ID="{5AE61FF3-55FD-4318-9788-812597D30213}" ShortID="954328708">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Scry_Idle" ID="{6496A5FA-EB63-416D-B65D-500CFB57989B}" WorkUnitID="{F9BA77DD-0F56-4BD8-ABDD-088EE35A1F08}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Scry_Idle" ID="{3BA92F3B-E1CB-4D99-A2E2-8EDC74D3E48C}">
+					<ChildrenList>
+						<Action Name="" ID="{428F838C-6AF4-441D-81B0-5775F6E3DE6B}" ShortID="119042502">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Scry_Idle" ID="{6496A5FA-EB63-416D-B65D-500CFB57989B}" WorkUnitID="{F9BA77DD-0F56-4BD8-ABDD-088EE35A1F08}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

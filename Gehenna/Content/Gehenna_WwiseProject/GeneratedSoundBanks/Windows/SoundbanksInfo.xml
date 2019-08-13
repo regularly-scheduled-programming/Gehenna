@@ -49,16 +49,27 @@
 				<Event Id="111252760" Name="LaughVar1" ObjectPath="\Events\Default Work Unit\Baby_VO\LaughVar1"/>
 				<Event Id="111252763" Name="LaughVar2" ObjectPath="\Events\Default Work Unit\Baby_VO\LaughVar2"/>
 				<Event Id="111252762" Name="LaughVar3" ObjectPath="\Events\Default Work Unit\Baby_VO\LaughVar3"/>
+				<Event Id="3028833183" Name="Mother_ClosetDoor" ObjectPath="\Events\Default Work Unit\Interactions\Mother_ClosetDoor"/>
+				<Event Id="1949207583" Name="Mother_ClosetOpen" ObjectPath="\Events\Default Work Unit\Interactions\Mother_ClosetOpen"/>
 				<Event Id="529906916" Name="Mother_FS_Stone" ObjectPath="\Events\Default Work Unit\Mother_Footsteps\Mother_FS_Stone"/>
 				<Event Id="2813559734" Name="Mother_FS_Walk" ObjectPath="\Events\Default Work Unit\Mother_Footsteps\Mother_FS_Walk"/>
 				<Event Id="1457413866" Name="Pacifier" ObjectPath="\Events\Default Work Unit\Baby_VO\Pacifier"/>
+				<Event Id="2765071547" Name="Play_Barn_Run" ObjectPath="\Events\Default Work Unit\Mother_Footsteps\Play_Barn_Run"/>
+				<Event Id="1437644755" Name="Play_Stone_Run" ObjectPath="\Events\Default Work Unit\Mother_Footsteps\Play_Stone_Run"/>
 				<Event Id="1835832625" Name="Pull_Board" ObjectPath="\Events\Default Work Unit\Interactions\Pull_Board"/>
 				<Event Id="303710254" Name="Push_Corpse_Box" ObjectPath="\Events\Default Work Unit\Interactions\Corpse_Boxes\Push_Corpse_Box"/>
+				<Event Id="1815118850" Name="Riven_Chase" ObjectPath="\Events\Default Work Unit\Riven\Riven_Chase"/>
+				<Event Id="2922995564" Name="Riven_Feed" ObjectPath="\Events\Default Work Unit\Riven\Riven_Feed"/>
 				<Event Id="528446302" Name="Riven_Idle" ObjectPath="\Events\Default Work Unit\Riven\Riven_Idle"/>
 				<Event Id="2801517852" Name="Riven_Search" ObjectPath="\Events\Default Work Unit\Riven\Riven_Search"/>
 				<Event Id="1987400100" Name="Scry_Equip01" ObjectPath="\Events\Default Work Unit\UI\Scrying_Mirror\Scry_Equip01"/>
 				<Event Id="2987241197" Name="Scry_Idle" ObjectPath="\Events\Default Work Unit\UI\Scrying_Mirror\Scry_Idle"/>
 				<Event Id="1141296488" Name="SFX_Weapon_Woosh" ObjectPath="\Events\Default Work Unit\Combat\SFX_Weapon_Woosh"/>
+				<Event Id="2899351277" Name="Stop_Riven_Chase" ObjectPath="\Events\Default Work Unit\Riven\Stop_Riven_Chase"/>
+				<Event Id="867008933" Name="Stop_Riven_Feed" ObjectPath="\Events\Default Work Unit\Riven\Stop_Riven_Feed"/>
+				<Event Id="1271950611" Name="Stop_Riven_Idle" ObjectPath="\Events\Default Work Unit\Riven\Stop_Riven_Idle"/>
+				<Event Id="1566956713" Name="Stop_Riven_Search" ObjectPath="\Events\Default Work Unit\Riven\Stop_Riven_Search"/>
+				<Event Id="322824134" Name="Stop_Scry_Idle" ObjectPath="\Events\Default Work Unit\Stop_Scry_Idle"/>
 				<Event Id="2599040456" Name="UI_Crafting" ObjectPath="\Events\Default Work Unit\UI\UI_Crafting"/>
 				<Event Id="3753599689" Name="UI_Tick" ObjectPath="\Events\Default Work Unit\UI\UI_Tick"/>
 				<Event Id="603848811" Name="Weapon_Block" ObjectPath="\Events\Default Work Unit\Combat\Weapon_Block"/>
@@ -67,6 +78,14 @@
 				<Event Id="1524617176" Name="WhineVar3" ObjectPath="\Events\Default Work Unit\Baby_VO\WhineVar3"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="7562810" Language="SFX">
+					<ShortName>Riven_Feed03.wav</ShortName>
+					<Path>SFX\Riven_Feed03_10C4C929.wem</Path>
+				</File>
+				<File Id="14007900" Language="SFX">
+					<ShortName>Mother_ClosetDoor01.wav</ShortName>
+					<Path>SFX\Mother_ClosetDoor01_10C4C929.wem</Path>
+				</File>
 				<File Id="18850239" Language="SFX">
 					<ShortName>VO_Baby_Babble1-01.wav</ShortName>
 					<Path>SFX\VO_Baby_Babble1-01_10C4C929.wem</Path>
@@ -151,6 +170,10 @@
 					<ShortName>VO_Baby_Whine3-04.wav</ShortName>
 					<Path>SFX\VO_Baby_Whine3-04_10C4C929.wem</Path>
 				</File>
+				<File Id="108706962" Language="SFX">
+					<ShortName>Mom_Foot_Stone_Run04.wav</ShortName>
+					<Path>SFX\Mom_Foot_Stone_Run04_10C4C929.wem</Path>
+				</File>
 				<File Id="113063601" Language="SFX">
 					<ShortName>Combat_Hit_Metal02.wav</ShortName>
 					<Path>SFX\Combat_Hit_Metal02_10C4C929.wem</Path>
@@ -187,6 +210,10 @@
 					<ShortName>Combat_Metal_Metal01.wav</ShortName>
 					<Path>SFX\Combat_Metal_Metal01_10C4C929.wem</Path>
 				</File>
+				<File Id="156502018" Language="SFX">
+					<ShortName>Riven_Attack0406.wav</ShortName>
+					<Path>SFX\Riven_Attack0406_45AEB6A8.wem</Path>
+				</File>
 				<File Id="170798776" Language="SFX">
 					<ShortName>Mom_Foot_Stone04.wav</ShortName>
 					<Path>SFX\Mom_Foot_Stone04_10C4C929.wem</Path>
@@ -194,6 +221,10 @@
 				<File Id="170875475" Language="SFX">
 					<ShortName>SFX_PullBoard02.wav</ShortName>
 					<Path>SFX\SFX_PullBoard02_10C4C929.wem</Path>
+				</File>
+				<File Id="173223687" Language="SFX">
+					<ShortName>Wardrobe_Clicks03.wav</ShortName>
+					<Path>SFX\Wardrobe_Clicks03_10C4C929.wem</Path>
 				</File>
 				<File Id="173568919" Language="SFX">
 					<ShortName>VO_Baby_Hm3-02.wav</ShortName>
@@ -207,9 +238,9 @@
 					<ShortName>Riven_Vocal01.wav</ShortName>
 					<Path>SFX\Riven_Vocal01_10C4C929.wem</Path>
 				</File>
-				<File Id="186324756" Language="SFX">
-					<ShortName>Corpse_Box_Push03.wav</ShortName>
-					<Path>SFX\Corpse_Box_Push03_10C4C929.wem</Path>
+				<File Id="190425729" Language="SFX">
+					<ShortName>Wardrobe_Clicks02.wav</ShortName>
+					<Path>SFX\Wardrobe_Clicks02_10C4C929.wem</Path>
 				</File>
 				<File Id="190427978" Language="SFX">
 					<ShortName>Corpse_Box_Push04.wav</ShortName>
@@ -243,6 +274,10 @@
 					<ShortName>VO_Baby_Whine1-02.wav</ShortName>
 					<Path>SFX\VO_Baby_Whine1-02_10C4C929.wem</Path>
 				</File>
+				<File Id="219132503" Language="SFX">
+					<ShortName>Mother_ClosetDoor02.wav</ShortName>
+					<Path>SFX\Mother_ClosetDoor02_10C4C929.wem</Path>
+				</File>
 				<File Id="228496813" Language="SFX">
 					<ShortName>Combat_Metal_Wood03.wav</ShortName>
 					<Path>SFX\Combat_Metal_Wood03_10C4C929.wem</Path>
@@ -263,6 +298,10 @@
 					<ShortName>VO_Baby_Cry-05.wav</ShortName>
 					<Path>SFX\VO_Baby_Cry-05_10C4C929.wem</Path>
 				</File>
+				<File Id="264031508" Language="SFX">
+					<ShortName>Riven_Feed07.wav</ShortName>
+					<Path>SFX\Riven_Feed07_10C4C929.wem</Path>
+				</File>
 				<File Id="264205885" Language="SFX">
 					<ShortName>VO_Baby_PO3-03.wav</ShortName>
 					<Path>SFX\VO_Baby_PO3-03_10C4C929.wem</Path>
@@ -278,6 +317,10 @@
 				<File Id="270746264" Language="SFX">
 					<ShortName>VO_Baby_Coo3-03.wav</ShortName>
 					<Path>SFX\VO_Baby_Coo3-03_10C4C929.wem</Path>
+				</File>
+				<File Id="271420193" Language="SFX">
+					<ShortName>Riven_Attack0403.wav</ShortName>
+					<Path>SFX\Riven_Attack0403_10C4C929.wem</Path>
 				</File>
 				<File Id="274381963" Language="SFX">
 					<ShortName>VO_Baby_Coo1-03.wav</ShortName>
@@ -355,6 +398,14 @@
 					<ShortName>Riven_Vocal03.wav</ShortName>
 					<Path>SFX\Riven_Vocal03_10C4C929.wem</Path>
 				</File>
+				<File Id="366095974" Language="SFX">
+					<ShortName>Mother_FT_Barn_Run06.wav</ShortName>
+					<Path>SFX\Mother_FT_Barn_Run06_10C4C929.wem</Path>
+				</File>
+				<File Id="383980389" Language="SFX">
+					<ShortName>Mom_Foot_Stone_Run02.wav</ShortName>
+					<Path>SFX\Mom_Foot_Stone_Run02_10C4C929.wem</Path>
+				</File>
 				<File Id="384706687" Language="SFX">
 					<ShortName>VO_Baby_Babble1-03.wav</ShortName>
 					<Path>SFX\VO_Baby_Babble1-03_10C4C929.wem</Path>
@@ -379,6 +430,10 @@
 					<ShortName>VO_Baby_Coo1-02.wav</ShortName>
 					<Path>SFX\VO_Baby_Coo1-02_10C4C929.wem</Path>
 				</File>
+				<File Id="427174688" Language="SFX">
+					<ShortName>Riven_Attack0401.wav</ShortName>
+					<Path>SFX\Riven_Attack0401_10C4C929.wem</Path>
+				</File>
 				<File Id="429294266" Language="SFX">
 					<ShortName>Riven_Idle14.wav</ShortName>
 					<Path>SFX\Riven_Idle14_10C4C929.wem</Path>
@@ -395,9 +450,17 @@
 					<ShortName>VO_Baby_Pacifier-01.wav</ShortName>
 					<Path>SFX\VO_Baby_Pacifier-01_10C4C929.wem</Path>
 				</File>
+				<File Id="439589808" Language="SFX">
+					<ShortName>Mother_FT_Barn_Run04.wav</ShortName>
+					<Path>SFX\Mother_FT_Barn_Run04_10C4C929.wem</Path>
+				</File>
 				<File Id="442589999" Language="SFX">
 					<ShortName>VO_Baby_Coo3-01.wav</ShortName>
 					<Path>SFX\VO_Baby_Coo3-01_10C4C929.wem</Path>
+				</File>
+				<File Id="449439940" Language="SFX">
+					<ShortName>Riven_Feed05.wav</ShortName>
+					<Path>SFX\Riven_Feed05_10C4C929.wem</Path>
 				</File>
 				<File Id="452151702" Language="SFX">
 					<ShortName>Corpse_Box_Push01.wav</ShortName>
@@ -435,6 +498,10 @@
 					<ShortName>SFX_Craft_Effigy03.wav</ShortName>
 					<Path>SFX\SFX_Craft_Effigy03_10C4C929.wem</Path>
 				</File>
+				<File Id="475354733" Language="SFX">
+					<ShortName>Mom_Foot_Stone_Run03.wav</ShortName>
+					<Path>SFX\Mom_Foot_Stone_Run03_10C4C929.wem</Path>
+				</File>
 				<File Id="475554881" Language="SFX">
 					<ShortName>Mom_Footsteps_Barn07.wav</ShortName>
 					<Path>SFX\Mom_Footsteps_Barn07_10C4C929.wem</Path>
@@ -459,9 +526,17 @@
 					<ShortName>VO_Baby_Pacifier-03.wav</ShortName>
 					<Path>SFX\VO_Baby_Pacifier-03_10C4C929.wem</Path>
 				</File>
+				<File Id="497839507" Language="SFX">
+					<ShortName>Mother_FT_Barn_Run03.wav</ShortName>
+					<Path>SFX\Mother_FT_Barn_Run03_10C4C929.wem</Path>
+				</File>
 				<File Id="499417601" Language="SFX">
 					<ShortName>VO_Baby_BreastFeed-03.wav</ShortName>
 					<Path>SFX\VO_Baby_BreastFeed-03_10C4C929.wem</Path>
+				</File>
+				<File Id="502498506" Language="SFX">
+					<ShortName>Riven_Feed09.wav</ShortName>
+					<Path>SFX\Riven_Feed09_10C4C929.wem</Path>
 				</File>
 				<File Id="504127985" Language="SFX">
 					<ShortName>VO_Baby_Bottle-02.wav</ShortName>
@@ -469,7 +544,7 @@
 				</File>
 				<File Id="507531816" Language="SFX">
 					<ShortName>Corpse_Box_Push05.wav</ShortName>
-					<Path>SFX\Corpse_Box_Push05_10C4C929.wem</Path>
+					<Path>SFX\Corpse_Box_Push05_32C984E4.wem</Path>
 				</File>
 				<File Id="515912459" Language="SFX">
 					<ShortName>Riven_Idle07.wav</ShortName>
@@ -478,6 +553,10 @@
 				<File Id="516465907" Language="SFX">
 					<ShortName>VO_Baby_Hm1-01.wav</ShortName>
 					<Path>SFX\VO_Baby_Hm1-01_10C4C929.wem</Path>
+				</File>
+				<File Id="516573049" Language="SFX">
+					<ShortName>Riven_Attack0407.wav</ShortName>
+					<Path>SFX\Riven_Attack0407_1A535306.wem</Path>
 				</File>
 				<File Id="518680868" Language="SFX">
 					<ShortName>SFX_Wood_Hit_Stun03.wav</ShortName>
@@ -503,6 +582,18 @@
 					<ShortName>Riven_Idle05.wav</ShortName>
 					<Path>SFX\Riven_Idle05_10C4C929.wem</Path>
 				</File>
+				<File Id="549606519" Language="SFX">
+					<ShortName>Mom_Foot_Stone_Run06.wav</ShortName>
+					<Path>SFX\Mom_Foot_Stone_Run06_10C4C929.wem</Path>
+				</File>
+				<File Id="553936856" Language="SFX">
+					<ShortName>Riven_Feed08.wav</ShortName>
+					<Path>SFX\Riven_Feed08_10C4C929.wem</Path>
+				</File>
+				<File Id="559517956" Language="SFX">
+					<ShortName>Riven_Feed01.wav</ShortName>
+					<Path>SFX\Riven_Feed01_10C4C929.wem</Path>
+				</File>
 				<File Id="559523669" Language="SFX">
 					<ShortName>Riven_Idle20.wav</ShortName>
 					<Path>SFX\Riven_Idle20_10C4C929.wem</Path>
@@ -522,6 +613,14 @@
 				<File Id="573936142" Language="SFX">
 					<ShortName>Riven_Idle12.wav</ShortName>
 					<Path>SFX\Riven_Idle12_10C4C929.wem</Path>
+				</File>
+				<File Id="580498426" Language="SFX">
+					<ShortName>Mother_FT_Barn_Run08.wav</ShortName>
+					<Path>SFX\Mother_FT_Barn_Run08_10C4C929.wem</Path>
+				</File>
+				<File Id="585269061" Language="SFX">
+					<ShortName>Mother_FT_Barn_Run02.wav</ShortName>
+					<Path>SFX\Mother_FT_Barn_Run02_10C4C929.wem</Path>
 				</File>
 				<File Id="594963897" Language="SFX">
 					<ShortName>Mom_Foot_Tunnel09.wav</ShortName>
@@ -567,6 +666,10 @@
 					<ShortName>SFX_Wood_Hit_Stun04.wav</ShortName>
 					<Path>SFX\SFX_Wood_Hit_Stun04_A3E22744.wem</Path>
 				</File>
+				<File Id="633818248" Language="SFX">
+					<ShortName>Riven_Feed02.wav</ShortName>
+					<Path>SFX\Riven_Feed02_10C4C929.wem</Path>
+				</File>
 				<File Id="635604773" Language="SFX">
 					<ShortName>SFX_Craft_Effigy01.wav</ShortName>
 					<Path>SFX\SFX_Craft_Effigy01_10C4C929.wem</Path>
@@ -595,9 +698,21 @@
 					<ShortName>Riven_Idle19.wav</ShortName>
 					<Path>SFX\Riven_Idle19_10C4C929.wem</Path>
 				</File>
+				<File Id="652853220" Language="SFX">
+					<ShortName>Mother_FT_Barn_Run07.wav</ShortName>
+					<Path>SFX\Mother_FT_Barn_Run07_10C4C929.wem</Path>
+				</File>
 				<File Id="655684562" Language="SFX">
 					<ShortName>VO_Baby_PO1-02.wav</ShortName>
 					<Path>SFX\VO_Baby_PO1-02_10C4C929.wem</Path>
+				</File>
+				<File Id="664393982" Language="SFX">
+					<ShortName>Mom_Foot_Stone_Run01.wav</ShortName>
+					<Path>SFX\Mom_Foot_Stone_Run01_10C4C929.wem</Path>
+				</File>
+				<File Id="676997538" Language="SFX">
+					<ShortName>Riven_Attack0408.wav</ShortName>
+					<Path>SFX\Riven_Attack0408_DFE186D8.wem</Path>
 				</File>
 				<File Id="684129315" Language="SFX">
 					<ShortName>VO_Mother_Attack04.wav</ShortName>
@@ -606,6 +721,10 @@
 				<File Id="687697373" Language="SFX">
 					<ShortName>Riven_clicks03.wav</ShortName>
 					<Path>SFX\Riven_clicks03_10C4C929.wem</Path>
+				</File>
+				<File Id="688638216" Language="SFX">
+					<ShortName>Riven_Feed04.wav</ShortName>
+					<Path>SFX\Riven_Feed04_10C4C929.wem</Path>
 				</File>
 				<File Id="708918586" Language="SFX">
 					<ShortName>Mom_Foot_Tunnel06.wav</ShortName>
@@ -638,6 +757,10 @@
 				<File Id="728031705" Language="SFX">
 					<ShortName>SFX_Grim_PageTurn01.wav</ShortName>
 					<Path>SFX\SFX_Grim_PageTurn01_10C4C929.wem</Path>
+				</File>
+				<File Id="732297693" Language="SFX">
+					<ShortName>Mother_FT_Barn_Run05.wav</ShortName>
+					<Path>SFX\Mother_FT_Barn_Run05_10C4C929.wem</Path>
 				</File>
 				<File Id="732428098" Language="SFX">
 					<ShortName>Combat_Metal_Metal02.wav</ShortName>
@@ -674,6 +797,10 @@
 				<File Id="780268341" Language="SFX">
 					<ShortName>Mom_Foot_Wetlands03.wav</ShortName>
 					<Path>SFX\Mom_Foot_Wetlands03_047E3DB7.wem</Path>
+				</File>
+				<File Id="788789676" Language="SFX">
+					<ShortName>Riven_Feed06.wav</ShortName>
+					<Path>SFX\Riven_Feed06_10C4C929.wem</Path>
 				</File>
 				<File Id="795441499" Language="SFX">
 					<ShortName>Mom_Footsteps_Barn05.wav</ShortName>
@@ -719,6 +846,10 @@
 					<ShortName>Riven_Idle21.wav</ShortName>
 					<Path>SFX\Riven_Idle21_10C4C929.wem</Path>
 				</File>
+				<File Id="826952551" Language="SFX">
+					<ShortName>Riven_Attack0404.wav</ShortName>
+					<Path>SFX\Riven_Attack0404_1E9146F0.wem</Path>
+				</File>
 				<File Id="831996911" Language="SFX">
 					<ShortName>VO_Baby_Whine3-03.wav</ShortName>
 					<Path>SFX\VO_Baby_Whine3-03_10C4C929.wem</Path>
@@ -751,6 +882,10 @@
 					<ShortName>Combat_Metal_Wood02.wav</ShortName>
 					<Path>SFX\Combat_Metal_Wood02_10C4C929.wem</Path>
 				</File>
+				<File Id="860948779" Language="SFX">
+					<ShortName>Mother_FT_Barn_Run01.wav</ShortName>
+					<Path>SFX\Mother_FT_Barn_Run01_10C4C929.wem</Path>
+				</File>
 				<File Id="861507324" Language="SFX">
 					<ShortName>Combat_Metal_Wood01.wav</ShortName>
 					<Path>SFX\Combat_Metal_Wood01_10C4C929.wem</Path>
@@ -766,6 +901,10 @@
 				<File Id="876168233" Language="SFX">
 					<ShortName>Combat_Metal_Wood04.wav</ShortName>
 					<Path>SFX\Combat_Metal_Wood04_10C4C929.wem</Path>
+				</File>
+				<File Id="879063901" Language="SFX">
+					<ShortName>Riven_Attack0405.wav</ShortName>
+					<Path>SFX\Riven_Attack0405_B3BEE1A0.wem</Path>
 				</File>
 				<File Id="881746301" Language="SFX">
 					<ShortName>Corpse_Box_Push02.wav</ShortName>
@@ -807,6 +946,10 @@
 					<ShortName>VO_Baby_Laugh1-04.wav</ShortName>
 					<Path>SFX\VO_Baby_Laugh1-04_10C4C929.wem</Path>
 				</File>
+				<File Id="918169569" Language="SFX">
+					<ShortName>Riven_Attack0402.wav</ShortName>
+					<Path>SFX\Riven_Attack0402_10C4C929.wem</Path>
+				</File>
 				<File Id="918304656" Language="SFX">
 					<ShortName>SFX_Grim_PageTurn03.wav</ShortName>
 					<Path>SFX\SFX_Grim_PageTurn03_10C4C929.wem</Path>
@@ -846,6 +989,10 @@
 				<File Id="940037671" Language="SFX">
 					<ShortName>VO_Baby_Laugh2-01.wav</ShortName>
 					<Path>SFX\VO_Baby_Laugh2-01_10C4C929.wem</Path>
+				</File>
+				<File Id="941523110" Language="SFX">
+					<ShortName>Mom_Foot_Stone_Run05.wav</ShortName>
+					<Path>SFX\Mom_Foot_Stone_Run05_10C4C929.wem</Path>
 				</File>
 				<File Id="942086430" Language="SFX">
 					<ShortName>VO_Baby_Babble1-04.wav</ShortName>
@@ -910,6 +1057,10 @@
 				<File Id="988775109" Language="SFX">
 					<ShortName>VO_Baby_Hm1-02.wav</ShortName>
 					<Path>SFX\VO_Baby_Hm1-02_10C4C929.wem</Path>
+				</File>
+				<File Id="998651608" Language="SFX">
+					<ShortName>Mother_ClosetDoor03.wav</ShortName>
+					<Path>SFX\Mother_ClosetDoor03_10C4C929.wem</Path>
 				</File>
 				<File Id="1001223412" Language="SFX">
 					<ShortName>SFX_PullBoard01.wav</ShortName>
