@@ -1039,7 +1039,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8160DF5A-C65D-466B-96CA-B5A99184F16E}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0C387874-81ED-40BF-9A62-FF86F7893F7F}"/>
+									<ObjectRef Name="Combat" ID="{F1695287-B2B9-4C94-862E-7CBD772B4F4C}" WorkUnitID="{0C387874-81ED-40BF-9A62-FF86F7893F7F}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -1570,7 +1570,7 @@
 									<ObjectRef Name="Metal_Wood" ID="{1007F961-81F9-4C58-B6B8-93C4E86234E0}" WorkUnitID="{9B2B3BCE-F2B9-4284-9543-D9D347B32B68}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0C387874-81ED-40BF-9A62-FF86F7893F7F}"/>
+									<ObjectRef Name="Combat" ID="{F1695287-B2B9-4C94-862E-7CBD772B4F4C}" WorkUnitID="{0C387874-81ED-40BF-9A62-FF86F7893F7F}"/>
 								</Reference>
 								<Reference Name="SwitchGroupOrStateGroup">
 									<ObjectRef Name="Weapon_Combo" ID="{DAEE3761-7807-449F-8C92-B82628E561C1}" WorkUnitID="{9B2B3BCE-F2B9-4284-9543-D9D347B32B68}"/>
@@ -1862,7 +1862,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8160DF5A-C65D-466B-96CA-B5A99184F16E}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0C387874-81ED-40BF-9A62-FF86F7893F7F}"/>
+									<ObjectRef Name="Combat" ID="{F1695287-B2B9-4C94-862E-7CBD772B4F4C}" WorkUnitID="{0C387874-81ED-40BF-9A62-FF86F7893F7F}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -7772,7 +7772,7 @@
 				</Folder>
 				<Folder Name="Music" ID="{F0F231D8-B627-4972-B3FD-E8E3D6675F9E}" ShortID="7340284">
 					<ChildrenList>
-						<Sound Name="Rebirth_Ambiance" ID="{6B3D42FD-07EB-40F8-91E8-44ECD51F705B}" ShortID="741291447">
+						<Sound Name="Ave Verum Corpus Mozart (Ending cutscene)" ID="{A2398D69-E58C-4885-BFA3-C4A917EC60B5}" ShortID="376007400">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 							</PropertyList>
@@ -7782,6 +7782,65 @@
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0C387874-81ED-40BF-9A62-FF86F7893F7F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Ave Verum Corpus Mozart (Ending cutscene)" ID="{CEF62EE5-FBE4-42AD-9C82-FB49427CAC03}" ShortID="285615222">
+									<PropertyList>
+										<Property Name="VolumeOffset" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Ave Verum Corpus Mozart (Ending cutscene).wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Ave Verum Corpus Mozart (Ending cutscene)" ID="{CEF62EE5-FBE4-42AD-9C82-FB49427CAC03}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="show me your true face" ID="{858DE9C8-CAB2-44D3-99C8-039E8FF4412D}" ShortID="91333409">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8160DF5A-C65D-466B-96CA-B5A99184F16E}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0C387874-81ED-40BF-9A62-FF86F7893F7F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="show me your true face" ID="{FAE4C181-376F-4CDA-9DAE-0CE4158BB19A}" ShortID="663189962">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.839671543582604"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="1.99421991600867"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="53.8248155288312"/>
+										<Property Name="TrimEnd" Type="Real64" Value="59.8204177001237"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>show me your true face.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="show me your true face" ID="{FAE4C181-376F-4CDA-9DAE-0CE4158BB19A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Ambiance" ID="{D7F1BBF5-26BB-4E5F-9097-4317A37F10F8}" ShortID="396757647">
+					<ChildrenList>
+						<Sound Name="Rebirth_Ambiance" ID="{6B3D42FD-07EB-40F8-91E8-44ECD51F705B}" ShortID="741291447">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8160DF5A-C65D-466B-96CA-B5A99184F16E}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Ambiance" ID="{B62AA751-7166-4387-B47B-0C73B07FB571}" WorkUnitID="{0C387874-81ED-40BF-9A62-FF86F7893F7F}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>

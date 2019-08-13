@@ -529,6 +529,26 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{46363C40-FAD1-4BC4-A247-CBF986230683}" ShortID="572363503">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Riven_Search" ID="{C756F7F0-53E6-42C1-9AEA-8B687294AB20}" WorkUnitID="{F9BA77DD-0F56-4BD8-ABDD-088EE35A1F08}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{F1E2FFAF-AA56-4EF3-B2AE-7ED1BAFD2C93}" ShortID="582693727">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Riven_Idle" ID="{274CC600-1E8B-4605-A888-FF1AD1F09EDD}" WorkUnitID="{F9BA77DD-0F56-4BD8-ABDD-088EE35A1F08}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="Stop_Riven_Chase" ID="{6CFCC284-4D61-45A5-82C6-9DBDE364BFFE}">
@@ -700,6 +720,28 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Scry_Idle" ID="{6496A5FA-EB63-416D-B65D-500CFB57989B}" WorkUnitID="{F9BA77DD-0F56-4BD8-ABDD-088EE35A1F08}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Loop" ID="{27AB17E2-C368-4B82-AEFC-329C2BF1AA2C}">
+					<ChildrenList>
+						<Action Name="" ID="{240522AC-7476-4403-BFBC-0857E59B5CD6}" ShortID="408678143">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ave Verum Corpus Mozart (Ending cutscene)" ID="{A2398D69-E58C-4885-BFA3-C4A917EC60B5}" WorkUnitID="{F9BA77DD-0F56-4BD8-ABDD-088EE35A1F08}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Stinger" ID="{1F6D0ACC-6538-4008-818A-01A771DF84D6}">
+					<ChildrenList>
+						<Action Name="" ID="{536A718C-B0EA-4CAE-A143-CE349B463F21}" ShortID="557409541">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="show me your true face" ID="{858DE9C8-CAB2-44D3-99C8-039E8FF4412D}" WorkUnitID="{F9BA77DD-0F56-4BD8-ABDD-088EE35A1F08}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
