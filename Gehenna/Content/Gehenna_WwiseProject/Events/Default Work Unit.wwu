@@ -75,6 +75,31 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Event Name="Stop_Scry_Idle" ID="{3BA92F3B-E1CB-4D99-A2E2-8EDC74D3E48C}">
+							<ChildrenList>
+								<Action Name="" ID="{428F838C-6AF4-441D-81B0-5775F6E3DE6B}" ShortID="119042502">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Scry_Idle" ID="{6496A5FA-EB63-416D-B65D-500CFB57989B}" WorkUnitID="{F9BA77DD-0F56-4BD8-ABDD-088EE35A1F08}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Scry_Idle" ID="{CC75A0EB-CCC6-4E36-A006-2532D388144C}">
+							<ChildrenList>
+								<Action Name="" ID="{5AE61FF3-55FD-4318-9788-812597D30213}" ShortID="954328708">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Scry_Idle" ID="{6496A5FA-EB63-416D-B65D-500CFB57989B}" WorkUnitID="{F9BA77DD-0F56-4BD8-ABDD-088EE35A1F08}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Interactions" ID="{C0A4BA32-B492-4F30-9EFB-F2E79F09C7F5}" ShortID="114211451">
@@ -618,37 +643,50 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Riven_FS_Barn" ID="{1DB0E71F-29C6-401B-8AE0-FA517894F803}">
+							<ChildrenList>
+								<Action Name="" ID="{79230040-89FD-4AA6-BCAF-22F7F7D52EF4}" ShortID="375545552">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Riven_FS_Barn" ID="{A0F86284-EB50-41E4-B8DB-67FC31E1D46A}" WorkUnitID="{F9BA77DD-0F56-4BD8-ABDD-088EE35A1F08}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Riven_FS_Wetlands" ID="{DD6153D8-F68F-40DB-B969-853CE7E7AEFD}">
+							<ChildrenList>
+								<Action Name="" ID="{A5D9C753-7571-41FB-80BF-5BE8BD6BDFF8}" ShortID="961793049">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Riven_FS_Wetlands" ID="{8004B443-20A3-44AE-B02E-0FBAD69FB48E}" WorkUnitID="{F9BA77DD-0F56-4BD8-ABDD-088EE35A1F08}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Riven_Weapon_Woosh" ID="{47CB23F8-B0F5-4237-A4D0-4BF13D5BD423}">
+							<ChildrenList>
+								<Action Name="" ID="{E69EBEAC-BA41-46BC-9A01-6A6FDF349965}" ShortID="992983678">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_Weapon_Woosh" ID="{13AB5464-D3C0-4DD0-80EA-9D1406B2B838}" WorkUnitID="{F9BA77DD-0F56-4BD8-ABDD-088EE35A1F08}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
-				<Event Name="Ambiance" ID="{769E9A11-8E2E-46A6-8DA1-BA09607D6D27}">
-					<ChildrenList>
-						<Action Name="" ID="{C7CA3C40-C648-4079-A021-BC876E742938}" ShortID="898398139">
-							<PropertyList>
-								<Property Name="FadeTime" Type="Real64" Value="3">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{D4F9741F-6932-4640-87B8-18CF9A787F3F}"/>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Rebirth_Ambiance" ID="{6B3D42FD-07EB-40F8-91E8-44ECD51F705B}" WorkUnitID="{F9BA77DD-0F56-4BD8-ABDD-088EE35A1F08}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Folder Name="Mother_VO" ID="{86BC4D12-7E9F-4EE9-AD6D-8CAAAB03FDF8}" ShortID="81365814"/>
 				<Folder Name="Mother_Footsteps" ID="{234A7867-BC25-438E-AC47-2E6CEA7FE9E4}" ShortID="85985561">
 					<ChildrenList>
-						<Event Name="Footsteps_Wetlands" ID="{E13EEFB6-2880-404C-945E-EBCAB11A86DE}">
+						<Event Name="Mother_FS_Wetlands_Walk" ID="{E13EEFB6-2880-404C-945E-EBCAB11A86DE}">
 							<ChildrenList>
 								<Action Name="" ID="{2FD76BAE-B121-4A00-94EF-A5F95351887C}" ShortID="378893164">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Wetlands" ID="{78E4D6E4-77A3-4B90-B6EB-A5666573C53E}" WorkUnitID="{F9BA77DD-0F56-4BD8-ABDD-088EE35A1F08}"/>
+											<ObjectRef Name="Mother_FS_Wetlands" ID="{78E4D6E4-77A3-4B90-B6EB-A5666573C53E}" WorkUnitID="{F9BA77DD-0F56-4BD8-ABDD-088EE35A1F08}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -700,53 +738,160 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
-				<Event Name="Play_Scry_Idle" ID="{CC75A0EB-CCC6-4E36-A006-2532D388144C}">
+				<Folder Name="Music" ID="{BD771480-08CD-4AF9-9731-2F250E489660}" ShortID="518901938">
 					<ChildrenList>
-						<Action Name="" ID="{5AE61FF3-55FD-4318-9788-812597D30213}" ShortID="954328708">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Scry_Idle" ID="{6496A5FA-EB63-416D-B65D-500CFB57989B}" WorkUnitID="{F9BA77DD-0F56-4BD8-ABDD-088EE35A1F08}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Event Name="Play_Loop" ID="{27AB17E2-C368-4B82-AEFC-329C2BF1AA2C}">
+							<ChildrenList>
+								<Action Name="" ID="{240522AC-7476-4403-BFBC-0857E59B5CD6}" ShortID="408678143">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Ave Verum Corpus Mozart (Ending cutscene)" ID="{A2398D69-E58C-4885-BFA3-C4A917EC60B5}" WorkUnitID="{F9BA77DD-0F56-4BD8-ABDD-088EE35A1F08}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Stinger" ID="{1F6D0ACC-6538-4008-818A-01A771DF84D6}">
+							<ChildrenList>
+								<Action Name="" ID="{536A718C-B0EA-4CAE-A143-CE349B463F21}" ShortID="557409541">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="show me your true face" ID="{858DE9C8-CAB2-44D3-99C8-039E8FF4412D}" WorkUnitID="{F9BA77DD-0F56-4BD8-ABDD-088EE35A1F08}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
-				<Event Name="Stop_Scry_Idle" ID="{3BA92F3B-E1CB-4D99-A2E2-8EDC74D3E48C}">
+				</Folder>
+				<Folder Name="Ambiances" ID="{90392E65-F380-47A7-89C0-008F361100CD}" ShortID="43487118">
 					<ChildrenList>
-						<Action Name="" ID="{428F838C-6AF4-441D-81B0-5775F6E3DE6B}" ShortID="119042502">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Scry_Idle" ID="{6496A5FA-EB63-416D-B65D-500CFB57989B}" WorkUnitID="{F9BA77DD-0F56-4BD8-ABDD-088EE35A1F08}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Event Name="RT_Indoor" ID="{8B24E3A9-DD97-4D6C-8724-488A9864AFEE}">
+							<ChildrenList>
+								<Action Name="" ID="{69545751-6D55-4BBB-A842-25630F71471C}" ShortID="305336144">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="RT_Indoor" ID="{5FAFEF16-E3E1-4803-99FA-0F7E904CDF97}" WorkUnitID="{F9BA77DD-0F56-4BD8-ABDD-088EE35A1F08}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{827C2EF6-08C8-4472-82DE-28AA6189A105}" ShortID="705828896">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="RT_Tunnel" ID="{E9F3A452-8C5B-42AC-9FD1-0174DC91707E}" WorkUnitID="{F9BA77DD-0F56-4BD8-ABDD-088EE35A1F08}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{D4E48A44-8380-4615-8552-C2E6930DC1F2}" ShortID="2325148">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="RT_Outdoor" ID="{77C4EAC7-9E80-4A85-8428-CBEC3DB6A128}" WorkUnitID="{F9BA77DD-0F56-4BD8-ABDD-088EE35A1F08}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="RT_Tunnel" ID="{4286FBE3-91E1-4258-B365-5D062A29E5FB}">
+							<ChildrenList>
+								<Action Name="" ID="{D218766E-83EA-4267-AE71-E1239A6E2D14}" ShortID="817096665">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="RT_Tunnel" ID="{E9F3A452-8C5B-42AC-9FD1-0174DC91707E}" WorkUnitID="{F9BA77DD-0F56-4BD8-ABDD-088EE35A1F08}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{E35D1D99-C953-443B-BD5D-CDB93202FC9C}" ShortID="119455619">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="RT_Indoor" ID="{5FAFEF16-E3E1-4803-99FA-0F7E904CDF97}" WorkUnitID="{F9BA77DD-0F56-4BD8-ABDD-088EE35A1F08}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{BECF7E1E-2315-4BF9-8D1D-E67244F92A66}" ShortID="337315638">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="RT_Outdoor" ID="{77C4EAC7-9E80-4A85-8428-CBEC3DB6A128}" WorkUnitID="{F9BA77DD-0F56-4BD8-ABDD-088EE35A1F08}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Ambiance" ID="{769E9A11-8E2E-46A6-8DA1-BA09607D6D27}">
+							<ChildrenList>
+								<Action Name="" ID="{C7CA3C40-C648-4079-A021-BC876E742938}" ShortID="898398139">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="3">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{D4F9741F-6932-4640-87B8-18CF9A787F3F}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Rebirth_Ambiance" ID="{6B3D42FD-07EB-40F8-91E8-44ECD51F705B}" WorkUnitID="{F9BA77DD-0F56-4BD8-ABDD-088EE35A1F08}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="RT_Outdoor" ID="{0EB14065-07BD-42CA-BFA1-6CC802DB1253}">
+							<ChildrenList>
+								<Action Name="" ID="{0D2A04BC-FB18-432F-806A-D46214C03ABA}" ShortID="280417230">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="RT_Outdoor" ID="{77C4EAC7-9E80-4A85-8428-CBEC3DB6A128}" WorkUnitID="{F9BA77DD-0F56-4BD8-ABDD-088EE35A1F08}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{7A008F63-41AD-4319-8B22-606B3955D429}" ShortID="614744436">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="RT_Indoor" ID="{5FAFEF16-E3E1-4803-99FA-0F7E904CDF97}" WorkUnitID="{F9BA77DD-0F56-4BD8-ABDD-088EE35A1F08}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{5E8F9EEA-926E-4077-8786-E4EEC05EA4AF}" ShortID="104118977">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="RT_Tunnel" ID="{E9F3A452-8C5B-42AC-9FD1-0174DC91707E}" WorkUnitID="{F9BA77DD-0F56-4BD8-ABDD-088EE35A1F08}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
-				<Event Name="Play_Loop" ID="{27AB17E2-C368-4B82-AEFC-329C2BF1AA2C}">
-					<ChildrenList>
-						<Action Name="" ID="{240522AC-7476-4403-BFBC-0857E59B5CD6}" ShortID="408678143">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Ave Verum Corpus Mozart (Ending cutscene)" ID="{A2398D69-E58C-4885-BFA3-C4A917EC60B5}" WorkUnitID="{F9BA77DD-0F56-4BD8-ABDD-088EE35A1F08}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Stinger" ID="{1F6D0ACC-6538-4008-818A-01A771DF84D6}">
-					<ChildrenList>
-						<Action Name="" ID="{536A718C-B0EA-4CAE-A143-CE349B463F21}" ShortID="557409541">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="show me your true face" ID="{858DE9C8-CAB2-44D3-99C8-039E8FF4412D}" WorkUnitID="{F9BA77DD-0F56-4BD8-ABDD-088EE35A1F08}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

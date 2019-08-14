@@ -8989,7 +8989,7 @@
 				<ObsOccCurves>
 					<Comment></Comment>
 					<ObsOccCurve CurveXType="Obstruction" CurveYType="Volume">
-						<PlatformCurve Platform="Linked" EnableCurve="false">
+						<PlatformCurve Platform="Linked" EnableCurve="true">
 							<Curve Name="" ID="{7B3C8560-46B4-4C1C-8C47-6D8713D700C5}">
 								<PropertyList>
 									<Property Name="Flags" Type="int32" Value="3"/>
@@ -9010,7 +9010,7 @@
 						</PlatformCurve>
 					</ObsOccCurve>
 					<ObsOccCurve CurveXType="Obstruction" CurveYType="LPF">
-						<PlatformCurve Platform="Linked" EnableCurve="false">
+						<PlatformCurve Platform="Linked" EnableCurve="true">
 							<Curve Name="" ID="{06539A68-FB64-4760-8134-FF4A96A75EB4}">
 								<PropertyList>
 									<Property Name="Flags" Type="int32" Value="1"/>
@@ -9052,7 +9052,7 @@
 						</PlatformCurve>
 					</ObsOccCurve>
 					<ObsOccCurve CurveXType="Occlusion" CurveYType="Volume">
-						<PlatformCurve Platform="Linked" EnableCurve="false">
+						<PlatformCurve Platform="Linked" EnableCurve="true">
 							<Curve Name="" ID="{3B1462C0-13CB-49BC-8601-09547BC8D3CC}">
 								<PropertyList>
 									<Property Name="Flags" Type="int32" Value="3"/>
@@ -9073,7 +9073,7 @@
 						</PlatformCurve>
 					</ObsOccCurve>
 					<ObsOccCurve CurveXType="Occlusion" CurveYType="LPF">
-						<PlatformCurve Platform="Linked" EnableCurve="false">
+						<PlatformCurve Platform="Linked" EnableCurve="true">
 							<Curve Name="" ID="{7C896CC7-8F59-4252-963B-1AB237798CEC}">
 								<PropertyList>
 									<Property Name="Flags" Type="int32" Value="1"/>
