@@ -1,9 +1,9 @@
-D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Development\AkAudio\Definitions.AkAudio.h
-D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkGameplayTypes.gen.cpp
+E:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Development\AkAudio\Definitions.AkAudio.h
+E:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkGameplayTypes.gen.cpp
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
-D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio/Classes/AkGameplayTypes.h
-D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Public\AkInclude.h
+E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio/Classes/AkGameplayTypes.h
+E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Public\AkInclude.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Windows/AllowWindowsPlatformTypes.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Windows/WindowsHWrapper.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Windows/PreWindowsApi.h
@@ -105,54 +105,54 @@ C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\imm.h
 C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\ime_cmodes.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Windows/PostWindowsApi.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Windows/AllowWindowsPlatformAtomics.h
-d:\gehenna\gehenna\plugins\wwise\source\akaudio\classes\AkUEFeatures.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/AkWwiseSDKVersion.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkSoundEngine.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkSoundEngineExport.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/AkPlatforms.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Platforms/Windows/AkTypes.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkTypes.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/IAkPlugin.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkCommonDefs.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkSpeakerConfig.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkSpeakerVolumes.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkPlatformFuncs.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Win32/AkPlatformFuncs.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkAssert.h
+e:\gehenna\gehenna\plugins\wwise\source\akaudio\classes\AkUEFeatures.h
+E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/AkWwiseSDKVersion.h
+E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkSoundEngine.h
+E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkSoundEngineExport.h
+E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/AkPlatforms.h
+E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Platforms/Windows/AkTypes.h
+E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkTypes.h
+E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/IAkPlugin.h
+E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkCommonDefs.h
+E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkSpeakerConfig.h
+E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkSpeakerVolumes.h
+E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkPlatformFuncs.h
+E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Win32/AkPlatformFuncs.h
+E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkAssert.h
 C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt\math.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Platforms/Generic/AkSpeakerVolumes.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/IAkRTPCSubscriber.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/IAkPluginMemAlloc.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkMemoryMgr.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkFPUtilities.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkLock.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Win32/AkLock.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkMonitorError.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/IAkProcessorFeatures.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/IAkPlatformContext.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkMidiTypes.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkCallback.h
+E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Platforms/Generic/AkSpeakerVolumes.h
+E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/IAkRTPCSubscriber.h
+E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/IAkPluginMemAlloc.h
+E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkMemoryMgr.h
+E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkFPUtilities.h
+E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkLock.h
+E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Win32/AkLock.h
+E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkMonitorError.h
+E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/IAkProcessorFeatures.h
+E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/IAkPlatformContext.h
+E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkMidiTypes.h
+E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkCallback.h
 C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt\math.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Platforms/Windows/AkWinSoundEngine.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Platforms/Windows/AkPlatformContext.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SpatialAudio/Common/AkSpatialAudio.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SpatialAudio/Common/AkSpatialAudioTypes.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkKeyArray.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkArray.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkObject.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkKeyDef.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkSet.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkString.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkFNVHash.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkHashList.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkReflectGameData.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/IBytes.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkModule.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/IAkStreamMgr.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkStreamMgrModule.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/MusicEngine/Common/AkMusicEngine.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Comm/AkCommunication.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundFrame/SF.h
+E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Platforms/Windows/AkWinSoundEngine.h
+E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Platforms/Windows/AkPlatformContext.h
+E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SpatialAudio/Common/AkSpatialAudio.h
+E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SpatialAudio/Common/AkSpatialAudioTypes.h
+E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkKeyArray.h
+E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkArray.h
+E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkObject.h
+E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkKeyDef.h
+E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkSet.h
+E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkString.h
+E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkFNVHash.h
+E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkHashList.h
+E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkReflectGameData.h
+E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/IBytes.h
+E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkModule.h
+E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/IAkStreamMgr.h
+E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkStreamMgrModule.h
+E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/MusicEngine/Common/AkMusicEngine.h
+E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Comm/AkCommunication.h
+E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundFrame/SF.h
 C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\wtypes.h
 c:\program files (x86)\windows kits\10\include\10.0.17763.0\shared\rpc.h
 C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\pshpack8.h
@@ -171,19 +171,19 @@ C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\rpcsal.h
 C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\poppack.h
 c:\program files (x86)\windows kits\10\include\10.0.17763.0\shared\wtypesbase.h
 c:\program files (x86)\windows kits\10\include\10.0.17763.0\shared\guiddef.h
-d:\gehenna\gehenna\plugins\wwise\thirdparty\include\ak\soundframe\SFObjects.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkQueryParameters.h
+e:\gehenna\gehenna\plugins\wwise\thirdparty\include\ak\soundframe\SFObjects.h
+E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkQueryParameters.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Windows/HideWindowsPlatformTypes.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Windows/HideWindowsPlatformAtomics.h
-d:\gehenna\gehenna\plugins\wwise\intermediate\build\win64\ue4editor\inc\akaudio\AkGameplayTypes.generated.h
-D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkInitializationSettings.gen.cpp
-D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio/Classes/InitializationSettings/AkInitializationSettings.h
-d:\gehenna\gehenna\plugins\wwise\intermediate\build\win64\ue4editor\inc\akaudio\AkInitializationSettings.generated.h
-D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkIOSInitializationSettings.gen.cpp
-D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio/Classes/InitializationSettings/AkIOSInitializationSettings.h
-d:\gehenna\gehenna\plugins\wwise\intermediate\build\win64\ue4editor\inc\akaudio\AkIOSInitializationSettings.generated.h
-D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkItemBoolProperties.gen.cpp
-D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio/Classes/AkWaapiUMG/Components/AkItemBoolProperties.h
+e:\gehenna\gehenna\plugins\wwise\intermediate\build\win64\ue4editor\inc\akaudio\AkGameplayTypes.generated.h
+E:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkInitializationSettings.gen.cpp
+E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio/Classes/InitializationSettings/AkInitializationSettings.h
+e:\gehenna\gehenna\plugins\wwise\intermediate\build\win64\ue4editor\inc\akaudio\AkInitializationSettings.generated.h
+E:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkIOSInitializationSettings.gen.cpp
+E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio/Classes/InitializationSettings/AkIOSInitializationSettings.h
+e:\gehenna\gehenna\plugins\wwise\intermediate\build\win64\ue4editor\inc\akaudio\AkIOSInitializationSettings.generated.h
+E:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkItemBoolProperties.gen.cpp
+E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio/Classes/AkWaapiUMG/Components/AkItemBoolProperties.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\UMG\Public\Components/Widget.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\UMG\Public\Components/Visual.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\Visual.generated.h
@@ -196,10 +196,10 @@ C:\Program Files\Epic Games\UE_4.22\Engine\Source\Editor\UnrealEd\Public\Kismet2
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Logging/TokenizedMessage.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Editor\UnrealEd\Public\EdGraphToken.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\Widget.generated.h
-d:\gehenna\gehenna\plugins\wwise\source\akaudio\classes\akwaapiumg\components\SAkItemBoolProperties.h
+e:\gehenna\gehenna\plugins\wwise\source\akaudio\classes\akwaapiumg\components\SAkItemBoolProperties.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Slate\Public\Widgets/Input/SSearchBox.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Misc/TextFilter.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Misc/TextFilterExpressionEvaluator.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Misc/ExpressionParser.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Misc/TextFilterUtils.h
-d:\gehenna\gehenna\plugins\wwise\intermediate\build\win64\ue4editor\inc\akaudio\AkItemBoolProperties.generated.h
+e:\gehenna\gehenna\plugins\wwise\intermediate\build\win64\ue4editor\inc\akaudio\AkItemBoolProperties.generated.h

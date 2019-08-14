@@ -23,6 +23,11 @@
 			"Name": "RootMotionGuidePlugin",
 			"Enabled": false,
 			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/e3aab86c458c4b4999d6b80249f33a6d"
+		},
+		{
+			"Name": "Substance",
+			"Enabled": true,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/2f6439c2f9584f49809d9b13b16c2ba4"
 		}
 	]
 }
