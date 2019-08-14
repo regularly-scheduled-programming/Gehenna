@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{9B2B3BCE-F2B9-4284-9543-D9D347B32B68}" SchemaVersion="94">
+	<Switches>
+		<WorkUnit Name="Default Work Unit" ID="{9B2B3BCE-F2B9-4284-9543-D9D347B32B68}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Weapon_Type" ID="{A02218C7-4BCB-4656-BEA8-A64527524CBC}">
+					<ChildrenList>
+						<Switch Name="Wood" ID="{23D3A3D1-B2AB-4FFC-93FA-32F862926D01}"/>
+						<Switch Name="Metal" ID="{AAA1D423-45E1-4A0B-9919-4CE2F770285C}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="Weapon_Combo" ID="{DAEE3761-7807-449F-8C92-B82628E561C1}">
+					<ChildrenList>
+						<Switch Name="Wood_Wood" ID="{7863DD9C-D861-4F0E-A012-1FA7D2D70AB2}"/>
+						<Switch Name="Metal_Wood" ID="{1007F961-81F9-4C58-B6B8-93C4E86234E0}"/>
+						<Switch Name="Metal_Metal" ID="{071035A0-DAFC-4AC3-AFA6-693C69257524}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="floormaterials" ID="{A6BCDC93-CA8B-4E44-BEBF-660600ABA705}">
+					<ChildrenList>
+						<Switch Name="Barn" ID="{CC940EF1-78A0-4609-8AAC-88C29311A255}"/>
+						<Switch Name="Hardwood" ID="{08923470-4A44-4B57-B01A-83B3E4CAA382}"/>
+						<Switch Name="Tunnel" ID="{BE527BEE-07A6-4287-8C7A-2B7E72F26A22}"/>
+						<Switch Name="Wetlands" ID="{8B52BA66-5E43-4C06-B803-74A2E542D613}"/>
+						<Switch Name="Stone" ID="{9FDA77E7-489E-4CE4-B862-0EA911DCF7D4}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>
