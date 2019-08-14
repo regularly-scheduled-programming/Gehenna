@@ -16,28 +16,6 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Grimoire_Close" ID="{AC677020-0A7C-4199-B20C-8F5AB38641A6}">
-							<ChildrenList>
-								<Action Name="" ID="{D34EAD1B-6CF3-41B6-ABC9-314B281E4591}" ShortID="537192380">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Grim_Open" ID="{E05E4FAA-BCDB-4596-8B60-9D9CBDEFDCF4}" WorkUnitID="{F9BA77DD-0F56-4BD8-ABDD-088EE35A1F08}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Grimoire_PageTurn" ID="{4B184F10-B738-4AD5-B8AF-2CB3028E736D}">
-							<ChildrenList>
-								<Action Name="" ID="{CDF3863C-D116-44CF-B89C-A2EDAC676DFC}" ShortID="321885263">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Page_Turn" ID="{07B10921-5FCF-4CD7-B28A-B9763B3352C9}" WorkUnitID="{F9BA77DD-0F56-4BD8-ABDD-088EE35A1F08}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
 						<Event Name="UI_Tick" ID="{CA07A293-B171-469D-AC38-BB063DE2B6A7}">
 							<ChildrenList>
 								<Action Name="" ID="{7EFF2C25-5024-44A8-BE18-F9124F879E7B}" ShortID="680982942">
@@ -100,6 +78,32 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Folder Name="Grimoire" ID="{B5CAAA00-3E6F-4313-BE4F-12E3C37590A8}" ShortID="941176613">
+							<ChildrenList>
+								<Event Name="Grimoire_PageTurn" ID="{4B184F10-B738-4AD5-B8AF-2CB3028E736D}">
+									<ChildrenList>
+										<Action Name="" ID="{CDF3863C-D116-44CF-B89C-A2EDAC676DFC}" ShortID="321885263">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Page_Turn" ID="{07B10921-5FCF-4CD7-B28A-B9763B3352C9}" WorkUnitID="{F9BA77DD-0F56-4BD8-ABDD-088EE35A1F08}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Grimoire_Close" ID="{AC677020-0A7C-4199-B20C-8F5AB38641A6}">
+									<ChildrenList>
+										<Action Name="" ID="{D34EAD1B-6CF3-41B6-ABC9-314B281E4591}" ShortID="537192380">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Grim_Open" ID="{E05E4FAA-BCDB-4596-8B60-9D9CBDEFDCF4}" WorkUnitID="{F9BA77DD-0F56-4BD8-ABDD-088EE35A1F08}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Interactions" ID="{C0A4BA32-B492-4F30-9EFB-F2E79F09C7F5}" ShortID="114211451">
