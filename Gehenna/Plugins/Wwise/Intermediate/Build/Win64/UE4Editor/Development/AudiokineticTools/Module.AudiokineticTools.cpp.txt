@@ -1,0 +1,618 @@
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Development\AudiokineticTools\Definitions.AudiokineticTools.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AudiokineticTools\Private\ActorFactoryAkAmbientSound.cpp
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AudiokineticTools\Classes\ActorFactoryAkAmbientSound.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Editor\UnrealEd\Classes\ActorFactories/ActorFactory.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UnrealEd\ActorFactory.generated.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AudiokineticTools\ActorFactoryAkAmbientSound.generated.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkAmbientSound.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkAmbientSound.generated.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkAudioEvent.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\Engine\Classes\Engine/GameEngine.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\Slate\Public\Widgets/SViewport.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\SlateCore\Public\Input/HittestGrid.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime/MovieSceneCapture/Public/MovieSceneCaptureHandle.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameEngine.generated.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkAudioEvent.generated.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkComponent.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AkAudio\Public\AkInclude.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\Core\Public\Windows/AllowWindowsPlatformTypes.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\Core\Public\Windows/WindowsHWrapper.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\Core\Public\Windows/PreWindowsApi.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\Core\Public\Windows/MinWindows.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\Windows.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\sdkddkver.h
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\excpt.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\windef.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\minwindef.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\winnt.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\kernelspecs.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\basetsd.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\guiddef.h
+c:\program files (x86)\windows kits\10\include\10.0.17763.0\shared\pshpack4.h
+c:\program files (x86)\windows kits\10\include\10.0.17763.0\shared\poppack.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\pshpack4.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\poppack.h
+c:\program files (x86)\windows kits\10\include\10.0.17763.0\shared\pshpack4.h
+c:\program files (x86)\windows kits\10\include\10.0.17763.0\shared\pshpack2.h
+c:\program files (x86)\windows kits\10\include\10.0.17763.0\shared\poppack.h
+c:\program files (x86)\windows kits\10\include\10.0.17763.0\shared\pshpack2.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\pshpack2.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\poppack.h
+c:\program files (x86)\windows kits\10\include\10.0.17763.0\shared\poppack.h
+c:\program files (x86)\windows kits\10\include\10.0.17763.0\shared\pshpack8.h
+c:\program files (x86)\windows kits\10\include\10.0.17763.0\shared\poppack.h
+c:\program files (x86)\windows kits\10\include\10.0.17763.0\shared\pshpack1.h
+c:\program files (x86)\windows kits\10\include\10.0.17763.0\shared\poppack.h
+c:\program files (x86)\windows kits\10\include\10.0.17763.0\shared\pshpack1.h
+c:\program files (x86)\windows kits\10\include\10.0.17763.0\shared\poppack.h
+c:\program files (x86)\windows kits\10\include\10.0.17763.0\shared\poppack.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\apiset.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\ktmtypes.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\winbase.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\apisetcconv.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\minwinbase.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\apiquery2.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\processenv.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\fileapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\debugapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\utilapiset.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\handleapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\errhandlingapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\fibersapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\namedpipeapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\profileapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\heapapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\ioapiset.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\synchapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\interlockedapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\processthreadsapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\sysinfoapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\memoryapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\enclaveapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\threadpoollegacyapiset.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\threadpoolapiset.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\jobapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\jobapi2.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\wow64apiset.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\libloaderapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\securitybaseapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\namespaceapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\systemtopologyapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\processtopologyapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\securityappcontainer.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\realtimeapiset.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\winerror.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\timezoneapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\wingdi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\pshpack1.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\poppack.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\pshpack2.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\poppack.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\pshpack4.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\poppack.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\pshpack4.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\poppack.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\winuser.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\pshpack2.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\poppack.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\tvout.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\winnls.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\datetimeapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\stringapiset.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\winnls.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\wincon.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\wincontypes.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\consoleapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\consoleapi2.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\consoleapi3.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\winver.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\verrsrc.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\winreg.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\reason.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\winnetwk.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\wnnc.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\stralign.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\imm.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\ime_cmodes.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\Core\Public\Windows/PostWindowsApi.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\Core\Public\Windows/AllowWindowsPlatformAtomics.h
+d:\rebirth repo\gehenna\plugins\wwise\source\akaudio\classes\AkUEFeatures.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\ThirdParty\include\AK/AkWwiseSDKVersion.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkSoundEngine.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkSoundEngineExport.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\ThirdParty\include\AK/AkPlatforms.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Platforms/Windows/AkTypes.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkTypes.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/IAkPlugin.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkCommonDefs.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkSpeakerConfig.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkSpeakerVolumes.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkPlatformFuncs.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Win32/AkPlatformFuncs.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkAssert.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt\math.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Platforms/Generic/AkSpeakerVolumes.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/IAkRTPCSubscriber.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/IAkPluginMemAlloc.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkMemoryMgr.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkFPUtilities.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkLock.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Win32/AkLock.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkMonitorError.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/IAkProcessorFeatures.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/IAkPlatformContext.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkMidiTypes.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkCallback.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt\math.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Platforms/Windows/AkWinSoundEngine.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Platforms/Windows/AkPlatformContext.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SpatialAudio/Common/AkSpatialAudio.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SpatialAudio/Common/AkSpatialAudioTypes.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkKeyArray.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkArray.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkObject.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkKeyDef.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkSet.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkString.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkFNVHash.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkHashList.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkReflectGameData.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\ThirdParty\include\AK/IBytes.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkModule.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/IAkStreamMgr.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkStreamMgrModule.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\ThirdParty\include\AK/MusicEngine/Common/AkMusicEngine.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Comm/AkCommunication.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundFrame/SF.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\wtypes.h
+c:\program files (x86)\windows kits\10\include\10.0.17763.0\shared\rpc.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\pshpack8.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\rpcdce.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\rpcdcep.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\rpcnsi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\rpcnterr.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\rpcasync.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\pshpack8.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\poppack.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\poppack.h
+c:\program files (x86)\windows kits\10\include\10.0.17763.0\shared\rpcndr.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\pshpack8.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\rpcnsip.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\rpcsal.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\poppack.h
+c:\program files (x86)\windows kits\10\include\10.0.17763.0\shared\wtypesbase.h
+c:\program files (x86)\windows kits\10\include\10.0.17763.0\shared\guiddef.h
+d:\rebirth repo\gehenna\plugins\wwise\thirdparty\include\ak\soundframe\SFObjects.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkQueryParameters.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\Core\Public\Windows/HideWindowsPlatformTypes.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\Core\Public\Windows/HideWindowsPlatformAtomics.h
+d:\rebirth repo\gehenna\plugins\wwise\source\akaudio\classes\AkGameplayTypes.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkGameplayTypes.generated.h
+d:\rebirth repo\gehenna\plugins\wwise\source\akaudio\classes\OcclusionObstructionService/AkComponentOcclusionObstructionService.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AkAudio\Public\AkAudioDevice.h
+d:\rebirth repo\gehenna\plugins\wwise\source\akaudio\classes\AkBankManager.h
+d:\rebirth repo\gehenna\plugins\wwise\source\akaudio\classes\OcclusionObstructionService/AkOcclusionObstructionService.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkComponent.generated.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AudiokineticTools\Private\AkAcousticPortalVisualizer.cpp
+d:\rebirth repo\gehenna\plugins\wwise\source\audiokinetictools\private\AkAcousticPortalVisualizer.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Editor\UnrealEd\Public\ComponentVisualizer.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkAcousticPortal.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\Engine\Classes\GameFramework/Volume.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Volume.generated.h
+d:\rebirth repo\gehenna\plugins\wwise\source\akaudio\classes\OcclusionObstructionService/AkPortalOcclusionObstructionService.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkAcousticPortal.generated.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\Engine\Classes\Components/BrushComponent.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\BrushComponent.generated.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Editor\EditorStyle\Public\Classes/EditorStyleSettings.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\EditorStyle\EditorStyleSettings.generated.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Editor\UnrealEd\Public\EditorModes.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AudiokineticTools\Private\AkAcousticTextureFactory.cpp
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AudiokineticTools\Classes\AkAcousticTextureFactory.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AudiokineticTools\AkAcousticTextureFactory.generated.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkAcousticTexture.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkAcousticTexture.generated.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AudiokineticTools\Private\AkAudioBankFactory.cpp
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AudiokineticTools\Classes\AkAudioBankFactory.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AudiokineticTools\AkAudioBankFactory.generated.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkAudioBank.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkAudioBank.generated.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AudiokineticTools\Private\AkAudioBankGenerationHelpers.cpp
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AudiokineticTools\Public\AkAudioBankGenerationHelpers.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkAuxBus.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkAuxBus.generated.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkAudioStyle.h
+d:\rebirth repo\gehenna\plugins\wwise\source\akaudio\classes\WaapiPicker/WwiseTreeItem.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkUnrealHelper.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkSettingsPerUser.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AkAudio\Public\AkWaapiClient.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\Core\Public\HAL/Runnable.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\Json\Public\Serialization/JsonWriter.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\Json\Public\Serialization/JsonTypes.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\Json\Public\Serialization/JsonSerializer.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\Json\Public\Serialization/JsonReader.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\Json\Public\Dom/JsonValue.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\Json\Public\Dom/JsonObject.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\Json\Public\JsonGlobals.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\ThirdParty\include\AK/WwiseAuthoringAPI/waapi.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkSettingsPerUser.generated.h
+d:\rebirth repo\gehenna\plugins\wwise\source\audiokinetictools\private\SGenerateSoundBanks.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkSettings.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkSettings.generated.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\AssetRegistry\Public\AssetRegistryModule.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\CoreUObject\Public\Misc/AssetRegistryInterface.h
+d:\unreal 4.22.1\ue_4.22\engine\source\runtime\assetregistry\public\IAssetRegistry.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AssetRegistry\IAssetRegistry.generated.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\Core\Public\HAL/PlatformFileManager.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Editor\MainFrame\Public\Interfaces/IMainFrameModule.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Developer\TargetPlatform\Public\Interfaces/ITargetPlatformManagerModule.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Developer\TargetPlatform\Public\Interfaces/ITargetDevice.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Developer\TargetPlatform\Public\Interfaces/TargetDeviceId.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Developer\TargetPlatform\Public\Interfaces/ITargetPlatform.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\Projects\Public\Interfaces/IProjectManager.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\Projects\Public\ModuleDescriptor.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\Core\Public\Misc/FileHelper.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\Projects\Public\ProjectDescriptor.h
+d:\unreal 4.22.1\ue_4.22\engine\source\runtime\projects\public\CustomBuildSteps.h
+d:\unreal 4.22.1\ue_4.22\engine\source\runtime\projects\public\PluginReferenceDescriptor.h
+d:\unreal 4.22.1\ue_4.22\engine\source\runtime\projects\public\LocalizationDescriptor.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Developer\DesktopPlatform\Public\PlatformInfo.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\Core\Public\Misc/MonitoredProcess.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\Core\Public\Misc/SingleThreadRunnable.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\Slate\Public\Framework/Notifications/NotificationManager.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\Slate\Public\Widgets/Notifications/SNotificationList.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AudiokineticTools\Private\AkAudioEventFactory.cpp
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AudiokineticTools\Classes\AkAudioEventFactory.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AudiokineticTools\AkAudioEventFactory.generated.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AudiokineticTools\Private\AkAuxBusFactory.cpp
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AudiokineticTools\Classes\AkAuxBusFactory.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AudiokineticTools\AkAuxBusFactory.generated.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AudiokineticTools\Private\AkComponentVisualizer.cpp
+d:\rebirth repo\gehenna\plugins\wwise\source\audiokinetictools\private\AkComponentVisualizer.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AudiokineticTools\Private\AkJsonFactory.cpp
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AudiokineticTools\Classes\AkJsonFactory.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AudiokineticTools\AkJsonFactory.generated.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AudiokineticTools\Private\AkLateReverbComponentDetailsCustomization.cpp
+d:\rebirth repo\gehenna\plugins\wwise\source\audiokinetictools\private\AkLateReverbComponentDetailsCustomization.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Editor\PropertyEditor\Public\PropertyEditorModule.h
+d:\unreal 4.22.1\ue_4.22\engine\source\editor\propertyeditor\public\IDetailsView.h
+d:\unreal 4.22.1\ue_4.22\engine\source\editor\propertyeditor\public\PropertyEditorDelegates.h
+d:\unreal 4.22.1\ue_4.22\engine\source\editor\propertyeditor\public\IPropertyTypeCustomization.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Editor\PropertyEditor\Public\IDetailCustomization.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkLateReverbComponent.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkLateReverbComponent.generated.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Editor\PropertyEditor\Public\DetailLayoutBuilder.h
+d:\unreal 4.22.1\ue_4.22\engine\source\editor\propertyeditor\public\PropertyHandle.h
+d:\unreal 4.22.1\ue_4.22\engine\source\editor\propertyeditor\public\IDetailPropertyRow.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Editor\PropertyEditor\Public\DetailCategoryBuilder.h
+d:\unreal 4.22.1\ue_4.22\engine\source\editor\propertyeditor\public\IDetailCustomNodeBuilder.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Editor\PropertyEditor\Public\PropertyEditing.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\Core\Public\Misc/MonolithicHeaderBoilerplate.h
+d:\unreal 4.22.1\ue_4.22\engine\source\editor\propertyeditor\public\DetailWidgetRow.h
+d:\unreal 4.22.1\ue_4.22\engine\source\editor\propertyeditor\public\IDetailGroup.h
+d:\unreal 4.22.1\ue_4.22\engine\source\editor\propertyeditor\public\IDetailChildrenBuilder.h
+d:\unreal 4.22.1\ue_4.22\engine\source\editor\propertyeditor\public\IDetailRootObjectCustomization.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Editor\PropertyEditor\Public\IPropertyUtilities.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AudiokineticTools\Private\AkMatineeImportTools.cpp
+d:\rebirth repo\gehenna\plugins\wwise\source\audiokinetictools\private\AkMatineeImportTools.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\MovieSceneAkAudioRTPCSection.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\MovieScene\Public\MovieSceneSection.h
+d:\unreal 4.22.1\ue_4.22\engine\source\runtime\moviescene\public\MovieSceneFwd.h
+d:\unreal 4.22.1\ue_4.22\engine\source\runtime\moviescene\public\MovieSceneSequenceID.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneSequenceID.generated.h
+d:\unreal 4.22.1\ue_4.22\engine\source\runtime\moviescene\public\KeyParams.h
+d:\unreal 4.22.1\ue_4.22\engine\source\runtime\moviescene\public\MovieScene.h
+d:\unreal 4.22.1\ue_4.22\engine\source\runtime\moviescene\public\MovieSceneSpawnable.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneSpawnable.generated.h
+d:\unreal 4.22.1\ue_4.22\engine\source\runtime\moviescene\public\MovieSceneBinding.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneBinding.generated.h
+d:\unreal 4.22.1\ue_4.22\engine\source\runtime\moviescene\public\MovieScenePossessable.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieScenePossessable.generated.h
+d:\unreal 4.22.1\ue_4.22\engine\source\runtime\moviescene\public\MovieSceneSignedObject.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneSignedObject.generated.h
+d:\unreal 4.22.1\ue_4.22\engine\source\runtime\moviescene\public\MovieSceneObjectBindingID.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneObjectBindingID.generated.h
+d:\unreal 4.22.1\ue_4.22\engine\source\runtime\moviescene\public\MovieSceneFrameMigration.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneFrameMigration.generated.h
+d:\unreal 4.22.1\ue_4.22\engine\source\runtime\moviescene\public\MovieSceneTimeController.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\Core\Public\Misc/QualifiedFrameTime.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieScene.generated.h
+d:\unreal 4.22.1\ue_4.22\engine\source\runtime\moviescene\public\Evaluation/Blending/MovieSceneBlendType.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneBlendType.generated.h
+d:\unreal 4.22.1\ue_4.22\engine\source\runtime\moviescene\public\Generators/MovieSceneEasingFunction.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneEasingFunction.generated.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneSection.generated.h
+d:\rebirth repo\gehenna\plugins\wwise\source\akaudio\classes\MovieSceneFloatChannelSerializationHelper.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\MovieScene\Public\Channels/MovieSceneFloatChannel.h
+d:\unreal 4.22.1\ue_4.22\engine\source\runtime\moviescene\public\channels\MovieSceneChannel.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneChannel.generated.h
+d:\unreal 4.22.1\ue_4.22\engine\source\runtime\moviescene\public\channels\MovieSceneChannelData.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneChannelData.generated.h
+d:\unreal 4.22.1\ue_4.22\engine\source\runtime\moviescene\public\channels\MovieSceneChannelTraits.h
+d:\unreal 4.22.1\ue_4.22\engine\source\runtime\moviescene\public\channels\MovieSceneChannelEditorData.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\MovieScene\Public\MovieSceneCommonHelpers.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\MovieScene\Public\Evaluation/MovieSceneEvaluationTemplateInstance.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\MovieScene\Public\Evaluation/MovieSceneSequenceTransform.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneSequenceTransform.generated.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\MovieScene\Public\Evaluation/MovieScenePlayback.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\MovieScene\Public\Evaluation/MovieSceneSequenceTemplateStore.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\MovieScene\Public\Evaluation/MovieSceneEvaluationTemplate.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\MovieScene\Public\MovieSceneTrack.h
+d:\unreal 4.22.1\ue_4.22\engine\source\runtime\moviescene\public\IMovieSceneTrackInstance.h
+d:\unreal 4.22.1\ue_4.22\engine\source\runtime\moviescene\public\Evaluation/MovieSceneAnimTypeID.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\Core\Public\Misc/InlineValue.h
+d:\unreal 4.22.1\ue_4.22\engine\source\runtime\moviescene\public\Compilation/MovieSceneSegmentCompiler.h
+d:\unreal 4.22.1\ue_4.22\engine\source\runtime\moviescene\public\Evaluation/MovieSceneSegment.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\Core\Public\UObject/SequencerObjectVersion.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneSegment.generated.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneTrack.generated.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\MovieScene\Public\Evaluation/MovieSceneTrackIdentifier.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneTrackIdentifier.generated.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\MovieScene\Public\Evaluation/MovieSceneEvaluationField.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\MovieScene\Public\Evaluation/MovieSceneEvaluationKey.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneEvaluationKey.generated.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneEvaluationField.generated.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\MovieScene\Public\Evaluation/MovieSceneEvaluationTrack.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\MovieScene\Public\Evaluation/MovieSceneEvalTemplate.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\MovieScene\Public\Evaluation/MovieSceneEvalTemplateBase.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneEvalTemplateBase.generated.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\MovieScene\Public\Evaluation/MovieSceneExecutionTokens.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\MovieScene\Public\MovieSceneExecutionToken.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\MovieScene\Public\Evaluation/MovieSceneEvaluationScope.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\MovieScene\Public\Evaluation/PersistentEvaluationData.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\MovieScene\Public\Evaluation/MovieSceneEvaluationOperand.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneEvaluationOperand.generated.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\MovieScene\Public\Evaluation/MovieSceneSequenceInstanceData.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneSequenceInstanceData.generated.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\MovieScene\Public\Evaluation/Blending/MovieSceneBlendingAccumulator.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\MovieScene\Public\Evaluation/Blending/BlendableToken.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\MovieScene\Public\Evaluation/Blending/MovieSceneBlendingActuatorID.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\MovieScene\Public\Evaluation/Blending/MovieSceneBlendingActuator.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\MovieScene\Public\IMovieScenePlayer.h
+d:\unreal 4.22.1\ue_4.22\engine\source\runtime\moviescene\public\Evaluation/MovieScenePreAnimatedState.h
+d:\unreal 4.22.1\ue_4.22\engine\source\runtime\moviescene\public\MovieSceneSpawnRegister.h
+d:\unreal 4.22.1\ue_4.22\engine\source\runtime\moviescene\public\IMovieSceneObjectSpawner.h
+d:\unreal 4.22.1\ue_4.22\engine\source\runtime\moviescene\public\Evaluation/MovieSceneEvaluationState.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\MovieScene\Public\Evaluation/Blending/BlendableTokenStack.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\MovieScene\Public\Evaluation/Blending/MovieSceneInitialValueStore.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\MovieScene\Public\Evaluation/Blending/MovieSceneAccumulatedBlendState.h
+d:\unreal 4.22.1\ue_4.22\engine\source\runtime\moviescene\public\evaluation\blending\MovieSceneBlendingAccumulator.inl
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\MovieScene\Public\Compilation/MovieSceneTemplateInterrogation.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneEvalTemplate.generated.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\MovieScene\Public\Evaluation/MovieSceneTrackImplementation.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneTrackImplementation.generated.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\MovieScene\Public\Evaluation/MovieSceneEvaluationTree.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneEvaluationTrack.generated.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\MovieScene\Public\Evaluation/MovieSceneSequenceHierarchy.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\MovieScene\Public\Evaluation/MovieSceneSectionParameters.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneSectionParameters.generated.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneSequenceHierarchy.generated.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneEvaluationTemplate.generated.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\MovieScene\Public\Evaluation/MovieSceneRootOverridePath.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneEvaluationTemplateInstance.generated.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneFloatChannel.generated.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\MovieSceneFloatChannelSerializationHelper.generated.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\MovieSceneAkAudioRTPCSection.generated.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Editor\UnrealEd\Classes\Editor/UnrealEdEngine.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Editor\UnrealEd\Public\IPackageAutoSaver.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Developer\SourceControl\Public\ISourceControlProvider.h
+d:\unreal 4.22.1\ue_4.22\engine\source\developer\sourcecontrol\public\ISourceControlOperation.h
+d:\unreal 4.22.1\ue_4.22\engine\source\developer\sourcecontrol\public\ISourceControlState.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Editor\UnrealEd\Public\IDDCNotifications.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Editor\UnrealEd\Public\ComponentVisualizerManager.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UnrealEd\UnrealEdEngine.generated.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Editor\UnrealEd\Public\UnrealEdGlobals.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\InterpTrackAkAudioRTPC.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\Engine\Classes\Matinee/InterpTrackFloatBase.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\Engine\Classes\Matinee/InterpTrack.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\Engine\Public\Interpolation.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\InterpTrack.generated.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\InterpTrackFloatBase.generated.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\InterpTrackAkAudioRTPC.generated.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\InterpTrackAkAudioEvent.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\Engine\Classes\Matinee/InterpTrackVectorBase.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\InterpTrackVectorBase.generated.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\InterpTrackAkAudioEvent.generated.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\MovieSceneAkAudioRTPCTrack.h
+d:\rebirth repo\gehenna\plugins\wwise\source\akaudio\classes\MovieSceneAkTrack.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\MovieSceneAkTrack.generated.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\MovieSceneAkAudioRTPCTrack.generated.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\MovieSceneAkAudioEventSection.h
+d:\rebirth repo\gehenna\plugins\wwise\source\akaudio\classes\WwiseEventTracking.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\MovieSceneAkAudioEventSection.generated.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\MovieSceneAkAudioEventTrack.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\MovieSceneAkAudioEventTrack.generated.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Editor\MovieSceneTools\Public\MatineeImportTools.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\Engine\Classes\Matinee/InterpTrackToggle.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\InterpTrackToggle.generated.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\MovieSceneTracks\Public\Sections/MovieSceneParticleSection.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\MovieScene\Public\Channels/MovieSceneByteChannel.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneByteChannel.generated.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieSceneTracks\MovieSceneParticleSection.generated.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AudiokineticTools\Private\AkRoomComponentDetailsCustomization.cpp
+d:\rebirth repo\gehenna\plugins\wwise\source\audiokinetictools\private\AkRoomComponentDetailsCustomization.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkRoomComponent.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkRoomComponent.generated.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AudiokineticTools\Private\AkSurfaceReflectorSetComponentVisualizer.cpp
+d:\rebirth repo\gehenna\plugins\wwise\source\audiokinetictools\private\AkSurfaceReflectorSetComponentVisualizer.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkSurfaceReflectorSetComponent.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\Engine\Classes\Components/TextRenderComponent.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\TextRenderComponent.generated.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkSurfaceReflectorSetComponent.generated.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkSpatialAudioVolume.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkSpatialAudioVolume.generated.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Editor\UnrealEd\Public\EditorModeManager.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\Engine\Classes\Engine/Polys.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Polys.generated.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Editor\UnrealEd\Public\LevelEditorViewport.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\Engine\Classes\Camera/CameraComponent.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CameraComponent.generated.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AudiokineticTools\Private\AkSurfaceReflectorSetDetailsCustomization.cpp
+d:\rebirth repo\gehenna\plugins\wwise\source\audiokinetictools\private\AkSurfaceReflectorSetDetailsCustomization.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Editor\UnrealEd\Classes\Builders/ConeBuilder.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Editor\UnrealEd\Classes\Builders/EditorBrushBuilder.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\Engine\Classes\Engine/BrushBuilder.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\BrushBuilder.generated.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UnrealEd\EditorBrushBuilder.generated.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UnrealEd\ConeBuilder.generated.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Editor\UnrealEd\Classes\Builders/CubeBuilder.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UnrealEd\CubeBuilder.generated.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Editor\UnrealEd\Classes\Builders/CurvedStairBuilder.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UnrealEd\CurvedStairBuilder.generated.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Editor\UnrealEd\Classes\Builders/CylinderBuilder.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UnrealEd\CylinderBuilder.generated.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Editor\UnrealEd\Classes\Builders/LinearStairBuilder.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UnrealEd\LinearStairBuilder.generated.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Editor\UnrealEd\Classes\Builders/SpiralStairBuilder.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UnrealEd\SpiralStairBuilder.generated.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Editor\UnrealEd\Classes\Builders/TetrahedronBuilder.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UnrealEd\TetrahedronBuilder.generated.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AudiokineticTools\Private\AssetTypeActions_AkAcousticTexture.cpp
+d:\rebirth repo\gehenna\plugins\wwise\source\audiokinetictools\private\AssetTypeActions_AkAcousticTexture.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Developer\AssetTools\Public\AssetTypeActions_Base.h
+d:\unreal 4.22.1\ue_4.22\engine\source\developer\assettools\public\IAssetTools.h
+d:\unreal 4.22.1\ue_4.22\engine\source\developer\assettools\public\AssetTypeCategories.h
+d:\unreal 4.22.1\ue_4.22\engine\source\developer\assettools\public\IAssetTypeActions.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Developer/Merge/Public/Merge.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Editor\UnrealEd\Classes\ThumbnailRendering/ThumbnailManager.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Editor\UnrealEd\Classes\ThumbnailRendering/ThumbnailRenderer.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UnrealEd\ThumbnailRenderer.generated.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UnrealEd\ThumbnailManager.generated.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Editor\UnrealEd\Public\AutomatedAssetImportData.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UnrealEd\AutomatedAssetImportData.generated.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AssetTools\IAssetTools.generated.h
+d:\unreal 4.22.1\ue_4.22\engine\source\developer\assettools\public\AssetToolsModule.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Editor\UnrealEd\Public\Toolkits/SimpleAssetEditor.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AudiokineticTools\Private\AssetTypeActions_AkAudioBank.cpp
+d:\rebirth repo\gehenna\plugins\wwise\source\audiokinetictools\private\AssetTypeActions_AkAudioBank.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AudiokineticTools\Private\AssetTypeActions_AkAudioEvent.cpp
+d:\rebirth repo\gehenna\plugins\wwise\source\audiokinetictools\private\AssetTypeActions_AkAudioEvent.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AudiokineticTools\Private\AssetTypeActions_AkAuxBus.cpp
+d:\rebirth repo\gehenna\plugins\wwise\source\audiokinetictools\private\AssetTypeActions_AkAuxBus.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AudiokineticTools\Private\AudiokineticToolsModule.cpp
+d:\rebirth repo\gehenna\plugins\wwise\source\audiokinetictools\private\AudiokineticToolsPrivatePCH.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AudiokineticTools\Public\IAudiokineticTools.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Editor\Matinee\Public\MatineeModule.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AudiokineticTools\Classes\InterpTrackAkAudioEventHelper.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Editor\Matinee\Public\IMatinee.h
+d:\unreal 4.22.1\ue_4.22\engine\source\editor\matinee\public\MatineeGroupData.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\Engine\Classes\Matinee/InterpGroup.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\InterpGroup.generated.h
+d:\unreal 4.22.1\ue_4.22\engine\source\editor\matinee\public\MatineeTrackData.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Editor\Matinee\Classes\InterpTrackHelper.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Matinee\InterpTrackHelper.generated.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AudiokineticTools\InterpTrackAkAudioEventHelper.generated.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AudiokineticTools\Classes\InterpTrackAkAudioRTPCHelper.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AudiokineticTools\InterpTrackAkAudioRTPCHelper.generated.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Editor\ContentBrowser\Public\ContentBrowserModule.h
+d:\unreal 4.22.1\ue_4.22\engine\source\editor\contentbrowser\public\ContentBrowserDelegates.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Editor/LevelEditor/Public/LevelEditor.h
+d:\unreal 4.22.1\ue_4.22\engine\source\editor\leveleditor\public\ILevelEditor.h
+d:\unreal 4.22.1\ue_4.22\engine\source\editor\leveleditor\public\ViewportTypeDefinition.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Developer\Settings\Public\ISettingsModule.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Developer\Settings\Public\ISettingsSection.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\InitializationSettings/AkAndroidInitializationSettings.h
+d:\rebirth repo\gehenna\plugins\wwise\source\akaudio\classes\initializationsettings\AkInitializationSettings.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkInitializationSettings.generated.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkAndroidInitializationSettings.generated.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\InitializationSettings/AkIOSInitializationSettings.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkIOSInitializationSettings.generated.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\InitializationSettings/AkLinuxInitializationSettings.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkLinuxInitializationSettings.generated.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\InitializationSettings/AkLuminInitializationSettings.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkLuminInitializationSettings.generated.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\InitializationSettings/AkMacInitializationSettings.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkMacInitializationSettings.generated.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\InitializationSettings/AkPS4InitializationSettings.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkPS4InitializationSettings.generated.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\InitializationSettings/AkSwitchInitializationSettings.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkSwitchInitializationSettings.generated.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\InitializationSettings/AkWindowsInitializationSettings.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkWindowsInitializationSettings.generated.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\InitializationSettings/AkXBoxOneInitializationSettings.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkXBoxOneInitializationSettings.generated.h
+d:\rebirth repo\gehenna\plugins\wwise\source\audiokinetictools\private\AkEventAssetBroker.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Editor\UnrealEd\Public\ComponentAssetBroker.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\WaapiPicker/SWaapiPicker.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\Core\Public\Misc/TextFilter.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\Core\Public\Misc/TextFilterExpressionEvaluator.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\Core\Public\Misc/ExpressionParser.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\Core\Public\Misc/TextFilterUtils.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\Slate\Public\Widgets/Input/SSearchBox.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Editor\UnrealEd\Classes\Settings/ProjectPackagingSettings.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UnrealEd\ProjectPackagingSettings.generated.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Editor\WorkspaceMenuStructure\Public\WorkspaceMenuStructure.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Editor\WorkspaceMenuStructure\Public\WorkspaceMenuStructureModule.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Editor\Sequencer\Public\ISequencerModule.h
+d:\unreal 4.22.1\ue_4.22\engine\source\editor\sequencer\public\ISequencer.h
+d:\unreal 4.22.1\ue_4.22\engine\source\editor\sequencer\public\KeyPropertyParams.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Editor\PropertyEditor\Public\PropertyPath.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Editor/SequencerWidgets/Public/ITimeSlider.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Editor/Sequencer/Public/ISequencerInputHandler.h
+d:\unreal 4.22.1\ue_4.22\engine\source\editor\sequencer\public\AnimatedPropertyKey.h
+d:\unreal 4.22.1\ue_4.22\engine\source\editor\sequencer\public\ISequencerChannelInterface.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\MovieScene\Public\Channels/MovieSceneChannelProxy.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\MovieScene\Public\Channels/MovieSceneChannelEditorDataEntry.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\MovieScene\Public\Channels/MovieSceneChannelHandle.h
+d:\unreal 4.22.1\ue_4.22\engine\source\editor\sequencer\public\MovieSceneSequenceEditor.h
+d:\rebirth repo\gehenna\plugins\wwise\source\audiokinetictools\private\MovieSceneAkAudioRTPCTrackEditor.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Editor\MovieSceneTools\Public\KeyframeTrackEditor.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Editor\Sequencer\Public\MovieSceneTrackEditor.h
+d:\unreal 4.22.1\ue_4.22\engine\source\editor\sequencer\public\ISequencerTrackEditor.h
+d:\unreal 4.22.1\ue_4.22\engine\source\editor\sequencer\public\ISequencerSection.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\MovieScene\Public\MovieSceneSequence.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneSequence.generated.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\MovieScene\Public\Evaluation/MovieSceneEvaluation.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\MovieScene\Public\Channels/MovieSceneIntegerChannel.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneIntegerChannel.generated.h
+d:\rebirth repo\gehenna\plugins\wwise\source\audiokinetictools\private\MovieSceneAkAudioEventTrackEditor.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Plugins\MovieScene\MatineeToLevelSequence\Source\MatineeToLevelSequence\Public\MatineeToLevelSequenceModule.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AudiokineticTools\Classes\WwiseEventDragDropOp.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Editor\UnrealEd\Public\DragAndDrop/DecoratedDragDropOp.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AudiokineticTools\Classes\WwisePicker/SWwisePicker.h
+d:\rebirth repo\gehenna\plugins\wwise\source\audiokinetictools\classes\wwisepicker\WwiseWwuParser.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\XmlParser\Public\XmlFile.h
+d:\unreal 4.22.1\ue_4.22\engine\source\runtime\xmlparser\public\XmlNode.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AudiokineticTools\Private\GenerateSoundBanksCommandlet.cpp
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AudiokineticTools\Classes\GenerateSoundBanksCommandlet.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\Engine\Classes\Commandlets/Commandlet.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Commandlet.generated.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AudiokineticTools\GenerateSoundBanksCommandlet.generated.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AudiokineticTools\Private\InterpTrackAkAudioEventHelper.cpp
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Editor\PropertyEditor\Public\PropertyCustomizationHelpers.h
+d:\unreal 4.22.1\ue_4.22\engine\source\editor\propertyeditor\public\SResetToDefaultMenu.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Editor\ActorPickerMode\Public\ActorPickerMode.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Editor\SceneDepthPickerMode\Public\SceneDepthPickerMode.h
+d:\rebirth repo\gehenna\plugins\wwise\source\audiokinetictools\private\SMatineeAkEventKeyFrameAdder.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Editor\UnrealEd\Public\EditorModeInterpolation.h
+d:\unreal 4.22.1\ue_4.22\engine\source\editor\unrealed\public\EdMode.h
+d:\unreal 4.22.1\ue_4.22\engine\source\editor\unrealed\public\EditorModeRegistry.h
+d:\unreal 4.22.1\ue_4.22\engine\source\editor\unrealed\public\EditorModeTools.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\Engine\Classes\Engine/Selection.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Selection.generated.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AudiokineticTools\Private\InterpTrackAkAudioRTPCHelper.cpp
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AudiokineticTools\Private\MovieSceneAkAudioEventTrackEditor.cpp
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Editor\MovieSceneTools\Public\CommonMovieSceneTools.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\Engine\Public\Slate/SlateTextures.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\SlateCore\Public\Textures/SlateUpdatableTexture.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Editor\Sequencer\Public\SequencerUtilities.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Editor\Sequencer\Public\SequencerSectionPainter.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Editor\ContentBrowser\Public\IContentBrowserSingleton.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Developer/CollectionManager/Public/CollectionManagerTypes.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\Core\Public\Async/Async.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\Core\Public\HAL/RunnableThread.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\Core\Public\HAL/PlatformAffinity.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AudiokineticTools\Private\MovieSceneAkAudioRTPCTrackEditor.cpp
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Editor\Sequencer\Public\ISequencerObjectChangeListener.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Editor\Sequencer\Public\ISectionLayoutBuilder.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\Slate\Public\Widgets/Layout/SUniformGridPanel.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AudiokineticTools\Private\SGenerateSoundBanks.cpp
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Editor\UnrealEd\Public\Dialogs/Dialogs.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AudiokineticTools\Private\SMatineeAkEventKeyFrameAdder.cpp
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AudiokineticTools\Private\WwiseEventDragDropOp.cpp
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AudiokineticTools\Private\WwisePicker\SWwisePicker.cpp
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Developer\DirectoryWatcher\Public\DirectoryWatcherModule.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Developer\DirectoryWatcher\Public\IDirectoryWatcher.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\Slate\Public\Widgets/Layout/SSeparator.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\Core\Public\Misc/ScopedSlowTask.h
+D:\Unreal 4.22.1\UE_4.22\Engine\Source\Runtime\Slate\Public\Widgets/Input/SHyperlink.h
+D:\Rebirth Repo\Gehenna\Plugins\Wwise\Source\AudiokineticTools\Private\WwisePicker\WwiseWwuParser.cpp

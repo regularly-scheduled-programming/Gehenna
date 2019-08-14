@@ -1,0 +1,58 @@
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
+/*===========================================================================
+	Generated code exported from UnrealHeaderTool.
+	DO NOT modify this manually! Edit the corresponding .h files instead!
+===========================================================================*/
+
+#pragma once
+
+
+#include "AkAudio/Classes/AkGameplayTypes.h"
+#include "AkAudio/Classes/AkAcousticPortal.h"
+#include "AkAudio/Classes/AkAcousticTexture.h"
+#include "AkAudio/Classes/AkAmbientSound.h"
+#include "AkAudio/Classes/InitializationSettings/AkInitializationSettings.h"
+#include "AkAudio/Classes/InitializationSettings/AkAndroidInitializationSettings.h"
+#include "AkAudio/Classes/AkAudioBank.h"
+#include "AkAudio/Classes/AkAudioEvent.h"
+#include "AkAudio/Classes/AkAuxBus.h"
+#include "AkAudio/Classes/AkWaapiUMG/Components/AkItemProperties.h"
+#include "AkAudio/Classes/AkWaapiUMG/Components/AkSlider.h"
+#include "AkAudio/Classes/AkWaapiUMG/Components/AkItemBoolProperties.h"
+#include "AkAudio/Classes/AkWaapiUMG/Components/AkCheckBox.h"
+#include "AkAudio/Classes/AkComponent.h"
+#include "AkAudio/Classes/AkAudioInputComponent.h"
+#include "AkAudio/Classes/AkGameplayStatics.h"
+#include "AkAudio/Classes/InitializationSettings/AkIOSInitializationSettings.h"
+#include "AkAudio/Classes/AkLateReverbComponent.h"
+#include "AkAudio/Classes/InitializationSettings/AkLinuxInitializationSettings.h"
+#include "AkAudio/Classes/InitializationSettings/AkLuminInitializationSettings.h"
+#include "AkAudio/Classes/InitializationSettings/AkMacInitializationSettings.h"
+#include "AkAudio/Classes/InitializationSettings/AkPS4InitializationSettings.h"
+#include "AkAudio/Classes/AkReverbVolume.h"
+#include "AkAudio/Classes/AkRoomComponent.h"
+#include "AkAudio/Classes/AkSettings.h"
+#include "AkAudio/Classes/AkSettingsPerUser.h"
+#include "AkAudio/Classes/AkSurfaceReflectorSetComponent.h"
+#include "AkAudio/Classes/AkSpatialAudioVolume.h"
+#include "AkAudio/Classes/AkSpotReflector.h"
+#include "AkAudio/Classes/InitializationSettings/AkSwitchInitializationSettings.h"
+#include "AkAudio/Classes/AkWaapiBlueprints/AkWaapiUri.h"
+#include "AkAudio/Classes/AkWaapiBlueprints/AkWaapiFieldNames.h"
+#include "AkAudio/Classes/AkWaapiBlueprints/AkWaapiJsonManager.h"
+#include "AkAudio/Classes/AkWaapiBlueprints/AkWaapiCalls.h"
+#include "AkAudio/Classes/InitializationSettings/AkWindowsInitializationSettings.h"
+#include "AkAudio/Classes/AkWaapiUMG/Components/AkWwiseTree.h"
+#include "AkAudio/Classes/AkWaapiUMG/Components/AkWwiseTreeSelector.h"
+#include "AkAudio/Classes/InitializationSettings/AkXBoxOneInitializationSettings.h"
+#include "AkAudio/Classes/InterpTrackAkAudioEvent.h"
+#include "AkAudio/Classes/InterpTrackAkAudioRTPC.h"
+#include "AkAudio/Classes/InterpTrackInstAkAudioEvent.h"
+#include "AkAudio/Classes/InterpTrackInstAkAudioRTPC.h"
+#include "AkAudio/Classes/MovieSceneAkAudioEventSection.h"
+#include "AkAudio/Classes/MovieSceneFloatChannelSerializationHelper.h"
+#include "AkAudio/Classes/MovieSceneAkAudioRTPCSection.h"
+#include "AkAudio/Classes/MovieSceneAkTrack.h"
+#include "AkAudio/Classes/MovieSceneAkAudioEventTrack.h"
+#include "AkAudio/Classes/MovieSceneAkAudioRTPCTrack.h"
+
