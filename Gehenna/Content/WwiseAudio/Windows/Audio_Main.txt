@@ -5,6 +5,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	409018542	Grimoire_Close			\Default Work Unit\UI\Grimoire\Grimoire_Close	
 	528446302	Riven_Idle			\Default Work Unit\Riven\Riven_Idle	
 	529906916	Mother_FS_Stone			\Default Work Unit\Mother_Footsteps\Mother_FS_Stone	
+	538681077	Grief_Intro_Music			\Default Work Unit\Grief_Intro_Music	
 	603848811	Weapon_Block			\Default Work Unit\Combat\Weapon_Block	
 	867008933	Stop_Riven_Feed			\Default Work Unit\Riven\Stop_Riven_Feed	
 	1040915358	Grimoire_PageTurn			\Default Work Unit\UI\Grimoire\Grimoire_PageTurn	
@@ -93,11 +94,13 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	136533678	SFX_Weapon_Woosh	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Windows\SFX\SFX_Weapon_Woosh_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Combat\SFX_Weapon_Woosh		30432
 	141371425	SFX_Grim_OpenClose04	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Windows\SFX\SFX_Grim_OpenClose04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\UI\Grimoire\Grim_Open\SFX_Grim_OpenClose04		26030
 	142036259	Riven_Discover03	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Windows\SFX\Riven_Discover03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Riven\Riven\VOX\Riven_Search\Riven_Discover\Riven_Discover03		169676
+	151516870	Music_Intro	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Windows\SFX\Music_Intro_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Grief_Intro_Music\Music_Intro		4320064
 	154027442	Combat_Metal_Metal01	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Windows\SFX\Combat_Metal_Metal01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Combat\Weapon_Block\Weapon_Metal_Metal\Combat_Metal_Metal01		5448
 	156502018	Riven_Attack0406	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Windows\SFX\Riven_Attack0406_45AEB6A8.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Riven\Riven\VOX\Riven_Chase\Riven_Attack0406		575480
 	170798776	Mom_Foot_Stone04	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Windows\SFX\Mom_Foot_Stone04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Mother\Footsteps\Mother_Footsteps_Walk\Stone\Mom_Foot_Stone04		54998
 	170875475	SFX_PullBoard02	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Windows\SFX\SFX_PullBoard02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Interactions\Pull_Board\SFX_PullBoard02		292448
 	173223687	Wardrobe_Clicks03	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Windows\SFX\Wardrobe_Clicks03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Interactions\Closet\Mother_ClosetOpen\Wardrobe_Clicks03		147322
+	177171922	Music_Loop	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Windows\SFX\Music_Loop_04C70E58.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Grief_Intro_Music\Music_Loop		4272064
 	181781098	Riven_Vocal01	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Windows\SFX\Riven_Vocal01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Riven\Riven\VOX\Riven_Search\Riven_Investig8\Riven_Vocalizations\Riven_Vocal01		520450
 	190425729	Wardrobe_Clicks02	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Windows\SFX\Wardrobe_Clicks02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Interactions\Closet\Mother_ClosetOpen\Wardrobe_Clicks02		136472
 	190427978	Corpse_Box_Push04	D:\Gehenna\Gehenna\Content\Gehenna_WwiseProject\.cache\Windows\SFX\Corpse_Box_Push04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Interactions\Corpse_Box\Push_Corpse_Box\Corpse_Box_Push04		138878

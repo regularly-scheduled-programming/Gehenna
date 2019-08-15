@@ -24,6 +24,7 @@
 				<Event Id="2981377429" Name="Ambiance" ObjectPath="\Events\Default Work Unit\Ambiances\Ambiance"/>
 				<Event Id="2279337245" Name="Aura_Idle" ObjectPath="\Events\Default Work Unit\Aura\Aura_Idle"/>
 				<Event Id="4074752091" Name="Corpse_Box_Break" ObjectPath="\Events\Default Work Unit\Interactions\Corpse_Boxes\Corpse_Box_Break"/>
+				<Event Id="538681077" Name="Grief_Intro_Music" ObjectPath="\Events\Default Work Unit\Grief_Intro_Music"/>
 				<Event Id="409018542" Name="Grimoire_Close" ObjectPath="\Events\Default Work Unit\UI\Grimoire\Grimoire_Close"/>
 				<Event Id="1040915358" Name="Grimoire_PageTurn" ObjectPath="\Events\Default Work Unit\UI\Grimoire\Grimoire_PageTurn"/>
 				<Event Id="3049685224" Name="Hit_NPC" ObjectPath="\Events\Default Work Unit\Combat\Hit_NPC"/>
@@ -135,6 +136,10 @@
 					<ShortName>Riven_Discover03.wav</ShortName>
 					<Path>SFX\Riven_Discover03_10C4C929.wem</Path>
 				</File>
+				<File Id="151516870" Language="SFX">
+					<ShortName>Music_Intro.wav</ShortName>
+					<Path>SFX\Music_Intro_10C4C929.wem</Path>
+				</File>
 				<File Id="154027442" Language="SFX">
 					<ShortName>Combat_Metal_Metal01.wav</ShortName>
 					<Path>SFX\Combat_Metal_Metal01_10C4C929.wem</Path>
@@ -154,6 +159,10 @@
 				<File Id="173223687" Language="SFX">
 					<ShortName>Wardrobe_Clicks03.wav</ShortName>
 					<Path>SFX\Wardrobe_Clicks03_10C4C929.wem</Path>
+				</File>
+				<File Id="177171922" Language="SFX">
+					<ShortName>Music_Loop.wav</ShortName>
+					<Path>SFX\Music_Loop_04C70E58.wem</Path>
 				</File>
 				<File Id="181781098" Language="SFX">
 					<ShortName>Riven_Vocal01.wav</ShortName>
