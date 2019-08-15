@@ -896,6 +896,42 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="Stop_Aura_Idle" ID="{E82FF7F6-2826-4ECB-ADD4-8DDADF587EA2}">
+					<ChildrenList>
+						<Action Name="" ID="{AADE69B3-0A13-4B5A-B5D8-F8CC10EB6B39}" ShortID="656121186">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Aura_Idle" ID="{8FEC21C0-B076-4E66-8248-892CE672A16D}" WorkUnitID="{F9BA77DD-0F56-4BD8-ABDD-088EE35A1F08}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Remove_Rebar" ID="{F88F34B1-F282-41CD-9315-2F3378E8DDFD}">
+					<ChildrenList>
+						<Action Name="" ID="{C4BB183C-87B1-4875-AAF3-C0E6FC0C1839}" ShortID="11425083">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Rebar_Removal02" ID="{04D6E99B-95A5-4554-ABB4-C7DE301EECCF}" WorkUnitID="{F9BA77DD-0F56-4BD8-ABDD-088EE35A1F08}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Mother_FS_Tunnel" ID="{94EE6215-0BCB-4963-B0ED-3CF0A8E03995}">
+					<ChildrenList>
+						<Action Name="" ID="{0E8FBF55-CB7E-4FF2-A3C8-837EA6A9B21E}" ShortID="812143487">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Mother_FS_Tunnel" ID="{56030061-072A-4EBF-8A4F-63A98EFBA584}" WorkUnitID="{F9BA77DD-0F56-4BD8-ABDD-088EE35A1F08}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

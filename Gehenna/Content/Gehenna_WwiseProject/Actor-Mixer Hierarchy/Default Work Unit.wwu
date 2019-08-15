@@ -975,12 +975,32 @@
 										</RandomSequenceContainer>
 									</ChildrenList>
 								</Folder>
+								<Sound Name="Rebar_Removal02" ID="{04D6E99B-95A5-4554-ABB4-C7DE301EECCF}" ShortID="507151885">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8160DF5A-C65D-466B-96CA-B5A99184F16E}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0C387874-81ED-40BF-9A62-FF86F7893F7F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Rebar_Removal02" ID="{960B99FB-274B-440E-B567-0B92D9582EEF}" ShortID="177683116">
+											<Language>SFX</Language>
+											<AudioFile>Rebar_Removal02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Rebar_Removal02" ID="{960B99FB-274B-440E-B567-0B92D9582EEF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Aura" ID="{67B308C9-4200-4BE3-840B-FCB6005DFE42}" ShortID="30029244">
 							<ChildrenList>
 								<Sound Name="Aura_Idle" ID="{8FEC21C0-B076-4E66-8248-892CE672A16D}" ShortID="93510602">
 									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
 										<Property Name="Highpass" Type="int16">
 											<ValueList>
 												<Value>44</Value>
@@ -994,6 +1014,67 @@
 										</Property>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<Custom>
+												<Attenuation Name="Attenuation (Custom)" ID="{CCA069E7-9A56-418F-9C8B-444DA2730706}" ShortID="907427836">
+													<PropertyList>
+														<Property Name="ConeUse" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
+														<Property Name="RadiusMax" Type="Real64" Value="1000"/>
+													</PropertyList>
+													<CurveUsageInfoList>
+														<VolumeDryUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="VolumeDry" ID="{2D33F6C8-F175-4E8F-98A8-754CB92B1ADB}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="3"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>0</YPos>
+																			<Flags>5</Flags>
+																		</Point>
+																		<Point>
+																			<XPos>197.49217</XPos>
+																			<YPos>-8.22117</YPos>
+																			<Flags>0</Flags>
+																			<SegmentShape>Log3</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>1000</XPos>
+																			<YPos>-200</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</VolumeDryUsage>
+														<VolumeWetGameUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+														</VolumeWetGameUsage>
+														<VolumeWetUserUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+														</VolumeWetUserUsage>
+														<LowPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</LowPassFilterUsage>
+														<HighPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</HighPassFilterUsage>
+														<SpreadUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</SpreadUsage>
+														<FocusUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</FocusUsage>
+													</CurveUsageInfoList>
+												</Attenuation>
+											</Custom>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8160DF5A-C65D-466B-96CA-B5A99184F16E}"/>
 										</Reference>
@@ -6060,6 +6141,241 @@
 														</Sound>
 													</ChildrenList>
 												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Riven_FS_Stone" ID="{9994445E-A688-4C2A-A90E-343058129219}" ShortID="618823451">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{37C23845-69CE-4972-9670-34977954FF32}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="150"/>
+																			<Property Name="Min" Type="Real64" Value="-150"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>5</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<Custom>
+																<Attenuation Name="Attenuation (Custom)" ID="{DA74894C-0808-4EE8-AC58-A2B97984C69A}" ShortID="290658397">
+																	<CurveUsageInfoList>
+																		<VolumeDryUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																				<Curve Name="VolumeDry" ID="{99EE80B8-E880-4D81-AEC1-596A9258BCE1}">
+																					<PropertyList>
+																						<Property Name="Flags" Type="int32" Value="3"/>
+																					</PropertyList>
+																					<PointList>
+																						<Point>
+																							<XPos>0</XPos>
+																							<YPos>0</YPos>
+																							<Flags>5</Flags>
+																						</Point>
+																						<Point>
+																							<XPos>100</XPos>
+																							<YPos>-200</YPos>
+																							<Flags>37</Flags>
+																						</Point>
+																					</PointList>
+																				</Curve>
+																			</CurveUsageInfo>
+																		</VolumeDryUsage>
+																		<VolumeWetGameUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																		</VolumeWetGameUsage>
+																		<VolumeWetUserUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																		</VolumeWetUserUsage>
+																		<LowPassFilterUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																		</LowPassFilterUsage>
+																		<HighPassFilterUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																		</HighPassFilterUsage>
+																		<SpreadUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																		</SpreadUsage>
+																		<FocusUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																		</FocusUsage>
+																	</CurveUsageInfoList>
+																</Attenuation>
+															</Custom>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8160DF5A-C65D-466B-96CA-B5A99184F16E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0C387874-81ED-40BF-9A62-FF86F7893F7F}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="Mom_Foot_Stone01" ID="{D0DCC585-62BE-4180-B34A-61C4A635103C}" ShortID="514836348">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8160DF5A-C65D-466B-96CA-B5A99184F16E}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0C387874-81ED-40BF-9A62-FF86F7893F7F}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Mom_Foot_Stone01" ID="{F3BFBF31-582E-4B1A-AB21-7F8C837D9CCF}" ShortID="478855474">
+																	<Language>SFX</Language>
+																	<AudioFile>Mom_Foot_Stone01.wav</AudioFile>
+																	<ConvertedFileIDList>
+																		<File ID="264680739"/>
+																	</ConvertedFileIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Mom_Foot_Stone01" ID="{F3BFBF31-582E-4B1A-AB21-7F8C837D9CCF}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Mom_Foot_Stone02" ID="{1E016B3A-B08A-487C-8837-5D842F96BE70}" ShortID="277255604">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8160DF5A-C65D-466B-96CA-B5A99184F16E}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0C387874-81ED-40BF-9A62-FF86F7893F7F}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Mom_Foot_Stone02" ID="{0BAB4F1E-A3B7-4719-A9A8-3627F8C33BEF}" ShortID="118984773">
+																	<Language>SFX</Language>
+																	<AudioFile>Mom_Foot_Stone02.wav</AudioFile>
+																	<ConvertedFileIDList>
+																		<File ID="123789320"/>
+																	</ConvertedFileIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Mom_Foot_Stone02" ID="{0BAB4F1E-A3B7-4719-A9A8-3627F8C33BEF}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Mom_Foot_Stone03" ID="{905294DD-2C55-4F9E-95E8-47E77B842A61}" ShortID="145625472">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8160DF5A-C65D-466B-96CA-B5A99184F16E}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0C387874-81ED-40BF-9A62-FF86F7893F7F}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Mom_Foot_Stone03" ID="{6CAEB11A-D675-46A9-B719-837CABBB8FC5}" ShortID="598796814">
+																	<Language>SFX</Language>
+																	<AudioFile>Mom_Foot_Stone03.wav</AudioFile>
+																	<ConvertedFileIDList>
+																		<File ID="1053186701"/>
+																	</ConvertedFileIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Mom_Foot_Stone03" ID="{6CAEB11A-D675-46A9-B719-837CABBB8FC5}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Mom_Foot_Stone04" ID="{C564F1A1-77F5-455E-819D-59E0074CBF48}" ShortID="949031934">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8160DF5A-C65D-466B-96CA-B5A99184F16E}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0C387874-81ED-40BF-9A62-FF86F7893F7F}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Mom_Foot_Stone04" ID="{F0A909D0-BDA9-49A7-8B08-A7A07B1BF70E}" ShortID="926922279">
+																	<Language>SFX</Language>
+																	<AudioFile>Mom_Foot_Stone04.wav</AudioFile>
+																	<ConvertedFileIDList>
+																		<File ID="170798776"/>
+																	</ConvertedFileIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Mom_Foot_Stone04" ID="{F0A909D0-BDA9-49A7-8B08-A7A07B1BF70E}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Mom_Foot_Stone05" ID="{FF2EE24C-E845-4460-8123-0D8AB5D92AE1}" ShortID="381514730">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8160DF5A-C65D-466B-96CA-B5A99184F16E}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0C387874-81ED-40BF-9A62-FF86F7893F7F}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Mom_Foot_Stone05" ID="{B223D415-A0D9-4584-A3AC-B85B985C0584}" ShortID="416421234">
+																	<Language>SFX</Language>
+																	<AudioFile>Mom_Foot_Stone05.wav</AudioFile>
+																	<ConvertedFileIDList>
+																		<File ID="807152470"/>
+																	</ConvertedFileIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Mom_Foot_Stone05" ID="{B223D415-A0D9-4584-A3AC-B85B985C0584}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Mom_Foot_Stone06" ID="{A6D2DBE3-85A0-4901-AE31-9D3A094DD338}" ShortID="449612311">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8160DF5A-C65D-466B-96CA-B5A99184F16E}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0C387874-81ED-40BF-9A62-FF86F7893F7F}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Mom_Foot_Stone06" ID="{9D5DAA51-6CEB-4782-B325-3D4BE9900AB2}" ShortID="123105288">
+																	<Language>SFX</Language>
+																	<AudioFile>Mom_Foot_Stone06.wav</AudioFile>
+																	<ConvertedFileIDList>
+																		<File ID="983690007"/>
+																	</ConvertedFileIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Mom_Foot_Stone06" ID="{9D5DAA51-6CEB-4782-B325-3D4BE9900AB2}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Mom_Foot_Stone07" ID="{8197AFBD-65D5-4D67-B6C3-2BA7F9811A50}" ShortID="240385902">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8160DF5A-C65D-466B-96CA-B5A99184F16E}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0C387874-81ED-40BF-9A62-FF86F7893F7F}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Mom_Foot_Stone07" ID="{6F506036-7E24-4440-9631-748A33F5A0C5}" ShortID="40616921">
+																	<Language>SFX</Language>
+																	<AudioFile>Mom_Foot_Stone07.wav</AudioFile>
+																	<ConvertedFileIDList>
+																		<File ID="339692572"/>
+																	</ConvertedFileIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Mom_Foot_Stone07" ID="{6F506036-7E24-4440-9631-748A33F5A0C5}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
 											</ChildrenList>
 										</Folder>
 									</ChildrenList>
@@ -7582,7 +7898,7 @@
 														</Sound>
 													</ChildrenList>
 												</RandomSequenceContainer>
-												<RandomSequenceContainer Name="Tunnel" ID="{56030061-072A-4EBF-8A4F-63A98EFBA584}" ShortID="557052564">
+												<RandomSequenceContainer Name="Mother_FS_Tunnel" ID="{56030061-072A-4EBF-8A4F-63A98EFBA584}" ShortID="557052564">
 													<PropertyList>
 														<Property Name="3DSpatialization" Type="int16" Value="1"/>
 														<Property Name="OverridePositioning" Type="bool" Value="True"/>
@@ -7667,6 +7983,12 @@
 															</ReferenceList>
 															<ChildrenList>
 																<AudioFileSource Name="Mom_Foot_Tunnel01" ID="{0A0BFE9A-23B4-45F6-BC17-5F4EC5F57CB8}" ShortID="360624438">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.145496575342466"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="0.22188227739726"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="1.08031207191781"/>
+																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>Mom_Foot_Tunnel01.wav</AudioFile>
 																</AudioFileSource>
@@ -7686,6 +8008,13 @@
 															</ReferenceList>
 															<ChildrenList>
 																<AudioFileSource Name="Mom_Foot_Tunnel02" ID="{61EB6558-1113-432A-93F9-CE5EB1B00488}" ShortID="349592532">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.186859589041096"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.38539790239726"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="0.26082484303653"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="1.11726462614155"/>
+																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>Mom_Foot_Tunnel02.wav</AudioFile>
 																</AudioFileSource>
@@ -7705,6 +8034,12 @@
 															</ReferenceList>
 															<ChildrenList>
 																<AudioFileSource Name="Mom_Foot_Tunnel03" ID="{7EA52DE4-4BF9-4665-9B52-DF73F63CABDA}" ShortID="521385576">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.306564640410959"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="0.1277352668379"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="1.06932666238584"/>
+																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>Mom_Foot_Tunnel03.wav</AudioFile>
 																</AudioFileSource>
@@ -7724,6 +8059,13 @@
 															</ReferenceList>
 															<ChildrenList>
 																<AudioFileSource Name="Mom_Foot_Tunnel04" ID="{5D150B82-20A9-4F49-945F-9F12012F0E8D}" ShortID="644517482">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="8.63494577625571E-02"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.262369506278539"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="9.96339897260274E-02"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="0.876779109589041"/>
+																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>Mom_Foot_Tunnel04.wav</AudioFile>
 																</AudioFileSource>
@@ -7743,69 +8085,18 @@
 															</ReferenceList>
 															<ChildrenList>
 																<AudioFileSource Name="Mom_Foot_Tunnel05" ID="{03FD1B55-55CB-4A37-AD33-2F1A4155B739}" ShortID="768202159">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="8.60576840753424E-02"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="8.92450057077626E-02"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="0.838265589326484"/>
+																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>Mom_Foot_Tunnel05.wav</AudioFile>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
 																<ActiveSource Name="Mom_Foot_Tunnel05" ID="{03FD1B55-55CB-4A37-AD33-2F1A4155B739}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="Mom_Foot_Tunnel06" ID="{2AE81A31-0CAD-4713-9B78-726DF220BC26}" ShortID="773047156">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8160DF5A-C65D-466B-96CA-B5A99184F16E}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0C387874-81ED-40BF-9A62-FF86F7893F7F}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="Mom_Foot_Tunnel06" ID="{15519ABA-6AB7-46EC-930B-C729E6ABA076}" ShortID="708918586">
-																	<Language>SFX</Language>
-																	<AudioFile>Mom_Foot_Tunnel06.wav</AudioFile>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="Mom_Foot_Tunnel06" ID="{15519ABA-6AB7-46EC-930B-C729E6ABA076}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="Mom_Foot_Tunnel07" ID="{A7FEE8E6-01C5-43AB-8A43-1D643BBFB223}" ShortID="419956023">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8160DF5A-C65D-466B-96CA-B5A99184F16E}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0C387874-81ED-40BF-9A62-FF86F7893F7F}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="Mom_Foot_Tunnel07" ID="{C049E0CB-4AFF-417B-A25F-4387DDC74CB6}" ShortID="952930882">
-																	<Language>SFX</Language>
-																	<AudioFile>Mom_Foot_Tunnel07.wav</AudioFile>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="Mom_Foot_Tunnel07" ID="{C049E0CB-4AFF-417B-A25F-4387DDC74CB6}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="Mom_Foot_Tunnel08" ID="{6F249BFD-58FA-4563-AE19-80D653EFC727}" ShortID="1020714881">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8160DF5A-C65D-466B-96CA-B5A99184F16E}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0C387874-81ED-40BF-9A62-FF86F7893F7F}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="Mom_Foot_Tunnel08" ID="{6019C8C0-290C-440C-A34C-574B9C2E85EE}" ShortID="463289795">
-																	<Language>SFX</Language>
-																	<AudioFile>Mom_Foot_Tunnel08.wav</AudioFile>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="Mom_Foot_Tunnel08" ID="{6019C8C0-290C-440C-A34C-574B9C2E85EE}" Platform="Linked"/>
 															</ActiveSourceList>
 														</Sound>
 														<Sound Name="Mom_Foot_Tunnel09" ID="{97480936-805C-4DFF-A81B-095635C24F6A}" ShortID="998234517">
@@ -7819,31 +8110,19 @@
 															</ReferenceList>
 															<ChildrenList>
 																<AudioFileSource Name="Mom_Foot_Tunnel09" ID="{C7965C1F-7BA2-40AC-AC2F-C2804860B630}" ShortID="594963897">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="2.66084474885845E-02"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="9.97816780821918E-02"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="8.64774543378995E-02"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="0.834840039954339"/>
+																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>Mom_Foot_Tunnel09.wav</AudioFile>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
 																<ActiveSource Name="Mom_Foot_Tunnel09" ID="{C7965C1F-7BA2-40AC-AC2F-C2804860B630}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="Mom_Foot_Tunnel10" ID="{21DCA895-0634-49CC-A748-064F66B25EA5}" ShortID="720443343">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8160DF5A-C65D-466B-96CA-B5A99184F16E}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0C387874-81ED-40BF-9A62-FF86F7893F7F}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="Mom_Foot_Tunnel10" ID="{C2A732DF-2B0B-486C-A82F-6561D55930EF}" ShortID="207364531">
-																	<Language>SFX</Language>
-																	<AudioFile>Mom_Foot_Tunnel10.wav</AudioFile>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="Mom_Foot_Tunnel10" ID="{C2A732DF-2B0B-486C-A82F-6561D55930EF}" Platform="Linked"/>
 															</ActiveSourceList>
 														</Sound>
 													</ChildrenList>
@@ -8017,7 +8296,7 @@
 														<ItemRef Name="Barn" ID="{F179D71C-09F2-44E1-8A9E-97631DFFB966}"/>
 													</GroupingBehavior>
 													<GroupingBehavior>
-														<ItemRef Name="Tunnel" ID="{56030061-072A-4EBF-8A4F-63A98EFBA584}"/>
+														<ItemRef Name="Mother_FS_Tunnel" ID="{56030061-072A-4EBF-8A4F-63A98EFBA584}"/>
 													</GroupingBehavior>
 													<GroupingBehavior>
 														<ItemRef Name="Stone" ID="{579B51C3-3263-43E6-A765-A1BD3D7CA928}"/>
@@ -8051,7 +8330,7 @@
 													<Grouping>
 														<SwitchRef Name="Tunnel" ID="{BE527BEE-07A6-4287-8C7A-2B7E72F26A22}"/>
 														<ItemList>
-															<ItemRef Name="Tunnel" ID="{56030061-072A-4EBF-8A4F-63A98EFBA584}"/>
+															<ItemRef Name="Mother_FS_Tunnel" ID="{56030061-072A-4EBF-8A4F-63A98EFBA584}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>
@@ -8533,6 +8812,7 @@
 					<ChildrenList>
 						<Sound Name="Rebirth_Ambiance" ID="{6B3D42FD-07EB-40F8-91E8-44ECD51F705B}" ShortID="741291447">
 							<PropertyList>
+								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
