@@ -8751,9 +8751,12 @@
 				</Folder>
 				<Folder Name="Music" ID="{F0F231D8-B627-4972-B3FD-E8E3D6675F9E}" ShortID="7340284">
 					<ChildrenList>
-						<Sound Name="Ave Verum Corpus Mozart (Ending cutscene)" ID="{A2398D69-E58C-4885-BFA3-C4A917EC60B5}" ShortID="376007400">
+						<RandomSequenceContainer Name="Grief_Intro_Music" ID="{6BDD29BE-9348-4189-9E10-CB646DA0F3DF}" ShortID="553541209">
 							<PropertyList>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.25"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -8764,48 +8767,57 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Ave Verum Corpus Mozart (Ending cutscene)" ID="{CEF62EE5-FBE4-42AD-9C82-FB49427CAC03}" ShortID="285615222">
+								<Sound Name="Music_Loop" ID="{168782BE-FC1C-4646-BBC7-D3175B3E79C4}" ShortID="749446954">
 									<PropertyList>
-										<Property Name="VolumeOffset" Type="Real64">
-											<ValueList>
-												<Value>2</Value>
-											</ValueList>
-										</Property>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>Ave Verum Corpus Mozart (Ending cutscene).wav</AudioFile>
-								</AudioFileSource>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8160DF5A-C65D-466B-96CA-B5A99184F16E}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Music" ID="{E2326D24-71E4-4DB5-931F-77D707CFEA8F}" WorkUnitID="{0C387874-81ED-40BF-9A62-FF86F7893F7F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Music_Loop" ID="{5D9FAABF-DB40-4252-A280-17691AFFDE60}" ShortID="177171922">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.202273954402607"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Music_Loop.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Music_Loop" ID="{5D9FAABF-DB40-4252-A280-17691AFFDE60}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Music_Intro" ID="{34BDF0EC-C5CF-43B7-80FB-6567FA8CEE75}" ShortID="414810782">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8160DF5A-C65D-466B-96CA-B5A99184F16E}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Music" ID="{E2326D24-71E4-4DB5-931F-77D707CFEA8F}" WorkUnitID="{0C387874-81ED-40BF-9A62-FF86F7893F7F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Music_Intro" ID="{CD889FB0-786B-46F6-BE90-55F8D09E1A18}" ShortID="151516870">
+											<Language>SFX</Language>
+											<AudioFile>Music_Intro.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Music_Intro" ID="{CD889FB0-786B-46F6-BE90-55F8D09E1A18}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Ave Verum Corpus Mozart (Ending cutscene)" ID="{CEF62EE5-FBE4-42AD-9C82-FB49427CAC03}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="show me your true face" ID="{858DE9C8-CAB2-44D3-99C8-039E8FF4412D}" ShortID="91333409">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8160DF5A-C65D-466B-96CA-B5A99184F16E}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0C387874-81ED-40BF-9A62-FF86F7893F7F}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="show me your true face" ID="{FAE4C181-376F-4CDA-9DAE-0CE4158BB19A}" ShortID="663189962">
-									<PropertyList>
-										<Property Name="FadeInDuration" Type="Real64" Value="0.839671543582604"/>
-										<Property Name="FadeOutDuration" Type="Real64" Value="1.99421991600867"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimBegin" Type="Real64" Value="53.8248155288312"/>
-										<Property Name="TrimEnd" Type="Real64" Value="59.8204177001237"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>show me your true face.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="show me your true face" ID="{FAE4C181-376F-4CDA-9DAE-0CE4158BB19A}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
+							<Playlist>
+								<ItemRef Name="Music_Intro" ID="{34BDF0EC-C5CF-43B7-80FB-6567FA8CEE75}"/>
+								<ItemRef Name="Music_Loop" ID="{168782BE-FC1C-4646-BBC7-D3175B3E79C4}"/>
+							</Playlist>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Ambiance" ID="{D7F1BBF5-26BB-4E5F-9097-4317A37F10F8}" ShortID="396757647">

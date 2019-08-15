@@ -932,6 +932,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Grief_Intro_Music" ID="{112BC2B0-F018-4467-B3CF-AED75CEBAEF4}">
+					<ChildrenList>
+						<Action Name="" ID="{F065799E-DD64-40A7-9C66-A14F40181658}" ShortID="893757607">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Grief_Intro_Music" ID="{6BDD29BE-9348-4189-9E10-CB646DA0F3DF}" WorkUnitID="{F9BA77DD-0F56-4BD8-ABDD-088EE35A1F08}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -16,6 +16,7 @@
 						<ObjectRef Name="RT_Tunnel" ID="{4286FBE3-91E1-4258-B365-5D062A29E5FB}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Hit_NPC" ID="{847A3773-87DD-433C-9AD1-B634CBF4445A}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Ambiance" ID="{B62AA751-7166-4387-B47B-0C73B07FB571}" WorkUnitID="{0C387874-81ED-40BF-9A62-FF86F7893F7F}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Grief_Intro_Music" ID="{112BC2B0-F018-4467-B3CF-AED75CEBAEF4}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Stop_Riven_Chase" ID="{6CFCC284-4D61-45A5-82C6-9DBDE364BFFE}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Stop_Riven_Idle" ID="{6AC2D716-0025-462F-8371-931E8E9CC19B}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Riven_Feed" ID="{C09EB6CE-C7EB-4654-BD0B-295F95E4F397}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
