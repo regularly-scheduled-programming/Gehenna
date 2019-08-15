@@ -28,7 +28,7 @@
 /wd4838
 /we4668
 /I .
-/I E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private
+/I D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private
 /I Runtime
 /I Runtime\Core\Public
 /I Runtime\Core
@@ -427,24 +427,24 @@
 /I ThirdParty
 /I ThirdParty\libSampleRate\Public
 /I ThirdParty\libSampleRate
-/I E:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio
-/I E:\Gehenna\Gehenna\Plugins\Wwise\Source
-/I E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include
-/I E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes
-/I E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Public
-/I E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio
+/I D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio
+/I D:\Gehenna\Gehenna\Plugins\Wwise\Source
+/I D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include
+/I D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes
+/I D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Public
+/I D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio
 /I "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE"
 /I "C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"
-/FI"E:\Gehenna\Gehenna\Intermediate\Build\Win64\GehennaEditor\Development\UnrealEd\SharedPCH.UnrealEd.h"
-/Yu"E:\Gehenna\Gehenna\Intermediate\Build\Win64\GehennaEditor\Development\UnrealEd\SharedPCH.UnrealEd.h"
-/Fp"E:\Gehenna\Gehenna\Intermediate\Build\Win64\GehennaEditor\Development\UnrealEd\SharedPCH.UnrealEd.h.pch"
-"E:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Development\AkAudio\Module.AkAudio.cpp"
-/FI"E:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Development\AkAudio\Definitions.AkAudio.h"
-/Fo"E:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Development\AkAudio\Module.AkAudio.cpp.obj"
+/FI"D:\Gehenna\Gehenna\Intermediate\Build\Win64\GehennaEditor\Development\UnrealEd\SharedPCH.UnrealEd.h"
+/Yu"D:\Gehenna\Gehenna\Intermediate\Build\Win64\GehennaEditor\Development\UnrealEd\SharedPCH.UnrealEd.h"
+/Fp"D:\Gehenna\Gehenna\Intermediate\Build\Win64\GehennaEditor\Development\UnrealEd\SharedPCH.UnrealEd.h.pch"
+"D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Development\AkAudio\Module.AkAudio.cpp"
+/FI"D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Development\AkAudio\Definitions.AkAudio.h"
+/Fo"D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Development\AkAudio\Module.AkAudio.cpp.obj"
 /TP
 /GR-
 /W4

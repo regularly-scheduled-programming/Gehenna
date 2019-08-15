@@ -1,10 +1,10 @@
-E:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Development\AkAudio\Definitions.AkAudio.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkAcousticPortal.cpp
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkAcousticPortal.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Development\AkAudio\Definitions.AkAudio.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkAcousticPortal.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkAcousticPortal.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\GameFramework/Volume.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Volume.generated.h
-e:\gehenna\gehenna\plugins\wwise\source\akaudio\classes\OcclusionObstructionService/AkPortalOcclusionObstructionService.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Public\AkInclude.h
+d:\gehenna\gehenna\plugins\wwise\source\akaudio\classes\OcclusionObstructionService/AkPortalOcclusionObstructionService.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Public\AkInclude.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Windows/AllowWindowsPlatformTypes.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Windows/WindowsHWrapper.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Windows/PreWindowsApi.h
@@ -106,54 +106,54 @@ C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\imm.h
 C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\ime_cmodes.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Windows/PostWindowsApi.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Windows/AllowWindowsPlatformAtomics.h
-e:\gehenna\gehenna\plugins\wwise\source\akaudio\classes\AkUEFeatures.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/AkWwiseSDKVersion.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkSoundEngine.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkSoundEngineExport.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/AkPlatforms.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Platforms/Windows/AkTypes.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkTypes.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/IAkPlugin.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkCommonDefs.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkSpeakerConfig.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkSpeakerVolumes.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkPlatformFuncs.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Win32/AkPlatformFuncs.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkAssert.h
+d:\gehenna\gehenna\plugins\wwise\source\akaudio\classes\AkUEFeatures.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/AkWwiseSDKVersion.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkSoundEngine.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkSoundEngineExport.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/AkPlatforms.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Platforms/Windows/AkTypes.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkTypes.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/IAkPlugin.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkCommonDefs.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkSpeakerConfig.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkSpeakerVolumes.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkPlatformFuncs.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Win32/AkPlatformFuncs.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkAssert.h
 C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt\math.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Platforms/Generic/AkSpeakerVolumes.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/IAkRTPCSubscriber.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/IAkPluginMemAlloc.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkMemoryMgr.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkFPUtilities.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkLock.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Win32/AkLock.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkMonitorError.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/IAkProcessorFeatures.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/IAkPlatformContext.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkMidiTypes.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkCallback.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Platforms/Generic/AkSpeakerVolumes.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/IAkRTPCSubscriber.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/IAkPluginMemAlloc.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkMemoryMgr.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkFPUtilities.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkLock.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Win32/AkLock.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkMonitorError.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/IAkProcessorFeatures.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/IAkPlatformContext.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkMidiTypes.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkCallback.h
 C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt\math.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Platforms/Windows/AkWinSoundEngine.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Platforms/Windows/AkPlatformContext.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SpatialAudio/Common/AkSpatialAudio.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SpatialAudio/Common/AkSpatialAudioTypes.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkKeyArray.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkArray.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkObject.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkKeyDef.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkSet.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkString.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkFNVHash.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkHashList.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkReflectGameData.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/IBytes.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkModule.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/IAkStreamMgr.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkStreamMgrModule.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/MusicEngine/Common/AkMusicEngine.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Comm/AkCommunication.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundFrame/SF.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Platforms/Windows/AkWinSoundEngine.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Platforms/Windows/AkPlatformContext.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SpatialAudio/Common/AkSpatialAudio.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SpatialAudio/Common/AkSpatialAudioTypes.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkKeyArray.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkArray.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkObject.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkKeyDef.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkSet.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkString.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkFNVHash.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkHashList.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkReflectGameData.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/IBytes.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkModule.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/IAkStreamMgr.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkStreamMgrModule.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/MusicEngine/Common/AkMusicEngine.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Comm/AkCommunication.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundFrame/SF.h
 C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\wtypes.h
 c:\program files (x86)\windows kits\10\include\10.0.17763.0\shared\rpc.h
 C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\pshpack8.h
@@ -172,16 +172,16 @@ C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\rpcsal.h
 C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\poppack.h
 c:\program files (x86)\windows kits\10\include\10.0.17763.0\shared\wtypesbase.h
 c:\program files (x86)\windows kits\10\include\10.0.17763.0\shared\guiddef.h
-e:\gehenna\gehenna\plugins\wwise\thirdparty\include\ak\soundframe\SFObjects.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkQueryParameters.h
+d:\gehenna\gehenna\plugins\wwise\thirdparty\include\ak\soundframe\SFObjects.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkQueryParameters.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Windows/HideWindowsPlatformTypes.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Windows/HideWindowsPlatformAtomics.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Public\AkAudioDevice.h
-e:\gehenna\gehenna\plugins\wwise\source\akaudio\classes\AkBankManager.h
-e:\gehenna\gehenna\plugins\wwise\source\akaudio\classes\AkGameplayTypes.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkGameplayTypes.generated.h
-e:\gehenna\gehenna\plugins\wwise\source\akaudio\classes\OcclusionObstructionService/AkOcclusionObstructionService.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkAcousticPortal.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Public\AkAudioDevice.h
+d:\gehenna\gehenna\plugins\wwise\source\akaudio\classes\AkBankManager.h
+d:\gehenna\gehenna\plugins\wwise\source\akaudio\classes\AkGameplayTypes.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkGameplayTypes.generated.h
+d:\gehenna\gehenna\plugins\wwise\source\akaudio\classes\OcclusionObstructionService/AkOcclusionObstructionService.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkAcousticPortal.generated.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\Components/BrushComponent.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\BrushComponent.generated.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Public\EngineUtils.h
@@ -195,35 +195,35 @@ C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\Sound/A
 C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\AudioVolume.generated.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\CoreUObject\Public\UObject/ConstructorHelpers.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\WorldSettings.generated.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkRoomComponent.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkRoomComponent.generated.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkComponent.h
-e:\gehenna\gehenna\plugins\wwise\source\akaudio\classes\OcclusionObstructionService/AkComponentOcclusionObstructionService.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkComponent.generated.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkAcousticTexture.cpp
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkAcousticTexture.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkRoomComponent.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkRoomComponent.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkComponent.h
+d:\gehenna\gehenna\plugins\wwise\source\akaudio\classes\OcclusionObstructionService/AkComponentOcclusionObstructionService.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkComponent.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkAcousticTexture.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkAcousticTexture.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\Engine/GameEngine.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Slate\Public\Widgets/SViewport.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\SlateCore\Public\Input/HittestGrid.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime/MovieSceneCapture/Public/MovieSceneCaptureHandle.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameEngine.generated.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkAcousticTexture.generated.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkAmbientSound.cpp
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkAmbientSound.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkAmbientSound.generated.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkAudioEvent.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkAudioEvent.generated.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkAudioBank.cpp
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkAudioBank.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkAudioBank.generated.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkAudioDevice.cpp
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkSettings.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkSettings.generated.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Public\AkAudioModule.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkAuxBus.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkAuxBus.generated.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkSpotReflector.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkSpotReflector.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkAcousticTexture.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkAmbientSound.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkAmbientSound.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkAmbientSound.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkAudioEvent.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkAudioEvent.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkAudioBank.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkAudioBank.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkAudioBank.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkAudioDevice.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkSettings.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkSettings.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Public\AkAudioModule.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkAuxBus.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkAuxBus.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkSpotReflector.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkSpotReflector.generated.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Public\EditorSupportDelegates.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Developer\Settings\Public\ISettingsModule.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Projects\Public\Interfaces/IPluginManager.h
@@ -234,20 +234,20 @@ C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Json\Public\Serializat
 c:\program files\epic games\ue_4.22\engine\source\runtime\projects\public\CustomBuildSteps.h
 c:\program files\epic games\ue_4.22\engine\source\runtime\projects\public\LocalizationDescriptor.h
 c:\program files\epic games\ue_4.22\engine\source\runtime\projects\public\PluginReferenceDescriptor.h
-e:\gehenna\gehenna\plugins\wwise\source\akaudio\private\AkComponentCallbackManager.h
-e:\gehenna\gehenna\plugins\wwise\source\akaudio\private\FilePackageIO/AkFilePackageLowLevelIO.h
-e:\gehenna\gehenna\plugins\wwise\source\akaudio\private\filepackageio\AkFilePackage.h
-e:\gehenna\gehenna\plugins\wwise\source\akaudio\private\filepackageio\AkFilePackageLUT.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkListBare.h
-e:\gehenna\gehenna\plugins\wwise\source\akaudio\private\filepackageio\AkFilePackageLowLevelIO.inl
-e:\gehenna\gehenna\plugins\wwise\source\akaudio\private\FilePackageIO/AkFilePackageLowLevelIO.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\InitializationSettings/AkInitializationSettings.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkInitializationSettings.generated.h
-e:\gehenna\gehenna\plugins\wwise\source\akaudio\private\AkUnrealIOHookDeferred.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkLateReverbComponent.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkLateReverbComponent.generated.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkUnrealHelper.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkCallbackInfoPool.h
+d:\gehenna\gehenna\plugins\wwise\source\akaudio\private\AkComponentCallbackManager.h
+d:\gehenna\gehenna\plugins\wwise\source\akaudio\private\FilePackageIO/AkFilePackageLowLevelIO.h
+d:\gehenna\gehenna\plugins\wwise\source\akaudio\private\filepackageio\AkFilePackage.h
+d:\gehenna\gehenna\plugins\wwise\source\akaudio\private\filepackageio\AkFilePackageLUT.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkListBare.h
+d:\gehenna\gehenna\plugins\wwise\source\akaudio\private\filepackageio\AkFilePackageLowLevelIO.inl
+d:\gehenna\gehenna\plugins\wwise\source\akaudio\private\FilePackageIO/AkFilePackageLowLevelIO.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\InitializationSettings/AkInitializationSettings.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkInitializationSettings.generated.h
+d:\gehenna\gehenna\plugins\wwise\source\akaudio\private\AkUnrealIOHookDeferred.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkLateReverbComponent.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkLateReverbComponent.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkUnrealHelper.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkCallbackInfoPool.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Async/ParallelFor.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\GameFramework/PlayerController.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\GameFramework/OnlineReplStructs.h
@@ -273,151 +273,149 @@ C:\Program Files\Epic Games\UE_4.22\Engine\Source\Editor\LevelEditor\Public\Leve
 c:\program files\epic games\ue_4.22\engine\source\editor\leveleditor\public\ILevelEditor.h
 c:\program files\epic games\ue_4.22\engine\source\editor\leveleditor\public\ViewportTypeDefinition.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Editor\UnrealEd\Public\CameraController.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkVorbisDecoderFactory.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkSilenceSourceFactory.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkSineSourceFactory.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkToneSourceFactory.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkPeakLimiterFXFactory.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkMatrixReverbFXFactory.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkParametricEQFXFactory.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkDelayFXFactory.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkExpanderFXFactory.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkFlangerFXFactory.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkCompressorFXFactory.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkGainFXFactory.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkHarmonizerFXFactory.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkTimeStretchFXFactory.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkPitchShifterFXFactory.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkStereoDelayFXFactory.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkMeterFXFactory.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkGuitarDistortionFXFactory.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkTremoloFXFactory.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkRoomVerbFXFactory.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkSynthOneSourceFactory.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkRecorderFXFactory.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AuroHeadphoneFXFactory.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkReflectFXFactory.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkOpusDecoderFactory.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkAudioEvent.cpp
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkAudioInputComponent.cpp
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkAudioInputComponent.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkAudioInputComponent.generated.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkAudioInputManager.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkAudioInputManager.cpp
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkAudioInputSourceFactory.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkAudioInputPlugin.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkAudioModule.cpp
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkAudioStyle.h
-e:\gehenna\gehenna\plugins\wwise\source\akaudio\classes\WaapiPicker/WwiseTreeItem.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Public\AkWaapiClient.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkVorbisDecoderFactory.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkSilenceSourceFactory.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkSineSourceFactory.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkToneSourceFactory.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkPeakLimiterFXFactory.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkMatrixReverbFXFactory.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkParametricEQFXFactory.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkDelayFXFactory.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkExpanderFXFactory.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkFlangerFXFactory.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkCompressorFXFactory.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkGainFXFactory.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkHarmonizerFXFactory.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkTimeStretchFXFactory.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkPitchShifterFXFactory.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkStereoDelayFXFactory.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkMeterFXFactory.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkGuitarDistortionFXFactory.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkTremoloFXFactory.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkRoomVerbFXFactory.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkSynthOneSourceFactory.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkRecorderFXFactory.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkOpusDecoderFactory.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkAudioEvent.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkAudioInputComponent.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkAudioInputComponent.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkAudioInputComponent.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkAudioInputManager.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkAudioInputManager.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkAudioInputSourceFactory.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkAudioInputPlugin.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkAudioModule.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkAudioStyle.h
+d:\gehenna\gehenna\plugins\wwise\source\akaudio\classes\WaapiPicker/WwiseTreeItem.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Public\AkWaapiClient.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\HAL/Runnable.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Json\Public\Serialization/JsonSerializer.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Json\Public\Serialization/JsonReader.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Json\Public\Dom/JsonValue.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Json\Public\Dom/JsonObject.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Json\Public\JsonGlobals.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/WwiseAuthoringAPI/waapi.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkAudioStyle.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/WwiseAuthoringAPI/waapi.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkAudioStyle.cpp
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\SlateCore\Public\Styling/SlateStyle.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\SlateCore\Public\Brushes/SlateBorderBrush.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\SlateCore\Public\Brushes/SlateBoxBrush.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\SlateCore\Public\Brushes/SlateColorBrush.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\SlateCore\Public\Brushes/SlateImageBrush.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\SlateCore\Public\Styling/SlateStyleRegistry.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkAuxBus.cpp
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkBankManager.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkAuxBus.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkBankManager.cpp
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Async/Async.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\HAL/RunnableThread.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\HAL/PlatformAffinity.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkCallbackInfoPool.cpp
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkComponent.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkCallbackInfoPool.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkComponent.cpp
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\Components/BillboardComponent.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\BillboardComponent.generated.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Public\DrawDebugHelpers.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkComponentCallbackManager.cpp
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkCustomVersion.cpp
-e:\gehenna\gehenna\plugins\wwise\source\akaudio\private\AkCustomVersion.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkGameplayStatics.cpp
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkGameplayStatics.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkGameplayStatics.generated.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkGameplayTypes.cpp
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkLateReverbComponent.cpp
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkReverbVolume.cpp
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkReverbVolume.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkReverbVolume.generated.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkRoomComponent.cpp
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkSettings.cpp
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkSettingsPerUser.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkSettingsPerUser.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkComponentCallbackManager.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkCustomVersion.cpp
+d:\gehenna\gehenna\plugins\wwise\source\akaudio\private\AkCustomVersion.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkGameplayStatics.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkGameplayStatics.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkGameplayStatics.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkGameplayTypes.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkLateReverbComponent.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkReverbVolume.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkReverbVolume.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkReverbVolume.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkRoomComponent.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkSettings.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkSettingsPerUser.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkSettingsPerUser.generated.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Editor\UnrealEd\Classes\Settings/ProjectPackagingSettings.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UnrealEd\ProjectPackagingSettings.generated.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\InitializationSettings/AkAndroidInitializationSettings.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkAndroidInitializationSettings.generated.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\InitializationSettings/AkIOSInitializationSettings.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkIOSInitializationSettings.generated.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\InitializationSettings/AkLinuxInitializationSettings.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkLinuxInitializationSettings.generated.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\InitializationSettings/AkLuminInitializationSettings.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkLuminInitializationSettings.generated.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\InitializationSettings/AkMacInitializationSettings.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkMacInitializationSettings.generated.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\InitializationSettings/AkPS4InitializationSettings.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkPS4InitializationSettings.generated.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\InitializationSettings/AkSwitchInitializationSettings.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkSwitchInitializationSettings.generated.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\InitializationSettings/AkWindowsInitializationSettings.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkWindowsInitializationSettings.generated.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\InitializationSettings/AkXBoxOneInitializationSettings.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkXBoxOneInitializationSettings.generated.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkSettingsPerUser.cpp
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkSpatialAudioVolume.cpp
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkSpatialAudioVolume.h
-e:\gehenna\gehenna\plugins\wwise\source\akaudio\classes\AkSurfaceReflectorSetComponent.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\InitializationSettings/AkAndroidInitializationSettings.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkAndroidInitializationSettings.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\InitializationSettings/AkIOSInitializationSettings.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkIOSInitializationSettings.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\InitializationSettings/AkLinuxInitializationSettings.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkLinuxInitializationSettings.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\InitializationSettings/AkLuminInitializationSettings.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkLuminInitializationSettings.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\InitializationSettings/AkMacInitializationSettings.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkMacInitializationSettings.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\InitializationSettings/AkPS4InitializationSettings.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkPS4InitializationSettings.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\InitializationSettings/AkSwitchInitializationSettings.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkSwitchInitializationSettings.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\InitializationSettings/AkWindowsInitializationSettings.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkWindowsInitializationSettings.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\InitializationSettings/AkXBoxOneInitializationSettings.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkXBoxOneInitializationSettings.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkSettingsPerUser.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkSpatialAudioVolume.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkSpatialAudioVolume.h
+d:\gehenna\gehenna\plugins\wwise\source\akaudio\classes\AkSurfaceReflectorSetComponent.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\Components/TextRenderComponent.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\TextRenderComponent.generated.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkSurfaceReflectorSetComponent.generated.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkSpatialAudioVolume.generated.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkSpotReflector.cpp
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkSurfaceReflectorSetComponent.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkSurfaceReflectorSetComponent.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkSpatialAudioVolume.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkSpotReflector.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkSurfaceReflectorSetComponent.cpp
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\Engine/Polys.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Polys.generated.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkUnrealHelper.cpp
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkUnrealIOHookDeferred.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkUnrealHelper.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkUnrealIOHookDeferred.cpp
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\HAL/PlatformFilemanager.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkWaapiBlueprints\AkWaapiCalls.cpp
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkWaapiBlueprints/AkWaapiCalls.h
-e:\gehenna\gehenna\plugins\wwise\source\akaudio\classes\akwaapiblueprints\AkWaapiUri.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkWaapiBlueprints\AkWaapiCalls.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkWaapiBlueprints/AkWaapiCalls.h
+d:\gehenna\gehenna\plugins\wwise\source\akaudio\classes\akwaapiblueprints\AkWaapiUri.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Slate\Public\Widgets/Input/SSearchBox.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Misc/TextFilter.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Misc/TextFilterExpressionEvaluator.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Misc/ExpressionParser.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Misc/TextFilterUtils.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkWaapiUri.generated.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkWaapiUtils.h
-e:\gehenna\gehenna\plugins\wwise\source\akaudio\classes\akwaapiblueprints\AkWaapiJsonManager.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkWaapiBlueprints/AkWaapiFieldNames.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkWaapiFieldNames.generated.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkWaapiJsonManager.generated.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkWaapiCalls.generated.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkWaapiBlueprints/AkWaapiUriCustomization.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkWaapiUri.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkWaapiUtils.h
+d:\gehenna\gehenna\plugins\wwise\source\akaudio\classes\akwaapiblueprints\AkWaapiJsonManager.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkWaapiBlueprints/AkWaapiFieldNames.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkWaapiFieldNames.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkWaapiJsonManager.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkWaapiCalls.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkWaapiBlueprints/AkWaapiUriCustomization.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Editor\PropertyEditor\Public\IPropertyTypeCustomization.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Editor\PropertyEditor\Public\PropertyHandle.h
 c:\program files\epic games\ue_4.22\engine\source\editor\propertyeditor\public\PropertyEditorModule.h
 c:\program files\epic games\ue_4.22\engine\source\editor\propertyeditor\public\IDetailsView.h
 c:\program files\epic games\ue_4.22\engine\source\editor\propertyeditor\public\PropertyEditorDelegates.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkWaapiBlueprints/AkWaapiFieldNamesCustomization.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkWaapiBlueprints\AkWaapiFieldNames.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkWaapiBlueprints/AkWaapiFieldNamesCustomization.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkWaapiBlueprints\AkWaapiFieldNames.cpp
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Misc/ScopedSlowTask.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkWaapiBlueprints\AkWaapiFieldNamesCustomization.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkWaapiBlueprints\AkWaapiFieldNamesCustomization.cpp
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Editor\PropertyEditor\Public\DetailWidgetRow.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\UMG\Public\Components/SlateWrapperTypes.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\SlateWrapperTypes.generated.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkWaapiBlueprints\AkWaapiJsonManager.cpp
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkWaapiBlueprints\AkWaapiUri.cpp
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkWaapiBlueprints\AkWaapiUriCustomization.cpp
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkWaapiClient.cpp
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/WwiseAuthoringAPI/AkAutobahn/Client.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/WwiseAuthoringAPI/AkAutobahn/autobahn.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkWaapiBlueprints\AkWaapiJsonManager.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkWaapiBlueprints\AkWaapiUri.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkWaapiBlueprints\AkWaapiUriCustomization.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkWaapiClient.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/WwiseAuthoringAPI/AkAutobahn/Client.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/WwiseAuthoringAPI/AkAutobahn/autobahn.h
 C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\atomic
 C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\xatomic.h
 C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\xatomic0.h
@@ -501,8 +499,8 @@ C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.
 C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\deque
 C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\string
 C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\xstring_insert.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/WwiseAuthoringAPI/AkAutobahn/AkVariant.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/WwiseAuthoringAPI/AkVariantBase.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/WwiseAuthoringAPI/AkAutobahn/AkVariant.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/WwiseAuthoringAPI/AkVariantBase.h
 C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\locale
 C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\xlocbuf
 C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\xlocmes
@@ -510,27 +508,27 @@ C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.
 C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\xloctime
 C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\ctime
 C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\codecvt
-e:\gehenna\gehenna\plugins\wwise\thirdparty\include\ak\wwiseauthoringapi\AkGuid.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/WwiseAuthoringAPI/AkAutobahn/AkJson.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/WwiseAuthoringAPI/AkJsonBase.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/WwiseAuthoringAPI/AkAutobahn/JsonProvider.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/WwiseAuthoringAPI/AkAutobahn/IWebSocketClientHandler.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/WwiseAuthoringAPI/AkAutobahn/WebSocketClient.h
-E:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/WwiseAuthoringAPI/AkAutobahn/FutureUtils.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkWaapiSlate\Widgets\Input\AkSSlider.cpp
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkWaapiSlate/Widgets/Input/AkSSlider.h
+d:\gehenna\gehenna\plugins\wwise\thirdparty\include\ak\wwiseauthoringapi\AkGuid.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/WwiseAuthoringAPI/AkAutobahn/AkJson.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/WwiseAuthoringAPI/AkJsonBase.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/WwiseAuthoringAPI/AkAutobahn/JsonProvider.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/WwiseAuthoringAPI/AkAutobahn/IWebSocketClientHandler.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/WwiseAuthoringAPI/AkAutobahn/WebSocketClient.h
+D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/WwiseAuthoringAPI/AkAutobahn/FutureUtils.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkWaapiSlate\Widgets\Input\AkSSlider.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkWaapiSlate/Widgets/Input/AkSSlider.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Slate\Public\Widgets/Input/SSlider.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\WaapiPicker/SWaapiPicker.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkWaapiUMG/Components/WwiseUmgDragDropOp.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkWaapiUMG/Components/WwisePropertyDragDropOp.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\WaapiPicker/SWaapiPicker.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkWaapiUMG/Components/WwiseUmgDragDropOp.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkWaapiUMG/Components/WwisePropertyDragDropOp.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Slate\Public\Widgets/Input/SNumericEntryBox.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Slate\Public\Widgets/Input/SSpinBox.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Slate\Public\Widgets/Colors/SColorBlock.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkWaapiUMG\Components\AkBoolPropertyToControlCustomization.cpp
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkWaapiUMG/Components/AkBoolPropertyToControlCustomization.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkWaapiUMG/Components/SAkItemBoolProperties.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkWaapiUMG\Components\AkCheckBox.cpp
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkWaapiUMG/Components/AkCheckBox.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkWaapiUMG\Components\AkBoolPropertyToControlCustomization.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkWaapiUMG/Components/AkBoolPropertyToControlCustomization.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkWaapiUMG/Components/SAkItemBoolProperties.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkWaapiUMG\Components\AkCheckBox.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkWaapiUMG/Components/AkCheckBox.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\UMG\Public\Components/ContentWidget.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\UMG\Public\Components/PanelWidget.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\UMG\Public\Components/PanelSlot.h
@@ -654,59 +652,59 @@ C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\In
 C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\UserWidget.generated.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\PanelWidget.generated.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\ContentWidget.generated.h
-e:\gehenna\gehenna\plugins\wwise\source\akaudio\classes\akwaapiumg\components\AkSlider.h
-e:\gehenna\gehenna\plugins\wwise\source\akaudio\classes\akwaapiumg\components\AkItemProperties.h
-e:\gehenna\gehenna\plugins\wwise\source\akaudio\classes\akwaapiumg\components\SAkItemProperties.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkItemProperties.generated.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkSlider.generated.h
-e:\gehenna\gehenna\plugins\wwise\source\akaudio\classes\akwaapiumg\components\AkItemBoolProperties.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkItemBoolProperties.generated.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkCheckBox.generated.h
+d:\gehenna\gehenna\plugins\wwise\source\akaudio\classes\akwaapiumg\components\AkSlider.h
+d:\gehenna\gehenna\plugins\wwise\source\akaudio\classes\akwaapiumg\components\AkItemProperties.h
+d:\gehenna\gehenna\plugins\wwise\source\akaudio\classes\akwaapiumg\components\SAkItemProperties.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkItemProperties.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkSlider.generated.h
+d:\gehenna\gehenna\plugins\wwise\source\akaudio\classes\akwaapiumg\components\AkItemBoolProperties.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkItemBoolProperties.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkCheckBox.generated.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\Slate/SlateBrushAsset.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SlateBrushAsset.generated.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkWaapiUMG/Components/WwiseBoolPropertyDragDropOp.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkWaapiUMG\Components\AkItemBoolProperties.cpp
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkWaapiUMG\Components\AkItemProperties.cpp
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkWaapiUMG\Components\AkPropertyToControlCustomization.cpp
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkWaapiUMG/Components/AkPropertyToControlCustomization.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkWaapiUMG\Components\AkSlider.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkWaapiUMG/Components/WwiseBoolPropertyDragDropOp.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkWaapiUMG\Components\AkItemBoolProperties.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkWaapiUMG\Components\AkItemProperties.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkWaapiUMG\Components\AkPropertyToControlCustomization.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkWaapiUMG/Components/AkPropertyToControlCustomization.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkWaapiUMG\Components\AkSlider.cpp
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\UMG\Public\UMGStyle.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkWaapiUMG/Components/AkWwiseObjectDetailsStructCustomization.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkWaapiUMG\Components\AkWwiseObjectDetailsStructCustomization.cpp
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkWaapiUMG\Components\AkWwiseTree.cpp
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkWaapiUMG/Components/AkWwiseTree.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkWwiseTree.generated.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkWaapiUMG\Components\AkWwiseTreeSelector.cpp
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkWaapiUMG/Components/AkWwiseTreeSelector.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkWwiseTreeSelector.generated.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkWaapiUMG\Components\SAkItemBoolProperties.cpp
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkWaapiUMG\Components\SAkItemProperties.cpp
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkWaapiUtils.cpp
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\FilePackageIO\AkFilePackage.cpp
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\FilePackageIO\AkFilePackageLUT.cpp
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\InitializationSettings\AkAndroidInitializationSettings.cpp
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\InitializationSettings\AkInitializationSettings.cpp
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\InitializationSettings\AkIOSInitializationSettings.cpp
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\InitializationSettings\AkLinuxInitializationSettings.cpp
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\InitializationSettings\AkLuminInitializationSettings.cpp
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\InitializationSettings\AkMacInitializationSettings.cpp
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\InitializationSettings\AkPS4InitializationSettings.cpp
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\InitializationSettings\AkSwitchInitializationSettings.cpp
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\InitializationSettings\AkWindowsInitializationSettings.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkWaapiUMG/Components/AkWwiseObjectDetailsStructCustomization.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkWaapiUMG\Components\AkWwiseObjectDetailsStructCustomization.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkWaapiUMG\Components\AkWwiseTree.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkWaapiUMG/Components/AkWwiseTree.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkWwiseTree.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkWaapiUMG\Components\AkWwiseTreeSelector.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkWaapiUMG/Components/AkWwiseTreeSelector.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkWwiseTreeSelector.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkWaapiUMG\Components\SAkItemBoolProperties.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkWaapiUMG\Components\SAkItemProperties.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\AkWaapiUtils.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\FilePackageIO\AkFilePackage.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\FilePackageIO\AkFilePackageLUT.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\InitializationSettings\AkAndroidInitializationSettings.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\InitializationSettings\AkInitializationSettings.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\InitializationSettings\AkIOSInitializationSettings.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\InitializationSettings\AkLinuxInitializationSettings.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\InitializationSettings\AkLuminInitializationSettings.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\InitializationSettings\AkMacInitializationSettings.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\InitializationSettings\AkPS4InitializationSettings.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\InitializationSettings\AkSwitchInitializationSettings.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\InitializationSettings\AkWindowsInitializationSettings.cpp
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime/HeadMountedDisplay/Public/IHeadMountedDisplayModule.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\InitializationSettings\AkXBoxOneInitializationSettings.cpp
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\InterpTrackAkAudioEvent.cpp
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\InterpTrackAkAudioEvent.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\InitializationSettings\AkXBoxOneInitializationSettings.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\InterpTrackAkAudioEvent.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\InterpTrackAkAudioEvent.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\Matinee/InterpTrack.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Public\Interpolation.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\InterpTrack.generated.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\Matinee/InterpTrackVectorBase.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\InterpTrackVectorBase.generated.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\InterpTrackAkAudioEvent.generated.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\InterpTrackInstAkAudioEvent.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\InterpTrackAkAudioEvent.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\InterpTrackInstAkAudioEvent.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\Matinee/InterpTrackInst.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\InterpTrackInst.generated.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\InterpTrackInstAkAudioEvent.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\InterpTrackInstAkAudioEvent.generated.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Public\InterpolationHitProxy.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\Matinee/InterpGroup.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\InterpGroup.generated.h
@@ -716,32 +714,32 @@ C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\Matinee
 C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\MatineeActor.generated.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Public\CanvasTypes.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CanvasTypes.generated.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\InterpTrackAkAudioRTPC.cpp
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\InterpTrackAkAudioRTPC.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\InterpTrackAkAudioRTPC.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\InterpTrackAkAudioRTPC.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\Matinee/InterpTrackFloatBase.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\InterpTrackFloatBase.generated.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\InterpTrackAkAudioRTPC.generated.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\InterpTrackInstAkAudioEvent.cpp
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\InterpTrackInstAkAudioRTPC.cpp
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\InterpTrackInstAkAudioRTPC.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\InterpTrackInstAkAudioRTPC.generated.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\MovieSceneAkAudioEventSection.cpp
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\MovieSceneAkAudioEventSection.h
-e:\gehenna\gehenna\plugins\wwise\source\akaudio\classes\WwiseEventTracking.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\MovieSceneAkAudioEventSection.generated.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\MovieSceneAkAudioEventTrack.h
-e:\gehenna\gehenna\plugins\wwise\source\akaudio\classes\MovieSceneAkTrack.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\MovieSceneAkTrack.generated.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\MovieSceneAkAudioEventTrack.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\InterpTrackAkAudioRTPC.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\InterpTrackInstAkAudioEvent.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\InterpTrackInstAkAudioRTPC.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\InterpTrackInstAkAudioRTPC.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\InterpTrackInstAkAudioRTPC.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\MovieSceneAkAudioEventSection.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\MovieSceneAkAudioEventSection.h
+d:\gehenna\gehenna\plugins\wwise\source\akaudio\classes\WwiseEventTracking.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\MovieSceneAkAudioEventSection.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\MovieSceneAkAudioEventTrack.h
+d:\gehenna\gehenna\plugins\wwise\source\akaudio\classes\MovieSceneAkTrack.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\MovieSceneAkTrack.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\MovieSceneAkAudioEventTrack.generated.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Misc/Base64.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\MovieScene\Public\MovieSceneCommonHelpers.h
-e:\gehenna\gehenna\plugins\wwise\source\akaudio\private\MovieSceneAkAudioEventTemplate.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\MovieSceneAkAudioEventTemplate.generated.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\MovieSceneAkAudioEventTemplate.cpp
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\MovieSceneAkAudioEventTrack.cpp
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\MovieSceneAkAudioRTPCSection.cpp
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\MovieSceneAkAudioRTPCSection.h
-e:\gehenna\gehenna\plugins\wwise\source\akaudio\classes\MovieSceneFloatChannelSerializationHelper.h
+d:\gehenna\gehenna\plugins\wwise\source\akaudio\private\MovieSceneAkAudioEventTemplate.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\MovieSceneAkAudioEventTemplate.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\MovieSceneAkAudioEventTemplate.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\MovieSceneAkAudioEventTrack.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\MovieSceneAkAudioRTPCSection.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\MovieSceneAkAudioRTPCSection.h
+d:\gehenna\gehenna\plugins\wwise\source\akaudio\classes\MovieSceneFloatChannelSerializationHelper.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\MovieScene\Public\Channels/MovieSceneFloatChannel.h
 c:\program files\epic games\ue_4.22\engine\source\runtime\moviescene\public\channels\MovieSceneChannel.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneChannel.generated.h
@@ -754,28 +752,28 @@ C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\MovieScene\Public\Eval
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\MovieScene\Public\Evaluation/MovieSceneRootOverridePath.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneEvaluationTemplateInstance.generated.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneFloatChannel.generated.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\MovieSceneFloatChannelSerializationHelper.generated.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\MovieSceneAkAudioRTPCSection.generated.h
-e:\gehenna\gehenna\plugins\wwise\source\akaudio\private\MovieSceneAkAudioRTPCTemplate.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\MovieSceneAkAudioRTPCTemplate.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\MovieSceneFloatChannelSerializationHelper.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\MovieSceneAkAudioRTPCSection.generated.h
+d:\gehenna\gehenna\plugins\wwise\source\akaudio\private\MovieSceneAkAudioRTPCTemplate.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\MovieSceneAkAudioRTPCTemplate.generated.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\MovieScene\Public\Channels/MovieSceneChannelProxy.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\MovieScene\Public\Channels/MovieSceneChannelEditorDataEntry.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\MovieScene\Public\Channels/MovieSceneChannelHandle.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\MovieSceneAkAudioRTPCTemplate.cpp
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\MovieSceneAkAudioRTPCTrack.cpp
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\MovieSceneAkAudioRTPCTrack.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\MovieSceneAkAudioRTPCTrack.generated.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\OcclusionObstructionService\AkComponentOcclusionObstructionService.cpp
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\OcclusionObstructionService\AkOcclusionObstructionService.cpp
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\OcclusionObstructionService\AkPortalOcclusionObstructionService.cpp
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\WaapiPicker\SWaapiPicker.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\MovieSceneAkAudioRTPCTemplate.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\MovieSceneAkAudioRTPCTrack.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\MovieSceneAkAudioRTPCTrack.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\MovieSceneAkAudioRTPCTrack.generated.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\OcclusionObstructionService\AkComponentOcclusionObstructionService.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\OcclusionObstructionService\AkOcclusionObstructionService.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\OcclusionObstructionService\AkPortalOcclusionObstructionService.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\WaapiPicker\SWaapiPicker.cpp
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Developer\DirectoryWatcher\Public\DirectoryWatcherModule.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Slate\Public\Widgets/Text/SInlineEditableTextBlock.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Slate\Public\Widgets/Layout/SSeparator.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\WaapiPicker/SWaapiPickerRow.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\WaapiPicker/WaapiPickerViewCommands.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\WaapiPicker/SWaapiPickerRow.h
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\WaapiPicker/WaapiPickerViewCommands.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Slate\Public\Framework/Commands/GenericCommands.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Developer\DirectoryWatcher\Public\IDirectoryWatcher.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Slate\Public\Widgets/Input/SHyperlink.h
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\WaapiPicker\SWaapiPickerRow.cpp
-E:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\WwiseEventTracking.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\WaapiPicker\SWaapiPickerRow.cpp
+D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Private\WwiseEventTracking.cpp

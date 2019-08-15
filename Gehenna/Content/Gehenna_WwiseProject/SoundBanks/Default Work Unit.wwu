@@ -6,60 +6,49 @@
 				<SoundBank Name="Audio_Main" ID="{2289A483-C913-4F4A-828D-A4A6E6226AEB}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Mother_ClosetDoor" ID="{DD4B7358-5EB7-4002-85EB-5C904B4BB38C}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Cry2" ID="{706875DD-9B17-401D-9AC2-36A316669F81}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Footsteps_Wetlands" ID="{E13EEFB6-2880-404C-945E-EBCAB11A86DE}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Riven_FS_Barn" ID="{1DB0E71F-29C6-401B-8AE0-FA517894F803}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Mother_FS_Wetlands_Walk" ID="{E13EEFB6-2880-404C-945E-EBCAB11A86DE}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Riven_FS_Wetlands" ID="{DD6153D8-F68F-40DB-B969-853CE7E7AEFD}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Grimoire_Close" ID="{AC677020-0A7C-4199-B20C-8F5AB38641A6}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Aura_Idle" ID="{693B44C1-844C-41ED-A4D1-C75599405C51}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Riven_Weapon_Woosh" ID="{47CB23F8-B0F5-4237-A4D0-4BF13D5BD423}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Barn_Run" ID="{51AE3DA5-598F-4247-91CB-3F8B59B701E7}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="WhineVar1" ID="{FED29BBC-B97D-4264-AD55-29204C58D7BD}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="HmVar2" ID="{0DD8DFA9-3CCA-4330-ADA6-DD017A7B58D9}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="RT_Tunnel" ID="{4286FBE3-91E1-4258-B365-5D062A29E5FB}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Hit_NPC" ID="{847A3773-87DD-433C-9AD1-B634CBF4445A}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="HmVar1" ID="{A2FD52E3-BA86-435D-B646-0EB344F3A8A7}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="WhineVar2" ID="{B4ADB54B-4401-4379-AB09-CD452475B22B}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Idle_To_Grumpy" ID="{E52F2CBF-DBAF-43DC-B0EB-798A4162F4D7}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="CooVar3" ID="{C9D6AA18-E079-44AC-93ED-FAFE0F5B3F53}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="BabbleVar1" ID="{B235CA6F-BC55-4562-9649-F32233F05BA8}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Ambiance" ID="{B62AA751-7166-4387-B47B-0C73B07FB571}" WorkUnitID="{0C387874-81ED-40BF-9A62-FF86F7893F7F}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Grief_Intro_Music" ID="{112BC2B0-F018-4467-B3CF-AED75CEBAEF4}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Stop_Riven_Chase" ID="{6CFCC284-4D61-45A5-82C6-9DBDE364BFFE}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="WhineVar3" ID="{0F205228-0A1D-462D-908C-1C22D8552F58}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Stop_Riven_Idle" ID="{6AC2D716-0025-462F-8371-931E8E9CC19B}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="CooVar1" ID="{6D0CAB71-BE91-4640-B766-59789F011E70}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="CooVar2" ID="{36E4ABB7-77C1-464B-B8B6-ABA60B766DA3}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Riven_Feed" ID="{C09EB6CE-C7EB-4654-BD0B-295F95E4F397}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="HmVar3" ID="{232AEE2F-4C13-467F-9F73-9F9952988A3D}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="UI_Tick" ID="{CA07A293-B171-469D-AC38-BB063DE2B6A7}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Ambiance" ID="{769E9A11-8E2E-46A6-8DA1-BA09607D6D27}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Stop_Riven_Feed" ID="{623D1AC8-302B-46D5-A049-39C491FABC52}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Mother_FS_Stone" ID="{ED9C6765-99C7-46E9-8E7E-65EBD5191207}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="UI_Crafting" ID="{763BB784-B38C-46EA-9697-C1F07AAFBE54}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="LaughVar2" ID="{05D319DC-C1D4-46FB-AA99-00C1B364B09C}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Riven" ID="{769600E2-2A2F-4724-9D22-EF2B9B4C8DB3}" WorkUnitID="{0C387874-81ED-40BF-9A62-FF86F7893F7F}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="SFX_Weapon_Woosh" ID="{B4C332AA-D57A-47B8-A381-166020BEEDB0}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Pull_Board" ID="{E3ABBEFE-2FA5-47C4-8ACB-55B14EF3E426}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Riven_Idle" ID="{A286853D-AA64-47C4-B1FA-0584405A7A61}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="LaughVar1" ID="{308174F3-89B0-47D7-A51B-CBF401DD6E76}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Corpse_Box_Break" ID="{69A47AA5-CD9B-47DB-B498-B1F63465C468}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Cry1" ID="{46E12F37-2E6C-4998-878E-82756B5705C7}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="SFX" ID="{E5B19010-42A7-4839-9295-62119968083A}" WorkUnitID="{0C387874-81ED-40BF-9A62-FF86F7893F7F}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Mother_ClosetOpen" ID="{FD7B9596-DC19-49FC-9BFD-6C55D9C0206C}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Stone_Run" ID="{85FE6433-75ED-4AC6-A485-40EC358CB956}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Riven_Chase" ID="{887294E6-90CE-4ACF-9E15-3F13E881B621}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Grimoire_PageTurn" ID="{4B184F10-B738-4AD5-B8AF-2CB3028E736D}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Riven_Search" ID="{E528AFA8-40BB-4B61-B05C-2AF05AF8D39C}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Baby_Sleep" ID="{0F93BD76-79EB-4B6A-83B9-555B96BC2C12}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Bottle" ID="{D213BBC9-ECC1-4B78-B099-00B907628C33}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="LaughVar3" ID="{18917751-DCA3-4BA6-A98F-7E4C6706B4A8}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="AngryVar1" ID="{9C3D01B6-1610-4BEF-993B-B91085D563B2}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="AngryVar2" ID="{340191E5-373B-4C60-A6A9-0EEC426B58E5}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Breastfeed" ID="{44C46453-97DF-4C8A-9DEE-A05C4FB10108}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Riven_FS_Stone" ID="{9994445E-A688-4C2A-A90E-343058129219}" WorkUnitID="{F9BA77DD-0F56-4BD8-ABDD-088EE35A1F08}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Combat" ID="{F1695287-B2B9-4C94-862E-7CBD772B4F4C}" WorkUnitID="{0C387874-81ED-40BF-9A62-FF86F7893F7F}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Scry_Equip01" ID="{88B8E22E-A194-4CA6-9DAC-7D9C0739A82B}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="AngryVar3" ID="{E96303AF-0978-4CF3-B58D-282E912B7AA1}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Pacifier" ID="{9B06838C-B3BB-4D1C-A105-79E5D30FC940}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Push_Corpse_Box" ID="{072A3A05-9082-4D37-A614-9B48E3012B32}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Mother_FS_Walk" ID="{D8607CA9-1D43-4D83-A33B-2B9CE180159C}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Stop_Scry_Idle" ID="{3BA92F3B-E1CB-4D99-A2E2-8EDC74D3E48C}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Music" ID="{E2326D24-71E4-4DB5-931F-77D707CFEA8F}" WorkUnitID="{0C387874-81ED-40BF-9A62-FF86F7893F7F}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Scry_Idle" ID="{1D20E3CF-8B3B-4DB8-A8D5-65B3E66C411D}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="BabbleVar3" ID="{1505E55A-8CE9-4DD1-B457-07CD1EEDE14E}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="BabbleVar2" ID="{31472B53-1BCB-4E7E-871F-633E78A6BC6F}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Weapon_Block" ID="{0332909B-C2BB-4EAD-8E49-840251273435}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Mother_FS_Tunnel" ID="{56030061-072A-4EBF-8A4F-63A98EFBA584}" WorkUnitID="{F9BA77DD-0F56-4BD8-ABDD-088EE35A1F08}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Stop_Aura_Idle" ID="{E82FF7F6-2826-4ECB-ADD4-8DDADF587EA2}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Stop_Riven_Search" ID="{A004E3DC-6AAE-4ED6-82A4-C6AE5B98AF75}" WorkUnitID="{775F7FC9-1BB2-4DED-9A50-C18B53ED898D}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Character" ID="{6CB401A1-6286-4F9C-AB46-814B58B8A79E}" WorkUnitID="{0C387874-81ED-40BF-9A62-FF86F7893F7F}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
