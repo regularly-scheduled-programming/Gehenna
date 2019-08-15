@@ -111,6 +111,9 @@
 						<Event Name="Pull_Board" ID="{E3ABBEFE-2FA5-47C4-8ACB-55B14EF3E426}">
 							<ChildrenList>
 								<Action Name="" ID="{B9DA7530-7662-48A8-9567-73B5E091136C}" ShortID="993740417">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="0.75"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Pull_Board" ID="{EB11D7C9-D7FD-41B6-8322-B349AFD95BA7}" WorkUnitID="{F9BA77DD-0F56-4BD8-ABDD-088EE35A1F08}"/>
@@ -901,6 +904,7 @@
 						<Action Name="" ID="{AADE69B3-0A13-4B5A-B5D8-F8CC10EB6B39}" ShortID="656121186">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
