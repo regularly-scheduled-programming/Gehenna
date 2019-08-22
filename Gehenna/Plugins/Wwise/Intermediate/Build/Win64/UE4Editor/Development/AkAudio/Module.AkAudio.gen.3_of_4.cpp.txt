@@ -1,279 +1,275 @@
-D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Development\AkAudio\Definitions.AkAudio.h
-D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkItemProperties.gen.cpp
-C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
-D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio/Classes/AkWaapiUMG/Components/AkItemProperties.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\UMG\Public\Components/Widget.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\UMG\Public\Components/Visual.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\Visual.generated.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\UMG\Public\Components/SlateWrapperTypes.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\SlateWrapperTypes.generated.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\UMG\Public\Slate/WidgetTransform.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\WidgetTransform.generated.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\CoreUObject\Public\UObject/UObjectThreadContext.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Source\Editor\UnrealEd\Public\Kismet2/CompilerResultsLog.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Logging/TokenizedMessage.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Source\Editor\UnrealEd\Public\EdGraphToken.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\Widget.generated.h
-d:\gehenna\gehenna\plugins\wwise\source\akaudio\classes\akwaapiumg\components\SAkItemProperties.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Misc/TextFilter.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Misc/TextFilterExpressionEvaluator.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Misc/ExpressionParser.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Misc/TextFilterUtils.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Slate\Public\Widgets/Input/SSearchBox.h
-d:\gehenna\gehenna\plugins\wwise\intermediate\build\win64\ue4editor\inc\akaudio\AkItemProperties.generated.h
-D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkLateReverbComponent.gen.cpp
-D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio/Classes/AkLateReverbComponent.h
-d:\gehenna\gehenna\plugins\wwise\intermediate\build\win64\ue4editor\inc\akaudio\AkLateReverbComponent.generated.h
-D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkLinuxInitializationSettings.gen.cpp
-D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio/Classes/InitializationSettings/AkLinuxInitializationSettings.h
-D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Public\AkInclude.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Windows/AllowWindowsPlatformTypes.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Windows/WindowsHWrapper.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Windows/PreWindowsApi.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Windows/MinWindows.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\Windows.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\sdkddkver.h
-C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE\excpt.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\windef.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\minwindef.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\winnt.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\kernelspecs.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\basetsd.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\guiddef.h
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\shared\pshpack4.h
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\shared\poppack.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\pshpack4.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\poppack.h
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\shared\pshpack4.h
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\shared\pshpack2.h
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\shared\poppack.h
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\shared\pshpack2.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\pshpack2.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\poppack.h
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\shared\poppack.h
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\shared\pshpack8.h
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\shared\poppack.h
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\shared\pshpack1.h
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\shared\poppack.h
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\shared\pshpack1.h
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\shared\poppack.h
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\shared\poppack.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\apiset.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\ktmtypes.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\winbase.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\apisetcconv.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\minwinbase.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\apiquery2.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\processenv.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\fileapi.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\debugapi.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\utilapiset.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\handleapi.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\errhandlingapi.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\fibersapi.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\namedpipeapi.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\profileapi.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\heapapi.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\ioapiset.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\synchapi.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\interlockedapi.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\processthreadsapi.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\sysinfoapi.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\memoryapi.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\enclaveapi.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\threadpoollegacyapiset.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\threadpoolapiset.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\jobapi.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\jobapi2.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\wow64apiset.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\libloaderapi.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\securitybaseapi.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\namespaceapi.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\systemtopologyapi.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\processtopologyapi.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\securityappcontainer.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\realtimeapiset.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\winerror.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\timezoneapi.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\wingdi.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\pshpack1.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\poppack.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\pshpack2.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\poppack.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\pshpack4.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\poppack.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\pshpack4.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\poppack.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\winuser.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\pshpack2.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\poppack.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\tvout.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\winnls.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\datetimeapi.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\stringapiset.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\winnls.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\wincon.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\wincontypes.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\consoleapi.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\consoleapi2.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\consoleapi3.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\winver.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\verrsrc.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\winreg.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\reason.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\winnetwk.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\wnnc.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\stralign.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\imm.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\ime_cmodes.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Windows/PostWindowsApi.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Windows/AllowWindowsPlatformAtomics.h
-D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkUEFeatures.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/AkWwiseSDKVersion.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkSoundEngine.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkSoundEngineExport.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/AkPlatforms.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Platforms/Windows/AkTypes.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkTypes.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/IAkPlugin.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkCommonDefs.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkSpeakerConfig.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkSpeakerVolumes.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkPlatformFuncs.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Win32/AkPlatformFuncs.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkAssert.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt\math.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Platforms/Generic/AkSpeakerVolumes.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/IAkRTPCSubscriber.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/IAkPluginMemAlloc.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkMemoryMgr.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkFPUtilities.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkLock.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Win32/AkLock.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkMonitorError.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/IAkProcessorFeatures.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/IAkPlatformContext.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkMidiTypes.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkCallback.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt\math.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Platforms/Windows/AkWinSoundEngine.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Platforms/Windows/AkPlatformContext.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SpatialAudio/Common/AkSpatialAudio.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SpatialAudio/Common/AkSpatialAudioTypes.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkKeyArray.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkArray.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkObject.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkKeyDef.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkSet.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkString.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkFNVHash.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkHashList.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkReflectGameData.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/IBytes.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkModule.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/IAkStreamMgr.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkStreamMgrModule.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/MusicEngine/Common/AkMusicEngine.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Comm/AkCommunication.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundFrame/SF.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\wtypes.h
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\shared\rpc.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\pshpack8.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\rpcdce.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\rpcdcep.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\rpcnsi.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\rpcnterr.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\rpcasync.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\pshpack8.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\poppack.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\poppack.h
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\shared\rpcndr.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\pshpack8.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\rpcnsip.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\rpcsal.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\poppack.h
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\shared\wtypesbase.h
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\shared\guiddef.h
-d:\gehenna\gehenna\plugins\wwise\thirdparty\include\ak\soundframe\SFObjects.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkQueryParameters.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Windows/HideWindowsPlatformTypes.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Windows/HideWindowsPlatformAtomics.h
-d:\gehenna\gehenna\plugins\wwise\source\akaudio\classes\initializationsettings\AkInitializationSettings.h
-d:\gehenna\gehenna\plugins\wwise\intermediate\build\win64\ue4editor\inc\akaudio\AkInitializationSettings.generated.h
-d:\gehenna\gehenna\plugins\wwise\intermediate\build\win64\ue4editor\inc\akaudio\AkLinuxInitializationSettings.generated.h
-D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkLuminInitializationSettings.gen.cpp
-D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio/Classes/InitializationSettings/AkLuminInitializationSettings.h
-d:\gehenna\gehenna\plugins\wwise\intermediate\build\win64\ue4editor\inc\akaudio\AkLuminInitializationSettings.generated.h
-D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkMacInitializationSettings.gen.cpp
-D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio/Classes/InitializationSettings/AkMacInitializationSettings.h
-d:\gehenna\gehenna\plugins\wwise\intermediate\build\win64\ue4editor\inc\akaudio\AkMacInitializationSettings.generated.h
-D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkPS4InitializationSettings.gen.cpp
-D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio/Classes/InitializationSettings/AkPS4InitializationSettings.h
-d:\gehenna\gehenna\plugins\wwise\intermediate\build\win64\ue4editor\inc\akaudio\AkPS4InitializationSettings.generated.h
-D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkReverbVolume.gen.cpp
-D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio/Classes/AkReverbVolume.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\GameFramework/Volume.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Volume.generated.h
-d:\gehenna\gehenna\plugins\wwise\intermediate\build\win64\ue4editor\inc\akaudio\AkReverbVolume.generated.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\CoreUObject\Public\Serialization/ArchiveUObjectFromStructuredArchive.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Serialization/ArchiveFromStructuredArchive.h
-D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkRoomComponent.gen.cpp
-D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio/Classes/AkRoomComponent.h
-D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Public\AkAudioDevice.h
-d:\gehenna\gehenna\plugins\wwise\source\akaudio\classes\AkBankManager.h
-d:\gehenna\gehenna\plugins\wwise\source\akaudio\classes\AkGameplayTypes.h
-d:\gehenna\gehenna\plugins\wwise\intermediate\build\win64\ue4editor\inc\akaudio\AkGameplayTypes.generated.h
-d:\gehenna\gehenna\plugins\wwise\intermediate\build\win64\ue4editor\inc\akaudio\AkRoomComponent.generated.h
-D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkSettings.gen.cpp
-D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio/Classes/AkSettings.h
-d:\gehenna\gehenna\plugins\wwise\intermediate\build\win64\ue4editor\inc\akaudio\AkSettings.generated.h
-D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkSettingsPerUser.gen.cpp
-D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio/Classes/AkSettingsPerUser.h
-D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Public\AkWaapiClient.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\HAL/Runnable.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Json\Public\Serialization/JsonWriter.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Json\Public\Serialization/JsonTypes.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Json\Public\Serialization/JsonSerializer.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Json\Public\Serialization/JsonReader.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Json\Public\Dom/JsonValue.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Json\Public\Dom/JsonObject.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Json\Public\JsonGlobals.h
-D:\Gehenna\Gehenna\Plugins\Wwise\ThirdParty\include\AK/WwiseAuthoringAPI/waapi.h
-d:\gehenna\gehenna\plugins\wwise\intermediate\build\win64\ue4editor\inc\akaudio\AkSettingsPerUser.generated.h
-D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkSlider.gen.cpp
-D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio/Classes/AkWaapiUMG/Components/AkSlider.h
-d:\gehenna\gehenna\plugins\wwise\intermediate\build\win64\ue4editor\inc\akaudio\AkSlider.generated.h
-D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkSpatialAudioVolume.gen.cpp
-D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio/Classes/AkSpatialAudioVolume.h
-d:\gehenna\gehenna\plugins\wwise\source\akaudio\classes\AkSurfaceReflectorSetComponent.h
-d:\gehenna\gehenna\plugins\wwise\source\akaudio\classes\AkAcousticTexture.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\Engine/GameEngine.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Slate\Public\Widgets/SViewport.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\SlateCore\Public\Input/HittestGrid.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime/MovieSceneCapture/Public/MovieSceneCaptureHandle.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameEngine.generated.h
-d:\gehenna\gehenna\plugins\wwise\intermediate\build\win64\ue4editor\inc\akaudio\AkAcousticTexture.generated.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\Components/TextRenderComponent.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\TextRenderComponent.generated.h
-d:\gehenna\gehenna\plugins\wwise\intermediate\build\win64\ue4editor\inc\akaudio\AkSurfaceReflectorSetComponent.generated.h
-d:\gehenna\gehenna\plugins\wwise\intermediate\build\win64\ue4editor\inc\akaudio\AkSpatialAudioVolume.generated.h
-D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkSpotReflector.gen.cpp
-D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio/Classes/AkSpotReflector.h
-d:\gehenna\gehenna\plugins\wwise\intermediate\build\win64\ue4editor\inc\akaudio\AkSpotReflector.generated.h
-D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkSurfaceReflectorSetComponent.gen.cpp
-D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkSwitchInitializationSettings.gen.cpp
-D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio/Classes/InitializationSettings/AkSwitchInitializationSettings.h
-d:\gehenna\gehenna\plugins\wwise\intermediate\build\win64\ue4editor\inc\akaudio\AkSwitchInitializationSettings.generated.h
-D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkWaapiCalls.gen.cpp
-D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio/Classes/AkWaapiBlueprints/AkWaapiCalls.h
-d:\gehenna\gehenna\plugins\wwise\source\akaudio\classes\akwaapiblueprints\AkWaapiUri.h
-d:\gehenna\gehenna\plugins\wwise\intermediate\build\win64\ue4editor\inc\akaudio\AkWaapiUri.generated.h
-D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkWaapiUtils.h
-d:\gehenna\gehenna\plugins\wwise\source\akaudio\classes\akwaapiblueprints\AkWaapiJsonManager.h
-D:\Gehenna\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkWaapiBlueprints/AkWaapiFieldNames.h
-d:\gehenna\gehenna\plugins\wwise\intermediate\build\win64\ue4editor\inc\akaudio\AkWaapiFieldNames.generated.h
-d:\gehenna\gehenna\plugins\wwise\intermediate\build\win64\ue4editor\inc\akaudio\AkWaapiJsonManager.generated.h
-d:\gehenna\gehenna\plugins\wwise\intermediate\build\win64\ue4editor\inc\akaudio\AkWaapiCalls.generated.h
-D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkWaapiFieldNames.gen.cpp
-D:\Gehenna\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkWaapiJsonManager.gen.cpp
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Development\AkAudio\Definitions.AkAudio.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkItemProperties.gen.cpp
+D:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+D:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\Source\AkAudio/Classes/AkWaapiUMG/Components/AkItemProperties.h
+D:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\UMG\Public\Components/Widget.h
+D:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\UMG\Public\Components/Visual.h
+D:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\Visual.generated.h
+D:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\UMG\Public\Components/SlateWrapperTypes.h
+D:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\SlateWrapperTypes.generated.h
+D:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\UMG\Public\Slate/WidgetTransform.h
+D:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\WidgetTransform.generated.h
+D:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\CoreUObject\Public\UObject/UObjectThreadContext.h
+D:\Program Files\Epic Games\UE_4.22\Engine\Source\Editor\UnrealEd\Public\Kismet2/CompilerResultsLog.h
+D:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Logging/TokenizedMessage.h
+D:\Program Files\Epic Games\UE_4.22\Engine\Source\Editor\UnrealEd\Public\EdGraphToken.h
+D:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\Widget.generated.h
+d:\sourcetree\rebirth\gehenna\plugins\wwise\source\akaudio\classes\akwaapiumg\components\SAkItemProperties.h
+D:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Misc/TextFilter.h
+D:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Misc/TextFilterExpressionEvaluator.h
+D:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Misc/ExpressionParser.h
+D:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Misc/TextFilterUtils.h
+D:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Slate\Public\Widgets/Input/SSearchBox.h
+d:\sourcetree\rebirth\gehenna\plugins\wwise\intermediate\build\win64\ue4editor\inc\akaudio\AkItemProperties.generated.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkLateReverbComponent.gen.cpp
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\Source\AkAudio/Classes/AkLateReverbComponent.h
+d:\sourcetree\rebirth\gehenna\plugins\wwise\intermediate\build\win64\ue4editor\inc\akaudio\AkLateReverbComponent.generated.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkLinuxInitializationSettings.gen.cpp
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\Source\AkAudio/Classes/InitializationSettings/AkLinuxInitializationSettings.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\Source\AkAudio\Public\AkInclude.h
+D:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Windows/AllowWindowsPlatformTypes.h
+D:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Windows/WindowsHWrapper.h
+D:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Windows/PreWindowsApi.h
+D:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Windows/MinWindows.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um\Windows.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared\sdkddkver.h
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\excpt.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared\windef.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared\minwindef.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um\winnt.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared\kernelspecs.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared\basetsd.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared\guiddef.h
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\shared\pshpack4.h
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\shared\poppack.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared\pshpack4.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared\poppack.h
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\shared\pshpack4.h
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\shared\pshpack2.h
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\shared\poppack.h
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\shared\pshpack2.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared\pshpack2.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared\poppack.h
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\shared\poppack.h
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\shared\pshpack8.h
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\shared\poppack.h
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\shared\pshpack1.h
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\shared\poppack.h
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\shared\pshpack1.h
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\shared\poppack.h
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\shared\poppack.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared\apiset.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared\ktmtypes.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um\winbase.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared\apisetcconv.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um\minwinbase.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um\processenv.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um\fileapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um\debugapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um\utilapiset.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um\handleapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um\errhandlingapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um\fibersapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um\namedpipeapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um\profileapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um\heapapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um\ioapiset.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um\synchapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um\interlockedapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um\processthreadsapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um\sysinfoapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um\memoryapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um\enclaveapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um\threadpoollegacyapiset.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um\threadpoolapiset.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um\jobapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um\jobapi2.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um\wow64apiset.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um\libloaderapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um\securitybaseapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um\namespaceapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um\systemtopologyapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um\processtopologyapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um\securityappcontainer.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um\realtimeapiset.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared\winerror.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um\timezoneapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um\wingdi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared\pshpack1.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared\poppack.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared\pshpack2.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared\poppack.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared\pshpack4.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared\poppack.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared\pshpack4.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared\poppack.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um\winuser.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared\pshpack2.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared\poppack.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared\tvout.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um\winnls.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um\datetimeapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um\stringapiset.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um\winnls.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um\wincon.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um\consoleapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um\winver.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um\verrsrc.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um\winreg.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um\reason.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um\winnetwk.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared\wnnc.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared\stralign.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um\imm.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um\ime_cmodes.h
+D:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Windows/PostWindowsApi.h
+D:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Windows/AllowWindowsPlatformAtomics.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkUEFeatures.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\ThirdParty\include\AK/AkWwiseSDKVersion.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkSoundEngine.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkSoundEngineExport.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\ThirdParty\include\AK/AkPlatforms.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Platforms/Windows/AkTypes.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkTypes.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/IAkPlugin.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkCommonDefs.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkSpeakerConfig.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkSpeakerVolumes.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkPlatformFuncs.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Win32/AkPlatformFuncs.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkAssert.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\ucrt\math.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Platforms/Generic/AkSpeakerVolumes.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/IAkRTPCSubscriber.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/IAkPluginMemAlloc.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkMemoryMgr.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkFPUtilities.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkLock.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Win32/AkLock.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkMonitorError.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/IAkProcessorFeatures.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/IAkPlatformContext.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkMidiTypes.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkCallback.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\ucrt\math.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Platforms/Windows/AkWinSoundEngine.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Platforms/Windows/AkPlatformContext.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SpatialAudio/Common/AkSpatialAudio.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SpatialAudio/Common/AkSpatialAudioTypes.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkKeyArray.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkArray.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkObject.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkKeyDef.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkSet.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkString.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkFNVHash.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Tools/Common/AkHashList.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Plugin/AkReflectGameData.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\ThirdParty\include\AK/IBytes.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkModule.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/IAkStreamMgr.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkStreamMgrModule.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\ThirdParty\include\AK/MusicEngine/Common/AkMusicEngine.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\ThirdParty\include\AK/Comm/AkCommunication.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundFrame/SF.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared\wtypes.h
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\shared\rpc.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared\pshpack8.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared\rpcdce.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared\rpcdcep.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um\rpcnsi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared\rpcnterr.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared\rpcasync.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared\pshpack8.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared\poppack.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared\poppack.h
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\shared\rpcndr.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared\pshpack8.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um\rpcnsip.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared\rpcsal.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared\poppack.h
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\shared\wtypesbase.h
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\shared\guiddef.h
+d:\sourcetree\rebirth\gehenna\plugins\wwise\thirdparty\include\ak\soundframe\SFObjects.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\ThirdParty\include\AK/SoundEngine/Common/AkQueryParameters.h
+D:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Windows/HideWindowsPlatformTypes.h
+D:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Windows/HideWindowsPlatformAtomics.h
+d:\sourcetree\rebirth\gehenna\plugins\wwise\source\akaudio\classes\initializationsettings\AkInitializationSettings.h
+d:\sourcetree\rebirth\gehenna\plugins\wwise\intermediate\build\win64\ue4editor\inc\akaudio\AkInitializationSettings.generated.h
+d:\sourcetree\rebirth\gehenna\plugins\wwise\intermediate\build\win64\ue4editor\inc\akaudio\AkLinuxInitializationSettings.generated.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkLuminInitializationSettings.gen.cpp
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\Source\AkAudio/Classes/InitializationSettings/AkLuminInitializationSettings.h
+d:\sourcetree\rebirth\gehenna\plugins\wwise\intermediate\build\win64\ue4editor\inc\akaudio\AkLuminInitializationSettings.generated.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkMacInitializationSettings.gen.cpp
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\Source\AkAudio/Classes/InitializationSettings/AkMacInitializationSettings.h
+d:\sourcetree\rebirth\gehenna\plugins\wwise\intermediate\build\win64\ue4editor\inc\akaudio\AkMacInitializationSettings.generated.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkPS4InitializationSettings.gen.cpp
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\Source\AkAudio/Classes/InitializationSettings/AkPS4InitializationSettings.h
+d:\sourcetree\rebirth\gehenna\plugins\wwise\intermediate\build\win64\ue4editor\inc\akaudio\AkPS4InitializationSettings.generated.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkReverbVolume.gen.cpp
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\Source\AkAudio/Classes/AkReverbVolume.h
+D:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\GameFramework/Volume.h
+D:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Volume.generated.h
+d:\sourcetree\rebirth\gehenna\plugins\wwise\intermediate\build\win64\ue4editor\inc\akaudio\AkReverbVolume.generated.h
+D:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\CoreUObject\Public\Serialization/ArchiveUObjectFromStructuredArchive.h
+D:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\Serialization/ArchiveFromStructuredArchive.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkRoomComponent.gen.cpp
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\Source\AkAudio/Classes/AkRoomComponent.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\Source\AkAudio\Public\AkAudioDevice.h
+d:\sourcetree\rebirth\gehenna\plugins\wwise\source\akaudio\classes\AkBankManager.h
+d:\sourcetree\rebirth\gehenna\plugins\wwise\source\akaudio\classes\AkGameplayTypes.h
+d:\sourcetree\rebirth\gehenna\plugins\wwise\intermediate\build\win64\ue4editor\inc\akaudio\AkGameplayTypes.generated.h
+d:\sourcetree\rebirth\gehenna\plugins\wwise\intermediate\build\win64\ue4editor\inc\akaudio\AkRoomComponent.generated.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkSettings.gen.cpp
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\Source\AkAudio/Classes/AkSettings.h
+d:\sourcetree\rebirth\gehenna\plugins\wwise\intermediate\build\win64\ue4editor\inc\akaudio\AkSettings.generated.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkSettingsPerUser.gen.cpp
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\Source\AkAudio/Classes/AkSettingsPerUser.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\Source\AkAudio\Public\AkWaapiClient.h
+D:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Core\Public\HAL/Runnable.h
+D:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Json\Public\Serialization/JsonWriter.h
+D:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Json\Public\Serialization/JsonTypes.h
+D:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Json\Public\Serialization/JsonSerializer.h
+D:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Json\Public\Serialization/JsonReader.h
+D:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Json\Public\Dom/JsonValue.h
+D:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Json\Public\Dom/JsonObject.h
+D:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Json\Public\JsonGlobals.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\ThirdParty\include\AK/WwiseAuthoringAPI/waapi.h
+d:\sourcetree\rebirth\gehenna\plugins\wwise\intermediate\build\win64\ue4editor\inc\akaudio\AkSettingsPerUser.generated.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkSlider.gen.cpp
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\Source\AkAudio/Classes/AkWaapiUMG/Components/AkSlider.h
+d:\sourcetree\rebirth\gehenna\plugins\wwise\intermediate\build\win64\ue4editor\inc\akaudio\AkSlider.generated.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkSpatialAudioVolume.gen.cpp
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\Source\AkAudio/Classes/AkSpatialAudioVolume.h
+d:\sourcetree\rebirth\gehenna\plugins\wwise\source\akaudio\classes\AkSurfaceReflectorSetComponent.h
+d:\sourcetree\rebirth\gehenna\plugins\wwise\source\akaudio\classes\AkAcousticTexture.h
+D:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\Engine/GameEngine.h
+D:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Slate\Public\Widgets/SViewport.h
+D:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\SlateCore\Public\Input/HittestGrid.h
+D:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime/MovieSceneCapture/Public/MovieSceneCaptureHandle.h
+D:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameEngine.generated.h
+d:\sourcetree\rebirth\gehenna\plugins\wwise\intermediate\build\win64\ue4editor\inc\akaudio\AkAcousticTexture.generated.h
+D:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\Components/TextRenderComponent.h
+D:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\TextRenderComponent.generated.h
+d:\sourcetree\rebirth\gehenna\plugins\wwise\intermediate\build\win64\ue4editor\inc\akaudio\AkSurfaceReflectorSetComponent.generated.h
+d:\sourcetree\rebirth\gehenna\plugins\wwise\intermediate\build\win64\ue4editor\inc\akaudio\AkSpatialAudioVolume.generated.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkSpotReflector.gen.cpp
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\Source\AkAudio/Classes/AkSpotReflector.h
+d:\sourcetree\rebirth\gehenna\plugins\wwise\intermediate\build\win64\ue4editor\inc\akaudio\AkSpotReflector.generated.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkSurfaceReflectorSetComponent.gen.cpp
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkSwitchInitializationSettings.gen.cpp
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\Source\AkAudio/Classes/InitializationSettings/AkSwitchInitializationSettings.h
+d:\sourcetree\rebirth\gehenna\plugins\wwise\intermediate\build\win64\ue4editor\inc\akaudio\AkSwitchInitializationSettings.generated.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkWaapiCalls.gen.cpp
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\Source\AkAudio/Classes/AkWaapiBlueprints/AkWaapiCalls.h
+d:\sourcetree\rebirth\gehenna\plugins\wwise\source\akaudio\classes\akwaapiblueprints\AkWaapiUri.h
+d:\sourcetree\rebirth\gehenna\plugins\wwise\intermediate\build\win64\ue4editor\inc\akaudio\AkWaapiUri.generated.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkWaapiUtils.h
+d:\sourcetree\rebirth\gehenna\plugins\wwise\source\akaudio\classes\akwaapiblueprints\AkWaapiJsonManager.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\Source\AkAudio\Classes\AkWaapiBlueprints/AkWaapiFieldNames.h
+d:\sourcetree\rebirth\gehenna\plugins\wwise\intermediate\build\win64\ue4editor\inc\akaudio\AkWaapiFieldNames.generated.h
+d:\sourcetree\rebirth\gehenna\plugins\wwise\intermediate\build\win64\ue4editor\inc\akaudio\AkWaapiJsonManager.generated.h
+d:\sourcetree\rebirth\gehenna\plugins\wwise\intermediate\build\win64\ue4editor\inc\akaudio\AkWaapiCalls.generated.h
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkWaapiFieldNames.gen.cpp
+D:\SourceTree\Rebirth\Gehenna\Plugins\Wwise\Intermediate\Build\Win64\UE4Editor\Inc\AkAudio\AkWaapiJsonManager.gen.cpp
