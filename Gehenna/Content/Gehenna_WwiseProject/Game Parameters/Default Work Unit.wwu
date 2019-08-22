@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{60778CEB-FBDE-4071-B62A-2CEDF15A9EA0}" SchemaVersion="94">
+	<GameParameters>
+		<WorkUnit Name="Default Work Unit" ID="{60778CEB-FBDE-4071-B62A-2CEDF15A9EA0}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="Craft_LMB_Press" ID="{6E276D32-2E82-4A16-8F92-8F09E840A610}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Mother_Combat_Fatigue" ID="{F96841F8-751A-4F19-9043-720A62911D6D}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

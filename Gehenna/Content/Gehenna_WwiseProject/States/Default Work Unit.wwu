@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{60890515-255E-401C-AA56-2FE40E7E1717}" SchemaVersion="94">
+	<States>
+		<WorkUnit Name="Default Work Unit" ID="{60890515-255E-401C-AA56-2FE40E7E1717}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="isStunned" ID="{6CFB82F4-6E43-4589-BD32-6D9B8A8FECD5}">
+					<ChildrenList>
+						<State Name="None" ID="{6813369B-A7B3-446E-84B2-0F59F7EE44F9}"/>
+						<State Name="Stunned" ID="{6909C6DA-7B03-4018-8041-0CEF7F5E8CE5}"/>
+						<State Name="Not_Stunned" ID="{10324B4E-DB14-4CD3-A1AA-DF1D91502574}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>
