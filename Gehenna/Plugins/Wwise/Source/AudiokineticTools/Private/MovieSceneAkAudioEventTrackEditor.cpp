@@ -972,6 +972,12 @@ bool FMovieSceneAkAudioEventTrackEditor::HandleAssetAdded(UObject* Asset, const 
 {
 	if (Asset->IsA<UAkAudioEvent>())
 	{
+		if (!SupportsSequence(GetMovieSceneSequence()))
+		{
+			UE_LOG(LogMovieScene, Warning, TEXT("AkAudioEventTrack only supports Level Sequences"));
+			return false;
+		}
+
 		auto Event = Cast<UAkAudioEvent>(Asset);
 
 		if (TargetObjectGuid.IsValid())

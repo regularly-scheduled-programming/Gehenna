@@ -21,7 +21,7 @@ under the Apache License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES
 OR CONDITIONS OF ANY KIND, either express or implied. See the Apache License for
 the specific language governing permissions and limitations under the License.
 
-  Version: v2019.1.2  Build: 7018
+  Version: v2019.1.3  Build: 7048
   Copyright (c) 2006-2019 Audiokinetic Inc.
 *******************************************************************************/
 
@@ -133,6 +133,10 @@ namespace PlatformID
 	// {BD0BDF13-3125-454f-8BFD-319537169F81}
 	AK_ID_DECLARE GUID Linux_unsafeguid = { 0xbd0bdf13, 0x3125, 0x454f, { 0x8b, 0xfd, 0x31, 0x95, 0x37, 0x16, 0x9f, 0x81 } };
 	AK_ID_DECLARE BasePlatformID Linux = BasePlatformID::Create( Linux_unsafeguid );
+
+	// {EBDCC377-12EE-4FFE-A545-8588F83CAC94}
+	AK_ID_DECLARE GUID Stadia_unsafeguid = { 0xebdcc377, 0x12ee, 0x4ffe, { 0xa5, 0x45, 0x85, 0x88, 0xf8, 0x3c, 0xac, 0x94 } };
+	AK_ID_DECLARE BasePlatformID Stadia = BasePlatformID::Create(Stadia_unsafeguid);
 
 	// {874F26D2-416D-4698-BFB6-3427CAFCFF9C}
 	AK_ID_DECLARE GUID NintendoNX_unsafeguid = { 0x874f26d2, 0x416d, 0x4698, { 0xbf, 0xb6, 0x34, 0x27, 0xca, 0xfc, 0xff, 0x9c } };

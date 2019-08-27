@@ -629,16 +629,17 @@ void UAkGameplayStatics::ClearBanks()
 
 void UAkGameplayStatics::LoadBank(UAkAudioBank * bank, const FString& BankName, FLatentActionInfo LatentInfo, UObject* WorldContextObject)
 {
+	AkDeviceAndWorld DeviceAndWorld(WorldContextObject);
+	FLatentActionManager& LatentActionManager = DeviceAndWorld.CurrentWorld->GetLatentActionManager();
+	FWaitEndBankAction* NewAction = nullptr;
+	if (LatentActionManager.FindExistingAction<FWaitEndBankAction>(LatentInfo.CallbackTarget, LatentInfo.UUID) == nullptr)
+	{
+		NewAction = new FWaitEndBankAction(LatentInfo);
+		LatentActionManager.AddNewAction(LatentInfo.CallbackTarget, LatentInfo.UUID, NewAction);
+	}
+
 	if (bank)
 	{
-		AkDeviceAndWorld DeviceAndWorld(WorldContextObject);
-		FLatentActionManager& LatentActionManager = DeviceAndWorld.CurrentWorld->GetLatentActionManager();
-		FWaitEndBankAction* NewAction = nullptr;
-		if (LatentActionManager.FindExistingAction<FWaitEndBankAction>(LatentInfo.CallbackTarget, LatentInfo.UUID) == nullptr)
-		{
-			NewAction = new FWaitEndBankAction(LatentInfo);
-			LatentActionManager.AddNewAction(LatentInfo.CallbackTarget, LatentInfo.UUID, NewAction);
-		}
 		if (!bank->Load(NewAction))
 		{
 			NewAction->ActionDone = true;
@@ -647,6 +648,8 @@ void UAkGameplayStatics::LoadBank(UAkAudioBank * bank, const FString& BankName, 
 	else
 	{
 		LoadBankByName(BankName);
+
+		NewAction->ActionDone = true;
 	}
 }
 
@@ -664,7 +667,6 @@ void UAkGameplayStatics::LoadBankAsync(UAkAudioBank * bank, const FOnAkBankCallb
 
 void UAkGameplayStatics::LoadBankByName(const FString& BankName)
 {
-	
 	FAkAudioDevice * AudioDevice = FAkAudioDevice::Get();
 	if( AudioDevice )
 	{
@@ -740,8 +742,6 @@ void UAkGameplayStatics::LoadBanks(const TArray<UAkAudioBank *>& SoundBanks, boo
 			}
 		}
 	}
-
-
 }
 
 void UAkGameplayStatics::LoadInitBank()
@@ -753,24 +753,25 @@ void UAkGameplayStatics::LoadInitBank()
 	}
 }
 
-
 void UAkGameplayStatics::UnloadBank(class UAkAudioBank * bank, const FString& BankName, FLatentActionInfo LatentInfo, UObject* WorldContextObject)
 {
-	if ( bank )
+	AkDeviceAndWorld DeviceAndWorld(WorldContextObject);
+	FLatentActionManager& LatentActionManager = DeviceAndWorld.CurrentWorld->GetLatentActionManager();
+	FWaitEndBankAction* NewAction = nullptr;
+	if (LatentActionManager.FindExistingAction<FWaitEndBankAction>(LatentInfo.CallbackTarget, LatentInfo.UUID) == nullptr)
 	{
-		AkDeviceAndWorld DeviceAndWorld(WorldContextObject);
-		FLatentActionManager& LatentActionManager = DeviceAndWorld.CurrentWorld->GetLatentActionManager();
-		FWaitEndBankAction* NewAction = nullptr;
-		if (LatentActionManager.FindExistingAction<FWaitEndBankAction>(LatentInfo.CallbackTarget, LatentInfo.UUID) == nullptr)
-		{
-			NewAction = new FWaitEndBankAction(LatentInfo);
-			LatentActionManager.AddNewAction(LatentInfo.CallbackTarget, LatentInfo.UUID, NewAction);
-		}
+		NewAction = new FWaitEndBankAction(LatentInfo);
+		LatentActionManager.AddNewAction(LatentInfo.CallbackTarget, LatentInfo.UUID, NewAction);
+	}
+
+	if (bank)
+	{
 		bank->Unload(NewAction);
 	}
 	else
 	{
 		UnloadBankByName(BankName);
+		NewAction->ActionDone = true;
 	}
 }
 

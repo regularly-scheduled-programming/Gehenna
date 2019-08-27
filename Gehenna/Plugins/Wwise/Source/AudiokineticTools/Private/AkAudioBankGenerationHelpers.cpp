@@ -750,8 +750,8 @@ namespace WwiseBnkGenHelper
 					continue;
 				}
 
-				TSharedPtr< FJsonObject > JsonObject;
-				TSharedRef< TJsonReader<> > Reader = TJsonReaderFactory<>::Create(FileContents);
+				TSharedPtr<FJsonObject> JsonObject;
+				TSharedRef<TJsonReader<>> Reader = TJsonReaderFactory<>::Create(FileContents);
 
 				if (!FJsonSerializer::Deserialize(Reader, JsonObject) || !JsonObject.IsValid())
 				{
@@ -759,14 +759,35 @@ namespace WwiseBnkGenHelper
 					continue;
 				}
 
-				TArray< TSharedPtr<FJsonValue> > SoundBanks = JsonObject->GetObjectField("SoundBanksInfo")->GetArrayField("SoundBanks");
-				TSharedPtr<FJsonObject> Obj = SoundBanks[0]->AsObject();
-				TArray< TSharedPtr<FJsonValue> > Events = Obj->GetArrayField("IncludedEvents");
-
-				for (int i = 0; i < Events.Num(); i++)
+				const TSharedPtr<FJsonObject>* SoundBanksInfo = nullptr;
+				if (!JsonObject->TryGetObjectField("SoundBanksInfo", SoundBanksInfo))
 				{
-					TSharedPtr<FJsonObject> EventObj = Events[i]->AsObject();
-					FString EventName = EventObj->GetStringField("Name");
+					UE_LOG(LogAkBanks, Warning, TEXT("Malformed JSON SoundBank metadata file: %s"), BankPath);
+					continue;
+				}
+
+				const TArray<TSharedPtr<FJsonValue>>* SoundBanks = nullptr;
+				if (!(*SoundBanksInfo)->TryGetArrayField("SoundBanks", SoundBanks))
+				{
+					UE_LOG(LogAkBanks, Warning, TEXT("Malformed JSON SoundBank metadata file: %s"), BankPath);
+					continue;
+				}
+
+				TSharedPtr<FJsonObject> Obj = (*SoundBanks)[0]->AsObject();
+				const TArray<TSharedPtr<FJsonValue>>* Events;
+				if (!Obj->TryGetArrayField("IncludedEvents", Events))
+				{
+					// If we get here, it is because we are parsing a SoundBank that has no events - possibly containing external sources
+					continue;
+				}
+
+				for (int i = 0; i < Events->Num(); i++)
+				{
+					TSharedPtr<FJsonObject> EventObj = (*Events)[i]->AsObject();
+
+					FString EventName;
+					if (!EventObj->TryGetStringField("Name", EventName))
+						continue;
 
 					UAkAudioEvent* Event = nullptr;
 					for (auto TestEvent : EventsInBank)
@@ -792,14 +813,11 @@ namespace WwiseBnkGenHelper
 							Changed = true;
 						}
 					}
-					else
+					else if (Event->MaxAttenuationRadius != 0)
 					{
-						if (Event->MaxAttenuationRadius != 0)
-						{
-							// No attenuation info in json file, set to 0.
-							Event->MaxAttenuationRadius = 0;
-							Changed = true;
-						}
+						// No attenuation info in json file, set to 0.
+						Event->MaxAttenuationRadius = 0;
+						Changed = true;
 					}
 
 					// if we can't find "DurationType", then we assume infinite

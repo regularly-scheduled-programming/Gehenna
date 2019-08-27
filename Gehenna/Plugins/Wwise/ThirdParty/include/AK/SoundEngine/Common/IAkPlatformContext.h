@@ -21,7 +21,7 @@ under the Apache License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES
 OR CONDITIONS OF ANY KIND, either express or implied. See the Apache License for
 the specific language governing permissions and limitations under the License.
 
-	Version: v2019.1.2  Build: 7018
+	Version: v2019.1.3  Build: 7048
 	Copyright (c) 2006-2019 Audiokinetic Inc.
 *******************************************************************************/
 

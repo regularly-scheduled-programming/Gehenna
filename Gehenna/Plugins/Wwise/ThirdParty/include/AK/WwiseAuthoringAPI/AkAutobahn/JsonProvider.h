@@ -9,7 +9,7 @@ may use this file in accordance with the end user license agreement provided
 with the software or, alternatively, in accordance with the terms contained in a
 written agreement between you and Audiokinetic Inc.
 
-Version: v2019.1.2  Build: 7018
+Version: v2019.1.3  Build: 7048
 Copyright (c) 2006-2019 Audiokinetic Inc.
 *******************************************************************************/
 

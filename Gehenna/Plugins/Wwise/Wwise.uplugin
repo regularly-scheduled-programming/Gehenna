@@ -2,8 +2,8 @@
 	"FileVersion" : 1,
 	
 	"FriendlyName" : "Wwise Unreal Engine 4 Integration",
-	"Version" : 201911378,
-	"VersionName" : "2019.1.2.7018.1378",
+	"Version" : 201911409,
+	"VersionName" : "2019.1.3.7048.1409",
 	"CreatedBy" : "Audiokinetic, Inc.",
 	"CreatedByURL" : "http://audiokinetic.com",
 	"EngineVersion" : "4.22.0",
