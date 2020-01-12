@@ -73,6 +73,7 @@ Saved/*
 Intermediate/*
 Plugins/*/Intermediate/*
 Gehenna/Plugins/Wwise/
+Gehenna/Gehenna_WwiseProject/
 
 # Cache files for the editor to use
 DerivedDataCache/*
