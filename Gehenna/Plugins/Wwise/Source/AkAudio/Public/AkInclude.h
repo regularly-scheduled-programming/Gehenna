@@ -20,7 +20,7 @@
 #include "Windows/AllowWindowsPlatformTypes.h"
 #include "Windows/AllowWindowsPlatformAtomics.h"
 #include "Windows/MinimalWindowsApi.h"
-#elif PLATFORM_XBOXONE
+#elif defined(AK_NEED_XBOX_MINAPI) && AK_NEED_XBOX_MINAPI
 #include "XboxOne/XboxOneMinApi.h"
 #endif
 
