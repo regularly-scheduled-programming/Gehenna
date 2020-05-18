@@ -8,6 +8,7 @@
 #include "RivenBaseClass.h"
 #include "RivenBaseAIController.h"
 
+
 #include "Action.generated.h"
 /**
  * 
@@ -35,16 +36,25 @@ public:
 	ARivenBaseClass * Agent;*/
 
 	UFUNCTION( BlueprintCallable, BlueprintImplementableEvent, Category = "GOAP")
-	void BeginAction(ARivenBaseAIController * Agent);
+	void BeginAction(ARivenBaseAIController * Agent,ACharacter * character);
 	
 
 	UFUNCTION(BlueprintCallable, BlueprintImplementableEvent, Category = "GOAP")
-	void TickAction(ARivenBaseAIController * Agent, float DeltaSeconds);
+	void TickAction(ARivenBaseAIController * Agent, ACharacter* character, float DeltaSeconds);
 	
 	UFUNCTION(BlueprintCallable, BlueprintImplementableEvent, Category = "GOAP")
-	void EndAction(ARivenBaseAIController * Agent);
+	void EndAction(ARivenBaseAIController * Agent, ACharacter* character);
 
 	UFUNCTION(BlueprintCallable, BlueprintImplementableEvent, Category = "GOAP")
-	void InterruptAction(ARivenBaseAIController * Agent);
+	void InterruptAction(ARivenBaseAIController * Agent, ACharacter* character);
+
+	//Child Action Functions
+	UFUNCTION(BlueprintCallable, BlueprintImplementableEvent, Category = "GOAP")
+	void BeginChildAction(ARivenBaseAIController* Agent, ACharacter* character,UAction*Parent,AActor* MoveToObject);
+	UFUNCTION(BlueprintCallable, BlueprintImplementableEvent, Category = "GOAP")
+	void EndChildAction(UAction* ActionCompleted);
+	UFUNCTION(BlueprintCallable, BlueprintImplementableEvent, Category = "GOAP")
+	void FailedChildAction(UAction* ActionFailed);
+
 
 };
