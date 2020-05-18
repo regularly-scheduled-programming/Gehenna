@@ -20,4 +20,7 @@ struct GEHENNA_API FMyItemInfo
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PickUp")
 		int32 Quantity = 1;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PickUp")
+		float Aura = 0.0;
 };
