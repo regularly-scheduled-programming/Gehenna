@@ -1,4 +1,4 @@
-// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
+// Copyright Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -54,7 +54,7 @@ void EmptyLinkFunctionForGeneratedCodeInterpTrackInstAkAudioEvent() {}
 		{ "ModuleRelativePath", "Classes/InterpTrackInstAkAudioEvent.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UInterpTrackInstAkAudioEvent_Statics::NewProp_LastUpdatePosition = { "LastUpdatePosition", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UInterpTrackInstAkAudioEvent, LastUpdatePosition), METADATA_PARAMS(Z_Construct_UClass_UInterpTrackInstAkAudioEvent_Statics::NewProp_LastUpdatePosition_MetaData, ARRAY_COUNT(Z_Construct_UClass_UInterpTrackInstAkAudioEvent_Statics::NewProp_LastUpdatePosition_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UInterpTrackInstAkAudioEvent_Statics::NewProp_LastUpdatePosition = { "LastUpdatePosition", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UInterpTrackInstAkAudioEvent, LastUpdatePosition), METADATA_PARAMS(Z_Construct_UClass_UInterpTrackInstAkAudioEvent_Statics::NewProp_LastUpdatePosition_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UInterpTrackInstAkAudioEvent_Statics::NewProp_LastUpdatePosition_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UInterpTrackInstAkAudioEvent_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UInterpTrackInstAkAudioEvent_Statics::NewProp_LastUpdatePosition,
 	};
@@ -69,12 +69,12 @@ void EmptyLinkFunctionForGeneratedCodeInterpTrackInstAkAudioEvent() {}
 		nullptr,
 		Z_Construct_UClass_UInterpTrackInstAkAudioEvent_Statics::PropPointers,
 		nullptr,
-		ARRAY_COUNT(DependentSingletons),
+		UE_ARRAY_COUNT(DependentSingletons),
 		0,
-		ARRAY_COUNT(Z_Construct_UClass_UInterpTrackInstAkAudioEvent_Statics::PropPointers),
+		UE_ARRAY_COUNT(Z_Construct_UClass_UInterpTrackInstAkAudioEvent_Statics::PropPointers),
 		0,
 		0x000800A0u,
-		METADATA_PARAMS(Z_Construct_UClass_UInterpTrackInstAkAudioEvent_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UInterpTrackInstAkAudioEvent_Statics::Class_MetaDataParams))
+		METADATA_PARAMS(Z_Construct_UClass_UInterpTrackInstAkAudioEvent_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UInterpTrackInstAkAudioEvent_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UInterpTrackInstAkAudioEvent()
 	{
@@ -85,7 +85,7 @@ void EmptyLinkFunctionForGeneratedCodeInterpTrackInstAkAudioEvent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UInterpTrackInstAkAudioEvent, 2890034814);
+	IMPLEMENT_CLASS(UInterpTrackInstAkAudioEvent, 1941416870);
 	template<> AKAUDIO_API UClass* StaticClass<UInterpTrackInstAkAudioEvent>()
 	{
 		return UInterpTrackInstAkAudioEvent::StaticClass();

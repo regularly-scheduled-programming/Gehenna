@@ -11,6 +11,7 @@
 #include "Model.h"
 #include "UObject/UObjectIterator.h"
 #include "Engine/GameEngine.h"
+#include "AkWaapiClient.h"
 
 
 /*-----------------------------------------------------------------------------
@@ -160,25 +161,11 @@ const TArray<FAKWaapiJsonObject > UAkWaapiJsonManager::GetArrayField(const FAkWa
 FString UAkWaapiJsonManager::Conv_FAKWaapiJsonObjectToString(FAKWaapiJsonObject INAKWaapiJsonObject)
 {
 	FString ResultAsString;
-	JsonObjectToString(INAKWaapiJsonObject.WaapiJsonObj.ToSharedRef(), ResultAsString);
+	FAkWaapiClient::JsonObjectToString(INAKWaapiJsonObject.WaapiJsonObj.ToSharedRef(), ResultAsString);
 	return ResultAsString;
 }
 
 FText UAkWaapiJsonManager::Conv_FAKWaapiJsonObjectToText(FAKWaapiJsonObject INAKWaapiJsonObject)
 {
 	return FText::FromString(*Conv_FAKWaapiJsonObjectToString(INAKWaapiJsonObject));
-}
-
-bool UAkWaapiJsonManager::JsonObjectToString(const TSharedRef<FJsonObject>& in_jsonObject, FString& ou_jsonObjectString)
-{
-	bool eResult = true;
-	// Make sure the arguments are valid Json data.
-	// Get a string representation of the Json Object
-	TSharedRef< TJsonWriter<> > JsonWriterArgs = TJsonWriterFactory<>::Create(&ou_jsonObjectString);
-	if (!FJsonSerializer::Serialize(in_jsonObject, JsonWriterArgs))
-	{
-		eResult = false;
-	}
-	JsonWriterArgs->Close();
-	return eResult;
 }

@@ -19,18 +19,14 @@ UMovieSceneSection* UMovieSceneAkAudioEventTrack::CreateNewSection()
 	return NewObject<UMovieSceneSection>(this, UMovieSceneAkAudioEventSection::StaticClass(), NAME_None, RF_Transactional);
 }
 
-bool UMovieSceneAkAudioEventTrack::AddNewEvent(TimeUnit Time, UAkAudioEvent* Event, const FString& EventName)
+bool UMovieSceneAkAudioEventTrack::AddNewEvent(FFrameNumber Time, UAkAudioEvent* Event, const FString& EventName)
 {
     UMovieSceneAkAudioEventSection* NewSection = NewObject<UMovieSceneAkAudioEventSection>(this);
 	ensure(NewSection);
 
 	NewSection->SetEvent(Event, EventName);
 	const auto Duration = NewSection->GetMaxEventDuration();
-#if UE_4_20_OR_LATER
 	NewSection->InitialPlacement(GetAllSections(), Time, Duration, SupportsMultipleRows());
-#else
-	NewSection->InitialPlacement(GetAllSections(), Time, Time + Duration, SupportsMultipleRows());
-#endif
 	AddSection(*NewSection);
 
 	return true;

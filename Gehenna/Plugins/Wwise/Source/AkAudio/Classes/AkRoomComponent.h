@@ -4,15 +4,16 @@
 #include "AkAudioDevice.h"
 #include "Components/SceneComponent.h"
 #include "GameFramework/Volume.h"
+#include "AkGameObject.h"
 #include "AkRoomComponent.generated.h"
 
 
 UCLASS(ClassGroup = Audiokinetic, BlueprintType, hidecategories = (Transform, Rendering, Mobility, LOD, Component, Activation, Tags), meta = (BlueprintSpawnableComponent))
-class AKAUDIO_API UAkRoomComponent : public USceneComponent
+class AKAUDIO_API UAkRoomComponent : public UAkGameObject
 {
 	GENERATED_UCLASS_BODY()
 
-	/** Whether this volume is currently enabled and able to affect sounds */
+	/** Enable room occlusion feature, additional properties are available in the Room category. */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=Toggle, meta = (DisplayName = "Enable Room"))
 	uint32 bEnable:1;
 
@@ -30,7 +31,6 @@ class AKAUDIO_API UAkRoomComponent : public USceneComponent
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Room")
 	float Priority;
 
-
 	/**
 	* Used to set the occlusion value in wwise, on emitters in the room, when no audio paths to the listener are found via sound propagation in Wwise Spatial Audio.
 	* This value can be thought of as 'thickness', as it relates to how much sound energy is transmitted through the wall. 
@@ -39,6 +39,22 @@ class AKAUDIO_API UAkRoomComponent : public USceneComponent
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Room", meta = (ClampMin=0.0f, ClampMax=1.0f, UIMin=0.0f, UIMax=1.0f))
 	float WallOcclusion;
 
+	/**
+	* Send level for sounds that are posted on the room. Valid range: (0.f-1.f). A value of 0 disables the aux send.
+	*/
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "AkEvent", meta = (ClampMin = "0.0", ClampMax = "1.0"))
+	float AuxSendLevel;
+
+	/** Automatically post the associated AkAudioEvent on BeginPlay */
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "AkEvent", SimpleDisplay)
+	bool AutoPost;
+
+	/** Posts this game object's AkAudioEvent to Wwise, using this as the game object source */
+	virtual int32 PostAssociatedAkEvent(
+		UPARAM(meta = (Bitmask, BitmaskEnum = EAkCallbackType)) int32 CallbackMask,
+		const FOnAkPostEventCallback& PostEventCallback,
+		const TArray<FAkExternalSourceInfo>& ExternalSources
+	);
 
 	/** Register a room in AK Spatial Audio. */
 	void AddSpatialAudioRoom();
@@ -61,6 +77,15 @@ class AKAUDIO_API UAkRoomComponent : public USceneComponent
 
 	FName GetName() const;
 
+	virtual AkPlayingID PostAkEventByNameWithDelegate(
+		const FString& in_EventName,
+		int32 CallbackMask,
+		const FOnAkPostEventCallback& PostEventCallback,
+		const TArray<FAkExternalSourceInfo>& ExternalSources = TArray<FAkExternalSourceInfo>());
+
+	// Begin USceneComponent Interface
+	virtual void BeginPlay() override;
+
 #if WITH_EDITOR
 	virtual void PostEditChangeProperty(FPropertyChangedEvent& PropertyChangedEvent) override;
 #endif
@@ -71,5 +96,4 @@ private:
 	void InitializeParentVolume();
 
 	void GetRoomParams(AkRoomParams& outParams);
-	bool RoomAdded = false;
 };

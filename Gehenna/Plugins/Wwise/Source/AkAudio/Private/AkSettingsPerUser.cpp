@@ -11,6 +11,7 @@
 UAkSettingsPerUser::UAkSettingsPerUser(const FObjectInitializer& ObjectInitializer)
 	: Super(ObjectInitializer)
 {
+#if WITH_EDITOR
 #if UE_4_21_OR_LATER
 	WwiseWindowsInstallationPath.Path = FPlatformMisc::GetEnvironmentVariable(TEXT("WWISEROOT"));
 #else
@@ -19,10 +20,15 @@ UAkSettingsPerUser::UAkSettingsPerUser(const FObjectInitializer& ObjectInitializ
 
 	WwiseWindowsInstallationPath.Path = FString(WwiseDir);
 #endif
+#endif
 }
 
 #if WITH_EDITOR
+#if UE_4_25_OR_LATER
+void UAkSettingsPerUser::PreEditChange(FProperty* PropertyAboutToChange)
+#else
 void UAkSettingsPerUser::PreEditChange(UProperty* PropertyAboutToChange)
+#endif
 {
 	PreviousWwiseWindowsInstallationPath = WwiseWindowsInstallationPath.Path;
 	PreviousWwiseMacInstallationPath = WwiseMacInstallationPath.FilePath;

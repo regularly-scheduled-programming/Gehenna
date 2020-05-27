@@ -63,10 +63,10 @@ void SWaapiPickerRow::Construct(const FArguments& InArgs)
 	WaapiPickerItem = InArgs._WaapiPickerItem;
 
 	bool bIsRoot = !WaapiPickerItem.Pin()->Parent.IsValid() && 
-					((WaapiPickerItem.Pin()->FolderPath == WwiseWaapiHelper::BACK_SLASH + EWwiseTreeItemType::FolderNames[EWwiseTreeItemType::Event])	  || 
-					(WaapiPickerItem.Pin()->FolderPath == WwiseWaapiHelper::BACK_SLASH + EWwiseTreeItemType::FolderNames[EWwiseTreeItemType::AuxBus])	  || 
-					(WaapiPickerItem.Pin()->FolderPath == WwiseWaapiHelper::BACK_SLASH + EWwiseTreeItemType::FolderNames[EWwiseTreeItemType::ActorMixer]) ||
-					(WaapiPickerItem.Pin()->FolderPath == WwiseWaapiHelper::BACK_SLASH + EWwiseTreeItemType::FolderNames[EWwiseTreeItemType::AcousticTexture]));
+					((WaapiPickerItem.Pin()->FolderPath == WwiseWaapiHelper::BACK_SLASH + EWwiseItemType::FolderNames[EWwiseItemType::Event])	  || 
+					(WaapiPickerItem.Pin()->FolderPath == WwiseWaapiHelper::BACK_SLASH + EWwiseItemType::FolderNames[EWwiseItemType::AuxBus])	  || 
+					(WaapiPickerItem.Pin()->FolderPath == WwiseWaapiHelper::BACK_SLASH + EWwiseItemType::FolderNames[EWwiseItemType::ActorMixer]) ||
+					(WaapiPickerItem.Pin()->FolderPath == WwiseWaapiHelper::BACK_SLASH + EWwiseItemType::FolderNames[EWwiseItemType::AcousticTexture]));
 
 	ChildSlot
 	[
@@ -166,7 +166,7 @@ bool SWaapiPickerRow::OnVerifyItemNameChanged(const TSharedPtr< FWwiseTreeItem >
 		return false;
 	}
 
-	if ((WwiseItem->ItemType == EWwiseTreeItemType::PhysicalFolder) || (WwiseItem->ItemType == EWwiseTreeItemType::StandaloneWorkUnit) || (WwiseItem->ItemType == EWwiseTreeItemType::NestedWorkUnit))
+	if ((WwiseItem->ItemType == EWwiseItemType::PhysicalFolder) || (WwiseItem->ItemType == EWwiseItemType::StandaloneWorkUnit) || (WwiseItem->ItemType == EWwiseItemType::NestedWorkUnit))
 	{
 		OutErrorMessage = LOCTEXT("RenameFailed_WorkUnitItem", "You can't change the name of a PhysicalFolder/WorkUnit");
 		return false;
@@ -225,7 +225,7 @@ bool SWaapiPickerRow::IsWiseItemNameReadOnly() const
 {
 	// We can't rename roots or Wise items of type "PhysicalFolder || StandaloneWorkUnit || NestedWorkUnit"
 	const TSharedPtr<FWwiseTreeItem>& WaapiPickerItemPtr = WaapiPickerItem.Pin();
-	return ((WaapiPickerItemPtr->Parent == NULL) || (WaapiPickerItemPtr->ItemType == EWwiseTreeItemType::PhysicalFolder) || (WaapiPickerItemPtr->ItemType == EWwiseTreeItemType::StandaloneWorkUnit) || (WaapiPickerItemPtr->ItemType == EWwiseTreeItemType::NestedWorkUnit));
+	return ((WaapiPickerItemPtr->Parent == NULL) || (WaapiPickerItemPtr->ItemType == EWwiseItemType::PhysicalFolder) || (WaapiPickerItemPtr->ItemType == EWwiseItemType::StandaloneWorkUnit) || (WaapiPickerItemPtr->ItemType == EWwiseItemType::NestedWorkUnit));
 }
 
 FText SWaapiPickerRow::GetNameText() const

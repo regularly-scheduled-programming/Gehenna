@@ -1,4 +1,4 @@
-// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
+// Copyright Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -20,6 +20,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 template<> AKAUDIO_API UScriptStruct* StaticStruct<struct FAkAudioEventTrackKey>();
 
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_InterpTrackAkAudioEvent_h_39_SPARSE_DATA
 #define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_InterpTrackAkAudioEvent_h_39_RPC_WRAPPERS
 #define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_InterpTrackAkAudioEvent_h_39_RPC_WRAPPERS_NO_PURE_DECLS
 #define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_InterpTrackAkAudioEvent_h_39_INCLASS_NO_PURE_DECLS \
@@ -72,6 +73,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UInterpTrackAkAudioEvent); \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_InterpTrackAkAudioEvent_h_39_PRIVATE_PROPERTY_OFFSET \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_InterpTrackAkAudioEvent_h_39_SPARSE_DATA \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_InterpTrackAkAudioEvent_h_39_RPC_WRAPPERS \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_InterpTrackAkAudioEvent_h_39_INCLASS \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_InterpTrackAkAudioEvent_h_39_STANDARD_CONSTRUCTORS \
@@ -83,6 +85,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_InterpTrackAkAudioEvent_h_39_PRIVATE_PROPERTY_OFFSET \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_InterpTrackAkAudioEvent_h_39_SPARSE_DATA \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_InterpTrackAkAudioEvent_h_39_RPC_WRAPPERS_NO_PURE_DECLS \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_InterpTrackAkAudioEvent_h_39_INCLASS_NO_PURE_DECLS \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_InterpTrackAkAudioEvent_h_39_ENHANCED_CONSTRUCTORS \

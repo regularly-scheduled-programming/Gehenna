@@ -1,11 +1,11 @@
-// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
+// Copyright Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "AudiokineticTools/Classes/InterpTrackAkAudioRTPCHelper.h"
+#include "AudiokineticTools/Classes/Sequencer/InterpTrackAkAudioRTPCHelper.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -40,8 +40,8 @@ void EmptyLinkFunctionForGeneratedCodeInterpTrackAkAudioRTPCHelper() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UInterpTrackAkAudioRTPCHelper_Statics::Class_MetaDataParams[] = {
-		{ "IncludePath", "InterpTrackAkAudioRTPCHelper.h" },
-		{ "ModuleRelativePath", "Classes/InterpTrackAkAudioRTPCHelper.h" },
+		{ "IncludePath", "Sequencer/InterpTrackAkAudioRTPCHelper.h" },
+		{ "ModuleRelativePath", "Classes/Sequencer/InterpTrackAkAudioRTPCHelper.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UInterpTrackAkAudioRTPCHelper_Statics::StaticCppClassTypeInfo = {
@@ -55,12 +55,12 @@ void EmptyLinkFunctionForGeneratedCodeInterpTrackAkAudioRTPCHelper() {}
 		nullptr,
 		nullptr,
 		nullptr,
-		ARRAY_COUNT(DependentSingletons),
+		UE_ARRAY_COUNT(DependentSingletons),
 		0,
 		0,
 		0,
 		0x000000A0u,
-		METADATA_PARAMS(Z_Construct_UClass_UInterpTrackAkAudioRTPCHelper_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UInterpTrackAkAudioRTPCHelper_Statics::Class_MetaDataParams))
+		METADATA_PARAMS(Z_Construct_UClass_UInterpTrackAkAudioRTPCHelper_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UInterpTrackAkAudioRTPCHelper_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UInterpTrackAkAudioRTPCHelper()
 	{
@@ -71,7 +71,7 @@ void EmptyLinkFunctionForGeneratedCodeInterpTrackAkAudioRTPCHelper() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UInterpTrackAkAudioRTPCHelper, 3287517389);
+	IMPLEMENT_CLASS(UInterpTrackAkAudioRTPCHelper, 3682922134);
 	template<> AUDIOKINETICTOOLS_API UClass* StaticClass<UInterpTrackAkAudioRTPCHelper>()
 	{
 		return UInterpTrackAkAudioRTPCHelper::StaticClass();

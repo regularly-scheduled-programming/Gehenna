@@ -1,11 +1,11 @@
-// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
+// Copyright Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "AudiokineticTools/Classes/InterpTrackAkAudioEventHelper.h"
+#include "AudiokineticTools/Classes/Sequencer/InterpTrackAkAudioEventHelper.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -40,8 +40,8 @@ void EmptyLinkFunctionForGeneratedCodeInterpTrackAkAudioEventHelper() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UInterpTrackAkAudioEventHelper_Statics::Class_MetaDataParams[] = {
-		{ "IncludePath", "InterpTrackAkAudioEventHelper.h" },
-		{ "ModuleRelativePath", "Classes/InterpTrackAkAudioEventHelper.h" },
+		{ "IncludePath", "Sequencer/InterpTrackAkAudioEventHelper.h" },
+		{ "ModuleRelativePath", "Classes/Sequencer/InterpTrackAkAudioEventHelper.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UInterpTrackAkAudioEventHelper_Statics::StaticCppClassTypeInfo = {
@@ -55,12 +55,12 @@ void EmptyLinkFunctionForGeneratedCodeInterpTrackAkAudioEventHelper() {}
 		nullptr,
 		nullptr,
 		nullptr,
-		ARRAY_COUNT(DependentSingletons),
+		UE_ARRAY_COUNT(DependentSingletons),
 		0,
 		0,
 		0,
 		0x000000A0u,
-		METADATA_PARAMS(Z_Construct_UClass_UInterpTrackAkAudioEventHelper_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UInterpTrackAkAudioEventHelper_Statics::Class_MetaDataParams))
+		METADATA_PARAMS(Z_Construct_UClass_UInterpTrackAkAudioEventHelper_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UInterpTrackAkAudioEventHelper_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UInterpTrackAkAudioEventHelper()
 	{
@@ -71,7 +71,7 @@ void EmptyLinkFunctionForGeneratedCodeInterpTrackAkAudioEventHelper() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UInterpTrackAkAudioEventHelper, 1011255950);
+	IMPLEMENT_CLASS(UInterpTrackAkAudioEventHelper, 2023019167);
 	template<> AUDIOKINETICTOOLS_API UClass* StaticClass<UInterpTrackAkAudioEventHelper>()
 	{
 		return UInterpTrackAkAudioEventHelper::StaticClass();

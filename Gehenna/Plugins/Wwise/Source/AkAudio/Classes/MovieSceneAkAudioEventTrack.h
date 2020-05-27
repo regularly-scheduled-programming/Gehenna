@@ -23,13 +23,6 @@ public:
 #endif
 	}
 
-#if UE_4_20_OR_LATER
-	typedef FFrameNumber TimeUnit;
-#else
-	typedef float TimeUnit;
-#endif
-
-
 	AKAUDIO_API virtual UMovieSceneSection* CreateNewSection() override;
 	virtual bool SupportsMultipleRows() const override { return true; }
 
@@ -39,7 +32,7 @@ public:
 	AKAUDIO_API virtual FText GetDisplayName() const override;
 #endif
 
-	AKAUDIO_API bool AddNewEvent(TimeUnit Time, UAkAudioEvent* Event, const FString& EventName = FString());
+	AKAUDIO_API bool AddNewEvent(FFrameNumber Time, UAkAudioEvent* Event, const FString& EventName = FString());
 
     void WorkUnitChangesDetectedFromSection(UMovieSceneAkAudioEventSection* in_pSection);
 

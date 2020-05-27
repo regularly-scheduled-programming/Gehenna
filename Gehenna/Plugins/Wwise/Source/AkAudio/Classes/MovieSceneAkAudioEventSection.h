@@ -74,13 +74,9 @@ public:
 	AKAUDIO_API FFloatRange GetEventDuration() const;
 	
 
-#if UE_4_20_OR_LATER
 	AKAUDIO_API int32 GetMaxEventDuration() const;
 	AKAUDIO_API float GetStartTime() const;
 	AKAUDIO_API float GetEndTime() const;
-#else
-	AKAUDIO_API float GetMaxEventDuration() const;
-#endif
 
     /** Returns the trim begin value for the Wwise event that this section triggers. */
     float GetTrimBegin() const { return TrimBegin; }

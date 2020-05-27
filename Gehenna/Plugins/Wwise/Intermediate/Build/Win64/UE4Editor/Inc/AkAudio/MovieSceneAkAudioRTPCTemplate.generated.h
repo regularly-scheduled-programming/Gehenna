@@ -1,4 +1,4 @@
-// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
+// Copyright Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -13,7 +13,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define AKAUDIO_MovieSceneAkAudioRTPCTemplate_generated_h
 
-#define Gehenna_Plugins_Wwise_Source_AkAudio_Private_MovieSceneAkAudioRTPCTemplate_h_38_GENERATED_BODY \
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Private_MovieSceneAkAudioRTPCTemplate_h_31_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FMovieSceneAkAudioRTPCTemplate_Statics; \
 	static class UScriptStruct* StaticStruct(); \
 	typedef FMovieSceneEvalTemplate Super;

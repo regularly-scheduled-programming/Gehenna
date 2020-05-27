@@ -1,4 +1,4 @@
-// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
+// Copyright Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -47,46 +47,17 @@ static inline void FOnItemPropertySelectionChanged_DelegateWrapper(const FMultic
 }
 
 
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiUMG_Components_AkItemProperties_h_46_SPARSE_DATA
 #define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiUMG_Components_AkItemProperties_h_46_RPC_WRAPPERS \
  \
-	DECLARE_FUNCTION(execConv_FAkPropertyToControlToText) \
-	{ \
-		P_GET_STRUCT_REF(FAkPropertyToControl,Z_Param_Out_INAkPropertyToControl); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(FText*)Z_Param__Result=UAkItemPropertiesConv::Conv_FAkPropertyToControlToText(Z_Param_Out_INAkPropertyToControl); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execConv_FAkPropertyToControlToString) \
-	{ \
-		P_GET_STRUCT_REF(FAkPropertyToControl,Z_Param_Out_INAkPropertyToControl); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(FString*)Z_Param__Result=UAkItemPropertiesConv::Conv_FAkPropertyToControlToString(Z_Param_Out_INAkPropertyToControl); \
-		P_NATIVE_END; \
-	}
+	DECLARE_FUNCTION(execConv_FAkPropertyToControlToText); \
+	DECLARE_FUNCTION(execConv_FAkPropertyToControlToString);
 
 
 #define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiUMG_Components_AkItemProperties_h_46_RPC_WRAPPERS_NO_PURE_DECLS \
  \
-	DECLARE_FUNCTION(execConv_FAkPropertyToControlToText) \
-	{ \
-		P_GET_STRUCT_REF(FAkPropertyToControl,Z_Param_Out_INAkPropertyToControl); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(FText*)Z_Param__Result=UAkItemPropertiesConv::Conv_FAkPropertyToControlToText(Z_Param_Out_INAkPropertyToControl); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execConv_FAkPropertyToControlToString) \
-	{ \
-		P_GET_STRUCT_REF(FAkPropertyToControl,Z_Param_Out_INAkPropertyToControl); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(FString*)Z_Param__Result=UAkItemPropertiesConv::Conv_FAkPropertyToControlToString(Z_Param_Out_INAkPropertyToControl); \
-		P_NATIVE_END; \
-	}
+	DECLARE_FUNCTION(execConv_FAkPropertyToControlToText); \
+	DECLARE_FUNCTION(execConv_FAkPropertyToControlToString);
 
 
 #define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiUMG_Components_AkItemProperties_h_46_INCLASS_NO_PURE_DECLS \
@@ -139,6 +110,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UAkItemPropertiesConv); \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiUMG_Components_AkItemProperties_h_46_PRIVATE_PROPERTY_OFFSET \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiUMG_Components_AkItemProperties_h_46_SPARSE_DATA \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiUMG_Components_AkItemProperties_h_46_RPC_WRAPPERS \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiUMG_Components_AkItemProperties_h_46_INCLASS \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiUMG_Components_AkItemProperties_h_46_STANDARD_CONSTRUCTORS \
@@ -150,6 +122,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiUMG_Components_AkItemProperties_h_46_PRIVATE_PROPERTY_OFFSET \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiUMG_Components_AkItemProperties_h_46_SPARSE_DATA \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiUMG_Components_AkItemProperties_h_46_RPC_WRAPPERS_NO_PURE_DECLS \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiUMG_Components_AkItemProperties_h_46_INCLASS_NO_PURE_DECLS \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiUMG_Components_AkItemProperties_h_46_ENHANCED_CONSTRUCTORS \
@@ -159,60 +132,19 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 template<> AKAUDIO_API UClass* StaticClass<class UAkItemPropertiesConv>();
 
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiUMG_Components_AkItemProperties_h_67_SPARSE_DATA
 #define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiUMG_Components_AkItemProperties_h_67_RPC_WRAPPERS \
  \
-	DECLARE_FUNCTION(execSetSearchText) \
-	{ \
-		P_GET_PROPERTY(UStrProperty,Z_Param_newText); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->SetSearchText(Z_Param_newText); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetSearchText) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(FString*)Z_Param__Result=P_THIS->GetSearchText(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetSelectedProperty) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(FString*)Z_Param__Result=P_THIS->GetSelectedProperty(); \
-		P_NATIVE_END; \
-	}
+	DECLARE_FUNCTION(execSetSearchText); \
+	DECLARE_FUNCTION(execGetSearchText); \
+	DECLARE_FUNCTION(execGetSelectedProperty);
 
 
 #define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiUMG_Components_AkItemProperties_h_67_RPC_WRAPPERS_NO_PURE_DECLS \
  \
-	DECLARE_FUNCTION(execSetSearchText) \
-	{ \
-		P_GET_PROPERTY(UStrProperty,Z_Param_newText); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->SetSearchText(Z_Param_newText); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetSearchText) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(FString*)Z_Param__Result=P_THIS->GetSearchText(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetSelectedProperty) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(FString*)Z_Param__Result=P_THIS->GetSelectedProperty(); \
-		P_NATIVE_END; \
-	}
+	DECLARE_FUNCTION(execSetSearchText); \
+	DECLARE_FUNCTION(execGetSearchText); \
+	DECLARE_FUNCTION(execGetSelectedProperty);
 
 
 #define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiUMG_Components_AkItemProperties_h_67_INCLASS_NO_PURE_DECLS \
@@ -269,6 +201,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UAkItemProperties); \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiUMG_Components_AkItemProperties_h_67_PRIVATE_PROPERTY_OFFSET \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiUMG_Components_AkItemProperties_h_67_SPARSE_DATA \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiUMG_Components_AkItemProperties_h_67_RPC_WRAPPERS \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiUMG_Components_AkItemProperties_h_67_INCLASS \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiUMG_Components_AkItemProperties_h_67_STANDARD_CONSTRUCTORS \
@@ -280,6 +213,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiUMG_Components_AkItemProperties_h_67_PRIVATE_PROPERTY_OFFSET \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiUMG_Components_AkItemProperties_h_67_SPARSE_DATA \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiUMG_Components_AkItemProperties_h_67_RPC_WRAPPERS_NO_PURE_DECLS \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiUMG_Components_AkItemProperties_h_67_INCLASS_NO_PURE_DECLS \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiUMG_Components_AkItemProperties_h_67_ENHANCED_CONSTRUCTORS \

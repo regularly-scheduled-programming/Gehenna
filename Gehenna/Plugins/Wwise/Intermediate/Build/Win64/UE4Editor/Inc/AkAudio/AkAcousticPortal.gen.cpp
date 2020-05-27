@@ -1,4 +1,4 @@
-// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
+// Copyright Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -17,15 +17,33 @@ void EmptyLinkFunctionForGeneratedCodeAkAcousticPortal() {}
 	AKAUDIO_API UClass* Z_Construct_UClass_AAkAcousticPortal();
 	ENGINE_API UClass* Z_Construct_UClass_AVolume();
 	UPackage* Z_Construct_UPackage__Script_AkAudio();
-	AKAUDIO_API UFunction* Z_Construct_UFunction_AAkAcousticPortal_ClosePortal();
-	AKAUDIO_API UFunction* Z_Construct_UFunction_AAkAcousticPortal_GetCurrentState();
 	AKAUDIO_API UEnum* Z_Construct_UEnum_AkAudio_AkAcousticPortalState();
-	AKAUDIO_API UFunction* Z_Construct_UFunction_AAkAcousticPortal_OpenPortal();
 	ENGINE_API UEnum* Z_Construct_UEnum_Engine_ECollisionChannel();
 	AKAUDIO_API UClass* Z_Construct_UClass_UAkPortalComponent_NoRegister();
 	AKAUDIO_API UClass* Z_Construct_UClass_UAkPortalComponent();
 	ENGINE_API UClass* Z_Construct_UClass_USceneComponent();
 // End Cross Module References
+	DEFINE_FUNCTION(AAkAcousticPortal::execGetCurrentState)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(AkAcousticPortalState*)Z_Param__Result=P_THIS->GetCurrentState();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(AAkAcousticPortal::execClosePortal)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->ClosePortal();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(AAkAcousticPortal::execOpenPortal)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->OpenPortal();
+		P_NATIVE_END;
+	}
 	void AAkAcousticPortal::StaticRegisterNativesAAkAcousticPortal()
 	{
 		UClass* Class = AAkAcousticPortal::StaticClass();
@@ -34,7 +52,7 @@ void EmptyLinkFunctionForGeneratedCodeAkAcousticPortal() {}
 			{ "GetCurrentState", &AAkAcousticPortal::execGetCurrentState },
 			{ "OpenPortal", &AAkAcousticPortal::execOpenPortal },
 		};
-		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
 	struct Z_Construct_UFunction_AAkAcousticPortal_ClosePortal_Statics
 	{
@@ -49,7 +67,7 @@ void EmptyLinkFunctionForGeneratedCodeAkAcousticPortal() {}
 		{ "ModuleRelativePath", "Classes/AkAcousticPortal.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AAkAcousticPortal_ClosePortal_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AAkAcousticPortal, nullptr, "ClosePortal", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AAkAcousticPortal_ClosePortal_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AAkAcousticPortal_ClosePortal_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AAkAcousticPortal_ClosePortal_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AAkAcousticPortal, nullptr, "ClosePortal", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AAkAcousticPortal_ClosePortal_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AAkAcousticPortal_ClosePortal_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AAkAcousticPortal_ClosePortal()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -85,7 +103,7 @@ void EmptyLinkFunctionForGeneratedCodeAkAcousticPortal() {}
 		{ "ModuleRelativePath", "Classes/AkAcousticPortal.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AAkAcousticPortal_GetCurrentState_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AAkAcousticPortal, nullptr, "GetCurrentState", sizeof(AkAcousticPortal_eventGetCurrentState_Parms), Z_Construct_UFunction_AAkAcousticPortal_GetCurrentState_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AAkAcousticPortal_GetCurrentState_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AAkAcousticPortal_GetCurrentState_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AAkAcousticPortal_GetCurrentState_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AAkAcousticPortal_GetCurrentState_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AAkAcousticPortal, nullptr, "GetCurrentState", nullptr, nullptr, sizeof(AkAcousticPortal_eventGetCurrentState_Parms), Z_Construct_UFunction_AAkAcousticPortal_GetCurrentState_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AAkAcousticPortal_GetCurrentState_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AAkAcousticPortal_GetCurrentState_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AAkAcousticPortal_GetCurrentState_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AAkAcousticPortal_GetCurrentState()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -108,7 +126,7 @@ void EmptyLinkFunctionForGeneratedCodeAkAcousticPortal() {}
 		{ "ModuleRelativePath", "Classes/AkAcousticPortal.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AAkAcousticPortal_OpenPortal_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AAkAcousticPortal, nullptr, "OpenPortal", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AAkAcousticPortal_OpenPortal_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AAkAcousticPortal_OpenPortal_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AAkAcousticPortal_OpenPortal_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AAkAcousticPortal, nullptr, "OpenPortal", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AAkAcousticPortal_OpenPortal_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AAkAcousticPortal_OpenPortal_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AAkAcousticPortal_OpenPortal()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -151,15 +169,15 @@ void EmptyLinkFunctionForGeneratedCodeAkAcousticPortal() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_AkAudio,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AAkAcousticPortal_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AAkAcousticPortal_ClosePortal, "ClosePortal" }, // 3409695766
-		{ &Z_Construct_UFunction_AAkAcousticPortal_GetCurrentState, "GetCurrentState" }, // 475567811
-		{ &Z_Construct_UFunction_AAkAcousticPortal_OpenPortal, "OpenPortal" }, // 1194125056
+		{ &Z_Construct_UFunction_AAkAcousticPortal_ClosePortal, "ClosePortal" }, // 3821010848
+		{ &Z_Construct_UFunction_AAkAcousticPortal_GetCurrentState, "GetCurrentState" }, // 1544952327
+		{ &Z_Construct_UFunction_AAkAcousticPortal_OpenPortal, "OpenPortal" }, // 3784485007
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AAkAcousticPortal_Statics::Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "ClassGroupNames", "Audiokinetic" },
-		{ "HideCategories", "Advanced Attachment Volume Brush Physics Object Display Rendering Physics Input Blueprint" },
+		{ "HideCategories", "Advanced Attachment Volume Brush Physics Object Blueprint Display Rendering Physics Input" },
 		{ "IncludePath", "AkAcousticPortal.h" },
 		{ "ModuleRelativePath", "Classes/AkAcousticPortal.h" },
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
@@ -167,27 +185,29 @@ void EmptyLinkFunctionForGeneratedCodeAkAcousticPortal() {}
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AAkAcousticPortal_Statics::NewProp_ObstructionCollisionChannel_MetaData[] = {
-		{ "Category", "AkAcousticPortal" },
+		{ "Category", "AkAcousticPortal|Obstruction" },
+		{ "Comment", "/** Collision channel for obstruction checks (between listener and portal opening). */" },
 		{ "ModuleRelativePath", "Classes/AkAcousticPortal.h" },
 		{ "ToolTip", "Collision channel for obstruction checks (between listener and portal opening)." },
 	};
 #endif
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_AAkAcousticPortal_Statics::NewProp_ObstructionCollisionChannel = { "ObstructionCollisionChannel", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AAkAcousticPortal, ObstructionCollisionChannel), Z_Construct_UEnum_Engine_ECollisionChannel, METADATA_PARAMS(Z_Construct_UClass_AAkAcousticPortal_Statics::NewProp_ObstructionCollisionChannel_MetaData, ARRAY_COUNT(Z_Construct_UClass_AAkAcousticPortal_Statics::NewProp_ObstructionCollisionChannel_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_AAkAcousticPortal_Statics::NewProp_ObstructionCollisionChannel = { "ObstructionCollisionChannel", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AAkAcousticPortal, ObstructionCollisionChannel), Z_Construct_UEnum_Engine_ECollisionChannel, METADATA_PARAMS(Z_Construct_UClass_AAkAcousticPortal_Statics::NewProp_ObstructionCollisionChannel_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AAkAcousticPortal_Statics::NewProp_ObstructionCollisionChannel_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AAkAcousticPortal_Statics::NewProp_ObstructionRefreshInterval_MetaData[] = {
-		{ "Category", "AkAcousticPortal" },
+		{ "Category", "AkAcousticPortal|Obstruction" },
+		{ "Comment", "/** Time interval between obstruction checks (direct line of sight between listener and portal opening). Set to 0 to disable obstruction checks. We recommend disabling it if you want to use full Spatial Audio diffraction. */" },
 		{ "ModuleRelativePath", "Classes/AkAcousticPortal.h" },
-		{ "ToolTip", "Time interval between obstruction checks (between listener and portal opening). Set to 0 to disable occlusion on this component." },
+		{ "ToolTip", "Time interval between obstruction checks (direct line of sight between listener and portal opening). Set to 0 to disable obstruction checks. We recommend disabling it if you want to use full Spatial Audio diffraction." },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AAkAcousticPortal_Statics::NewProp_ObstructionRefreshInterval = { "ObstructionRefreshInterval", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AAkAcousticPortal, ObstructionRefreshInterval), METADATA_PARAMS(Z_Construct_UClass_AAkAcousticPortal_Statics::NewProp_ObstructionRefreshInterval_MetaData, ARRAY_COUNT(Z_Construct_UClass_AAkAcousticPortal_Statics::NewProp_ObstructionRefreshInterval_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AAkAcousticPortal_Statics::NewProp_ObstructionRefreshInterval = { "ObstructionRefreshInterval", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AAkAcousticPortal, ObstructionRefreshInterval), METADATA_PARAMS(Z_Construct_UClass_AAkAcousticPortal_Statics::NewProp_ObstructionRefreshInterval_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AAkAcousticPortal_Statics::NewProp_ObstructionRefreshInterval_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AAkAcousticPortal_Statics::NewProp_InitialState_MetaData[] = {
 		{ "Category", "AkAcousticPortal" },
 		{ "ModuleRelativePath", "Classes/AkAcousticPortal.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_AAkAcousticPortal_Statics::NewProp_InitialState = { "InitialState", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AAkAcousticPortal, InitialState), Z_Construct_UEnum_AkAudio_AkAcousticPortalState, METADATA_PARAMS(Z_Construct_UClass_AAkAcousticPortal_Statics::NewProp_InitialState_MetaData, ARRAY_COUNT(Z_Construct_UClass_AAkAcousticPortal_Statics::NewProp_InitialState_MetaData)) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_AAkAcousticPortal_Statics::NewProp_InitialState = { "InitialState", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AAkAcousticPortal, InitialState), Z_Construct_UEnum_AkAudio_AkAcousticPortalState, METADATA_PARAMS(Z_Construct_UClass_AAkAcousticPortal_Statics::NewProp_InitialState_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AAkAcousticPortal_Statics::NewProp_InitialState_MetaData)) };
 	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_AAkAcousticPortal_Statics::NewProp_InitialState_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AAkAcousticPortal_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAkAcousticPortal_Statics::NewProp_ObstructionCollisionChannel,
@@ -200,18 +220,18 @@ void EmptyLinkFunctionForGeneratedCodeAkAcousticPortal() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AAkAcousticPortal_Statics::ClassParams = {
 		&AAkAcousticPortal::StaticClass,
-		nullptr,
+		"Engine",
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
 		FuncInfo,
 		Z_Construct_UClass_AAkAcousticPortal_Statics::PropPointers,
 		nullptr,
-		ARRAY_COUNT(DependentSingletons),
-		ARRAY_COUNT(FuncInfo),
-		ARRAY_COUNT(Z_Construct_UClass_AAkAcousticPortal_Statics::PropPointers),
+		UE_ARRAY_COUNT(DependentSingletons),
+		UE_ARRAY_COUNT(FuncInfo),
+		UE_ARRAY_COUNT(Z_Construct_UClass_AAkAcousticPortal_Statics::PropPointers),
 		0,
-		0x009000A0u,
-		METADATA_PARAMS(Z_Construct_UClass_AAkAcousticPortal_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AAkAcousticPortal_Statics::Class_MetaDataParams))
+		0x009000A4u,
+		METADATA_PARAMS(Z_Construct_UClass_AAkAcousticPortal_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_AAkAcousticPortal_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AAkAcousticPortal()
 	{
@@ -222,7 +242,7 @@ void EmptyLinkFunctionForGeneratedCodeAkAcousticPortal() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AAkAcousticPortal, 895431870);
+	IMPLEMENT_CLASS(AAkAcousticPortal, 63789593);
 	template<> AKAUDIO_API UClass* StaticClass<AAkAcousticPortal>()
 	{
 		return AAkAcousticPortal::StaticClass();
@@ -268,12 +288,12 @@ void EmptyLinkFunctionForGeneratedCodeAkAcousticPortal() {}
 		nullptr,
 		nullptr,
 		nullptr,
-		ARRAY_COUNT(DependentSingletons),
+		UE_ARRAY_COUNT(DependentSingletons),
 		0,
 		0,
 		0,
 		0x00B000A4u,
-		METADATA_PARAMS(Z_Construct_UClass_UAkPortalComponent_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UAkPortalComponent_Statics::Class_MetaDataParams))
+		METADATA_PARAMS(Z_Construct_UClass_UAkPortalComponent_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UAkPortalComponent_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UAkPortalComponent()
 	{
@@ -284,7 +304,7 @@ void EmptyLinkFunctionForGeneratedCodeAkAcousticPortal() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UAkPortalComponent, 1587110416);
+	IMPLEMENT_CLASS(UAkPortalComponent, 1214770695);
 	template<> AKAUDIO_API UClass* StaticClass<UAkPortalComponent>()
 	{
 		return UAkPortalComponent::StaticClass();

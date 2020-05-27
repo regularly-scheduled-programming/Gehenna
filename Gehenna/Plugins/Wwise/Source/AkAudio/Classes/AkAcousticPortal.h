@@ -45,12 +45,12 @@ public:
 	AkRoomID GetFrontRoom() const { return FrontRoom; }
 	AkRoomID GetBackRoom() const { return BackRoom; }
 
-	/** Time interval between obstruction checks (between listener and portal opening). Set to 0 to disable occlusion on this component. */
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = AkAcousticPortal)
+	/** Time interval between obstruction checks (direct line of sight between listener and portal opening). Set to 0 to disable obstruction checks. We recommend disabling it if you want to use full Spatial Audio diffraction. */
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "AkAcousticPortal|Obstruction")
 	float ObstructionRefreshInterval;
 
 	/** Collision channel for obstruction checks (between listener and portal opening). */
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = AkAcousticPortal)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "AkAcousticPortal|Obstruction")
 	TEnumAsByte<ECollisionChannel> ObstructionCollisionChannel = ECollisionChannel::ECC_Visibility;
 
 	AkPortalID GetPortalID() const { return AkPortalID(this); }

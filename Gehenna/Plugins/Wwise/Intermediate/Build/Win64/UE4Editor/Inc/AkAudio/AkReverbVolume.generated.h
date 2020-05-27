@@ -1,4 +1,4 @@
-// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
+// Copyright Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -13,6 +13,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define AKAUDIO_AkReverbVolume_generated_h
 
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkReverbVolume_h_18_SPARSE_DATA
 #define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkReverbVolume_h_18_RPC_WRAPPERS
 #define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkReverbVolume_h_18_RPC_WRAPPERS_NO_PURE_DECLS
 #define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkReverbVolume_h_18_ARCHIVESERIALIZER \
@@ -24,7 +25,7 @@ private: \
 	static void StaticRegisterNativesAAkReverbVolume(); \
 	friend struct Z_Construct_UClass_AAkReverbVolume_Statics; \
 public: \
-	DECLARE_CLASS(AAkReverbVolume, AVolume, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/AkAudio"), NO_API) \
+	DECLARE_CLASS(AAkReverbVolume, AVolume, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/AkAudio"), NO_API) \
 	DECLARE_SERIALIZER(AAkReverbVolume) \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkReverbVolume_h_18_ARCHIVESERIALIZER
 
@@ -34,7 +35,7 @@ private: \
 	static void StaticRegisterNativesAAkReverbVolume(); \
 	friend struct Z_Construct_UClass_AAkReverbVolume_Statics; \
 public: \
-	DECLARE_CLASS(AAkReverbVolume, AVolume, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/AkAudio"), NO_API) \
+	DECLARE_CLASS(AAkReverbVolume, AVolume, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/AkAudio"), NO_API) \
 	DECLARE_SERIALIZER(AAkReverbVolume) \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkReverbVolume_h_18_ARCHIVESERIALIZER
 
@@ -71,6 +72,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AAkReverbVolume); \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkReverbVolume_h_18_PRIVATE_PROPERTY_OFFSET \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkReverbVolume_h_18_SPARSE_DATA \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkReverbVolume_h_18_RPC_WRAPPERS \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkReverbVolume_h_18_INCLASS \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkReverbVolume_h_18_STANDARD_CONSTRUCTORS \
@@ -82,6 +84,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkReverbVolume_h_18_PRIVATE_PROPERTY_OFFSET \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkReverbVolume_h_18_SPARSE_DATA \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkReverbVolume_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkReverbVolume_h_18_INCLASS_NO_PURE_DECLS \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkReverbVolume_h_18_ENHANCED_CONSTRUCTORS \

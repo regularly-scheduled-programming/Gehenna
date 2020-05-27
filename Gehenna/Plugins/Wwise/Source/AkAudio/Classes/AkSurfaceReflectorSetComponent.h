@@ -18,6 +18,9 @@ struct FAkPoly
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Audiokinetic|AkSurfaceReflectorSet")
 	UAkAcousticTexture* Texture = nullptr;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Audiokinetic|AkSurfaceReflectorSet", meta = (ClampMin = "0.0", ClampMax = "1.0"))
+	float Occlusion = 1.f;
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Audiokinetic|AkSurfaceReflectorSet")
 	bool EnableSurface = true;
@@ -38,7 +41,7 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Audiokinetic|AkSurfaceReflectorSet")
 	void UpdateSurfaceReflectorSet();
 
-	/** Whether this volume is currently enabled and able to affect sounds */
+	/** Enable reflection with geometry */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Toggle)
 	uint32 bEnableSurfaceReflectors : 1;
 

@@ -24,11 +24,7 @@ struct FMovieSceneAkAudioEventSectionData
 
 	float inline GetTimeInSeconds(const FMovieSceneContext& Context)
 	{
-#if UE_4_20_OR_LATER
 		return (float)Context.GetFrameRate().AsSeconds(Context.GetTime());
-#else
-		return (float)Context.GetTime();
-#endif
 	}
 
 	void Update(const FMovieSceneContext& Context, const FMovieSceneEvaluationOperand& Operand, IMovieScenePlayer& Player, FAkAudioDevice* AudioDevice)

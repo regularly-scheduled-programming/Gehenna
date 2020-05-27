@@ -24,19 +24,13 @@ void AkComponentOcclusionObstructionService::SetOcclusionObstruction(AkGameObjec
 		AkGameObjectID gameObjId = AssociatedComponent->GetAkGameObjectID();
 		bool bUsingRooms = AkAudioDevice->UsingSpatialAudioRooms(AssociatedComponent->GetWorld());
 
-		if (!AssociatedComponent->bUseSpatialAudio)
+		if (bUsingRooms)
 		{
-			// If not using spatial audio, you're not using rooms (which are a Spatial Audio feature).
-			// Therefore, we will always set occlusion.
-			AK::SoundEngine::SetObjectObstructionAndOcclusion(gameObjId, ListenerId, 0.0f, Value);
-		}
-		else if (bUsingRooms)
-		{
-			AK::SpatialAudio::SetEmitterObstructionAndOcclusion(gameObjId, Value, 0.0f);
+			AK::SoundEngine::SetObjectObstructionAndOcclusion(gameObjId, ListenerId, Value, 0.0f);
 		}
 		else // if (!bUsingRooms)
 		{
-			AK::SpatialAudio::SetEmitterObstructionAndOcclusion(gameObjId, 0.0f, Value);
+			AK::SoundEngine::SetObjectObstructionAndOcclusion(gameObjId, ListenerId, 0.0f, Value);
 		}
 	}
 }

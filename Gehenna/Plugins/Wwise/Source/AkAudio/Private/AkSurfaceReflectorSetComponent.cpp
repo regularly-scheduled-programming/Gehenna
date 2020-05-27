@@ -276,7 +276,8 @@ void UAkSurfaceReflectorSetComponent::SendSurfaceReflectorSet()
 						TriangleName = ParentName + GetName() + FString(TEXT("_")) + FString::FromInt(NodeIdx);
 					}
 
-					NewSurface.textureID = AcousticPolys[NodeIdx].Texture != NULL ? FAkAudioDevice::Get()->GetIDFromString(AcousticPolys[NodeIdx].Texture->GetName()) : 0;
+					NewSurface.textureID = AcousticPolys[NodeIdx].Texture != nullptr ? FAkAudioDevice::Get()->GetIDFromString(AcousticPolys[NodeIdx].Texture->GetName()) : 0;
+					NewSurface.occlusion = AcousticPolys[NodeIdx].Occlusion;
 					int32 newIdx = triangleNames.Add(TCHAR_TO_ANSI(*TriangleName));
 					triangleNames[newIdx].AllocCopy(); //the conversion macro TCHAR_TO_ANSI will reuse the same buffer, so we need a local copy.
 					NewSurface.strName = triangleNames[newIdx].Get();

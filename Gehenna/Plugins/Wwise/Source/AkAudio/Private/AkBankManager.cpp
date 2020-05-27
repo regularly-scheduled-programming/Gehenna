@@ -1,11 +1,12 @@
-// Copyright (c) 2006-2017 Audiokinetic Inc. / All Rights Reserved
+// Copyright (c) 2006-2019 Audiokinetic Inc. / All Rights Reserved
 
 #include "AkBankManager.h"
+
+#include "AkAudioBank.h"
 #include "AkAudioDevice.h"
 #include "AkInclude.h"
-#include "AkAudioBank.h"
-#include "Misc/ScopeLock.h"
 #include "Async/Async.h"
+#include "Misc/ScopeLock.h"
 
 FAkBankManager* FAkBankManager::Instance = nullptr;
 
@@ -14,24 +15,24 @@ FAkBankManager* FAkBankManager::GetInstance()
 	return Instance;
 }
 
-void FAkBankFunctionPtrCallbackInfo::HandleAction(AkUInt32 BankID, const void * InMemoryBankPtr, AKRESULT ActionResult, AkMemPoolId MemPoolId)
+void FAkBankFunctionPtrCallbackInfo::HandleAction(AkUInt32 BankID, const void * InMemoryBankPtr, AKRESULT ActionResult)
 {
-	if (CallbackFunc != nullptr)
+	if (CallbackFunc)
 	{
 		// Call the user's callback function
-		CallbackFunc(BankID, InMemoryBankPtr, ActionResult, MemPoolId, UserCookie);
+		CallbackFunc(BankID, InMemoryBankPtr, ActionResult, UserCookie);
 	}
 }
 
-void FAkBankLatentActionCallbackInfo::HandleAction(AkUInt32 BankID, const void * InMemoryBankPtr, AKRESULT ActionResult, AkMemPoolId MemPoolId)
+void FAkBankLatentActionCallbackInfo::HandleAction(AkUInt32 BankID, const void * InMemoryBankPtr, AKRESULT ActionResult)
 {
-	if (BankLatentAction != nullptr)
+	if (BankLatentAction)
 	{
 		BankLatentAction->ActionDone = true;
 	}
 }
 
-void FAkBankBlueprintDelegateCallbackInfo::HandleAction(AkUInt32 BankID, const void * InMemoryBankPtr, AKRESULT ActionResult, AkMemPoolId MemPoolId)
+void FAkBankBlueprintDelegateCallbackInfo::HandleAction(AkUInt32 BankID, const void * InMemoryBankPtr, AKRESULT ActionResult)
 {
 	if (BankBlueprintCallback.IsBound())
 	{
@@ -47,7 +48,6 @@ void FAkBankManager::BankLoadCallback(
 	AkUInt32		in_bankID,
 	const void *	in_pInMemoryBankPtr,
 	AKRESULT		in_eLoadResult,
-	AkMemPoolId		in_memPoolId,
 	void *			in_pCookie
 )
 {
@@ -56,12 +56,14 @@ void FAkBankManager::BankLoadCallback(
 		IAkBankCallbackInfo* BankCbInfo = (IAkBankCallbackInfo*)in_pCookie;
 		if (in_eLoadResult == AK_Success)
 		{
-			FScopeLock Lock(&GetInstance()->m_BankManagerCriticalSection);
-			// Load worked; put the bank in the list.
-			GetInstance()->AddLoadedBank(BankCbInfo->Bank);
+			if (BankCbInfo->Bank)
+			{
+				// Load worked; put the bank in the list.
+				GetInstance()->AddLoadedBank(BankCbInfo->Bank);
+			}
 		}
 
-		BankCbInfo->HandleAction(in_bankID, in_pInMemoryBankPtr, in_eLoadResult, in_memPoolId);
+		BankCbInfo->HandleAction(in_bankID, in_pInMemoryBankPtr, in_eLoadResult);
 
 		delete BankCbInfo;
 	}
@@ -71,7 +73,6 @@ void FAkBankManager::BankUnloadCallback(
 	AkUInt32		in_bankID,
 	const void *	in_pInMemoryBankPtr,
 	AKRESULT		in_eUnloadResult,
-	AkMemPoolId		in_memPoolId,
 	void *			in_pCookie
 )
 {
@@ -80,12 +81,14 @@ void FAkBankManager::BankUnloadCallback(
 		IAkBankCallbackInfo* BankCbInfo = (IAkBankCallbackInfo*)in_pCookie;
 		if (in_eUnloadResult == AK_Success)
 		{
-			FScopeLock Lock(&GetInstance()->m_BankManagerCriticalSection);
-			// Load worked; put the bank in the list.
-			GetInstance()->RemoveLoadedBank(BankCbInfo->Bank);
+			if (BankCbInfo->Bank)
+			{
+				// Load worked; put the bank in the list.
+				GetInstance()->RemoveLoadedBank(BankCbInfo->Bank);
+			}
 		}
 
-		BankCbInfo->HandleAction(in_bankID, in_pInMemoryBankPtr, in_eUnloadResult, in_memPoolId);
+		BankCbInfo->HandleAction(in_bankID, in_pInMemoryBankPtr, in_eUnloadResult);
 
 		delete BankCbInfo;
 	}
@@ -93,7 +96,7 @@ void FAkBankManager::BankUnloadCallback(
 
 FAkBankManager::FAkBankManager()
 {
-	if (Instance != nullptr)
+	if (Instance)
 	{
 		UE_LOG(LogInit, Error, TEXT("FAkBankManager has already been instantiated."));
 	}

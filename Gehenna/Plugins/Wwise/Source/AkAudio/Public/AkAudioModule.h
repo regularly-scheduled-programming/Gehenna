@@ -55,11 +55,4 @@ private:
 
 	/** Handle for OnTick. */
 	FDelegateHandle TickDelegateHandle;
-
-
 };
-
-
-
-
-

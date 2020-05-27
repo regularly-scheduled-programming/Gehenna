@@ -32,6 +32,8 @@ class AKAUDIO_API SWaapiPicker : public SCompoundWidget
 public:
 	typedef TSlateDelegates< TSharedPtr< FWwiseTreeItem > >::FOnSelectionChanged FOnSelectionChanged;
 
+	DECLARE_DELEGATE(FOnGenerateSoundBankClicked);
+
 public:
 	SLATE_BEGIN_ARGS( SWaapiPicker )
 		: _FocusSearchBoxWhenOpened(false)
@@ -40,6 +42,7 @@ public:
 		, _ShowSeparator(true)
 		, _AllowContextMenu(true)
 		, _RestrictContextMenu(false)
+		, _ShowGenerateSoundBanksButton(false)
 		, _SelectionMode( ESelectionMode::Multi )
 		{}
 
@@ -64,6 +67,9 @@ public:
 		/** If true, editor options (like explore section) will be restricted from the context menu */
 		SLATE_ARGUMENT(bool, RestrictContextMenu)
 
+		/** If true, it will show the Generate SoundBanks button */
+		SLATE_ARGUMENT(bool, ShowGenerateSoundBanksButton)
+
 		/** The selection mode for the tree view */
 		SLATE_ARGUMENT( ESelectionMode::Type, SelectionMode )
 		
@@ -72,6 +78,9 @@ public:
 
 		/** Handles the selection operation */
 		SLATE_EVENT(FOnSelectionChanged, OnSelectionChanged)
+
+		/** Handles the Generate SoundBanks click operation */
+		SLATE_EVENT(FOnGenerateSoundBankClicked, OnGenerateSoundBanksClicked)
 
 	SLATE_END_ARGS( )
 
@@ -122,7 +131,8 @@ public:
 	* @param inJsonItem		An FJsonValue from which we get utile data to construct the  FWwiseTreeItem object.
 	* @return				An FWwiseTreeItem that will be added to the root items.
 	*/
-	static inline TSharedPtr<FWwiseTreeItem> ConstructWwiseTreeItem(const TSharedPtr<FJsonValue>& inJsonItem);
+	TSharedPtr<FWwiseTreeItem> ConstructWwiseTreeItem(const TSharedPtr<FJsonValue>& InJsonItem);
+	TSharedPtr<FWwiseTreeItem> ConstructWwiseTreeItem(const TSharedPtr<FJsonObject>& ItemInfoObj);
 
 	virtual FReply OnKeyDown(const FGeometry& MyGeometry, const FKeyEvent& InKeyboardEvent) override;
 
@@ -133,12 +143,6 @@ public:
 	const void SetSearchText(const FString& newText);
 
 private:
-    uint64 idRenamed = 0;
-    uint64 idPreDeleted = 0;
-    uint64 idRemoved = 0;
-    uint64 idChildAdded = 0;
-    uint64 idCreated = 0;
-
 	/** The tree view widget */
 	TSharedPtr< STreeView< TSharedPtr<FWwiseTreeItem>> > TreeViewPtr;
 
@@ -149,7 +153,10 @@ private:
 	TSharedPtr<StringFilter> SearchBoxFilter;
 
 	/** Root items (only events for now). */
+	FCriticalSection RootItemsLock;
 	TArray< TSharedPtr<FWwiseTreeItem> > RootItems;
+
+	FGraphEventRef ConstructTreeTask;
 
 	/** Bool to prevent the selection changed callback from running */
 	bool AllowTreeViewDelegates;
@@ -180,6 +187,8 @@ private:
 	/** Delegate to invoke when an item is selected. */
 	FOnSelectionChanged OnSelectionChanged;
 
+	FOnGenerateSoundBankClicked OnGenerateSoundBanksClicked;
+
 	/** Whether to disable the context menu and keyboard controls of the explore section*/
 	bool bRestrictContextMenu;
 
@@ -193,19 +202,14 @@ private:
 	EVisibility isPickerAllowed() const;
 	EVisibility isWarningVisible() const;
 	bool isPickerVisible;
-private:
-	void SubscribeAllWaapiCallbacks();
 
-	void RemoveAllWaapiCallbacks();
-	void RemoveWaapiCallback(FAkWaapiClient* pClient, uint64& subscriptionID);
-
-    void UnsubscribeAllWaapiCallbacks();
-    void UnsubscribeWaapiCallback(FAkWaapiClient* pClient, uint64& subscriptionID);
 	/** One-off active timer to focus the widget post-construct */
 	EActiveTimerReturnType SetFocusPostConstruct(double InCurrentTime, float InDeltaTime);
 
 	/** Ran when the Populate button is clicked. Populates the window. */
 	FReply OnPopulateClicked();
+
+	FReply OnGenerateSoundBanksButtonClicked();
 
 	/** Populates the picker window only (does not parse the Wwise project) */
 	void ConstructTree();
@@ -239,8 +243,6 @@ private:
 	/** Handler for tree view expansion changes */
 	void TreeExpansionChanged( TSharedPtr< FWwiseTreeItem > TreeItem, bool bIsExpanded );
 
-	void OnProjectDirectoryChanged(const TArray<struct FFileChangeData>& ChangedFiles);
-	FDelegateHandle ProjectDirectoryModifiedDelegateHandle;
 	FString ProjectFolder;
 	FString ProjectName;
 
@@ -260,7 +262,6 @@ private:
 	void StopTransport(int32 in_transportID);
 	uint64 SubscribeToTransportStateChanged(int32 in_transportID);
 	void HandleStateChanged(TSharedPtr<FJsonObject> in_UEJsonObject);
-
 	
 	/** Callback returns true if the rename command can be executed. */
 	bool HandleRenameWwiseItemCommandCanExecute() const;
@@ -300,4 +301,31 @@ private:
 
 	/** Callback to execute the redo command */
 	void HandleRedoWaapiPickerCommandExecute() const;
+
+	void SubscribeWaapiCallbacks();
+	void UnsubscribeWaapiCallbacks();
+
+	void OnWaapiRenamed(uint64_t Id, TSharedPtr<FJsonObject> Response);
+	void OnWaapiChildAdded(uint64_t Id, TSharedPtr<FJsonObject> Response);
+	void OnWaapiChildRemoved(uint64_t Id, TSharedPtr<FJsonObject> Response);
+	void OnWwiseSelectionChanged(uint64_t Id, TSharedPtr<FJsonObject> Response);
+
+	void CreateTreeItemWaapi(const TSharedPtr<FWwiseTreeItem>& parentTreeItem, const TSharedPtr<FJsonObject>& childJson);
+
+	template<typename ActionFunctor>
+	void HandleOnWaapiChildResponse(TSharedPtr<FJsonObject> Response, const ActionFunctor& Action);
+
+	TSharedPtr<FWwiseTreeItem> FindTreeItemFromJsonObject(const TSharedPtr<FJsonObject>& Object, const FString& OverrideLastPart = FString());
+	TSharedPtr<FWwiseTreeItem> FindOrConstructTreeItemFromJsonObject(const TSharedPtr<FJsonObject>& Object);
+
+private:
+	struct FWaapiSubscriptionIds
+	{
+		uint64 Renamed = 0;
+		uint64 ChildAdded = 0;
+		uint64 ChildRemoved = 0;
+		uint64 SelectionChanged = 0;
+	} WaapiSubscriptionIds;
+
+	TMap<FGuid, TSharedPtr<FWwiseTreeItem>> pendingTreeItems;
 };

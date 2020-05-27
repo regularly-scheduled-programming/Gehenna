@@ -26,13 +26,24 @@ class AKAUDIO_API UAkSettingsPerUser : public UObject
 	UPROPERTY(Config, EditAnywhere, Category = "WAAPI")
 	uint32 WaapiPort = WAAPI_PORT;
 
+	// Whether to synchronize the selection between the WAAPI picker and the Wwise Project Explorer
+	UPROPERTY(Config, EditAnywhere, Category = "WAAPI")
+	bool AutoSyncSelection = true;
+
 	UPROPERTY(Config)
 	bool SuppressWwiseProjectPathWarnings = false;
+
+	UPROPERTY(Config)
+	bool SoundDataGenerationSkipLanguage = false;
 
 #if WITH_EDITOR
 protected:
 	void PostEditChangeProperty(struct FPropertyChangedEvent& PropertyChangedEvent) override;
+#if UE_4_25_OR_LATER
+	void PreEditChange(FProperty* PropertyAboutToChange) override;
+#else
 	void PreEditChange(UProperty* PropertyAboutToChange) override;
+#endif
 
 private:
 	FString PreviousWwiseWindowsInstallationPath;

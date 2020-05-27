@@ -30,12 +30,8 @@ ECopyInterpAkAudioResult FAkMatineeImportTools::CopyInterpAkAudioRTPCTrack(const
 	const FString& RTPCName = MatineeAkAudioRTPCTrack->Param;
 
 	float MatineeTime = MatineeAkAudioRTPCTrack->GetKeyframeTime(0);
-#if UE_4_20_OR_LATER
 	FFrameRate FrameRate = AkAudioRTPCTrack->GetTypedOuter<UMovieScene>()->GetTickResolution();
 	FFrameNumber KeyTime = FrameRate.AsFrameNumber(MatineeTime);
-#else
-	float KeyTime = MatineeTime;
-#endif
 
 	UMovieSceneSection* Section = MovieSceneHelpers::FindSectionAtTime(AkAudioRTPCTrack->GetAllSections(), KeyTime);
 
@@ -43,11 +39,7 @@ ECopyInterpAkAudioResult FAkMatineeImportTools::CopyInterpAkAudioRTPCTrack(const
 	{
 		Section = AkAudioRTPCTrack->CreateNewSection();
 		AkAudioRTPCTrack->AddSection(*Section);
-#if UE_4_20_OR_LATER
 		Section->SetRange(TRange<FFrameNumber>::All());
-#else
-		Section->SetIsInfinite(true);
-#endif
 		Result = ECopyInterpAkAudioResult::SectionAdded;
 	}
 
@@ -57,16 +49,11 @@ ECopyInterpAkAudioResult FAkMatineeImportTools::CopyInterpAkAudioRTPCTrack(const
 
 	if (Section->TryModify())
 	{
-#if UE_4_20_OR_LATER
 		CopyInterpTrackToFloatChannel(MatineeAkAudioRTPCTrack, RtpcSection, Result);
-#else
-		CopyInterpTrackToRichCurve(MatineeAkAudioRTPCTrack, RtpcSection, Result);
-#endif
 	}
 
 	return Result;
 }
-#if UE_4_20_OR_LATER
 void FAkMatineeImportTools::CopyInterpTrackToFloatChannel(const UInterpTrackAkAudioRTPC* MatineeAkAudioRTPCTrack, UMovieSceneAkAudioRTPCSection* RtpcSection, ECopyInterpAkAudioResult& Result)
 {
 	float SectionMin = RtpcSection->GetStartTime();
@@ -106,44 +93,6 @@ void FAkMatineeImportTools::CopyInterpTrackToFloatChannel(const UInterpTrackAkAu
 		RtpcSection->SetRange(KeyRange);
 	}
 }
-#else
-void FAkMatineeImportTools::CopyInterpTrackToRichCurve(const UInterpTrackAkAudioRTPC* MatineeAkAudioRTPCTrack, UMovieSceneAkAudioRTPCSection* RtpcSection, ECopyInterpAkAudioResult& Result)
-{
-	float SectionMin = RtpcSection->GetStartTime();
-	float SectionMax = RtpcSection->GetEndTime();
-
-	FRichCurve& FloatCurve = RtpcSection->GetFloatCurve();
-	auto& Points = MatineeAkAudioRTPCTrack->FloatTrack.Points;
-
-	if (ECopyInterpAkAudioResult::NoChange == Result && Points.Num() > 0)
-		Result = ECopyInterpAkAudioResult::KeyModification;
-
-	for (const auto& Point : Points)
-	{
-		auto KeyHandle = FloatCurve.FindKey(Point.InVal);
-
-		if (!FloatCurve.IsKeyHandleValid(KeyHandle))
-		{
-			KeyHandle = FloatCurve.AddKey(Point.InVal, Point.OutVal, false);
-		}
-
-		auto& Key = FloatCurve.GetKey(KeyHandle);
-		Key.ArriveTangent = Point.ArriveTangent;
-		Key.LeaveTangent = Point.LeaveTangent;
-		Key.InterpMode = FMatineeImportTools::MatineeInterpolationToRichCurveInterpolation(Point.InterpMode);
-		Key.TangentMode = FMatineeImportTools::MatineeInterpolationToRichCurveTangent(Point.InterpMode);
-
-		SectionMin = FMath::Min(SectionMin, Point.InVal);
-		SectionMax = FMath::Max(SectionMax, Point.InVal);
-	}
-
-	FloatCurve.RemoveRedundantKeys(KINDA_SMALL_NUMBER);
-	FloatCurve.AutoSetTangents();
-
-	RtpcSection->SetStartTime(SectionMin);
-	RtpcSection->SetEndTime(SectionMax);
-}
-#endif
 
 /** Copies keys from a matinee AkAudioEvent track to a sequencer AkAudioEvent track. */
 ECopyInterpAkAudioResult FAkMatineeImportTools::CopyInterpAkAudioEventTrack(const UInterpTrackAkAudioEvent* MatineeAkAudioEventTrack, UMovieSceneAkAudioEventTrack* AkAudioEventTrack)
@@ -156,12 +105,8 @@ ECopyInterpAkAudioResult FAkMatineeImportTools::CopyInterpAkAudioEventTrack(cons
 	auto& Events = MatineeAkAudioEventTrack->Events;
 	for (const auto& Event : Events)
 	{
-#if UE_4_20_OR_LATER
 		FFrameRate FrameRate = AkAudioEventTrack->GetTypedOuter<UMovieScene>()->GetTickResolution();
 		FFrameNumber EventTime = FrameRate.AsFrameNumber(Event.Time);
-#else
-		float EventTime = Event.Time;
-#endif
 		if (AkAudioEventTrack->AddNewEvent(EventTime, Event.AkAudioEvent, Event.EventName))
 		{
 			Result = ECopyInterpAkAudioResult::SectionAdded;

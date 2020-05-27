@@ -6,9 +6,7 @@
 #include "AkUEFeatures.h"
 #include "UObject/ObjectMacros.h"
 #include "Evaluation/MovieSceneEvalTemplate.h"
-#if UE_4_20_OR_LATER
 #include "Channels/MovieSceneFloatChannel.h"
-#endif
 #include "MovieSceneAkAudioRTPCTemplate.generated.h"
 
 
@@ -22,12 +20,7 @@ struct FMovieSceneAkAudioRTPCSectionData
 
 	FString RTPCName;
 
-#if UE_4_20_OR_LATER
 	FMovieSceneFloatChannel RTPCChannel;
-#else
-	FRichCurve RTPCCurve;
-#endif
-
 };
 
 

@@ -11,6 +11,7 @@
 #include "GameFramework/Volume.h"
 #include "Model.h"
 #include "EngineUtils.h"
+#include "AkAudioEvent.h"
 
 /*------------------------------------------------------------------------------------
 	UAkRoomComponent
@@ -28,6 +29,8 @@ UAkRoomComponent::UAkRoomComponent(const class FObjectInitializer& ObjectInitial
 
 	bEnable = true;
 	bWantsInitializeComponent = true;
+
+	AutoPost = false;
 }
 
 FName UAkRoomComponent::GetName() const
@@ -99,6 +102,9 @@ void UAkRoomComponent::GetRoomParams(AkRoomParams& outParams)
 		outParams.ReverbAuxBus = pRvbCmtp->GetAuxBusId();
 		outParams.ReverbLevel = pRvbCmtp->SendLevel;
 	}
+
+	outParams.RoomGameObj_AuxSendLevelToSelf = AuxSendLevel;
+	outParams.RoomGameObj_KeepRegistered = AkAudioEvent == NULL && EventName.IsEmpty() ? false : true;
 }
 
 void UAkRoomComponent::AddSpatialAudioRoom()
@@ -109,7 +115,7 @@ void UAkRoomComponent::AddSpatialAudioRoom()
 		AkRoomParams params;
 		GetRoomParams(params);
 		AkAudioDevice->AddRoom(this, params);
-		RoomAdded = true;
+		IsRegisteredWithWwise = true;
 	}
 }
 
@@ -130,7 +136,46 @@ void UAkRoomComponent::RemoveSpatialAudioRoom()
 	if (RoomIsActive() && AkAudioDevice)
 	{
 		AkAudioDevice->RemoveRoom(this);
-		RoomAdded = false;
+		IsRegisteredWithWwise = false;
+	}
+}
+
+int32 UAkRoomComponent::PostAssociatedAkEvent(int32 CallbackMask, const FOnAkPostEventCallback& PostEventCallback, const TArray<FAkExternalSourceInfo>& ExternalSources)
+{
+	AkPlayingID playingID = AK_INVALID_PLAYING_ID;
+
+	if (!HasActiveEvents())
+		playingID = PostAkEvent(AkAudioEvent, CallbackMask, PostEventCallback, ExternalSources, EventName);
+
+	return playingID;
+}
+
+AkPlayingID UAkRoomComponent::PostAkEventByNameWithDelegate(
+	const FString& in_EventName,
+	int32 CallbackMask,
+	const FOnAkPostEventCallback& PostEventCallback,
+	const TArray<FAkExternalSourceInfo>& ExternalSources)
+{
+	AkPlayingID playingID = AK_INVALID_PLAYING_ID;
+
+	auto AudioDevice = FAkAudioDevice::Get();
+	if (AudioDevice)
+	{
+		playingID = AudioDevice->PostEvent(in_EventName, this, PostEventCallback, CallbackMask);
+		if (playingID != AK_INVALID_PLAYING_ID)
+			bStarted = true;
+	}
+
+	return playingID;
+}
+
+void UAkRoomComponent::BeginPlay()
+{
+	Super::BeginPlay();
+	if (AutoPost)
+	{
+		if (!HasActiveEvents())
+			PostAssociatedAkEvent(0, FOnAkPostEventCallback(), TArray<FAkExternalSourceInfo>());
 	}
 }
 
@@ -141,7 +186,7 @@ void UAkRoomComponent::PostEditChangeProperty(FPropertyChangedEvent& PropertyCha
 	InitializeParentVolume();
 	
 	//Call add again to update the room parameters, if it has already been added.
-	if (RoomAdded)
+	if (IsRegisteredWithWwise)
 		UpdateSpatialAudioRoom();
 }
 #endif

@@ -1,4 +1,4 @@
-// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
+// Copyright Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -14,58 +14,19 @@ enum class AkAcousticPortalState : uint8;
 #endif
 #define AKAUDIO_AkAcousticPortal_generated_h
 
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAcousticPortal_h_19_SPARSE_DATA
 #define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAcousticPortal_h_19_RPC_WRAPPERS \
  \
-	DECLARE_FUNCTION(execGetCurrentState) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(AkAcousticPortalState*)Z_Param__Result=P_THIS->GetCurrentState(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execClosePortal) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->ClosePortal(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execOpenPortal) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->OpenPortal(); \
-		P_NATIVE_END; \
-	}
+	DECLARE_FUNCTION(execGetCurrentState); \
+	DECLARE_FUNCTION(execClosePortal); \
+	DECLARE_FUNCTION(execOpenPortal);
 
 
 #define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAcousticPortal_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
  \
-	DECLARE_FUNCTION(execGetCurrentState) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(AkAcousticPortalState*)Z_Param__Result=P_THIS->GetCurrentState(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execClosePortal) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->ClosePortal(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execOpenPortal) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->OpenPortal(); \
-		P_NATIVE_END; \
-	}
+	DECLARE_FUNCTION(execGetCurrentState); \
+	DECLARE_FUNCTION(execClosePortal); \
+	DECLARE_FUNCTION(execOpenPortal);
 
 
 #define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAcousticPortal_h_19_INCLASS_NO_PURE_DECLS \
@@ -73,7 +34,7 @@ private: \
 	static void StaticRegisterNativesAAkAcousticPortal(); \
 	friend struct Z_Construct_UClass_AAkAcousticPortal_Statics; \
 public: \
-	DECLARE_CLASS(AAkAcousticPortal, AVolume, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/AkAudio"), NO_API) \
+	DECLARE_CLASS(AAkAcousticPortal, AVolume, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/AkAudio"), NO_API) \
 	DECLARE_SERIALIZER(AAkAcousticPortal)
 
 
@@ -82,7 +43,7 @@ private: \
 	static void StaticRegisterNativesAAkAcousticPortal(); \
 	friend struct Z_Construct_UClass_AAkAcousticPortal_Statics; \
 public: \
-	DECLARE_CLASS(AAkAcousticPortal, AVolume, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/AkAudio"), NO_API) \
+	DECLARE_CLASS(AAkAcousticPortal, AVolume, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/AkAudio"), NO_API) \
 	DECLARE_SERIALIZER(AAkAcousticPortal)
 
 
@@ -118,6 +79,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AAkAcousticPortal); \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAcousticPortal_h_19_PRIVATE_PROPERTY_OFFSET \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAcousticPortal_h_19_SPARSE_DATA \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAcousticPortal_h_19_RPC_WRAPPERS \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAcousticPortal_h_19_INCLASS \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAcousticPortal_h_19_STANDARD_CONSTRUCTORS \
@@ -129,6 +91,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAcousticPortal_h_19_PRIVATE_PROPERTY_OFFSET \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAcousticPortal_h_19_SPARSE_DATA \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAcousticPortal_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAcousticPortal_h_19_INCLASS_NO_PURE_DECLS \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAcousticPortal_h_19_ENHANCED_CONSTRUCTORS \
@@ -138,6 +101,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 template<> AKAUDIO_API UClass* StaticClass<class AAkAcousticPortal>();
 
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAcousticPortal_h_74_SPARSE_DATA
 #define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAcousticPortal_h_74_RPC_WRAPPERS
 #define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAcousticPortal_h_74_RPC_WRAPPERS_NO_PURE_DECLS
 #define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAcousticPortal_h_74_INCLASS_NO_PURE_DECLS \
@@ -190,6 +154,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UAkPortalComponent); \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAcousticPortal_h_74_PRIVATE_PROPERTY_OFFSET \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAcousticPortal_h_74_SPARSE_DATA \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAcousticPortal_h_74_RPC_WRAPPERS \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAcousticPortal_h_74_INCLASS \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAcousticPortal_h_74_STANDARD_CONSTRUCTORS \
@@ -201,6 +166,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAcousticPortal_h_74_PRIVATE_PROPERTY_OFFSET \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAcousticPortal_h_74_SPARSE_DATA \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAcousticPortal_h_74_RPC_WRAPPERS_NO_PURE_DECLS \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAcousticPortal_h_74_INCLASS_NO_PURE_DECLS \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAcousticPortal_h_74_ENHANCED_CONSTRUCTORS \

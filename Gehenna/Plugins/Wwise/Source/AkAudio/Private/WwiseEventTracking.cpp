@@ -105,7 +105,7 @@ namespace WwiseEventTriggering
 
 	void LogDirtyPlaybackWarning()
 	{
-		UE_LOG(LogAkAudio, Warning, TEXT("Playback occurred from sequencer section with new changes. You may need to re-generate your soundbanks."));
+		UE_LOG(LogAkAudio, Warning, TEXT("Playback occurred from sequencer section with new changes. You may need to save your diry work units and re-generate your soundbanks."));
 	}
 
 	void StopAllPlayingIDs(FAkAudioDevice * AudioDevice, FWwiseEventTracker & EventTracker)

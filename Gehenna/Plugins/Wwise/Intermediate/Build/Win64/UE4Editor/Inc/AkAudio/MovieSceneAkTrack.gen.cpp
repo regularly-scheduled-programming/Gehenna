@@ -1,4 +1,4 @@
-// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
+// Copyright Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -52,6 +52,7 @@ void EmptyLinkFunctionForGeneratedCodeMovieSceneAkTrack() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UMovieSceneAkTrack_Statics::Class_MetaDataParams[] = {
+		{ "Comment", "/**\n * Handles manipulation of an Ak track in a movie scene\n */" },
 		{ "IncludePath", "MovieSceneAkTrack.h" },
 		{ "ModuleRelativePath", "Classes/MovieSceneAkTrack.h" },
 		{ "ToolTip", "Handles manipulation of an Ak track in a movie scene" },
@@ -66,15 +67,16 @@ void EmptyLinkFunctionForGeneratedCodeMovieSceneAkTrack() {}
 	{
 		((UMovieSceneAkTrack*)Obj)->bIsAMasterTrack = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UMovieSceneAkTrack_Statics::NewProp_bIsAMasterTrack = { "bIsAMasterTrack", nullptr, (EPropertyFlags)0x0020080000000000, UE4CodeGen_Private::EPropertyGenFlags::Bool , RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(uint8), sizeof(UMovieSceneAkTrack), &Z_Construct_UClass_UMovieSceneAkTrack_Statics::NewProp_bIsAMasterTrack_SetBit, METADATA_PARAMS(Z_Construct_UClass_UMovieSceneAkTrack_Statics::NewProp_bIsAMasterTrack_MetaData, ARRAY_COUNT(Z_Construct_UClass_UMovieSceneAkTrack_Statics::NewProp_bIsAMasterTrack_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UMovieSceneAkTrack_Statics::NewProp_bIsAMasterTrack = { "bIsAMasterTrack", nullptr, (EPropertyFlags)0x0020080000000000, UE4CodeGen_Private::EPropertyGenFlags::Bool , RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(uint8), sizeof(UMovieSceneAkTrack), &Z_Construct_UClass_UMovieSceneAkTrack_Statics::NewProp_bIsAMasterTrack_SetBit, METADATA_PARAMS(Z_Construct_UClass_UMovieSceneAkTrack_Statics::NewProp_bIsAMasterTrack_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UMovieSceneAkTrack_Statics::NewProp_bIsAMasterTrack_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UMovieSceneAkTrack_Statics::NewProp_Sections_MetaData[] = {
+		{ "Comment", "/** All the sections in this track */" },
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Classes/MovieSceneAkTrack.h" },
 		{ "ToolTip", "All the sections in this track" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UMovieSceneAkTrack_Statics::NewProp_Sections = { "Sections", nullptr, (EPropertyFlags)0x0020088000000008, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UMovieSceneAkTrack, Sections), METADATA_PARAMS(Z_Construct_UClass_UMovieSceneAkTrack_Statics::NewProp_Sections_MetaData, ARRAY_COUNT(Z_Construct_UClass_UMovieSceneAkTrack_Statics::NewProp_Sections_MetaData)) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UMovieSceneAkTrack_Statics::NewProp_Sections = { "Sections", nullptr, (EPropertyFlags)0x0020088000000008, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UMovieSceneAkTrack, Sections), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_UMovieSceneAkTrack_Statics::NewProp_Sections_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UMovieSceneAkTrack_Statics::NewProp_Sections_MetaData)) };
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UMovieSceneAkTrack_Statics::NewProp_Sections_Inner = { "Sections", nullptr, (EPropertyFlags)0x0000000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UMovieSceneSection_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UMovieSceneAkTrack_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UMovieSceneAkTrack_Statics::NewProp_bIsAMasterTrack,
@@ -92,12 +94,12 @@ void EmptyLinkFunctionForGeneratedCodeMovieSceneAkTrack() {}
 		nullptr,
 		Z_Construct_UClass_UMovieSceneAkTrack_Statics::PropPointers,
 		nullptr,
-		ARRAY_COUNT(DependentSingletons),
+		UE_ARRAY_COUNT(DependentSingletons),
 		0,
-		ARRAY_COUNT(Z_Construct_UClass_UMovieSceneAkTrack_Statics::PropPointers),
+		UE_ARRAY_COUNT(Z_Construct_UClass_UMovieSceneAkTrack_Statics::PropPointers),
 		0,
 		0x00A800A1u,
-		METADATA_PARAMS(Z_Construct_UClass_UMovieSceneAkTrack_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UMovieSceneAkTrack_Statics::Class_MetaDataParams))
+		METADATA_PARAMS(Z_Construct_UClass_UMovieSceneAkTrack_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UMovieSceneAkTrack_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UMovieSceneAkTrack()
 	{
@@ -108,7 +110,7 @@ void EmptyLinkFunctionForGeneratedCodeMovieSceneAkTrack() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UMovieSceneAkTrack, 921046189);
+	IMPLEMENT_CLASS(UMovieSceneAkTrack, 2048808258);
 	template<> AKAUDIO_API UClass* StaticClass<UMovieSceneAkTrack>()
 	{
 		return UMovieSceneAkTrack::StaticClass();

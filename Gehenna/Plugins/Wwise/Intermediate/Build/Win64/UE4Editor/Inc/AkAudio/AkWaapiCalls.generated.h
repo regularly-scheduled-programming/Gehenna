@@ -1,4 +1,4 @@
-// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
+// Copyright Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -52,188 +52,31 @@ static inline void FOnEventCallback_DelegateWrapper(const FScriptDelegate& OnEve
 }
 
 
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiBlueprints_AkWaapiCalls_h_38_SPARSE_DATA
 #define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiBlueprints_AkWaapiCalls_h_38_RPC_WRAPPERS \
  \
-	DECLARE_FUNCTION(execConv_FAkWaapiSubscriptionIdToText) \
-	{ \
-		P_GET_STRUCT_REF(FAkWaapiSubscriptionId,Z_Param_Out_INAkWaapiSubscriptionId); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(FText*)Z_Param__Result=UAkWaapiCalls::Conv_FAkWaapiSubscriptionIdToText(Z_Param_Out_INAkWaapiSubscriptionId); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execConv_FAkWaapiSubscriptionIdToString) \
-	{ \
-		P_GET_STRUCT_REF(FAkWaapiSubscriptionId,Z_Param_Out_INAkWaapiSubscriptionId); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(FString*)Z_Param__Result=UAkWaapiCalls::Conv_FAkWaapiSubscriptionIdToString(Z_Param_Out_INAkWaapiSubscriptionId); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execUnsubscribe) \
-	{ \
-		P_GET_STRUCT_REF(FAkWaapiSubscriptionId,Z_Param_Out_SubscriptionId); \
-		P_GET_UBOOL_REF(Z_Param_Out_UnsubscriptionDone); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(FAKWaapiJsonObject*)Z_Param__Result=UAkWaapiCalls::Unsubscribe(Z_Param_Out_SubscriptionId,Z_Param_Out_UnsubscriptionDone); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSubscribeToWaapi) \
-	{ \
-		P_GET_STRUCT_REF(FAkWaapiUri,Z_Param_Out_WaapiUri); \
-		P_GET_STRUCT_REF(FAKWaapiJsonObject,Z_Param_Out_WaapiOptions); \
-		P_GET_PROPERTY_REF(UDelegateProperty,Z_Param_Out_CallBack); \
-		P_GET_STRUCT_REF(FAkWaapiSubscriptionId,Z_Param_Out_SubscriptionId); \
-		P_GET_UBOOL_REF(Z_Param_Out_SubscriptionDone); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(FAKWaapiJsonObject*)Z_Param__Result=UAkWaapiCalls::SubscribeToWaapi(Z_Param_Out_WaapiUri,Z_Param_Out_WaapiOptions,FOnEventCallback(Z_Param_Out_CallBack),Z_Param_Out_SubscriptionId,Z_Param_Out_SubscriptionDone); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execCallWaapi) \
-	{ \
-		P_GET_STRUCT_REF(FAkWaapiUri,Z_Param_Out_WaapiUri); \
-		P_GET_STRUCT_REF(FAKWaapiJsonObject,Z_Param_Out_WaapiArgs); \
-		P_GET_STRUCT_REF(FAKWaapiJsonObject,Z_Param_Out_WaapiOptions); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(FAKWaapiJsonObject*)Z_Param__Result=UAkWaapiCalls::CallWaapi(Z_Param_Out_WaapiUri,Z_Param_Out_WaapiArgs,Z_Param_Out_WaapiOptions); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execRegisterWaapiConnectionLostCallback) \
-	{ \
-		P_GET_PROPERTY_REF(UDelegateProperty,Z_Param_Out_Callback); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=UAkWaapiCalls::RegisterWaapiConnectionLostCallback(FOnWaapiConnectionLost(Z_Param_Out_Callback)); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execRegisterWaapiProjectLoadedCallback) \
-	{ \
-		P_GET_PROPERTY_REF(UDelegateProperty,Z_Param_Out_Callback); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=UAkWaapiCalls::RegisterWaapiProjectLoadedCallback(FOnWaapiProjectLoaded(Z_Param_Out_Callback)); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetSubscriptionID) \
-	{ \
-		P_GET_STRUCT_REF(FAkWaapiSubscriptionId,Z_Param_Out_Subscription); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(int32*)Z_Param__Result=UAkWaapiCalls::GetSubscriptionID(Z_Param_Out_Subscription); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSetSubscriptionID) \
-	{ \
-		P_GET_STRUCT_REF(FAkWaapiSubscriptionId,Z_Param_Out_Subscription); \
-		P_GET_PROPERTY(UIntProperty,Z_Param_id); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		UAkWaapiCalls::SetSubscriptionID(Z_Param_Out_Subscription,Z_Param_id); \
-		P_NATIVE_END; \
-	}
+	DECLARE_FUNCTION(execConv_FAkWaapiSubscriptionIdToText); \
+	DECLARE_FUNCTION(execConv_FAkWaapiSubscriptionIdToString); \
+	DECLARE_FUNCTION(execUnsubscribe); \
+	DECLARE_FUNCTION(execSubscribeToWaapi); \
+	DECLARE_FUNCTION(execCallWaapi); \
+	DECLARE_FUNCTION(execRegisterWaapiConnectionLostCallback); \
+	DECLARE_FUNCTION(execRegisterWaapiProjectLoadedCallback); \
+	DECLARE_FUNCTION(execGetSubscriptionID); \
+	DECLARE_FUNCTION(execSetSubscriptionID);
 
 
 #define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiBlueprints_AkWaapiCalls_h_38_RPC_WRAPPERS_NO_PURE_DECLS \
  \
-	DECLARE_FUNCTION(execConv_FAkWaapiSubscriptionIdToText) \
-	{ \
-		P_GET_STRUCT_REF(FAkWaapiSubscriptionId,Z_Param_Out_INAkWaapiSubscriptionId); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(FText*)Z_Param__Result=UAkWaapiCalls::Conv_FAkWaapiSubscriptionIdToText(Z_Param_Out_INAkWaapiSubscriptionId); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execConv_FAkWaapiSubscriptionIdToString) \
-	{ \
-		P_GET_STRUCT_REF(FAkWaapiSubscriptionId,Z_Param_Out_INAkWaapiSubscriptionId); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(FString*)Z_Param__Result=UAkWaapiCalls::Conv_FAkWaapiSubscriptionIdToString(Z_Param_Out_INAkWaapiSubscriptionId); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execUnsubscribe) \
-	{ \
-		P_GET_STRUCT_REF(FAkWaapiSubscriptionId,Z_Param_Out_SubscriptionId); \
-		P_GET_UBOOL_REF(Z_Param_Out_UnsubscriptionDone); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(FAKWaapiJsonObject*)Z_Param__Result=UAkWaapiCalls::Unsubscribe(Z_Param_Out_SubscriptionId,Z_Param_Out_UnsubscriptionDone); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSubscribeToWaapi) \
-	{ \
-		P_GET_STRUCT_REF(FAkWaapiUri,Z_Param_Out_WaapiUri); \
-		P_GET_STRUCT_REF(FAKWaapiJsonObject,Z_Param_Out_WaapiOptions); \
-		P_GET_PROPERTY_REF(UDelegateProperty,Z_Param_Out_CallBack); \
-		P_GET_STRUCT_REF(FAkWaapiSubscriptionId,Z_Param_Out_SubscriptionId); \
-		P_GET_UBOOL_REF(Z_Param_Out_SubscriptionDone); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(FAKWaapiJsonObject*)Z_Param__Result=UAkWaapiCalls::SubscribeToWaapi(Z_Param_Out_WaapiUri,Z_Param_Out_WaapiOptions,FOnEventCallback(Z_Param_Out_CallBack),Z_Param_Out_SubscriptionId,Z_Param_Out_SubscriptionDone); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execCallWaapi) \
-	{ \
-		P_GET_STRUCT_REF(FAkWaapiUri,Z_Param_Out_WaapiUri); \
-		P_GET_STRUCT_REF(FAKWaapiJsonObject,Z_Param_Out_WaapiArgs); \
-		P_GET_STRUCT_REF(FAKWaapiJsonObject,Z_Param_Out_WaapiOptions); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(FAKWaapiJsonObject*)Z_Param__Result=UAkWaapiCalls::CallWaapi(Z_Param_Out_WaapiUri,Z_Param_Out_WaapiArgs,Z_Param_Out_WaapiOptions); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execRegisterWaapiConnectionLostCallback) \
-	{ \
-		P_GET_PROPERTY_REF(UDelegateProperty,Z_Param_Out_Callback); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=UAkWaapiCalls::RegisterWaapiConnectionLostCallback(FOnWaapiConnectionLost(Z_Param_Out_Callback)); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execRegisterWaapiProjectLoadedCallback) \
-	{ \
-		P_GET_PROPERTY_REF(UDelegateProperty,Z_Param_Out_Callback); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=UAkWaapiCalls::RegisterWaapiProjectLoadedCallback(FOnWaapiProjectLoaded(Z_Param_Out_Callback)); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetSubscriptionID) \
-	{ \
-		P_GET_STRUCT_REF(FAkWaapiSubscriptionId,Z_Param_Out_Subscription); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(int32*)Z_Param__Result=UAkWaapiCalls::GetSubscriptionID(Z_Param_Out_Subscription); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSetSubscriptionID) \
-	{ \
-		P_GET_STRUCT_REF(FAkWaapiSubscriptionId,Z_Param_Out_Subscription); \
-		P_GET_PROPERTY(UIntProperty,Z_Param_id); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		UAkWaapiCalls::SetSubscriptionID(Z_Param_Out_Subscription,Z_Param_id); \
-		P_NATIVE_END; \
-	}
+	DECLARE_FUNCTION(execConv_FAkWaapiSubscriptionIdToText); \
+	DECLARE_FUNCTION(execConv_FAkWaapiSubscriptionIdToString); \
+	DECLARE_FUNCTION(execUnsubscribe); \
+	DECLARE_FUNCTION(execSubscribeToWaapi); \
+	DECLARE_FUNCTION(execCallWaapi); \
+	DECLARE_FUNCTION(execRegisterWaapiConnectionLostCallback); \
+	DECLARE_FUNCTION(execRegisterWaapiProjectLoadedCallback); \
+	DECLARE_FUNCTION(execGetSubscriptionID); \
+	DECLARE_FUNCTION(execSetSubscriptionID);
 
 
 #define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiBlueprints_AkWaapiCalls_h_38_INCLASS_NO_PURE_DECLS \
@@ -292,6 +135,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UAkWaapiCalls); \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiBlueprints_AkWaapiCalls_h_38_PRIVATE_PROPERTY_OFFSET \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiBlueprints_AkWaapiCalls_h_38_SPARSE_DATA \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiBlueprints_AkWaapiCalls_h_38_RPC_WRAPPERS \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiBlueprints_AkWaapiCalls_h_38_INCLASS \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiBlueprints_AkWaapiCalls_h_38_STANDARD_CONSTRUCTORS \
@@ -303,6 +147,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiBlueprints_AkWaapiCalls_h_38_PRIVATE_PROPERTY_OFFSET \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiBlueprints_AkWaapiCalls_h_38_SPARSE_DATA \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiBlueprints_AkWaapiCalls_h_38_RPC_WRAPPERS_NO_PURE_DECLS \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiBlueprints_AkWaapiCalls_h_38_INCLASS_NO_PURE_DECLS \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiBlueprints_AkWaapiCalls_h_38_ENHANCED_CONSTRUCTORS \

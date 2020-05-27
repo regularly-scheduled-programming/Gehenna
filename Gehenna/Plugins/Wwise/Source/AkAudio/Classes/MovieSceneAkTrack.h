@@ -4,8 +4,11 @@
 
 #include "MovieScene.h"
 #include "MovieSceneTrack.h"
-#include "IMovieSceneTrackInstance.h"
 #include "AkUEFeatures.h"
+
+#if !UE_4_25_OR_LATER
+#include "IMovieSceneTrackInstance.h"
+#endif
 #include "MovieSceneAkTrack.generated.h"
 
 
@@ -29,19 +32,6 @@ public:
 	virtual bool IsEmpty() const override { return Sections.Num() == 0; }
 	virtual const TArray<UMovieSceneSection*>& GetAllSections() const override { return Sections; }
 
-#if !UE_4_20_OR_LATER
-	virtual TRange<float> GetSectionBoundaries() const override
-	{
-		TArray< TRange<float> > Bounds;
-
-		for (int32 SectionIndex = 0; SectionIndex < Sections.Num(); ++SectionIndex)
-		{
-			Bounds.Add(Sections[SectionIndex]->GetRange());
-		}
-
-		return TRange<float>::Hull(Bounds);
-	}
-#endif
 	/** end UMovieSceneTrack interface */
 
 	void SetIsAMasterTrack(bool AMasterTrack) { bIsAMasterTrack = AMasterTrack; }

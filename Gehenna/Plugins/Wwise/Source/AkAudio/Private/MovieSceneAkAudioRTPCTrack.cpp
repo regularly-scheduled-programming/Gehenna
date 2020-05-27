@@ -23,7 +23,20 @@ UMovieSceneSection* UMovieSceneAkAudioRTPCTrack::CreateNewSection()
 #if WITH_EDITORONLY_DATA
 FText UMovieSceneAkAudioRTPCTrack::GetDisplayName() const
 {
-	return NSLOCTEXT("MovieSceneAkAudioRTPCTrack", "TrackName", "AkAudioRTPC");
+	auto AllSections = GetAllSections();
+	FString DisplayName("AkAudioRTPC");
+	if (AllSections.Num() > 0)
+	{
+		UMovieSceneAkAudioRTPCSection* RTPCSection = CastChecked<UMovieSceneAkAudioRTPCSection>(AllSections[0]);
+		DisplayName += TEXT(" - ") + RTPCSection->GetRTPCName();
+	}
+
+	if (AllSections.Num() > 1)
+	{
+		DisplayName += TEXT(" and more.");
+	}
+
+	return FText::FromString(DisplayName);
 }
 #endif
 

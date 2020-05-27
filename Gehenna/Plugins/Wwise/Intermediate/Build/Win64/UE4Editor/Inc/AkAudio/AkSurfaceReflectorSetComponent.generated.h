@@ -1,4 +1,4 @@
-// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
+// Copyright Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -20,61 +20,22 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 template<> AKAUDIO_API UScriptStruct* StaticStruct<struct FAkPoly>();
 
-#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkSurfaceReflectorSetComponent_h_29_RPC_WRAPPERS \
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkSurfaceReflectorSetComponent_h_32_SPARSE_DATA
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkSurfaceReflectorSetComponent_h_32_RPC_WRAPPERS \
  \
-	DECLARE_FUNCTION(execUpdateSurfaceReflectorSet) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->UpdateSurfaceReflectorSet(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execRemoveSurfaceReflectorSet) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->RemoveSurfaceReflectorSet(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSendSurfaceReflectorSet) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->SendSurfaceReflectorSet(); \
-		P_NATIVE_END; \
-	}
+	DECLARE_FUNCTION(execUpdateSurfaceReflectorSet); \
+	DECLARE_FUNCTION(execRemoveSurfaceReflectorSet); \
+	DECLARE_FUNCTION(execSendSurfaceReflectorSet);
 
 
-#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkSurfaceReflectorSetComponent_h_29_RPC_WRAPPERS_NO_PURE_DECLS \
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkSurfaceReflectorSetComponent_h_32_RPC_WRAPPERS_NO_PURE_DECLS \
  \
-	DECLARE_FUNCTION(execUpdateSurfaceReflectorSet) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->UpdateSurfaceReflectorSet(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execRemoveSurfaceReflectorSet) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->RemoveSurfaceReflectorSet(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSendSurfaceReflectorSet) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->SendSurfaceReflectorSet(); \
-		P_NATIVE_END; \
-	}
+	DECLARE_FUNCTION(execUpdateSurfaceReflectorSet); \
+	DECLARE_FUNCTION(execRemoveSurfaceReflectorSet); \
+	DECLARE_FUNCTION(execSendSurfaceReflectorSet);
 
 
-#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkSurfaceReflectorSetComponent_h_29_INCLASS_NO_PURE_DECLS \
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkSurfaceReflectorSetComponent_h_32_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUAkSurfaceReflectorSetComponent(); \
 	friend struct Z_Construct_UClass_UAkSurfaceReflectorSetComponent_Statics; \
@@ -83,7 +44,7 @@ public: \
 	DECLARE_SERIALIZER(UAkSurfaceReflectorSetComponent)
 
 
-#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkSurfaceReflectorSetComponent_h_29_INCLASS \
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkSurfaceReflectorSetComponent_h_32_INCLASS \
 private: \
 	static void StaticRegisterNativesUAkSurfaceReflectorSetComponent(); \
 	friend struct Z_Construct_UClass_UAkSurfaceReflectorSetComponent_Statics; \
@@ -92,7 +53,7 @@ public: \
 	DECLARE_SERIALIZER(UAkSurfaceReflectorSetComponent)
 
 
-#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkSurfaceReflectorSetComponent_h_29_STANDARD_CONSTRUCTORS \
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkSurfaceReflectorSetComponent_h_32_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UAkSurfaceReflectorSetComponent(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UAkSurfaceReflectorSetComponent) \
@@ -105,7 +66,7 @@ private: \
 public:
 
 
-#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkSurfaceReflectorSetComponent_h_29_ENHANCED_CONSTRUCTORS \
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkSurfaceReflectorSetComponent_h_32_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UAkSurfaceReflectorSetComponent(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -118,26 +79,28 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UAkSurfaceReflectorSetComponent); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UAkSurfaceReflectorSetComponent)
 
 
-#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkSurfaceReflectorSetComponent_h_29_PRIVATE_PROPERTY_OFFSET
-#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkSurfaceReflectorSetComponent_h_26_PROLOG
-#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkSurfaceReflectorSetComponent_h_29_GENERATED_BODY_LEGACY \
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkSurfaceReflectorSetComponent_h_32_PRIVATE_PROPERTY_OFFSET
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkSurfaceReflectorSetComponent_h_29_PROLOG
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkSurfaceReflectorSetComponent_h_32_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkSurfaceReflectorSetComponent_h_29_PRIVATE_PROPERTY_OFFSET \
-	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkSurfaceReflectorSetComponent_h_29_RPC_WRAPPERS \
-	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkSurfaceReflectorSetComponent_h_29_INCLASS \
-	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkSurfaceReflectorSetComponent_h_29_STANDARD_CONSTRUCTORS \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkSurfaceReflectorSetComponent_h_32_PRIVATE_PROPERTY_OFFSET \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkSurfaceReflectorSetComponent_h_32_SPARSE_DATA \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkSurfaceReflectorSetComponent_h_32_RPC_WRAPPERS \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkSurfaceReflectorSetComponent_h_32_INCLASS \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkSurfaceReflectorSetComponent_h_32_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkSurfaceReflectorSetComponent_h_29_GENERATED_BODY \
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkSurfaceReflectorSetComponent_h_32_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkSurfaceReflectorSetComponent_h_29_PRIVATE_PROPERTY_OFFSET \
-	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkSurfaceReflectorSetComponent_h_29_RPC_WRAPPERS_NO_PURE_DECLS \
-	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkSurfaceReflectorSetComponent_h_29_INCLASS_NO_PURE_DECLS \
-	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkSurfaceReflectorSetComponent_h_29_ENHANCED_CONSTRUCTORS \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkSurfaceReflectorSetComponent_h_32_PRIVATE_PROPERTY_OFFSET \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkSurfaceReflectorSetComponent_h_32_SPARSE_DATA \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkSurfaceReflectorSetComponent_h_32_RPC_WRAPPERS_NO_PURE_DECLS \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkSurfaceReflectorSetComponent_h_32_INCLASS_NO_PURE_DECLS \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkSurfaceReflectorSetComponent_h_32_ENHANCED_CONSTRUCTORS \
 static_assert(false, "Unknown access specifier for GENERATED_BODY() macro in class AkSurfaceReflectorSetComponent."); \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

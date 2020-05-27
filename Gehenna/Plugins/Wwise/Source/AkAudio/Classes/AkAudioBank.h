@@ -1,49 +1,46 @@
-// Copyright (c) 2006-2012 Audiokinetic Inc. / All Rights Reserved
-
-/*=============================================================================
-	AkBank.h:
-=============================================================================*/
+// Copyright (c) 2006-2019 Audiokinetic Inc. / All Rights Reserved
 #pragma once
 
-#include "Engine/GameEngine.h"
-#include "AkGameplayTypes.h"
+#include "AkAssetBase.h"
 #include "AkAudioBank.generated.h"
 
-/*------------------------------------------------------------------------------------
-	UAkAudioBank
-------------------------------------------------------------------------------------*/
 UCLASS(meta=(BlueprintSpawnableComponent))
-class AKAUDIO_API UAkAudioBank : public UObject
+class AKAUDIO_API UAkAudioBank : public UAkAssetBase
 {
-	GENERATED_UCLASS_BODY() 
+	GENERATED_BODY()
 
 public:
-	/** Auto-load bank when its package is accessed for the first time */
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=Behaviour)
-	bool	AutoLoad;
+	// Only applicable when you don't use the new Event-Based Packaging workflow
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Behaviour")
+	bool AutoLoad = true;
+
+	UPROPERTY(VisibleAnywhere, Category = "AkAudioBank")
+	TMap<FString, TSoftObjectPtr<UAkAssetPlatformData>> LocalizedPlatformAssetDataMap;
+
+private:
+	UPROPERTY(Transient)
+	UAkAssetPlatformData* CurrentLocalizedPlatformAssetData = nullptr;
+
+public:
+	void Load() override;
+	void Unload() override;
+
+	bool IsLocalized() const { return LocalizedPlatformAssetDataMap.Num() > 0; }
+
+	bool SwitchLanguage(const FString& newAudioCulture, const SwitchLanguageCompletedFunction& Function = SwitchLanguageCompletedFunction());
 	
 #if CPP
-	/**
-	 * Called after load process is complete.
-	 */
-	virtual void PostLoad() override;
-
-	/**
-	 * Clean up.
-	 */
-	virtual void BeginDestroy() override;
-	
 	/**
 	 * Loads an AkBank.
 	 *
 	 * @return Returns true if the load was successful, otherwise false
 	 */
-	bool Load();
+	bool LegacyLoad();
 
 	/**
 	* Loads an AkBank, using the latent action to flag completion.
 	*/
-	bool Load(FWaitEndBankAction* LoadBankLatentAction);
+	bool LegacyLoad(FWaitEndBankAction* LoadBankLatentAction);
 
 	/**
 	 * Loads an AkBank asynchronously.
@@ -52,7 +49,7 @@ public:
 	 * @param in_pCookie				Cookie to pass in callback
 	 * @return Returns true if the load was successful, otherwise false
 	 */
-	bool LoadAsync(void* in_pfnBankCallback, void* in_pCookie);
+	bool LegacyLoadAsync(void* in_pfnBankCallback, void* in_pCookie);
 
 	/**
 	* Loads an AkBank asynchronously, from Blueprint
@@ -60,31 +57,54 @@ public:
 	* @param BankLoadedCallback		Blueprint Delegate to call on completion
 	* @return Returns true if the load was successful, otherwise false
 	*/
-	bool LoadAsync(const FOnAkBankCallback& BankLoadedCallback);
-	
+	bool LegacyLoadAsync(const FOnAkBankCallback& BankLoadedCallback);
+
 	/**
 	 * Unloads an AkBank.
 	 */
-	void Unload();
+	void LegacyUnload();
 
 	/**
 	* Unloads an AkBank, using the latent action to flag completion.
 	*/
-	void Unload(FWaitEndBankAction* LoadBankLatentAction);
-		
+	void LegacyUnload(FWaitEndBankAction* LoadBankLatentAction);
+
 	/**
 	 * Unloads an AkBank asynchronously.
 	 *
 	 * @param in_pfnBankCallback		Function to call on completion
 	 * @param in_pCookie				Cookie to pass in callback
 	 */
-	void UnloadAsync(void* in_pfnBankCallback, void* in_pCookie);
+	void LegacyUnloadAsync(void* in_pfnBankCallback, void* in_pCookie);
 
 	/**
 	* Unloads an AkBank asynchronously, from Blueprint
 	*
 	* @param BankUnloadedCallback		Blueprint Delegate to call on completion
 	*/
-	void UnloadAsync(const FOnAkBankCallback& BankUnloadedCallback);
+	void LegacyUnloadAsync(const FOnAkBankCallback& BankUnloadedCallback);
 #endif
+
+#if WITH_EDITOR
+	UAkAssetData* FindOrAddAssetData(const FString& platform, const FString& language) override;
+
+	void Reset() override;
+#endif
+
+	friend class AkEventBasedIntegrationBehavior;
+
+protected:
+	UAkAssetData* createAssetData(UObject* parent) const override;
+	UAkAssetData* getAssetData() const override;
+
+private:
+	void loadLocalizedData(const FString& audioCulture, const SwitchLanguageCompletedFunction& Function);
+	void unloadLocalizedData();
+	void onLocalizedDataLoaded();
+
+	void superLoad();
+	void superUnload();
+
+private:
+	TSharedPtr<FStreamableHandle> localizedStreamHandle;
 };

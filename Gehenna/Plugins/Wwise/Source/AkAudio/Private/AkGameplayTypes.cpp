@@ -5,26 +5,82 @@
 =============================================================================*/
 
 #include "AkGameplayTypes.h"
+
+#include "AkAudioBank.h"
 #include "AkAudioDevice.h"
-#include "EngineUtils.h"
+#include "AkAudioEvent.h"
+#include "AkCallbackInfoPool.h"
 #include "AkComponent.h"
+#include "AkMediaAsset.h"
+#include "AkUnrealHelper.h"
+#include "AssetRegistry/Public/AssetRegistryModule.h"
 #include "Engine/GameEngine.h"
+#include "EngineUtils.h"
 #include "AkCallbackInfoPool.h"
 #include "HAL/PlatformString.h"
-UAkCallbackInfo* AkCallbackTypeHelpers::GetBlueprintableCallbackInfo(AkCallbackType CallbackType, AkCallbackInfo* CallbackInfo)
+#include "IntegrationBehavior/AkIntegrationBehavior.h"
+
+UAkCallbackInfo* AkCallbackTypeHelpers::GetBlueprintableCallbackInfo(EAkCallbackType CallbackType, AkCallbackInfo* CallbackInfo)
+{
+	switch (CallbackType)
+	{
+	case EAkCallbackType::EndOfEvent:
+		return UAkEventCallbackInfo::Create((AkEventCallbackInfo*)CallbackInfo);
+	case EAkCallbackType::Marker:
+		return UAkMarkerCallbackInfo::Create((AkMarkerCallbackInfo*)CallbackInfo);
+	case EAkCallbackType::Duration:
+		return UAkDurationCallbackInfo::Create((AkDurationCallbackInfo*)CallbackInfo);
+	case EAkCallbackType::Starvation:
+		return UAkEventCallbackInfo::Create((AkEventCallbackInfo*)CallbackInfo);
+	case EAkCallbackType::MusicPlayStarted:
+		return UAkEventCallbackInfo::Create((AkEventCallbackInfo*)CallbackInfo);
+	case EAkCallbackType::MusicSyncBeat:
+	case EAkCallbackType::MusicSyncBar:
+	case EAkCallbackType::MusicSyncEntry:
+	case EAkCallbackType::MusicSyncExit:
+	case EAkCallbackType::MusicSyncGrid:
+	case EAkCallbackType::MusicSyncUserCue:
+	case EAkCallbackType::MusicSyncPoint:
+		return UAkMusicSyncCallbackInfo::Create((AkMusicSyncCallbackInfo*)CallbackInfo);
+	case EAkCallbackType::MIDIEvent:
+		return UAkMIDIEventCallbackInfo::Create((AkMIDIEventCallbackInfo*)CallbackInfo);
+	default: 
+		return nullptr;
+	}
+	return nullptr;
+}
+
+AkCallbackInfo* AkCallbackTypeHelpers::CopyWwiseCallbackInfo(AkCallbackType CallbackType, AkCallbackInfo* SourceCallbackInfo)
 {
 	switch (CallbackType)
 	{
 	case AK_EndOfEvent:
-		return UAkEventCallbackInfo::Create((AkEventCallbackInfo*)CallbackInfo);
-	case AK_Marker: 
-		return UAkMarkerCallbackInfo::Create((AkMarkerCallbackInfo*)CallbackInfo);
-	case AK_Duration: 
-		return UAkDurationCallbackInfo::Create((AkDurationCallbackInfo*)CallbackInfo);
-	case AK_Starvation: 
-		return UAkEventCallbackInfo::Create((AkEventCallbackInfo*)CallbackInfo);
-	case AK_MusicPlayStarted: 
-		return UAkEventCallbackInfo::Create((AkEventCallbackInfo*)CallbackInfo);
+	case AK_Starvation:
+	case AK_MusicPlayStarted:
+	{
+		AkEventCallbackInfo* CbInfoCopy = (AkEventCallbackInfo*)FMemory::Malloc(sizeof(AkEventCallbackInfo));
+		FMemory::Memcpy(CbInfoCopy, SourceCallbackInfo, sizeof(AkEventCallbackInfo));
+		return CbInfoCopy;
+	}
+	case AK_Marker:
+	{
+		const char* SourceLabel = ((AkMarkerCallbackInfo*)SourceCallbackInfo)->strLabel;
+		int32 LabelSize = SourceLabel ? FPlatformString::Strlen(SourceLabel) : 0;
+		AkMarkerCallbackInfo* CbInfoCopy = (AkMarkerCallbackInfo*)FMemory::Malloc(sizeof(AkMarkerCallbackInfo) + LabelSize);
+		FMemory::Memcpy(CbInfoCopy, SourceCallbackInfo, sizeof(AkMarkerCallbackInfo));
+
+		if (SourceLabel)
+		{
+			FPlatformString::Strcpy(const_cast<char*>(CbInfoCopy->strLabel), LabelSize, SourceLabel);
+		}
+		return CbInfoCopy;
+	}
+	case AK_Duration:
+	{
+		AkDurationCallbackInfo* CbInfoCopy = (AkDurationCallbackInfo*)FMemory::Malloc(sizeof(AkDurationCallbackInfo));
+		FMemory::Memcpy(CbInfoCopy, SourceCallbackInfo, sizeof(AkDurationCallbackInfo));
+		return CbInfoCopy;
+	}
 	case AK_MusicSyncBeat:
 	case AK_MusicSyncBar:
 	case AK_MusicSyncEntry:
@@ -32,10 +88,24 @@ UAkCallbackInfo* AkCallbackTypeHelpers::GetBlueprintableCallbackInfo(AkCallbackT
 	case AK_MusicSyncGrid:
 	case AK_MusicSyncUserCue:
 	case AK_MusicSyncPoint:
-		return UAkMusicSyncCallbackInfo::Create((AkMusicSyncCallbackInfo*)CallbackInfo);
-	case AK_MIDIEvent: 
-		return UAkMIDIEventCallbackInfo::Create((AkMIDIEventCallbackInfo*)CallbackInfo);
-	default: 
+	{
+		const char* SourceUserCue = ((AkMusicSyncCallbackInfo*)SourceCallbackInfo)->pszUserCueName;
+		int32 UserCueSize = SourceUserCue ? FPlatformString::Strlen(SourceUserCue) : 0;
+		AkMusicSyncCallbackInfo* CbInfoCopy = (AkMusicSyncCallbackInfo*)FMemory::Malloc(sizeof(AkMusicSyncCallbackInfo) + UserCueSize);
+		FMemory::Memcpy(CbInfoCopy, SourceCallbackInfo, sizeof(AkMusicSyncCallbackInfo));
+		if (SourceUserCue)
+		{
+			FPlatformString::Strcpy(const_cast<char*>(CbInfoCopy->pszUserCueName), UserCueSize, SourceUserCue);
+		}
+		return CbInfoCopy;
+	}
+	case AK_MIDIEvent:
+	{
+		AkMIDIEventCallbackInfo* CbInfoCopy = (AkMIDIEventCallbackInfo*)FMemory::Malloc(sizeof(AkMIDIEventCallbackInfo));
+		FMemory::Memcpy(CbInfoCopy, SourceCallbackInfo, sizeof(AkMIDIEventCallbackInfo));
+		return CbInfoCopy;
+	}
+	default:
 		return nullptr;
 	}
 	return nullptr;
@@ -70,6 +140,11 @@ UAkCallbackInfo* UAkCallbackInfo::Create(AkGameObjectID GameObjectID)
 		CbInfo->AkComponent = UAkComponent::GetAkComponent(GameObjectID);
 	}
 	return CbInfo;
+}
+
+void UAkCallbackInfo::Reset()
+{
+	AkComponent = nullptr;
 }
 
 UAkEventCallbackInfo::UAkEventCallbackInfo(class FObjectInitializer const & ObjectInitializer) :
@@ -257,23 +332,14 @@ bool UAkMIDIEventCallbackInfo::GetProgramChange(FAkMidiProgramChange& AsProgramC
 	return true;
 }
 
-FAkSDKExtrernalSourceArray::FAkSDKExtrernalSourceArray(const TArray<FAkExternalSourceInfo>& BlueprintArray)
+FAkSDKExternalSourceArray::FAkSDKExternalSourceArray(const TArray<FAkExternalSourceInfo>& BlueprintArray)
 {
-	auto* AudioDevice = FAkAudioDevice::Get();
-	if (AudioDevice)
-	{
-		for (int i = 0; i < BlueprintArray.Num(); ++i)
-		{
-			AkOSChar* OsCharArray = (AkOSChar*)FMemory::Malloc((BlueprintArray[i].FileName.Len() + 1) * sizeof(AkOSChar));
-			FPlatformString::Strcpy(OsCharArray, BlueprintArray[i].FileName.Len(), TCHAR_TO_AK(*(BlueprintArray[i].FileName)));
-			ExternalSourceArray.Emplace(OsCharArray, AudioDevice->GetIDFromString(TCHAR_TO_AK(*BlueprintArray[i].ExternalSrcName)), (AkCodecID)BlueprintArray[i].CodecID);
-		}
-	}
+	AkIntegrationBehavior::Get()->FAkSDKExtrernalSourceArray_Ctor(this, BlueprintArray);
 }
 
-FAkSDKExtrernalSourceArray::~FAkSDKExtrernalSourceArray()
+FAkSDKExternalSourceArray::~FAkSDKExternalSourceArray()
 {
-	for (auto ExtSrcInfo : ExternalSourceArray)
+	for (auto& ExtSrcInfo : ExternalSourceArray)
 	{
 		if (ExtSrcInfo.szFile != nullptr)
 		{

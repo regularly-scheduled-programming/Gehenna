@@ -24,19 +24,13 @@ namespace AkAudioEventSectionHelper
 	const float MinimumDuration = 0.05f;
 	const float MaximumDuration = 720000.f;
 
-#if UE_4_20_OR_LATER
 	int32 GetMaxDurationForFrameRate(FFrameRate FrameRate)
 	{
 		float Duration = (FrameRate.Denominator * MaximumDuration) / FrameRate.Numerator;
 		return static_cast<int32>(FMath::FloorToFloat(Duration));
 	}
-#endif
 
-#if UE_4_20_OR_LATER
 	FFloatRange GetDuration(UAkAudioEvent* Event, FFrameRate FrameRate)
-#else
-	FFloatRange GetDuration(UAkAudioEvent* Event)
-#endif
 	{
 		if (Event == nullptr)
 		{
@@ -44,16 +38,12 @@ namespace AkAudioEventSectionHelper
 			return FFloatRange(DefaultDurationForEventSpecifiedByName);
 		}
 
-		if (Event->IsInfinite)
+		if (Event->IsInfinite())
 		{
-#if UE_4_20_OR_LATER
 			return FFloatRange(FMath::Min((float)GetMaxDurationForFrameRate(FrameRate), MaximumDuration));
-#else
-			return FFloatRange(MaximumDuration);
-#endif
 		}
 
-		return FFloatRange(Event->MinimumDuration, TRangeBound<float>::Inclusive(FMath::Clamp(Event->MaximumDuration, MinimumDuration, MaximumDuration)));
+		return FFloatRange(Event->MinimumDuration(), TRangeBound<float>::Inclusive(FMath::Clamp(Event->MaximumDuration(), MinimumDuration, MaximumDuration)));
 	}
 }
 
@@ -400,7 +390,6 @@ const float	UMovieSceneAkAudioEventSection::GetMaxSourceDuration() const { retur
 const UAkAudioEvent* UMovieSceneAkAudioEventSection::GetEvent() { return Event; }
 
 /** Returns the minimum and maximum durations for the specified Event or EventName. This uses the generated XML data, not WAAPI. */
-#if UE_4_20_OR_LATER
 int32 UMovieSceneAkAudioEventSection::GetMaxEventDuration() const
 {
 	FFrameRate FrameRate = GetTypedOuter<UMovieScene>()->GetTickResolution();
@@ -420,21 +409,10 @@ float UMovieSceneAkAudioEventSection::GetEndTime() const
 	return (float)FrameRate.AsSeconds(GetRange().GetUpperBoundValue());
 }
 
-#else
-float UMovieSceneAkAudioEventSection::GetMaxEventDuration() const
-{
-	return AkAudioEventSectionHelper::GetDuration(Event).GetUpperBoundValue();
-}
-#endif
-
 FFloatRange UMovieSceneAkAudioEventSection::GetEventDuration() const
 {
-#if UE_4_20_OR_LATER
 	FFrameRate FrameRate = GetTypedOuter<UMovieScene>()->GetTickResolution();
 	return AkAudioEventSectionHelper::GetDuration(Event, FrameRate);
-#else
-	return AkAudioEventSectionHelper::GetDuration(Event);
-#endif
 }
 
 void UMovieSceneAkAudioEventSection::WAAPIGetPeaks(const char* in_uri,
@@ -510,11 +488,7 @@ void UMovieSceneAkAudioEventSection::UpdateAkEventInfo()
 
 void UMovieSceneAkAudioEventSection::MatchSectionLengthToEventLength()
 {
-#if UE_4_20_OR_LATER
     SetRange(TRange<FFrameNumber>(GetRange().GetLowerBoundValue(), GetRange().GetLowerBoundValue() + GetMaxEventDuration()));
-#else
-    SetEndTime(GetStartTime() + GetMaxEventDuration());
-#endif
 }
 
 /** Get the audio peaks data (min max magnitude pairs) for the current MaxDurationSourceID, using WAAPI.
@@ -615,8 +589,8 @@ void UMovieSceneAkAudioEventSection::UpdateAudioSourceInfo()
                 auto playbackDurationJson = jsonObj->GetObjectField(playbackDurationString);
                 if (Event != nullptr)
                 {
-                    Event->MinimumDuration = playbackDurationJson->GetNumberField(FAkWaapiClient::PlaybackDurationStrings::MIN);
-                    Event->MaximumDuration = playbackDurationJson->GetNumberField(FAkWaapiClient::PlaybackDurationStrings::MAX);
+                    Event->SetMinimumDuration(playbackDurationJson->GetNumberField(FAkWaapiClient::PlaybackDurationStrings::MIN));
+					Event->SetMaximumDuration(playbackDurationJson->GetNumberField(FAkWaapiClient::PlaybackDurationStrings::MAX));
                 }
 
                 UpdateTrimData();

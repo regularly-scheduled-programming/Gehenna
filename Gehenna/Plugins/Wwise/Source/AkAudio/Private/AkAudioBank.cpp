@@ -1,61 +1,72 @@
-// Copyright (c) 2006-2012 Audiokinetic Inc. / All Rights Reserved
-
-/*=============================================================================
-	AkBank.cpp:
-=============================================================================*/
-
+// Copyright (c) 2006-2019 Audiokinetic Inc. / All Rights Reserved
 #include "AkAudioBank.h"
+
 #include "AkAudioDevice.h"
+#include "AkCustomVersion.h"
+#include "AkUnrealHelper.h"
+#include "AssetRegistry/Public/AssetRegistryModule.h"
+#include "IntegrationBehavior/AkIntegrationBehavior.h"
 
-/**
- * Constructor
- *
- * @param PCIP		Initialization properties
- */
-UAkAudioBank::UAkAudioBank(const class FObjectInitializer& ObjectInitializer)
-	: Super(ObjectInitializer)
-{
-	AutoLoad = true;
-}
+#if WITH_EDITOR
+#include "AssetTools/Public/AssetToolsModule.h"
+#include "UnrealEd/Public/ObjectTools.h"
+#endif
 
-/**
- * Called after load process is complete.
- */
-void UAkAudioBank::PostLoad()
+void UAkAudioBank::Load()
 {
-	Super::PostLoad();
-	if ( AutoLoad && !HasAnyFlags(RF_ClassDefaultObject))
+	AkIntegrationBehavior::Get()->AkAudioBank_Load(this);
+
+#if WITH_EDITOR
+	if (!ID.IsValid())
 	{
-		Load();
+		ID = FGuid::NewGuid();
 	}
+#endif
 }
 
-/**
- * Clean up.
- */
-void UAkAudioBank::BeginDestroy()
+void UAkAudioBank::Unload()
 {
-	if( AutoLoad && !HasAnyFlags(RF_ClassDefaultObject) )
-	{
-		Unload();
-	}
-	Super::BeginDestroy();
+	AkIntegrationBehavior::Get()->AkAudioBank_Unload(this);
 }
 
-/**
- * Loads an AkBank.
- *
- * @return Returns true if the laod was successful, otherwise false
- */
-bool UAkAudioBank::Load()
+bool UAkAudioBank::SwitchLanguage(const FString& newAudioCulture, const SwitchLanguageCompletedFunction& Function)
+{
+	auto localizedAssetSoftPointer = LocalizedPlatformAssetDataMap.Find(newAudioCulture);
+	if (localizedAssetSoftPointer)
+	{
+		auto& assetRegistryModule = FModuleManager::LoadModuleChecked<FAssetRegistryModule>("AssetRegistry");
+		auto assetData = assetRegistryModule.Get().GetAssetByObjectPath(*localizedAssetSoftPointer->ToSoftObjectPath().ToString(), true);
+
+		if (!assetData.IsValid())
+		{
+			if (auto* audioDevice = FAkAudioDevice::Get())
+			{
+				FString pathWithDefaultLanguage = localizedAssetSoftPointer->ToSoftObjectPath().ToString().Replace(*newAudioCulture, *audioDevice->GetDefaultLanguage());
+				assetData = assetRegistryModule.Get().GetAssetByObjectPath(FName(*pathWithDefaultLanguage), true);
+			}
+		}
+
+		if (assetData.IsValid() && !assetData.PackagePath.IsNone())
+		{
+			unloadLocalizedData();
+
+			loadLocalizedData(newAudioCulture, Function);
+			return true;
+		}
+	}
+
+	return false;
+}
+
+bool UAkAudioBank::LegacyLoad()
 {
 	if (!IsRunningCommandlet())
 	{
-		FAkAudioDevice * AudioDevice = FAkAudioDevice::Get();
+		FAkAudioDevice* AudioDevice = FAkAudioDevice::Get();
 		if (AudioDevice)
 		{
 			AkBankID BankID;
-			AKRESULT eResult = AudioDevice->LoadBank(this, AK_DEFAULT_POOL_ID, BankID);
+			AKRESULT eResult = AudioDevice->LoadBank(this, BankID);
 			return (eResult == AK_Success) ? true : false;
 		}
 	}
@@ -63,11 +74,11 @@ bool UAkAudioBank::Load()
 	return false;
 }
 
-bool UAkAudioBank::Load(FWaitEndBankAction* LoadBankLatentAction)
+bool UAkAudioBank::LegacyLoad(FWaitEndBankAction* LoadBankLatentAction)
 {
 	if (!IsRunningCommandlet())
 	{
-		FAkAudioDevice * AudioDevice = FAkAudioDevice::Get();
+		FAkAudioDevice* AudioDevice = FAkAudioDevice::Get();
 		if (AudioDevice)
 		{
 			AKRESULT eResult = AudioDevice->LoadBank(this, LoadBankLatentAction);
@@ -78,22 +89,15 @@ bool UAkAudioBank::Load(FWaitEndBankAction* LoadBankLatentAction)
 	return false;
 }
 
-/**
- * Loads an AkBank asynchronously.
- *
- * @param in_pfnBankCallback		Function to call on completion
- * @param in_pCookie				Cookie to pass in callback
- * @return Returns true if the laod was successful, otherwise false
- */
-bool UAkAudioBank::LoadAsync(void* in_pfnBankCallback, void* in_pCookie)
+bool UAkAudioBank::LegacyLoadAsync(void* in_pfnBankCallback, void* in_pCookie)
 {
 	if (!IsRunningCommandlet())
 	{
-		FAkAudioDevice * AudioDevice = FAkAudioDevice::Get();
+		FAkAudioDevice* AudioDevice = FAkAudioDevice::Get();
 		if (AudioDevice)
 		{
 			AkBankID BankID;
-			AKRESULT eResult = AudioDevice->LoadBank(this, (AkBankCallbackFunc)in_pfnBankCallback, in_pCookie, AK_DEFAULT_POOL_ID, BankID);
+			AKRESULT eResult = AudioDevice->LoadBank(this, (AkBankCallbackFunc)in_pfnBankCallback, in_pCookie, BankID);
 			return (eResult == AK_Success) ? true : false;
 		}
 	}
@@ -101,15 +105,15 @@ bool UAkAudioBank::LoadAsync(void* in_pfnBankCallback, void* in_pCookie)
 	return false;
 }
 
-bool UAkAudioBank::LoadAsync(const FOnAkBankCallback& BankLoadedCallback)
+bool UAkAudioBank::LegacyLoadAsync(const FOnAkBankCallback& BankLoadedCallback)
 {
 	if (!IsRunningCommandlet())
 	{
-		FAkAudioDevice * AudioDevice = FAkAudioDevice::Get();
+		FAkAudioDevice* AudioDevice = FAkAudioDevice::Get();
 		if (AudioDevice)
 		{
 			AkBankID BankID;
-			AKRESULT eResult = AudioDevice->LoadBankAsync(this, BankLoadedCallback, AK_DEFAULT_POOL_ID, BankID);
+			AKRESULT eResult = AudioDevice->LoadBankAsync(this, BankLoadedCallback, BankID);
 			return (eResult == AK_Success) ? true : false;
 		}
 	}
@@ -117,14 +121,11 @@ bool UAkAudioBank::LoadAsync(const FOnAkBankCallback& BankLoadedCallback)
 	return false;
 }
 
-/**
- * Unloads an AkBank.
- */
-void UAkAudioBank::Unload()
+void UAkAudioBank::LegacyUnload()
 {
 	if (!IsRunningCommandlet())
 	{
-		FAkAudioDevice * AudioDevice = FAkAudioDevice::Get();
+		FAkAudioDevice* AudioDevice = FAkAudioDevice::Get();
 		if (AudioDevice)
 		{
 			AudioDevice->UnloadBank(this);
@@ -132,11 +133,11 @@ void UAkAudioBank::Unload()
 	}
 }
 
-void UAkAudioBank::Unload(FWaitEndBankAction* UnloadBankLatentAction)
+void UAkAudioBank::LegacyUnload(FWaitEndBankAction* UnloadBankLatentAction)
 {
 	if (!IsRunningCommandlet())
 	{
-		FAkAudioDevice * AudioDevice = FAkAudioDevice::Get();
+		FAkAudioDevice* AudioDevice = FAkAudioDevice::Get();
 		if (AudioDevice)
 		{
 			AudioDevice->UnloadBank(this, UnloadBankLatentAction);
@@ -144,18 +145,12 @@ void UAkAudioBank::Unload(FWaitEndBankAction* UnloadBankLatentAction)
 	}
 }
 
-/**
- * Unloads an AkBank asynchronously.
- *
- * @param in_pfnBankCallback		Function to call on completion
- * @param in_pCookie				Cookie to pass in callback
- */
-void UAkAudioBank::UnloadAsync(void* in_pfnBankCallback, void* in_pCookie)
+void UAkAudioBank::LegacyUnloadAsync(void* in_pfnBankCallback, void* in_pCookie)
 {
 	if (!IsRunningCommandlet())
 	{
 		AKRESULT eResult = AK_Fail;
-		FAkAudioDevice * AudioDevice = FAkAudioDevice::Get();
+		FAkAudioDevice* AudioDevice = FAkAudioDevice::Get();
 		if (AudioDevice)
 		{
 			eResult = AudioDevice->UnloadBank(this, (AkBankCallbackFunc)in_pfnBankCallback, in_pCookie);
@@ -167,12 +162,12 @@ void UAkAudioBank::UnloadAsync(void* in_pfnBankCallback, void* in_pCookie)
 	}
 }
 
-void UAkAudioBank::UnloadAsync(const FOnAkBankCallback& BankUnloadedCallback)
+void UAkAudioBank::LegacyUnloadAsync(const FOnAkBankCallback& BankUnloadedCallback)
 {
 	if (!IsRunningCommandlet())
 	{
 		AKRESULT eResult = AK_Fail;
-		FAkAudioDevice * AudioDevice = FAkAudioDevice::Get();
+		FAkAudioDevice* AudioDevice = FAkAudioDevice::Get();
 		if (AudioDevice)
 		{
 			eResult = AudioDevice->UnloadBankAsync(this, BankUnloadedCallback);
@@ -183,3 +178,169 @@ void UAkAudioBank::UnloadAsync(const FOnAkBankCallback& BankUnloadedCallback)
 		}
 	}
 }
+
+UAkAssetData* UAkAudioBank::createAssetData(UObject* parent) const
+{
+	return NewObject<UAkAssetDataWithMedia>(parent);
+}
+
+UAkAssetData* UAkAudioBank::getAssetData() const
+{
+#if WITH_EDITORONLY_DATA
+	if (IsLocalized() && CurrentLocalizedPlatformAssetData)
+	{
+		const FString runningPlatformName(FPlatformProperties::IniPlatformName());
+
+		if (auto assetData = CurrentLocalizedPlatformAssetData->AssetDataPerPlatform.Find(runningPlatformName))
+		{
+			return *assetData;
+		}
+	}
+
+	return Super::getAssetData();
+#else
+	if (IsLocalized() && CurrentLocalizedPlatformAssetData)
+	{
+		return CurrentLocalizedPlatformAssetData->CurrentAssetData;
+	}
+
+	return Super::getAssetData();
+#endif
+}
+
+void UAkAudioBank::loadLocalizedData(const FString& audioCulture, const SwitchLanguageCompletedFunction& Function)
+{
+	if (auto* audioDevice = FAkAudioDevice::Get())
+	{
+		TSoftObjectPtr<UAkAssetPlatformData>* eventDataSoftObjectPtr = LocalizedPlatformAssetDataMap.Find(audioCulture);
+		if (eventDataSoftObjectPtr)
+		{
+			auto& assetRegistryModule = FModuleManager::LoadModuleChecked<FAssetRegistryModule>("AssetRegistry");
+
+			FSoftObjectPath localizedDataPath = eventDataSoftObjectPtr->ToSoftObjectPath();
+
+			if (!assetRegistryModule.Get().GetAssetByObjectPath(*localizedDataPath.ToString(), true).IsValid())
+			{
+				FString pathWithDefaultLanguage = eventDataSoftObjectPtr->ToSoftObjectPath().ToString().Replace(*audioCulture, *audioDevice->GetDefaultLanguage());
+				auto assetData = assetRegistryModule.Get().GetAssetByObjectPath(FName(*pathWithDefaultLanguage), true);
+				if (assetRegistryModule.Get().GetAssetByObjectPath(FName(*pathWithDefaultLanguage), true).IsValid())
+				{
+					localizedDataPath = FSoftObjectPath(pathWithDefaultLanguage);
+				}
+			}
+
+			localizedStreamHandle = audioDevice->GetStreamableManager().RequestAsyncLoad(localizedDataPath, [this, Function] {
+				onLocalizedDataLoaded();
+
+				if (Function)
+				{
+					Function(localizedStreamHandle.IsValid());
+				}
+			});
+		}
+	}
+}
+
+void UAkAudioBank::onLocalizedDataLoaded()
+{
+	if (localizedStreamHandle.IsValid())
+	{
+		CurrentLocalizedPlatformAssetData = Cast<UAkAssetPlatformData>(localizedStreamHandle->GetLoadedAsset());
+
+		Super::Load();
+	}
+}
+
+void UAkAudioBank::unloadLocalizedData()
+{
+	if (localizedStreamHandle.IsValid())
+	{
+		Super::Unload();
+
+		CurrentLocalizedPlatformAssetData = nullptr;
+
+		localizedStreamHandle->ReleaseHandle();
+		localizedStreamHandle.Reset();
+	}
+}
+
+void UAkAudioBank::superLoad()
+{
+	Super::Load();
+}
+
+void UAkAudioBank::superUnload()
+{
+	Super::Unload();
+}
+
+#if WITH_EDITOR
+UAkAssetData* UAkAudioBank::FindOrAddAssetData(const FString& platform, const FString& language)
+{
+	check(IsInGameThread());
+
+	UAkAssetPlatformData* eventData = nullptr;
+	UObject* parent = this;
+
+	if (language.Len() > 0)
+	{
+		auto* languageIt = LocalizedPlatformAssetDataMap.Find(language);
+		if (languageIt)
+		{
+			eventData = languageIt->LoadSynchronous();
+
+			if (eventData)
+			{
+				parent = eventData;
+			}
+		}
+		else
+		{
+			auto& assetRegistryModule = FModuleManager::LoadModuleChecked<FAssetRegistryModule>("AssetRegistry");
+			auto& assetToolModule = FModuleManager::LoadModuleChecked<FAssetToolsModule>("AssetTools");
+
+			FSoftObjectPath objectPath(this);
+
+			auto basePackagePath = AkUnrealHelper::GetBaseAssetPackagePath();
+
+			auto packagePath = objectPath.GetLongPackageName();
+			packagePath.RemoveFromStart(basePackagePath);
+			packagePath.RemoveFromEnd(objectPath.GetAssetName());
+			packagePath = FPaths::Combine(AkUnrealHelper::GetLocalizedAssetPackagePath(), language, packagePath);
+
+			auto assetName = GetName();
+
+			auto foundAssetData = assetRegistryModule.Get().GetAssetByObjectPath(*FPaths::Combine(packagePath, FString::Printf(TEXT("%s.%s"), *assetName, *assetName)));
+			if (foundAssetData.IsValid())
+			{
+				eventData = Cast<UAkAssetPlatformData>(foundAssetData.GetAsset());
+			}
+			else
+			{
+				eventData = Cast<UAkAssetPlatformData>(assetToolModule.Get().CreateAsset(assetName, packagePath, UAkAssetPlatformData::StaticClass(), nullptr));
+			}
+
+			if (eventData)
+			{
+				parent = eventData;
+
+				LocalizedPlatformAssetDataMap.Add(language, eventData);
+			}
+		}
+
+		if (eventData)
+		{
+			return internalFindOrAddAssetData(eventData, platform, parent);
+		}
+	}
+
+	return Super::FindOrAddAssetData(platform, language);
+}
+
+void UAkAudioBank::Reset()
+{
+	LocalizedPlatformAssetDataMap.Empty();
+
+	Super::Reset();
+}
+#endif

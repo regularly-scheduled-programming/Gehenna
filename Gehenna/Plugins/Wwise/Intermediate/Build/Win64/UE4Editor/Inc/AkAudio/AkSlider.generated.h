@@ -1,4 +1,4 @@
-// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
+// Copyright Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -68,202 +68,35 @@ static inline void FAkOnFloatValueChangedEvent_DelegateWrapper(const FMulticastS
 }
 
 
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiUMG_Components_AkSlider_h_79_SPARSE_DATA
 #define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiUMG_Components_AkSlider_h_79_RPC_WRAPPERS \
  \
-	DECLARE_FUNCTION(execGetAkSliderItemProperty) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(FString*)Z_Param__Result=P_THIS->GetAkSliderItemProperty(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSetAkSliderItemProperty) \
-	{ \
-		P_GET_PROPERTY(UStrProperty,Z_Param_ItemProperty); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->SetAkSliderItemProperty(Z_Param_ItemProperty); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetAkSliderItemId) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(FGuid*)Z_Param__Result=P_THIS->GetAkSliderItemId(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSetAkSliderItemId) \
-	{ \
-		P_GET_STRUCT_REF(FGuid,Z_Param_Out_ItemId); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->SetAkSliderItemId(Z_Param_Out_ItemId); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSetSliderHandleColor) \
-	{ \
-		P_GET_STRUCT(FLinearColor,Z_Param_InValue); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->SetSliderHandleColor(Z_Param_InValue); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSetSliderBarColor) \
-	{ \
-		P_GET_STRUCT(FLinearColor,Z_Param_InValue); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->SetSliderBarColor(Z_Param_InValue); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSetStepSize) \
-	{ \
-		P_GET_PROPERTY(UFloatProperty,Z_Param_InValue); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->SetStepSize(Z_Param_InValue); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSetLocked) \
-	{ \
-		P_GET_UBOOL(Z_Param_InValue); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->SetLocked(Z_Param_InValue); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSetIndentHandle) \
-	{ \
-		P_GET_UBOOL(Z_Param_InValue); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->SetIndentHandle(Z_Param_InValue); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSetValue) \
-	{ \
-		P_GET_PROPERTY(UFloatProperty,Z_Param_InValue); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->SetValue(Z_Param_InValue); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetValue) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(float*)Z_Param__Result=P_THIS->GetValue(); \
-		P_NATIVE_END; \
-	}
+	DECLARE_FUNCTION(execGetAkSliderItemProperty); \
+	DECLARE_FUNCTION(execSetAkSliderItemProperty); \
+	DECLARE_FUNCTION(execGetAkSliderItemId); \
+	DECLARE_FUNCTION(execSetAkSliderItemId); \
+	DECLARE_FUNCTION(execSetSliderHandleColor); \
+	DECLARE_FUNCTION(execSetSliderBarColor); \
+	DECLARE_FUNCTION(execSetStepSize); \
+	DECLARE_FUNCTION(execSetLocked); \
+	DECLARE_FUNCTION(execSetIndentHandle); \
+	DECLARE_FUNCTION(execSetValue); \
+	DECLARE_FUNCTION(execGetValue);
 
 
 #define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiUMG_Components_AkSlider_h_79_RPC_WRAPPERS_NO_PURE_DECLS \
  \
-	DECLARE_FUNCTION(execGetAkSliderItemProperty) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(FString*)Z_Param__Result=P_THIS->GetAkSliderItemProperty(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSetAkSliderItemProperty) \
-	{ \
-		P_GET_PROPERTY(UStrProperty,Z_Param_ItemProperty); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->SetAkSliderItemProperty(Z_Param_ItemProperty); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetAkSliderItemId) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(FGuid*)Z_Param__Result=P_THIS->GetAkSliderItemId(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSetAkSliderItemId) \
-	{ \
-		P_GET_STRUCT_REF(FGuid,Z_Param_Out_ItemId); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->SetAkSliderItemId(Z_Param_Out_ItemId); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSetSliderHandleColor) \
-	{ \
-		P_GET_STRUCT(FLinearColor,Z_Param_InValue); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->SetSliderHandleColor(Z_Param_InValue); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSetSliderBarColor) \
-	{ \
-		P_GET_STRUCT(FLinearColor,Z_Param_InValue); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->SetSliderBarColor(Z_Param_InValue); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSetStepSize) \
-	{ \
-		P_GET_PROPERTY(UFloatProperty,Z_Param_InValue); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->SetStepSize(Z_Param_InValue); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSetLocked) \
-	{ \
-		P_GET_UBOOL(Z_Param_InValue); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->SetLocked(Z_Param_InValue); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSetIndentHandle) \
-	{ \
-		P_GET_UBOOL(Z_Param_InValue); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->SetIndentHandle(Z_Param_InValue); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSetValue) \
-	{ \
-		P_GET_PROPERTY(UFloatProperty,Z_Param_InValue); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->SetValue(Z_Param_InValue); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetValue) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(float*)Z_Param__Result=P_THIS->GetValue(); \
-		P_NATIVE_END; \
-	}
+	DECLARE_FUNCTION(execGetAkSliderItemProperty); \
+	DECLARE_FUNCTION(execSetAkSliderItemProperty); \
+	DECLARE_FUNCTION(execGetAkSliderItemId); \
+	DECLARE_FUNCTION(execSetAkSliderItemId); \
+	DECLARE_FUNCTION(execSetSliderHandleColor); \
+	DECLARE_FUNCTION(execSetSliderBarColor); \
+	DECLARE_FUNCTION(execSetStepSize); \
+	DECLARE_FUNCTION(execSetLocked); \
+	DECLARE_FUNCTION(execSetIndentHandle); \
+	DECLARE_FUNCTION(execSetValue); \
+	DECLARE_FUNCTION(execGetValue);
 
 
 #define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiUMG_Components_AkSlider_h_79_INCLASS_NO_PURE_DECLS \
@@ -320,6 +153,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UAkSlider); \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiUMG_Components_AkSlider_h_79_PRIVATE_PROPERTY_OFFSET \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiUMG_Components_AkSlider_h_79_SPARSE_DATA \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiUMG_Components_AkSlider_h_79_RPC_WRAPPERS \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiUMG_Components_AkSlider_h_79_INCLASS \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiUMG_Components_AkSlider_h_79_STANDARD_CONSTRUCTORS \
@@ -331,6 +165,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiUMG_Components_AkSlider_h_79_PRIVATE_PROPERTY_OFFSET \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiUMG_Components_AkSlider_h_79_SPARSE_DATA \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiUMG_Components_AkSlider_h_79_RPC_WRAPPERS_NO_PURE_DECLS \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiUMG_Components_AkSlider_h_79_INCLASS_NO_PURE_DECLS \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiUMG_Components_AkSlider_h_79_ENHANCED_CONSTRUCTORS \

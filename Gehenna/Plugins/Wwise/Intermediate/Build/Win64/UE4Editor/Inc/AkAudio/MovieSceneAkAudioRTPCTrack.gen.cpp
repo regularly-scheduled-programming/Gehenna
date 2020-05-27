@@ -1,4 +1,4 @@
-// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
+// Copyright Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -40,6 +40,7 @@ void EmptyLinkFunctionForGeneratedCodeMovieSceneAkAudioRTPCTrack() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UMovieSceneAkAudioRTPCTrack_Statics::Class_MetaDataParams[] = {
+		{ "Comment", "/**\n * Handles manipulation of float properties in a movie scene\n */" },
 		{ "IncludePath", "MovieSceneAkAudioRTPCTrack.h" },
 		{ "ModuleRelativePath", "Classes/MovieSceneAkAudioRTPCTrack.h" },
 		{ "ToolTip", "Handles manipulation of float properties in a movie scene" },
@@ -56,12 +57,12 @@ void EmptyLinkFunctionForGeneratedCodeMovieSceneAkAudioRTPCTrack() {}
 		nullptr,
 		nullptr,
 		nullptr,
-		ARRAY_COUNT(DependentSingletons),
+		UE_ARRAY_COUNT(DependentSingletons),
 		0,
 		0,
 		0,
 		0x00A800A0u,
-		METADATA_PARAMS(Z_Construct_UClass_UMovieSceneAkAudioRTPCTrack_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UMovieSceneAkAudioRTPCTrack_Statics::Class_MetaDataParams))
+		METADATA_PARAMS(Z_Construct_UClass_UMovieSceneAkAudioRTPCTrack_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UMovieSceneAkAudioRTPCTrack_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UMovieSceneAkAudioRTPCTrack()
 	{
@@ -72,7 +73,7 @@ void EmptyLinkFunctionForGeneratedCodeMovieSceneAkAudioRTPCTrack() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UMovieSceneAkAudioRTPCTrack, 3570991028);
+	IMPLEMENT_CLASS(UMovieSceneAkAudioRTPCTrack, 2308726207);
 	template<> AKAUDIO_API UClass* StaticClass<UMovieSceneAkAudioRTPCTrack>()
 	{
 		return UMovieSceneAkAudioRTPCTrack::StaticClass();

@@ -1,4 +1,4 @@
-// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
+// Copyright Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -55,6 +55,7 @@ void EmptyLinkFunctionForGeneratedCodeInterpTrackAkAudioRTPC() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UInterpTrackAkAudioRTPC_Statics::Class_MetaDataParams[] = {
+		{ "Comment", "/**\n *\n *\n *\x09""A track that plays ak events on the groups Actor.\n */" },
 		{ "HideCategories", "Object" },
 		{ "IncludePath", "InterpTrackAkAudioRTPC.h" },
 		{ "ModuleRelativePath", "Classes/InterpTrackAkAudioRTPC.h" },
@@ -64,6 +65,7 @@ void EmptyLinkFunctionForGeneratedCodeInterpTrackAkAudioRTPC() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UInterpTrackAkAudioRTPC_Statics::NewProp_bContinueRTPCOnMatineeEnd_MetaData[] = {
 		{ "Category", "InterpTrackAkAudioRTPC" },
+		{ "Comment", "/** If true, rtpc events on this track will not be forced to finish when the matinee sequence finishes. */" },
 		{ "ModuleRelativePath", "Classes/InterpTrackAkAudioRTPC.h" },
 		{ "ToolTip", "If true, rtpc events on this track will not be forced to finish when the matinee sequence finishes." },
 	};
@@ -72,10 +74,11 @@ void EmptyLinkFunctionForGeneratedCodeInterpTrackAkAudioRTPC() {}
 	{
 		((UInterpTrackAkAudioRTPC*)Obj)->bContinueRTPCOnMatineeEnd = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UInterpTrackAkAudioRTPC_Statics::NewProp_bContinueRTPCOnMatineeEnd = { "bContinueRTPCOnMatineeEnd", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Bool , RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(uint8), sizeof(UInterpTrackAkAudioRTPC), &Z_Construct_UClass_UInterpTrackAkAudioRTPC_Statics::NewProp_bContinueRTPCOnMatineeEnd_SetBit, METADATA_PARAMS(Z_Construct_UClass_UInterpTrackAkAudioRTPC_Statics::NewProp_bContinueRTPCOnMatineeEnd_MetaData, ARRAY_COUNT(Z_Construct_UClass_UInterpTrackAkAudioRTPC_Statics::NewProp_bContinueRTPCOnMatineeEnd_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UInterpTrackAkAudioRTPC_Statics::NewProp_bContinueRTPCOnMatineeEnd = { "bContinueRTPCOnMatineeEnd", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Bool , RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(uint8), sizeof(UInterpTrackAkAudioRTPC), &Z_Construct_UClass_UInterpTrackAkAudioRTPC_Statics::NewProp_bContinueRTPCOnMatineeEnd_SetBit, METADATA_PARAMS(Z_Construct_UClass_UInterpTrackAkAudioRTPC_Statics::NewProp_bContinueRTPCOnMatineeEnd_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UInterpTrackAkAudioRTPC_Statics::NewProp_bContinueRTPCOnMatineeEnd_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UInterpTrackAkAudioRTPC_Statics::NewProp_bPlayOnReverse_MetaData[] = {
 		{ "Category", "InterpTrackAkAudioRTPC" },
+		{ "Comment", "/** if set, rtpc event plays only when playing the matinee in reverse instead of when the matinee plays forward */" },
 		{ "ModuleRelativePath", "Classes/InterpTrackAkAudioRTPC.h" },
 		{ "ToolTip", "if set, rtpc event plays only when playing the matinee in reverse instead of when the matinee plays forward" },
 	};
@@ -84,15 +87,16 @@ void EmptyLinkFunctionForGeneratedCodeInterpTrackAkAudioRTPC() {}
 	{
 		((UInterpTrackAkAudioRTPC*)Obj)->bPlayOnReverse = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UInterpTrackAkAudioRTPC_Statics::NewProp_bPlayOnReverse = { "bPlayOnReverse", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Bool , RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(uint8), sizeof(UInterpTrackAkAudioRTPC), &Z_Construct_UClass_UInterpTrackAkAudioRTPC_Statics::NewProp_bPlayOnReverse_SetBit, METADATA_PARAMS(Z_Construct_UClass_UInterpTrackAkAudioRTPC_Statics::NewProp_bPlayOnReverse_MetaData, ARRAY_COUNT(Z_Construct_UClass_UInterpTrackAkAudioRTPC_Statics::NewProp_bPlayOnReverse_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UInterpTrackAkAudioRTPC_Statics::NewProp_bPlayOnReverse = { "bPlayOnReverse", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Bool , RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(uint8), sizeof(UInterpTrackAkAudioRTPC), &Z_Construct_UClass_UInterpTrackAkAudioRTPC_Statics::NewProp_bPlayOnReverse_SetBit, METADATA_PARAMS(Z_Construct_UClass_UInterpTrackAkAudioRTPC_Statics::NewProp_bPlayOnReverse_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UInterpTrackAkAudioRTPC_Statics::NewProp_bPlayOnReverse_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UInterpTrackAkAudioRTPC_Statics::NewProp_Param_MetaData[] = {
 		{ "Category", "InterpTrackAkAudioRTPC" },
+		{ "Comment", "/** Array of rtpc events to play at specific times. */" },
 		{ "ModuleRelativePath", "Classes/InterpTrackAkAudioRTPC.h" },
 		{ "ToolTip", "Array of rtpc events to play at specific times." },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_UInterpTrackAkAudioRTPC_Statics::NewProp_Param = { "Param", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UInterpTrackAkAudioRTPC, Param), METADATA_PARAMS(Z_Construct_UClass_UInterpTrackAkAudioRTPC_Statics::NewProp_Param_MetaData, ARRAY_COUNT(Z_Construct_UClass_UInterpTrackAkAudioRTPC_Statics::NewProp_Param_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_UInterpTrackAkAudioRTPC_Statics::NewProp_Param = { "Param", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UInterpTrackAkAudioRTPC, Param), METADATA_PARAMS(Z_Construct_UClass_UInterpTrackAkAudioRTPC_Statics::NewProp_Param_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UInterpTrackAkAudioRTPC_Statics::NewProp_Param_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UInterpTrackAkAudioRTPC_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UInterpTrackAkAudioRTPC_Statics::NewProp_bContinueRTPCOnMatineeEnd,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UInterpTrackAkAudioRTPC_Statics::NewProp_bPlayOnReverse,
@@ -109,12 +113,12 @@ void EmptyLinkFunctionForGeneratedCodeInterpTrackAkAudioRTPC() {}
 		nullptr,
 		Z_Construct_UClass_UInterpTrackAkAudioRTPC_Statics::PropPointers,
 		nullptr,
-		ARRAY_COUNT(DependentSingletons),
+		UE_ARRAY_COUNT(DependentSingletons),
 		0,
-		ARRAY_COUNT(Z_Construct_UClass_UInterpTrackAkAudioRTPC_Statics::PropPointers),
+		UE_ARRAY_COUNT(Z_Construct_UClass_UInterpTrackAkAudioRTPC_Statics::PropPointers),
 		0,
 		0x000820A0u,
-		METADATA_PARAMS(Z_Construct_UClass_UInterpTrackAkAudioRTPC_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UInterpTrackAkAudioRTPC_Statics::Class_MetaDataParams))
+		METADATA_PARAMS(Z_Construct_UClass_UInterpTrackAkAudioRTPC_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UInterpTrackAkAudioRTPC_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UInterpTrackAkAudioRTPC()
 	{
@@ -125,7 +129,7 @@ void EmptyLinkFunctionForGeneratedCodeInterpTrackAkAudioRTPC() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UInterpTrackAkAudioRTPC, 1283192396);
+	IMPLEMENT_CLASS(UInterpTrackAkAudioRTPC, 3360218842);
 	template<> AKAUDIO_API UClass* StaticClass<UInterpTrackAkAudioRTPC>()
 	{
 		return UInterpTrackAkAudioRTPC::StaticClass();

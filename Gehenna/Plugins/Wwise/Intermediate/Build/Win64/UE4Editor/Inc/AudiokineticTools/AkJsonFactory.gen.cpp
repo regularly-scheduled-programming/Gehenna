@@ -1,11 +1,11 @@
-// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
+// Copyright Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "AudiokineticTools/Classes/AkJsonFactory.h"
+#include "AudiokineticTools/Classes/Factories/AkJsonFactory.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -40,9 +40,10 @@ void EmptyLinkFunctionForGeneratedCodeAkJsonFactory() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UAkJsonFactory_Statics::Class_MetaDataParams[] = {
+		{ "Comment", "/*------------------------------------------------------------------------------------\n\x09UAkJsonFactory\n------------------------------------------------------------------------------------*/" },
 		{ "HideCategories", "Object" },
-		{ "IncludePath", "AkJsonFactory.h" },
-		{ "ModuleRelativePath", "Classes/AkJsonFactory.h" },
+		{ "IncludePath", "Factories/AkJsonFactory.h" },
+		{ "ModuleRelativePath", "Classes/Factories/AkJsonFactory.h" },
 		{ "ToolTip", "UAkJsonFactory" },
 	};
 #endif
@@ -57,12 +58,12 @@ void EmptyLinkFunctionForGeneratedCodeAkJsonFactory() {}
 		nullptr,
 		nullptr,
 		nullptr,
-		ARRAY_COUNT(DependentSingletons),
+		UE_ARRAY_COUNT(DependentSingletons),
 		0,
 		0,
 		0,
 		0x000000A0u,
-		METADATA_PARAMS(Z_Construct_UClass_UAkJsonFactory_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UAkJsonFactory_Statics::Class_MetaDataParams))
+		METADATA_PARAMS(Z_Construct_UClass_UAkJsonFactory_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UAkJsonFactory_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UAkJsonFactory()
 	{
@@ -73,7 +74,7 @@ void EmptyLinkFunctionForGeneratedCodeAkJsonFactory() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UAkJsonFactory, 3301319083);
+	IMPLEMENT_CLASS(UAkJsonFactory, 709452220);
 	template<> AUDIOKINETICTOOLS_API UClass* StaticClass<UAkJsonFactory>()
 	{
 		return UAkJsonFactory::StaticClass();

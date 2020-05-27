@@ -1,4 +1,4 @@
-// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
+// Copyright Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -13,6 +13,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define AKAUDIO_AkSpatialAudioVolume_generated_h
 
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkSpatialAudioVolume_h_20_SPARSE_DATA
 #define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkSpatialAudioVolume_h_20_RPC_WRAPPERS
 #define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkSpatialAudioVolume_h_20_RPC_WRAPPERS_NO_PURE_DECLS
 #define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkSpatialAudioVolume_h_20_INCLASS_NO_PURE_DECLS \
@@ -20,7 +21,7 @@ private: \
 	static void StaticRegisterNativesAAkSpatialAudioVolume(); \
 	friend struct Z_Construct_UClass_AAkSpatialAudioVolume_Statics; \
 public: \
-	DECLARE_CLASS(AAkSpatialAudioVolume, AVolume, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/AkAudio"), NO_API) \
+	DECLARE_CLASS(AAkSpatialAudioVolume, AVolume, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/AkAudio"), NO_API) \
 	DECLARE_SERIALIZER(AAkSpatialAudioVolume)
 
 
@@ -29,7 +30,7 @@ private: \
 	static void StaticRegisterNativesAAkSpatialAudioVolume(); \
 	friend struct Z_Construct_UClass_AAkSpatialAudioVolume_Statics; \
 public: \
-	DECLARE_CLASS(AAkSpatialAudioVolume, AVolume, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/AkAudio"), NO_API) \
+	DECLARE_CLASS(AAkSpatialAudioVolume, AVolume, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/AkAudio"), NO_API) \
 	DECLARE_SERIALIZER(AAkSpatialAudioVolume)
 
 
@@ -65,6 +66,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AAkSpatialAudioVolume); \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkSpatialAudioVolume_h_20_PRIVATE_PROPERTY_OFFSET \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkSpatialAudioVolume_h_20_SPARSE_DATA \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkSpatialAudioVolume_h_20_RPC_WRAPPERS \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkSpatialAudioVolume_h_20_INCLASS \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkSpatialAudioVolume_h_20_STANDARD_CONSTRUCTORS \
@@ -76,6 +78,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkSpatialAudioVolume_h_20_PRIVATE_PROPERTY_OFFSET \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkSpatialAudioVolume_h_20_SPARSE_DATA \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkSpatialAudioVolume_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkSpatialAudioVolume_h_20_INCLASS_NO_PURE_DECLS \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkSpatialAudioVolume_h_20_ENHANCED_CONSTRUCTORS \

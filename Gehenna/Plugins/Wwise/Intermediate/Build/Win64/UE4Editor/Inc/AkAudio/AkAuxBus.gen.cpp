@@ -1,4 +1,4 @@
-// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
+// Copyright Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -15,7 +15,7 @@ void EmptyLinkFunctionForGeneratedCodeAkAuxBus() {}
 // Cross Module References
 	AKAUDIO_API UClass* Z_Construct_UClass_UAkAuxBus_NoRegister();
 	AKAUDIO_API UClass* Z_Construct_UClass_UAkAuxBus();
-	COREUOBJECT_API UClass* Z_Construct_UClass_UObject();
+	AKAUDIO_API UClass* Z_Construct_UClass_UAkAssetBase();
 	UPackage* Z_Construct_UPackage__Script_AkAudio();
 	AKAUDIO_API UClass* Z_Construct_UClass_UAkAudioBank_NoRegister();
 // End Cross Module References
@@ -41,7 +41,7 @@ void EmptyLinkFunctionForGeneratedCodeAkAuxBus() {}
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
 	UObject* (*const Z_Construct_UClass_UAkAuxBus_Statics::DependentSingletons[])() = {
-		(UObject* (*)())Z_Construct_UClass_UObject,
+		(UObject* (*)())Z_Construct_UClass_UAkAssetBase,
 		(UObject* (*)())Z_Construct_UPackage__Script_AkAudio,
 	};
 #if WITH_METADATA
@@ -50,16 +50,15 @@ void EmptyLinkFunctionForGeneratedCodeAkAuxBus() {}
 		{ "HideCategories", "Advanced Attachment Volume" },
 		{ "IncludePath", "AkAuxBus.h" },
 		{ "ModuleRelativePath", "Classes/AkAuxBus.h" },
-		{ "ToolTip", "AAkAuxBus" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UAkAuxBus_Statics::NewProp_RequiredBank_MetaData[] = {
-		{ "Category", "Bank" },
+		{ "Category", "AkAuxBus" },
 		{ "ModuleRelativePath", "Classes/AkAuxBus.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UAkAuxBus_Statics::NewProp_RequiredBank = { "RequiredBank", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UAkAuxBus, RequiredBank), Z_Construct_UClass_UAkAudioBank_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UAkAuxBus_Statics::NewProp_RequiredBank_MetaData, ARRAY_COUNT(Z_Construct_UClass_UAkAuxBus_Statics::NewProp_RequiredBank_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UAkAuxBus_Statics::NewProp_RequiredBank = { "RequiredBank", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UAkAuxBus, RequiredBank), Z_Construct_UClass_UAkAudioBank_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UAkAuxBus_Statics::NewProp_RequiredBank_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UAkAuxBus_Statics::NewProp_RequiredBank_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UAkAuxBus_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UAkAuxBus_Statics::NewProp_RequiredBank,
 	};
@@ -74,12 +73,12 @@ void EmptyLinkFunctionForGeneratedCodeAkAuxBus() {}
 		nullptr,
 		Z_Construct_UClass_UAkAuxBus_Statics::PropPointers,
 		nullptr,
-		ARRAY_COUNT(DependentSingletons),
+		UE_ARRAY_COUNT(DependentSingletons),
 		0,
-		ARRAY_COUNT(Z_Construct_UClass_UAkAuxBus_Statics::PropPointers),
+		UE_ARRAY_COUNT(Z_Construct_UClass_UAkAuxBus_Statics::PropPointers),
 		0,
 		0x001000A0u,
-		METADATA_PARAMS(Z_Construct_UClass_UAkAuxBus_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UAkAuxBus_Statics::Class_MetaDataParams))
+		METADATA_PARAMS(Z_Construct_UClass_UAkAuxBus_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UAkAuxBus_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UAkAuxBus()
 	{
@@ -90,7 +89,7 @@ void EmptyLinkFunctionForGeneratedCodeAkAuxBus() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UAkAuxBus, 455988355);
+	IMPLEMENT_CLASS(UAkAuxBus, 3326003010);
 	template<> AKAUDIO_API UClass* StaticClass<UAkAuxBus>()
 	{
 		return UAkAuxBus::StaticClass();

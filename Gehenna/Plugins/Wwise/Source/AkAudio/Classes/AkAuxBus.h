@@ -1,31 +1,20 @@
-// Copyright (c) 2006-2012 Audiokinetic Inc. / All Rights Reserved
-
-/*=============================================================================
-	AkAuxBus.h:
-=============================================================================*/
+// Copyright (c) 2006-2019 Audiokinetic Inc. / All Rights Reserved
 #pragma once
 
-#include "Engine/GameEngine.h"
+#include "AkAssetBase.h"
 #include "AkAuxBus.generated.h"
 
-/*------------------------------------------------------------------------------------
-	AAkAuxBus
-------------------------------------------------------------------------------------*/
+class UAkAudioBank;
+
 UCLASS(hidecategories=(Advanced, Attachment, Volume), BlueprintType)
-class AKAUDIO_API UAkAuxBus : public UObject
+class AKAUDIO_API UAkAuxBus : public UAkAssetBase
 {
-	GENERATED_UCLASS_BODY()
+	GENERATED_BODY()
 
 public:
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Bank")
-	class UAkAudioBank * RequiredBank;
+	UPROPERTY(EditAnywhere, Category = "AkAuxBus")
+	UAkAudioBank* RequiredBank = nullptr;
 
-	/** Get the AkAuxBusId associated to AuxBusName */
-	uint32 GetAuxBusId() const 
-	{ 
-		return AuxBusId;
-	}
-
-private:
-	uint32	AuxBusId;
+protected:
+	UAkAssetData* createAssetData(UObject* parent) const override;
 };

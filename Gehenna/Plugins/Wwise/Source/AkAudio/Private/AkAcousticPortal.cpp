@@ -30,7 +30,7 @@ AAkAcousticPortal::AAkAcousticPortal(const class FObjectInitializer& ObjectIniti
 	bColored = true;
 	BrushColor = FColor(255, 196, 137, 255);
 
-	ObstructionRefreshInterval = 0.33f;
+	ObstructionRefreshInterval = 0.f;
 
 	InitialState = AkAcousticPortalState::Open;
 	CurrentState = (int)InitialState;

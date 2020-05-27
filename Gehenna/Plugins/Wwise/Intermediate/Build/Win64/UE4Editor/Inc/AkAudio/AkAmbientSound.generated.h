@@ -1,4 +1,4 @@
-// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
+// Copyright Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -20,42 +20,17 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 template<> AKAUDIO_API UScriptStruct* StaticStruct<struct FAkAmbSoundCheckpointRecord>();
 
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAmbientSound_h_37_SPARSE_DATA
 #define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAmbientSound_h_37_RPC_WRAPPERS \
  \
-	DECLARE_FUNCTION(execStopAmbientSound) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->StopAmbientSound(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execStartAmbientSound) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->StartAmbientSound(); \
-		P_NATIVE_END; \
-	}
+	DECLARE_FUNCTION(execStopAmbientSound); \
+	DECLARE_FUNCTION(execStartAmbientSound);
 
 
 #define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAmbientSound_h_37_RPC_WRAPPERS_NO_PURE_DECLS \
  \
-	DECLARE_FUNCTION(execStopAmbientSound) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->StopAmbientSound(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execStartAmbientSound) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->StartAmbientSound(); \
-		P_NATIVE_END; \
-	}
+	DECLARE_FUNCTION(execStopAmbientSound); \
+	DECLARE_FUNCTION(execStartAmbientSound);
 
 
 #define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAmbientSound_h_37_INCLASS_NO_PURE_DECLS \
@@ -63,7 +38,7 @@ private: \
 	static void StaticRegisterNativesAAkAmbientSound(); \
 	friend struct Z_Construct_UClass_AAkAmbientSound_Statics; \
 public: \
-	DECLARE_CLASS(AAkAmbientSound, AActor, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/AkAudio"), NO_API) \
+	DECLARE_CLASS(AAkAmbientSound, AActor, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/AkAudio"), NO_API) \
 	DECLARE_SERIALIZER(AAkAmbientSound)
 
 
@@ -72,7 +47,7 @@ private: \
 	static void StaticRegisterNativesAAkAmbientSound(); \
 	friend struct Z_Construct_UClass_AAkAmbientSound_Statics; \
 public: \
-	DECLARE_CLASS(AAkAmbientSound, AActor, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/AkAudio"), NO_API) \
+	DECLARE_CLASS(AAkAmbientSound, AActor, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/AkAudio"), NO_API) \
 	DECLARE_SERIALIZER(AAkAmbientSound)
 
 
@@ -108,6 +83,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AAkAmbientSound); \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAmbientSound_h_37_PRIVATE_PROPERTY_OFFSET \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAmbientSound_h_37_SPARSE_DATA \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAmbientSound_h_37_RPC_WRAPPERS \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAmbientSound_h_37_INCLASS \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAmbientSound_h_37_STANDARD_CONSTRUCTORS \
@@ -119,6 +95,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAmbientSound_h_37_PRIVATE_PROPERTY_OFFSET \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAmbientSound_h_37_SPARSE_DATA \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAmbientSound_h_37_RPC_WRAPPERS_NO_PURE_DECLS \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAmbientSound_h_37_INCLASS_NO_PURE_DECLS \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAmbientSound_h_37_ENHANCED_CONSTRUCTORS \

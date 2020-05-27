@@ -3,17 +3,12 @@
 #pragma once
 
 #include "AkInclude.h"
-#include "AkAudioEvent.h"
+#include "AkRtpc.h"
 #include "Curves/RichCurve.h"
 #include "MovieSceneSection.h"
 #include "MovieSceneFloatChannelSerializationHelper.h"
 
-#if UE_4_20_OR_LATER
 #include "Channels/MovieSceneFloatChannel.h"
-#else
-#include "IKeyframeSection.h"
-#endif
-
 #include "MovieSceneAkAudioRTPCSection.generated.h"
 
 /**
@@ -22,51 +17,21 @@
 UCLASS()
 class AKAUDIO_API UMovieSceneAkAudioRTPCSection
 	: public UMovieSceneSection
-#if !UE_4_20_OR_LATER
-	, public IKeyframeSection<float>
-#endif
 {
 	GENERATED_BODY()
 	UMovieSceneAkAudioRTPCSection(const FObjectInitializer& Init);
-#if UE_4_20_OR_LATER
 	virtual void PostLoad() override;
-#endif
 	virtual void Serialize(FArchive& Ar) override;
 
 public:
-#if UE_4_20_OR_LATER
 	FMovieSceneFloatChannel GetChannel() const {	return RTPCChannel;	}
 	float GetStartTime() const;
 	float GetEndTime() const;
-#else
-	/**
-	* @return The float curve on this section
-	*/
-	FRichCurve& GetFloatCurve() { return FloatCurve; }
-	const FRichCurve& GetFloatCurve() const { return FloatCurve; }
-
-	//~ IKeyframeSection interface
-
-	void AddKey(float Time, const float& Value, EMovieSceneKeyInterpolation KeyInterpolation) override;
-	bool NewKeyIsNewData(float Time, const float& Value) const override;
-	bool HasKeys(const float& Value) const override;
-	void SetDefault(const float& Value) override;
-	virtual void ClearDefaults() override;
-
-
-	//~ UMovieSceneSection interface
-
-	virtual void MoveSection(float DeltaPosition, TSet<FKeyHandle>& KeyHandles) override;
-	virtual void DilateSection(float DilationFactor, float Origin, TSet<FKeyHandle>& KeyHandles) override;
-	virtual void GetKeyHandles(TSet<FKeyHandle>& OutKeyHandles, TRange<float> TimeRange) const override;
-	virtual TOptional<float> GetKeyTime(FKeyHandle KeyHandle) const override;
-	virtual void SetKeyTime(FKeyHandle KeyHandle, float Time) override;
-#endif
 
 	virtual FMovieSceneEvalTemplatePtr GenerateTemplate() const override;
 
 	/** @return the name of the RTPC being modified by this track */
-	const FString& GetRTPCName() const { return Name; }
+	FString GetRTPCName() const { return RTPC ? RTPC->GetName() : Name; }
 
 	/**
 	* Sets the name of the RTPC being modified by this track
@@ -74,29 +39,37 @@ public:
 	* @param InRTPCName The RTPC being modified
 	*/
 	void SetRTPCName(const FString& InRTPCName) { Name = InRTPCName; }
-
+	void SetRTPC(UAkRtpc* InRTPC) { RTPC = InRTPC; }
 
 #if WITH_EDITOR
+#if UE_4_25_OR_LATER
+	virtual void PreEditChange(FProperty* PropertyAboutToChange) override;
+#else
 	virtual void PreEditChange(UProperty* PropertyAboutToChange) override;
+#endif
 	virtual void PostEditChangeProperty(FPropertyChangedEvent& PropertyChangedEvent) override;
 #endif
 
 protected:
+	UPROPERTY(EditAnywhere, Category = "AkAudioRTPC", meta = (NoResetToDefault))
+	UAkRtpc* RTPC = nullptr;
 
 	/** Name of the RTPC to modify. */
-	UPROPERTY(EditAnywhere, Category = "AkAudioRTPC", meta = (NoResetToDefault))
+	UPROPERTY(EditAnywhere, AdvancedDisplay, Category = "AkAudioRTPC", meta = (NoResetToDefault))
 	FString Name;
 
 	/** Curve data */
 	UPROPERTY()
 	FRichCurve FloatCurve;
 
+	// Enabled serialization of RTPCChannel when 4.24 support was added. We will be able to get rid of 
+	// FloatChannelSerializationHelper when we remove 4.21 support. Tagging UE_4_21_OR_LATER so we catch
+	// this when removing 4.21 support
 	UPROPERTY()
 	FMovieSceneFloatChannelSerializationHelper FloatChannelSerializationHelper;
 
-#if UE_4_20_OR_LATER
+	UPROPERTY()
 	FMovieSceneFloatChannel RTPCChannel;
-#endif
 
 private:
 #if WITH_EDITOR

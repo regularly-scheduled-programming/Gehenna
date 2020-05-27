@@ -1,4 +1,4 @@
-// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
+// Copyright Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -13,26 +13,15 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define AKAUDIO_AkAudioInputComponent_generated_h
 
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioInputComponent_h_20_SPARSE_DATA
 #define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioInputComponent_h_20_RPC_WRAPPERS \
  \
-	DECLARE_FUNCTION(execPostAssociatedAudioInputEvent) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(int32*)Z_Param__Result=P_THIS->PostAssociatedAudioInputEvent(); \
-		P_NATIVE_END; \
-	}
+	DECLARE_FUNCTION(execPostAssociatedAudioInputEvent);
 
 
 #define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioInputComponent_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
  \
-	DECLARE_FUNCTION(execPostAssociatedAudioInputEvent) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(int32*)Z_Param__Result=P_THIS->PostAssociatedAudioInputEvent(); \
-		P_NATIVE_END; \
-	}
+	DECLARE_FUNCTION(execPostAssociatedAudioInputEvent);
 
 
 #define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioInputComponent_h_20_INCLASS_NO_PURE_DECLS \
@@ -85,6 +74,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UAkAudioInputComponent); \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioInputComponent_h_20_PRIVATE_PROPERTY_OFFSET \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioInputComponent_h_20_SPARSE_DATA \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioInputComponent_h_20_RPC_WRAPPERS \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioInputComponent_h_20_INCLASS \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioInputComponent_h_20_STANDARD_CONSTRUCTORS \
@@ -96,6 +86,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioInputComponent_h_20_PRIVATE_PROPERTY_OFFSET \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioInputComponent_h_20_SPARSE_DATA \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioInputComponent_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioInputComponent_h_20_INCLASS_NO_PURE_DECLS \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioInputComponent_h_20_ENHANCED_CONSTRUCTORS \

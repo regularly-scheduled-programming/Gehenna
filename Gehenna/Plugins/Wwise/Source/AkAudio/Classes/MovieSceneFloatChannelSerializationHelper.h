@@ -4,9 +4,7 @@
 
 #include "AkInclude.h"
 #include "MovieSceneSection.h"
-#if UE_4_20_OR_LATER
 #include "Channels/MovieSceneFloatChannel.h"
-#endif
 #include "MovieSceneFloatChannelSerializationHelper.generated.h"
 
 USTRUCT()
@@ -16,7 +14,6 @@ struct FMovieSceneTangentDataSerializationHelper
 
 	FMovieSceneTangentDataSerializationHelper() {}
 
-#if UE_4_20_OR_LATER
 	FMovieSceneTangentDataSerializationHelper(const FMovieSceneTangentData TangentData)
 		: ArriveTangent(TangentData.ArriveTangent)
 		, LeaveTangent(TangentData.LeaveTangent)
@@ -25,7 +22,6 @@ struct FMovieSceneTangentDataSerializationHelper
 		, LeaveTangentWeight(TangentData.LeaveTangentWeight)
 	{
 	}
-#endif
 
 	UPROPERTY()
 	float ArriveTangent = 0.f;
@@ -50,7 +46,6 @@ struct FMovieSceneFloatValueSerializationHelper
 
 	FMovieSceneFloatValueSerializationHelper() {}
 
-#if UE_4_20_OR_LATER
 	FMovieSceneFloatValueSerializationHelper(FMovieSceneFloatValue FloatValue)
 		: Value(FloatValue.Value)
 		, InterpMode(FloatValue.InterpMode)
@@ -71,7 +66,6 @@ struct FMovieSceneFloatValueSerializationHelper
 		ValueToReturn.Tangent.TangentWeightMode = Tangent.TangentWeightMode;
 		return ValueToReturn;
 	}
-#endif
 
 	UPROPERTY()
 	float Value = 0.f;
@@ -92,7 +86,6 @@ struct FMovieSceneFloatChannelSerializationHelper
 	GENERATED_BODY()
 
 	FMovieSceneFloatChannelSerializationHelper() {}
-#if UE_4_20_OR_LATER
 	const FMovieSceneFloatChannelSerializationHelper& operator= (const FMovieSceneFloatChannel& FloatChannel)
 	{
 		Times.Reset();
@@ -138,7 +131,6 @@ struct FMovieSceneFloatChannelSerializationHelper
 			FloatChannel.SetDefault(DefaultValue);
 		}
 	}
-#endif
 
 	UPROPERTY()
 	TEnumAsByte<ERichCurveExtrapolation> PreInfinityExtrap = ERichCurveExtrapolation();

@@ -1,4 +1,4 @@
-// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
+// Copyright Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -51,6 +51,7 @@ void EmptyLinkFunctionForGeneratedCodeAkWwiseTreeSelector() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UAkWwiseTreeSelector_Statics::Class_MetaDataParams[] = {
+		{ "Comment", "/**\n* A widget that shows the Wwise tree items.\n*/" },
 		{ "IncludePath", "AkWaapiUMG/Components/AkWwiseTreeSelector.h" },
 		{ "ModuleRelativePath", "Classes/AkWaapiUMG/Components/AkWwiseTreeSelector.h" },
 		{ "ToolTip", "A widget that shows the Wwise tree items." },
@@ -59,19 +60,21 @@ void EmptyLinkFunctionForGeneratedCodeAkWwiseTreeSelector() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UAkWwiseTreeSelector_Statics::NewProp_OnItemDragged_MetaData[] = {
 		{ "Category", "Widget Event" },
+		{ "Comment", "/** Called when an item is dragged from the wwise tree. */" },
 		{ "ModuleRelativePath", "Classes/AkWaapiUMG/Components/AkWwiseTreeSelector.h" },
 		{ "ToolTip", "Called when an item is dragged from the wwise tree." },
 	};
 #endif
-	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UAkWwiseTreeSelector_Statics::NewProp_OnItemDragged = { "OnItemDragged", nullptr, (EPropertyFlags)0x0010000010080000, UE4CodeGen_Private::EPropertyGenFlags::MulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UAkWwiseTreeSelector, OnItemDragged), Z_Construct_UDelegateFunction_AkAudio_OnItemDragDetected__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UAkWwiseTreeSelector_Statics::NewProp_OnItemDragged_MetaData, ARRAY_COUNT(Z_Construct_UClass_UAkWwiseTreeSelector_Statics::NewProp_OnItemDragged_MetaData)) };
+	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UAkWwiseTreeSelector_Statics::NewProp_OnItemDragged = { "OnItemDragged", nullptr, (EPropertyFlags)0x0010000010080000, UE4CodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UAkWwiseTreeSelector, OnItemDragged), Z_Construct_UDelegateFunction_AkAudio_OnItemDragDetected__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UAkWwiseTreeSelector_Statics::NewProp_OnItemDragged_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UAkWwiseTreeSelector_Statics::NewProp_OnItemDragged_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UAkWwiseTreeSelector_Statics::NewProp_OnSelectionChanged_MetaData[] = {
 		{ "Category", "Widget Event" },
+		{ "Comment", "/** Called when the item selection changes. */" },
 		{ "ModuleRelativePath", "Classes/AkWaapiUMG/Components/AkWwiseTreeSelector.h" },
 		{ "ToolTip", "Called when the item selection changes." },
 	};
 #endif
-	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UAkWwiseTreeSelector_Statics::NewProp_OnSelectionChanged = { "OnSelectionChanged", nullptr, (EPropertyFlags)0x0010000010080000, UE4CodeGen_Private::EPropertyGenFlags::MulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UAkWwiseTreeSelector, OnSelectionChanged), Z_Construct_UDelegateFunction_AkAudio_OnItemSelectionChanged__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UAkWwiseTreeSelector_Statics::NewProp_OnSelectionChanged_MetaData, ARRAY_COUNT(Z_Construct_UClass_UAkWwiseTreeSelector_Statics::NewProp_OnSelectionChanged_MetaData)) };
+	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UAkWwiseTreeSelector_Statics::NewProp_OnSelectionChanged = { "OnSelectionChanged", nullptr, (EPropertyFlags)0x0010000010080000, UE4CodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UAkWwiseTreeSelector, OnSelectionChanged), Z_Construct_UDelegateFunction_AkAudio_OnItemSelectionChanged__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UAkWwiseTreeSelector_Statics::NewProp_OnSelectionChanged_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UAkWwiseTreeSelector_Statics::NewProp_OnSelectionChanged_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UAkWwiseTreeSelector_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UAkWwiseTreeSelector_Statics::NewProp_OnItemDragged,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UAkWwiseTreeSelector_Statics::NewProp_OnSelectionChanged,
@@ -87,12 +90,12 @@ void EmptyLinkFunctionForGeneratedCodeAkWwiseTreeSelector() {}
 		nullptr,
 		Z_Construct_UClass_UAkWwiseTreeSelector_Statics::PropPointers,
 		nullptr,
-		ARRAY_COUNT(DependentSingletons),
+		UE_ARRAY_COUNT(DependentSingletons),
 		0,
-		ARRAY_COUNT(Z_Construct_UClass_UAkWwiseTreeSelector_Statics::PropPointers),
+		UE_ARRAY_COUNT(Z_Construct_UClass_UAkWwiseTreeSelector_Statics::PropPointers),
 		0,
 		0x00B000A2u,
-		METADATA_PARAMS(Z_Construct_UClass_UAkWwiseTreeSelector_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UAkWwiseTreeSelector_Statics::Class_MetaDataParams))
+		METADATA_PARAMS(Z_Construct_UClass_UAkWwiseTreeSelector_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UAkWwiseTreeSelector_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UAkWwiseTreeSelector()
 	{
@@ -103,7 +106,7 @@ void EmptyLinkFunctionForGeneratedCodeAkWwiseTreeSelector() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UAkWwiseTreeSelector, 4137145521);
+	IMPLEMENT_CLASS(UAkWwiseTreeSelector, 1825229924);
 	template<> AKAUDIO_API UClass* StaticClass<UAkWwiseTreeSelector>()
 	{
 		return UAkWwiseTreeSelector::StaticClass();

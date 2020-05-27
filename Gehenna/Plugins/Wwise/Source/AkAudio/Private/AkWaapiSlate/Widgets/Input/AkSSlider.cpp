@@ -220,8 +220,11 @@ void AkSSlider::SetAkSliderItemId(const FString& ItemId)
 		{
 			// Recover the information from the Json object getResult and use it to get the item name.
 			TArray<TSharedPtr<FJsonValue>> StructJsonArray = getResult->GetArrayField(WwiseWaapiHelper::RETURN);
-			const TSharedPtr<FJsonObject>& ItemInfoObj = StructJsonArray[0]->AsObject();
-			ItemControlled = ItemInfoObj->GetStringField(WwiseWaapiHelper::NAME);
+			if (StructJsonArray.Num() > 0)
+			{
+				const TSharedPtr<FJsonObject>& ItemInfoObj = StructJsonArray[0]->AsObject();
+				ItemControlled = ItemInfoObj->GetStringField(WwiseWaapiHelper::NAME);
+			}
 		}
 		UpdateRange();
 	}

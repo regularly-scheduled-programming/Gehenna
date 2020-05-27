@@ -1,4 +1,4 @@
-// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
+// Copyright Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -22,298 +22,41 @@ struct FAkWaapiFieldNames;
 
 template<> AKAUDIO_API UScriptStruct* StaticStruct<struct FAKWaapiJsonObject>();
 
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiBlueprints_AkWaapiJsonManager_h_32_SPARSE_DATA
 #define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiBlueprints_AkWaapiJsonManager_h_32_RPC_WRAPPERS \
  \
-	DECLARE_FUNCTION(execConv_FAKWaapiJsonObjectToText) \
-	{ \
-		P_GET_STRUCT(FAKWaapiJsonObject,Z_Param_INAKWaapiJsonObject); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(FText*)Z_Param__Result=UAkWaapiJsonManager::Conv_FAKWaapiJsonObjectToText(Z_Param_INAKWaapiJsonObject); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execConv_FAKWaapiJsonObjectToString) \
-	{ \
-		P_GET_STRUCT(FAKWaapiJsonObject,Z_Param_INAKWaapiJsonObject); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(FString*)Z_Param__Result=UAkWaapiJsonManager::Conv_FAKWaapiJsonObjectToString(Z_Param_INAKWaapiJsonObject); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetArrayField) \
-	{ \
-		P_GET_STRUCT_REF(FAkWaapiFieldNames,Z_Param_Out_FieldName); \
-		P_GET_STRUCT(FAKWaapiJsonObject,Z_Param_target); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(TArray<FAKWaapiJsonObject>*)Z_Param__Result=UAkWaapiJsonManager::GetArrayField(Z_Param_Out_FieldName,Z_Param_target); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetObjectField) \
-	{ \
-		P_GET_STRUCT_REF(FAkWaapiFieldNames,Z_Param_Out_FieldName); \
-		P_GET_STRUCT(FAKWaapiJsonObject,Z_Param_target); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(FAKWaapiJsonObject*)Z_Param__Result=UAkWaapiJsonManager::GetObjectField(Z_Param_Out_FieldName,Z_Param_target); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetIntegerField) \
-	{ \
-		P_GET_STRUCT_REF(FAkWaapiFieldNames,Z_Param_Out_FieldName); \
-		P_GET_STRUCT(FAKWaapiJsonObject,Z_Param_target); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(int32*)Z_Param__Result=UAkWaapiJsonManager::GetIntegerField(Z_Param_Out_FieldName,Z_Param_target); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetNumberField) \
-	{ \
-		P_GET_STRUCT_REF(FAkWaapiFieldNames,Z_Param_Out_FieldName); \
-		P_GET_STRUCT(FAKWaapiJsonObject,Z_Param_target); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(float*)Z_Param__Result=UAkWaapiJsonManager::GetNumberField(Z_Param_Out_FieldName,Z_Param_target); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetBoolField) \
-	{ \
-		P_GET_STRUCT_REF(FAkWaapiFieldNames,Z_Param_Out_FieldName); \
-		P_GET_STRUCT(FAKWaapiJsonObject,Z_Param_target); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=UAkWaapiJsonManager::GetBoolField(Z_Param_Out_FieldName,Z_Param_target); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetStringField) \
-	{ \
-		P_GET_STRUCT_REF(FAkWaapiFieldNames,Z_Param_Out_FieldName); \
-		P_GET_STRUCT(FAKWaapiJsonObject,Z_Param_target); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(FString*)Z_Param__Result=UAkWaapiJsonManager::GetStringField(Z_Param_Out_FieldName,Z_Param_target); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSetArrayObjectFields) \
-	{ \
-		P_GET_STRUCT_REF(FAkWaapiFieldNames,Z_Param_Out_FieldName); \
-		P_GET_TARRAY_REF(FAKWaapiJsonObject,Z_Param_Out_FieldObjectValues); \
-		P_GET_STRUCT(FAKWaapiJsonObject,Z_Param_target); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(FAKWaapiJsonObject*)Z_Param__Result=UAkWaapiJsonManager::SetArrayObjectFields(Z_Param_Out_FieldName,Z_Param_Out_FieldObjectValues,Z_Param_target); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSetArrayStringFields) \
-	{ \
-		P_GET_STRUCT_REF(FAkWaapiFieldNames,Z_Param_Out_FieldName); \
-		P_GET_TARRAY_REF(FString,Z_Param_Out_FieldStringValues); \
-		P_GET_STRUCT(FAKWaapiJsonObject,Z_Param_target); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(FAKWaapiJsonObject*)Z_Param__Result=UAkWaapiJsonManager::SetArrayStringFields(Z_Param_Out_FieldName,Z_Param_Out_FieldStringValues,Z_Param_target); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSetObjectField) \
-	{ \
-		P_GET_STRUCT_REF(FAkWaapiFieldNames,Z_Param_Out_FieldName); \
-		P_GET_STRUCT(FAKWaapiJsonObject,Z_Param_FieldValue); \
-		P_GET_STRUCT(FAKWaapiJsonObject,Z_Param_target); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(FAKWaapiJsonObject*)Z_Param__Result=UAkWaapiJsonManager::SetObjectField(Z_Param_Out_FieldName,Z_Param_FieldValue,Z_Param_target); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSetNumberField) \
-	{ \
-		P_GET_STRUCT_REF(FAkWaapiFieldNames,Z_Param_Out_FieldName); \
-		P_GET_PROPERTY(UFloatProperty,Z_Param_FieldValue); \
-		P_GET_STRUCT(FAKWaapiJsonObject,Z_Param_target); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(FAKWaapiJsonObject*)Z_Param__Result=UAkWaapiJsonManager::SetNumberField(Z_Param_Out_FieldName,Z_Param_FieldValue,Z_Param_target); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSetBoolField) \
-	{ \
-		P_GET_STRUCT_REF(FAkWaapiFieldNames,Z_Param_Out_FieldName); \
-		P_GET_UBOOL(Z_Param_FieldValue); \
-		P_GET_STRUCT(FAKWaapiJsonObject,Z_Param_target); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(FAKWaapiJsonObject*)Z_Param__Result=UAkWaapiJsonManager::SetBoolField(Z_Param_Out_FieldName,Z_Param_FieldValue,Z_Param_target); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSetStringField) \
-	{ \
-		P_GET_STRUCT_REF(FAkWaapiFieldNames,Z_Param_Out_FieldName); \
-		P_GET_PROPERTY(UStrProperty,Z_Param_FieldValue); \
-		P_GET_STRUCT(FAKWaapiJsonObject,Z_Param_target); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(FAKWaapiJsonObject*)Z_Param__Result=UAkWaapiJsonManager::SetStringField(Z_Param_Out_FieldName,Z_Param_FieldValue,Z_Param_target); \
-		P_NATIVE_END; \
-	}
+	DECLARE_FUNCTION(execConv_FAKWaapiJsonObjectToText); \
+	DECLARE_FUNCTION(execConv_FAKWaapiJsonObjectToString); \
+	DECLARE_FUNCTION(execGetArrayField); \
+	DECLARE_FUNCTION(execGetObjectField); \
+	DECLARE_FUNCTION(execGetIntegerField); \
+	DECLARE_FUNCTION(execGetNumberField); \
+	DECLARE_FUNCTION(execGetBoolField); \
+	DECLARE_FUNCTION(execGetStringField); \
+	DECLARE_FUNCTION(execSetArrayObjectFields); \
+	DECLARE_FUNCTION(execSetArrayStringFields); \
+	DECLARE_FUNCTION(execSetObjectField); \
+	DECLARE_FUNCTION(execSetNumberField); \
+	DECLARE_FUNCTION(execSetBoolField); \
+	DECLARE_FUNCTION(execSetStringField);
 
 
 #define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiBlueprints_AkWaapiJsonManager_h_32_RPC_WRAPPERS_NO_PURE_DECLS \
  \
-	DECLARE_FUNCTION(execConv_FAKWaapiJsonObjectToText) \
-	{ \
-		P_GET_STRUCT(FAKWaapiJsonObject,Z_Param_INAKWaapiJsonObject); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(FText*)Z_Param__Result=UAkWaapiJsonManager::Conv_FAKWaapiJsonObjectToText(Z_Param_INAKWaapiJsonObject); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execConv_FAKWaapiJsonObjectToString) \
-	{ \
-		P_GET_STRUCT(FAKWaapiJsonObject,Z_Param_INAKWaapiJsonObject); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(FString*)Z_Param__Result=UAkWaapiJsonManager::Conv_FAKWaapiJsonObjectToString(Z_Param_INAKWaapiJsonObject); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetArrayField) \
-	{ \
-		P_GET_STRUCT_REF(FAkWaapiFieldNames,Z_Param_Out_FieldName); \
-		P_GET_STRUCT(FAKWaapiJsonObject,Z_Param_target); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(TArray<FAKWaapiJsonObject>*)Z_Param__Result=UAkWaapiJsonManager::GetArrayField(Z_Param_Out_FieldName,Z_Param_target); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetObjectField) \
-	{ \
-		P_GET_STRUCT_REF(FAkWaapiFieldNames,Z_Param_Out_FieldName); \
-		P_GET_STRUCT(FAKWaapiJsonObject,Z_Param_target); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(FAKWaapiJsonObject*)Z_Param__Result=UAkWaapiJsonManager::GetObjectField(Z_Param_Out_FieldName,Z_Param_target); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetIntegerField) \
-	{ \
-		P_GET_STRUCT_REF(FAkWaapiFieldNames,Z_Param_Out_FieldName); \
-		P_GET_STRUCT(FAKWaapiJsonObject,Z_Param_target); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(int32*)Z_Param__Result=UAkWaapiJsonManager::GetIntegerField(Z_Param_Out_FieldName,Z_Param_target); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetNumberField) \
-	{ \
-		P_GET_STRUCT_REF(FAkWaapiFieldNames,Z_Param_Out_FieldName); \
-		P_GET_STRUCT(FAKWaapiJsonObject,Z_Param_target); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(float*)Z_Param__Result=UAkWaapiJsonManager::GetNumberField(Z_Param_Out_FieldName,Z_Param_target); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetBoolField) \
-	{ \
-		P_GET_STRUCT_REF(FAkWaapiFieldNames,Z_Param_Out_FieldName); \
-		P_GET_STRUCT(FAKWaapiJsonObject,Z_Param_target); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=UAkWaapiJsonManager::GetBoolField(Z_Param_Out_FieldName,Z_Param_target); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetStringField) \
-	{ \
-		P_GET_STRUCT_REF(FAkWaapiFieldNames,Z_Param_Out_FieldName); \
-		P_GET_STRUCT(FAKWaapiJsonObject,Z_Param_target); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(FString*)Z_Param__Result=UAkWaapiJsonManager::GetStringField(Z_Param_Out_FieldName,Z_Param_target); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSetArrayObjectFields) \
-	{ \
-		P_GET_STRUCT_REF(FAkWaapiFieldNames,Z_Param_Out_FieldName); \
-		P_GET_TARRAY_REF(FAKWaapiJsonObject,Z_Param_Out_FieldObjectValues); \
-		P_GET_STRUCT(FAKWaapiJsonObject,Z_Param_target); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(FAKWaapiJsonObject*)Z_Param__Result=UAkWaapiJsonManager::SetArrayObjectFields(Z_Param_Out_FieldName,Z_Param_Out_FieldObjectValues,Z_Param_target); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSetArrayStringFields) \
-	{ \
-		P_GET_STRUCT_REF(FAkWaapiFieldNames,Z_Param_Out_FieldName); \
-		P_GET_TARRAY_REF(FString,Z_Param_Out_FieldStringValues); \
-		P_GET_STRUCT(FAKWaapiJsonObject,Z_Param_target); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(FAKWaapiJsonObject*)Z_Param__Result=UAkWaapiJsonManager::SetArrayStringFields(Z_Param_Out_FieldName,Z_Param_Out_FieldStringValues,Z_Param_target); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSetObjectField) \
-	{ \
-		P_GET_STRUCT_REF(FAkWaapiFieldNames,Z_Param_Out_FieldName); \
-		P_GET_STRUCT(FAKWaapiJsonObject,Z_Param_FieldValue); \
-		P_GET_STRUCT(FAKWaapiJsonObject,Z_Param_target); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(FAKWaapiJsonObject*)Z_Param__Result=UAkWaapiJsonManager::SetObjectField(Z_Param_Out_FieldName,Z_Param_FieldValue,Z_Param_target); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSetNumberField) \
-	{ \
-		P_GET_STRUCT_REF(FAkWaapiFieldNames,Z_Param_Out_FieldName); \
-		P_GET_PROPERTY(UFloatProperty,Z_Param_FieldValue); \
-		P_GET_STRUCT(FAKWaapiJsonObject,Z_Param_target); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(FAKWaapiJsonObject*)Z_Param__Result=UAkWaapiJsonManager::SetNumberField(Z_Param_Out_FieldName,Z_Param_FieldValue,Z_Param_target); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSetBoolField) \
-	{ \
-		P_GET_STRUCT_REF(FAkWaapiFieldNames,Z_Param_Out_FieldName); \
-		P_GET_UBOOL(Z_Param_FieldValue); \
-		P_GET_STRUCT(FAKWaapiJsonObject,Z_Param_target); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(FAKWaapiJsonObject*)Z_Param__Result=UAkWaapiJsonManager::SetBoolField(Z_Param_Out_FieldName,Z_Param_FieldValue,Z_Param_target); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSetStringField) \
-	{ \
-		P_GET_STRUCT_REF(FAkWaapiFieldNames,Z_Param_Out_FieldName); \
-		P_GET_PROPERTY(UStrProperty,Z_Param_FieldValue); \
-		P_GET_STRUCT(FAKWaapiJsonObject,Z_Param_target); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(FAKWaapiJsonObject*)Z_Param__Result=UAkWaapiJsonManager::SetStringField(Z_Param_Out_FieldName,Z_Param_FieldValue,Z_Param_target); \
-		P_NATIVE_END; \
-	}
+	DECLARE_FUNCTION(execConv_FAKWaapiJsonObjectToText); \
+	DECLARE_FUNCTION(execConv_FAKWaapiJsonObjectToString); \
+	DECLARE_FUNCTION(execGetArrayField); \
+	DECLARE_FUNCTION(execGetObjectField); \
+	DECLARE_FUNCTION(execGetIntegerField); \
+	DECLARE_FUNCTION(execGetNumberField); \
+	DECLARE_FUNCTION(execGetBoolField); \
+	DECLARE_FUNCTION(execGetStringField); \
+	DECLARE_FUNCTION(execSetArrayObjectFields); \
+	DECLARE_FUNCTION(execSetArrayStringFields); \
+	DECLARE_FUNCTION(execSetObjectField); \
+	DECLARE_FUNCTION(execSetNumberField); \
+	DECLARE_FUNCTION(execSetBoolField); \
+	DECLARE_FUNCTION(execSetStringField);
 
 
 #define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiBlueprints_AkWaapiJsonManager_h_32_INCLASS_NO_PURE_DECLS \
@@ -366,6 +109,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UAkWaapiJsonManager); \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiBlueprints_AkWaapiJsonManager_h_32_PRIVATE_PROPERTY_OFFSET \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiBlueprints_AkWaapiJsonManager_h_32_SPARSE_DATA \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiBlueprints_AkWaapiJsonManager_h_32_RPC_WRAPPERS \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiBlueprints_AkWaapiJsonManager_h_32_INCLASS \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiBlueprints_AkWaapiJsonManager_h_32_STANDARD_CONSTRUCTORS \
@@ -377,6 +121,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiBlueprints_AkWaapiJsonManager_h_32_PRIVATE_PROPERTY_OFFSET \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiBlueprints_AkWaapiJsonManager_h_32_SPARSE_DATA \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiBlueprints_AkWaapiJsonManager_h_32_RPC_WRAPPERS_NO_PURE_DECLS \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiBlueprints_AkWaapiJsonManager_h_32_INCLASS_NO_PURE_DECLS \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiBlueprints_AkWaapiJsonManager_h_32_ENHANCED_CONSTRUCTORS \

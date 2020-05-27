@@ -1,4 +1,4 @@
-// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
+// Copyright Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -15,7 +15,7 @@ void EmptyLinkFunctionForGeneratedCodeAkAcousticTexture() {}
 // Cross Module References
 	AKAUDIO_API UClass* Z_Construct_UClass_UAkAcousticTexture_NoRegister();
 	AKAUDIO_API UClass* Z_Construct_UClass_UAkAcousticTexture();
-	ENGINE_API UClass* Z_Construct_UClass_UPhysicalMaterial();
+	AKAUDIO_API UClass* Z_Construct_UClass_UAkAudioType();
 	UPackage* Z_Construct_UPackage__Script_AkAudio();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FLinearColor();
 // End Cross Module References
@@ -43,16 +43,14 @@ void EmptyLinkFunctionForGeneratedCodeAkAcousticTexture() {}
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
 	UObject* (*const Z_Construct_UClass_UAkAcousticTexture_Statics::DependentSingletons[])() = {
-		(UObject* (*)())Z_Construct_UClass_UPhysicalMaterial,
+		(UObject* (*)())Z_Construct_UClass_UAkAudioType,
 		(UObject* (*)())Z_Construct_UPackage__Script_AkAudio,
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UAkAcousticTexture_Statics::Class_MetaDataParams[] = {
-		{ "BlueprintSpawnableComponent", "" },
-		{ "HideCategories", "Object" },
+		{ "BlueprintType", "true" },
 		{ "IncludePath", "AkAcousticTexture.h" },
 		{ "ModuleRelativePath", "Classes/AkAcousticTexture.h" },
-		{ "ToolTip", "UAkAudioEvent" },
 	};
 #endif
 #if WITH_EDITORONLY_DATA
@@ -62,7 +60,7 @@ void EmptyLinkFunctionForGeneratedCodeAkAcousticTexture() {}
 		{ "ModuleRelativePath", "Classes/AkAcousticTexture.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UAkAcousticTexture_Statics::NewProp_EditColor = { "EditColor", nullptr, (EPropertyFlags)0x0010000800000001, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UAkAcousticTexture, EditColor), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(Z_Construct_UClass_UAkAcousticTexture_Statics::NewProp_EditColor_MetaData, ARRAY_COUNT(Z_Construct_UClass_UAkAcousticTexture_Statics::NewProp_EditColor_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UAkAcousticTexture_Statics::NewProp_EditColor = { "EditColor", nullptr, (EPropertyFlags)0x0010000800000001, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UAkAcousticTexture, EditColor), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(Z_Construct_UClass_UAkAcousticTexture_Statics::NewProp_EditColor_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UAkAcousticTexture_Statics::NewProp_EditColor_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UAkAcousticTexture_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UAkAcousticTexture_Statics::NewProp_EditColor,
 	};
@@ -78,12 +76,12 @@ void EmptyLinkFunctionForGeneratedCodeAkAcousticTexture() {}
 		nullptr,
 		IF_WITH_EDITORONLY_DATA(Z_Construct_UClass_UAkAcousticTexture_Statics::PropPointers, nullptr),
 		nullptr,
-		ARRAY_COUNT(DependentSingletons),
+		UE_ARRAY_COUNT(DependentSingletons),
 		0,
-		IF_WITH_EDITORONLY_DATA(ARRAY_COUNT(Z_Construct_UClass_UAkAcousticTexture_Statics::PropPointers), 0),
+		IF_WITH_EDITORONLY_DATA(UE_ARRAY_COUNT(Z_Construct_UClass_UAkAcousticTexture_Statics::PropPointers), 0),
 		0,
-		0x001020A0u,
-		METADATA_PARAMS(Z_Construct_UClass_UAkAcousticTexture_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UAkAcousticTexture_Statics::Class_MetaDataParams))
+		0x001000A0u,
+		METADATA_PARAMS(Z_Construct_UClass_UAkAcousticTexture_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UAkAcousticTexture_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UAkAcousticTexture()
 	{
@@ -94,7 +92,7 @@ void EmptyLinkFunctionForGeneratedCodeAkAcousticTexture() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UAkAcousticTexture, 1429459189);
+	IMPLEMENT_CLASS(UAkAcousticTexture, 152559416);
 	template<> AKAUDIO_API UClass* StaticClass<UAkAcousticTexture>()
 	{
 		return UAkAcousticTexture::StaticClass();

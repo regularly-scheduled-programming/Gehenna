@@ -44,7 +44,7 @@ uint32 UAkLateReverbComponent::GetAuxBusId() const
 {
 	if (AuxBus)
 	{
-		return AuxBus->GetAuxBusId();
+		return AuxBus->ShortID;
 	}
 	else
 	{

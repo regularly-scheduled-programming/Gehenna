@@ -18,6 +18,8 @@ struct FAkCustomVersion
 
 		AddedSpatialAudio = 1,
 		NewRTPCTrackDataContainer = 2,
+		
+		NewAssetManagement = 3,
 
 		// -----<new versions can be added above this line>-------------------------------------------------
 		VersionPlusOne,

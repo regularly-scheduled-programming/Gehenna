@@ -206,8 +206,11 @@ void UAkCheckBox::SetAkItemId(const FGuid& ItemId)
 			return;
 		}
 		TArray<TSharedPtr<FJsonValue>> StructJsonArray = getResult->GetArrayField(WwiseWaapiHelper::RETURN);
-		const TSharedPtr<FJsonObject>& ItemInfoObj = StructJsonArray[0]->AsObject();
-		SetAkItemControlled(ItemInfoObj->GetStringField(WwiseWaapiHelper::NAME));
+		if (StructJsonArray.Num() > 0)
+		{
+			const TSharedPtr<FJsonObject>& ItemInfoObj = StructJsonArray[0]->AsObject();
+			SetAkItemControlled(ItemInfoObj->GetStringField(WwiseWaapiHelper::NAME));
+		}
 
 		/** UnSubscribe to object renamed to be notified from Wwise using WAAPI, so we can maintain the name of the item controlled up to date dynamically. */
 		// Connect to Wwise Authoring on localhost.

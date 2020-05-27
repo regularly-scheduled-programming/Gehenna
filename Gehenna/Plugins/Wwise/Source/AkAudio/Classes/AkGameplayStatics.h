@@ -133,15 +133,13 @@ class AKAUDIO_API UAkGameplayStatics : public UBlueprintFunctionLibrary
 
 	/** Spawn an AkComponent at a location. Allows, for example, to set a switch on a fire and forget sound.
 	 * @param AkEvent - Wwise Event to post.
-	 * @param EarlyReflectionsBus - Use the provided auxiliary bus to process early reflections.  If NULL, EarlyReflectionsBusName will be used.
 	 * @param Location - Location from which to post the Wwise Event.
 	 * @param Orientation - Orientation of the event.
 	 * @param AutoPost - Automatically post the event once the AkComponent is created.
-	 * @param EarlyReflectionsBusName - Use the provided auxiliary bus to process early reflections.  If empty, no early reflections will be processed.
 	 * @param AutoDestroy - Automatically destroy the AkComponent once the event is finished.
 	 */
 	UFUNCTION(BlueprintCallable, BlueprintCosmetic, Category="Audiokinetic", meta=(WorldContext="WorldContextObject", AdvancedDisplay = "6"))
-	static class UAkComponent* SpawnAkComponentAtLocation(UObject* WorldContextObject, class UAkAudioEvent* AkEvent, class UAkAuxBus* EarlyReflectionsBus, FVector Location, FRotator Orientation, bool AutoPost, const FString& EventName, const FString& EarlyReflectionsBusName = FString(""), bool AutoDestroy = true);
+	static class UAkComponent* SpawnAkComponentAtLocation(UObject* WorldContextObject, class UAkAudioEvent* AkEvent, FVector Location, FRotator Orientation, bool AutoPost, const FString& EventName, bool AutoDestroy = true);
 
 	/**
 	* Sets the value of a Game Parameter, optionally targetting the root component of a specified actor.
@@ -150,8 +148,8 @@ class AKAUDIO_API UAkGameplayStatics : public UBlueprintFunctionLibrary
 	* @param InterpolationTimeMs - Duration during which the Game Parameter is interpolated towards Value (in ms)
 	* @param Actor - (Optional) Actor on which to set the Game Parameter value
 	*/
-	UFUNCTION(BlueprintCallable, BlueprintCosmetic, Category = "Audiokinetic")
-	static void SetRTPCValue(FName RTPC, float Value, int32 InterpolationTimeMs, class AActor* Actor);
+	UFUNCTION(BlueprintCallable, BlueprintCosmetic, Category = "Audiokinetic", meta = (AdvancedDisplay = "4"))
+	static void SetRTPCValue(class UAkRtpc const* RTPCValue, float Value, int32 InterpolationTimeMs, class AActor* Actor, FName RTPC);
 
 	/**
 	* Gets the value of a Game Parameter, optionally targetting the root component of a specified actor.
@@ -160,24 +158,24 @@ class AKAUDIO_API UAkGameplayStatics : public UBlueprintFunctionLibrary
 	* @param InterpolationTimeMs - Duration during which the Game Parameter is interpolated towards Value (in ms)
 	* @param Actor - (Optional) Actor on which to set the Game Parameter value
 	*/
-	UFUNCTION(BlueprintCallable, BlueprintCosmetic, Category = "Audiokinetic")
-	static void GetRTPCValue(FName RTPC, int32 PlayingID, ERTPCValueType InputValueType, float& Value, ERTPCValueType& OutputValueType, class AActor* Actor = nullptr);
+	UFUNCTION(BlueprintCallable, BlueprintCosmetic, Category = "Audiokinetic", meta = (AdvancedDisplay = "7"))
+	static void GetRTPCValue(class UAkRtpc const* RTPCValue, int32 PlayingID, ERTPCValueType InputValueType, float& Value, ERTPCValueType& OutputValueType, class AActor* Actor, FName RTPC);
 
 	/**
 	 * Set the active State for a given State Group.
 	 * @param StateGroup - Name of the State Group to be modified
 	 * @param State - Name of the State to be made active
 	 */
-	UFUNCTION(BlueprintCallable, BlueprintCosmetic, Category="Audiokinetic")
-	static void SetState( FName StateGroup, FName State );
-	
+	UFUNCTION(BlueprintCallable, BlueprintCosmetic, Category="Audiokinetic", meta = (AdvancedDisplay = "1"))
+	static void SetState(class UAkStateValue const* StateValue, FName StateGroup, FName State);
+
 	/**
 	 * Posts a Trigger, targetting the root component of a specified actor.
 	 * @param Trigger - Name of the Trigger
 	 * @param Actor - Actor on which to post the Trigger
 	 */
-	UFUNCTION(BlueprintCallable, BlueprintCosmetic, Category="Audiokinetic|Actor")
-	static void PostTrigger( FName Trigger, class AActor* Actor );
+	UFUNCTION(BlueprintCallable, BlueprintCosmetic, Category="Audiokinetic|Actor", meta = (AdvancedDisplay = "2"))
+	static void PostTrigger(class UAkTrigger const* TriggerValue, class AActor* Actor, FName Trigger);
 	
 	/**
 	 * Sets the active Switch for a given Switch Group, targetting the root component of a specified actor.
@@ -185,8 +183,8 @@ class AKAUDIO_API UAkGameplayStatics : public UBlueprintFunctionLibrary
 	 * @param SwitchState - Name of the Switch to be made active
 	 * @param Actor - Actor on which to set the switch
 	 */
-	UFUNCTION(BlueprintCallable, BlueprintCosmetic, Category="Audiokinetic|Actor")
-	static void SetSwitch( FName SwitchGroup, FName SwitchState, class AActor* Actor );
+	UFUNCTION(BlueprintCallable, BlueprintCosmetic, Category="Audiokinetic|Actor", meta = (AdvancedDisplay = "2"))
+	static void SetSwitch(class UAkSwitchValue const* SwitchValue, class AActor* Actor, FName SwitchGroup, FName SwitchState);
 
     /** Sets multiple positions to a single game object.
     *  Setting multiple positions on a single game object is a way to simulate multiple emission sources while using the resources of only one voice.
@@ -245,25 +243,23 @@ class AKAUDIO_API UAkGameplayStatics : public UBlueprintFunctionLibrary
 	UFUNCTION(BlueprintCallable, BlueprintCosmetic, Category="Audiokinetic|Actor")
 	static void UseReverbVolumes(bool inUseReverbVolumes, class AActor* Actor);
 
+	UFUNCTION(BlueprintCallable, Category = "Audiokinetic|Actor", meta = (AdvancedDisplay = "6", DeprecatedFunction, DeprecationMessage = "This function is deprecated and will be removed in future releases."))
+		static void UseEarlyReflections(class AActor* Actor,
+			class UAkAuxBus* AuxBus,
+			int Order = 1,
+			float BusSendGain = 1.f,
+			float MaxPathLength = 100000.f,
+			bool SpotReflectors = false,
+			const FString& AuxBusName = FString(""));
+
 	/**
-	* Sets UseEarlyReflections flag on a specified actor. Set value to true to use calculate and render early reflections on this component.
+	* Sets the Reflections Order for Spatial Audio Reflect.
 	*
-	* @param Actor - Actor on which to set the flag
-	* @param AuxBus Aux bus that contains the AkReflect plugin
-	* @param Order Max Order of reflections.
-	* @param BusSendGain Send gain for the aux bus.
-	* @param MaxPathLength Sound will reflect up to this max distance between emitter and reflective surface.
-	* @param EnableSpotReflectors Enable reflections off spot reflectors.
-	* @param AuxBusName	Aux bus name that contains the AkReflect plugin
+	* @param Order - The order of Reflection. Can be 0 to 4.
+	* @param RefreshPaths - whether the paths should be refreshed immediately.
 	*/
-	UFUNCTION(BlueprintCallable, Category = "Audiokinetic|Actor", meta = (AdvancedDisplay = "6"))
-	static void UseEarlyReflections(class AActor* Actor, 
-		class UAkAuxBus* AuxBus,
-		int Order = 1,
-		float BusSendGain = 1.f,
-		float MaxPathLength = 100000.f,
-		bool SpotReflectors = false,
-		const FString& AuxBusName = FString(""));
+	UFUNCTION(BlueprintCallable, Category = "Audiokinetic|Actor")
+	static void SetReflectionsOrder(int Order, bool RefreshPaths);
 
 	/**
 	* Set the output bus volume (direct) to be used for the specified game object.
@@ -304,21 +300,10 @@ class AKAUDIO_API UAkGameplayStatics : public UBlueprintFunctionLibrary
 	 * The speaker angles are expressed as an array of loudspeaker pairs, in degrees, relative to azimuth ]0,180].
 	 * Supported loudspeaker setups are always symmetric; the center speaker is always in the middle and thus not specified by angles.
 	 * Angles must be set in ascending order.
-	 * Typical usage:
-	 * - float heightAngle;
-	 * - TArray<float> speakerAngles;
-	 * - GetSpeakerAngles(speakerAngles, heightAngle, AkOutput_Main );
-	 * \aknote
-	 *  On most platforms, the angle set on the plane consists of 3 angles, to account for 7.1.
-	 * - When panning to stereo (speaker mode, see <tt>AK::SoundEngine::SetPanningRule()</tt>), only angle[0] is used, and 3D sounds in the back of the listener are mirrored to the front.
-	 * - When panning to 5.1, the front speakers use angle[0], and the surround speakers use (angle[2] - angle[1]) / 2.
-	 * \endaknote
-	 * \warning Call this function only after the sound engine has been properly initialized.
 	 *
-	 * @param SpeakerAngles Returned array of loudspeaker pair angles, in degrees relative to azimuth [0,180]. Pass NULL to get the required size of the array.
+	 * @param SpeakerAngles Returned array of loudspeaker pair angles, in degrees relative to azimuth [0,180].
 	 * @param HeightAngle Elevation of the height layer, in degrees relative to the plane [-90,90].
-	 * @param DeviceShareset Shareset for which to get the angles. You can pass "" for the main (default) output
-	 * @return AK_Success if device exists
+	 * @param DeviceShareset Shareset for which to get the angles.
 	 *
 	 */
 	UFUNCTION(BlueprintCallable, Category = "Audiokinetic")
@@ -330,19 +315,10 @@ class AKAUDIO_API UAkGameplayStatics : public UBlueprintFunctionLibrary
 	 * The speaker angles are expressed as an array of loudspeaker pairs, in degrees, relative to azimuth ]0,180].
 	 * Supported loudspeaker setups are always symmetric; the center speaker is always in the middle and thus not specified by angles.
 	 * Angles must be set in ascending order.
-	 * Typical usage:
-	 * - Initialize the sound engine and/or add secondary output(s).
-	 * - Get number of speaker angles and their value into an array using GetSpeakerAngles().
-	 * - Modify the angles and call SetSpeakerAngles().
-	 * This function posts a message to the audio thread through the command queue, so it is thread safe. However the result may not be immediately read with GetSpeakerAngles().
-	 * \warning This function only applies to configurations (or subset of these configurations) that are standard and whose speakers are on the plane (2D).
-	 * \sa GetSpeakerAngles()
 	 *
 	 * @param SpeakerAngles Array of loudspeaker pair angles, in degrees relative to azimuth [0,180]
 	 * @param HeightAngle Elevation of the height layer, in degrees relative to the plane [-90,90]
-	 * @param DeviceShareset Shareset for which to set the angles on. You can pass "" for the main (default) output
-	 * @return AK_Success if successful (device exists and angles are valid), AK_NotCompatible if the channel configuration of the device is not standard (AK_ChannelConfigType_Standard), AK_Fail otherwise.
-	 *
+	 * @param DeviceShareset Shareset for which to set the angles on.
 	 */
 	UFUNCTION(BlueprintCallable, Category = "Audiokinetic")
 	static void SetSpeakerAngles(const TArray<float>& SpeakerAngles, float HeightAngle, const FString& DeviceShareset = "");
@@ -384,22 +360,21 @@ class AKAUDIO_API UAkGameplayStatics : public UBlueprintFunctionLibrary
 	 */
 	UFUNCTION(BlueprintCallable, BlueprintCosmetic, Category="Audiokinetic|AkAmbientSound", meta=(WorldContext = "WorldContextObject"))
 	static void StopAllAmbientSounds(UObject* WorldContextObject);
-
 	
 	/**
-	 * Clear all loaded banks 
+	 * Clear all loaded banks
 	 */
-	UFUNCTION(BlueprintCallable, BlueprintCosmetic, Category="Audiokinetic|SoundBanks")
+	UFUNCTION(BlueprintCallable, BlueprintCosmetic, Category = "Audiokinetic|SoundBanks")
 	static void ClearBanks();
 
-	/* 
+	/*
 	 * Loads a bank.
 	 * @param Bank - The bank to load.
-	 * 
+	 *
 	 */
 	UFUNCTION(BlueprintCallable, Category = "Audiokinetic|SoundBanks", meta = (WorldContext = "WorldContextObject", Latent, LatentInfo = "LatentInfo", AdvancedDisplay = "1"))
 	static void LoadBank(class UAkAudioBank* Bank, const FString& BankName, FLatentActionInfo LatentInfo, UObject* WorldContextObject);
-	
+
 	/*
 	* Loads a bank asynchronously from Blueprint.
 	* @param Bank - The bank to load.
@@ -408,35 +383,32 @@ class AKAUDIO_API UAkGameplayStatics : public UBlueprintFunctionLibrary
 	UFUNCTION(BlueprintCallable, Category = "Audiokinetic|SoundBanks")
 	static void LoadBankAsync(class UAkAudioBank* Bank, const FOnAkBankCallback& BankLoadedCallback);
 
-	/* 
+	/*
 	 * Loads a bank by its name.
 	 * @param Bank - The bank to load.
-	 * 
 	 */
-	UFUNCTION(BlueprintCallable, BlueprintCosmetic, Category="Audiokinetic|SoundBanks", meta=(DeprecatedFunction, DeprecationMessage = "Please use the \"Bank Name\" field of Load Bank"))
+	UFUNCTION(BlueprintCallable, BlueprintCosmetic, Category = "Audiokinetic|SoundBanks", meta = (DeprecatedFunction, DeprecationMessage = "Please use the \"Bank Name\" field of Load Bank"))
 	static void LoadBankByName(const FString& BankName);
 
-	/* 
+	/*
 	 * Loads an array of bank.
 	 * @param Banks - An array of banks to load
 	 * @param CleanUpBanks - If true, will unload any loaded banks that are not in Banks
-	 * 
 	 */
-	UFUNCTION(BlueprintCallable, BlueprintCosmetic, Category="Audiokinetic|SoundBanks")
+	UFUNCTION(BlueprintCallable, BlueprintCosmetic, Category = "Audiokinetic|SoundBanks")
 	static void LoadBanks(const TArray<UAkAudioBank*>& SoundBanks, bool SynchronizeSoundBanks);
-	
-	/* 
+
+	/*
 	 * Loads the init bank.
-	 * 
 	 */
-	UFUNCTION(BlueprintCallable, BlueprintCosmetic, Category="Audiokinetic|SoundBanks")
+	UFUNCTION(BlueprintCallable, BlueprintCosmetic, Category = "Audiokinetic|SoundBanks")
 	static void LoadInitBank();
-	
+
 	/**
 	 * Unloads a bank.
 	 * @param Bank - The bank to unload.
 	 */
-	UFUNCTION(BlueprintCallable, Category="Audiokinetic|SoundBanks", meta=(WorldContext = "WorldContextObject", Latent, LatentInfo = "LatentInfo", AdvancedDisplay="1"))
+	UFUNCTION(BlueprintCallable, Category = "Audiokinetic|SoundBanks", meta = (WorldContext = "WorldContextObject", Latent, LatentInfo = "LatentInfo", AdvancedDisplay = "1"))
 	static void UnloadBank(class UAkAudioBank* Bank, const FString& BankName, FLatentActionInfo LatentInfo, UObject* WorldContextObject);
 
 	/*
@@ -451,7 +423,7 @@ class AKAUDIO_API UAkGameplayStatics : public UBlueprintFunctionLibrary
 	 * Unloads a bank by its name.
 	 * @param Bank - The bank to unload.
 	 */
-	UFUNCTION(BlueprintCallable, BlueprintCosmetic, Category="Audiokinetic|SoundBanks", meta = (DeprecatedFunction, DeprecationMessage = "Please use the \"Bank Name\" field of Unload Bank"))
+	UFUNCTION(BlueprintCallable, BlueprintCosmetic, Category = "Audiokinetic|SoundBanks", meta = (DeprecatedFunction, DeprecationMessage = "Please use the \"Bank Name\" field of Unload Bank"))
 	static void UnloadBankByName(const FString& BankName);
 
 	/**
@@ -488,16 +460,34 @@ class AKAUDIO_API UAkGameplayStatics : public UBlueprintFunctionLibrary
 	static void StopProfilerCapture();
 
 	/**
-	* Allows to globally tweak the occlusion with a multiplicative factor.
+	* Sets the occlusion scaling factor.
 	*/
 	UFUNCTION(BlueprintCallable, Category = "Audiokinetic")
 	static void SetOcclusionScalingFactor(float ScalingFactor) { OcclusionScalingFactor = ScalingFactor; }
 
 	/**
-	* Allows to globally tweak the occlusion with a multiplicative factor.
+	* Gets the occlusion scaling factor.
 	*/
 	UFUNCTION(BlueprintCallable, Category = "Audiokinetic")
 	static float GetOcclusionScalingFactor() { return OcclusionScalingFactor; }
+
+	UFUNCTION(BlueprintCallable, Category = "Audiokinetic|Culture")
+	static FString GetCurrentAudioCulture();
+
+	UFUNCTION(BlueprintCallable, Category = "Audiokinetic|Culture")
+	static TArray<FString> GetAvailableAudioCultures();
+
+	UFUNCTION(BlueprintCallable, Category = "Audiokinetic|Culture", meta = (WorldContext = "WorldContextObject", Latent, LatentInfo = "LatentInfo"))
+	static void SetCurrentAudioCulture(const FString& AudioCulture, FLatentActionInfo LatentInfo, UObject* WorldContextObject);
+
+	UFUNCTION(BlueprintCallable, Category = "Audiokinetic|Culture")
+	static void SetCurrentAudioCultureAsync(const FString& AudioCulture, const FOnSetCurrentAudioCultureCallback& Completed);
+
+	UFUNCTION(BlueprintCallable, Category = "Audiokinetic")
+	static UObject* GetAkAudioTypeUserData(const UAkAudioType* Instance, const UClass* Type);
+
+	UFUNCTION(BlueprintCallable, Category = "Audiokinetic")
+	static UObject* GetAkMediaAssetUserData(const class UAkMediaAsset* Instance, const UClass* Type);
 
 	static bool m_bSoundEngineRecording;
 

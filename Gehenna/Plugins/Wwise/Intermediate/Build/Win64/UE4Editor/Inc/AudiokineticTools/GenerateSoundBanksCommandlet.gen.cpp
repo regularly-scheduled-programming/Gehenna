@@ -1,11 +1,11 @@
-// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
+// Copyright Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "AudiokineticTools/Classes/GenerateSoundBanksCommandlet.h"
+#include "AudiokineticTools/Classes/AssetManagement/GenerateSoundBanksCommandlet.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -40,8 +40,9 @@ void EmptyLinkFunctionForGeneratedCodeGenerateSoundBanksCommandlet() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UGenerateSoundBanksCommandlet_Statics::Class_MetaDataParams[] = {
-		{ "IncludePath", "GenerateSoundBanksCommandlet.h" },
-		{ "ModuleRelativePath", "Classes/GenerateSoundBanksCommandlet.h" },
+		{ "Comment", "/**\n * \n */" },
+		{ "IncludePath", "AssetManagement/GenerateSoundBanksCommandlet.h" },
+		{ "ModuleRelativePath", "Classes/AssetManagement/GenerateSoundBanksCommandlet.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UGenerateSoundBanksCommandlet_Statics::StaticCppClassTypeInfo = {
@@ -55,12 +56,12 @@ void EmptyLinkFunctionForGeneratedCodeGenerateSoundBanksCommandlet() {}
 		nullptr,
 		nullptr,
 		nullptr,
-		ARRAY_COUNT(DependentSingletons),
+		UE_ARRAY_COUNT(DependentSingletons),
 		0,
 		0,
 		0,
 		0x001000A8u,
-		METADATA_PARAMS(Z_Construct_UClass_UGenerateSoundBanksCommandlet_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UGenerateSoundBanksCommandlet_Statics::Class_MetaDataParams))
+		METADATA_PARAMS(Z_Construct_UClass_UGenerateSoundBanksCommandlet_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UGenerateSoundBanksCommandlet_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UGenerateSoundBanksCommandlet()
 	{
@@ -71,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeGenerateSoundBanksCommandlet() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UGenerateSoundBanksCommandlet, 2107318738);
+	IMPLEMENT_CLASS(UGenerateSoundBanksCommandlet, 1720674938);
 	template<> AUDIOKINETICTOOLS_API UClass* StaticClass<UGenerateSoundBanksCommandlet>()
 	{
 		return UGenerateSoundBanksCommandlet::StaticClass();

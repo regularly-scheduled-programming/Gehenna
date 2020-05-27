@@ -5,33 +5,47 @@
 ------------------------------------------------------------------------------------*/
 
 #include "WwisePicker/SWwisePicker.h"
-#include "AkAudioDevice.h"
+
 #include "AkAudioBankGenerationHelpers.h"
+#include "AkAudioDevice.h"
 #include "AkAudioStyle.h"
-#include "WwisePicker/SWwisePicker.h"
-#include "WwisePicker/WwiseWwuParser.h"
+#include "AkAudioType.h"
+#include "AkSettings.h"
+#include "AkUnrealHelper.h"
+#include "AkWaapiClient.h"
+#include "AssetData.h"
+#include "AssetManagement/AkAssetDatabase.h"
+#include "AssetRegistry/Public/AssetRegistryModule.h"
 #include "DirectoryWatcherModule.h"
+#include "DragAndDrop/AssetDragDropOp.h"
+#include "Editor/UnrealEd/Public/PackageTools.h"
 #include "IDirectoryWatcher.h"
+#include "Misc/ScopedSlowTask.h"
+#include "Widgets/Input/SHyperlink.h"
 #include "Widgets/Input/SSearchBox.h"
 #include "Widgets/Layout/SSeparator.h"
 #include "Widgets/Layout/SSpacer.h"
-#include "Misc/ScopedSlowTask.h"
-#include "WwiseEventDragDropOp.h"
-#include "Widgets/Input/SHyperlink.h"
-
-#include "AkWaapiClient.h"
-#include "AkSettings.h"
-
+#include "WwisePicker/WwiseAssetDragDropOp.h"
+#include "WwisePicker/WwiseEventDragDropOp.h"
+#include "WwisePickerBuilderVisitor.h"
 
 #define LOCTEXT_NAMESPACE "AkAudio"
 
-const FName SWwisePicker::WwisePickerTabName = FName("WwisePicker");
+const FName SWwisePicker::WwisePickerTabName = "WwisePicker";
 
+namespace SWwisePicker_Helper
+{
+	const FName DirectoryWatcherModuleName = "DirectoryWatcher";
+}
 
 SWwisePicker::SWwisePicker()
 {
 	AllowTreeViewDelegates = true;
 	isPickerVisible = !FAkWaapiClient::IsProjectLoaded();
+
+	builderVisitor = MakeUnique<WwisePickerBuilderVisitor>();
+
+	workUnitParser.SetVisitor(builderVisitor.Get());
 }
 
 void SWwisePicker::RemoveClientCallbacks()
@@ -55,11 +69,10 @@ void SWwisePicker::RemoveClientCallbacks()
 void SWwisePicker::UpdateDirectoryWatcher()
 {
 	FString OldProjectFolder = ProjectFolder;
-	ProjectFolder = FPaths::GetPath(WwiseBnkGenHelper::GetLinkedProjectPath());
-	ProjectName = FPaths::GetCleanFilename(WwiseBnkGenHelper::GetLinkedProjectPath());
+	ProjectFolder = FPaths::GetPath(AkUnrealHelper::GetWwiseProjectPath());
+	ProjectName = FPaths::GetCleanFilename(AkUnrealHelper::GetWwiseProjectPath());
 
-	static const FName DirectoryWatcherModuleName = TEXT("DirectoryWatcher");
-	FDirectoryWatcherModule& DirectoryWatcherModule = FModuleManager::LoadModuleChecked<FDirectoryWatcherModule>(DirectoryWatcherModuleName);
+	auto& DirectoryWatcherModule = FModuleManager::LoadModuleChecked<FDirectoryWatcherModule>(SWwisePicker_Helper::DirectoryWatcherModuleName);
 	if (ProjectDirectoryModifiedDelegateHandle.IsValid())
 	{
 		DirectoryWatcherModule.Get()->UnregisterDirectoryChangedCallback_Handle(OldProjectFolder, ProjectDirectoryModifiedDelegateHandle);
@@ -76,13 +89,12 @@ void SWwisePicker::UpdateDirectoryWatcher()
 void SWwisePicker::OnProjectDirectoryChanged(const TArray<struct FFileChangeData>& ChangedFiles)
 {
 	bool bFoundWorkUnit = false;
-	for(auto File : ChangedFiles)
+	for(auto& File : ChangedFiles)
 	{
-		FPaths::NormalizeDirectoryName(File.Filename);
-		if(File.Filename.EndsWith(FString(TEXT(".wwu"))) &&
-			(File.Filename.Contains(TEXT("/Events/")) || File.Filename.Contains(TEXT("/Master-Mixer Hierarchy/")) || File.Filename.Contains(TEXT("/Virtual Acoustics/"))) )
+		if(File.Filename.EndsWith(FString(".wwu")))
 		{
 			bFoundWorkUnit = true;
+			break;
 		}
 	}
 
@@ -102,14 +114,15 @@ SWwisePicker::~SWwisePicker()
 		pWaapiClient->OnClientBeginDestroy.Remove(ClientBeginDestroyHandle);
 	}
 
-	static const FName DirectoryWatcherModuleName = TEXT("DirectoryWatcher");
-	FDirectoryWatcherModule& DirectoryWatcherModule = FModuleManager::LoadModuleChecked<FDirectoryWatcherModule>(DirectoryWatcherModuleName);
+	auto& DirectoryWatcherModule = FModuleManager::LoadModuleChecked<FDirectoryWatcherModule>(SWwisePicker_Helper::DirectoryWatcherModuleName);
 	DirectoryWatcherModule.Get()->UnregisterDirectoryChangedCallback_Handle(ProjectFolder, ProjectDirectoryModifiedDelegateHandle);
 }
 
 void SWwisePicker::Construct(const FArguments& InArgs)
 {
-	UpdateDirectoryWatcher();
+	if(isPickerVisible)
+		UpdateDirectoryWatcher();
+
 	SearchBoxFilter = MakeShareable( new StringFilter( StringFilter::FItemToStringArray::CreateSP( this, &SWwisePicker::PopulateSearchStrings ) ) );
 	SearchBoxFilter->OnChanged().AddSP( this, &SWwisePicker::FilterUpdated );
 
@@ -165,7 +178,7 @@ void SWwisePicker::Construct(const FArguments& InArgs)
 					.Padding(3.0f)
 					[
 						SNew(SImage) 
-						.Image(FAkAudioStyle::GetBrush(EWwiseTreeItemType::Project))
+						.Image(FAkAudioStyle::GetBrush(EWwiseItemType::Project))
 					]
 
 					+ SHorizontalBox::Slot()
@@ -190,6 +203,13 @@ void SWwisePicker::Construct(const FArguments& InArgs)
 						SNew(SButton)
 						.Text(LOCTEXT("AkPickerPopulate", "Populate"))
 						.OnClicked(this, &SWwisePicker::OnPopulateClicked)
+					]
+					+ SHorizontalBox::Slot()
+					.AutoWidth()
+					[
+						SNew(SButton)
+						.Text(LOCTEXT("AkPickerGenerate", "Generate Sound Data..."))
+						.OnClicked(this, &SWwisePicker::OnGenerateSoundBanksClicked)
 					]
 				]
 
@@ -267,7 +287,7 @@ void SWwisePicker::Construct(const FArguments& InArgs)
 		ConnectionLostHandle = pWaapiClient->OnConnectionLost.AddLambda([this]()
 		{
 			isPickerVisible = true;
-			ConstructTree();
+			ForceRefresh();
 		});
 		ClientBeginDestroyHandle = pWaapiClient->OnClientBeginDestroy.AddLambda([this]()
 		{
@@ -306,9 +326,16 @@ void SWwisePicker::Tick( const FGeometry& AllottedGeometry, const double InCurre
 
 void SWwisePicker::ForceRefresh()
 {
-	FWwiseWwuParser::ForcePopulate();
+	workUnitParser.ForceParse();
 	UpdateDirectoryWatcher();
 	ConstructTree();
+}
+
+void SWwisePicker::InitialParse()
+{
+	OnPopulateClicked();
+	TreeViewPtr->RequestTreeRefresh();
+	ExpandFirstLevel();
 }
 
 FText SWwisePicker::GetProjectName() const
@@ -318,8 +345,14 @@ FText SWwisePicker::GetProjectName() const
 
 FReply SWwisePicker::OnPopulateClicked()
 {
-	FWwiseWwuParser::Populate();
+	workUnitParser.Parse();
 	ConstructTree();
+	return FReply::Handled();
+}
+
+FReply SWwisePicker::OnGenerateSoundBanksClicked()
+{
+	AkAudioBankGenerationHelper::CreateGenerateSoundDataWindow();
 	return FReply::Handled();
 }
 
@@ -327,13 +360,11 @@ void SWwisePicker::ConstructTree()
 {
 	if (!FAkWaapiClient::IsProjectLoaded())
 	{
-		RootItems.Empty(EWwiseTreeItemType::NUM_DRAGGABLE_WWISE_ITEMS);
-		EWwiseTreeItemType::Type CurrentType = EWwiseTreeItemType::Event;
-		while ((int)CurrentType < (int)EWwiseTreeItemType::NUM_DRAGGABLE_WWISE_ITEMS)
+		RootItems.Empty(EWwiseItemType::LastWwiseDraggable - EWwiseItemType::Event + 1);
+		for (int i = EWwiseItemType::Event; i <= EWwiseItemType::LastWwiseDraggable; ++i)
 		{
-			TSharedPtr<FWwiseTreeItem> NewRoot = FWwiseWwuParser::GetTree(SearchBoxFilter, RootItems.Num() > CurrentType ? RootItems[CurrentType] : nullptr, CurrentType);
+			TSharedPtr<FWwiseTreeItem> NewRoot = builderVisitor->GetTree(SearchBoxFilter, RootItems.Num() > i ? RootItems[i] : nullptr, static_cast<EWwiseItemType::Type>(i));
 			RootItems.Add(NewRoot);
-			CurrentType = (EWwiseTreeItemType::Type)(((int)CurrentType) + 1);
 		}		
 	}
 	RestoreTreeExpansion(RootItems);
@@ -362,11 +393,9 @@ TSharedRef<ITableRow> SWwisePicker::GenerateRow( TSharedPtr<FWwiseTreeItem> Tree
 {
 	check(TreeItem.IsValid());
 
-	EVisibility RowVisibility = TreeItem->IsVisible ? EVisibility::Visible : EVisibility::Collapsed;
-	//EVisibility RowVisibility = EVisibility::Visible;
-
-	TSharedPtr<ITableRow> NewRow = SNew( STableRow< TSharedPtr<FWwiseTreeItem> >, OwnerTable )
-		.OnDragDetected( this, &SWwisePicker::OnDragDetected )
+	auto RowVisibility = TreeItem->IsVisible ? EVisibility::Visible : EVisibility::Collapsed;
+	TSharedPtr<ITableRow> NewRow = SNew(STableRow< TSharedPtr<FWwiseTreeItem> >, OwnerTable)
+		.OnDragDetected(this, &SWwisePicker::OnDragDetected)
 		.Visibility(RowVisibility)
 		[
 			SNew(SHorizontalBox)
@@ -389,35 +418,73 @@ TSharedRef<ITableRow> SWwisePicker::GenerateRow( TSharedPtr<FWwiseTreeItem> Tree
 			]
 		];
 
-	TreeItem->TreeRow = NewRow.Get();
+	TreeItem->TreeRow = NewRow;
 
 	return NewRow.ToSharedRef();
 }
 
-void SWwisePicker::GetChildrenForTree( TSharedPtr< FWwiseTreeItem > TreeItem, TArray< TSharedPtr<FWwiseTreeItem> >& OutChildren )
+void SWwisePicker::GetChildrenForTree(TSharedPtr< FWwiseTreeItem > TreeItem, TArray< TSharedPtr<FWwiseTreeItem> >& OutChildren)
 {
-	OutChildren = TreeItem->Children;
+	if (TreeItem)
+	{
+		OutChildren = TreeItem->Children;
+	}
 }
 
 FReply SWwisePicker::OnDragDetected(const FGeometry& Geometry, const FPointerEvent& MouseEvent)
 {
-	if ( MouseEvent.IsMouseButtonDown( EKeys::LeftMouseButton ) )
+	return DoDragDetected(MouseEvent, TreeViewPtr->GetSelectedItems());
+}
+
+FReply SWwisePicker::DoDragDetected(const FPointerEvent& MouseEvent, const TArray<TSharedPtr<FWwiseTreeItem>>& SelectedItems)
+{
+	if (!MouseEvent.IsMouseButtonDown(EKeys::LeftMouseButton))
 	{
-		TArray<TSharedPtr<FWwiseTreeItem>> SelectedItems = TreeViewPtr->GetSelectedItems();
-		return FReply::Handled().BeginDragDrop(FWwiseEventDragDropOp::New(SelectedItems));
+		return FReply::Unhandled();
 	}
 
-	return FReply::Unhandled();
+	if (SelectedItems.Num() == 0)
+	{
+		return FReply::Unhandled();
+	}
+
+	auto AkSettings = GetDefault<UAkSettings>();
+
+	if (AkSettings && AkSettings->UseEventBasedPackaging && AkSettings->EnableAutomaticAssetSynchronization)
+	{
+		TArray<FAssetData> Assets;
+		for (auto& Item : SelectedItems)
+		{
+			if (auto AkAssetPtr = AkAssetDatabase::Get().AudioTypeMap.Find(Item->ItemId))
+			{
+				if (auto AkAsset = *AkAssetPtr)
+				{
+					Assets.Emplace(AkAsset);
+				}
+			}
+		}
+
+		if (Assets.Num() == 0)
+		{
+			return FReply::Unhandled();
+		}
+
+		return FReply::Handled().BeginDragDrop(FWwiseAssetDragDropOp::New(Assets));
+	}
+	else
+	{
+		return FReply::Handled().BeginDragDrop(FWwiseEventDragDropOp::New(SelectedItems));
+	}
 }
 
-void SWwisePicker::PopulateSearchStrings( const FString& FolderName, OUT TArray< FString >& OutSearchStrings ) const
+void SWwisePicker::PopulateSearchStrings(const FString& FolderName, OUT TArray< FString >& OutSearchStrings) const
 {
-	OutSearchStrings.Add( FolderName );
+	OutSearchStrings.Add(FolderName);
 }
 
-void SWwisePicker::OnSearchBoxChanged( const FText& InSearchText )
+void SWwisePicker::OnSearchBoxChanged(const FText& InSearchText)
 {
-	SearchBoxFilter->SetRawFilterText( InSearchText );
+	SearchBoxFilter->SetRawFilterText(InSearchText);
 }
 
 FText SWwisePicker::GetHighlightText() const
@@ -429,51 +496,44 @@ void SWwisePicker::FilterUpdated()
 {
 	FScopedSlowTask SlowTask(2.f, LOCTEXT("AK_PopulatingPicker", "Populating Wwise Picker..."));
 	SlowTask.MakeDialog();
-	for(int32 i = 0; i < RootItems.Num(); i++)
+	for (int32 i = 0; i < RootItems.Num(); i++)
 	{
-		ApplyFilter(RootItems[i]);
+		RootItems[i] = builderVisitor->GetTree(SearchBoxFilter, RootItems[i], static_cast<EWwiseItemType::Type>(i));
+
+		AllowTreeViewDelegates = false;
+		RestoreTreeExpansion(RootItems);
+		AllowTreeViewDelegates = true;
 	}
 	TreeViewPtr->RequestTreeRefresh();
 }
 
 void SWwisePicker::SetItemVisibility(TSharedPtr<FWwiseTreeItem> Item, bool IsVisible)
 {
-	if( Item.IsValid() )
+	if (Item.IsValid())
 	{
-		if( IsVisible )
+		if (IsVisible)
 		{
 			// Propagate visibility to parents.
 			SetItemVisibility(Item->Parent.Pin(), IsVisible);
 		}
 		Item->IsVisible = IsVisible;
-		if( Item->TreeRow != NULL )
+		if (Item->TreeRow.IsValid())
 		{
-			TSharedRef<SWidget> wid = Item->TreeRow->AsWidget();
-			Item->TreeRow->AsWidget()->SetVisibility(IsVisible ? EVisibility::Visible : EVisibility::Collapsed);
+			TSharedRef<SWidget> wid = Item->TreeRow.Pin()->AsWidget();
+			wid->SetVisibility(IsVisible ? EVisibility::Visible : EVisibility::Collapsed);
 		}
 	}
-}
-
-void SWwisePicker::ApplyFilter(TSharedPtr<FWwiseTreeItem> ItemToFilter)
-{
-
-	EWwiseTreeItemType::Type CurrentType = EWwiseTreeItemType::Event;
-	while ((int)CurrentType < (int)EWwiseTreeItemType::NUM_DRAGGABLE_WWISE_ITEMS)
-	{
-		TSharedPtr<FWwiseTreeItem> NewRoot = FWwiseWwuParser::GetTree(SearchBoxFilter, RootItems[CurrentType], CurrentType);
-		RootItems[CurrentType] = NewRoot;
-		CurrentType = (EWwiseTreeItemType::Type)(((int)CurrentType) + 1);
-	}
-
-	AllowTreeViewDelegates = false;
-	RestoreTreeExpansion(RootItems);
-	AllowTreeViewDelegates = true;
 }
 
 void SWwisePicker::RestoreTreeExpansion(const TArray< TSharedPtr<FWwiseTreeItem> >& Items)
 {
 	for(int i = 0; i < Items.Num(); i++)
 	{
+		if (!Items[i])
+		{
+			continue;
+		}
+
 		if( LastExpandedPaths.Contains(Items[i]->FolderPath) )
 		{
 			TreeViewPtr->SetItemExpansion(Items[i], true);
@@ -484,7 +544,7 @@ void SWwisePicker::RestoreTreeExpansion(const TArray< TSharedPtr<FWwiseTreeItem>
 
 void SWwisePicker::TreeSelectionChanged( TSharedPtr< FWwiseTreeItem > TreeItem, ESelectInfo::Type /*SelectInfo*/ )
 {
-	if( AllowTreeViewDelegates )
+	if (AllowTreeViewDelegates)
 	{
 		const TArray<TSharedPtr<FWwiseTreeItem>> SelectedItems = TreeViewPtr->GetSelectedItems();
 
@@ -492,7 +552,7 @@ void SWwisePicker::TreeSelectionChanged( TSharedPtr< FWwiseTreeItem > TreeItem, 
 		for (int32 ItemIdx = 0; ItemIdx < SelectedItems.Num(); ++ItemIdx)
 		{
 			const TSharedPtr<FWwiseTreeItem> Item = SelectedItems[ItemIdx];
-			if ( Item.IsValid() )
+			if (Item.IsValid())
 			{
 				LastSelectedPaths.Add(Item->FolderPath);
 			}
@@ -502,7 +562,7 @@ void SWwisePicker::TreeSelectionChanged( TSharedPtr< FWwiseTreeItem > TreeItem, 
 
 void SWwisePicker::TreeExpansionChanged( TSharedPtr< FWwiseTreeItem > TreeItem, bool bIsExpanded )
 {
-	if( AllowTreeViewDelegates )
+	if (AllowTreeViewDelegates)
 	{
 		TSet<TSharedPtr<FWwiseTreeItem>> ExpandedItemSet;
 		TreeViewPtr->GetExpandedItems(ExpandedItemSet);
@@ -511,7 +571,7 @@ void SWwisePicker::TreeExpansionChanged( TSharedPtr< FWwiseTreeItem > TreeItem, 
 		for (auto ExpandedItemIt = ExpandedItemSet.CreateConstIterator(); ExpandedItemIt; ++ExpandedItemIt)
 		{
 			const TSharedPtr<FWwiseTreeItem> Item = *ExpandedItemIt;
-			if ( Item.IsValid() )
+			if (Item.IsValid())
 			{
 				// Keep track of the last paths that we broadcasted for expansion reasons when filtering
 				LastExpandedPaths.Add(Item->FolderPath);
@@ -519,6 +579,5 @@ void SWwisePicker::TreeExpansionChanged( TSharedPtr< FWwiseTreeItem > TreeItem, 
 		}
 	}
 }
-
 
 #undef LOCTEXT_NAMESPACE

@@ -10,7 +10,9 @@ class AKAUDIO_API UAkLateReverbComponent : public USceneComponent
 {
 	GENERATED_UCLASS_BODY()
 
-	/** Whether this volume is currently enabled and able to affect sounds */
+	/**
+	 * Enable usage of the late reverb inside a volume. Additional properties are available in the Late Reverb category.
+	 */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=Toggle, meta = (DisplayName = "Enable Late Reverb"))
 	uint32 bEnable:1;
 	
@@ -33,7 +35,9 @@ class AKAUDIO_API UAkLateReverbComponent : public USceneComponent
 	 * The precedence in which the AkReverbVolumes will be applied. In the case of overlapping volumes, only the ones 
 	 * with the highest priority are chosen (the number of simultaneous AkReverbVolumes is configurable in the Unreal 
 	 * Editor Project Settings under Plugins > Wwise). If two or more overlapping AkReverbVolumes have the same 
-	 * priority, the chosen AkReverbVolume is unpredictable.
+	 * priority, the chosen AkReverbVolume is unpredictable. 
+	 * If this Late Reverb is applied to a Spatial Audio room, it will be active even if the maximum number of simultaneous reverb volumes (see integration settings) was reached. 
+	 * Sound emitted by game objects in a room will always be sent to the room late reverb independently of other late reverbs in the scene.
 	 */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "LateReverb")
 	float Priority;

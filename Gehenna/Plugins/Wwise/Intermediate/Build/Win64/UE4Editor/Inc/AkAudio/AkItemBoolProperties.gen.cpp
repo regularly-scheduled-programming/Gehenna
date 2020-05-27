@@ -1,4 +1,4 @@
-// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
+// Copyright Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -20,14 +20,9 @@ void EmptyLinkFunctionForGeneratedCodeAkItemBoolProperties() {}
 	AKAUDIO_API UClass* Z_Construct_UClass_UAkItemBoolPropertiesConv_NoRegister();
 	AKAUDIO_API UClass* Z_Construct_UClass_UAkItemBoolPropertiesConv();
 	ENGINE_API UClass* Z_Construct_UClass_UBlueprintFunctionLibrary();
-	AKAUDIO_API UFunction* Z_Construct_UFunction_UAkItemBoolPropertiesConv_Conv_FAkBoolPropertyToControlToString();
-	AKAUDIO_API UFunction* Z_Construct_UFunction_UAkItemBoolPropertiesConv_Conv_FAkBoolPropertyToControlToText();
 	AKAUDIO_API UClass* Z_Construct_UClass_UAkItemBoolProperties_NoRegister();
 	AKAUDIO_API UClass* Z_Construct_UClass_UAkItemBoolProperties();
 	UMG_API UClass* Z_Construct_UClass_UWidget();
-	AKAUDIO_API UFunction* Z_Construct_UFunction_UAkItemBoolProperties_GetSearchText();
-	AKAUDIO_API UFunction* Z_Construct_UFunction_UAkItemBoolProperties_GetSelectedProperty();
-	AKAUDIO_API UFunction* Z_Construct_UFunction_UAkItemBoolProperties_SetSearchText();
 // End Cross Module References
 	struct Z_Construct_UDelegateFunction_AkAudio_OnItemBoolPropertyDragDetected__DelegateSignature_Statics
 	{
@@ -48,11 +43,12 @@ void EmptyLinkFunctionForGeneratedCodeAkItemBoolProperties() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_AkAudio_OnItemBoolPropertyDragDetected__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "Comment", "/** A delegate type invoked when a property is being dragged. */" },
 		{ "ModuleRelativePath", "Classes/AkWaapiUMG/Components/AkItemBoolProperties.h" },
 		{ "ToolTip", "A delegate type invoked when a property is being dragged." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_AkAudio_OnItemBoolPropertyDragDetected__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_AkAudio, nullptr, "OnItemBoolPropertyDragDetected__DelegateSignature", sizeof(_Script_AkAudio_eventOnItemBoolPropertyDragDetected_Parms), Z_Construct_UDelegateFunction_AkAudio_OnItemBoolPropertyDragDetected__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_AkAudio_OnItemBoolPropertyDragDetected__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_AkAudio_OnItemBoolPropertyDragDetected__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_AkAudio_OnItemBoolPropertyDragDetected__DelegateSignature_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_AkAudio_OnItemBoolPropertyDragDetected__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_AkAudio, nullptr, "OnItemBoolPropertyDragDetected__DelegateSignature", nullptr, nullptr, sizeof(_Script_AkAudio_eventOnItemBoolPropertyDragDetected_Parms), Z_Construct_UDelegateFunction_AkAudio_OnItemBoolPropertyDragDetected__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_AkAudio_OnItemBoolPropertyDragDetected__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_AkAudio_OnItemBoolPropertyDragDetected__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_AkAudio_OnItemBoolPropertyDragDetected__DelegateSignature_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UDelegateFunction_AkAudio_OnItemBoolPropertyDragDetected__DelegateSignature()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -81,11 +77,12 @@ void EmptyLinkFunctionForGeneratedCodeAkItemBoolProperties() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_AkAudio_OnItemBoolPropertySelectionChanged__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "Comment", "/** A delegate type invoked when a selection changes somewhere. */" },
 		{ "ModuleRelativePath", "Classes/AkWaapiUMG/Components/AkItemBoolProperties.h" },
 		{ "ToolTip", "A delegate type invoked when a selection changes somewhere." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_AkAudio_OnItemBoolPropertySelectionChanged__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_AkAudio, nullptr, "OnItemBoolPropertySelectionChanged__DelegateSignature", sizeof(_Script_AkAudio_eventOnItemBoolPropertySelectionChanged_Parms), Z_Construct_UDelegateFunction_AkAudio_OnItemBoolPropertySelectionChanged__DelegateSignature_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UDelegateFunction_AkAudio_OnItemBoolPropertySelectionChanged__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_AkAudio_OnItemBoolPropertySelectionChanged__DelegateSignature_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UDelegateFunction_AkAudio_OnItemBoolPropertySelectionChanged__DelegateSignature_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_AkAudio_OnItemBoolPropertySelectionChanged__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_AkAudio, nullptr, "OnItemBoolPropertySelectionChanged__DelegateSignature", nullptr, nullptr, sizeof(_Script_AkAudio_eventOnItemBoolPropertySelectionChanged_Parms), Z_Construct_UDelegateFunction_AkAudio_OnItemBoolPropertySelectionChanged__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_AkAudio_OnItemBoolPropertySelectionChanged__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_AkAudio_OnItemBoolPropertySelectionChanged__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_AkAudio_OnItemBoolPropertySelectionChanged__DelegateSignature_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UDelegateFunction_AkAudio_OnItemBoolPropertySelectionChanged__DelegateSignature()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -133,6 +130,7 @@ static struct FScriptStruct_AkAudio_StaticRegisterNativesFAkBoolPropertyToContro
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FAkBoolPropertyToControl_Statics::Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+		{ "Comment", "/**\n* Structure for property to be controlled by the UI.\n*/" },
 		{ "ModuleRelativePath", "Classes/AkWaapiUMG/Components/AkItemBoolProperties.h" },
 		{ "ToolTip", "Structure for property to be controlled by the UI." },
 	};
@@ -144,12 +142,13 @@ static struct FScriptStruct_AkAudio_StaticRegisterNativesFAkBoolPropertyToContro
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FAkBoolPropertyToControl_Statics::NewProp_ItemProperty_MetaData[] = {
 		{ "Category", "ItemProperty" },
+		{ "Comment", "/**\n\x09\x09* The name of the item to control\n\x09\x09*/" },
 		{ "DisplayName", "Property" },
 		{ "ModuleRelativePath", "Classes/AkWaapiUMG/Components/AkItemBoolProperties.h" },
 		{ "ToolTip", "The name of the item to control" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FAkBoolPropertyToControl_Statics::NewProp_ItemProperty = { "ItemProperty", nullptr, (EPropertyFlags)0x0010000000020015, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FAkBoolPropertyToControl, ItemProperty), METADATA_PARAMS(Z_Construct_UScriptStruct_FAkBoolPropertyToControl_Statics::NewProp_ItemProperty_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FAkBoolPropertyToControl_Statics::NewProp_ItemProperty_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FAkBoolPropertyToControl_Statics::NewProp_ItemProperty = { "ItemProperty", nullptr, (EPropertyFlags)0x0010000000020015, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FAkBoolPropertyToControl, ItemProperty), METADATA_PARAMS(Z_Construct_UScriptStruct_FAkBoolPropertyToControl_Statics::NewProp_ItemProperty_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FAkBoolPropertyToControl_Statics::NewProp_ItemProperty_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FAkBoolPropertyToControl_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FAkBoolPropertyToControl_Statics::NewProp_ItemProperty,
 	};
@@ -161,10 +160,10 @@ static struct FScriptStruct_AkAudio_StaticRegisterNativesFAkBoolPropertyToContro
 		sizeof(FAkBoolPropertyToControl),
 		alignof(FAkBoolPropertyToControl),
 		Z_Construct_UScriptStruct_FAkBoolPropertyToControl_Statics::PropPointers,
-		ARRAY_COUNT(Z_Construct_UScriptStruct_FAkBoolPropertyToControl_Statics::PropPointers),
+		UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FAkBoolPropertyToControl_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
 		EStructFlags(0x00000201),
-		METADATA_PARAMS(Z_Construct_UScriptStruct_FAkBoolPropertyToControl_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FAkBoolPropertyToControl_Statics::Struct_MetaDataParams))
+		METADATA_PARAMS(Z_Construct_UScriptStruct_FAkBoolPropertyToControl_Statics::Struct_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FAkBoolPropertyToControl_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FAkBoolPropertyToControl()
 	{
@@ -181,7 +180,23 @@ static struct FScriptStruct_AkAudio_StaticRegisterNativesFAkBoolPropertyToContro
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FAkBoolPropertyToControl_Hash() { return 2898626278U; }
+	uint32 Get_Z_Construct_UScriptStruct_FAkBoolPropertyToControl_Hash() { return 4032073035U; }
+	DEFINE_FUNCTION(UAkItemBoolPropertiesConv::execConv_FAkBoolPropertyToControlToText)
+	{
+		P_GET_STRUCT_REF(FAkBoolPropertyToControl,Z_Param_Out_INAkBoolPropertyToControl);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(FText*)Z_Param__Result=UAkItemBoolPropertiesConv::Conv_FAkBoolPropertyToControlToText(Z_Param_Out_INAkBoolPropertyToControl);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UAkItemBoolPropertiesConv::execConv_FAkBoolPropertyToControlToString)
+	{
+		P_GET_STRUCT_REF(FAkBoolPropertyToControl,Z_Param_Out_INAkBoolPropertyToControl);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(FString*)Z_Param__Result=UAkItemBoolPropertiesConv::Conv_FAkBoolPropertyToControlToString(Z_Param_Out_INAkBoolPropertyToControl);
+		P_NATIVE_END;
+	}
 	void UAkItemBoolPropertiesConv::StaticRegisterNativesUAkItemBoolPropertiesConv()
 	{
 		UClass* Class = UAkItemBoolPropertiesConv::StaticClass();
@@ -189,7 +204,7 @@ static struct FScriptStruct_AkAudio_StaticRegisterNativesFAkBoolPropertyToContro
 			{ "Conv_FAkBoolPropertyToControlToString", &UAkItemBoolPropertiesConv::execConv_FAkBoolPropertyToControlToString },
 			{ "Conv_FAkBoolPropertyToControlToText", &UAkItemBoolPropertiesConv::execConv_FAkBoolPropertyToControlToText },
 		};
-		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
 	struct Z_Construct_UFunction_UAkItemBoolPropertiesConv_Conv_FAkBoolPropertyToControlToString_Statics
 	{
@@ -215,7 +230,7 @@ static struct FScriptStruct_AkAudio_StaticRegisterNativesFAkBoolPropertyToContro
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UAkItemBoolPropertiesConv_Conv_FAkBoolPropertyToControlToString_Statics::NewProp_INAkBoolPropertyToControl = { "INAkBoolPropertyToControl", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AkItemBoolPropertiesConv_eventConv_FAkBoolPropertyToControlToString_Parms, INAkBoolPropertyToControl), Z_Construct_UScriptStruct_FAkBoolPropertyToControl, METADATA_PARAMS(Z_Construct_UFunction_UAkItemBoolPropertiesConv_Conv_FAkBoolPropertyToControlToString_Statics::NewProp_INAkBoolPropertyToControl_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UAkItemBoolPropertiesConv_Conv_FAkBoolPropertyToControlToString_Statics::NewProp_INAkBoolPropertyToControl_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UAkItemBoolPropertiesConv_Conv_FAkBoolPropertyToControlToString_Statics::NewProp_INAkBoolPropertyToControl = { "INAkBoolPropertyToControl", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AkItemBoolPropertiesConv_eventConv_FAkBoolPropertyToControlToString_Parms, INAkBoolPropertyToControl), Z_Construct_UScriptStruct_FAkBoolPropertyToControl, METADATA_PARAMS(Z_Construct_UFunction_UAkItemBoolPropertiesConv_Conv_FAkBoolPropertyToControlToString_Statics::NewProp_INAkBoolPropertyToControl_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UAkItemBoolPropertiesConv_Conv_FAkBoolPropertyToControlToString_Statics::NewProp_INAkBoolPropertyToControl_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UAkItemBoolPropertiesConv_Conv_FAkBoolPropertyToControlToString_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UAkItemBoolPropertiesConv_Conv_FAkBoolPropertyToControlToString_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UAkItemBoolPropertiesConv_Conv_FAkBoolPropertyToControlToString_Statics::NewProp_INAkBoolPropertyToControl,
@@ -224,13 +239,14 @@ static struct FScriptStruct_AkAudio_StaticRegisterNativesFAkBoolPropertyToContro
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UAkItemBoolPropertiesConv_Conv_FAkBoolPropertyToControlToString_Statics::Function_MetaDataParams[] = {
 		{ "BlueprintAutocast", "" },
 		{ "Category", "Utilities|String" },
+		{ "Comment", "/** Converts an AkBoolPropertyToControl value to a string */" },
 		{ "CompactNodeTitle", "->" },
 		{ "DisplayName", "ToString (FAkBoolPropertyToControl)" },
 		{ "ModuleRelativePath", "Classes/AkWaapiUMG/Components/AkItemBoolProperties.h" },
 		{ "ToolTip", "Converts an AkBoolPropertyToControl value to a string" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UAkItemBoolPropertiesConv_Conv_FAkBoolPropertyToControlToString_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UAkItemBoolPropertiesConv, nullptr, "Conv_FAkBoolPropertyToControlToString", sizeof(AkItemBoolPropertiesConv_eventConv_FAkBoolPropertyToControlToString_Parms), Z_Construct_UFunction_UAkItemBoolPropertiesConv_Conv_FAkBoolPropertyToControlToString_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UAkItemBoolPropertiesConv_Conv_FAkBoolPropertyToControlToString_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UAkItemBoolPropertiesConv_Conv_FAkBoolPropertyToControlToString_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UAkItemBoolPropertiesConv_Conv_FAkBoolPropertyToControlToString_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UAkItemBoolPropertiesConv_Conv_FAkBoolPropertyToControlToString_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UAkItemBoolPropertiesConv, nullptr, "Conv_FAkBoolPropertyToControlToString", nullptr, nullptr, sizeof(AkItemBoolPropertiesConv_eventConv_FAkBoolPropertyToControlToString_Parms), Z_Construct_UFunction_UAkItemBoolPropertiesConv_Conv_FAkBoolPropertyToControlToString_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UAkItemBoolPropertiesConv_Conv_FAkBoolPropertyToControlToString_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UAkItemBoolPropertiesConv_Conv_FAkBoolPropertyToControlToString_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UAkItemBoolPropertiesConv_Conv_FAkBoolPropertyToControlToString_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UAkItemBoolPropertiesConv_Conv_FAkBoolPropertyToControlToString()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -264,7 +280,7 @@ static struct FScriptStruct_AkAudio_StaticRegisterNativesFAkBoolPropertyToContro
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UAkItemBoolPropertiesConv_Conv_FAkBoolPropertyToControlToText_Statics::NewProp_INAkBoolPropertyToControl = { "INAkBoolPropertyToControl", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AkItemBoolPropertiesConv_eventConv_FAkBoolPropertyToControlToText_Parms, INAkBoolPropertyToControl), Z_Construct_UScriptStruct_FAkBoolPropertyToControl, METADATA_PARAMS(Z_Construct_UFunction_UAkItemBoolPropertiesConv_Conv_FAkBoolPropertyToControlToText_Statics::NewProp_INAkBoolPropertyToControl_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UAkItemBoolPropertiesConv_Conv_FAkBoolPropertyToControlToText_Statics::NewProp_INAkBoolPropertyToControl_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UAkItemBoolPropertiesConv_Conv_FAkBoolPropertyToControlToText_Statics::NewProp_INAkBoolPropertyToControl = { "INAkBoolPropertyToControl", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AkItemBoolPropertiesConv_eventConv_FAkBoolPropertyToControlToText_Parms, INAkBoolPropertyToControl), Z_Construct_UScriptStruct_FAkBoolPropertyToControl, METADATA_PARAMS(Z_Construct_UFunction_UAkItemBoolPropertiesConv_Conv_FAkBoolPropertyToControlToText_Statics::NewProp_INAkBoolPropertyToControl_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UAkItemBoolPropertiesConv_Conv_FAkBoolPropertyToControlToText_Statics::NewProp_INAkBoolPropertyToControl_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UAkItemBoolPropertiesConv_Conv_FAkBoolPropertyToControlToText_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UAkItemBoolPropertiesConv_Conv_FAkBoolPropertyToControlToText_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UAkItemBoolPropertiesConv_Conv_FAkBoolPropertyToControlToText_Statics::NewProp_INAkBoolPropertyToControl,
@@ -273,13 +289,14 @@ static struct FScriptStruct_AkAudio_StaticRegisterNativesFAkBoolPropertyToContro
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UAkItemBoolPropertiesConv_Conv_FAkBoolPropertyToControlToText_Statics::Function_MetaDataParams[] = {
 		{ "BlueprintAutocast", "" },
 		{ "Category", "Utilities|Text" },
+		{ "Comment", "/** Converts an AkBoolPropertyToControl value to a localizable text */" },
 		{ "CompactNodeTitle", "->" },
 		{ "DisplayName", "ToText (FAkBoolPropertyToControl)" },
 		{ "ModuleRelativePath", "Classes/AkWaapiUMG/Components/AkItemBoolProperties.h" },
 		{ "ToolTip", "Converts an AkBoolPropertyToControl value to a localizable text" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UAkItemBoolPropertiesConv_Conv_FAkBoolPropertyToControlToText_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UAkItemBoolPropertiesConv, nullptr, "Conv_FAkBoolPropertyToControlToText", sizeof(AkItemBoolPropertiesConv_eventConv_FAkBoolPropertyToControlToText_Parms), Z_Construct_UFunction_UAkItemBoolPropertiesConv_Conv_FAkBoolPropertyToControlToText_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UAkItemBoolPropertiesConv_Conv_FAkBoolPropertyToControlToText_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UAkItemBoolPropertiesConv_Conv_FAkBoolPropertyToControlToText_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UAkItemBoolPropertiesConv_Conv_FAkBoolPropertyToControlToText_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UAkItemBoolPropertiesConv_Conv_FAkBoolPropertyToControlToText_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UAkItemBoolPropertiesConv, nullptr, "Conv_FAkBoolPropertyToControlToText", nullptr, nullptr, sizeof(AkItemBoolPropertiesConv_eventConv_FAkBoolPropertyToControlToText_Parms), Z_Construct_UFunction_UAkItemBoolPropertiesConv_Conv_FAkBoolPropertyToControlToText_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UAkItemBoolPropertiesConv_Conv_FAkBoolPropertyToControlToText_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UAkItemBoolPropertiesConv_Conv_FAkBoolPropertyToControlToText_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UAkItemBoolPropertiesConv_Conv_FAkBoolPropertyToControlToText_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UAkItemBoolPropertiesConv_Conv_FAkBoolPropertyToControlToText()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -308,11 +325,12 @@ static struct FScriptStruct_AkAudio_StaticRegisterNativesFAkBoolPropertyToContro
 		(UObject* (*)())Z_Construct_UPackage__Script_AkAudio,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UAkItemBoolPropertiesConv_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UAkItemBoolPropertiesConv_Conv_FAkBoolPropertyToControlToString, "Conv_FAkBoolPropertyToControlToString" }, // 38232520
-		{ &Z_Construct_UFunction_UAkItemBoolPropertiesConv_Conv_FAkBoolPropertyToControlToText, "Conv_FAkBoolPropertyToControlToText" }, // 616429760
+		{ &Z_Construct_UFunction_UAkItemBoolPropertiesConv_Conv_FAkBoolPropertyToControlToString, "Conv_FAkBoolPropertyToControlToString" }, // 406528913
+		{ &Z_Construct_UFunction_UAkItemBoolPropertiesConv_Conv_FAkBoolPropertyToControlToText, "Conv_FAkBoolPropertyToControlToText" }, // 1094544730
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UAkItemBoolPropertiesConv_Statics::Class_MetaDataParams[] = {
+		{ "Comment", "/*------------------------------------------------------------------------------------\nUAkItemBoolPropertiesConv\n------------------------------------------------------------------------------------*/" },
 		{ "IncludePath", "AkWaapiUMG/Components/AkItemBoolProperties.h" },
 		{ "ModuleRelativePath", "Classes/AkWaapiUMG/Components/AkItemBoolProperties.h" },
 		{ "ToolTip", "UAkItemBoolPropertiesConv" },
@@ -329,12 +347,12 @@ static struct FScriptStruct_AkAudio_StaticRegisterNativesFAkBoolPropertyToContro
 		FuncInfo,
 		nullptr,
 		nullptr,
-		ARRAY_COUNT(DependentSingletons),
-		ARRAY_COUNT(FuncInfo),
+		UE_ARRAY_COUNT(DependentSingletons),
+		UE_ARRAY_COUNT(FuncInfo),
 		0,
 		0,
 		0x001000A0u,
-		METADATA_PARAMS(Z_Construct_UClass_UAkItemBoolPropertiesConv_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UAkItemBoolPropertiesConv_Statics::Class_MetaDataParams))
+		METADATA_PARAMS(Z_Construct_UClass_UAkItemBoolPropertiesConv_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UAkItemBoolPropertiesConv_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UAkItemBoolPropertiesConv()
 	{
@@ -345,13 +363,35 @@ static struct FScriptStruct_AkAudio_StaticRegisterNativesFAkBoolPropertyToContro
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UAkItemBoolPropertiesConv, 1250703425);
+	IMPLEMENT_CLASS(UAkItemBoolPropertiesConv, 3404387210);
 	template<> AKAUDIO_API UClass* StaticClass<UAkItemBoolPropertiesConv>()
 	{
 		return UAkItemBoolPropertiesConv::StaticClass();
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UAkItemBoolPropertiesConv(Z_Construct_UClass_UAkItemBoolPropertiesConv, &UAkItemBoolPropertiesConv::StaticClass, TEXT("/Script/AkAudio"), TEXT("UAkItemBoolPropertiesConv"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UAkItemBoolPropertiesConv);
+	DEFINE_FUNCTION(UAkItemBoolProperties::execSetSearchText)
+	{
+		P_GET_PROPERTY(FStrProperty,Z_Param_newText);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->SetSearchText(Z_Param_newText);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UAkItemBoolProperties::execGetSearchText)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(FString*)Z_Param__Result=P_THIS->GetSearchText();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UAkItemBoolProperties::execGetSelectedProperty)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(FString*)Z_Param__Result=P_THIS->GetSelectedProperty();
+		P_NATIVE_END;
+	}
 	void UAkItemBoolProperties::StaticRegisterNativesUAkItemBoolProperties()
 	{
 		UClass* Class = UAkItemBoolProperties::StaticClass();
@@ -360,7 +400,7 @@ static struct FScriptStruct_AkAudio_StaticRegisterNativesFAkBoolPropertyToContro
 			{ "GetSelectedProperty", &UAkItemBoolProperties::execGetSelectedProperty },
 			{ "SetSearchText", &UAkItemBoolProperties::execSetSearchText },
 		};
-		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
 	struct Z_Construct_UFunction_UAkItemBoolProperties_GetSearchText_Statics
 	{
@@ -382,11 +422,12 @@ static struct FScriptStruct_AkAudio_StaticRegisterNativesFAkBoolPropertyToContro
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UAkItemBoolProperties_GetSearchText_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Audiokinetic" },
+		{ "Comment", "/** returns the current text of the searchBox */" },
 		{ "ModuleRelativePath", "Classes/AkWaapiUMG/Components/AkItemBoolProperties.h" },
 		{ "ToolTip", "returns the current text of the searchBox" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UAkItemBoolProperties_GetSearchText_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UAkItemBoolProperties, nullptr, "GetSearchText", sizeof(AkItemBoolProperties_eventGetSearchText_Parms), Z_Construct_UFunction_UAkItemBoolProperties_GetSearchText_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UAkItemBoolProperties_GetSearchText_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020409, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UAkItemBoolProperties_GetSearchText_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UAkItemBoolProperties_GetSearchText_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UAkItemBoolProperties_GetSearchText_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UAkItemBoolProperties, nullptr, "GetSearchText", nullptr, nullptr, sizeof(AkItemBoolProperties_eventGetSearchText_Parms), Z_Construct_UFunction_UAkItemBoolProperties_GetSearchText_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UAkItemBoolProperties_GetSearchText_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020409, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UAkItemBoolProperties_GetSearchText_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UAkItemBoolProperties_GetSearchText_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UAkItemBoolProperties_GetSearchText()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -416,11 +457,12 @@ static struct FScriptStruct_AkAudio_StaticRegisterNativesFAkBoolPropertyToContro
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UAkItemBoolProperties_GetSelectedProperty_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Audiokinetic" },
+		{ "Comment", "/** Returns all properties currently selected in the Wwise properties list */" },
 		{ "ModuleRelativePath", "Classes/AkWaapiUMG/Components/AkItemBoolProperties.h" },
 		{ "ToolTip", "Returns all properties currently selected in the Wwise properties list" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UAkItemBoolProperties_GetSelectedProperty_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UAkItemBoolProperties, nullptr, "GetSelectedProperty", sizeof(AkItemBoolProperties_eventGetSelectedProperty_Parms), Z_Construct_UFunction_UAkItemBoolProperties_GetSelectedProperty_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UAkItemBoolProperties_GetSelectedProperty_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020409, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UAkItemBoolProperties_GetSelectedProperty_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UAkItemBoolProperties_GetSelectedProperty_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UAkItemBoolProperties_GetSelectedProperty_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UAkItemBoolProperties, nullptr, "GetSelectedProperty", nullptr, nullptr, sizeof(AkItemBoolProperties_eventGetSelectedProperty_Parms), Z_Construct_UFunction_UAkItemBoolProperties_GetSelectedProperty_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UAkItemBoolProperties_GetSelectedProperty_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020409, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UAkItemBoolProperties_GetSelectedProperty_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UAkItemBoolProperties_GetSelectedProperty_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UAkItemBoolProperties_GetSelectedProperty()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -451,18 +493,19 @@ static struct FScriptStruct_AkAudio_StaticRegisterNativesFAkBoolPropertyToContro
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UAkItemBoolProperties_SetSearchText_Statics::NewProp_newText = { "newText", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AkItemBoolProperties_eventSetSearchText_Parms, newText), METADATA_PARAMS(Z_Construct_UFunction_UAkItemBoolProperties_SetSearchText_Statics::NewProp_newText_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UAkItemBoolProperties_SetSearchText_Statics::NewProp_newText_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UAkItemBoolProperties_SetSearchText_Statics::NewProp_newText = { "newText", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AkItemBoolProperties_eventSetSearchText_Parms, newText), METADATA_PARAMS(Z_Construct_UFunction_UAkItemBoolProperties_SetSearchText_Statics::NewProp_newText_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UAkItemBoolProperties_SetSearchText_Statics::NewProp_newText_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UAkItemBoolProperties_SetSearchText_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UAkItemBoolProperties_SetSearchText_Statics::NewProp_newText,
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UAkItemBoolProperties_SetSearchText_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Audiokinetic" },
+		{ "Comment", "/** sets the current text of the searchBox */" },
 		{ "ModuleRelativePath", "Classes/AkWaapiUMG/Components/AkItemBoolProperties.h" },
 		{ "ToolTip", "sets the current text of the searchBox" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UAkItemBoolProperties_SetSearchText_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UAkItemBoolProperties, nullptr, "SetSearchText", sizeof(AkItemBoolProperties_eventSetSearchText_Parms), Z_Construct_UFunction_UAkItemBoolProperties_SetSearchText_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UAkItemBoolProperties_SetSearchText_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020409, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UAkItemBoolProperties_SetSearchText_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UAkItemBoolProperties_SetSearchText_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UAkItemBoolProperties_SetSearchText_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UAkItemBoolProperties, nullptr, "SetSearchText", nullptr, nullptr, sizeof(AkItemBoolProperties_eventSetSearchText_Parms), Z_Construct_UFunction_UAkItemBoolProperties_SetSearchText_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UAkItemBoolProperties_SetSearchText_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020409, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UAkItemBoolProperties_SetSearchText_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UAkItemBoolProperties_SetSearchText_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UAkItemBoolProperties_SetSearchText()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -500,12 +543,13 @@ static struct FScriptStruct_AkAudio_StaticRegisterNativesFAkBoolPropertyToContro
 		(UObject* (*)())Z_Construct_UPackage__Script_AkAudio,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UAkItemBoolProperties_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UAkItemBoolProperties_GetSearchText, "GetSearchText" }, // 3124370583
-		{ &Z_Construct_UFunction_UAkItemBoolProperties_GetSelectedProperty, "GetSelectedProperty" }, // 1749806523
-		{ &Z_Construct_UFunction_UAkItemBoolProperties_SetSearchText, "SetSearchText" }, // 1198908902
+		{ &Z_Construct_UFunction_UAkItemBoolProperties_GetSearchText, "GetSearchText" }, // 494926158
+		{ &Z_Construct_UFunction_UAkItemBoolProperties_GetSelectedProperty, "GetSelectedProperty" }, // 1480187325
+		{ &Z_Construct_UFunction_UAkItemBoolProperties_SetSearchText, "SetSearchText" }, // 2539196747
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UAkItemBoolProperties_Statics::Class_MetaDataParams[] = {
+		{ "Comment", "/**\n* A widget that shows the Wwise properties list.\n*/" },
 		{ "IncludePath", "AkWaapiUMG/Components/AkItemBoolProperties.h" },
 		{ "ModuleRelativePath", "Classes/AkWaapiUMG/Components/AkItemBoolProperties.h" },
 		{ "ToolTip", "A widget that shows the Wwise properties list." },
@@ -514,19 +558,21 @@ static struct FScriptStruct_AkAudio_StaticRegisterNativesFAkBoolPropertyToContro
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UAkItemBoolProperties_Statics::NewProp_OnPropertyDragged_MetaData[] = {
 		{ "Category", "Widget Event" },
+		{ "Comment", "/** Called when a property is dragged from the property list. */" },
 		{ "ModuleRelativePath", "Classes/AkWaapiUMG/Components/AkItemBoolProperties.h" },
 		{ "ToolTip", "Called when a property is dragged from the property list." },
 	};
 #endif
-	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UAkItemBoolProperties_Statics::NewProp_OnPropertyDragged = { "OnPropertyDragged", nullptr, (EPropertyFlags)0x0010000010080000, UE4CodeGen_Private::EPropertyGenFlags::MulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UAkItemBoolProperties, OnPropertyDragged), Z_Construct_UDelegateFunction_AkAudio_OnItemBoolPropertyDragDetected__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UAkItemBoolProperties_Statics::NewProp_OnPropertyDragged_MetaData, ARRAY_COUNT(Z_Construct_UClass_UAkItemBoolProperties_Statics::NewProp_OnPropertyDragged_MetaData)) };
+	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UAkItemBoolProperties_Statics::NewProp_OnPropertyDragged = { "OnPropertyDragged", nullptr, (EPropertyFlags)0x0010000010080000, UE4CodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UAkItemBoolProperties, OnPropertyDragged), Z_Construct_UDelegateFunction_AkAudio_OnItemBoolPropertyDragDetected__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UAkItemBoolProperties_Statics::NewProp_OnPropertyDragged_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UAkItemBoolProperties_Statics::NewProp_OnPropertyDragged_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UAkItemBoolProperties_Statics::NewProp_OnSelectionChanged_MetaData[] = {
 		{ "Category", "Widget Event" },
+		{ "Comment", "/** Called when the property selection changes. */" },
 		{ "ModuleRelativePath", "Classes/AkWaapiUMG/Components/AkItemBoolProperties.h" },
 		{ "ToolTip", "Called when the property selection changes." },
 	};
 #endif
-	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UAkItemBoolProperties_Statics::NewProp_OnSelectionChanged = { "OnSelectionChanged", nullptr, (EPropertyFlags)0x0010000010080000, UE4CodeGen_Private::EPropertyGenFlags::MulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UAkItemBoolProperties, OnSelectionChanged), Z_Construct_UDelegateFunction_AkAudio_OnItemBoolPropertySelectionChanged__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UAkItemBoolProperties_Statics::NewProp_OnSelectionChanged_MetaData, ARRAY_COUNT(Z_Construct_UClass_UAkItemBoolProperties_Statics::NewProp_OnSelectionChanged_MetaData)) };
+	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UAkItemBoolProperties_Statics::NewProp_OnSelectionChanged = { "OnSelectionChanged", nullptr, (EPropertyFlags)0x0010000010080000, UE4CodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UAkItemBoolProperties, OnSelectionChanged), Z_Construct_UDelegateFunction_AkAudio_OnItemBoolPropertySelectionChanged__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UAkItemBoolProperties_Statics::NewProp_OnSelectionChanged_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UAkItemBoolProperties_Statics::NewProp_OnSelectionChanged_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UAkItemBoolProperties_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UAkItemBoolProperties_Statics::NewProp_OnPropertyDragged,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UAkItemBoolProperties_Statics::NewProp_OnSelectionChanged,
@@ -542,12 +588,12 @@ static struct FScriptStruct_AkAudio_StaticRegisterNativesFAkBoolPropertyToContro
 		FuncInfo,
 		Z_Construct_UClass_UAkItemBoolProperties_Statics::PropPointers,
 		nullptr,
-		ARRAY_COUNT(DependentSingletons),
-		ARRAY_COUNT(FuncInfo),
-		ARRAY_COUNT(Z_Construct_UClass_UAkItemBoolProperties_Statics::PropPointers),
+		UE_ARRAY_COUNT(DependentSingletons),
+		UE_ARRAY_COUNT(FuncInfo),
+		UE_ARRAY_COUNT(Z_Construct_UClass_UAkItemBoolProperties_Statics::PropPointers),
 		0,
 		0x00B000A2u,
-		METADATA_PARAMS(Z_Construct_UClass_UAkItemBoolProperties_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UAkItemBoolProperties_Statics::Class_MetaDataParams))
+		METADATA_PARAMS(Z_Construct_UClass_UAkItemBoolProperties_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UAkItemBoolProperties_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UAkItemBoolProperties()
 	{
@@ -558,7 +604,7 @@ static struct FScriptStruct_AkAudio_StaticRegisterNativesFAkBoolPropertyToContro
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UAkItemBoolProperties, 3370063945);
+	IMPLEMENT_CLASS(UAkItemBoolProperties, 1716074330);
 	template<> AKAUDIO_API UClass* StaticClass<UAkItemBoolProperties>()
 	{
 		return UAkItemBoolProperties::StaticClass();

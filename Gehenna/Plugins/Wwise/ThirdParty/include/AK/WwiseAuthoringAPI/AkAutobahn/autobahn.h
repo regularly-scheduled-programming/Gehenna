@@ -305,6 +305,9 @@ namespace AK
 			/// Future to be fired when session was joined.
 			std::promise<uint64_t> m_session_join;
 
+			/// Future to be fired when the send thread has started waiting
+			std::promise<bool> m_send_thread_started;
+
 			std::mutex m_joinMutex;
 
 			/// Last request ID of outgoing WAMP requests.

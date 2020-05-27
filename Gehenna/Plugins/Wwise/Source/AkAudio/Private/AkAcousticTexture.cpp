@@ -1,18 +1,2 @@
-// Copyright (c) 2006-2012 Audiokinetic Inc. / All Rights Reserved
-
-/*=============================================================================
-	AkEvent.cpp:
-=============================================================================*/
-
+// Copyright (c) 2006-2019 Audiokinetic Inc. / All Rights Reserved
 #include "AkAcousticTexture.h"
-#include "AkAudioDevice.h"
-
-/**
- * Constructor
- *
- * @param PCIP		Initialization properties
- */
-UAkAcousticTexture::UAkAcousticTexture(const class FObjectInitializer& ObjectInitializer)
-	: Super(ObjectInitializer)
-{
-}

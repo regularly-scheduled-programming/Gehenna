@@ -41,11 +41,7 @@ public:
 
 		if (Wwiseproperties.Num() > 1 )
 		{
-#if UE_4_20_OR_LATER
 			Text = FString::Printf(TEXT("Can't handle more than one Property"));
-#else
-			Text = FString::Printf(*NSLOCTEXT("AkSlider", "WwisePropperty", ": Can't handle more than one Property").ToString());
-#endif
 		}
 		return FText::FromString(Text);
 	}

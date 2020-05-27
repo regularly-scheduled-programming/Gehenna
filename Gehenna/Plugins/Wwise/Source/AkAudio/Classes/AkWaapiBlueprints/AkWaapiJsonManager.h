@@ -86,6 +86,4 @@ class AKAUDIO_API UAkWaapiJsonManager : public UBlueprintFunctionLibrary
 	/** Converts an AKWaapiJsonObject value to a localizable text */
 	UFUNCTION(BlueprintPure, meta = (DisplayName = "ToText (FAKWaapiJsonObject)", CompactNodeTitle = "->", BlueprintAutocast), Category = "Utilities|Text")
 	static FText Conv_FAKWaapiJsonObjectToText(FAKWaapiJsonObject INAKWaapiJsonObject);
-
-	static inline bool JsonObjectToString(const TSharedRef<FJsonObject>& in_jsonObject, FString& ou_jsonObjectString);
 };

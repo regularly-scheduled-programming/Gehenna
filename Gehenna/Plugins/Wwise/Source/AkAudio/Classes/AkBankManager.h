@@ -1,9 +1,8 @@
-// Copyright (c) 2006-2012 Audiokinetic Inc. / All Rights Reserved
+// Copyright (c) 2006-2019 Audiokinetic Inc. / All Rights Reserved
 
 /*=============================================================================
 	AkAudioDevice.h: Audiokinetic audio interface object.
 =============================================================================*/
-
 #pragma once
 
 /*------------------------------------------------------------------------------------
@@ -15,49 +14,50 @@
 #include "AkGameplayTypes.h"
 #include "Engine/EngineBaseTypes.h"
 
+class UAkAudioBank;
+
 /*------------------------------------------------------------------------------------
 	Audiokinetic SoundBank Manager.
 ------------------------------------------------------------------------------------*/
 class IAkBankCallbackInfo
 {
 public:
-	class UAkAudioBank *	Bank;
+	UAkAudioBank* Bank = nullptr;
 
-	IAkBankCallbackInfo(class UAkAudioBank * bank)
-		: Bank(bank)
+	IAkBankCallbackInfo(UAkAudioBank* bank)
+	: Bank(bank)
 	{}
 
 	virtual ~IAkBankCallbackInfo() {}
 
-	virtual void HandleAction(AkUInt32 BankID, const void * InMemoryBankPtr, AKRESULT ActionResult, AkMemPoolId MemPoolId) = 0;
+	virtual void HandleAction(AkUInt32 BankID, const void * InMemoryBankPtr, AKRESULT ActionResult) = 0;
 };
 
 class FAkBankFunctionPtrCallbackInfo : public IAkBankCallbackInfo
 {
 public:
-	FAkBankFunctionPtrCallbackInfo(AkBankCallbackFunc cbFunc, class UAkAudioBank * bank, void* cookie)
+	FAkBankFunctionPtrCallbackInfo(AkBankCallbackFunc cbFunc, UAkAudioBank * bank, void* cookie)
 		: IAkBankCallbackInfo(bank)
 		, CallbackFunc(cbFunc)
 		, UserCookie(cookie)
 	{}
 
-	virtual void HandleAction(AkUInt32 BankID, const void * InMemoryBankPtr, AKRESULT ActionResult, AkMemPoolId MemPoolId) override;
+	virtual void HandleAction(AkUInt32 BankID, const void * InMemoryBankPtr, AKRESULT ActionResult) override;
 
 private:
-	AkBankCallbackFunc		CallbackFunc;
-	void*					UserCookie;
-
+	AkBankCallbackFunc CallbackFunc;
+	void* UserCookie;
 };
 
 class FAkBankLatentActionCallbackInfo : public IAkBankCallbackInfo
 {
 public:
-	FAkBankLatentActionCallbackInfo(class UAkAudioBank * bank, FWaitEndBankAction* LatentAction)
+	FAkBankLatentActionCallbackInfo(UAkAudioBank* bank, FWaitEndBankAction* LatentAction)
 		: IAkBankCallbackInfo(bank)
 		, BankLatentAction(LatentAction)
 	{}
 
-	virtual void HandleAction(AkUInt32 BankID, const void * InMemoryBankPtr, AKRESULT ActionResult, AkMemPoolId MemPoolId) override;
+	virtual void HandleAction(AkUInt32 BankID, const void * InMemoryBankPtr, AKRESULT ActionResult) override;
 
 private:
 	FWaitEndBankAction* BankLatentAction;
@@ -66,12 +66,12 @@ private:
 class FAkBankBlueprintDelegateCallbackInfo : public IAkBankCallbackInfo
 {
 public:
-	FAkBankBlueprintDelegateCallbackInfo(class UAkAudioBank * bank, const FOnAkBankCallback& BlueprintCallback)
+	FAkBankBlueprintDelegateCallbackInfo(UAkAudioBank * bank, const FOnAkBankCallback& BlueprintCallback)
 		: IAkBankCallbackInfo(bank)
 		, BankBlueprintCallback(BlueprintCallback)
 	{}
 
-	virtual void HandleAction(AkUInt32 BankID, const void * InMemoryBankPtr, AKRESULT ActionResult, AkMemPoolId MemPoolId) override;
+	virtual void HandleAction(AkUInt32 BankID, const void * InMemoryBankPtr, AKRESULT ActionResult) override;
 
 private:
 	FOnAkBankCallback BankBlueprintCallback;
@@ -89,7 +89,6 @@ public:
 		AkUInt32		in_bankID,
 		const void *	in_pInMemoryBankPtr,
 		AKRESULT		in_eLoadResult,
-		AkMemPoolId		in_memPoolId,
 		void *			in_pCookie
 	);
 
@@ -97,35 +96,37 @@ public:
 		AkUInt32		in_bankID,
 		const void *	in_pInMemoryBankPtr,
 		AKRESULT		in_eUnloadResult,
-		AkMemPoolId		in_memPoolId,
 		void *			in_pCookie
 	);
 
-	void AddLoadedBank(class UAkAudioBank * Bank)
+	void AddLoadedBank(UAkAudioBank * Bank)
 	{
+		FScopeLock autoLock(&m_bankLock);
 		bool bIsAlreadyInSet = false;
 		m_LoadedBanks.Add(Bank, &bIsAlreadyInSet);
 		check(bIsAlreadyInSet == false);
 	}
 
-	void RemoveLoadedBank(class UAkAudioBank * Bank)
+	void RemoveLoadedBank(UAkAudioBank * Bank)
 	{
+		FScopeLock autoLock(&m_bankLock);
 		m_LoadedBanks.Remove(Bank);
 	}
 
 	void ClearLoadedBanks()
 	{
+		FScopeLock autoLock(&m_bankLock);
 		m_LoadedBanks.Empty();
 	}
 
-	const TSet<class UAkAudioBank *>* GetLoadedBankList()
+	const TSet<UAkAudioBank *> GetLoadedBankList() const
 	{
-		return &m_LoadedBanks;
+		FScopeLock autoLock(&m_bankLock);
+		return m_LoadedBanks;
 	}
-
-	FCriticalSection m_BankManagerCriticalSection;
 
 private:
 	static FAkBankManager* Instance;
-	TSet< class UAkAudioBank * > m_LoadedBanks;
+	TSet<UAkAudioBank*> m_LoadedBanks;
+	mutable FCriticalSection m_bankLock;
 };

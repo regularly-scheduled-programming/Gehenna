@@ -1,35 +1,7 @@
-// Copyright (c) 2006-2012 Audiokinetic Inc. / All Rights Reserved
-
-/*=============================================================================
-	AkReverbVolume.cpp:
-=============================================================================*/
-
+// Copyright (c) 2006-2019 Audiokinetic Inc. / All Rights Reservedn
 #include "AkAuxBus.h"
-#include "AkAudioDevice.h"
 
-/*------------------------------------------------------------------------------------
-	UAkAuxBus
-------------------------------------------------------------------------------------*/
-
-UAkAuxBus::UAkAuxBus(const class FObjectInitializer& ObjectInitializer) :
-	Super(ObjectInitializer)
+UAkAssetData* UAkAuxBus::createAssetData(UObject* parent) const
 {
-	if (HasAnyFlags(RF_ClassDefaultObject))
-	{
-		AuxBusId = AK_INVALID_AUX_ID;
-	}
-	else
-	{
-		// Property initialization
-		FAkAudioDevice* AkAudioDevice = FAkAudioDevice::Get();
-		if (AkAudioDevice)
-		{
-			AuxBusId = AkAudioDevice->GetIDFromString(GetName());
-		}
-		else
-		{
-			AuxBusId = AK_INVALID_AUX_ID;
-		}
-	}
+	return NewObject<UAkAssetDataWithMedia>(parent);
 }
-

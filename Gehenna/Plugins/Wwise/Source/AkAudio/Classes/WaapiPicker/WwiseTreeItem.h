@@ -6,108 +6,11 @@
 #pragma once
 #include "Engine/GameEngine.h"
 #include "Widgets/Views/STableRow.h"
+#include "WwiseItemType.h"
+
 /*------------------------------------------------------------------------------------
 	WwiseTreeItem
 ------------------------------------------------------------------------------------*/
-
-namespace EWwiseTreeItemType
-{
-	enum Type
-	{
-		Event,
-		AuxBus,
-		AcousticTexture,
-		ActorMixer,
-		INVALID_DRAGGABLE_ITEMS,
-		Bus,
-		Project,
-		StandaloneWorkUnit,
-		NestedWorkUnit,
-		PhysicalFolder,
-		Folder,
-		Sound,
-		SwitchContainer,
-		RandomSequenceContainer,
-		BlendContainer,
-		MotionBus
-	};
-
-	enum NumItems
-	{
-		NUM_DRAGGABLE_WWISE_ITEMS = 3,
-		NUM_DRAGGABLE_WAAPI_ITEMS = 4
-	};
-
-	static const FString ItemNames[NUM_DRAGGABLE_WAAPI_ITEMS] = { TEXT("Event"), TEXT("AuxBus"), TEXT("AcousticTexture"), TEXT("ActorMixer") };
-	static const FString DisplayNames[NUM_DRAGGABLE_WAAPI_ITEMS] = { TEXT("Events"), TEXT("Busses"), TEXT("VirtualAcoustics"), TEXT("ActorMixer") };
-	static const FString FolderNames[NUM_DRAGGABLE_WAAPI_ITEMS] = { TEXT("Events"), TEXT("Master-Mixer Hierarchy"), TEXT("Virtual Acoustics"), TEXT("Actor-Mixer Hierarchy") };
-	static const FString PickerLabel[NUM_DRAGGABLE_WAAPI_ITEMS] = { TEXT("Events"), TEXT("Auxiliary Busses"), TEXT("Textures"), TEXT("Actor Mixer") };
-
-	inline Type FromString(const FString& ItemName)
-	{
-		if (ItemName == "Event")
-		{
-			return Type::Event;
-		}
-		else if (ItemName == "AuxBus")
-		{
-			return Type::AuxBus;
-		}
-		else if (ItemName == "Bus")
-		{
-			return Type::Bus;
-		}
-		else if (ItemName == "Project")
-		{
-			return Type::Project;
-		}
-		else if (ItemName == "WorkUnit")
-		{
-			return Type::StandaloneWorkUnit;
-		}
-		else if (ItemName == "PhysicalFolder")
-		{
-			return Type::PhysicalFolder;
-		}
-		else if (ItemName == "Folder")
-		{
-			return Type::Folder;
-		}
-		else if (ItemName == "ActorMixer")
-		{
-			return Type::ActorMixer;
-		}
-		else if (ItemName == "Sound")
-		{
-			return Type::Sound;
-		}
-		else if (ItemName == "SwitchContainer")
-		{
-			return Type::SwitchContainer;
-		}
-		else if (ItemName == "RandomSequenceContainer")
-		{
-			return Type::RandomSequenceContainer;
-		}
-		else if (ItemName == "BlendContainer")
-		{
-			return Type::BlendContainer;
-		}
-		else if (ItemName == "MotionBus")
-		{
-			return Type::MotionBus;
-		}
-		else if (ItemName == "AcousticTexture")
-		{
-			return Type::AcousticTexture;
-		}
-		else
-		{
-			return Type::INVALID_DRAGGABLE_ITEMS; // return something invalid
-		}
-	}
-};
-
 struct FWwiseTreeItem : public TSharedFromThis<FWwiseTreeItem>
 {
 	/** Name to display */
@@ -115,7 +18,7 @@ struct FWwiseTreeItem : public TSharedFromThis<FWwiseTreeItem>
 	/** The path of the tree item including the name */
 	FString FolderPath;
 	/** Type of the item */
-	EWwiseTreeItemType::Type ItemType;
+	EWwiseItemType::Type ItemType = EWwiseItemType::None;
 	/** Id of the item */
 	FGuid ItemId;
 
@@ -123,19 +26,19 @@ struct FWwiseTreeItem : public TSharedFromThis<FWwiseTreeItem>
 	TArray< TSharedPtr<FWwiseTreeItem> > Children;
 	
 	/** The number of children of this tree item requested from Wwise*/
-	uint32_t ChildCountInWwise;
+	uint32_t ChildCountInWwise = 0;
 
 	/** The parent folder for this item */
 	TWeakPtr<FWwiseTreeItem> Parent;
 
 	/** The row in the tree view associated to this item */
-	ITableRow* TreeRow;
+	TWeakPtr<ITableRow> TreeRow;
 
 	/** Should this item be visible? */
-	bool IsVisible;
+	bool IsVisible = true;
 
 	/** Constructor */
-	FWwiseTreeItem(FString InDisplayName, FString InFolderPath, TSharedPtr<FWwiseTreeItem> InParent, EWwiseTreeItemType::Type InItemType, const FGuid& InItemId)
+	FWwiseTreeItem(FString InDisplayName, FString InFolderPath, TSharedPtr<FWwiseTreeItem> InParent, EWwiseItemType::Type InItemType, const FGuid& InItemId)
 		: DisplayName(MoveTemp(InDisplayName))
 		, FolderPath(MoveTemp(InFolderPath))
 		, ItemType(MoveTemp(InItemType))
@@ -160,6 +63,24 @@ struct FWwiseTreeItem : public TSharedFromThis<FWwiseTreeItem>
 		}
 
 		return false;
+	}
+
+	bool IsOfType(const TArray<EWwiseItemType::Type>& Types)
+	{
+		for (const auto& Type : Types)
+			if (ItemType == Type)
+				return true;
+
+		return false;
+	}
+
+	bool IsNotOfType(const TArray<EWwiseItemType::Type>& Types)
+	{
+		for (const auto& Type : Types)
+			if (ItemType == Type)
+				return false;
+
+		return true;
 	}
 
 	/** Returns the child item by name or NULL if the child does not exist */
@@ -198,6 +119,69 @@ struct FWwiseTreeItem : public TSharedFromThis<FWwiseTreeItem>
 
 	struct FCompareWwiseTreeItem
 	{
+		template<typename CT>
+		inline int StringCompareLogical(const CT* pA1, const CT* pA2) const
+		{
+			if (pA1 && pA2)
+			{
+				while (*pA1)
+				{
+					if (!*pA2)
+					{
+						// We've iterated through all the characters of the RHS but
+						// there are characters left on the LHS
+						return 1;
+					}
+					else if (TChar<CT>::IsDigit(*pA1))
+					{
+						// LHS is a digit but RHS is not
+						if (!TChar<CT>::IsDigit(*pA2))
+							return -1;
+
+						// Both sides are digits, parse the numbers and compare them
+						CT* pEnd1 = nullptr;
+						CT* pEnd2 = nullptr;
+						const auto i1 = TCString<CT>::Strtoi(pA1, &pEnd1, 10);
+						const auto i2 = TCString<CT>::Strtoi(pA2, &pEnd2, 10);
+
+						if (i1 < i2)
+							return -1;
+						else if (i1 > i2)
+							return 1;
+
+						pA1 = pEnd1;
+						pA2 = pEnd2;
+					}
+					else if (TChar<CT>::IsDigit(*pA2))
+					{
+						// LHS is not a digit but RHS is
+						return 1;
+					}
+					else
+					{
+						// Neither side is a digit, do a case-insensitive comparison
+						int diff = TChar<CT>::ToLower(*pA1) - TChar<CT>::ToLower(*pA2);
+						if (diff > 0)
+							return 1;
+						else if (diff < 0)
+							return -1;
+
+						++pA1;
+						++pA2;
+					}
+				}
+
+				if (*pA2)
+				{
+					// We've iterated through all the characters of the LHS but
+					// there are characters left on the RHS
+					return -1;
+				}
+			}
+
+			return 0;
+		}
+
 		FORCEINLINE bool operator()( TSharedPtr<FWwiseTreeItem> A, TSharedPtr<FWwiseTreeItem> B ) const
 		{
 			// Items are sorted like so:
@@ -205,31 +189,31 @@ struct FWwiseTreeItem : public TSharedFromThis<FWwiseTreeItem>
 			// 1- WorkUnits, sorted alphabetically
 			// 2- Virtual folders, sorted alphabetically
 			// 3- Normal items, sorted alphabetically
-			if( A->ItemType == B->ItemType )
+			if( A->ItemType == B->ItemType)
 			{
-				return A->DisplayName < B->DisplayName;
+				return StringCompareLogical(*A->DisplayName, *B->DisplayName) < 0;
 			}
-			else if( A->ItemType == EWwiseTreeItemType::PhysicalFolder )
+			else if( A->ItemType == EWwiseItemType::PhysicalFolder )
 			{
 				return true;
 			}
-			else if( B->ItemType == EWwiseTreeItemType::PhysicalFolder )
+			else if( B->ItemType == EWwiseItemType::PhysicalFolder )
 			{
 				return false;
 			}
-			else if( A->ItemType == EWwiseTreeItemType::StandaloneWorkUnit || A->ItemType == EWwiseTreeItemType::NestedWorkUnit )
+			else if( A->ItemType == EWwiseItemType::StandaloneWorkUnit || A->ItemType == EWwiseItemType::NestedWorkUnit )
 			{
 				return true;
 			}
-			else if( B->ItemType == EWwiseTreeItemType::StandaloneWorkUnit || B->ItemType == EWwiseTreeItemType::NestedWorkUnit )
+			else if( B->ItemType == EWwiseItemType::StandaloneWorkUnit || B->ItemType == EWwiseItemType::NestedWorkUnit )
 			{
 				return false;
 			}
-			else if( A->ItemType == EWwiseTreeItemType::Folder )
+			else if( A->ItemType == EWwiseItemType::Folder )
 			{
 				return true;
 			}
-			else if( B->ItemType == EWwiseTreeItemType::Folder )
+			else if( B->ItemType == EWwiseItemType::Folder )
 			{
 				return false;
 			}

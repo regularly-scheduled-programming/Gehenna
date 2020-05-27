@@ -43,9 +43,6 @@
     #include <AK/Comm/AkCommunication.h>
 #endif // AK_OPTIMIZED
 
-#if defined AK_SOUNDFRAME
-	#include <AK/SoundFrame/SF.h>
-#endif
 #include <AK/SoundEngine/Common/AkQueryParameters.h>
 
 #if PLATFORM_WINDOWS

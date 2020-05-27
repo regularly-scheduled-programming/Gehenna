@@ -7,11 +7,7 @@
 
 FMovieSceneAkAudioRTPCSectionData::FMovieSceneAkAudioRTPCSectionData(const UMovieSceneAkAudioRTPCSection& Section)
 	: RTPCName(Section.GetRTPCName())
-#if UE_4_20_OR_LATER
 	, RTPCChannel(Section.GetChannel())
-#else
-	, RTPCCurve(Section.GetFloatCurve())
-#endif
 {
 }
 
@@ -36,12 +32,8 @@ struct FAkAudioRTPCExecutionToken : IMovieSceneExecutionToken
 		if (SectionData.IsValid())
 		{
 			auto RTPCNameString = *(SectionData->RTPCName);
-#if UE_4_20_OR_LATER
 			float Value;
 			SectionData->RTPCChannel.Evaluate(Context.GetTime(), Value);
-#else
-			const float Value = SectionData->RTPCCurve.Eval(Context.GetTime());
-#endif
 
 			if (Operand.ObjectBindingID.IsValid())
 			{	// Object binding audio track

@@ -1,4 +1,4 @@
-// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
+// Copyright Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -43,60 +43,19 @@ static inline void FOnItemSelectionChanged_DelegateWrapper(const FMulticastScrip
 }
 
 
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiUMG_Components_AkWwiseTree_h_30_SPARSE_DATA
 #define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiUMG_Components_AkWwiseTree_h_30_RPC_WRAPPERS \
  \
-	DECLARE_FUNCTION(execSetSearchText) \
-	{ \
-		P_GET_PROPERTY(UStrProperty,Z_Param_newText); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->SetSearchText(Z_Param_newText); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetSearchText) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(FString*)Z_Param__Result=P_THIS->GetSearchText(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetSelectedItem) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(FAkWwiseObjectDetails*)Z_Param__Result=P_THIS->GetSelectedItem(); \
-		P_NATIVE_END; \
-	}
+	DECLARE_FUNCTION(execSetSearchText); \
+	DECLARE_FUNCTION(execGetSearchText); \
+	DECLARE_FUNCTION(execGetSelectedItem);
 
 
 #define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiUMG_Components_AkWwiseTree_h_30_RPC_WRAPPERS_NO_PURE_DECLS \
  \
-	DECLARE_FUNCTION(execSetSearchText) \
-	{ \
-		P_GET_PROPERTY(UStrProperty,Z_Param_newText); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->SetSearchText(Z_Param_newText); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetSearchText) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(FString*)Z_Param__Result=P_THIS->GetSearchText(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetSelectedItem) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(FAkWwiseObjectDetails*)Z_Param__Result=P_THIS->GetSelectedItem(); \
-		P_NATIVE_END; \
-	}
+	DECLARE_FUNCTION(execSetSearchText); \
+	DECLARE_FUNCTION(execGetSearchText); \
+	DECLARE_FUNCTION(execGetSelectedItem);
 
 
 #define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiUMG_Components_AkWwiseTree_h_30_INCLASS_NO_PURE_DECLS \
@@ -153,6 +112,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UAkWwiseTree); \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiUMG_Components_AkWwiseTree_h_30_PRIVATE_PROPERTY_OFFSET \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiUMG_Components_AkWwiseTree_h_30_SPARSE_DATA \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiUMG_Components_AkWwiseTree_h_30_RPC_WRAPPERS \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiUMG_Components_AkWwiseTree_h_30_INCLASS \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiUMG_Components_AkWwiseTree_h_30_STANDARD_CONSTRUCTORS \
@@ -164,6 +124,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiUMG_Components_AkWwiseTree_h_30_PRIVATE_PROPERTY_OFFSET \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiUMG_Components_AkWwiseTree_h_30_SPARSE_DATA \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiUMG_Components_AkWwiseTree_h_30_RPC_WRAPPERS_NO_PURE_DECLS \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiUMG_Components_AkWwiseTree_h_30_INCLASS_NO_PURE_DECLS \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiUMG_Components_AkWwiseTree_h_30_ENHANCED_CONSTRUCTORS \

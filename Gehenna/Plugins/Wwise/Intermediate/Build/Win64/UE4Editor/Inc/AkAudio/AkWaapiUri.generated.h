@@ -1,4 +1,4 @@
-// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
+// Copyright Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -21,46 +21,17 @@ struct FAkWaapiUri;
 
 template<> AKAUDIO_API UScriptStruct* StaticStruct<struct FAkWaapiUri>();
 
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiBlueprints_AkWaapiUri_h_42_SPARSE_DATA
 #define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiBlueprints_AkWaapiUri_h_42_RPC_WRAPPERS \
  \
-	DECLARE_FUNCTION(execConv_FAkWaapiUriToText) \
-	{ \
-		P_GET_STRUCT_REF(FAkWaapiUri,Z_Param_Out_INAkWaapiUri); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(FText*)Z_Param__Result=UAkWaapiUriConv::Conv_FAkWaapiUriToText(Z_Param_Out_INAkWaapiUri); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execConv_FAkWaapiUriToString) \
-	{ \
-		P_GET_STRUCT_REF(FAkWaapiUri,Z_Param_Out_INAkWaapiUri); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(FString*)Z_Param__Result=UAkWaapiUriConv::Conv_FAkWaapiUriToString(Z_Param_Out_INAkWaapiUri); \
-		P_NATIVE_END; \
-	}
+	DECLARE_FUNCTION(execConv_FAkWaapiUriToText); \
+	DECLARE_FUNCTION(execConv_FAkWaapiUriToString);
 
 
 #define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiBlueprints_AkWaapiUri_h_42_RPC_WRAPPERS_NO_PURE_DECLS \
  \
-	DECLARE_FUNCTION(execConv_FAkWaapiUriToText) \
-	{ \
-		P_GET_STRUCT_REF(FAkWaapiUri,Z_Param_Out_INAkWaapiUri); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(FText*)Z_Param__Result=UAkWaapiUriConv::Conv_FAkWaapiUriToText(Z_Param_Out_INAkWaapiUri); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execConv_FAkWaapiUriToString) \
-	{ \
-		P_GET_STRUCT_REF(FAkWaapiUri,Z_Param_Out_INAkWaapiUri); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(FString*)Z_Param__Result=UAkWaapiUriConv::Conv_FAkWaapiUriToString(Z_Param_Out_INAkWaapiUri); \
-		P_NATIVE_END; \
-	}
+	DECLARE_FUNCTION(execConv_FAkWaapiUriToText); \
+	DECLARE_FUNCTION(execConv_FAkWaapiUriToString);
 
 
 #define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiBlueprints_AkWaapiUri_h_42_INCLASS_NO_PURE_DECLS \
@@ -113,6 +84,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UAkWaapiUriConv); \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiBlueprints_AkWaapiUri_h_42_PRIVATE_PROPERTY_OFFSET \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiBlueprints_AkWaapiUri_h_42_SPARSE_DATA \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiBlueprints_AkWaapiUri_h_42_RPC_WRAPPERS \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiBlueprints_AkWaapiUri_h_42_INCLASS \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiBlueprints_AkWaapiUri_h_42_STANDARD_CONSTRUCTORS \
@@ -124,6 +96,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiBlueprints_AkWaapiUri_h_42_PRIVATE_PROPERTY_OFFSET \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiBlueprints_AkWaapiUri_h_42_SPARSE_DATA \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiBlueprints_AkWaapiUri_h_42_RPC_WRAPPERS_NO_PURE_DECLS \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiBlueprints_AkWaapiUri_h_42_INCLASS_NO_PURE_DECLS \
 	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkWaapiBlueprints_AkWaapiUri_h_42_ENHANCED_CONSTRUCTORS \
