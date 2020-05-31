@@ -30,7 +30,10 @@ enum class WORLD_PROP_KEY : uint8
 	AttackIncoming,
 	IsAtLocation,
 	IsBehindPlayer,
-	IsLookingAtTarget
+	IsLookingAtTarget,
+	IsThreatend,
+	IsBored,
+	IsSuspicious
 
 };
 
