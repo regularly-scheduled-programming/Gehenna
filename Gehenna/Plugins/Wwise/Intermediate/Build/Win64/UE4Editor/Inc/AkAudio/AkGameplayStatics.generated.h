@@ -91,6 +91,7 @@ class USceneComponent;
 	DECLARE_FUNCTION(execPostEventAtLocationByName); \
 	DECLARE_FUNCTION(execPostEventAtLocation); \
 	DECLARE_FUNCTION(execPostEventByName); \
+	DECLARE_FUNCTION(execPostAndWaitForEndOfEventAsync); \
 	DECLARE_FUNCTION(execPostAndWaitForEndOfEvent); \
 	DECLARE_FUNCTION(execPostEvent); \
 	DECLARE_FUNCTION(execPostEventAttached); \
@@ -151,6 +152,7 @@ class USceneComponent;
 	DECLARE_FUNCTION(execPostEventAtLocationByName); \
 	DECLARE_FUNCTION(execPostEventAtLocation); \
 	DECLARE_FUNCTION(execPostEventByName); \
+	DECLARE_FUNCTION(execPostAndWaitForEndOfEventAsync); \
 	DECLARE_FUNCTION(execPostAndWaitForEndOfEvent); \
 	DECLARE_FUNCTION(execPostEvent); \
 	DECLARE_FUNCTION(execPostEventAttached); \

@@ -13,10 +13,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define AKAUDIO_AkAudioEvent_generated_h
 
-#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_17_SPARSE_DATA
-#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_17_RPC_WRAPPERS
-#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_17_RPC_WRAPPERS_NO_PURE_DECLS
-#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_17_INCLASS_NO_PURE_DECLS \
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_19_SPARSE_DATA
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_19_RPC_WRAPPERS
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_19_RPC_WRAPPERS_NO_PURE_DECLS
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_19_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUAkAssetDataSwitchContainerData(); \
 	friend struct Z_Construct_UClass_UAkAssetDataSwitchContainerData_Statics; \
@@ -25,7 +25,7 @@ public: \
 	DECLARE_SERIALIZER(UAkAssetDataSwitchContainerData)
 
 
-#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_17_INCLASS \
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_19_INCLASS \
 private: \
 	static void StaticRegisterNativesUAkAssetDataSwitchContainerData(); \
 	friend struct Z_Construct_UClass_UAkAssetDataSwitchContainerData_Statics; \
@@ -34,7 +34,7 @@ public: \
 	DECLARE_SERIALIZER(UAkAssetDataSwitchContainerData)
 
 
-#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_17_STANDARD_CONSTRUCTORS \
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_19_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UAkAssetDataSwitchContainerData(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UAkAssetDataSwitchContainerData) \
@@ -47,7 +47,7 @@ private: \
 public:
 
 
-#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_17_ENHANCED_CONSTRUCTORS \
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_19_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UAkAssetDataSwitchContainerData(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -60,38 +60,38 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UAkAssetDataSwitchContainerData); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UAkAssetDataSwitchContainerData)
 
 
-#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_17_PRIVATE_PROPERTY_OFFSET
-#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_14_PROLOG
-#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_17_GENERATED_BODY_LEGACY \
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_19_PRIVATE_PROPERTY_OFFSET
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_16_PROLOG
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_19_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_17_PRIVATE_PROPERTY_OFFSET \
-	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_17_SPARSE_DATA \
-	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_17_RPC_WRAPPERS \
-	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_17_INCLASS \
-	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_17_STANDARD_CONSTRUCTORS \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_19_PRIVATE_PROPERTY_OFFSET \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_19_SPARSE_DATA \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_19_RPC_WRAPPERS \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_19_INCLASS \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_19_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_17_GENERATED_BODY \
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_19_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_17_PRIVATE_PROPERTY_OFFSET \
-	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_17_SPARSE_DATA \
-	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
-	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_17_INCLASS_NO_PURE_DECLS \
-	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_17_ENHANCED_CONSTRUCTORS \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_19_PRIVATE_PROPERTY_OFFSET \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_19_SPARSE_DATA \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_19_INCLASS_NO_PURE_DECLS \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_19_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 template<> AKAUDIO_API UClass* StaticClass<class UAkAssetDataSwitchContainerData>();
 
-#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_46_SPARSE_DATA
-#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_46_RPC_WRAPPERS
-#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_46_RPC_WRAPPERS_NO_PURE_DECLS
-#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_46_INCLASS_NO_PURE_DECLS \
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_53_SPARSE_DATA
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_53_RPC_WRAPPERS
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_53_RPC_WRAPPERS_NO_PURE_DECLS
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_53_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUAkAssetDataSwitchContainer(); \
 	friend struct Z_Construct_UClass_UAkAssetDataSwitchContainer_Statics; \
@@ -100,7 +100,7 @@ public: \
 	DECLARE_SERIALIZER(UAkAssetDataSwitchContainer)
 
 
-#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_46_INCLASS \
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_53_INCLASS \
 private: \
 	static void StaticRegisterNativesUAkAssetDataSwitchContainer(); \
 	friend struct Z_Construct_UClass_UAkAssetDataSwitchContainer_Statics; \
@@ -109,7 +109,7 @@ public: \
 	DECLARE_SERIALIZER(UAkAssetDataSwitchContainer)
 
 
-#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_46_STANDARD_CONSTRUCTORS \
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_53_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UAkAssetDataSwitchContainer(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UAkAssetDataSwitchContainer) \
@@ -122,7 +122,7 @@ private: \
 public:
 
 
-#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_46_ENHANCED_CONSTRUCTORS \
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_53_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UAkAssetDataSwitchContainer(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -135,38 +135,38 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UAkAssetDataSwitchContainer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UAkAssetDataSwitchContainer)
 
 
-#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_46_PRIVATE_PROPERTY_OFFSET
-#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_43_PROLOG
-#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_46_GENERATED_BODY_LEGACY \
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_53_PRIVATE_PROPERTY_OFFSET
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_50_PROLOG
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_53_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_46_PRIVATE_PROPERTY_OFFSET \
-	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_46_SPARSE_DATA \
-	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_46_RPC_WRAPPERS \
-	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_46_INCLASS \
-	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_46_STANDARD_CONSTRUCTORS \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_53_PRIVATE_PROPERTY_OFFSET \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_53_SPARSE_DATA \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_53_RPC_WRAPPERS \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_53_INCLASS \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_53_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_46_GENERATED_BODY \
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_53_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_46_PRIVATE_PROPERTY_OFFSET \
-	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_46_SPARSE_DATA \
-	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_46_RPC_WRAPPERS_NO_PURE_DECLS \
-	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_46_INCLASS_NO_PURE_DECLS \
-	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_46_ENHANCED_CONSTRUCTORS \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_53_PRIVATE_PROPERTY_OFFSET \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_53_SPARSE_DATA \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_53_RPC_WRAPPERS_NO_PURE_DECLS \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_53_INCLASS_NO_PURE_DECLS \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_53_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 template<> AKAUDIO_API UClass* StaticClass<class UAkAssetDataSwitchContainer>();
 
-#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_87_SPARSE_DATA
-#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_87_RPC_WRAPPERS
-#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_87_RPC_WRAPPERS_NO_PURE_DECLS
-#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_87_INCLASS_NO_PURE_DECLS \
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_99_SPARSE_DATA
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_99_RPC_WRAPPERS
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_99_RPC_WRAPPERS_NO_PURE_DECLS
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_99_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUAkAudioEventData(); \
 	friend struct Z_Construct_UClass_UAkAudioEventData_Statics; \
@@ -175,7 +175,7 @@ public: \
 	DECLARE_SERIALIZER(UAkAudioEventData)
 
 
-#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_87_INCLASS \
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_99_INCLASS \
 private: \
 	static void StaticRegisterNativesUAkAudioEventData(); \
 	friend struct Z_Construct_UClass_UAkAudioEventData_Statics; \
@@ -184,7 +184,7 @@ public: \
 	DECLARE_SERIALIZER(UAkAudioEventData)
 
 
-#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_87_STANDARD_CONSTRUCTORS \
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_99_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UAkAudioEventData(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UAkAudioEventData) \
@@ -197,7 +197,7 @@ private: \
 public:
 
 
-#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_87_ENHANCED_CONSTRUCTORS \
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_99_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UAkAudioEventData(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -210,52 +210,52 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UAkAudioEventData); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UAkAudioEventData)
 
 
-#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_87_PRIVATE_PROPERTY_OFFSET
-#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_84_PROLOG
-#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_87_GENERATED_BODY_LEGACY \
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_99_PRIVATE_PROPERTY_OFFSET
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_96_PROLOG
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_99_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_87_PRIVATE_PROPERTY_OFFSET \
-	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_87_SPARSE_DATA \
-	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_87_RPC_WRAPPERS \
-	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_87_INCLASS \
-	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_87_STANDARD_CONSTRUCTORS \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_99_PRIVATE_PROPERTY_OFFSET \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_99_SPARSE_DATA \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_99_RPC_WRAPPERS \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_99_INCLASS \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_99_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_87_GENERATED_BODY \
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_99_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_87_PRIVATE_PROPERTY_OFFSET \
-	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_87_SPARSE_DATA \
-	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_87_RPC_WRAPPERS_NO_PURE_DECLS \
-	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_87_INCLASS_NO_PURE_DECLS \
-	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_87_ENHANCED_CONSTRUCTORS \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_99_PRIVATE_PROPERTY_OFFSET \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_99_SPARSE_DATA \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_99_RPC_WRAPPERS_NO_PURE_DECLS \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_99_INCLASS_NO_PURE_DECLS \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_99_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 template<> AKAUDIO_API UClass* StaticClass<class UAkAudioEventData>();
 
-#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_124_SPARSE_DATA
-#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_124_RPC_WRAPPERS \
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_150_SPARSE_DATA
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_150_RPC_WRAPPERS \
  \
-	DECLARE_FUNCTION(execMaximumDuration); \
-	DECLARE_FUNCTION(execMinimumDuration); \
-	DECLARE_FUNCTION(execIsInfinite); \
-	DECLARE_FUNCTION(execMaxAttenuationRadius);
+	DECLARE_FUNCTION(execGetMaximumDuration); \
+	DECLARE_FUNCTION(execGetMinimumDuration); \
+	DECLARE_FUNCTION(execGetIsInfinite); \
+	DECLARE_FUNCTION(execGetMaxAttenuationRadius);
 
 
-#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_124_RPC_WRAPPERS_NO_PURE_DECLS \
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_150_RPC_WRAPPERS_NO_PURE_DECLS \
  \
-	DECLARE_FUNCTION(execMaximumDuration); \
-	DECLARE_FUNCTION(execMinimumDuration); \
-	DECLARE_FUNCTION(execIsInfinite); \
-	DECLARE_FUNCTION(execMaxAttenuationRadius);
+	DECLARE_FUNCTION(execGetMaximumDuration); \
+	DECLARE_FUNCTION(execGetMinimumDuration); \
+	DECLARE_FUNCTION(execGetIsInfinite); \
+	DECLARE_FUNCTION(execGetMaxAttenuationRadius);
 
 
-#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_124_INCLASS_NO_PURE_DECLS \
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_150_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUAkAudioEvent(); \
 	friend struct Z_Construct_UClass_UAkAudioEvent_Statics; \
@@ -264,7 +264,7 @@ public: \
 	DECLARE_SERIALIZER(UAkAudioEvent)
 
 
-#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_124_INCLASS \
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_150_INCLASS \
 private: \
 	static void StaticRegisterNativesUAkAudioEvent(); \
 	friend struct Z_Construct_UClass_UAkAudioEvent_Statics; \
@@ -273,7 +273,7 @@ public: \
 	DECLARE_SERIALIZER(UAkAudioEvent)
 
 
-#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_124_STANDARD_CONSTRUCTORS \
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_150_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UAkAudioEvent(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UAkAudioEvent) \
@@ -286,7 +286,7 @@ private: \
 public:
 
 
-#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_124_ENHANCED_CONSTRUCTORS \
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_150_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UAkAudioEvent(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -299,31 +299,35 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UAkAudioEvent); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UAkAudioEvent)
 
 
-#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_124_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__CurrentLocalizedPlatformData() { return STRUCT_OFFSET(UAkAudioEvent, CurrentLocalizedPlatformData); }
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_150_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__CurrentLocalizedPlatformData() { return STRUCT_OFFSET(UAkAudioEvent, CurrentLocalizedPlatformData); } \
+	FORCEINLINE static uint32 __PPO__MaxAttenuationRadius() { return STRUCT_OFFSET(UAkAudioEvent, MaxAttenuationRadius); } \
+	FORCEINLINE static uint32 __PPO__IsInfinite() { return STRUCT_OFFSET(UAkAudioEvent, IsInfinite); } \
+	FORCEINLINE static uint32 __PPO__MinimumDuration() { return STRUCT_OFFSET(UAkAudioEvent, MinimumDuration); } \
+	FORCEINLINE static uint32 __PPO__MaximumDuration() { return STRUCT_OFFSET(UAkAudioEvent, MaximumDuration); }
 
 
-#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_121_PROLOG
-#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_124_GENERATED_BODY_LEGACY \
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_147_PROLOG
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_150_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_124_PRIVATE_PROPERTY_OFFSET \
-	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_124_SPARSE_DATA \
-	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_124_RPC_WRAPPERS \
-	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_124_INCLASS \
-	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_124_STANDARD_CONSTRUCTORS \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_150_PRIVATE_PROPERTY_OFFSET \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_150_SPARSE_DATA \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_150_RPC_WRAPPERS \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_150_INCLASS \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_150_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_124_GENERATED_BODY \
+#define Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_150_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_124_PRIVATE_PROPERTY_OFFSET \
-	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_124_SPARSE_DATA \
-	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_124_RPC_WRAPPERS_NO_PURE_DECLS \
-	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_124_INCLASS_NO_PURE_DECLS \
-	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_124_ENHANCED_CONSTRUCTORS \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_150_PRIVATE_PROPERTY_OFFSET \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_150_SPARSE_DATA \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_150_RPC_WRAPPERS_NO_PURE_DECLS \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_150_INCLASS_NO_PURE_DECLS \
+	Gehenna_Plugins_Wwise_Source_AkAudio_Classes_AkAudioEvent_h_150_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

@@ -3,6 +3,10 @@
 
 #include "Engine/EngineTypes.h"
 
+#if WITH_EDITOR
+DECLARE_DELEGATE_RetVal(FReply, FOnButtonClickedMigration);
+#endif
+
 namespace AkUnrealHelper
 {
 	AKAUDIO_API void TrimPath(FString& Path);
@@ -29,5 +33,9 @@ namespace AkUnrealHelper
 #if WITH_EDITOR
 	AKAUDIO_API void SanitizePath(FString& Path, const FString& PreviousPath, const FText& DialogMessage);
 	AKAUDIO_API void SanitizeProjectPath(FString& Path, const FString& PreviousPath, const FText& DialogMessage, bool &bRequestRefresh);
+	AKAUDIO_API void SaveConfigFile(UObject* ConfigObject);
+
+	AKAUDIO_API void ShowEventBasedPackagingMigrationDialog(FOnButtonClickedMigration in_OnclickedYes, FOnButtonClickedMigration in_OnclickedNo);
+	AKAUDIO_API void DeleteOldSoundBanks();
 #endif
 }

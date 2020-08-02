@@ -16,6 +16,7 @@
 #include "UObject/UObjectIterator.h"
 #include "Engine/GameEngine.h"
 #include "Async/Async.h"
+#include "Core/Public/Modules/ModuleManager.h"
 
 DEFINE_LOG_CATEGORY(LogAkWaapiCalls);
 

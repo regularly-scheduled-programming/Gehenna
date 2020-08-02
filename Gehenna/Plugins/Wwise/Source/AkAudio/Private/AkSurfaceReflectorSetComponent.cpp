@@ -227,6 +227,9 @@ void UAkSurfaceReflectorSetComponent::BeginPlay()
 
 void UAkSurfaceReflectorSetComponent::SendSurfaceReflectorSet() 
 {
+	if (GetWorld() && GetWorld()->bIsTearingDown)
+		return;
+
 	FAkAudioDevice* AkAudioDevice = FAkAudioDevice::Get();
 
 	if (AkAudioDevice && ShouldSendGeometry())
