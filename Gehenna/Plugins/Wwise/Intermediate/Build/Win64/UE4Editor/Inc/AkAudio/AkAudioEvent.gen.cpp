@@ -24,6 +24,8 @@ void EmptyLinkFunctionForGeneratedCodeAkAudioEvent() {}
 	AKAUDIO_API UClass* Z_Construct_UClass_UAkAssetDataWithMedia();
 	AKAUDIO_API UClass* Z_Construct_UClass_UAkAudioEventData_NoRegister();
 	AKAUDIO_API UClass* Z_Construct_UClass_UAkAudioEventData();
+	AKAUDIO_API UClass* Z_Construct_UClass_UAkTrigger_NoRegister();
+	AKAUDIO_API UClass* Z_Construct_UClass_UAkAuxBus_NoRegister();
 	AKAUDIO_API UClass* Z_Construct_UClass_UAkAudioEvent_NoRegister();
 	AKAUDIO_API UClass* Z_Construct_UClass_UAkAudioEvent();
 	AKAUDIO_API UClass* Z_Construct_UClass_UAkAssetBase();
@@ -53,6 +55,10 @@ void EmptyLinkFunctionForGeneratedCodeAkAudioEvent() {}
 #endif
 		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_MediaList;
 		static const UE4CodeGen_Private::FSoftObjectPropertyParams NewProp_MediaList_Inner;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_DefaultGroupValue_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_DefaultGroupValue;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_GroupValue_MetaData[];
 #endif
@@ -88,6 +94,13 @@ void EmptyLinkFunctionForGeneratedCodeAkAudioEvent() {}
 	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UAkAssetDataSwitchContainerData_Statics::NewProp_MediaList = { "MediaList", nullptr, (EPropertyFlags)0x0014000000020001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UAkAssetDataSwitchContainerData, MediaList), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_UAkAssetDataSwitchContainerData_Statics::NewProp_MediaList_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UAkAssetDataSwitchContainerData_Statics::NewProp_MediaList_MetaData)) };
 	const UE4CodeGen_Private::FSoftObjectPropertyParams Z_Construct_UClass_UAkAssetDataSwitchContainerData_Statics::NewProp_MediaList_Inner = { "MediaList", nullptr, (EPropertyFlags)0x0004000000020000, UE4CodeGen_Private::EPropertyGenFlags::SoftObject, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UAkMediaAsset_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UAkAssetDataSwitchContainerData_Statics::NewProp_DefaultGroupValue_MetaData[] = {
+		{ "Category", "AkAudioEvent" },
+		{ "ModuleRelativePath", "Classes/AkAudioEvent.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UAkAssetDataSwitchContainerData_Statics::NewProp_DefaultGroupValue = { "DefaultGroupValue", nullptr, (EPropertyFlags)0x0010000000020001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UAkAssetDataSwitchContainerData, DefaultGroupValue), Z_Construct_UClass_UAkGroupValue_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UAkAssetDataSwitchContainerData_Statics::NewProp_DefaultGroupValue_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UAkAssetDataSwitchContainerData_Statics::NewProp_DefaultGroupValue_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UAkAssetDataSwitchContainerData_Statics::NewProp_GroupValue_MetaData[] = {
 		{ "Category", "AkAudioEvent" },
 		{ "ModuleRelativePath", "Classes/AkAudioEvent.h" },
@@ -99,6 +112,7 @@ void EmptyLinkFunctionForGeneratedCodeAkAudioEvent() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UAkAssetDataSwitchContainerData_Statics::NewProp_Children_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UAkAssetDataSwitchContainerData_Statics::NewProp_MediaList,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UAkAssetDataSwitchContainerData_Statics::NewProp_MediaList_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UAkAssetDataSwitchContainerData_Statics::NewProp_DefaultGroupValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UAkAssetDataSwitchContainerData_Statics::NewProp_GroupValue,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UAkAssetDataSwitchContainerData_Statics::StaticCppClassTypeInfo = {
@@ -128,7 +142,7 @@ void EmptyLinkFunctionForGeneratedCodeAkAudioEvent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UAkAssetDataSwitchContainerData, 3341288881);
+	IMPLEMENT_CLASS(UAkAssetDataSwitchContainerData, 2871714761);
 	template<> AKAUDIO_API UClass* StaticClass<UAkAssetDataSwitchContainerData>()
 	{
 		return UAkAssetDataSwitchContainerData::StaticClass();
@@ -149,6 +163,10 @@ void EmptyLinkFunctionForGeneratedCodeAkAudioEvent() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_DefaultGroupValue_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_DefaultGroupValue;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_SwitchContainers_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_SwitchContainers;
@@ -168,6 +186,13 @@ void EmptyLinkFunctionForGeneratedCodeAkAudioEvent() {}
 	};
 #endif
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UAkAssetDataSwitchContainer_Statics::NewProp_DefaultGroupValue_MetaData[] = {
+		{ "Category", "AkAudioEvent" },
+		{ "ModuleRelativePath", "Classes/AkAudioEvent.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UAkAssetDataSwitchContainer_Statics::NewProp_DefaultGroupValue = { "DefaultGroupValue", nullptr, (EPropertyFlags)0x0010000000020001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UAkAssetDataSwitchContainer, DefaultGroupValue), Z_Construct_UClass_UAkGroupValue_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UAkAssetDataSwitchContainer_Statics::NewProp_DefaultGroupValue_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UAkAssetDataSwitchContainer_Statics::NewProp_DefaultGroupValue_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UAkAssetDataSwitchContainer_Statics::NewProp_SwitchContainers_MetaData[] = {
 		{ "Category", "AkAudioEvent" },
 		{ "ModuleRelativePath", "Classes/AkAudioEvent.h" },
@@ -176,6 +201,7 @@ void EmptyLinkFunctionForGeneratedCodeAkAudioEvent() {}
 	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UAkAssetDataSwitchContainer_Statics::NewProp_SwitchContainers = { "SwitchContainers", nullptr, (EPropertyFlags)0x0010000000020001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UAkAssetDataSwitchContainer, SwitchContainers), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_UAkAssetDataSwitchContainer_Statics::NewProp_SwitchContainers_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UAkAssetDataSwitchContainer_Statics::NewProp_SwitchContainers_MetaData)) };
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UAkAssetDataSwitchContainer_Statics::NewProp_SwitchContainers_Inner = { "SwitchContainers", nullptr, (EPropertyFlags)0x0000000000020000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UAkAssetDataSwitchContainerData_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UAkAssetDataSwitchContainer_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UAkAssetDataSwitchContainer_Statics::NewProp_DefaultGroupValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UAkAssetDataSwitchContainer_Statics::NewProp_SwitchContainers,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UAkAssetDataSwitchContainer_Statics::NewProp_SwitchContainers_Inner,
 	};
@@ -206,7 +232,7 @@ void EmptyLinkFunctionForGeneratedCodeAkAudioEvent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UAkAssetDataSwitchContainer, 3523800119);
+	IMPLEMENT_CLASS(UAkAssetDataSwitchContainer, 1108875745);
 	template<> AKAUDIO_API UClass* StaticClass<UAkAssetDataSwitchContainer>()
 	{
 		return UAkAssetDataSwitchContainer::StaticClass();
@@ -226,6 +252,26 @@ void EmptyLinkFunctionForGeneratedCodeAkAudioEvent() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_GroupValues_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FSetPropertyParams NewProp_GroupValues;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_GroupValues_ElementProp;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_PostedTriggers_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FSetPropertyParams NewProp_PostedTriggers;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_PostedTriggers_ElementProp;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_UserDefinedSends_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FSetPropertyParams NewProp_UserDefinedSends;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_UserDefinedSends_ElementProp;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_PostedEvents_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FSetPropertyParams NewProp_PostedEvents;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_PostedEvents_ElementProp;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_LocalizedMedia_MetaData[];
 #endif
@@ -263,6 +309,38 @@ void EmptyLinkFunctionForGeneratedCodeAkAudioEvent() {}
 		{ "ModuleRelativePath", "Classes/AkAudioEvent.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UAkAudioEventData_Statics::NewProp_GroupValues_MetaData[] = {
+		{ "Category", "AkAudioEvent" },
+		{ "ModuleRelativePath", "Classes/AkAudioEvent.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FSetPropertyParams Z_Construct_UClass_UAkAudioEventData_Statics::NewProp_GroupValues = { "GroupValues", nullptr, (EPropertyFlags)0x0010000000020015, UE4CodeGen_Private::EPropertyGenFlags::Set, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UAkAudioEventData, GroupValues), METADATA_PARAMS(Z_Construct_UClass_UAkAudioEventData_Statics::NewProp_GroupValues_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UAkAudioEventData_Statics::NewProp_GroupValues_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UAkAudioEventData_Statics::NewProp_GroupValues_ElementProp = { "GroupValues", nullptr, (EPropertyFlags)0x0000000000020001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UAkGroupValue_NoRegister, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UAkAudioEventData_Statics::NewProp_PostedTriggers_MetaData[] = {
+		{ "Category", "AkAudioEvent" },
+		{ "ModuleRelativePath", "Classes/AkAudioEvent.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FSetPropertyParams Z_Construct_UClass_UAkAudioEventData_Statics::NewProp_PostedTriggers = { "PostedTriggers", nullptr, (EPropertyFlags)0x0010000000020015, UE4CodeGen_Private::EPropertyGenFlags::Set, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UAkAudioEventData, PostedTriggers), METADATA_PARAMS(Z_Construct_UClass_UAkAudioEventData_Statics::NewProp_PostedTriggers_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UAkAudioEventData_Statics::NewProp_PostedTriggers_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UAkAudioEventData_Statics::NewProp_PostedTriggers_ElementProp = { "PostedTriggers", nullptr, (EPropertyFlags)0x0000000000020001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UAkTrigger_NoRegister, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UAkAudioEventData_Statics::NewProp_UserDefinedSends_MetaData[] = {
+		{ "Category", "AkAudioEvent" },
+		{ "ModuleRelativePath", "Classes/AkAudioEvent.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FSetPropertyParams Z_Construct_UClass_UAkAudioEventData_Statics::NewProp_UserDefinedSends = { "UserDefinedSends", nullptr, (EPropertyFlags)0x0010000000020015, UE4CodeGen_Private::EPropertyGenFlags::Set, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UAkAudioEventData, UserDefinedSends), METADATA_PARAMS(Z_Construct_UClass_UAkAudioEventData_Statics::NewProp_UserDefinedSends_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UAkAudioEventData_Statics::NewProp_UserDefinedSends_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UAkAudioEventData_Statics::NewProp_UserDefinedSends_ElementProp = { "UserDefinedSends", nullptr, (EPropertyFlags)0x0000000000020001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UAkAuxBus_NoRegister, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UAkAudioEventData_Statics::NewProp_PostedEvents_MetaData[] = {
+		{ "Category", "AkAudioEvent" },
+		{ "ModuleRelativePath", "Classes/AkAudioEvent.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FSetPropertyParams Z_Construct_UClass_UAkAudioEventData_Statics::NewProp_PostedEvents = { "PostedEvents", nullptr, (EPropertyFlags)0x0010000000020015, UE4CodeGen_Private::EPropertyGenFlags::Set, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UAkAudioEventData, PostedEvents), METADATA_PARAMS(Z_Construct_UClass_UAkAudioEventData_Statics::NewProp_PostedEvents_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UAkAudioEventData_Statics::NewProp_PostedEvents_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UAkAudioEventData_Statics::NewProp_PostedEvents_ElementProp = { "PostedEvents", nullptr, (EPropertyFlags)0x0000000000020001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UAkAudioEvent_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UAkAudioEventData_Statics::NewProp_LocalizedMedia_MetaData[] = {
 		{ "Category", "AkAudioEvent" },
@@ -315,6 +393,14 @@ void EmptyLinkFunctionForGeneratedCodeAkAudioEvent() {}
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UAkAudioEventData_Statics::NewProp_MaxAttenuationRadius = { "MaxAttenuationRadius", nullptr, (EPropertyFlags)0x0010000000020015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UAkAudioEventData, MaxAttenuationRadius), METADATA_PARAMS(Z_Construct_UClass_UAkAudioEventData_Statics::NewProp_MaxAttenuationRadius_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UAkAudioEventData_Statics::NewProp_MaxAttenuationRadius_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UAkAudioEventData_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UAkAudioEventData_Statics::NewProp_GroupValues,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UAkAudioEventData_Statics::NewProp_GroupValues_ElementProp,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UAkAudioEventData_Statics::NewProp_PostedTriggers,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UAkAudioEventData_Statics::NewProp_PostedTriggers_ElementProp,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UAkAudioEventData_Statics::NewProp_UserDefinedSends,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UAkAudioEventData_Statics::NewProp_UserDefinedSends_ElementProp,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UAkAudioEventData_Statics::NewProp_PostedEvents,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UAkAudioEventData_Statics::NewProp_PostedEvents_ElementProp,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UAkAudioEventData_Statics::NewProp_LocalizedMedia,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UAkAudioEventData_Statics::NewProp_LocalizedMedia_Key_KeyProp,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UAkAudioEventData_Statics::NewProp_LocalizedMedia_ValueProp,
@@ -350,55 +436,55 @@ void EmptyLinkFunctionForGeneratedCodeAkAudioEvent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UAkAudioEventData, 2635763986);
+	IMPLEMENT_CLASS(UAkAudioEventData, 1033677621);
 	template<> AKAUDIO_API UClass* StaticClass<UAkAudioEventData>()
 	{
 		return UAkAudioEventData::StaticClass();
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UAkAudioEventData(Z_Construct_UClass_UAkAudioEventData, &UAkAudioEventData::StaticClass, TEXT("/Script/AkAudio"), TEXT("UAkAudioEventData"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UAkAudioEventData);
-	DEFINE_FUNCTION(UAkAudioEvent::execMaximumDuration)
+	DEFINE_FUNCTION(UAkAudioEvent::execGetMaximumDuration)
 	{
 		P_FINISH;
 		P_NATIVE_BEGIN;
-		*(float*)Z_Param__Result=P_THIS->MaximumDuration();
+		*(float*)Z_Param__Result=P_THIS->GetMaximumDuration();
 		P_NATIVE_END;
 	}
-	DEFINE_FUNCTION(UAkAudioEvent::execMinimumDuration)
+	DEFINE_FUNCTION(UAkAudioEvent::execGetMinimumDuration)
 	{
 		P_FINISH;
 		P_NATIVE_BEGIN;
-		*(float*)Z_Param__Result=P_THIS->MinimumDuration();
+		*(float*)Z_Param__Result=P_THIS->GetMinimumDuration();
 		P_NATIVE_END;
 	}
-	DEFINE_FUNCTION(UAkAudioEvent::execIsInfinite)
+	DEFINE_FUNCTION(UAkAudioEvent::execGetIsInfinite)
 	{
 		P_FINISH;
 		P_NATIVE_BEGIN;
-		*(bool*)Z_Param__Result=P_THIS->IsInfinite();
+		*(bool*)Z_Param__Result=P_THIS->GetIsInfinite();
 		P_NATIVE_END;
 	}
-	DEFINE_FUNCTION(UAkAudioEvent::execMaxAttenuationRadius)
+	DEFINE_FUNCTION(UAkAudioEvent::execGetMaxAttenuationRadius)
 	{
 		P_FINISH;
 		P_NATIVE_BEGIN;
-		*(float*)Z_Param__Result=P_THIS->MaxAttenuationRadius();
+		*(float*)Z_Param__Result=P_THIS->GetMaxAttenuationRadius();
 		P_NATIVE_END;
 	}
 	void UAkAudioEvent::StaticRegisterNativesUAkAudioEvent()
 	{
 		UClass* Class = UAkAudioEvent::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
-			{ "IsInfinite", &UAkAudioEvent::execIsInfinite },
-			{ "MaxAttenuationRadius", &UAkAudioEvent::execMaxAttenuationRadius },
-			{ "MaximumDuration", &UAkAudioEvent::execMaximumDuration },
-			{ "MinimumDuration", &UAkAudioEvent::execMinimumDuration },
+			{ "GetIsInfinite", &UAkAudioEvent::execGetIsInfinite },
+			{ "GetMaxAttenuationRadius", &UAkAudioEvent::execGetMaxAttenuationRadius },
+			{ "GetMaximumDuration", &UAkAudioEvent::execGetMaximumDuration },
+			{ "GetMinimumDuration", &UAkAudioEvent::execGetMinimumDuration },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
-	struct Z_Construct_UFunction_UAkAudioEvent_IsInfinite_Statics
+	struct Z_Construct_UFunction_UAkAudioEvent_GetIsInfinite_Statics
 	{
-		struct AkAudioEvent_eventIsInfinite_Parms
+		struct AkAudioEvent_eventGetIsInfinite_Parms
 		{
 			bool ReturnValue;
 		};
@@ -410,16 +496,16 @@ void EmptyLinkFunctionForGeneratedCodeAkAudioEvent() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	void Z_Construct_UFunction_UAkAudioEvent_IsInfinite_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	void Z_Construct_UFunction_UAkAudioEvent_GetIsInfinite_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 	{
-		((AkAudioEvent_eventIsInfinite_Parms*)Obj)->ReturnValue = 1;
+		((AkAudioEvent_eventGetIsInfinite_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UAkAudioEvent_IsInfinite_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AkAudioEvent_eventIsInfinite_Parms), &Z_Construct_UFunction_UAkAudioEvent_IsInfinite_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UAkAudioEvent_IsInfinite_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UAkAudioEvent_IsInfinite_Statics::NewProp_ReturnValue,
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UAkAudioEvent_GetIsInfinite_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AkAudioEvent_eventGetIsInfinite_Parms), &Z_Construct_UFunction_UAkAudioEvent_GetIsInfinite_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UAkAudioEvent_GetIsInfinite_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UAkAudioEvent_GetIsInfinite_Statics::NewProp_ReturnValue,
 	};
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UAkAudioEvent_IsInfinite_Statics::Function_MetaDataParams[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UAkAudioEvent_GetIsInfinite_Statics::Function_MetaDataParams[] = {
 		{ "BlueprintGetter", "" },
 		{ "Category", "AkAudioEvent" },
 		{ "Comment", "/** Whether this event is infinite (looping) or finite (duration parameters are valid) */" },
@@ -427,19 +513,19 @@ void EmptyLinkFunctionForGeneratedCodeAkAudioEvent() {}
 		{ "ToolTip", "Whether this event is infinite (looping) or finite (duration parameters are valid)" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UAkAudioEvent_IsInfinite_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UAkAudioEvent, nullptr, "IsInfinite", nullptr, nullptr, sizeof(AkAudioEvent_eventIsInfinite_Parms), Z_Construct_UFunction_UAkAudioEvent_IsInfinite_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UAkAudioEvent_IsInfinite_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UAkAudioEvent_IsInfinite_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UAkAudioEvent_IsInfinite_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_UAkAudioEvent_IsInfinite()
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UAkAudioEvent_GetIsInfinite_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UAkAudioEvent, nullptr, "GetIsInfinite", nullptr, nullptr, sizeof(AkAudioEvent_eventGetIsInfinite_Parms), Z_Construct_UFunction_UAkAudioEvent_GetIsInfinite_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UAkAudioEvent_GetIsInfinite_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UAkAudioEvent_GetIsInfinite_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UAkAudioEvent_GetIsInfinite_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UAkAudioEvent_GetIsInfinite()
 	{
 		static UFunction* ReturnFunction = nullptr;
 		if (!ReturnFunction)
 		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UAkAudioEvent_IsInfinite_Statics::FuncParams);
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UAkAudioEvent_GetIsInfinite_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
-	struct Z_Construct_UFunction_UAkAudioEvent_MaxAttenuationRadius_Statics
+	struct Z_Construct_UFunction_UAkAudioEvent_GetMaxAttenuationRadius_Statics
 	{
-		struct AkAudioEvent_eventMaxAttenuationRadius_Parms
+		struct AkAudioEvent_eventGetMaxAttenuationRadius_Parms
 		{
 			float ReturnValue;
 		};
@@ -450,12 +536,12 @@ void EmptyLinkFunctionForGeneratedCodeAkAudioEvent() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UAkAudioEvent_MaxAttenuationRadius_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AkAudioEvent_eventMaxAttenuationRadius_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UAkAudioEvent_MaxAttenuationRadius_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UAkAudioEvent_MaxAttenuationRadius_Statics::NewProp_ReturnValue,
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UAkAudioEvent_GetMaxAttenuationRadius_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AkAudioEvent_eventGetMaxAttenuationRadius_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UAkAudioEvent_GetMaxAttenuationRadius_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UAkAudioEvent_GetMaxAttenuationRadius_Statics::NewProp_ReturnValue,
 	};
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UAkAudioEvent_MaxAttenuationRadius_Statics::Function_MetaDataParams[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UAkAudioEvent_GetMaxAttenuationRadius_Statics::Function_MetaDataParams[] = {
 		{ "BlueprintGetter", "" },
 		{ "Category", "AkAudioEvent" },
 		{ "Comment", "/** Maximum attenuation radius for this event */" },
@@ -463,19 +549,19 @@ void EmptyLinkFunctionForGeneratedCodeAkAudioEvent() {}
 		{ "ToolTip", "Maximum attenuation radius for this event" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UAkAudioEvent_MaxAttenuationRadius_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UAkAudioEvent, nullptr, "MaxAttenuationRadius", nullptr, nullptr, sizeof(AkAudioEvent_eventMaxAttenuationRadius_Parms), Z_Construct_UFunction_UAkAudioEvent_MaxAttenuationRadius_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UAkAudioEvent_MaxAttenuationRadius_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UAkAudioEvent_MaxAttenuationRadius_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UAkAudioEvent_MaxAttenuationRadius_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_UAkAudioEvent_MaxAttenuationRadius()
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UAkAudioEvent_GetMaxAttenuationRadius_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UAkAudioEvent, nullptr, "GetMaxAttenuationRadius", nullptr, nullptr, sizeof(AkAudioEvent_eventGetMaxAttenuationRadius_Parms), Z_Construct_UFunction_UAkAudioEvent_GetMaxAttenuationRadius_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UAkAudioEvent_GetMaxAttenuationRadius_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UAkAudioEvent_GetMaxAttenuationRadius_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UAkAudioEvent_GetMaxAttenuationRadius_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UAkAudioEvent_GetMaxAttenuationRadius()
 	{
 		static UFunction* ReturnFunction = nullptr;
 		if (!ReturnFunction)
 		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UAkAudioEvent_MaxAttenuationRadius_Statics::FuncParams);
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UAkAudioEvent_GetMaxAttenuationRadius_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
-	struct Z_Construct_UFunction_UAkAudioEvent_MaximumDuration_Statics
+	struct Z_Construct_UFunction_UAkAudioEvent_GetMaximumDuration_Statics
 	{
-		struct AkAudioEvent_eventMaximumDuration_Parms
+		struct AkAudioEvent_eventGetMaximumDuration_Parms
 		{
 			float ReturnValue;
 		};
@@ -486,12 +572,12 @@ void EmptyLinkFunctionForGeneratedCodeAkAudioEvent() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UAkAudioEvent_MaximumDuration_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AkAudioEvent_eventMaximumDuration_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UAkAudioEvent_MaximumDuration_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UAkAudioEvent_MaximumDuration_Statics::NewProp_ReturnValue,
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UAkAudioEvent_GetMaximumDuration_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AkAudioEvent_eventGetMaximumDuration_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UAkAudioEvent_GetMaximumDuration_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UAkAudioEvent_GetMaximumDuration_Statics::NewProp_ReturnValue,
 	};
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UAkAudioEvent_MaximumDuration_Statics::Function_MetaDataParams[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UAkAudioEvent_GetMaximumDuration_Statics::Function_MetaDataParams[] = {
 		{ "BlueprintGetter", "" },
 		{ "Category", "AkAudioEvent" },
 		{ "Comment", "/** Maximum duration */" },
@@ -499,19 +585,19 @@ void EmptyLinkFunctionForGeneratedCodeAkAudioEvent() {}
 		{ "ToolTip", "Maximum duration" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UAkAudioEvent_MaximumDuration_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UAkAudioEvent, nullptr, "MaximumDuration", nullptr, nullptr, sizeof(AkAudioEvent_eventMaximumDuration_Parms), Z_Construct_UFunction_UAkAudioEvent_MaximumDuration_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UAkAudioEvent_MaximumDuration_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UAkAudioEvent_MaximumDuration_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UAkAudioEvent_MaximumDuration_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_UAkAudioEvent_MaximumDuration()
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UAkAudioEvent_GetMaximumDuration_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UAkAudioEvent, nullptr, "GetMaximumDuration", nullptr, nullptr, sizeof(AkAudioEvent_eventGetMaximumDuration_Parms), Z_Construct_UFunction_UAkAudioEvent_GetMaximumDuration_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UAkAudioEvent_GetMaximumDuration_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UAkAudioEvent_GetMaximumDuration_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UAkAudioEvent_GetMaximumDuration_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UAkAudioEvent_GetMaximumDuration()
 	{
 		static UFunction* ReturnFunction = nullptr;
 		if (!ReturnFunction)
 		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UAkAudioEvent_MaximumDuration_Statics::FuncParams);
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UAkAudioEvent_GetMaximumDuration_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
-	struct Z_Construct_UFunction_UAkAudioEvent_MinimumDuration_Statics
+	struct Z_Construct_UFunction_UAkAudioEvent_GetMinimumDuration_Statics
 	{
-		struct AkAudioEvent_eventMinimumDuration_Parms
+		struct AkAudioEvent_eventGetMinimumDuration_Parms
 		{
 			float ReturnValue;
 		};
@@ -522,12 +608,12 @@ void EmptyLinkFunctionForGeneratedCodeAkAudioEvent() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UAkAudioEvent_MinimumDuration_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AkAudioEvent_eventMinimumDuration_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UAkAudioEvent_MinimumDuration_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UAkAudioEvent_MinimumDuration_Statics::NewProp_ReturnValue,
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UAkAudioEvent_GetMinimumDuration_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AkAudioEvent_eventGetMinimumDuration_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UAkAudioEvent_GetMinimumDuration_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UAkAudioEvent_GetMinimumDuration_Statics::NewProp_ReturnValue,
 	};
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UAkAudioEvent_MinimumDuration_Statics::Function_MetaDataParams[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UAkAudioEvent_GetMinimumDuration_Statics::Function_MetaDataParams[] = {
 		{ "BlueprintGetter", "" },
 		{ "Category", "AkAudioEvent" },
 		{ "Comment", "/** Minimum duration */" },
@@ -535,13 +621,13 @@ void EmptyLinkFunctionForGeneratedCodeAkAudioEvent() {}
 		{ "ToolTip", "Minimum duration" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UAkAudioEvent_MinimumDuration_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UAkAudioEvent, nullptr, "MinimumDuration", nullptr, nullptr, sizeof(AkAudioEvent_eventMinimumDuration_Parms), Z_Construct_UFunction_UAkAudioEvent_MinimumDuration_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UAkAudioEvent_MinimumDuration_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UAkAudioEvent_MinimumDuration_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UAkAudioEvent_MinimumDuration_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_UAkAudioEvent_MinimumDuration()
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UAkAudioEvent_GetMinimumDuration_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UAkAudioEvent, nullptr, "GetMinimumDuration", nullptr, nullptr, sizeof(AkAudioEvent_eventGetMinimumDuration_Parms), Z_Construct_UFunction_UAkAudioEvent_GetMinimumDuration_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UAkAudioEvent_GetMinimumDuration_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UAkAudioEvent_GetMinimumDuration_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UAkAudioEvent_GetMinimumDuration_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UAkAudioEvent_GetMinimumDuration()
 	{
 		static UFunction* ReturnFunction = nullptr;
 		if (!ReturnFunction)
 		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UAkAudioEvent_MinimumDuration_Statics::FuncParams);
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UAkAudioEvent_GetMinimumDuration_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -556,6 +642,23 @@ void EmptyLinkFunctionForGeneratedCodeAkAudioEvent() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MaximumDuration_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_MaximumDuration;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MinimumDuration_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_MinimumDuration;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_IsInfinite_MetaData[];
+#endif
+		static void NewProp_IsInfinite_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_IsInfinite;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MaxAttenuationRadius_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_MaxAttenuationRadius;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CurrentLocalizedPlatformData_MetaData[];
 #endif
@@ -579,10 +682,10 @@ void EmptyLinkFunctionForGeneratedCodeAkAudioEvent() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_AkAudio,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UAkAudioEvent_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UAkAudioEvent_IsInfinite, "IsInfinite" }, // 4260368702
-		{ &Z_Construct_UFunction_UAkAudioEvent_MaxAttenuationRadius, "MaxAttenuationRadius" }, // 1996380691
-		{ &Z_Construct_UFunction_UAkAudioEvent_MaximumDuration, "MaximumDuration" }, // 3169542606
-		{ &Z_Construct_UFunction_UAkAudioEvent_MinimumDuration, "MinimumDuration" }, // 1049224636
+		{ &Z_Construct_UFunction_UAkAudioEvent_GetIsInfinite, "GetIsInfinite" }, // 2788921320
+		{ &Z_Construct_UFunction_UAkAudioEvent_GetMaxAttenuationRadius, "GetMaxAttenuationRadius" }, // 4059946609
+		{ &Z_Construct_UFunction_UAkAudioEvent_GetMaximumDuration, "GetMaximumDuration" }, // 1565929867
+		{ &Z_Construct_UFunction_UAkAudioEvent_GetMinimumDuration, "GetMinimumDuration" }, // 1322460141
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UAkAudioEvent_Statics::Class_MetaDataParams[] = {
@@ -591,6 +694,50 @@ void EmptyLinkFunctionForGeneratedCodeAkAudioEvent() {}
 		{ "ModuleRelativePath", "Classes/AkAudioEvent.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UAkAudioEvent_Statics::NewProp_MaximumDuration_MetaData[] = {
+		{ "BlueprintGetter", "GetMaximumDuration" },
+		{ "Category", "AkAudioEvent" },
+		{ "Comment", "/** Maximum duration */" },
+		{ "ModuleRelativePath", "Classes/AkAudioEvent.h" },
+		{ "ToolTip", "Maximum duration" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UAkAudioEvent_Statics::NewProp_MaximumDuration = { "MaximumDuration", nullptr, (EPropertyFlags)0x0040000000020015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UAkAudioEvent, MaximumDuration), METADATA_PARAMS(Z_Construct_UClass_UAkAudioEvent_Statics::NewProp_MaximumDuration_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UAkAudioEvent_Statics::NewProp_MaximumDuration_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UAkAudioEvent_Statics::NewProp_MinimumDuration_MetaData[] = {
+		{ "BlueprintGetter", "GetMinimumDuration" },
+		{ "Category", "AkAudioEvent" },
+		{ "Comment", "/** Minimum duration */" },
+		{ "ModuleRelativePath", "Classes/AkAudioEvent.h" },
+		{ "ToolTip", "Minimum duration" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UAkAudioEvent_Statics::NewProp_MinimumDuration = { "MinimumDuration", nullptr, (EPropertyFlags)0x0040000000020015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UAkAudioEvent, MinimumDuration), METADATA_PARAMS(Z_Construct_UClass_UAkAudioEvent_Statics::NewProp_MinimumDuration_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UAkAudioEvent_Statics::NewProp_MinimumDuration_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UAkAudioEvent_Statics::NewProp_IsInfinite_MetaData[] = {
+		{ "BlueprintGetter", "GetIsInfinite" },
+		{ "Category", "AkAudioEvent" },
+		{ "Comment", "/** Whether this event is infinite (looping) or finite (duration parameters are valid) */" },
+		{ "ModuleRelativePath", "Classes/AkAudioEvent.h" },
+		{ "ToolTip", "Whether this event is infinite (looping) or finite (duration parameters are valid)" },
+	};
+#endif
+	void Z_Construct_UClass_UAkAudioEvent_Statics::NewProp_IsInfinite_SetBit(void* Obj)
+	{
+		((UAkAudioEvent*)Obj)->IsInfinite = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UAkAudioEvent_Statics::NewProp_IsInfinite = { "IsInfinite", nullptr, (EPropertyFlags)0x0040000000020015, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UAkAudioEvent), &Z_Construct_UClass_UAkAudioEvent_Statics::NewProp_IsInfinite_SetBit, METADATA_PARAMS(Z_Construct_UClass_UAkAudioEvent_Statics::NewProp_IsInfinite_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UAkAudioEvent_Statics::NewProp_IsInfinite_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UAkAudioEvent_Statics::NewProp_MaxAttenuationRadius_MetaData[] = {
+		{ "BlueprintGetter", "GetMaxAttenuationRadius" },
+		{ "Category", "AkAudioEvent" },
+		{ "Comment", "/** Maximum attenuation radius for this event */" },
+		{ "ModuleRelativePath", "Classes/AkAudioEvent.h" },
+		{ "ToolTip", "Maximum attenuation radius for this event" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UAkAudioEvent_Statics::NewProp_MaxAttenuationRadius = { "MaxAttenuationRadius", nullptr, (EPropertyFlags)0x0040000000020015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UAkAudioEvent, MaxAttenuationRadius), METADATA_PARAMS(Z_Construct_UClass_UAkAudioEvent_Statics::NewProp_MaxAttenuationRadius_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UAkAudioEvent_Statics::NewProp_MaxAttenuationRadius_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UAkAudioEvent_Statics::NewProp_CurrentLocalizedPlatformData_MetaData[] = {
 		{ "ModuleRelativePath", "Classes/AkAudioEvent.h" },
@@ -614,6 +761,10 @@ void EmptyLinkFunctionForGeneratedCodeAkAudioEvent() {}
 	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_UAkAudioEvent_Statics::NewProp_LocalizedPlatformAssetDataMap_Key_KeyProp = { "LocalizedPlatformAssetDataMap_Key", nullptr, (EPropertyFlags)0x0000000000020001, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FSoftObjectPropertyParams Z_Construct_UClass_UAkAudioEvent_Statics::NewProp_LocalizedPlatformAssetDataMap_ValueProp = { "LocalizedPlatformAssetDataMap", nullptr, (EPropertyFlags)0x0004000000020001, UE4CodeGen_Private::EPropertyGenFlags::SoftObject, RF_Public|RF_Transient|RF_MarkAsNative, 1, 1, Z_Construct_UClass_UAkAssetPlatformData_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UAkAudioEvent_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UAkAudioEvent_Statics::NewProp_MaximumDuration,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UAkAudioEvent_Statics::NewProp_MinimumDuration,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UAkAudioEvent_Statics::NewProp_IsInfinite,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UAkAudioEvent_Statics::NewProp_MaxAttenuationRadius,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UAkAudioEvent_Statics::NewProp_CurrentLocalizedPlatformData,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UAkAudioEvent_Statics::NewProp_RequiredBank,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UAkAudioEvent_Statics::NewProp_LocalizedPlatformAssetDataMap,
@@ -647,7 +798,7 @@ void EmptyLinkFunctionForGeneratedCodeAkAudioEvent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UAkAudioEvent, 859205919);
+	IMPLEMENT_CLASS(UAkAudioEvent, 1437544521);
 	template<> AKAUDIO_API UClass* StaticClass<UAkAudioEvent>()
 	{
 		return UAkAudioEvent::StaticClass();

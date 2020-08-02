@@ -9,6 +9,8 @@
 class UAkGroupValue;
 class UAkMediaAsset;
 class UAkAudioBank;
+class UAkAuxBus;
+class UAkTrigger;
 struct FStreamableHandle;
 
 UCLASS(EditInlineNew)
@@ -21,6 +23,9 @@ public:
 	TSoftObjectPtr<UAkGroupValue> GroupValue;
 
 	UPROPERTY(VisibleAnywhere, Category = "AkAudioEvent")
+	UAkGroupValue* DefaultGroupValue;
+
+	UPROPERTY(VisibleAnywhere, Category = "AkAudioEvent")
 	TArray<TSoftObjectPtr<UAkMediaAsset>> MediaList;
 
 	UPROPERTY(VisibleAnywhere, Category = "AkAudioEvent")
@@ -29,6 +34,8 @@ public:
 	friend class UAkAssetDataSwitchContainer;
 
 public:
+	bool IsMediaReady() const;
+
 #if WITH_EDITOR
 	void GetMediaList(TArray<TSoftObjectPtr<UAkMediaAsset>>& mediaList) const;
 #endif
@@ -49,11 +56,16 @@ public:
 	UPROPERTY(VisibleAnywhere, Category = "AkAudioEvent")
 	TArray<UAkAssetDataSwitchContainerData*> SwitchContainers;
 
+	UPROPERTY(VisibleAnywhere, Category = "AkAudioEvent")
+	UAkGroupValue* DefaultGroupValue;
+
 public:
 	void BeginDestroy() override;
 
 	AKRESULT Load() override;
 	AKRESULT Unload() override;
+
+	bool IsMediaReady() const override;
 
 #if WITH_EDITOR
 	void GetMediaList(TArray<TSoftObjectPtr<UAkMediaAsset>>& mediaList) const override;
@@ -107,8 +119,22 @@ public:
 	UPROPERTY(VisibleAnywhere, Category = "AkAudioEvent")
 	TMap<FString, UAkAssetDataSwitchContainer*> LocalizedMedia;
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AkAudioEvent")
+	TSet<UAkAudioEvent*> PostedEvents;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AkAudioEvent")
+	TSet<UAkAuxBus*> UserDefinedSends;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AkAudioEvent")
+	TSet<UAkTrigger*> PostedTriggers;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AkAudioEvent")
+	TSet<UAkGroupValue*> GroupValues;
+
 public:
 	UAkAssetDataSwitchContainer* FindOrAddLocalizedData(const FString& language);
+
+	bool IsMediaReady() const override;
 
 #if WITH_EDITOR
 	void GetMediaList(TArray<TSoftObjectPtr<UAkMediaAsset>>& mediaList) const override;
@@ -126,20 +152,20 @@ class AKAUDIO_API UAkAudioEvent : public UAkAssetBase
 public:
 	/** Maximum attenuation radius for this event */
 	UFUNCTION(BlueprintGetter, Category = "AkAudioEvent")
-	float MaxAttenuationRadius() const;
+	float GetMaxAttenuationRadius() const;
 
 	/** Whether this event is infinite (looping) or finite (duration parameters are valid) */
 	UFUNCTION(BlueprintGetter, Category = "AkAudioEvent")
-	bool IsInfinite() const;
+	bool GetIsInfinite() const;
 
 	/** Minimum duration */
 	UFUNCTION(BlueprintGetter, Category = "AkAudioEvent")
-	float MinimumDuration() const;
+	float GetMinimumDuration() const;
 	void SetMinimumDuration(float value);
 
 	/** Maximum duration */
 	UFUNCTION(BlueprintGetter, Category = "AkAudioEvent")
-	float MaximumDuration() const;
+	float GetMaximumDuration() const;
 	void SetMaximumDuration(float value);
 
 	UPROPERTY(VisibleAnywhere, Category = "AkAudioEvent")
@@ -152,13 +178,33 @@ private:
 	UPROPERTY(Transient)
 	UAkAssetPlatformData* CurrentLocalizedPlatformData = nullptr;
 
+	/** Maximum attenuation radius for this event */
+	UPROPERTY(VisibleAnywhere, BlueprintGetter = GetMaxAttenuationRadius, Category = "AkAudioEvent")
+	float MaxAttenuationRadius;
+
+	/** Whether this event is infinite (looping) or finite (duration parameters are valid) */
+	UPROPERTY(VisibleAnywhere, BlueprintGetter = GetIsInfinite, Category = "AkAudioEvent")
+	bool IsInfinite;
+
+	/** Minimum duration */
+	UPROPERTY(VisibleAnywhere, BlueprintGetter = GetMinimumDuration, Category = "AkAudioEvent")
+	float MinimumDuration;
+
+	/** Maximum duration */
+	UPROPERTY(VisibleAnywhere, BlueprintGetter = GetMaximumDuration, Category = "AkAudioEvent")
+	float MaximumDuration;
+
+
+
 public:
 	void Load() override;
 	void Unload() override;
 
 	bool IsLocalized() const;
 
-	bool SwitchLanguage(const FString& newAudioCulture, const SwitchLanguageCompletedFunction& Function = SwitchLanguageCompletedFunction());
+	bool SwitchLanguage(const FString& newAudioCulture, const SwitchLanguageCompletedFunction& Function = SwitchLanguageCompletedFunction(), FAkAudioDevice::SetCurrentAudioCultureAsyncTask* SetCultureTask = nullptr);
+
+	bool IsMediaReady() const;
 
 #if WITH_EDITOR
 	UAkAssetData* FindOrAddAssetData(const FString& platform, const FString& language) override;

@@ -89,6 +89,7 @@ public:
 	~SWaapiPicker();
 
 	static const FName WaapiPickerTabName;
+	static const FText ModalWarning;
     
     virtual void Tick( const FGeometry& AllottedGeometry, const double InCurrentTime, const float InDeltaTime ) override;
 
@@ -201,7 +202,9 @@ private:
 	/* Used to show/hide the Picker/Warning */
 	EVisibility isPickerAllowed() const;
 	EVisibility isWarningVisible() const;
+	FText GetWarningText() const;
 	bool isPickerVisible;
+	bool isModalActiveInWwise = false;
 
 	/** One-off active timer to focus the widget post-construct */
 	EActiveTimerReturnType SetFocusPostConstruct(double InCurrentTime, float InDeltaTime);

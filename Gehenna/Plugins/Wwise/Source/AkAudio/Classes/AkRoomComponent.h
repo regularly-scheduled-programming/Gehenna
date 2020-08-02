@@ -85,6 +85,7 @@ class AKAUDIO_API UAkRoomComponent : public UAkGameObject
 
 	// Begin USceneComponent Interface
 	virtual void BeginPlay() override;
+	virtual void EndPlay(EEndPlayReason::Type EndPlayReason) override;
 
 #if WITH_EDITOR
 	virtual void PostEditChangeProperty(FPropertyChangedEvent& PropertyChangedEvent) override;

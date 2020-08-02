@@ -179,6 +179,14 @@ void UAkRoomComponent::BeginPlay()
 	}
 }
 
+void UAkRoomComponent::EndPlay(EEndPlayReason::Type EndPlayReason)
+{
+	if (bStarted)
+		Stop();
+
+	Super::EndPlay(EndPlayReason);
+}
+
 #if WITH_EDITOR
 void UAkRoomComponent::PostEditChangeProperty(FPropertyChangedEvent& PropertyChangedEvent)
 {

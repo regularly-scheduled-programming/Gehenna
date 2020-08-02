@@ -334,7 +334,7 @@ bool UAkMIDIEventCallbackInfo::GetProgramChange(FAkMidiProgramChange& AsProgramC
 
 FAkSDKExternalSourceArray::FAkSDKExternalSourceArray(const TArray<FAkExternalSourceInfo>& BlueprintArray)
 {
-	AkIntegrationBehavior::Get()->FAkSDKExtrernalSourceArray_Ctor(this, BlueprintArray);
+	AkIntegrationBehavior::Get()->FAkSDKExternalSourceArray_Ctor(this, BlueprintArray);
 }
 
 FAkSDKExternalSourceArray::~FAkSDKExternalSourceArray()
@@ -346,4 +346,20 @@ FAkSDKExternalSourceArray::~FAkSDKExternalSourceArray()
 			FMemory::Free(ExtSrcInfo.szFile);
 		}
 	}
+}
+
+AkDeviceAndWorld::AkDeviceAndWorld(AActor* in_pActor) :
+	AkAudioDevice(FAkAudioDevice::Get()),
+	CurrentWorld(in_pActor ? in_pActor->GetWorld() : nullptr)
+{
+}
+
+AkDeviceAndWorld::AkDeviceAndWorld(const UObject* in_pWorldContextObject) :
+	AkAudioDevice(FAkAudioDevice::Get()),
+	CurrentWorld(GEngine->GetWorldFromContextObject(in_pWorldContextObject, EGetWorldErrorMode::ReturnNull))
+{}
+
+bool AkDeviceAndWorld::IsValid() const
+{
+	return (CurrentWorld && CurrentWorld->AllowAudioPlayback() && AkAudioDevice);
 }

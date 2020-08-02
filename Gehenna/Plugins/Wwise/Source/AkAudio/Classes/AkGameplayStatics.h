@@ -85,6 +85,21 @@ class AKAUDIO_API UAkGameplayStatics : public UBlueprintFunctionLibrary
 		FString EventName,
 		FLatentActionInfo LatentInfo);
 
+	/** Posts a Wwise Event attached and following the root component of the specified actor, wait for the media to be loaded and waits for the end of the event to continue execution.
+	 * Additional calls made while an event is active are ignored.
+	 * @param AkEvent - ak event to play.
+	 * @param Actor - actor on which to play the event.
+	 * @param bStopWhenAttachedToDestroyed - Specifies whether the sound should stop playing when the owner of the attach to component is destroyed.
+	 */
+	UFUNCTION(BlueprintCallable, Category = "Audiokinetic|Actor", meta = (Latent, LatentInfo = "LatentInfo", AdvancedDisplay = "3", bStopWhenAttachedToDestroyed = "false", AutoCreateRefTerm = "ExternalSources"))
+	static void PostAndWaitForEndOfEventAsync(class UAkAudioEvent* AkEvent,
+			class AActor* Actor,
+			int32& PlayingID,
+			bool bStopWhenAttachedToDestroyed,
+			const TArray<FAkExternalSourceInfo>& ExternalSources,
+			FLatentActionInfo LatentInfo
+			);
+
 	/** Posts a Wwise Event by name attached to and following the root component of the specified actor.
 	 * @param AkEvent - ak event to play.
 	 * @param Actor - actor on which to play the event.

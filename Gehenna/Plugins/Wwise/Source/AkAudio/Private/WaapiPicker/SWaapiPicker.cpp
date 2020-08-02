@@ -46,6 +46,7 @@ Statics and Globals
 ------------------------------------------------------------------------------------*/
 
 const FName SWaapiPicker::WaapiPickerTabName = FName("WaapiPicker");
+const FText SWaapiPicker::ModalWarning = LOCTEXT("WaapiModalOpened", "Wwise currently has a modal window opened. Please close it to use WAAPI functionality.");
 
 static inline void CallWaapiGetProjectNamePath(FString& ProjectName, FString& ProjectPath)
 {
@@ -485,7 +486,7 @@ void SWaapiPicker::Construct(const FArguments& InArgs)
 					.Visibility(this, &SWaapiPicker::isWarningVisible)
 					.AutoWrapText(true)
 					.Justification(ETextJustify::Center)
-					.Text(LOCTEXT("EmptyWaapiTree", "Could not establish a WAAPI connection; WAAPI picker is disabled. Please enable WAAPI in your Wwise settings, or use the Wwise Picker."))
+					.Text(this, &SWaapiPicker::GetWarningText)
 				]
 				+ SVerticalBox::Slot()
 				.VAlign(VAlign_Center)
@@ -512,6 +513,7 @@ void SWaapiPicker::Construct(const FArguments& InArgs)
 	{
 		/* Construct the tree when we have the same project */
 		isPickerVisible = true;
+		isModalActiveInWwise = false;
 		SubscribeWaapiCallbacks();
 		CallWaapiGetProjectNamePath(ProjectName, ProjectFolder);
 		ConstructTree();
@@ -530,18 +532,40 @@ void SWaapiPicker::Construct(const FArguments& InArgs)
 
 EVisibility SWaapiPicker::isPickerAllowed() const
 {
-	return isPickerVisible ? EVisibility::Visible : EVisibility::Hidden;
+	return (isPickerVisible && !isModalActiveInWwise) ? EVisibility::Visible : EVisibility::Hidden;
 }
 
 EVisibility SWaapiPicker::isWarningVisible() const
 {
-	return isPickerVisible ? EVisibility::Hidden : EVisibility::Visible;
+	return (isPickerVisible && !isModalActiveInWwise) ? EVisibility::Hidden : EVisibility::Visible;
+}
+
+FText SWaapiPicker::GetWarningText() const
+{
+	const FText NotConnected = LOCTEXT("EmptyWaapiTree", "Could not establish a WAAPI connection; WAAPI picker is disabled. Please enable WAAPI in your Wwise settings, or use the Wwise Picker.");
+
+	return isModalActiveInWwise ? ModalWarning : NotConnected;
 }
 
 void SWaapiPicker::Tick(const FGeometry& AllottedGeometry, const double InCurrentTime, const float InDeltaTime)
 {
+	auto* waapiClient = FAkWaapiClient::Get();
 	auto AkSettings = GetMutableDefault<UAkSettings>();
-	if(AkSettings->bRequestRefresh)
+	bool NeedRefresh = AkSettings->bRequestRefresh;
+	if (isModalActiveInWwise && waapiClient)
+	{
+		TSharedRef<FJsonObject> args = MakeShareable(new FJsonObject());
+		TSharedRef<FJsonObject> options = MakeShareable(new FJsonObject());
+		TSharedPtr<FJsonObject> result = MakeShareable(new FJsonObject());
+		waapiClient->Call(ak::wwise::core::getInfo, args, options, result, 10, true);
+		if (result->GetStringField(TEXT("uri")) != TEXT("ak.wwise.locked"))
+		{
+			NeedRefresh = true;
+			isModalActiveInWwise = false;
+		}
+	}
+
+	if(NeedRefresh)
 	{
 		ConstructTree();
 		AkSettings->bRequestRefresh = false;
@@ -611,7 +635,12 @@ void SWaapiPicker::ConstructTree()
 					else
 					{
 						UE_LOG(LogAkAudioPicker, Log, TEXT("Failed to get information from id : %s"), *path);
-						if (auto AkSettings = GetMutableDefault<UAkSettings>())
+						if (getResult->GetStringField(TEXT("uri")) == TEXT("ak.wwise.locked"))
+						{
+							UE_LOG(LogAkAudioPicker, Warning, TEXT("%s"), *ModalWarning.ToString());
+							sharedThis->isModalActiveInWwise = true;
+						}
+						else if (auto AkSettings = GetMutableDefault<UAkSettings>())
 						{
 							AkSettings->bRequestRefresh = true;
 						}
