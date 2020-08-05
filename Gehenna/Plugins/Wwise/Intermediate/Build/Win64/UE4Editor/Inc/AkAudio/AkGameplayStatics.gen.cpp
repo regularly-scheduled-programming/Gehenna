@@ -517,6 +517,19 @@ void EmptyLinkFunctionForGeneratedCodeAkGameplayStatics() {}
 		UAkGameplayStatics::PostEventByName(Z_Param_EventName,Z_Param_Actor,Z_Param_bStopWhenAttachedToDestroyed);
 		P_NATIVE_END;
 	}
+	DEFINE_FUNCTION(UAkGameplayStatics::execPostAndWaitForEndOfEventAsync)
+	{
+		P_GET_OBJECT(UAkAudioEvent,Z_Param_AkEvent);
+		P_GET_OBJECT(AActor,Z_Param_Actor);
+		P_GET_PROPERTY_REF(FIntProperty,Z_Param_Out_PlayingID);
+		P_GET_UBOOL(Z_Param_bStopWhenAttachedToDestroyed);
+		P_GET_TARRAY_REF(FAkExternalSourceInfo,Z_Param_Out_ExternalSources);
+		P_GET_STRUCT(FLatentActionInfo,Z_Param_LatentInfo);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		UAkGameplayStatics::PostAndWaitForEndOfEventAsync(Z_Param_AkEvent,Z_Param_Actor,Z_Param_Out_PlayingID,Z_Param_bStopWhenAttachedToDestroyed,Z_Param_Out_ExternalSources,Z_Param_LatentInfo);
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(UAkGameplayStatics::execPostAndWaitForEndOfEvent)
 	{
 		P_GET_OBJECT(UAkAudioEvent,Z_Param_AkEvent);
@@ -608,6 +621,7 @@ void EmptyLinkFunctionForGeneratedCodeAkGameplayStatics() {}
 			{ "LoadBanks", &UAkGameplayStatics::execLoadBanks },
 			{ "LoadInitBank", &UAkGameplayStatics::execLoadInitBank },
 			{ "PostAndWaitForEndOfEvent", &UAkGameplayStatics::execPostAndWaitForEndOfEvent },
+			{ "PostAndWaitForEndOfEventAsync", &UAkGameplayStatics::execPostAndWaitForEndOfEventAsync },
 			{ "PostEvent", &UAkGameplayStatics::execPostEvent },
 			{ "PostEventAtLocation", &UAkGameplayStatics::execPostEventAtLocation },
 			{ "PostEventAtLocationByName", &UAkGameplayStatics::execPostEventAtLocationByName },
@@ -1691,6 +1705,82 @@ void EmptyLinkFunctionForGeneratedCodeAkGameplayStatics() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UAkGameplayStatics_PostAndWaitForEndOfEvent_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UAkGameplayStatics_PostAndWaitForEndOfEventAsync_Statics
+	{
+		struct AkGameplayStatics_eventPostAndWaitForEndOfEventAsync_Parms
+		{
+			UAkAudioEvent* AkEvent;
+			AActor* Actor;
+			int32 PlayingID;
+			bool bStopWhenAttachedToDestroyed;
+			TArray<FAkExternalSourceInfo> ExternalSources;
+			FLatentActionInfo LatentInfo;
+		};
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_LatentInfo;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ExternalSources_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_ExternalSources;
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_ExternalSources_Inner;
+		static void NewProp_bStopWhenAttachedToDestroyed_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bStopWhenAttachedToDestroyed;
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_PlayingID;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Actor;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_AkEvent;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UAkGameplayStatics_PostAndWaitForEndOfEventAsync_Statics::NewProp_LatentInfo = { "LatentInfo", nullptr, (EPropertyFlags)0x0010040000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AkGameplayStatics_eventPostAndWaitForEndOfEventAsync_Parms, LatentInfo), Z_Construct_UScriptStruct_FLatentActionInfo, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UAkGameplayStatics_PostAndWaitForEndOfEventAsync_Statics::NewProp_ExternalSources_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UAkGameplayStatics_PostAndWaitForEndOfEventAsync_Statics::NewProp_ExternalSources = { "ExternalSources", nullptr, (EPropertyFlags)0x0010040008000182, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AkGameplayStatics_eventPostAndWaitForEndOfEventAsync_Parms, ExternalSources), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UFunction_UAkGameplayStatics_PostAndWaitForEndOfEventAsync_Statics::NewProp_ExternalSources_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UAkGameplayStatics_PostAndWaitForEndOfEventAsync_Statics::NewProp_ExternalSources_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UAkGameplayStatics_PostAndWaitForEndOfEventAsync_Statics::NewProp_ExternalSources_Inner = { "ExternalSources", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FAkExternalSourceInfo, METADATA_PARAMS(nullptr, 0) };
+	void Z_Construct_UFunction_UAkGameplayStatics_PostAndWaitForEndOfEventAsync_Statics::NewProp_bStopWhenAttachedToDestroyed_SetBit(void* Obj)
+	{
+		((AkGameplayStatics_eventPostAndWaitForEndOfEventAsync_Parms*)Obj)->bStopWhenAttachedToDestroyed = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UAkGameplayStatics_PostAndWaitForEndOfEventAsync_Statics::NewProp_bStopWhenAttachedToDestroyed = { "bStopWhenAttachedToDestroyed", nullptr, (EPropertyFlags)0x0010040000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AkGameplayStatics_eventPostAndWaitForEndOfEventAsync_Parms), &Z_Construct_UFunction_UAkGameplayStatics_PostAndWaitForEndOfEventAsync_Statics::NewProp_bStopWhenAttachedToDestroyed_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UAkGameplayStatics_PostAndWaitForEndOfEventAsync_Statics::NewProp_PlayingID = { "PlayingID", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AkGameplayStatics_eventPostAndWaitForEndOfEventAsync_Parms, PlayingID), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UAkGameplayStatics_PostAndWaitForEndOfEventAsync_Statics::NewProp_Actor = { "Actor", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AkGameplayStatics_eventPostAndWaitForEndOfEventAsync_Parms, Actor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UAkGameplayStatics_PostAndWaitForEndOfEventAsync_Statics::NewProp_AkEvent = { "AkEvent", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AkGameplayStatics_eventPostAndWaitForEndOfEventAsync_Parms, AkEvent), Z_Construct_UClass_UAkAudioEvent_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UAkGameplayStatics_PostAndWaitForEndOfEventAsync_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UAkGameplayStatics_PostAndWaitForEndOfEventAsync_Statics::NewProp_LatentInfo,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UAkGameplayStatics_PostAndWaitForEndOfEventAsync_Statics::NewProp_ExternalSources,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UAkGameplayStatics_PostAndWaitForEndOfEventAsync_Statics::NewProp_ExternalSources_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UAkGameplayStatics_PostAndWaitForEndOfEventAsync_Statics::NewProp_bStopWhenAttachedToDestroyed,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UAkGameplayStatics_PostAndWaitForEndOfEventAsync_Statics::NewProp_PlayingID,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UAkGameplayStatics_PostAndWaitForEndOfEventAsync_Statics::NewProp_Actor,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UAkGameplayStatics_PostAndWaitForEndOfEventAsync_Statics::NewProp_AkEvent,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UAkGameplayStatics_PostAndWaitForEndOfEventAsync_Statics::Function_MetaDataParams[] = {
+		{ "AdvancedDisplay", "3" },
+		{ "AutoCreateRefTerm", "ExternalSources" },
+		{ "bStopWhenAttachedToDestroyed", "false" },
+		{ "Category", "Audiokinetic|Actor" },
+		{ "Comment", "/** Posts a Wwise Event attached and following the root component of the specified actor, wait for the media to be loaded and waits for the end of the event to continue execution.\n\x09 * Additional calls made while an event is active are ignored.\n\x09 * @param AkEvent - ak event to play.\n\x09 * @param Actor - actor on which to play the event.\n\x09 * @param bStopWhenAttachedToDestroyed - Specifies whether the sound should stop playing when the owner of the attach to component is destroyed.\n\x09 */" },
+		{ "Latent", "" },
+		{ "LatentInfo", "LatentInfo" },
+		{ "ModuleRelativePath", "Classes/AkGameplayStatics.h" },
+		{ "ToolTip", "Posts a Wwise Event attached and following the root component of the specified actor, wait for the media to be loaded and waits for the end of the event to continue execution.\nAdditional calls made while an event is active are ignored.\n@param AkEvent - ak event to play.\n@param Actor - actor on which to play the event.\n@param bStopWhenAttachedToDestroyed - Specifies whether the sound should stop playing when the owner of the attach to component is destroyed." },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UAkGameplayStatics_PostAndWaitForEndOfEventAsync_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UAkGameplayStatics, nullptr, "PostAndWaitForEndOfEventAsync", nullptr, nullptr, sizeof(AkGameplayStatics_eventPostAndWaitForEndOfEventAsync_Parms), Z_Construct_UFunction_UAkGameplayStatics_PostAndWaitForEndOfEventAsync_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UAkGameplayStatics_PostAndWaitForEndOfEventAsync_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UAkGameplayStatics_PostAndWaitForEndOfEventAsync_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UAkGameplayStatics_PostAndWaitForEndOfEventAsync_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UAkGameplayStatics_PostAndWaitForEndOfEventAsync()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UAkGameplayStatics_PostAndWaitForEndOfEventAsync_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -3538,6 +3628,7 @@ void EmptyLinkFunctionForGeneratedCodeAkGameplayStatics() {}
 		{ &Z_Construct_UFunction_UAkGameplayStatics_LoadBanks, "LoadBanks" }, // 3336937309
 		{ &Z_Construct_UFunction_UAkGameplayStatics_LoadInitBank, "LoadInitBank" }, // 1325726511
 		{ &Z_Construct_UFunction_UAkGameplayStatics_PostAndWaitForEndOfEvent, "PostAndWaitForEndOfEvent" }, // 1711341780
+		{ &Z_Construct_UFunction_UAkGameplayStatics_PostAndWaitForEndOfEventAsync, "PostAndWaitForEndOfEventAsync" }, // 957047207
 		{ &Z_Construct_UFunction_UAkGameplayStatics_PostEvent, "PostEvent" }, // 2302847322
 		{ &Z_Construct_UFunction_UAkGameplayStatics_PostEventAtLocation, "PostEventAtLocation" }, // 2746433439
 		{ &Z_Construct_UFunction_UAkGameplayStatics_PostEventAtLocationByName, "PostEventAtLocationByName" }, // 811444291
@@ -3607,7 +3698,7 @@ void EmptyLinkFunctionForGeneratedCodeAkGameplayStatics() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UAkGameplayStatics, 1089222455);
+	IMPLEMENT_CLASS(UAkGameplayStatics, 2748288896);
 	template<> AKAUDIO_API UClass* StaticClass<UAkGameplayStatics>()
 	{
 		return UAkGameplayStatics::StaticClass();

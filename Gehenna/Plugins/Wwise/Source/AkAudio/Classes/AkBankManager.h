@@ -13,6 +13,7 @@
 #include "AkInclude.h"
 #include "AkGameplayTypes.h"
 #include "Engine/EngineBaseTypes.h"
+#include "CoreUObject/Public/UObject/StrongObjectPtr.h"
 
 class UAkAudioBank;
 
@@ -104,6 +105,7 @@ public:
 		FScopeLock autoLock(&m_bankLock);
 		bool bIsAlreadyInSet = false;
 		m_LoadedBanks.Add(Bank, &bIsAlreadyInSet);
+		addToGCStorage(Bank);
 		check(bIsAlreadyInSet == false);
 	}
 
@@ -111,12 +113,14 @@ public:
 	{
 		FScopeLock autoLock(&m_bankLock);
 		m_LoadedBanks.Remove(Bank);
+		removeFromGCStorage(Bank);
 	}
 
 	void ClearLoadedBanks()
 	{
 		FScopeLock autoLock(&m_bankLock);
 		m_LoadedBanks.Empty();
+		gcStorage.Empty();
 	}
 
 	const TSet<UAkAudioBank *> GetLoadedBankList() const
@@ -126,7 +130,15 @@ public:
 	}
 
 private:
+	void addToGCStorage(UAkAudioBank* Bank);
+	void addToGCStorageInternal(UAkAudioBank* Bank);
+
+	void removeFromGCStorage(UAkAudioBank* Bank);
+	void removeFromGCStorageInternal(UAkAudioBank* Bank);
+
+private:
 	static FAkBankManager* Instance;
 	TSet<UAkAudioBank*> m_LoadedBanks;
+	TArray<TStrongObjectPtr<UAkAudioBank>> gcStorage;
 	mutable FCriticalSection m_bankLock;
 };

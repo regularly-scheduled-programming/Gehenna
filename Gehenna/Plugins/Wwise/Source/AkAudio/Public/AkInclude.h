@@ -20,6 +20,10 @@
 #include "Windows/AllowWindowsPlatformTypes.h"
 #include "Windows/AllowWindowsPlatformAtomics.h"
 #include "Windows/MinimalWindowsApi.h"
+#elif PLATFORM_HOLOLENS
+#pragma pack(push, 8)
+#include "Hololens/AllowWindowsPlatformTypes.h"
+#include "Hololens/AllowWindowsPlatformAtomics.h"
 #elif defined(AK_NEED_XBOX_MINAPI) && AK_NEED_XBOX_MINAPI
 #include "XboxOne/XboxOneMinApi.h"
 #endif
@@ -48,5 +52,9 @@
 #if PLATFORM_WINDOWS
 #include "Windows/HideWindowsPlatformTypes.h"
 #include "Windows/HideWindowsPlatformAtomics.h"
+#pragma pack(pop)
+#elif PLATFORM_HOLOLENS
+#include "Hololens/HideWindowsPlatformTypes.h"
+#include "Hololens/HideWindowsPlatformAtomics.h"
 #pragma pack(pop)
 #endif // PLATFORM_WINDOWS

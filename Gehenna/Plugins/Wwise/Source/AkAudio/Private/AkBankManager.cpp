@@ -120,3 +120,53 @@ FAkBankManager::~FAkBankManager()
 		Instance = nullptr;
 	}
 }
+
+void FAkBankManager::addToGCStorage(UAkAudioBank* Bank)
+{
+	if (IsInGameThread())
+	{
+		addToGCStorageInternal(Bank);
+	}
+	else
+	{
+		AsyncTask(ENamedThreads::GameThread, [this, Bank] {
+			addToGCStorageInternal(Bank);
+		});
+	}
+}
+
+void FAkBankManager::addToGCStorageInternal(UAkAudioBank* Bank)
+{
+	for (auto& entry : gcStorage)
+	{
+		if (entry.Get() == Bank)
+		{
+			return;
+		}
+	}
+
+	gcStorage.Emplace(Bank);
+}
+
+void FAkBankManager::removeFromGCStorage(UAkAudioBank* Bank)
+{
+	if (IsInGameThread())
+	{
+		removeFromGCStorageInternal(Bank);
+	}
+	else
+	{
+		AsyncTask(ENamedThreads::GameThread, [this, Bank] {
+			removeFromGCStorageInternal(Bank);
+		});
+	}
+}
+
+void FAkBankManager::removeFromGCStorageInternal(UAkAudioBank* Bank)
+{
+	auto removeIndex = gcStorage.IndexOfByPredicate([Bank](auto& item) { return item.Get() == Bank; });
+	if (removeIndex != -1)
+	{
+		gcStorage.RemoveAt(removeIndex);
+	}
+}

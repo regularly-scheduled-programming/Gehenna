@@ -18,6 +18,26 @@
 #include "UnrealEd/Public/ObjectTools.h"
 #endif
 
+bool UAkAssetDataSwitchContainerData::IsMediaReady() const
+{
+	bool isMediaReady = true;
+	for (auto child : Children)
+	{
+		if (!child->IsMediaReady())
+		{
+			isMediaReady = false;
+			break;
+		}
+	}
+
+	if (isMediaReady && streamHandle.IsValid())
+	{
+		isMediaReady = streamHandle->HasLoadCompleted();
+	}
+
+	return isMediaReady;
+}
+
 #if WITH_EDITOR
 void UAkAssetDataSwitchContainerData::GetMediaList(TArray<TSoftObjectPtr<UAkMediaAsset>>& mediaList) const
 {
@@ -80,6 +100,25 @@ AKRESULT UAkAssetDataSwitchContainer::Unload()
 	}
 
 	return result;
+}
+
+bool UAkAssetDataSwitchContainer::IsMediaReady() const
+{
+	bool parentReady = Super::IsMediaReady();
+	if (!parentReady)
+	{
+		return false;
+	}
+
+	for (auto* switchContainer : SwitchContainers)
+	{
+		if (switchContainer && !switchContainer->IsMediaReady())
+		{
+			return false;
+		}
+	}
+
+	return true;
 }
 
 void UAkAssetDataSwitchContainer::loadSwitchContainer(const TArray<UAkAssetDataSwitchContainerData*>& switchContainers)
@@ -229,6 +268,25 @@ UAkAssetDataSwitchContainer* UAkAudioEventData::FindOrAddLocalizedData(const FSt
 	}
 }
 
+bool UAkAudioEventData::IsMediaReady() const
+{
+	bool parentReady = Super::IsMediaReady();
+	if (!parentReady)
+	{
+		return false;
+	}
+
+	for (auto& entry : LocalizedMedia)
+	{
+		if (!entry.Value->IsMediaReady())
+		{
+			return false;
+		}
+	}
+
+	return true;
+}
+
 #if WITH_EDITOR
 void UAkAudioEventData::GetMediaList(TArray<TSoftObjectPtr<UAkMediaAsset>>& mediaList) const
 {
@@ -241,7 +299,7 @@ void UAkAudioEventData::GetMediaList(TArray<TSoftObjectPtr<UAkMediaAsset>>& medi
 }
 #endif
 
-float UAkAudioEvent::MaxAttenuationRadius() const
+float UAkAudioEvent::GetMaxAttenuationRadius() const
 {
 	if (auto* eventData = Cast<UAkAudioEventData>(getAssetData()))
 	{
@@ -251,7 +309,7 @@ float UAkAudioEvent::MaxAttenuationRadius() const
 	return 0.f;
 }
 
-bool UAkAudioEvent::IsInfinite() const
+bool UAkAudioEvent::GetIsInfinite() const
 {
 	if (auto* eventData = Cast<UAkAudioEventData>(getAssetData()))
 	{
@@ -261,7 +319,7 @@ bool UAkAudioEvent::IsInfinite() const
 	return false;
 }
 
-float UAkAudioEvent::MinimumDuration() const
+float UAkAudioEvent::GetMinimumDuration() const
 {
 	if (auto* eventData = Cast<UAkAudioEventData>(getAssetData()))
 	{
@@ -279,7 +337,7 @@ void UAkAudioEvent::SetMinimumDuration(float value)
 	}
 }
 
-float UAkAudioEvent::MaximumDuration() const
+float UAkAudioEvent::GetMaximumDuration() const
 {
 	if (auto* eventData = Cast<UAkAudioEventData>(getAssetData()))
 	{
@@ -297,7 +355,7 @@ void UAkAudioEvent::SetMaximumDuration(float value)
 	}
 }
 
-bool UAkAudioEvent::SwitchLanguage(const FString& newAudioCulture, const SwitchLanguageCompletedFunction& Function)
+bool UAkAudioEvent::SwitchLanguage(const FString& newAudioCulture, const SwitchLanguageCompletedFunction& Function, FAkAudioDevice::SetCurrentAudioCultureAsyncTask* SetCultureTask)
 {
 	bool switchLanguage = false;
 
@@ -338,6 +396,12 @@ bool UAkAudioEvent::SwitchLanguage(const FString& newAudioCulture, const SwitchL
 
 	if (switchLanguage)
 	{
+		if (auto* audioDevice = FAkAudioDevice::Get())
+		{
+			audioDevice->StopEventID(audioDevice->GetIDFromString(GetName()));
+		}
+
+		parentSetCultureTask = SetCultureTask;
 		unloadLocalizedData();
 
 		loadLocalizedData(newAudioCulture, Function);
@@ -379,6 +443,24 @@ bool UAkAudioEvent::IsLocalized() const
 	}
 
 	return false;
+}
+
+bool UAkAudioEvent::IsMediaReady() const
+{
+	if (auto* assetData = getAssetData())
+	{
+		if (!assetData->IsMediaReady())
+		{
+			return false;
+		}
+	}
+
+	if (localizedStreamHandle.IsValid())
+	{
+		return localizedStreamHandle->HasLoadCompleted();
+	}
+
+	return true;
 }
 
 UAkAssetData* UAkAudioEvent::createAssetData(UObject* parent) const

@@ -38,12 +38,12 @@ namespace AkAudioEventSectionHelper
 			return FFloatRange(DefaultDurationForEventSpecifiedByName);
 		}
 
-		if (Event->IsInfinite())
+		if (Event->GetIsInfinite())
 		{
 			return FFloatRange(FMath::Min((float)GetMaxDurationForFrameRate(FrameRate), MaximumDuration));
 		}
 
-		return FFloatRange(Event->MinimumDuration(), TRangeBound<float>::Inclusive(FMath::Clamp(Event->MaximumDuration(), MinimumDuration, MaximumDuration)));
+		return FFloatRange(Event->GetMinimumDuration(), TRangeBound<float>::Inclusive(FMath::Clamp(Event->GetMaximumDuration(), MinimumDuration, MaximumDuration)));
 	}
 }
 

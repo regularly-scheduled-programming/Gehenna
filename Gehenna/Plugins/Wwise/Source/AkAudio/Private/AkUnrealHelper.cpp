@@ -11,6 +11,14 @@
 #include "HAL/FileManager.h"
 #include "Misc/MessageDialog.h"
 #include "Widgets/Docking/SDockTab.h"
+#include "SSettingsEditorCheckoutNotice.h"
+#include "ISourceControlModule.h"
+#include "Widgets/Input/SButton.h"
+#include "Widgets/Input/SCheckBox.h"
+#include "Widgets/Input/SHyperlink.h"
+#include "Widgets/Layout/SSpacer.h"
+#include "Widgets/Layout/SExpandableArea.h"
+#include "HAL/PlatformFileManager.h"
 #endif
 
 namespace AkUnrealHelper
@@ -192,5 +200,176 @@ namespace AkUnrealHelper
 			bRequestRefresh = true;
 		}
 	}
+
+	void SaveConfigFile(UObject* ConfigObject)
+	{
+		FString ConfigFilename = ConfigObject->GetDefaultConfigFilename();
+		if (!ISourceControlModule::Get().IsEnabled() || SettingsHelpers::IsCheckedOut(ConfigFilename) || SettingsHelpers::CheckOutOrAddFile(ConfigFilename))
+		{
+			ConfigObject->UpdateDefaultConfigFile();
+		}
+	}
+
+#define LOCTEXT_NAMESPACE "AkAudio"
+	void ShowEventBasedPackagingMigrationDialog(FOnButtonClickedMigration in_OnclickedYes, FOnButtonClickedMigration in_OnclickedNo)
+	{
+		TSharedPtr<SWindow> Dialog = SNew(SWindow)
+			.Title(LOCTEXT("NewAssetManagementTitle", "New Asset Management"))
+			.SupportsMaximize(false)
+			.SupportsMinimize(false)
+			.FocusWhenFirstShown(true)
+			.SizingRule(ESizingRule::Autosized);
+
+		TSharedRef<SWidget> DialogContent = SNew(SVerticalBox)
+		+ SVerticalBox::Slot()
+		[
+			SNew(SBorder)
+			.BorderImage(FEditorStyle::GetBrush("ToolPanel.GroupBorder"))
+			.Padding(4.0f)
+			[
+				SNew(SVerticalBox)
+				+ SVerticalBox::Slot()
+				.FillHeight(0.15f)
+				[
+					SNew(SSpacer)
+				]
+				+ SVerticalBox::Slot()
+				.AutoHeight()
+				.HAlign(EHorizontalAlignment::HAlign_Left)
+				[
+					SNew(STextBlock)
+					.Text(LOCTEXT("NewAssetManagementMessageBegin",
+						"New in Wwise 2019.2: The Wwise Unreal Integration uses a new asset management system called \"Event-based Packaging.\"\n"
+						"Unreal assets are now automatically synchronized from the Wwise project, and manually managing SoundBanks is not needed anymore.\n"
+					))
+					.AutoWrapText(true)
+				]
+				+ SVerticalBox::Slot()
+				.AutoHeight()
+				.HAlign(EHorizontalAlignment::HAlign_Left)
+				[
+					SNew(SExpandableArea)
+					.AreaTitle(LOCTEXT("AkMigration_WhatHappens", "Changes made to your project during the migration process"))
+					.InitiallyCollapsed(true)
+					.BodyContent()
+					[
+						SNew(STextBlock)
+						.Text(LOCTEXT("NewAssetManagementMessageWhatHappens",
+							"- This new workflow is greatly improved by using a WAAPI connection. Therefore, WAAPI will be enabled. It is recommended to\n"
+							"open the Wwise project in the Wwise Authoring Application after completing the migration process.\n"
+							"- Wwise-related assets will be moved within the content browser. Assets not found in the Wwise project will be deleted. It is\n"
+							"strongly recommended to back up your Unreal project, or to use source control.\n"
+							"- One SoundBank is created for each event, and SoundBank data is directly embedded inside the AkAudioEvent assets.\n"
+							"- Leftover SoundBanks (.bnk) and media files (.wem) will be deleted from disk, as they are no longer needed. Ensure to check.\n"
+							"them out of source control."
+						))
+						.AutoWrapText(true)
+					]
+				]
+				+ SVerticalBox::Slot()
+				.AutoHeight()
+				.HAlign(EHorizontalAlignment::HAlign_Left)
+				[
+					SNew(STextBlock)
+					.Text(LOCTEXT("NewAssetManagementMessageOptOut", "\nIt is possible to opt-in to the new workflow at a later time, through the Integration Settings. Note that some changes will be done to your\nWwise and Unreal project even if you opt-out of \"Event-based Packaging\".\n"))
+					.AutoWrapText(true)
+				]
+				+ SVerticalBox::Slot()
+				.AutoHeight()
+				.HAlign(EHorizontalAlignment::HAlign_Left)
+				[
+					SNew(SHyperlink)
+					.Text(LOCTEXT("NewAssetManagementMessageLink", "For more information, please refer to the integration documentation"))
+					.OnNavigate_Lambda([=]() { FPlatformProcess::LaunchURL(TEXT("https://www.audiokinetic.com/library/edge/?source=UE4&id=releasenotes.html"), nullptr, nullptr); })
+				]
+				+ SVerticalBox::Slot()
+				.AutoHeight()
+				.Padding(2.0f)
+				.HAlign(EHorizontalAlignment::HAlign_Left)
+				[
+					SNew(STextBlock)
+					.Text(LOCTEXT("NewAssetManagementMessageEnd", "\nWould you like to enable Event-based Packaging?"))
+					.AutoWrapText(true)
+				]
+			]
+		]
+		+ SVerticalBox::Slot()
+		.FillHeight(0.10f)
+		[
+			SNew(SSpacer)
+		]
+		+ SVerticalBox::Slot()
+		.AutoHeight()
+		.HAlign(EHorizontalAlignment::HAlign_Left)
+		[
+			SNew(SCheckBox)
+			.IsChecked(ECheckBoxState::Unchecked)
+			.OnCheckStateChanged_Lambda([&](ECheckBoxState NewState) { GetMutableDefault<UAkSettings>()->FixupRedirectorsDuringMigration = NewState == ECheckBoxState::Checked; })
+			.Content()
+			[
+				SNew(STextBlock)
+				.Text(LOCTEXT("AkFixupRedirectors", "Fixup redirectors during migration"))
+				.ToolTipText(LOCTEXT("AkFixupRedirectorsToolTip", "After all Wwise-related assets have been moved to their new destination, fixup the redirectors left behind."))
+			]
+		]
+		+ SVerticalBox::Slot()
+		.AutoHeight()
+		.HAlign(EHorizontalAlignment::HAlign_Center)
+		[
+			SNew(SHorizontalBox)
+			+ SHorizontalBox::Slot()
+			.AutoWidth()
+			.Padding(5.0f, 3.0f, 0.0f, 3.0f)
+			[
+				SNew(SButton)
+				.Text(LOCTEXT("Yes", "Yes"))
+				.OnClicked_Lambda([&Dialog, &in_OnclickedYes]() -> FReply {
+					Dialog->RequestDestroyWindow();
+					return in_OnclickedYes.Execute();
+				})
+			]
+			+ SHorizontalBox::Slot()
+			.AutoWidth()
+			.Padding(5.0f, 3.0f, 0.0f, 3.0f)
+			[
+				SNew(SButton)
+				.Text(LOCTEXT("No", "No"))
+				.OnClicked_Lambda([&Dialog, &in_OnclickedNo]() -> FReply {
+					Dialog->RequestDestroyWindow();
+					return in_OnclickedNo.Execute();
+				})
+			]
+		]
+		+ SVerticalBox::Slot()
+		.FillHeight(0.05f)
+		[
+			SNew(SSpacer)
+		];
+
+		Dialog->SetContent(DialogContent);
+		FSlateApplication::Get().AddModalWindow(Dialog.ToSharedRef(), nullptr);
+	}
+
+
+	void DeleteOldSoundBanks()
+	{
+		const TArray<FString> ExtensionsToDelete = { "bnk", "wem", "json", "txt", "xml" };
+		bool SuccessfulDelete = true;
+		for (auto& Extension : ExtensionsToDelete)
+		{
+			TArray<FString> FoundFiles;
+			FPlatformFileManager::Get().GetPlatformFile().FindFilesRecursively(FoundFiles, *AkUnrealHelper::GetSoundBankDirectory(), *Extension);
+			for (auto& File : FoundFiles)
+			{
+				SuccessfulDelete = FPlatformFileManager::Get().GetPlatformFile().DeleteFile(*File);
+			}
+		}
+
+		if (!SuccessfulDelete)
+		{
+			FMessageDialog::Open(EAppMsgType::Ok, LOCTEXT("CannotDeleteOldBanks", "Unable to delete legacy SoundBank files. Please ensure to manually delete them after migration is complete."));
+		}
+	}
+#undef LOCTEXT_NAMESPACE
 #endif
 }

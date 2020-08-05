@@ -69,7 +69,8 @@ void SWwisePicker::RemoveClientCallbacks()
 void SWwisePicker::UpdateDirectoryWatcher()
 {
 	FString OldProjectFolder = ProjectFolder;
-	ProjectFolder = FPaths::GetPath(AkUnrealHelper::GetWwiseProjectPath());
+	auto WwiseProjectPath = AkUnrealHelper::GetWwiseProjectPath();
+	ProjectFolder = FPaths::GetPath(WwiseProjectPath);
 	ProjectName = FPaths::GetCleanFilename(AkUnrealHelper::GetWwiseProjectPath());
 
 	auto& DirectoryWatcherModule = FModuleManager::LoadModuleChecked<FDirectoryWatcherModule>(SWwisePicker_Helper::DirectoryWatcherModuleName);
@@ -78,12 +79,14 @@ void SWwisePicker::UpdateDirectoryWatcher()
 		DirectoryWatcherModule.Get()->UnregisterDirectoryChangedCallback_Handle(OldProjectFolder, ProjectDirectoryModifiedDelegateHandle);
 	}
 
-	DirectoryWatcherModule.Get()->RegisterDirectoryChangedCallback_Handle(
-		ProjectFolder
-		, IDirectoryWatcher::FDirectoryChanged::CreateRaw(this, &SWwisePicker::OnProjectDirectoryChanged)
-		, ProjectDirectoryModifiedDelegateHandle
+	if (FPaths::FileExists(WwiseProjectPath))
+	{
+		DirectoryWatcherModule.Get()->RegisterDirectoryChangedCallback_Handle(
+			ProjectFolder
+			, IDirectoryWatcher::FDirectoryChanged::CreateRaw(this, &SWwisePicker::OnProjectDirectoryChanged)
+			, ProjectDirectoryModifiedDelegateHandle
 		);
-
+	}
 }
 
 void SWwisePicker::OnProjectDirectoryChanged(const TArray<struct FFileChangeData>& ChangedFiles)
@@ -114,8 +117,11 @@ SWwisePicker::~SWwisePicker()
 		pWaapiClient->OnClientBeginDestroy.Remove(ClientBeginDestroyHandle);
 	}
 
-	auto& DirectoryWatcherModule = FModuleManager::LoadModuleChecked<FDirectoryWatcherModule>(SWwisePicker_Helper::DirectoryWatcherModuleName);
-	DirectoryWatcherModule.Get()->UnregisterDirectoryChangedCallback_Handle(ProjectFolder, ProjectDirectoryModifiedDelegateHandle);
+	if (ProjectDirectoryModifiedDelegateHandle.IsValid())
+	{
+		auto& DirectoryWatcherModule = FModuleManager::LoadModuleChecked<FDirectoryWatcherModule>(SWwisePicker_Helper::DirectoryWatcherModuleName);
+		DirectoryWatcherModule.Get()->UnregisterDirectoryChangedCallback_Handle(ProjectFolder, ProjectDirectoryModifiedDelegateHandle);
+	}
 }
 
 void SWwisePicker::Construct(const FArguments& InArgs)

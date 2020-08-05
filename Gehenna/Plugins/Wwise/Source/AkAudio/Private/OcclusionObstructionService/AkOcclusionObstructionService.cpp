@@ -418,7 +418,17 @@ void AkOcclusionObstructionService::UpdateObstructionOcclusion(const UAkComponen
 {
 	if (OcclusionRefreshInterval > 0.f || ClearingOcclusionObstruction)
 	{
+		for (auto& Listener : in_Listeners)
+		{
+			auto& MapEntry = ListenerInfoMap.FindOrAdd(Listener->GetAkGameObjectID());
+			MapEntry.Position = Listener->GetPosition();
+		}
 		CalculateObstructionOcclusionValues(in_Listeners, SourcePosition, Actor, RoomID, in_collisionChannel, false);
+		for (auto& ListenerPair : ListenerInfoMap)
+		{
+			ListenerPair.Value.Obs.CurrentValue = ListenerPair.Value.Obs.TargetValue;
+			ListenerPair.Value.Occ.CurrentValue = ListenerPair.Value.Occ.TargetValue;
+		}
 		SetObstructionOcclusion(in_Listeners, RoomID);
 	}
 }
